@@ -2,13 +2,20 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 
+const places = require('./lib/places');
+const { getWebsiteSignals } = require('./lib/websiteSignals');
+const { checkAiVisibility } = require('./lib/aiMentions');
+const scoring = require('./lib/scoring');
+
 app.use(express.json());
 
-// Get API key from environment
+// Get API keys from environment
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
 console.log('[STARTUP] Initializing AI Agents API...');
 console.log('[STARTUP] CLAUDE_API_KEY present:', !!CLAUDE_API_KEY);
+console.log('[STARTUP] GOOGLE_PLACES_API_KEY present:', !!GOOGLE_PLACES_API_KEY);
 console.log('[STARTUP] NODE_ENV:', process.env.NODE_ENV);
 
 const AGENT_SYSTEM_PROMPTS = {
@@ -49,17 +56,21 @@ app.get('/health', (req, res) => {
     status: 'ok',
     agents: Object.keys(AGENT_SYSTEM_PROMPTS),
     apiKeyPresent: !!CLAUDE_API_KEY,
+    placesApiKeyPresent: !!GOOGLE_PLACES_API_KEY,
     timestamp: new Date().toISOString()
   });
 });
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'AI Agents API is running',
     availableAgents: Object.keys(AGENT_SYSTEM_PROMPTS),
     endpoint: '/agent',
     method: 'POST',
+    visibilityReportEndpoint: '/visibility-report',
+    visibilityReportMethod: 'POST',
+    visibilityReportBody: { name: 'string', city: 'string' },
     healthCheck: '/health'
   });
 });
@@ -139,6 +150,85 @@ app.post('/agent', async (req, res) => {
     res.status(500).json({ 
       error: error.message
     });
+  }
+});
+
+// AI Visibility Report endpoint — real Google Business Profile data via Places API,
+// a live website scrape for schema/mobile signals, and real Claude queries to check
+// whether an AI answer engine actually mentions the business.
+app.post('/visibility-report', async (req, res) => {
+  const { name, city } = req.body || {};
+
+  if (!name || !city) {
+    return res.status(400).json({ error: 'Missing required fields: name and city' });
+  }
+  if (!GOOGLE_PLACES_API_KEY) {
+    return res.status(500).json({ error: 'GOOGLE_PLACES_API_KEY environment variable not set' });
+  }
+  if (!CLAUDE_API_KEY) {
+    return res.status(500).json({ error: 'CLAUDE_API_KEY environment variable not set' });
+  }
+
+  try {
+    console.log(`[VISIBILITY] Looking up "${name}" in "${city}"`);
+    const candidate = await places.findPlace(GOOGLE_PLACES_API_KEY, name, city);
+    if (!candidate) {
+      return res.status(404).json({ error: `No Google Business Profile found for "${name}" in "${city}"` });
+    }
+
+    const details = await places.getPlaceDetails(GOOGLE_PLACES_API_KEY, candidate.place_id);
+    const category = places.primaryCategory(details.types);
+
+    const [websiteSignals, aiQueries, competitors] = await Promise.all([
+      getWebsiteSignals(details.website),
+      checkAiVisibility(CLAUDE_API_KEY, details.name, category, city),
+      details.geometry?.location
+        ? places.nearbyCompetitors(GOOGLE_PLACES_API_KEY, details.geometry.location.lat, details.geometry.location.lng, category, candidate.place_id)
+        : Promise.resolve([])
+    ]);
+
+    const reviews = details.reviews || [];
+    const photoCount = (details.photos || []).length;
+    const descriptionLength = (details.editorial_summary?.overview || '').length;
+    const lastReviewDaysAgo = reviews.length ? places.daysAgo(reviews[0].time) : null;
+
+    const business = {
+      name: details.name,
+      category,
+      city,
+      address: details.formatted_address || null,
+      phone: details.formatted_phone_number || details.international_phone_number || null,
+      website: details.website || null,
+      rating: details.rating || 0,
+      reviewCount: details.user_ratings_total || 0,
+      lastReviewDaysAgo,
+      photoCount,
+      hasMenu: websiteSignals.hasMenuMention,
+      hasServicesList: websiteSignals.hasServicesMention,
+      hasAttributes: !!details.wheelchair_accessible_entrance,
+      descriptionLength,
+      hasSchema: websiteSignals.hasSchema,
+      mobileFriendly: websiteSignals.mobileFriendly,
+      isHttps: websiteSignals.isHttps,
+      websiteReachable: websiteSignals.reachable,
+      googleMapsUrl: details.url || null,
+      aiQueries: aiQueries.map(({ query, mentioned, note }) => ({ query, mentioned, note }))
+    };
+
+    const scores = scoring.computeScores(business);
+    const recommendations = scoring.getRecommendations(business);
+
+    res.json({
+      success: true,
+      business,
+      scores,
+      recommendations,
+      competitors,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.log(`[VISIBILITY_ERROR] ${error.message}`);
+    res.status(500).json({ error: error.message });
   }
 });
 
