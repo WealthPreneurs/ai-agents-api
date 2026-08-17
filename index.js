@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 
-const places = require('./lib/places');
+const yelp = require('./lib/yelp');
 const { getWebsiteSignals } = require('./lib/websiteSignals');
 const { checkAiVisibility } = require('./lib/aiMentions');
 const scoring = require('./lib/scoring');
@@ -11,11 +11,11 @@ app.use(express.json());
 
 // Get API keys from environment
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
-const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
+const YELP_API_KEY = process.env.YELP_API_KEY;
 
 console.log('[STARTUP] Initializing AI Agents API...');
 console.log('[STARTUP] CLAUDE_API_KEY present:', !!CLAUDE_API_KEY);
-console.log('[STARTUP] GOOGLE_PLACES_API_KEY present:', !!GOOGLE_PLACES_API_KEY);
+console.log('[STARTUP] YELP_API_KEY present:', !!YELP_API_KEY);
 console.log('[STARTUP] NODE_ENV:', process.env.NODE_ENV);
 
 const AGENT_SYSTEM_PROMPTS = {
@@ -56,7 +56,7 @@ app.get('/health', (req, res) => {
     status: 'ok',
     agents: Object.keys(AGENT_SYSTEM_PROMPTS),
     apiKeyPresent: !!CLAUDE_API_KEY,
-    placesApiKeyPresent: !!GOOGLE_PLACES_API_KEY,
+    yelpApiKeyPresent: !!YELP_API_KEY,
     timestamp: new Date().toISOString()
   });
 });
@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
     method: 'POST',
     visibilityReportEndpoint: '/visibility-report',
     visibilityReportMethod: 'POST',
-    visibilityReportBody: { name: 'string', city: 'string' },
+    visibilityReportBody: { name: 'string', city: 'string', website: 'string (optional)' },
     healthCheck: '/health'
   });
 });
@@ -153,17 +153,20 @@ app.post('/agent', async (req, res) => {
   }
 });
 
-// AI Visibility Report endpoint — real Google Business Profile data via Places API,
-// a live website scrape for schema/mobile signals, and real Claude queries to check
-// whether an AI answer engine actually mentions the business.
+// AI Visibility Report endpoint — real business profile data via the Yelp Fusion API
+// (free tier, no billing required), a live website scrape for schema/mobile signals,
+// and real Claude queries to check whether an AI answer engine actually mentions the
+// business. Yelp doesn't expose a business's own website, so pass one in if you have
+// it (you will, doing outreach) — otherwise the report treats the business as having
+// no website on file.
 app.post('/visibility-report', async (req, res) => {
-  const { name, city } = req.body || {};
+  const { name, city, website } = req.body || {};
 
   if (!name || !city) {
     return res.status(400).json({ error: 'Missing required fields: name and city' });
   }
-  if (!GOOGLE_PLACES_API_KEY) {
-    return res.status(500).json({ error: 'GOOGLE_PLACES_API_KEY environment variable not set' });
+  if (!YELP_API_KEY) {
+    return res.status(500).json({ error: 'YELP_API_KEY environment variable not set' });
   }
   if (!CLAUDE_API_KEY) {
     return res.status(500).json({ error: 'CLAUDE_API_KEY environment variable not set' });
@@ -171,47 +174,44 @@ app.post('/visibility-report', async (req, res) => {
 
   try {
     console.log(`[VISIBILITY] Looking up "${name}" in "${city}"`);
-    const candidate = await places.findPlace(GOOGLE_PLACES_API_KEY, name, city);
+    const candidate = await yelp.findBusiness(YELP_API_KEY, name, city);
     if (!candidate) {
-      return res.status(404).json({ error: `No Google Business Profile found for "${name}" in "${city}"` });
+      return res.status(404).json({ error: `No business listing found for "${name}" in "${city}"` });
     }
 
-    const details = await places.getPlaceDetails(GOOGLE_PLACES_API_KEY, candidate.place_id);
-    const category = places.primaryCategory(details.types);
+    const details = await yelp.getBusinessDetails(YELP_API_KEY, candidate.id);
+    const category = yelp.primaryCategory(details.categories);
+    const siteUrl = website || null;
 
     const [websiteSignals, aiQueries, competitors] = await Promise.all([
-      getWebsiteSignals(details.website),
+      getWebsiteSignals(siteUrl),
       checkAiVisibility(CLAUDE_API_KEY, details.name, category, city),
-      details.geometry?.location
-        ? places.nearbyCompetitors(GOOGLE_PLACES_API_KEY, details.geometry.location.lat, details.geometry.location.lng, category, candidate.place_id)
+      details.coordinates
+        ? yelp.nearbyCompetitors(YELP_API_KEY, details.coordinates.latitude, details.coordinates.longitude, category, details.id)
         : Promise.resolve([])
     ]);
 
-    const reviews = details.reviews || [];
     const photoCount = (details.photos || []).length;
-    const descriptionLength = (details.editorial_summary?.overview || '').length;
-    const lastReviewDaysAgo = reviews.length ? places.daysAgo(reviews[0].time) : null;
 
     const business = {
       name: details.name,
       category,
       city,
-      address: details.formatted_address || null,
-      phone: details.formatted_phone_number || details.international_phone_number || null,
-      website: details.website || null,
+      address: (details.location?.display_address || []).join(', ') || null,
+      phone: details.display_phone || details.phone || null,
+      website: siteUrl,
       rating: details.rating || 0,
-      reviewCount: details.user_ratings_total || 0,
-      lastReviewDaysAgo,
+      reviewCount: details.review_count || 0,
       photoCount,
+      categoryCount: (details.categories || []).length,
+      hasPhone: !!(details.display_phone || details.phone),
       hasMenu: websiteSignals.hasMenuMention,
       hasServicesList: websiteSignals.hasServicesMention,
-      hasAttributes: !!details.wheelchair_accessible_entrance,
-      descriptionLength,
       hasSchema: websiteSignals.hasSchema,
       mobileFriendly: websiteSignals.mobileFriendly,
       isHttps: websiteSignals.isHttps,
       websiteReachable: websiteSignals.reachable,
-      googleMapsUrl: details.url || null,
+      yelpUrl: details.url || null,
       aiQueries: aiQueries.map(({ query, mentioned, note }) => ({ query, mentioned, note }))
     };
 
