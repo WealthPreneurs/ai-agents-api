@@ -112,8 +112,22 @@ function scrollToEmail() {
   if (el) { el.scrollIntoView({ block: 'center' }); el.focus(); }
 }
 
+// Fires a Netlify Forms submission so a notification (email/Slack, configured
+// in the Netlify dashboard under Site configuration → Forms) goes out each
+// time someone unlocks the deals with their email. Only works once deployed
+// on Netlify — harmless no-op elsewhere (e.g. the Express-served copy).
+function notifyEmailCapture(email) {
+  const body = new URLSearchParams({ 'form-name': 'investor-email-signup', email }).toString();
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body
+  }).catch(() => {});
+}
+
 function unlock() {
   try { localStorage.setItem('mc_unlocked', '1'); } catch (e) {}
+  notifyEmailCapture(state.email);
   state.unlocked = true;
   state.showEmailError = false;
   render();
