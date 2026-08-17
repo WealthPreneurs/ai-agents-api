@@ -1,3 +1,6 @@
+// Deals are shared across all visitors via a Netlify Function backed by
+// Netlify Blobs (netlify/functions/deals.mjs). This local list is only a
+// fallback for when that endpoint can't be reached (e.g. offline).
 export const SAMPLE_DEALS = [
   {
     id: 'refi-2_5m',
@@ -37,16 +40,40 @@ export const SAMPLE_DEALS = [
   }
 ];
 
-const KEY = 'mc_deals_v1';
+const API = '/api/deals';
 
-export function loadDeals() {
+export async function loadDeals() {
   try {
-    const raw = localStorage.getItem(KEY);
-    if (raw) return JSON.parse(raw);
+    const res = await fetch(API);
+    if (res.ok) return await res.json();
   } catch (e) {}
   return SAMPLE_DEALS;
 }
 
-export function saveDeals(deals) {
-  try { localStorage.setItem(KEY, JSON.stringify(deals)); } catch (e) {}
+async function readError(res) {
+  try {
+    const body = await res.json();
+    return body.error || ('Request failed: ' + res.status);
+  } catch (e) {
+    return 'Request failed: ' + res.status;
+  }
+}
+
+export async function addDeal(deal, adminToken) {
+  const res = await fetch(API, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-admin-token': adminToken || '' },
+    body: JSON.stringify({ deal })
+  });
+  if (!res.ok) throw new Error(await readError(res));
+  return res.json();
+}
+
+export async function removeDeal(id, adminToken) {
+  const res = await fetch(API + '?id=' + encodeURIComponent(id), {
+    method: 'DELETE',
+    headers: { 'x-admin-token': adminToken || '' }
+  });
+  if (!res.ok) throw new Error(await readError(res));
+  return res.json();
 }

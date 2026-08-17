@@ -1,9 +1,11 @@
-import { loadDeals, saveDeals } from './deals-data.js';
+import { loadDeals, addDeal, removeDeal } from './deals-data.js';
 
 const state = {
   deals: [],
   formType: 'lien'
 };
+
+const TOKEN_KEY = 'mc_admin_token';
 
 function fmtMoney(n) {
   return '$' + Math.round(n).toLocaleString('en-US');
@@ -52,8 +54,21 @@ function hideFormError() {
   document.getElementById('form-error').hidden = true;
 }
 
-function init() {
-  state.deals = loadDeals();
+function getToken() {
+  return document.getElementById('f-token').value.trim();
+}
+
+async function init() {
+  const tokenInput = document.getElementById('f-token');
+  try {
+    const saved = sessionStorage.getItem(TOKEN_KEY);
+    if (saved) tokenInput.value = saved;
+  } catch (e) {}
+  tokenInput.addEventListener('input', () => {
+    try { sessionStorage.setItem(TOKEN_KEY, tokenInput.value); } catch (e) {}
+  });
+
+  state.deals = await loadDeals();
   render();
 
   document.getElementById('seg-lien').addEventListener('click', () => {
@@ -65,7 +80,7 @@ function init() {
     render();
   });
 
-  document.getElementById('add-deal-btn').addEventListener('click', () => {
+  document.getElementById('add-deal-btn').addEventListener('click', async () => {
     const title = document.getElementById('f-title').value;
     const amount = document.getElementById('f-amount').value;
     const targetRate = document.getElementById('f-rate').value;
@@ -79,32 +94,28 @@ function init() {
       return;
     }
 
-    const newDeal = {
-      id: 'deal-' + Date.now(),
-      title,
-      type: state.formType,
-      typeLabel: state.formType === 'lien' ? '1st Lien Note' : 'Fund Tranche',
-      amount: Number(amount),
-      targetRate: Number(targetRate),
-      termMin: Number(termMin),
-      termMax: Number(termMax),
-      summary: summary || 'Details available once terms are confirmed.',
-      details: details || 'Full terms available on request.'
-    };
-
-    state.deals = [...state.deals, newDeal];
-    saveDeals(state.deals);
-    clearForm();
-    hideFormError();
-    render();
+    try {
+      state.deals = await addDeal({
+        title, type: state.formType, amount, targetRate, termMin, termMax, summary, details
+      }, getToken());
+      clearForm();
+      hideFormError();
+      render();
+    } catch (e) {
+      showFormError(e.message);
+    }
   });
 
-  document.getElementById('deals-list').addEventListener('click', e => {
+  document.getElementById('deals-list').addEventListener('click', async e => {
     const btn = e.target.closest('.remove-deal');
     if (!btn) return;
-    state.deals = state.deals.filter(d => d.id !== btn.dataset.dealId);
-    saveDeals(state.deals);
-    render();
+    try {
+      state.deals = await removeDeal(btn.dataset.dealId, getToken());
+      hideFormError();
+      render();
+    } catch (e) {
+      showFormError(e.message);
+    }
   });
 }
 

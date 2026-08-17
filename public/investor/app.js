@@ -119,12 +119,12 @@ function unlock() {
   render();
 }
 
-function init() {
+async function init() {
   try {
     if (localStorage.getItem('mc_unlocked') === '1') state.unlocked = true;
   } catch (e) {}
 
-  state.deals = loadDeals();
+  state.deals = await loadDeals();
   render();
 
   const emailInput = document.getElementById('email-input');
