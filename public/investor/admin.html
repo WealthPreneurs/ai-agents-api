@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Admin — Michael's Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { margin: 0; background: var(--color-bg); }
+  .page { font-family: var(--font-body); color: var(--color-text); max-width: 1000px; margin: 0 auto; padding-bottom: 80px; }
+  .seg-opt { background: var(--color-bg); border: none; font-family: inherit; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div style="background:var(--color-accent);color:white;padding:16px 32px;font-size:13px;font-weight:600;letter-spacing:0.03em;">
+    ADMIN — DEAL MANAGEMENT · NOT VISIBLE TO INVESTORS
+  </div>
+
+  <div style="padding:32px;border-bottom:2px solid var(--color-divider);">
+    <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;letter-spacing:0.05em;color:var(--color-neutral-700);margin-bottom:8px;">MICHAEL'S DEAL UPLOAD</div>
+    <h1 style="font-family:var(--font-heading);font-size:32px;font-weight:700;margin:0 0 8px 0;">Manage available deals</h1>
+    <p style="font-size:14px;color:var(--color-neutral-700);margin:0;">Add or remove deals here. Changes appear on the investor landing page immediately (same browser).</p>
+    <a href="./index.html" style="display:inline-block;margin-top:16px;font-size:14px;">← Back to investor page</a>
+  </div>
+
+  <div style="padding:32px;border-bottom:2px solid var(--color-divider);">
+    <h2 style="font-family:var(--font-heading);font-size:20px;font-weight:700;margin:0 0 24px 0;">Add a new deal</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div class="field" style="grid-column:1/-1;">
+        <label for="f-title">Deal title</label>
+        <input id="f-title" class="input" type="text" placeholder="e.g. Cashout Refi — Multifamily Portfolio" />
+      </div>
+      <div class="field">
+        <label>Structure</label>
+        <div class="seg" style="display:flex;">
+          <button id="seg-lien" type="button" class="seg-opt" style="flex:1;padding:10px 16px;border:2px solid var(--color-divider);font-size:13px;font-weight:600;">1st Lien Note</button>
+          <button id="seg-fund" type="button" class="seg-opt" style="flex:1;padding:10px 16px;border:2px solid var(--color-divider);font-size:13px;font-weight:600;">Fund Tranche</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-amount">Raise amount ($)</label>
+        <input id="f-amount" class="input" type="number" placeholder="2500000" />
+      </div>
+      <div class="field">
+        <label for="f-rate">Target return rate (%)</label>
+        <input id="f-rate" class="input" type="number" placeholder="12" />
+      </div>
+      <div class="field">
+        <label>Term range (months)</label>
+        <div style="display:flex;gap:8px;">
+          <input id="f-term-min" class="input" type="number" placeholder="Min e.g. 18" />
+          <input id="f-term-max" class="input" type="number" placeholder="Max e.g. 36" />
+        </div>
+      </div>
+      <div class="field" style="grid-column:1/-1;">
+        <label for="f-summary">Short summary (shown on card)</label>
+        <input id="f-summary" class="input" type="text" placeholder="One sentence describing the deal" />
+      </div>
+      <div class="field" style="grid-column:1/-1;">
+        <label for="f-details">Full details (shown once unlocked)</label>
+        <textarea id="f-details" class="input" rows="4" placeholder="Full terms, security, and structure."></textarea>
+      </div>
+    </div>
+    <div id="form-error" hidden style="color:var(--color-accent-700);font-size:13px;margin-top:12px;"></div>
+    <button id="add-deal-btn" class="btn btn-primary" style="margin-top:20px;">Add deal</button>
+  </div>
+
+  <div style="padding:32px;">
+    <h2 style="font-family:var(--font-heading);font-size:20px;font-weight:700;margin:0 0 24px 0;">Current deals</h2>
+    <div id="deals-list" style="border-top:2px solid var(--color-divider);"></div>
+    <div id="no-deals" hidden style="padding:24px 0;font-size:14px;color:var(--color-neutral-700);">No deals yet — add one above.</div>
+  </div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>
