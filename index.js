@@ -238,29 +238,34 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-// Start server
-const PORT = process.env.PORT || 3000;
+// Start a standalone server only when this file is run directly (`node index.js`).
+// When required as a module — e.g. by netlify/functions/api.js — Netlify handles
+// invoking the exported Express app per-request instead, and app.listen() would
+// just throw with EADDRINUSE / block the function runtime for nothing.
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
 
-const server = app.listen(PORT, () => {
-  console.log(`\n✅ AI Agents API started successfully!`);
-  console.log(`📍 Server running on port ${PORT}`);
-  console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
-  console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
-  console.log(`\n📡 Ready to accept requests at http://localhost:${PORT}`);
-  console.log(`✔️  Health check: http://localhost:${PORT}/health\n`);
-});
-
-// Handle server errors
-server.on('error', (err) => {
-  console.log('[SERVER_ERROR]', err.message);
-  process.exit(1);
-});
-
-// Graceful shutdown
-process.on('SIGTERM', () => {
-  console.log('[SHUTDOWN] Received SIGTERM, shutting down gracefully...');
-  server.close(() => {
-    console.log('[SHUTDOWN] Server closed');
-    process.exit(0);
+  const server = app.listen(PORT, () => {
+    console.log(`\n✅ AI Agents API started successfully!`);
+    console.log(`📍 Server running on port ${PORT}`);
+    console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
+    console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
+    console.log(`\n📡 Ready to accept requests at http://localhost:${PORT}`);
+    console.log(`✔️  Health check: http://localhost:${PORT}/health\n`);
   });
-});
+
+  server.on('error', (err) => {
+    console.log('[SERVER_ERROR]', err.message);
+    process.exit(1);
+  });
+
+  process.on('SIGTERM', () => {
+    console.log('[SHUTDOWN] Received SIGTERM, shutting down gracefully...');
+    server.close(() => {
+      console.log('[SHUTDOWN] Server closed');
+      process.exit(0);
+    });
+  });
+}
+
+module.exports = app;
