@@ -2,13 +2,20 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 
+const yelp = require('./lib/yelp');
+const { getWebsiteSignals } = require('./lib/websiteSignals');
+const { checkAiVisibility } = require('./lib/aiMentions');
+const scoring = require('./lib/scoring');
+
 app.use(express.json());
 
-// Get API key from environment
+// Get API keys from environment
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
+const YELP_API_KEY = process.env.YELP_API_KEY;
 
 console.log('[STARTUP] Initializing AI Agents API...');
 console.log('[STARTUP] CLAUDE_API_KEY present:', !!CLAUDE_API_KEY);
+console.log('[STARTUP] YELP_API_KEY present:', !!YELP_API_KEY);
 console.log('[STARTUP] NODE_ENV:', process.env.NODE_ENV);
 
 const AGENT_SYSTEM_PROMPTS = {
@@ -49,17 +56,21 @@ app.get('/health', (req, res) => {
     status: 'ok',
     agents: Object.keys(AGENT_SYSTEM_PROMPTS),
     apiKeyPresent: !!CLAUDE_API_KEY,
+    yelpApiKeyPresent: !!YELP_API_KEY,
     timestamp: new Date().toISOString()
   });
 });
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'AI Agents API is running',
     availableAgents: Object.keys(AGENT_SYSTEM_PROMPTS),
     endpoint: '/agent',
     method: 'POST',
+    visibilityReportEndpoint: '/visibility-report',
+    visibilityReportMethod: 'POST',
+    visibilityReportBody: { name: 'string', city: 'string', website: 'string (optional)' },
     healthCheck: '/health'
   });
 });
@@ -142,35 +153,119 @@ app.post('/agent', async (req, res) => {
   }
 });
 
+// AI Visibility Report endpoint — real business profile data via the Yelp Fusion API
+// (free tier, no billing required), a live website scrape for schema/mobile signals,
+// and real Claude queries to check whether an AI answer engine actually mentions the
+// business. Yelp doesn't expose a business's own website, so pass one in if you have
+// it (you will, doing outreach) — otherwise the report treats the business as having
+// no website on file.
+app.post('/visibility-report', async (req, res) => {
+  const { name, city, website } = req.body || {};
+
+  if (!name || !city) {
+    return res.status(400).json({ error: 'Missing required fields: name and city' });
+  }
+  if (!YELP_API_KEY) {
+    return res.status(500).json({ error: 'YELP_API_KEY environment variable not set' });
+  }
+  if (!CLAUDE_API_KEY) {
+    return res.status(500).json({ error: 'CLAUDE_API_KEY environment variable not set' });
+  }
+
+  try {
+    console.log(`[VISIBILITY] Looking up "${name}" in "${city}"`);
+    const candidate = await yelp.findBusiness(YELP_API_KEY, name, city);
+    if (!candidate) {
+      return res.status(404).json({ error: `No business listing found for "${name}" in "${city}"` });
+    }
+
+    const details = await yelp.getBusinessDetails(YELP_API_KEY, candidate.id);
+    const category = yelp.primaryCategory(details.categories);
+    const siteUrl = website || null;
+
+    const [websiteSignals, aiQueries, competitors] = await Promise.all([
+      getWebsiteSignals(siteUrl),
+      checkAiVisibility(CLAUDE_API_KEY, details.name, category, city),
+      details.coordinates
+        ? yelp.nearbyCompetitors(YELP_API_KEY, details.coordinates.latitude, details.coordinates.longitude, category, details.id)
+        : Promise.resolve([])
+    ]);
+
+    const photoCount = (details.photos || []).length;
+
+    const business = {
+      name: details.name,
+      category,
+      city,
+      address: (details.location?.display_address || []).join(', ') || null,
+      phone: details.display_phone || details.phone || null,
+      website: siteUrl,
+      rating: details.rating || 0,
+      reviewCount: details.review_count || 0,
+      photoCount,
+      categoryCount: (details.categories || []).length,
+      hasPhone: !!(details.display_phone || details.phone),
+      hasMenu: websiteSignals.hasMenuMention,
+      hasServicesList: websiteSignals.hasServicesMention,
+      hasSchema: websiteSignals.hasSchema,
+      mobileFriendly: websiteSignals.mobileFriendly,
+      isHttps: websiteSignals.isHttps,
+      websiteReachable: websiteSignals.reachable,
+      yelpUrl: details.url || null,
+      aiQueries: aiQueries.map(({ query, mentioned, note }) => ({ query, mentioned, note }))
+    };
+
+    const scores = scoring.computeScores(business);
+    const recommendations = scoring.getRecommendations(business);
+
+    res.json({
+      success: true,
+      business,
+      scores,
+      recommendations,
+      competitors,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.log(`[VISIBILITY_ERROR] ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.log('[MIDDLEWARE_ERROR]', err.message);
   res.status(500).json({ error: 'Internal server error' });
 });
 
-// Start server
-const PORT = process.env.PORT || 3000;
+// Start a standalone server only when this file is run directly (`node index.js`).
+// When required as a module — e.g. by netlify/functions/api.js — Netlify handles
+// invoking the exported Express app per-request instead, and app.listen() would
+// just throw with EADDRINUSE / block the function runtime for nothing.
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
 
-const server = app.listen(PORT, () => {
-  console.log(`\n✅ AI Agents API started successfully!`);
-  console.log(`📍 Server running on port ${PORT}`);
-  console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
-  console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
-  console.log(`\n📡 Ready to accept requests at http://localhost:${PORT}`);
-  console.log(`✔️  Health check: http://localhost:${PORT}/health\n`);
-});
-
-// Handle server errors
-server.on('error', (err) => {
-  console.log('[SERVER_ERROR]', err.message);
-  process.exit(1);
-});
-
-// Graceful shutdown
-process.on('SIGTERM', () => {
-  console.log('[SHUTDOWN] Received SIGTERM, shutting down gracefully...');
-  server.close(() => {
-    console.log('[SHUTDOWN] Server closed');
-    process.exit(0);
+  const server = app.listen(PORT, () => {
+    console.log(`\n✅ AI Agents API started successfully!`);
+    console.log(`📍 Server running on port ${PORT}`);
+    console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
+    console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
+    console.log(`\n📡 Ready to accept requests at http://localhost:${PORT}`);
+    console.log(`✔️  Health check: http://localhost:${PORT}/health\n`);
   });
-});
+
+  server.on('error', (err) => {
+    console.log('[SERVER_ERROR]', err.message);
+    process.exit(1);
+  });
+
+  process.on('SIGTERM', () => {
+    console.log('[SHUTDOWN] Received SIGTERM, shutting down gracefully...');
+    server.close(() => {
+      console.log('[SHUTDOWN] Server closed');
+      process.exit(0);
+    });
+  });
+}
+
+module.exports = app;
