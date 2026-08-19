@@ -1,5 +1,4 @@
 [build]
-  base = "landing-page"
   publish = "landing-page"
 
 [[headers]]
