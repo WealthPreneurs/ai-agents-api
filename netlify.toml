@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  base = "landing-page"
+  publish = "landing-page"
 
 [[headers]]
   for = "/*"
