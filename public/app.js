@@ -141,10 +141,31 @@
     window.scrollTo(0, 0);
   });
 
+  function setBusy(btn, busy, label) {
+    btn.disabled = busy;
+    btn.textContent = busy ? 'Sending…' : label;
+  }
+
   document.getElementById('sellSubmit').addEventListener('click', function () {
-    state.thanks = 'seller';
-    state.ref = makeRef('MH');
-    go('thanks');
+    var btn = this;
+    setBusy(btn, true, 'Send my home to the network');
+    var payload = Object.assign({}, state.f, { photos: state.photoNames.join(', ') });
+    fetch('/.netlify/functions/submit-seller', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) { if (!res.ok) throw new Error('submit failed'); })
+      .then(function () {
+        state.thanks = 'seller';
+        state.ref = makeRef('MH');
+        go('thanks');
+      })
+      .catch(function () {
+        state.err = 'Something went wrong sending your submission. Please try again in a moment.';
+        renderSell();
+      })
+      .finally(function () { setBusy(btn, false, 'Send my home to the network'); });
   });
 
   document.getElementById('buySubmit').addEventListener('click', function () {
@@ -155,9 +176,24 @@
       renderBuy();
       return;
     }
-    state.thanks = 'buyer';
-    state.ref = makeRef('BP');
-    go('thanks');
+    var btn = this;
+    setBusy(btn, true, 'Save my buyer profile');
+    fetch('/.netlify/functions/submit-buyer', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(b)
+    })
+      .then(function (res) { if (!res.ok) throw new Error('submit failed'); })
+      .then(function () {
+        state.thanks = 'buyer';
+        state.ref = makeRef('BP');
+        go('thanks');
+      })
+      .catch(function () {
+        state.buyerErr = 'Something went wrong saving your profile. Please try again in a moment.';
+        renderBuy();
+      })
+      .finally(function () { setBusy(btn, false, 'Save my buyer profile'); });
   });
 
   function renderSell() {
