@@ -34,7 +34,7 @@ exports.handler = async (event) => {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  const apiKey = process.env.JOTFORM_API_KEY;
+  const apiKey = (process.env.JOTFORM_API_KEY || '').trim();
   if (!apiKey) {
     return { statusCode: 500, body: JSON.stringify({ error: 'JOTFORM_API_KEY is not configured' }) };
   }
