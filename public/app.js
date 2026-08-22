@@ -155,13 +155,16 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
-      .then(function (res) { if (!res.ok) throw new Error('submit failed'); })
+      .then(function (res) {
+        if (!res.ok) return res.text().then(function (t) { throw new Error(t || res.status); });
+      })
       .then(function () {
         state.thanks = 'seller';
         state.ref = makeRef('MH');
         go('thanks');
       })
-      .catch(function () {
+      .catch(function (e) {
+        console.error('Seller submit failed:', e.message);
         state.err = 'Something went wrong sending your submission. Please try again in a moment.';
         renderSell();
       })
@@ -183,13 +186,16 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(b)
     })
-      .then(function (res) { if (!res.ok) throw new Error('submit failed'); })
+      .then(function (res) {
+        if (!res.ok) return res.text().then(function (t) { throw new Error(t || res.status); });
+      })
       .then(function () {
         state.thanks = 'buyer';
         state.ref = makeRef('BP');
         go('thanks');
       })
-      .catch(function () {
+      .catch(function (e) {
+        console.error('Buyer submit failed:', e.message);
         state.buyerErr = 'Something went wrong saving your profile. Please try again in a moment.';
         renderBuy();
       })

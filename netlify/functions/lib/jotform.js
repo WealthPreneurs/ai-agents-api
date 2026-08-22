@@ -6,6 +6,8 @@
 // question list at request time (cheap, cached per cold start) and match
 // each of our fields to a question by label text.
 
+const fetch = require('node-fetch');
+
 const JOTFORM_API = 'https://api.jotform.com';
 const cache = new Map(); // formId -> { questions, fetchedAt }
 const CACHE_MS = 5 * 60 * 1000;
