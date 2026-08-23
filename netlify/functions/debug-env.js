@@ -12,7 +12,11 @@ exports.handler = async () => {
       JOTFORM_API_KEY_present: key.length > 0,
       JOTFORM_API_KEY_length: key.length,
       jotform_env_var_names_visible: jotformVars,
-      deploy_context: process.env.CONTEXT || 'unknown'
+      deploy_context: process.env.CONTEXT || 'unknown',
+      is_netlify_runtime: process.env.NETLIFY || 'unknown',
+      site_name: process.env.SITE_NAME || 'unknown',
+      deploy_id: process.env.DEPLOY_ID || 'unknown',
+      total_env_var_count: Object.keys(process.env).length
     })
   };
 };
