@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nelsons Property Group — Mobile Home Sellers &amp; Buyers</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <button class="brand" data-go="home">
+      Nelsons Property Group
+      <span class="brand-sub">Mobile Home Sellers &amp; Buyers</span>
+    </button>
+    <nav class="main-nav">
+      <button class="nav-link" data-go="listings">Homes</button>
+      <button class="nav-link" data-go="how">How it works</button>
+      <button class="nav-link" data-go="about">About</button>
+      <button class="nav-link btn btn-ghost" data-go="buy">Buyer profile</button>
+      <button class="nav-link btn btn-primary" data-go="sell">Submit my home</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<main data-route="home" class="wrap" style="padding-top: var(--space-8);">
+  <section class="hero-section" style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: var(--space-8); align-items: start; padding-bottom: var(--space-8);">
+    <div>
+      <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 var(--space-4); font-variant-numeric: tabular-nums;">Est. 2019 · Family owned</p>
+      <h1 style="font-family: var(--font-heading); font-weight: 400; font-size: 60px; line-height: 1.06; margin: 0 0 var(--space-4);">Tell us about your mobile home. We&rsquo;ll take it from there.</h1>
+      <p style="font-size: 17px; line-height: 1.7; text-align: justify; color: var(--color-neutral-800); margin: 0 0 var(--space-6); max-width: 46ch;">Answer a handful of questions at your own pace, one at a time, nothing complicated, no obligation. We review every home ourselves and hand your details to the buying partners in our network who actually work your area. If it isn&rsquo;t a fit, we&rsquo;ll tell you plainly.</p>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+        <button class="btn btn-primary" style="font-size: 15px;" data-go="sell">I&rsquo;m selling a home</button>
+        <button class="btn btn-secondary" style="font-size: 15px;" data-go="buy">I&rsquo;m looking to buy</button>
+      </div>
+      <p style="font-size: 13px; color: var(--color-neutral-600); margin: var(--space-4) 0 0;">Takes about four minutes. No fees, no listing agreement.</p>
+    </div>
+    <div class="plate">
+      <img src="assets/hero.webp" alt="A mobile home">
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <section style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-bottom: 1px solid var(--color-divider);">
+    <div style="padding: var(--space-8) var(--space-6) var(--space-8) 0; border-right: 1px solid var(--color-divider);">
+      <p style="font-family: var(--font-heading); font-size: 40px; font-weight: 400; margin: 0; font-variant-numeric: tabular-nums;">48 hrs</p>
+      <p style="font-size: 14px; line-height: 1.6; color: var(--color-neutral-700); margin: var(--space-2) 0 0;">Typical time from submission to a partner reaching out.</p>
+    </div>
+    <div style="padding: var(--space-8) var(--space-6); border-right: 1px solid var(--color-divider);">
+      <p style="font-family: var(--font-heading); font-size: 40px; font-weight: 400; margin: 0; font-variant-numeric: tabular-nums;">140+</p>
+      <p style="font-size: 14px; line-height: 1.6; color: var(--color-neutral-700); margin: var(--space-2) 0 0;">Vetted buyers and park operators in the network.</p>
+    </div>
+    <div style="padding: var(--space-8) 0 var(--space-8) var(--space-6);">
+      <p style="font-family: var(--font-heading); font-size: 40px; font-weight: 400; margin: 0; font-variant-numeric: tabular-nums;">$0</p>
+      <p style="font-size: 14px; line-height: 1.6; color: var(--color-neutral-700); margin: var(--space-2) 0 0;">What it costs a seller to submit a home to us.</p>
+    </div>
+  </section>
+
+  <section style="padding: var(--space-8) 0;">
+    <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 34px; margin: 0 0 var(--space-6);">Two ways in</h2>
+    <div class="grid-2">
+      <div class="card">
+        <p class="card-kicker">For sellers</p>
+        <h3 class="card-title">Submit your home</h3>
+        <p class="card-body" style="text-align: justify;">Name, address, year, condition, your timeline and what you hope to get. We ask one question at a time and you can stop and come back. Photos help but aren&rsquo;t required.</p>
+        <div style="margin-top: var(--space-4);">
+          <button class="btn btn-primary" style="font-size: 14px;" data-go="sell">Start (12 questions)</button>
+        </div>
+      </div>
+      <div class="card">
+        <p class="card-kicker">For buyers</p>
+        <h3 class="card-title">Create a buyer profile</h3>
+        <p class="card-body" style="text-align: justify;">Tell us your budget, the counties you cover, whether you want land or a park lot, and how you pay. We only send you homes that match what you told us.</p>
+        <div style="margin-top: var(--space-4);">
+          <button class="btn btn-primary" style="font-size: 14px;" data-go="buy">Build my profile</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- SELLER WIZARD -->
+<main data-route="sell" class="wrap" style="max-width: 720px; padding-top: var(--space-8); padding-bottom: var(--space-8);">
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-2);">
+    <p style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin: 0; font-variant-numeric: tabular-nums;">Step <span id="stepNum"></span> of 12 · <span id="stepLabel"></span></p>
+    <p style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-700); margin: 0; font-variant-numeric: tabular-nums;"><span id="pctLabel"></span> complete</p>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="pctWidth"></div></div>
+
+  <div data-step="name">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">First, who are we speaking with?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Your name stays with us and the partner we match you to. Nothing is published.</p>
+    <div class="grid-2">
+      <div class="field"><label for="fn">First name</label><input id="fn" class="input" data-field="firstName" placeholder="Jane"></div>
+      <div class="field"><label for="ln">Last name</label><input id="ln" class="input" data-field="lastName" placeholder="Whitfield"></div>
+    </div>
+  </div>
+
+  <div data-step="contact">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">How should we reach you, <span id="firstNameOrYou"></span>?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">A real person will follow up. We never sell your contact information.</p>
+    <div class="grid-2">
+      <div class="field"><label for="ph">Phone</label><input id="ph" class="input" data-field="phone" placeholder="(555) 214-0098"></div>
+      <div class="field"><label for="em">Email</label><input id="em" class="input" data-field="email" placeholder="jane@example.com"></div>
+    </div>
+  </div>
+
+  <div data-step="address">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">Where is the mobile home?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Street address, or the park name and lot number if that&rsquo;s easier.</p>
+    <div class="field" style="margin-bottom: var(--space-4);"><label for="ad">Street address or park &amp; lot</label><input id="ad" class="input" data-field="address" placeholder="1420 Cottonwood Ln, Lot 12"></div>
+    <div class="grid-3">
+      <div class="field"><label for="ct">City</label><input id="ct" class="input" data-field="city"></div>
+      <div class="field"><label for="st">State</label><input id="st" class="input" data-field="state"></div>
+      <div class="field"><label for="zp">ZIP</label><input id="zp" class="input" data-field="zip"></div>
+    </div>
+  </div>
+
+  <div data-step="year">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">What year is it, and how big?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">A close estimate is fine. Year and size drive most of what a buyer can offer.</p>
+    <div class="grid-2" style="margin-bottom: var(--space-4);">
+      <div class="field"><label for="yr">Year built</label><input id="yr" class="input" data-field="year" placeholder="1998"></div>
+      <div class="field"><label for="sf">Square footage</label><input id="sf" class="input" data-field="sqft" placeholder="1120"></div>
+    </div>
+    <div class="grid-2">
+      <div class="field"><label for="bd">Bedrooms</label>
+        <select id="bd" class="input" data-field="beds">
+          <option value="">Select</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5+">5 or more</option>
+        </select>
+      </div>
+      <div class="field"><label for="ba">Bathrooms</label>
+        <select id="ba" class="input" data-field="baths">
+          <option value="">Select</option><option value="1">1</option><option value="1.5">1.5</option><option value="2">2</option><option value="2.5">2.5</option><option value="3+">3 or more</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div data-step="lot">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">Does the home sit on your own land?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Owned land and leased lots go to different buyers, so this one matters.</p>
+    <div class="field" style="margin-bottom: var(--space-4);"><label for="lt">Land</label>
+      <select id="lt" class="input" data-field="landType">
+        <option value="">Select one</option>
+        <option value="Owned land">I own the land it sits on</option>
+        <option value="Leased lot in a park">It&rsquo;s on a leased lot in a park</option>
+        <option value="Leased lot, private landlord">Leased lot from a private landlord</option>
+        <option value="Not sure">I&rsquo;m not sure</option>
+      </select>
+    </div>
+    <div id="lotRentRow" class="grid-2" style="display:none;">
+      <div class="field"><label for="lr">Monthly lot rent</label><input id="lr" class="input" data-field="lotRent" placeholder="$525"></div>
+      <div class="field"><label for="pk">Park name (optional)</label><input id="pk" class="input" data-field="park"></div>
+    </div>
+  </div>
+
+  <div data-step="condition">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">How would you describe its condition?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Be honest. Rough homes still sell here. Surprises later are what slow a deal down.</p>
+    <div class="field" style="margin-bottom: var(--space-4);"><label for="cd">Condition</label>
+      <select id="cd" class="input" data-field="condition">
+        <option value="">Select one</option>
+        <option value="Move-in ready">Move-in ready, nothing needed</option>
+        <option value="Good, minor work">Good, cosmetic or minor repairs</option>
+        <option value="Needs work">Needs work: roof, floors, systems</option>
+        <option value="Major rehab">Major rehab: significant damage</option>
+      </select>
+    </div>
+    <div class="field"><label for="cn">Anything a buyer should know? (optional)</label>
+      <textarea id="cn" class="input" rows="3" data-field="conditionNotes" placeholder="New roof in 2021, soft spot in the back bedroom floor&hellip;"></textarea>
+    </div>
+  </div>
+
+  <div data-step="liens">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">Any liens or back taxes on the home?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Very common, and not a dealbreaker. Our partners handle payoffs at closing all the time.</p>
+    <div class="field" style="margin-bottom: var(--space-4);"><label for="ln2">Liens, loans or back taxes</label>
+      <select id="ln2" class="input" data-field="liens">
+        <option value="">Select one</option>
+        <option value="None, owned free and clear">None, owned free and clear</option>
+        <option value="Loan still on it">There&rsquo;s still a loan on it</option>
+        <option value="Back taxes owed">Back taxes owed</option>
+        <option value="Both loan and back taxes">Both a loan and back taxes</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+    </div>
+    <div class="field"><label for="lo">Approximate amount owed (optional)</label><input id="lo" class="input" data-field="owed" placeholder="$8,400"></div>
+  </div>
+
+  <div data-step="timeline">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">What&rsquo;s your timeline for selling?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">There&rsquo;s no wrong answer. We match urgency to the right kind of buyer.</p>
+    <div class="field"><label for="tl">Timeline</label>
+      <select id="tl" class="input" data-field="timeline">
+        <option value="">Select one</option>
+        <option value="Immediately">As soon as possible</option>
+        <option value="30 days">Within 30 days</option>
+        <option value="60–90 days">Within 60 to 90 days</option>
+        <option value="3–6 months">Three to six months</option>
+        <option value="Just exploring">Just exploring for now</option>
+      </select>
+    </div>
+  </div>
+
+  <div data-step="price">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">What are you hoping to get for it?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Your number, not a commitment. It tells us which buyers to even bother calling.</p>
+    <div class="field" style="max-width: 300px;"><label for="pr">Desired asking price</label><input id="pr" class="input" data-field="price" placeholder="$42,000"></div>
+    <div id="estimateBoxPrice" class="callout" style="margin-top: var(--space-6); display:none;">
+      <p class="callout-label">Early read</p>
+      <p class="callout-value" id="estimateRangePrice"></p>
+      <p class="callout-note" id="estimateNotePrice"></p>
+    </div>
+  </div>
+
+  <div data-step="motivation">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">What&rsquo;s behind the decision to sell?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">This is the part that helps us most. Life circumstances shape what a good outcome looks like.</p>
+    <div class="field" style="margin-bottom: var(--space-4);"><label for="mv">Reason for selling</label>
+      <select id="mv" class="input" data-field="motivation">
+        <option value="">Select one</option>
+        <option value="Relocating">Relocating or moving in with family</option>
+        <option value="Inherited the home">Inherited the home</option>
+        <option value="Financial pressure">Financial pressure or behind on payments</option>
+        <option value="Can't keep up with repairs">Can&rsquo;t keep up with repairs</option>
+        <option value="Divorce or separation">Divorce or separation</option>
+        <option value="Tired landlord">Tired of renting it out</option>
+        <option value="Upgrading">Buying something else</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="field"><label for="mn">Anything you&rsquo;d like to add? (optional)</label>
+      <textarea id="mn" class="input" rows="3" data-field="motivationNotes" placeholder="Mom passed last spring and none of us live nearby&hellip;"></textarea>
+    </div>
+  </div>
+
+  <div data-step="photos">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">Add a few photos, if you have them</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Optional, but homes with photos get a response roughly twice as fast. Phone pictures are perfect: outside, kitchen, bathroom, any damage.</p>
+    <label for="ph2" class="upload-box">
+      <span class="upload-title">Choose photos</span>
+      <span class="upload-hint">JPG or PNG · up to 12 files</span>
+      <input id="ph2" type="file" multiple accept="image/*" style="display:none;">
+    </label>
+    <ul id="photoList" style="list-style: none; padding: 0; margin: var(--space-4) 0 0; display: flex; flex-direction: column; gap: var(--space-2);"></ul>
+  </div>
+
+  <div data-step="review">
+    <h2 style="font-size: 38px; line-height: 1.15; margin: 0 0 var(--space-3);">Here&rsquo;s what we have. Look right?</h2>
+    <p style="font-size: 15px; color: var(--color-neutral-700); line-height: 1.7; margin: 0 0 var(--space-6);">Step back to change anything. Once you send it, a person reads it, not a robot.</p>
+    <table class="table" style="width: 100%; margin-bottom: var(--space-6);">
+      <tbody id="summaryTable"></tbody>
+    </table>
+    <div id="estimateBoxReview" class="callout" style="margin-bottom: var(--space-6); display:none;">
+      <p class="callout-label">Early read</p>
+      <p class="callout-value" id="estimateRangeReview"></p>
+    </div>
+  </div>
+
+  <p id="sellErr" class="error-note" style="display:none;"></p>
+
+  <div class="wizard-footer">
+    <button class="btn btn-ghost" style="font-size: 14px;" id="sellBack">Back</button>
+    <div class="spacer"></div>
+    <button class="btn btn-primary" style="font-size: 15px;" id="sellNext">Continue</button>
+    <button class="btn btn-primary" style="font-size: 15px; display:none;" id="sellSubmit">Send my home to the network</button>
+  </div>
+</main>
+
+<!-- BUYER PROFILE -->
+<main data-route="buy" class="wrap" style="max-width: 900px; padding-top: var(--space-8); padding-bottom: var(--space-8);">
+  <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 var(--space-3);">Buyer profile</p>
+  <h1 style="font-size: 48px; line-height: 1.1; margin: 0 0 var(--space-4);">Tell us what you&rsquo;re actually looking for</h1>
+  <p style="font-size: 16px; line-height: 1.75; text-align: justify; color: var(--color-neutral-800); max-width: 62ch; margin: 0 0 var(--space-6);">The tighter your criteria, the fewer wasted calls for both of us. We send homes only to the buyers whose profile fits them, usually the same day a seller submits.</p>
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: var(--space-2);">
+    <p style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-600); margin: 0;">Profile completeness</p>
+    <p style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-700); margin: 0; font-variant-numeric: tabular-nums;"><span id="buyerPctLabel"></span></p>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="buyerPctWidth"></div></div>
+
+  <section style="margin-bottom: var(--space-8);">
+    <h2 style="font-size: 20px; letter-spacing: 0.02em; margin: 0 0 var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-divider);">Who you are</h2>
+    <div class="grid-2">
+      <div class="field"><label for="bfn">First name</label><input id="bfn" class="input" data-bfield="firstName"></div>
+      <div class="field"><label for="bln">Last name</label><input id="bln" class="input" data-bfield="lastName"></div>
+      <div class="field"><label for="bem">Email</label><input id="bem" class="input" data-bfield="email"></div>
+      <div class="field"><label for="bph">Phone</label><input id="bph" class="input" data-bfield="phone"></div>
+      <div class="field"><label for="bty">Buying as</label>
+        <select id="bty" class="input" data-bfield="buyerType">
+          <option value="">Select one</option>
+          <option value="Investor">Investor</option>
+          <option value="Owner-occupant">Owner-occupant, I&rsquo;ll live in it</option>
+          <option value="Park operator">Park operator</option>
+          <option value="Dealer / retailer">Dealer or retailer</option>
+        </select>
+      </div>
+      <div class="field"><label for="bco">Company (optional)</label><input id="bco" class="input" data-bfield="company"></div>
+    </div>
+  </section>
+
+  <section style="margin-bottom: var(--space-8);">
+    <h2 style="font-size: 20px; letter-spacing: 0.02em; margin: 0 0 var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-divider);">Budget and payment</h2>
+    <div class="grid-2">
+      <div class="field"><label for="bmin">Budget, low end</label><input id="bmin" class="input" data-bfield="budgetMin" placeholder="$15,000"></div>
+      <div class="field"><label for="bmax">Budget, high end</label><input id="bmax" class="input" data-bfield="budgetMax" placeholder="$75,000"></div>
+      <div class="field"><label for="bpay">Cash or financing</label>
+        <select id="bpay" class="input" data-bfield="payment">
+          <option value="">Select one</option>
+          <option value="All cash">All cash</option>
+          <option value="Financing">Financing / lender</option>
+          <option value="Either">Either, depends on the deal</option>
+        </select>
+      </div>
+      <div class="field"><label for="bpf">Proof of funds</label>
+        <select id="bpf" class="input" data-bfield="proof">
+          <option value="">Select one</option>
+          <option value="Ready to send">Ready to send on request</option>
+          <option value="Pre-approval letter">Lender pre-approval letter</option>
+          <option value="Can get within a week">Can get it within a week</option>
+          <option value="Not yet">Not yet</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom: var(--space-8);">
+    <h2 style="font-size: 20px; letter-spacing: 0.02em; margin: 0 0 var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-divider);">What you&rsquo;ll take</h2>
+    <div class="field" style="margin-bottom: var(--space-4);"><label for="bar">Counties or cities you cover</label><input id="bar" class="input" data-bfield="areas" placeholder="Tarrant, Johnson and Parker counties"></div>
+    <div class="grid-2">
+      <div class="field"><label for="bbd">Bedrooms, minimum</label>
+        <select id="bbd" class="input" data-bfield="beds">
+          <option value="">No preference</option><option value="2+">2 or more</option><option value="3+">3 or more</option><option value="4+">4 or more</option>
+        </select>
+      </div>
+      <div class="field"><label for="bba">Bathrooms, minimum</label>
+        <select id="bba" class="input" data-bfield="baths">
+          <option value="">No preference</option><option value="1+">1 or more</option><option value="2+">2 or more</option>
+        </select>
+      </div>
+      <div class="field"><label for="bld">Land or park lot</label>
+        <select id="bld" class="input" data-bfield="landPref">
+          <option value="">Either</option>
+          <option value="Land included only">Land included only</option>
+          <option value="Park lot only">Park lot only</option>
+        </select>
+      </div>
+      <div class="field"><label for="bcd">Condition you&rsquo;ll take</label>
+        <select id="bcd" class="input" data-bfield="condition">
+          <option value="">Select one</option>
+          <option value="Move-in ready only">Move-in ready only</option>
+          <option value="Light cosmetic work">Light cosmetic work is fine</option>
+          <option value="Full rehab welcome">Full rehab welcome</option>
+          <option value="Anything, including salvage">Anything, including salvage</option>
+        </select>
+      </div>
+      <div class="field"><label for="btl">How soon can you close</label>
+        <select id="btl" class="input" data-bfield="timeline">
+          <option value="">Select one</option>
+          <option value="Within 2 weeks">Within two weeks</option>
+          <option value="Within 30 days">Within 30 days</option>
+          <option value="30–60 days">30 to 60 days</option>
+          <option value="Flexible">Flexible</option>
+        </select>
+      </div>
+      <div class="field"><label for="bvol">Homes per month you want</label>
+        <select id="bvol" class="input" data-bfield="volume">
+          <option value="">Select one</option><option value="1">Just one, the right one</option><option value="2–3">Two or three</option><option value="4+">Four or more</option>
+        </select>
+      </div>
+    </div>
+    <div class="field" style="margin-top: var(--space-4);"><label for="bno">Anything you won&rsquo;t touch? (optional)</label>
+      <textarea id="bno" class="input" rows="3" data-bfield="notes" placeholder="No pre-1976 homes, no flood-damaged units, no parks with move-out restrictions&hellip;"></textarea>
+    </div>
+  </section>
+
+  <p id="buyErr" class="error-note" style="display:none; margin: 0 0 var(--space-4); border-left: 2px solid var(--color-accent-600); padding-left: var(--space-3);"></p>
+
+  <div style="display: flex; align-items: center; gap: var(--space-3); padding-top: var(--space-6); border-top: 1px solid var(--color-divider);">
+    <button class="btn btn-ghost" style="font-size: 14px;" data-go="home">Cancel</button>
+    <div style="flex: 1;"></div>
+    <button class="btn btn-primary" style="font-size: 15px;" id="buySubmit">Save my buyer profile</button>
+  </div>
+</main>
+
+<!-- LISTINGS -->
+<main data-route="listings" class="wrap" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
+  <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 var(--space-3);">Currently in the network</p>
+  <h1 style="font-size: 48px; line-height: 1.1; margin: 0 0 var(--space-4);">Homes we&rsquo;re working right now</h1>
+  <p style="font-size: 16px; line-height: 1.75; color: var(--color-neutral-800); max-width: 58ch; margin: 0 0 var(--space-8);">Addresses and seller details go only to buyers with a profile on file. Create one and we&rsquo;ll send the full packet on anything that matches.</p>
+
+  <div style="border-top: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); padding: var(--space-8) 0; text-align: center;">
+    <p style="font-family: var(--font-heading); font-size: 30px; font-weight: 400; margin: 0 0 var(--space-3);">Nothing published at the moment</p>
+    <p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-700); margin: 0 auto var(--space-6); max-width: 46ch;">Homes move quickly and most never make it to a public page. Put a profile on file and we&rsquo;ll send you what matches as it comes in.</p>
+    <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
+      <button class="btn btn-primary" style="font-size: 14px;" data-go="buy">Create a buyer profile</button>
+      <button class="btn btn-ghost" style="font-size: 14px;" data-go="sell">I&rsquo;m selling instead</button>
+    </div>
+  </div>
+</main>
+
+<!-- HOW IT WORKS -->
+<main data-route="how" class="wrap" style="max-width: 1000px; padding-top: var(--space-8); padding-bottom: var(--space-8);">
+  <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 var(--space-3);">How it works</p>
+  <h1 style="font-size: 48px; line-height: 1.1; margin: 0 0 var(--space-8);">Plain steps, no surprises</h1>
+
+  <h2 style="font-size: 22px; margin: 0 0 var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-divider);">If you&rsquo;re selling</h2>
+  <ol style="list-style: none; padding: 0; margin: 0 0 var(--space-8); display: grid; gap: var(--space-6);">
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">01</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">Answer twelve questions</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">One at a time, about four minutes. Nothing is public and there&rsquo;s no listing agreement to sign.</p></div>
+    </li>
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">02</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">We read it ourselves</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">Usually the same day. If something is unclear we call and ask rather than guess.</p></div>
+    </li>
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">03</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">Your details go to matching buyers</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">Only buyers whose profile fits your home: area, budget, condition and lot type. We are a referral service, not the buyer, and we tell you who we sent it to.</p></div>
+    </li>
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">04</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">You talk terms directly</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">Offers, inspections and closing happen between you and the buyer. You owe us nothing either way.</p></div>
+    </li>
+  </ol>
+
+  <h2 style="font-size: 22px; margin: 0 0 var(--space-4); padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-divider);">If you&rsquo;re buying</h2>
+  <ol style="list-style: none; padding: 0; margin: 0 0 var(--space-8); display: grid; gap: var(--space-6);">
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">01</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">Build a profile</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">Budget, counties, lot type, condition tolerance and how you pay.</p></div>
+    </li>
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">02</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">Get matched homes only</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">No mass blasts. If it doesn&rsquo;t fit your criteria you don&rsquo;t hear from us.</p></div>
+    </li>
+    <li style="display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); align-items: start;">
+      <span style="font-family: var(--font-heading); font-size: 34px; color: var(--color-accent); font-variant-numeric: tabular-nums;">03</span>
+      <div><h3 style="font-size: 19px; margin: 0 0 var(--space-2);">Move fast when it fits</h3><p style="font-size: 15px; line-height: 1.75; color: var(--color-neutral-800); margin: 0; text-align: justify;">Full packet with photos, condition notes, lot terms and the seller&rsquo;s timeline, so you can decide the same day.</p></div>
+    </li>
+  </ol>
+
+  <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+    <button class="btn btn-primary" style="font-size: 15px;" data-go="sell">Submit my home</button>
+    <button class="btn btn-secondary" style="font-size: 15px;" data-go="buy">Create a buyer profile</button>
+  </div>
+</main>
+
+<!-- ABOUT -->
+<main data-route="about" class="wrap" style="max-width: 1000px; padding-top: var(--space-8); padding-bottom: var(--space-8);">
+  <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 var(--space-3);">About</p>
+  <h1 style="font-size: 48px; line-height: 1.1; margin: 0 0 var(--space-6);">Nelsons Property Group LLC</h1>
+  <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: var(--space-8); align-items: start;">
+    <div style="column-count: 2; column-gap: var(--space-6); font-size: 15px; line-height: 1.8; text-align: justify; color: var(--color-neutral-800);">
+      <p style="margin: 0 0 var(--space-4);">We&rsquo;re a small family business working the manufactured housing market across multiple markets. Most of the sellers who call us don&rsquo;t want a sign in the yard or a six month listing. They want somebody to look at what they&rsquo;ve got, tell them straight what it&rsquo;s likely worth, and say who might actually buy it.</p>
+      <p style="margin: 0 0 var(--space-4);">We&rsquo;re not the buyer. We don&rsquo;t charge sellers a thing and we don&rsquo;t post your home on a public page. What we do is read every submission ourselves and get it in front of the few people in our network who work your area and buy homes in the shape yours is in.</p>
+      <p style="margin: 0;">If we can&rsquo;t help, we&rsquo;ll say so. Some homes just aren&rsquo;t what anybody in our network is buying right now, and hearing that in a day beats sitting on a list for a month. When we can, we&rsquo;ll point you toward someone who can help.</p>
+    </div>
+    <div class="card">
+      <p class="card-kicker">Get in touch</p>
+      <h3 class="card-title">Talk to a person</h3>
+      <p class="card-body" style="margin-bottom: var(--space-4);">Weekdays, 8am to 6pm. Leave a message after hours and we call back the next morning.</p>
+      <div class="hr" style="margin: var(--space-4) 0;"></div>
+      <p style="font-size: 15px; margin: 0 0 var(--space-2); font-variant-numeric: tabular-nums;">984-244-1129</p>
+      <p style="font-size: 15px; margin: 0 0 var(--space-2);">davonnelson86@gmail.com</p>
+      <p style="font-size: 14px; color: var(--color-neutral-600); margin: 0;">Serving multiple markets.</p>
+    </div>
+  </div>
+</main>
+
+<!-- THANK YOU -->
+<main data-route="thanks" class="wrap" style="max-width: 720px; padding-top: 100px; padding-bottom: var(--space-8); text-align: center;">
+  <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 var(--space-4);" id="thanksKicker"></p>
+  <h1 style="font-size: 52px; line-height: 1.1; margin: 0 0 var(--space-4);" id="thanksTitle"></h1>
+  <p style="font-size: 17px; line-height: 1.8; color: var(--color-neutral-800); margin: 0 auto var(--space-8); max-width: 52ch;" id="thanksBody"></p>
+  <div style="border-top: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); padding: var(--space-6) 0; margin-bottom: var(--space-8);">
+    <p style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-600); margin: 0 0 var(--space-2);">Reference</p>
+    <p style="font-family: var(--font-heading); font-size: 28px; margin: 0; font-variant-numeric: tabular-nums;" id="refCode"></p>
+  </div>
+  <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
+    <button class="btn btn-secondary" style="font-size: 14px;" data-go="home">Back to home</button>
+    <button class="btn btn-ghost" style="font-size: 14px;" data-go="listings">See homes in the network</button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>Nelsons Property Group LLC &middot; A referral service, not a licensed broker or the buyer of record.</p>
+    <p>davonnelson86@gmail.com</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

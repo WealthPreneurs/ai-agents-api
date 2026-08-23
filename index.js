@@ -1,8 +1,10 @@
 const express = require('express');
+const path = require('path');
 const fetch = require('node-fetch');
 const app = express();
 
 app.use(express.json());
+app.use('/site', express.static(path.join(__dirname, 'public')));
 
 // Get API key from environment
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
