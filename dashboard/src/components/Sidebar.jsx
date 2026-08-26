@@ -26,6 +26,12 @@ export default function Sidebar({ current, setCurrent }) {
         >
           Memory Settings
         </button>
+        <button
+          className={current === 'team' ? 'active' : ''}
+          onClick={() => setCurrent('team')}
+        >
+          Your Team
+        </button>
       </nav>
       <button className="logout" onClick={handleLogout} disabled={loggingOut}>
         {loggingOut ? 'Logging out...' : 'Log out'}

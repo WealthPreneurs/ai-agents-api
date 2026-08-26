@@ -3,11 +3,13 @@ import { supabase } from './lib/supabaseClient'
 import Login from './pages/Login'
 import ApprovalQueue from './pages/ApprovalQueue'
 import MemorySettings from './pages/MemorySettings'
+import YourTeam from './pages/YourTeam'
 import Sidebar from './components/Sidebar'
 
 const PAGE_TITLES = {
   queue: 'Approval Queue',
   memory: 'Memory Settings',
+  team: 'Your Team',
 }
 
 export default function App() {
@@ -68,6 +70,7 @@ export default function App() {
         <div className="main">
           {page === 'queue' && <ApprovalQueue userId={userId} />}
           {page === 'memory' && <MemorySettings userId={userId} />}
+          {page === 'team' && <YourTeam />}
         </div>
       </div>
     </div>
