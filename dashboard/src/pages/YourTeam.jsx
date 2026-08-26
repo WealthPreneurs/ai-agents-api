@@ -1,25 +1,32 @@
 import { AGENTS } from '../data/agents'
 import AgentAvatar from '../components/AgentAvatar'
 
+const LIVE_WORKER_KEYS = ['social_media_manager']
+
 export default function YourTeam() {
-  const agents = Object.values(AGENTS)
+  const agents = Object.entries(AGENTS)
 
   return (
     <div>
       <h2>Your Team</h2>
       <p className="page-subtitle">
-        Meet the AI workers behind your drafts. Each one specializes in a
-        different part of running your business — approve, edit, or reject
-        their work from the Approval Queue.
+        Meet the full AI worker bench. Only Jordan is live today — drafting
+        the posts in your Approval Queue — the rest are shown here so you
+        know who's next as new workers come online.
       </p>
 
-      {agents.map((agent) => (
+      {agents.map(([workerKey, agent]) => {
+        const isLive = LIVE_WORKER_KEYS.includes(workerKey)
+        return (
         <div className="card agent-card" key={agent.id}>
           <AgentAvatar agent={agent} />
           <div className="agent-card-body">
             <div className="agent-card-header">
               <h3>{agent.name}</h3>
               <span className="agent-title">{agent.title}</span>
+              <span className={isLive ? 'agent-status live' : 'agent-status'}>
+                {isLive ? 'Live now' : 'Not yet deployed'}
+              </span>
             </div>
             <p className="agent-experience">{agent.experience} of experience</p>
             <p className="agent-bio">{agent.bio}</p>
@@ -40,7 +47,8 @@ export default function YourTeam() {
             </p>
           </div>
         </div>
-      ))}
+        )
+      })}
     </div>
   )
 }
