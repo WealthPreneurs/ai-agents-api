@@ -303,6 +303,83 @@ button:disabled {
   min-width: 0;
 }
 
+.agent-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.agent-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+.agent-avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2a2d34, #16181d);
+}
+
+.agent-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.agent-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.agent-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.agent-title {
+  color: #666;
+  font-size: 13px;
+}
+
+.agent-experience {
+  color: #888;
+  font-size: 13px;
+  margin: 4px 0 12px;
+}
+
+.agent-bio {
+  line-height: 1.5;
+  margin: 0 0 14px;
+}
+
+.agent-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.agent-tag {
+  background: #f0f0f1;
+  color: #333;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.agent-style {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+
 /* ---------------- Responsive (mobile) ---------------- */
 @media (max-width: 720px) {
   .app-shell {
@@ -341,6 +418,21 @@ button:disabled {
 
   .memory-item {
     flex-direction: column;
+  }
+
+  .agent-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .agent-card-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .agent-expertise {
+    justify-content: center;
   }
 
   .memory-item button.danger {
