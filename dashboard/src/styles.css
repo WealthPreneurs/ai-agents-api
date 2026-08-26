@@ -347,6 +347,22 @@ button:disabled {
   font-size: 13px;
 }
 
+.agent-status {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #999;
+  background: #f0f0f1;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-left: auto;
+}
+
+.agent-status.live {
+  color: #1a6b3a;
+  background: #e6f4ea;
+}
+
 .agent-experience {
   color: #888;
   font-size: 13px;
