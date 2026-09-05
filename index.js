@@ -1,8 +1,10 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const path = require('path');
 const app = express();
 
 app.use(express.json());
+app.use('/investor', express.static(path.join(__dirname, 'public', 'investor')));
 
 // Get API key from environment
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
@@ -55,12 +57,13 @@ app.get('/health', (req, res) => {
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'AI Agents API is running',
     availableAgents: Object.keys(AGENT_SYSTEM_PROMPTS),
     endpoint: '/agent',
     method: 'POST',
-    healthCheck: '/health'
+    healthCheck: '/health',
+    investorLandingPage: '/investor'
   });
 });
 

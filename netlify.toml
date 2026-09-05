@@ -1,0 +1,5 @@
+[build]
+  publish = "public/investor"
+
+[functions]
+  directory = "netlify/functions"
