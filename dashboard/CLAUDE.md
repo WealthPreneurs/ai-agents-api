@@ -6,9 +6,11 @@ creators log in and manage AI-generated drafts (social posts, etc.) that are
 produced by a separate automation layer (Make.com + Claude API) and require
 human approval before anything goes live.
 
-This app does NOT call the Claude API and does NOT post to social platforms.
-It only reads and writes to Supabase tables that Make.com also reads/writes.
-Think of it as the control panel sitting on top of a shared database.
+This app does NOT call the Claude API directly and does NOT post to social
+platforms. It reads and writes to Supabase tables that Make.com also
+reads/writes. Think of it as the control panel sitting on top of a shared
+database. The one exception is the Deal Engine page, which calls the AI Agents
+API in the repo root (see below).
 
 ## Stack
 - Vite + React (kept intentionally simple — no Next.js needed, this is a
@@ -45,6 +47,16 @@ user's own client_id. Do not weaken or bypass this.
 3. **Memory Settings** — form listing/editing `client_memory` rows for
    this client (brand_voice, offers, audience, banned_claims as separate
    entries). Add/edit/delete of entries, with per-entry saving state.
+4. **Your Team** — static roster of the AI worker bench (`src/data/agents.js`).
+5. **Deal Engine** — Kingdom Capital AI Deal Engine. Submit a business, real
+   estate, infrastructure, or technology deal; the AI Agents API
+   (`POST /deal-engine/evaluate` in `../index.js` / `../dealEngine.js`) runs it
+   through Joseph, Abraham, Lydia, Solomon, and Steward and streams back an
+   Investment Memorandum (verdict, weighted scorecard, capital stack, 90-day
+   roadmap). Evaluated deals are stored in the browser's localStorage only —
+   no Supabase tables were added. Memos export as Markdown or print to PDF.
+   Needs `VITE_AGENTS_API_URL` in production; in dev Vite proxies to
+   localhost:3000.
 
 ## What's done
 - Polish/styling pass — spinner on initial auth check, saving/working states
@@ -64,6 +76,8 @@ Copy `.env.example` to `.env` and fill in:
 - VITE_SUPABASE_URL
 - VITE_SUPABASE_ANON_KEY
 (Get both from Supabase project settings → API)
+- VITE_AGENTS_API_URL — base URL of the deployed AI Agents API (Deal Engine).
+  Leave blank locally to use the Vite dev proxy.
 
 ## Ground rules
 - Don't add a backend/API server — Supabase's client SDK + RLS is the entire

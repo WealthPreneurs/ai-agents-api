@@ -4,12 +4,14 @@ import Login from './pages/Login'
 import ApprovalQueue from './pages/ApprovalQueue'
 import MemorySettings from './pages/MemorySettings'
 import YourTeam from './pages/YourTeam'
+import DealEngine from './pages/DealEngine'
 import Sidebar from './components/Sidebar'
 
 const PAGE_TITLES = {
   queue: 'Approval Queue',
   memory: 'Memory Settings',
   team: 'Your Team',
+  deals: 'Deal Engine',
 }
 
 export default function App() {
@@ -67,10 +69,11 @@ export default function App() {
           <h2 className="topbar-title">{PAGE_TITLES[page]}</h2>
         </header>
 
-        <div className="main">
+        <div className={`main ${page === 'deals' ? 'main-wide' : ''}`}>
           {page === 'queue' && <ApprovalQueue userId={userId} />}
           {page === 'memory' && <MemorySettings userId={userId} />}
           {page === 'team' && <YourTeam />}
+          {page === 'deals' && <DealEngine />}
         </div>
       </div>
     </div>

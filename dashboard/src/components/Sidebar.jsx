@@ -32,6 +32,12 @@ export default function Sidebar({ current, setCurrent }) {
         >
           Your Team
         </button>
+        <button
+          className={current === 'deals' ? 'active' : ''}
+          onClick={() => setCurrent('deals')}
+        >
+          Deal Engine
+        </button>
       </nav>
       <button className="logout" onClick={handleLogout} disabled={loggingOut}>
         {loggingOut ? 'Logging out...' : 'Log out'}

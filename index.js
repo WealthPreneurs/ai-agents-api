@@ -1,8 +1,30 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const { evaluateDeal, validateDeal, DEAL_ENGINE_MODEL } = require('./dealEngine');
 const app = express();
 
-app.use(express.json());
+app.use(express.json({ limit: '256kb' }));
+
+// CORS so the dashboard (a separate origin in production) can call the API.
+// Set ALLOWED_ORIGINS to a comma-separated list to restrict it.
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '*')
+  .split(',')
+  .map((o) => o.trim())
+  .filter(Boolean);
+
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (ALLOWED_ORIGINS.includes('*')) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+  } else if (origin && ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
 
 // Get API key from environment
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
@@ -48,7 +70,8 @@ app.get('/health', (req, res) => {
   res.json({ 
     status: 'ok',
     agents: Object.keys(AGENT_SYSTEM_PROMPTS),
-    apiKeyPresent: !!CLAUDE_API_KEY,
+    apiKeyPresent: !!(CLAUDE_API_KEY || process.env.ANTHROPIC_API_KEY),
+    dealEngine: { model: DEAL_ENGINE_MODEL },
     timestamp: new Date().toISOString()
   });
 });
@@ -142,6 +165,52 @@ app.post('/agent', async (req, res) => {
   }
 });
 
+// Kingdom Capital Deal Engine
+// Streams newline-delimited JSON: {type:'stage'} progress events while the five
+// agents run, then a final {type:'result'} (or {type:'error'}) line.
+app.post('/deal-engine/evaluate', async (req, res) => {
+  const deal = req.body;
+  const invalid = validateDeal(deal);
+  if (invalid) return res.status(400).json({ error: invalid });
+
+  if (!CLAUDE_API_KEY && !process.env.ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'CLAUDE_API_KEY environment variable not set' });
+  }
+
+  console.log(`[DEAL_ENGINE] Evaluating: ${deal.dealName || '(unnamed deal)'}`);
+
+  res.status(200);
+  res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('X-Accel-Buffering', 'no');
+  res.flushHeaders();
+
+  const send = (event) => {
+    if (!res.writableEnded) res.write(JSON.stringify(event) + '\n');
+  };
+
+  // Stop paying for tokens if the browser disconnects mid-evaluation.
+  const controller = new AbortController();
+  res.on('close', () => {
+    if (!res.writableFinished) controller.abort();
+  });
+
+  // Keep proxies from closing the connection while the model is thinking.
+  const heartbeat = setInterval(() => send({ type: 'heartbeat' }), 15000);
+
+  try {
+    const result = await evaluateDeal(deal, send, controller.signal);
+    console.log(`[DEAL_ENGINE] Verdict: ${result.evaluation.verdict} (${result.evaluation.weightedScore})`);
+    send({ type: 'result', ...result });
+  } catch (error) {
+    console.log(`[DEAL_ENGINE_ERROR] ${error.message}`);
+    send({ type: 'error', error: error.message || 'Deal evaluation failed' });
+  } finally {
+    clearInterval(heartbeat);
+    res.end();
+  }
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.log('[MIDDLEWARE_ERROR]', err.message);
@@ -156,6 +225,7 @@ const server = app.listen(PORT, () => {
   console.log(`📍 Server running on port ${PORT}`);
   console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
   console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
+  console.log(`👑 Deal Engine: POST /deal-engine/evaluate (model: ${DEAL_ENGINE_MODEL})`);
   console.log(`\n📡 Ready to accept requests at http://localhost:${PORT}`);
   console.log(`✔️  Health check: http://localhost:${PORT}/health\n`);
 });
