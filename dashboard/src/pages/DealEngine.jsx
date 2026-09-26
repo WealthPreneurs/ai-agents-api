@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { checkEngineHealth, evaluateDeal } from '../lib/dealEngineApi'
+import { supabase } from '../lib/supabaseClient'
 import { memoToMarkdown } from '../lib/memoMarkdown'
 import MemoView from '../components/deal/MemoView'
 import {
@@ -11,24 +12,49 @@ import {
   VERDICT_CLASS,
 } from '../data/dealEngine'
 
-// Evaluated deals are kept in this browser only (no schema change needed).
-const STORAGE_KEY = 'kingdom-capital:deals'
+// Earlier builds kept the pipeline in localStorage; those deals are moved
+// into the `deals` table (supabase/deals.sql) the first time the page loads.
+const LEGACY_STORAGE_KEY = 'kingdom-capital:deals'
 
-function loadDeals() {
+function readLegacyDeals() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []
+    return JSON.parse(localStorage.getItem(LEGACY_STORAGE_KEY)) || []
   } catch {
     return []
   }
 }
 
-function saveDeals(deals) {
+function clearLegacyDeals() {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(deals))
-    return true
+    localStorage.removeItem(LEGACY_STORAGE_KEY)
   } catch {
-    return false
+    // storage unavailable; nothing to clear
   }
+}
+
+function restoreLegacyDeals(deals) {
+  try {
+    localStorage.setItem(LEGACY_STORAGE_KEY, JSON.stringify(deals))
+  } catch {
+    // storage unavailable; nothing to restore
+  }
+}
+
+function toRow(userId, input, result, createdAt) {
+  return {
+    client_id: userId,
+    deal_name: result.memo.deal_name,
+    deal_type: input.dealType || null,
+    verdict: result.evaluation.verdict,
+    weighted_score: result.evaluation.weightedScore,
+    input,
+    result,
+    ...(createdAt ? { created_at: createdAt } : {}),
+  }
+}
+
+function fromRow(row) {
+  return { id: row.id, savedAt: row.created_at, input: row.input, result: row.result }
 }
 
 function formatElapsed(seconds) {
@@ -44,8 +70,9 @@ function EngineStatus({ health, error }) {
     label = 'Engine offline'
     cls = 'offline'
   } else if (health) {
-    label = health.apiKeyPresent ? 'Engine online' : 'API key missing'
-    cls = health.apiKeyPresent ? 'online' : 'offline'
+    const loginReady = health.dealEngine?.auth !== 'missing'
+    label = !health.apiKeyPresent ? 'API key missing' : !loginReady ? 'Login check not configured' : 'Engine online'
+    cls = health.apiKeyPresent && loginReady ? 'online' : 'offline'
   }
   return (
     <div className="engine-status">
@@ -210,7 +237,7 @@ function ProgressPanel({ stage, elapsed, onCancel }) {
   )
 }
 
-function Pipeline({ deals, onOpen, onDelete, currentId }) {
+function Pipeline({ deals, onOpen, onDelete, currentId, deletingId }) {
   if (deals.length === 0) {
     return (
       <div className="empty-state">
@@ -256,8 +283,8 @@ function Pipeline({ deals, onOpen, onDelete, currentId }) {
                 <span className={`verdict-pill small verdict-pill-${VERDICT_CLASS[evaluation.verdict]}`}>
                   {evaluation.verdict}
                 </span>
-                <button className="danger" onClick={() => onDelete(d.id)}>
-                  Delete
+                <button className="danger" onClick={() => onDelete(d.id)} disabled={deletingId === d.id}>
+                  {deletingId === d.id ? 'Deleting...' : 'Delete'}
                 </button>
               </div>
             </div>
@@ -268,16 +295,19 @@ function Pipeline({ deals, onOpen, onDelete, currentId }) {
   )
 }
 
-export default function DealEngine() {
+export default function DealEngine({ userId }) {
   const [view, setView] = useState('new')
   const [deal, setDeal] = useState(EMPTY_DEAL)
-  const [deals, setDeals] = useState(loadDeals)
+  const [deals, setDeals] = useState([])
+  const [dealsLoading, setDealsLoading] = useState(true)
+  const [dealsError, setDealsError] = useState(null)
+  const [saveError, setSaveError] = useState(null)
+  const [deletingId, setDeletingId] = useState(null)
   const [currentId, setCurrentId] = useState(null)
   const [running, setRunning] = useState(false)
   const [stage, setStage] = useState(null)
   const [elapsed, setElapsed] = useState(0)
   const [error, setError] = useState(null)
-  const [storageWarning, setStorageWarning] = useState(false)
   const [health, setHealth] = useState(null)
   const [healthError, setHealthError] = useState(null)
   const abortRef = useRef(null)
@@ -297,13 +327,43 @@ export default function DealEngine() {
 
   useEffect(() => () => abortRef.current?.abort(), [])
 
-  function persist(next) {
-    setDeals(next)
-    setStorageWarning(!saveDeals(next))
+  useEffect(() => {
+    fetchDeals()
+  }, [])
+
+  async function fetchDeals() {
+    setDealsLoading(true)
+    setDealsError(null)
+    await importLegacyDeals()
+    const { data, error } = await supabase
+      .from('deals')
+      .select('id, created_at, input, result')
+      .eq('client_id', userId)
+      .order('created_at', { ascending: false })
+
+    if (error) {
+      setDealsError(error.message)
+    } else {
+      setDeals((data || []).map(fromRow))
+    }
+    setDealsLoading(false)
+  }
+
+  // One-time move of deals saved by the browser-only pipeline. The saved
+  // copy is cleared before inserting so an overlapping load can't import the
+  // same deals twice; it is put back if the insert fails.
+  async function importLegacyDeals() {
+    const legacy = readLegacyDeals()
+    if (legacy.length === 0) return
+    clearLegacyDeals()
+    const rows = legacy.map((d) => toRow(userId, d.input, d.result, d.savedAt))
+    const { error } = await supabase.from('deals').insert(rows)
+    if (error) restoreLegacyDeals(legacy)
   }
 
   async function run() {
     setError(null)
+    setSaveError(null)
     setRunning(true)
     setStage('thinking')
     setElapsed(0)
@@ -317,13 +377,25 @@ export default function DealEngine() {
           if (e.type === 'stage' && PROGRESS_STEPS.some((s) => s.key === e.stage)) setStage(e.stage)
         },
       })
-      const entry = {
-        id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
-        savedAt: new Date().toISOString(),
-        input: deal,
-        result: { memo: result.memo, evaluation: result.evaluation, model: result.model, generatedAt: result.generatedAt },
+      const memoResult = {
+        memo: result.memo,
+        evaluation: result.evaluation,
+        model: result.model,
+        generatedAt: result.generatedAt,
       }
-      persist([entry, ...deals])
+      const { data: row, error: insertError } = await supabase
+        .from('deals')
+        .insert(toRow(userId, deal, memoResult))
+        .select('id, created_at, input, result')
+        .single()
+
+      // Keep the memo on screen even if saving fails, so the evaluation
+      // (and its API cost) isn't lost.
+      const entry = insertError
+        ? { id: `unsaved-${Date.now()}`, savedAt: new Date().toISOString(), input: deal, result: memoResult }
+        : fromRow(row)
+      setSaveError(insertError ? insertError.message : null)
+      setDeals((prev) => [entry, ...prev])
       setCurrentId(entry.id)
       setView('memo')
     } catch (e) {
@@ -345,8 +417,19 @@ export default function DealEngine() {
     window.scrollTo(0, 0)
   }
 
-  function deleteDeal(id) {
-    persist(deals.filter((d) => d.id !== id))
+  async function deleteDeal(id) {
+    setDeletingId(id)
+    setDealsError(null)
+    if (!id.startsWith('unsaved-')) {
+      const { error } = await supabase.from('deals').delete().eq('id', id)
+      if (error) {
+        setDealsError(error.message)
+        setDeletingId(null)
+        return
+      }
+    }
+    setDeals((prev) => prev.filter((d) => d.id !== id))
+    setDeletingId(null)
     if (id === currentId) {
       setCurrentId(null)
       if (view === 'memo') setView('pipeline')
@@ -402,9 +485,9 @@ export default function DealEngine() {
         )}
       </div>
 
-      {storageWarning && (
+      {saveError && (
         <p className="error-text no-print">
-          This browser couldn't save the deal pipeline. Download the memo to keep a copy.
+          This memo couldn't be saved to your pipeline ({saveError}). Download it to keep a copy.
         </p>
       )}
 
@@ -434,9 +517,33 @@ export default function DealEngine() {
         </>
       )}
 
-      {view === 'pipeline' && (
-        <Pipeline deals={deals} onOpen={openDeal} onDelete={deleteDeal} currentId={currentId} />
-      )}
+      {view === 'pipeline' &&
+        (dealsLoading ? (
+          <p className="loading-text">Loading your pipeline...</p>
+        ) : (
+          <>
+            {dealsError && (
+              <div className="card error-card">
+                <strong>Couldn't load or update your deals.</strong> {dealsError}
+                {/relation .*deals.* does not exist|could not find the table/i.test(dealsError) && (
+                  <p>The deals table hasn't been created yet. Run <code>supabase/deals.sql</code> in the Supabase SQL editor.</p>
+                )}
+                <div className="actions">
+                  <button className="secondary" onClick={fetchDeals}>
+                    Retry
+                  </button>
+                </div>
+              </div>
+            )}
+            <Pipeline
+              deals={deals}
+              onOpen={openDeal}
+              onDelete={deleteDeal}
+              currentId={currentId}
+              deletingId={deletingId}
+            />
+          </>
+        ))}
 
       {view === 'memo' && current && (
         <>

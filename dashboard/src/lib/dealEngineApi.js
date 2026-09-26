@@ -1,3 +1,5 @@
+import { supabase } from './supabaseClient'
+
 // Client for the Kingdom Capital Deal Engine endpoint on the AI Agents API
 // (index.js at the repo root). In dev, Vite proxies these paths to
 // localhost:3000; in production set VITE_AGENTS_API_URL.
@@ -12,9 +14,14 @@ export async function checkEngineHealth() {
 // Streams newline-delimited JSON events. Calls onEvent for each progress
 // event and resolves with the final result payload.
 export async function evaluateDeal(deal, { onEvent, signal } = {}) {
+  // The API only runs evaluations for logged-in dashboard users.
+  const { data } = await supabase.auth.getSession()
+  const token = data.session?.access_token
+  if (!token) throw new Error('Your session has expired. Log out and log back in.')
+
   const res = await fetch(`${API_BASE}/deal-engine/evaluate`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
     body: JSON.stringify(deal),
     signal,
   })

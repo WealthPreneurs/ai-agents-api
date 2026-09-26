@@ -13,7 +13,7 @@ cp .env.example .env   # fill in VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY
 ```
 
 Run `supabase/schema.sql` in your Supabase project's SQL editor before
-starting the app.
+starting the app, then `supabase/deals.sql` for the Deal Engine pipeline.
 
 ## Development
 

@@ -73,7 +73,7 @@ export default function App() {
           {page === 'queue' && <ApprovalQueue userId={userId} />}
           {page === 'memory' && <MemorySettings userId={userId} />}
           {page === 'team' && <YourTeam />}
-          {page === 'deals' && <DealEngine />}
+          {page === 'deals' && <DealEngine userId={userId} />}
         </div>
       </div>
     </div>

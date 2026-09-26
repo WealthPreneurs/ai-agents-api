@@ -28,6 +28,9 @@ API in the repo root (see below).
   banned_claims) scoped to client_id
 - `worker_runs` — every AI-generated draft, with a status field:
   pending_approval / approved / edited / rejected / executed / failed
+- `deals` — Deal Engine memoranda (verdict, weighted score, input, result),
+  defined separately in `supabase/deals.sql`; added with the owner's approval
+  and not used by Make.com
 
 RLS is already enabled in the schema — every table scopes to the logged-in
 user's own client_id. Do not weaken or bypass this.
@@ -53,10 +56,12 @@ user's own client_id. Do not weaken or bypass this.
    (`POST /deal-engine/evaluate` in `../index.js` / `../dealEngine.js`) runs it
    through Joseph, Abraham, Lydia, Solomon, and Steward and streams back an
    Investment Memorandum (verdict, weighted scorecard, capital stack, 90-day
-   roadmap). Evaluated deals are stored in the browser's localStorage only —
-   no Supabase tables were added. Memos export as Markdown or print to PDF.
-   Needs `VITE_AGENTS_API_URL` in production; in dev Vite proxies to
-   localhost:3000.
+   roadmap). The API only runs for logged-in users (the dashboard sends the
+   Supabase session token) and caps evaluations per user per day. Evaluated
+   deals are saved to the `deals` table; deals from the earlier
+   browser-only pipeline are imported on first load. Memos export as
+   Markdown or print to PDF. Needs `VITE_AGENTS_API_URL` in production; in
+   dev Vite proxies to localhost:3000.
 
 ## What's done
 - Polish/styling pass — spinner on initial auth check, saving/working states

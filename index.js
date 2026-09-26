@@ -1,6 +1,7 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const { evaluateDeal, validateDeal, DEAL_ENGINE_MODEL } = require('./dealEngine');
+const { requireUser, acquireSlot, releaseSlot, authStatus, DAILY_LIMIT } = require('./dealEngineAuth');
 const app = express();
 
 app.use(express.json({ limit: '256kb' }));
@@ -21,7 +22,7 @@ app.use((req, res, next) => {
     res.setHeader('Vary', 'Origin');
   }
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   if (req.method === 'OPTIONS') return res.sendStatus(204);
   next();
 });
@@ -71,7 +72,7 @@ app.get('/health', (req, res) => {
     status: 'ok',
     agents: Object.keys(AGENT_SYSTEM_PROMPTS),
     apiKeyPresent: !!(CLAUDE_API_KEY || process.env.ANTHROPIC_API_KEY),
-    dealEngine: { model: DEAL_ENGINE_MODEL },
+    dealEngine: { model: DEAL_ENGINE_MODEL, auth: authStatus(), dailyLimit: DAILY_LIMIT },
     timestamp: new Date().toISOString()
   });
 });
@@ -168,7 +169,7 @@ app.post('/agent', async (req, res) => {
 // Kingdom Capital Deal Engine
 // Streams newline-delimited JSON: {type:'stage'} progress events while the five
 // agents run, then a final {type:'result'} (or {type:'error'}) line.
-app.post('/deal-engine/evaluate', async (req, res) => {
+app.post('/deal-engine/evaluate', requireUser, async (req, res) => {
   const deal = req.body;
   const invalid = validateDeal(deal);
   if (invalid) return res.status(400).json({ error: invalid });
@@ -177,7 +178,10 @@ app.post('/deal-engine/evaluate', async (req, res) => {
     return res.status(500).json({ error: 'CLAUDE_API_KEY environment variable not set' });
   }
 
-  console.log(`[DEAL_ENGINE] Evaluating: ${deal.dealName || '(unnamed deal)'}`);
+  const limited = acquireSlot(req.user.id);
+  if (limited) return res.status(429).json({ error: limited });
+
+  console.log(`[DEAL_ENGINE] Evaluating for ${req.user.id}: ${deal.dealName || '(unnamed deal)'}`);
 
   res.status(200);
   res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8');
@@ -207,6 +211,7 @@ app.post('/deal-engine/evaluate', async (req, res) => {
     send({ type: 'error', error: error.message || 'Deal evaluation failed' });
   } finally {
     clearInterval(heartbeat);
+    releaseSlot(req.user.id);
     res.end();
   }
 });
@@ -225,7 +230,10 @@ const server = app.listen(PORT, () => {
   console.log(`📍 Server running on port ${PORT}`);
   console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
   console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
-  console.log(`👑 Deal Engine: POST /deal-engine/evaluate (model: ${DEAL_ENGINE_MODEL})`);
+  console.log(`👑 Deal Engine: POST /deal-engine/evaluate (model: ${DEAL_ENGINE_MODEL}, login check: ${authStatus()})`);
+  if (authStatus() === 'disabled') {
+    console.log('⚠️  DEAL_ENGINE_AUTH=off — login check disabled. Use for local development only.');
+  }
   console.log(`\n📡 Ready to accept requests at http://localhost:${PORT}`);
   console.log(`✔️  Health check: http://localhost:${PORT}/health\n`);
 });

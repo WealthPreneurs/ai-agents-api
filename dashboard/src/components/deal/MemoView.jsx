@@ -469,7 +469,7 @@ export default function MemoView({ result }) {
 
       <p className="memo-footer muted small">
         Generated {new Date(generatedAt).toLocaleString()}
-        {model ? ` · ${model}` : ''} · AI-generated analysis — verify all figures during due diligence.
+        {model ? ` · ${model}` : ''} · AI-generated analysis. Not investment, legal, or tax advice. Verify all figures during due diligence.
       </p>
     </div>
   )

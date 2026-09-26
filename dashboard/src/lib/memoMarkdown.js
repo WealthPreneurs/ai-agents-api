@@ -88,5 +88,7 @@ export function memoToMarkdown(result) {
 
   if (memo.data_gaps.length) lines.push(`\n## Data Gaps to Close\n${list(memo.data_gaps)}`)
 
+  lines.push('\n_AI-generated analysis. Not investment, legal, or tax advice. Verify all figures during due diligence._')
+
   return lines.join('\n') + '\n'
 }
