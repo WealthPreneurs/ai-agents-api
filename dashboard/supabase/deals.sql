@@ -1,8 +1,8 @@
 -- ============================================================
 -- Kingdom Capital Deal Engine — saved deals
--- Run this in the Supabase SQL editor AFTER schema.sql.
--- Safe to re-run. Adds one table; does not touch clients,
--- client_memory, or worker_runs.
+-- Run this in the Supabase SQL editor. Works with or without
+-- schema.sql, and is safe to re-run. Adds one table; does not touch
+-- clients, client_memory, or worker_runs.
 -- ============================================================
 
 -- 4. DEALS
@@ -11,7 +11,8 @@
 -- memo can be re-rendered and re-run later.
 create table if not exists deals (
   id uuid primary key default gen_random_uuid(),
-  client_id uuid not null references clients(id) on delete cascade,
+  -- Same value as clients.id: the Supabase auth user id.
+  client_id uuid not null references auth.users(id) on delete cascade,
   deal_name text not null,
   deal_type text,
   verdict text not null
