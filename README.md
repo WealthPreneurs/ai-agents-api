@@ -33,6 +33,16 @@ dashboard sends the user's Supabase session token as `Authorization: Bearer
 gets `DEAL_ENGINE_DAILY_LIMIT` evaluations per day (UTC) and one at a time.
 Counts are kept in memory, so they reset when the server restarts.
 
+**Subscriptions.** New accounts get `DEAL_ENGINE_FREE_MEMOS` free evaluations
+(default 3). After that, users subscribe through Stripe Checkout
+(`POST /billing/checkout`) to one plan (`STRIPE_PRICE_ID`) that includes
+`DEAL_ENGINE_MONTHLY_LIMIT` memos per billing period (default 30). The Stripe
+customer portal (`POST /billing/portal`) handles cancelling and card updates,
+and `POST /stripe/webhook` keeps the `billing_accounts` table in sync. Only
+completed memos count as usage. `GET /billing/status` tells the dashboard the
+user's plan and usage. Create the tables with
+`dashboard/supabase/billing.sql`.
+
 **Saved deals.** The dashboard stores each memorandum in the Supabase `deals`
 table (row-level security scopes rows to their owner). Create it by running
 `dashboard/supabase/deals.sql` in the Supabase SQL editor.
@@ -50,6 +60,15 @@ table (row-level security scopes rows to their owner). Create it by running
 | `SUPABASE_ANON_KEY` | — | Required for the Deal Engine login check |
 | `DEAL_ENGINE_DAILY_LIMIT` | `20` | Evaluations per user per day |
 | `DEAL_ENGINE_AUTH` | — | Set to `off` to skip the login check. Local development only |
+| `SUPABASE_SERVICE_ROLE_KEY` | — | Required for billing: lets the API record usage and subscriptions. Server only, never in the dashboard |
+| `STRIPE_SECRET_KEY` | — | Stripe secret key (`sk_live_…` or `sk_test_…`) |
+| `STRIPE_PRICE_ID` | — | The subscription plan's recurring price (`price_…`) |
+| `STRIPE_WEBHOOK_SECRET` | — | Signing secret of the webhook endpoint pointing at `/stripe/webhook` (`whsec_…`) |
+| `APP_URL` | — | Dashboard address, used for Stripe's return links |
+| `DEAL_ENGINE_FREE_MEMOS` | `3` | Free evaluations per account |
+| `DEAL_ENGINE_MONTHLY_LIMIT` | `30` | Evaluations per billing period for subscribers |
+| `DEAL_ENGINE_UNLIMITED_EMAILS` | — | Comma-separated emails that skip billing (e.g. the owner) |
+| `DEAL_ENGINE_BILLING` | — | Set to `off` to skip billing checks. Local development only |
 
 ## Run locally
 

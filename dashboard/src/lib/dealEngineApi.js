@@ -11,13 +11,51 @@ export async function checkEngineHealth() {
   return res.json()
 }
 
+async function accessToken() {
+  const { data } = await supabase.auth.getSession()
+  const token = data.session?.access_token
+  if (!token) throw new Error('Your session has expired. Log out and log back in.')
+  return token
+}
+
+async function errorMessage(res) {
+  try {
+    const data = await res.json()
+    if (data.error) return data.error
+  } catch {
+    // non-JSON error body
+  }
+  return `Request failed (${res.status})`
+}
+
+async function authedJson(path, method = 'GET') {
+  const res = await fetch(`${API_BASE}${path}`, {
+    method,
+    headers: { Authorization: `Bearer ${await accessToken()}` },
+  })
+  if (!res.ok) throw new Error(await errorMessage(res))
+  return res.json()
+}
+
+// The user's plan, usage, and whether they can run an evaluation now.
+export function getBillingStatus() {
+  return authedJson('/billing/status')
+}
+
+// Both return a Stripe-hosted URL to send the browser to.
+export function startCheckout() {
+  return authedJson('/billing/checkout', 'POST')
+}
+
+export function openBillingPortal() {
+  return authedJson('/billing/portal', 'POST')
+}
+
 // Streams newline-delimited JSON events. Calls onEvent for each progress
 // event and resolves with the final result payload.
 export async function evaluateDeal(deal, { onEvent, signal } = {}) {
   // The API only runs evaluations for logged-in dashboard users.
-  const { data } = await supabase.auth.getSession()
-  const token = data.session?.access_token
-  if (!token) throw new Error('Your session has expired. Log out and log back in.')
+  const token = await accessToken()
 
   const res = await fetch(`${API_BASE}/deal-engine/evaluate`, {
     method: 'POST',
@@ -26,16 +64,7 @@ export async function evaluateDeal(deal, { onEvent, signal } = {}) {
     signal,
   })
 
-  if (!res.ok) {
-    let message = `Request failed (${res.status})`
-    try {
-      const data = await res.json()
-      if (data.error) message = data.error
-    } catch {
-      // non-JSON error body
-    }
-    throw new Error(message)
-  }
+  if (!res.ok) throw new Error(await errorMessage(res))
 
   const reader = res.body.getReader()
   const decoder = new TextDecoder()

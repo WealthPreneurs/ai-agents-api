@@ -17,7 +17,11 @@ const PAGE_TITLES = {
 export default function App() {
   const [session, setSession] = useState(null)
   const [checking, setChecking] = useState(true)
-  const [page, setPage] = useState('queue')
+  // Stripe Checkout sends people back with ?billing=...; land them on the
+  // Deal Engine so they see their plan activate.
+  const [page, setPage] = useState(() =>
+    new URLSearchParams(window.location.search).has('billing') ? 'deals' : 'queue'
+  )
   const [navOpen, setNavOpen] = useState(false)
 
   useEffect(() => {
