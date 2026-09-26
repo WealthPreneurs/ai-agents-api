@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { checkEngineHealth, evaluateDeal } from '../lib/dealEngineApi'
+import { checkEngineHealth, evaluateDeal, getBillingStatus } from '../lib/dealEngineApi'
 import { supabase } from '../lib/supabaseClient'
 import { memoToMarkdown } from '../lib/memoMarkdown'
 import MemoView from '../components/deal/MemoView'
+import PlanBar from '../components/deal/PlanBar'
 import {
   AGENT_STAGES,
   PROGRESS_STEPS,
@@ -115,12 +116,12 @@ function Field({ label, name, value, onChange, disabled, textarea, placeholder, 
   )
 }
 
-function DealForm({ deal, setDeal, onSubmit, running }) {
+function DealForm({ deal, setDeal, onSubmit, running, blockedReason }) {
   function update(name, value) {
     setDeal((d) => ({ ...d, [name]: value }))
   }
 
-  const canSubmit = deal.description.trim().length >= 20 && !running
+  const canSubmit = deal.description.trim().length >= 20 && !running && !blockedReason
 
   return (
     <form
@@ -191,6 +192,7 @@ function DealForm({ deal, setDeal, onSubmit, running }) {
         </div>
       </details>
 
+      {blockedReason && <p className="error-text">{blockedReason}</p>}
       <div className="actions">
         <button className="primary" type="submit" disabled={!canSubmit}>
           {running ? 'Evaluating...' : 'Run Deal Engine'}
@@ -310,7 +312,53 @@ export default function DealEngine({ userId }) {
   const [error, setError] = useState(null)
   const [health, setHealth] = useState(null)
   const [healthError, setHealthError] = useState(null)
+  const [plan, setPlan] = useState(null)
+  const [planLoading, setPlanLoading] = useState(true)
+  const [planError, setPlanError] = useState(null)
+  const [activating, setActivating] = useState(false)
   const abortRef = useRef(null)
+
+  async function refreshPlan() {
+    setPlanError(null)
+    try {
+      const next = await getBillingStatus()
+      setPlan(next)
+      return next
+    } catch (e) {
+      setPlanError(e.message)
+      return null
+    } finally {
+      setPlanLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    refreshPlan()
+  }, [])
+
+  // Returning from Stripe Checkout (?billing=success|cancelled). Read once on
+  // mount so re-running the effect can't lose it after the URL is cleaned.
+  const [checkoutOutcome] = useState(() => new URLSearchParams(window.location.search).get('billing'))
+
+  // The webhook may take a few seconds to activate the subscription, so poll
+  // until the plan shows as Pro.
+  useEffect(() => {
+    if (!checkoutOutcome) return
+    window.history.replaceState(null, '', window.location.pathname)
+    if (checkoutOutcome !== 'success') return
+
+    setActivating(true)
+    let tries = 0
+    const timer = setInterval(async () => {
+      tries += 1
+      const next = await refreshPlan()
+      if (next?.plan === 'pro' || tries >= 15) {
+        clearInterval(timer)
+        setActivating(false)
+      }
+    }, 2000)
+    return () => clearInterval(timer)
+  }, [checkoutOutcome])
 
   useEffect(() => {
     checkEngineHealth()
@@ -401,6 +449,7 @@ export default function DealEngine({ userId }) {
     } catch (e) {
       if (e.name !== 'AbortError') setError(e.message)
     } finally {
+      refreshPlan()
       setRunning(false)
       setStage(null)
       abortRef.current = null
@@ -466,6 +515,10 @@ export default function DealEngine({ userId }) {
         <EngineStatus health={health} error={healthError} />
       </div>
 
+      <div className="no-print">
+        <PlanBar plan={plan} loading={planLoading} error={planError} activating={activating} onRetry={refreshPlan} />
+      </div>
+
       <div className="tabs no-print" role="tablist">
         <button role="tab" aria-selected={view === 'new'} className={view === 'new' ? 'active' : ''} onClick={() => setView('new')}>
           New Evaluation
@@ -502,7 +555,13 @@ export default function DealEngine({ userId }) {
           {running ? (
             <ProgressPanel stage={stage} elapsed={elapsed} onCancel={cancel} />
           ) : (
-            <DealForm deal={deal} setDeal={setDeal} onSubmit={run} running={running} />
+            <DealForm
+              deal={deal}
+              setDeal={setDeal}
+              onSubmit={run}
+              running={running}
+              blockedReason={plan && !plan.canRun ? plan.message : null}
+            />
           )}
           {error && (
             <div className="card error-card">

@@ -2,7 +2,13 @@ const express = require('express');
 const fetch = require('node-fetch');
 const { evaluateDeal, validateDeal, DEAL_ENGINE_MODEL } = require('./dealEngine');
 const { requireUser, acquireSlot, releaseSlot, authStatus, DAILY_LIMIT } = require('./dealEngineAuth');
+const { createBilling } = require('./billing');
 const app = express();
+const billing = createBilling();
+
+// Stripe webhook needs the raw body to verify its signature, so it is
+// registered before the JSON body parser.
+app.post('/stripe/webhook', express.raw({ type: 'application/json' }), billing.webhook);
 
 app.use(express.json({ limit: '256kb' }));
 
@@ -72,7 +78,7 @@ app.get('/health', (req, res) => {
     status: 'ok',
     agents: Object.keys(AGENT_SYSTEM_PROMPTS),
     apiKeyPresent: !!(CLAUDE_API_KEY || process.env.ANTHROPIC_API_KEY),
-    dealEngine: { model: DEAL_ENGINE_MODEL, auth: authStatus(), dailyLimit: DAILY_LIMIT },
+    dealEngine: { model: DEAL_ENGINE_MODEL, auth: authStatus(), dailyLimit: DAILY_LIMIT, billing: billing.status() },
     timestamp: new Date().toISOString()
   });
 });
@@ -178,6 +184,15 @@ app.post('/deal-engine/evaluate', requireUser, async (req, res) => {
     return res.status(500).json({ error: 'CLAUDE_API_KEY environment variable not set' });
   }
 
+  let plan;
+  try {
+    plan = await billing.entitlement(req.user);
+  } catch (error) {
+    console.log(`[BILLING] Entitlement check failed: ${error.message}`);
+    return res.status(503).json({ error: 'Could not check your plan right now. Try again in a minute.' });
+  }
+  if (!plan.canRun) return res.status(402).json({ error: plan.message, billing: plan });
+
   const limited = acquireSlot(req.user.id);
   if (limited) return res.status(429).json({ error: limited });
 
@@ -204,6 +219,10 @@ app.post('/deal-engine/evaluate', requireUser, async (req, res) => {
 
   try {
     const result = await evaluateDeal(deal, send, controller.signal);
+    // Only completed memos count toward the free allowance and plan limit.
+    await billing.recordUsage(req.user).catch((error) =>
+      console.log(`[BILLING] Could not record usage for ${req.user.id}: ${error.message}`)
+    );
     console.log(`[DEAL_ENGINE] Verdict: ${result.evaluation.verdict} (${result.evaluation.weightedScore})`);
     send({ type: 'result', ...result });
   } catch (error) {
@@ -215,6 +234,9 @@ app.post('/deal-engine/evaluate', requireUser, async (req, res) => {
     res.end();
   }
 });
+
+// Subscription status, checkout and customer portal for the dashboard.
+app.use(billing.router(requireUser));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -231,6 +253,7 @@ const server = app.listen(PORT, () => {
   console.log(`🔐 CLAUDE_API_KEY: ${CLAUDE_API_KEY ? 'SET' : 'NOT SET'}`);
   console.log(`🤖 Available agents: ${Object.keys(AGENT_SYSTEM_PROMPTS).join(', ')}`);
   console.log(`👑 Deal Engine: POST /deal-engine/evaluate (model: ${DEAL_ENGINE_MODEL}, login check: ${authStatus()})`);
+  console.log(`💳 Billing: ${billing.status()}`);
   if (authStatus() === 'disabled') {
     console.log('⚠️  DEAL_ENGINE_AUTH=off — login check disabled. Use for local development only.');
   }

@@ -31,6 +31,9 @@ API in the repo root (see below).
 - `deals` — Deal Engine memoranda (verdict, weighted score, input, result),
   defined separately in `supabase/deals.sql`; added with the owner's approval
   and not used by Make.com
+- `billing_accounts` and `deal_engine_usage` — Deal Engine subscription state
+  and usage (`supabase/billing.sql`). Read-only for users; written only by the
+  AI Agents API with the service role key
 
 RLS is already enabled in the schema — every table scopes to the logged-in
 user's own client_id. Do not weaken or bypass this.
@@ -57,7 +60,10 @@ user's own client_id. Do not weaken or bypass this.
    through Joseph, Abraham, Lydia, Solomon, and Steward and streams back an
    Investment Memorandum (verdict, weighted scorecard, capital stack, 90-day
    roadmap). The API only runs for logged-in users (the dashboard sends the
-   Supabase session token) and caps evaluations per user per day. Evaluated
+   Supabase session token) and caps evaluations per user per day. Running
+   evaluations is subscription-based: 3 free memos per account, then one
+   Stripe plan with a monthly memo allowance. The plan bar on the page shows
+   usage and links to Stripe Checkout / the customer portal. Evaluated
    deals are saved to the `deals` table; deals from the earlier
    browser-only pipeline are imported on first load. Memos export as
    Markdown or print to PDF. Needs `VITE_AGENTS_API_URL` in production; in
@@ -73,7 +79,7 @@ user's own client_id. Do not weaken or bypass this.
   hamburger button below 720px, cards stack their actions vertically
 
 ## Not built yet (later phases — do not build)
-- History log screen, Stripe billing, multiple workers beyond
+- History log screen, billing for anything beyond the Deal Engine, multiple workers beyond
   social_media_manager, tier gating
 
 ## Environment variables needed
