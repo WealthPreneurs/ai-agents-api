@@ -81,12 +81,20 @@ function isActive(account, now = Date.now()) {
 function createBilling({ config = readConfig(), store, stripe } = {}) {
   const stripeReady = Boolean(config.stripeSecretKey && config.stripePriceId);
   if (!stripe && config.stripeSecretKey) stripe = StripeModule(config.stripeSecretKey);
+  let storeError = null;
   if (!store && config.supabaseUrl && config.supabaseServiceKey) {
-    store = supabaseStore(config.supabaseUrl, config.supabaseServiceKey);
+    // A bad URL or runtime shouldn't take down the whole API; billing reports it instead.
+    try {
+      store = supabaseStore(config.supabaseUrl, config.supabaseServiceKey);
+    } catch (error) {
+      storeError = error.message;
+      console.log(`[BILLING] Could not create Supabase client: ${error.message}`);
+    }
   }
 
   function status() {
     if (config.disabled) return 'disabled';
+    if (storeError) return 'supabase-client-error';
     if (!store) return 'missing-supabase-service-key';
     if (!stripeReady) return 'free-only';
     if (!config.stripeWebhookSecret) return 'missing-webhook-secret';
@@ -121,7 +129,9 @@ function createBilling({ config = readConfig(), store, stripe } = {}) {
       return {
         plan: 'unknown',
         canRun: false,
-        message: 'Billing is not configured on the server (SUPABASE_SERVICE_ROLE_KEY is missing).',
+        message: storeError
+          ? 'Billing is temporarily unavailable on the server. Try again later.'
+          : 'Billing is not configured on the server (SUPABASE_SERVICE_ROLE_KEY is missing).',
       };
     }
 
