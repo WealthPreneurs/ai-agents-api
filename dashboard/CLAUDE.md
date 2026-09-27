@@ -39,6 +39,9 @@ RLS is already enabled in the schema — every table scopes to the logged-in
 user's own client_id. Do not weaken or bypass this.
 
 ## Screens (built)
+Only the Deal Engine is shown in the sidebar right now; screens 2–4 are
+hidden (code kept in `src/pages`, re-enable in `App.jsx` and `Sidebar.jsx`).
+
 1. **Login** — Supabase auth (email/password + signup). On signup, the
    database trigger creates the client row automatically. Handles email
    confirmation flow, loading and error states.

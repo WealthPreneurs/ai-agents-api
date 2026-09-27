@@ -1,27 +1,20 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './lib/supabaseClient'
 import Login from './pages/Login'
-import ApprovalQueue from './pages/ApprovalQueue'
-import MemorySettings from './pages/MemorySettings'
-import YourTeam from './pages/YourTeam'
 import DealEngine from './pages/DealEngine'
 import Sidebar from './components/Sidebar'
 
+// Only the Deal Engine is offered right now. The Approval Queue, Memory
+// Settings and Your Team pages are still in src/pages; add them back here
+// and in Sidebar.jsx to re-enable them.
 const PAGE_TITLES = {
-  queue: 'Approval Queue',
-  memory: 'Memory Settings',
-  team: 'Your Team',
   deals: 'Deal Engine',
 }
 
 export default function App() {
   const [session, setSession] = useState(null)
   const [checking, setChecking] = useState(true)
-  // Stripe Checkout sends people back with ?billing=...; land them on the
-  // Deal Engine so they see their plan activate.
-  const [page, setPage] = useState(() =>
-    new URLSearchParams(window.location.search).has('billing') ? 'deals' : 'queue'
-  )
+  const [page, setPage] = useState('deals')
   const [navOpen, setNavOpen] = useState(false)
 
   useEffect(() => {
@@ -74,9 +67,6 @@ export default function App() {
         </header>
 
         <div className={`main ${page === 'deals' ? 'main-wide' : ''}`}>
-          {page === 'queue' && <ApprovalQueue userId={userId} />}
-          {page === 'memory' && <MemorySettings userId={userId} />}
-          {page === 'team' && <YourTeam />}
           {page === 'deals' && <DealEngine userId={userId} />}
         </div>
       </div>

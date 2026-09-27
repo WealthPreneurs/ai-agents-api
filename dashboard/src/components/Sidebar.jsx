@@ -15,24 +15,6 @@ export default function Sidebar({ current, setCurrent }) {
       <h1>AI Worker HQ</h1>
       <nav className="sidebar-nav">
         <button
-          className={current === 'queue' ? 'active' : ''}
-          onClick={() => setCurrent('queue')}
-        >
-          Approval Queue
-        </button>
-        <button
-          className={current === 'memory' ? 'active' : ''}
-          onClick={() => setCurrent('memory')}
-        >
-          Memory Settings
-        </button>
-        <button
-          className={current === 'team' ? 'active' : ''}
-          onClick={() => setCurrent('team')}
-        >
-          Your Team
-        </button>
-        <button
           className={current === 'deals' ? 'active' : ''}
           onClick={() => setCurrent('deals')}
         >
