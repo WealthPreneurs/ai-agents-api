@@ -9,6 +9,9 @@ Ai consulting agents automation API
 | POST | `/agent` | Chat with one of the consulting agents (`{ agent, message }`) |
 | POST | `/deal-engine/evaluate` | Kingdom Capital Deal Engine — runs a deal through Joseph, Abraham, Lydia, Solomon, and Steward and returns an Investment Memorandum |
 
+The `parcel-lookup/` folder has a separate Python web app for looking up county
+parcels on ArcGIS. See `parcel-lookup/README.md`.
+
 ## Kingdom Capital Deal Engine
 
 `POST /deal-engine/evaluate` takes a deal as JSON (`description` is required;

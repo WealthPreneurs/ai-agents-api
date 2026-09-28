@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcel Lookup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <style>
+    :root {
+      --bg: #f6f7f9; --card: #fff; --text: #1c2430; --muted: #5d6b7c;
+      --border: #dde2e8; --accent: #1f6f5c; --accent-text: #fff;
+      --error: #b3261e; --error-bg: #fdecea; --warn-bg: #fff6e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12161c; --card: #1b2129; --text: #e4e8ee; --muted: #9aa6b4;
+        --border: #2d3540; --accent: #3fae90; --accent-text: #0d1512;
+        --error: #ff8a80; --error-bg: #3a1c1a; --warn-bg: #3a3218;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+           background: var(--bg); color: var(--text); }
+    main { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+    h1 { font-size: 24px; margin: 0 0 4px; }
+    .sub { color: var(--muted); margin: 0 0 20px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            padding: 20px; margin-bottom: 16px; }
+    label { display: block; font-weight: 600; margin-bottom: 4px; }
+    .hint { color: var(--muted); font-size: 13px; font-weight: 400; }
+    input { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 6px;
+            background: var(--bg); color: var(--text); font: inherit; }
+    input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+    .field { margin-bottom: 14px; }
+    .row { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+    button { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 6px;
+             padding: 10px 18px; font: inherit; font-weight: 600; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: wait; }
+    .recent { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip { background: none; color: var(--accent); border: 1px solid var(--border);
+            padding: 2px 10px; font-size: 13px; font-weight: 400; border-radius: 99px;
+            max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .msg { padding: 12px 14px; border-radius: 8px; margin-bottom: 16px; }
+    .msg.error { background: var(--error-bg); color: var(--error); }
+    .msg.warn { background: var(--warn-bg); }
+    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+               gap: 12px 20px; margin: 0; }
+    .summary dt { color: var(--muted); font-size: 13px; }
+    .summary dd { margin: 0; font-weight: 600; word-break: break-word; }
+    #map { height: 340px; border-radius: 8px; margin-top: 16px; }
+    details summary { cursor: pointer; font-weight: 600; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+    td { border-top: 1px solid var(--border); padding: 6px 8px; vertical-align: top;
+         word-break: break-word; }
+    td:first-child { color: var(--muted); width: 38%; }
+    .matches { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .matches button.active { outline: 2px solid var(--accent); }
+    .actions { display: flex; gap: 8px; margin-top: 14px; }
+    .secondary { background: none; color: var(--accent); border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Parcel Lookup</h1>
+  <p class="sub">Look up a parcel on any county's public ArcGIS parcel layer.</p>
+
+  <form class="card" id="form">
+    <div class="field">
+      <label for="url">County ArcGIS layer URL
+        <span class="hint">— ends in /FeatureServer/0 or /MapServer/0</span></label>
+      <input id="url" required placeholder="https://gis.county.gov/arcgis/rest/services/Parcels/MapServer/0">
+      <div class="recent" id="recent"></div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label for="pid">Parcel ID / APN</label>
+        <input id="pid" required placeholder="e.g. 12-345-678.00">
+      </div>
+      <div class="field">
+        <label for="idfield">Parcel ID field <span class="hint">— optional</span></label>
+        <input id="idfield" placeholder="auto-detect">
+      </div>
+    </div>
+    <button id="go" type="submit">Look up parcel</button>
+  </form>
+
+  <div id="out"></div>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const RECENT_KEY = "parcelLookup.recentUrls";
+let map, layer, lastResult;
+
+function loadRecent() {
+  try { return JSON.parse(localStorage.getItem(RECENT_KEY)) || []; } catch { return []; }
+}
+function saveRecent(url) {
+  const list = [url, ...loadRecent().filter((u) => u !== url)].slice(0, 5);
+  try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch {}
+  renderRecent();
+}
+function renderRecent() {
+  const box = $("recent");
+  box.innerHTML = "";
+  for (const url of loadRecent()) {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.title = url;
+    b.textContent = url.replace(/^https?:\/\//, "");
+    b.onclick = () => { $("url").value = url; $("pid").focus(); };
+    box.appendChild(b);
+  }
+}
+
+function el(tag, attrs = {}, text) {
+  const node = document.createElement(tag);
+  Object.assign(node, attrs);
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+function fmt(key, value) {
+  if (value === "N/A" || value === null || value === undefined) return "N/A";
+  if (key === "assessed_value" && typeof value === "number")
+    return value.toLocaleString(undefined, { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+  if (key === "acreage" && typeof value === "number") return value.toFixed(3) + " ac";
+  return String(value);
+}
+
+const LABELS = {
+  owner: "Owner", address: "Site address", acreage: "Acreage", zoning: "Zoning",
+  land_use: "Land use", assessed_value: "Assessed value", legal_description: "Legal description",
+};
+
+function showMatch(result, index) {
+  const m = result.matches[index];
+  const box = $("detail");
+  box.innerHTML = "";
+
+  const dl = el("dl", { className: "summary" });
+  for (const [key, label] of Object.entries(LABELS)) {
+    dl.append(el("div", {}, ""));
+    dl.lastChild.append(el("dt", {}, label), el("dd", {}, fmt(key, m[key])));
+  }
+  box.append(dl);
+
+  const mapDiv = el("div", { id: "map" });
+  box.append(mapDiv);
+  if (map) { map.remove(); map = null; }
+  if (m.geometry && window.L) {
+    map = L.map(mapDiv);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+    layer = L.geoJSON({ type: "Feature", geometry: m.geometry }, {
+      style: { color: "#e4572e", weight: 3, fillOpacity: 0.15 },
+    }).addTo(map);
+    const bounds = layer.getBounds();
+    if (bounds.isValid()) map.fitBounds(bounds, { maxZoom: 18, padding: [20, 20] });
+  } else {
+    mapDiv.replaceWith(el("p", { className: "hint" }, m.geometry
+      ? "The map library didn't load, so the parcel can't be drawn."
+      : "No geometry returned for this parcel."));
+  }
+
+  const details = el("details");
+  details.append(el("summary", {}, `All fields (${Object.keys(m.attributes).length})`));
+  const table = el("table");
+  for (const [k, v] of Object.entries(m.attributes)) {
+    const tr = el("tr");
+    tr.append(el("td", {}, k), el("td", {}, v === null ? "" : String(v)));
+    table.append(tr);
+  }
+  details.append(table);
+  box.append(details);
+
+  document.querySelectorAll(".matches button").forEach((b, i) =>
+    b.classList.toggle("active", i === index));
+}
+
+function downloadJson() {
+  const blob = new Blob([JSON.stringify(lastResult, null, 2)], { type: "application/json" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: `parcel-${lastResult.parcel_id}.json` });
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function render(result) {
+  const out = $("out");
+  out.innerHTML = "";
+  lastResult = result;
+
+  if (result.status === "Error") {
+    out.append(el("div", { className: "msg error" }, result.message));
+    return;
+  }
+  if (result.status === "Not Found") {
+    const fields = result.searched_fields ? ` (searched ${result.searched_fields.join(", ")})` : "";
+    out.append(el("div", { className: "msg warn" },
+      (result.message || `No parcel found for "${result.parcel_id}"`) + fields +
+      ". Check the ID format, or set the Parcel ID field."));
+    return;
+  }
+
+  const card = el("section", { className: "card" });
+  card.append(el("h2", { style: "margin:0 0 4px;font-size:19px" }, `Parcel ${result.parcel_id}`));
+  card.append(el("p", { className: "sub", style: "margin-bottom:14px" },
+    `${result.layer || "Layer"} · matched on ${result.searched_fields.join(", ")}`));
+
+  if (result.matches.length > 1) {
+    const nav = el("div", { className: "matches" });
+    result.matches.forEach((m, i) => {
+      const b = el("button", { type: "button", className: "chip" }, m.address !== "N/A" ? m.address : `Match ${i + 1}`);
+      b.onclick = () => showMatch(result, i);
+      nav.append(b);
+    });
+    card.append(el("p", { className: "hint" }, `${result.matches.length} parcels matched:`), nav);
+  }
+
+  card.append(el("div", { id: "detail" }));
+  const actions = el("div", { className: "actions" });
+  const dl = el("button", { type: "button", className: "secondary" }, "Download JSON");
+  dl.onclick = downloadJson;
+  actions.append(dl);
+  card.append(actions);
+  out.append(card);
+  showMatch(result, 0);
+}
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const go = $("go");
+  go.disabled = true; go.textContent = "Looking up…";
+  const body = {
+    gis_endpoint_url: $("url").value.trim(),
+    parcel_id: $("pid").value.trim(),
+    id_field: $("idfield").value.trim(),
+  };
+  try {
+    const res = await fetch("/api/lookup", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+    });
+    const result = await res.json();
+    if (result.status === "Success") saveRecent(body.gis_endpoint_url);
+    render(result);
+  } catch (err) {
+    render({ status: "Error", message: "Could not reach the Parcel Lookup server: " + err.message });
+  } finally {
+    go.disabled = false; go.textContent = "Look up parcel";
+  }
+});
+
+renderRecent();
+</script>
+</body>
+</html>
