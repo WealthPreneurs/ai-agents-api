@@ -8,7 +8,13 @@
  */
 namespace TFPSGameplayTags
 {
-	// Input: bound in the input config and matched against ability spec source tags.
+	// Native input: bound directly to character functions (movement/look never go through GAS).
+	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Move);
+	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Look);
+	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Jump);
+	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Crouch);
+
+	// Ability input: matched against ability spec source tags.
 	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Weapon_Fire);
 	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Weapon_ADS);
 	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Weapon_Reload);
