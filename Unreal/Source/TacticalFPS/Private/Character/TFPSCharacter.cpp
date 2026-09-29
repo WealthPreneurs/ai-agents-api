@@ -16,7 +16,9 @@
 #include "Net/Core/PushModel/PushModel.h"
 #include "Net/UnrealNetwork.h"
 #include "Player/TFPSPlayerState.h"
+#include "TFPSCollisionChannels.h"
 #include "TFPSGameplayTags.h"
+#include "Weapons/TFPSWeaponComponent.h"
 
 ATFPSCharacter::ATFPSCharacter(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -29,6 +31,8 @@ ATFPSCharacter::ATFPSCharacter(const FObjectInitializer& ObjectInitializer)
 	SetNetCullDistanceSquared(FMath::Square(20000.f));
 
 	GetCapsuleComponent()->InitCapsuleSize(35.f, 90.f);
+	// Shots resolve against the mesh's physics asset (per-bone hit zones), never the movement capsule.
+	GetCapsuleComponent()->SetCollisionResponseToChannel(TFPS_TraceChannel_Weapon, ECR_Ignore);
 
 	BaseEyeHeight = 64.f;
 
@@ -54,6 +58,9 @@ ATFPSCharacter::ATFPSCharacter(const FObjectInitializer& ObjectInitializer)
 	// hit registration would disagree with what clients see. This is the most expensive per-character
 	// setting on the server; the lag-compensation pass will revisit it (hitbox capsules + URO).
 	Mesh3P->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones;
+	Mesh3P->SetCollisionResponseToChannel(TFPS_TraceChannel_Weapon, ECR_Block);
+
+	WeaponComponent = CreateDefaultSubobject<UTFPSWeaponComponent>(TEXT("WeaponComponent"));
 
 	UCharacterMovementComponent* Movement = GetCharacterMovement();
 	Movement->NavAgentProps.bCanCrouch = true;
@@ -109,6 +116,14 @@ void ATFPSCharacter::OnRep_PlayerState()
 	}
 }
 
+void ATFPSCharacter::NotifyControllerChanged()
+{
+	Super::NotifyControllerChanged();
+
+	// First-person weapon visuals depend on local control, which a client may learn after the weapon replicates.
+	WeaponComponent->RefreshCosmetics();
+}
+
 void ATFPSCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	UninitializeAbilitySystem();
@@ -147,6 +162,8 @@ void ATFPSCharacter::InitializeAbilitySystem()
 			DefaultAbilitySet->GiveToAbilitySystem(ASC, &GrantedHandles, this);
 		}
 
+		WeaponComponent->InitializeWeapons(ASC);
+
 		if (const UTFPSHealthSet* HealthSet = ASC->GetSet<UTFPSHealthSet>())
 		{
 			OutOfHealthHandle = HealthSet->OnOutOfHealth.AddUObject(this, &ThisClass::HandleOutOfHealth);
@@ -172,6 +189,7 @@ void ATFPSCharacter::UninitializeAbilitySystem()
 				HealthSet->OnOutOfHealth.Remove(OutOfHealthHandle);
 			}
 
+			WeaponComponent->UninitializeWeapons();
 			GrantedHandles.TakeFromAbilitySystem(ASC);
 
 			// The dead tag belongs to this body. The ASC outlives it on the PlayerState, so clear it here
@@ -286,6 +304,8 @@ void ATFPSCharacter::HandleDeathPresentation()
 	else
 	{
 		GetMesh()->SetCollisionProfileName(TEXT("Ragdoll"));
+		// Corpses must not eat the local player's traces (the server would reject those hits anyway).
+		GetMesh()->SetCollisionResponseToChannel(TFPS_TraceChannel_Weapon, ECR_Ignore);
 		GetMesh()->SetSimulatePhysics(true);
 	}
 

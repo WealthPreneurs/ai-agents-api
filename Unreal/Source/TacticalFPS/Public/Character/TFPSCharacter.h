@@ -13,6 +13,7 @@ class UInputMappingContext;
 class USkeletalMeshComponent;
 class UTFPSAbilitySystemComponent;
 class UTFPSInputConfig;
+class UTFPSWeaponComponent;
 struct FGameplayEffectSpec;
 struct FInputActionValue;
 
@@ -50,6 +51,7 @@ public:
 
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	UCameraComponent* GetFirstPersonCamera() const { return FirstPersonCamera; }
+	UTFPSWeaponComponent* GetWeaponComponent() const { return WeaponComponent; }
 
 	UFUNCTION(BlueprintPure, Category = "TFPS|Character")
 	bool IsDead() const { return bIsDead; }
@@ -65,6 +67,7 @@ protected:
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void UnPossessed() override;
 	virtual void OnRep_PlayerState() override;
+	virtual void NotifyControllerChanged() override;
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	//~End APawn / AActor
@@ -78,6 +81,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TFPS|Character")
 	TObjectPtr<USkeletalMeshComponent> Mesh1P;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TFPS|Character")
+	TObjectPtr<UTFPSWeaponComponent> WeaponComponent;
 
 	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Input")
 	TObjectPtr<const UTFPSInputConfig> InputConfig;

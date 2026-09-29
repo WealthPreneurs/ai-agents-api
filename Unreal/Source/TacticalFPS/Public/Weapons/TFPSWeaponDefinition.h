@@ -1,0 +1,124 @@
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Engine/DataAsset.h"
+
+#include "TFPSWeaponDefinition.generated.h"
+
+class UGameplayEffect;
+class USkeletalMesh;
+class UTFPSAbilitySet;
+
+UENUM(BlueprintType)
+enum class ETFPSFireMode : uint8
+{
+	SemiAuto,
+	Burst,
+	FullAuto
+};
+
+/**
+ * Static, shared description of a weapon. Never mutated at runtime and never duplicated per player:
+ * per-player state (ammo, heat) lives on UTFPSWeaponComponent. Replicates as a stable asset reference,
+ * i.e. a NetGUID, not its contents.
+ *
+ * Gameplay stats are hard references (the server needs them). Cosmetics are soft references so a
+ * dedicated server never loads meshes, and clients load them asynchronously on equip.
+ */
+UCLASS(BlueprintType, Const)
+class TACTICALFPS_API UTFPSWeaponDefinition : public UPrimaryDataAsset
+{
+	GENERATED_BODY()
+
+public:
+	//~UPrimaryDataAsset
+	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
+	//~End UPrimaryDataAsset
+
+	float GetFireInterval() const { return 60.f / FMath::Max(RoundsPerMinute, 1.f); }
+
+	/** Server-side damage for one pellet: base damage x range falloff x hit-zone multiplier. */
+	float CalculateDamage(float Distance, FName HitBone) const;
+
+	// --- Grants ---------------------------------------------------------------------------------
+
+	/** Fire / ADS / reload abilities (with input tags) granted while this weapon is equipped. */
+	UPROPERTY(EditDefaultsOnly, Category = "Abilities")
+	TObjectPtr<const UTFPSAbilitySet> AbilitySet;
+
+	/** Instant GE adding SetByCaller.Damage to IncomingDamage on the target. */
+	UPROPERTY(EditDefaultsOnly, Category = "Damage")
+	TSubclassOf<UGameplayEffect> DamageEffect;
+
+	// --- Firing ---------------------------------------------------------------------------------
+
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	ETFPSFireMode FireMode = ETFPSFireMode::FullAuto;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 1))
+	float RoundsPerMinute = 750.f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 2, EditCondition = "FireMode == ETFPSFireMode::Burst"))
+	int32 BurstCount = 3;
+
+	/** Extra delay after a burst before the next one can start. */
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 0, EditCondition = "FireMode == ETFPSFireMode::Burst"))
+	float BurstCooldown = 0.2f;
+
+	/** >1 for shotguns. Each pellet is traced separately; hits on one target are summed into one GE. */
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 1, ClampMax = 16))
+	int32 PelletsPerShot = 1;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 100, Units = "cm"))
+	float MaxRange = 10000.f;
+
+	/** Cone half-angle while hip firing. */
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 0, Units = "deg"))
+	float HipSpreadAngle = 3.f;
+
+	/** Cone half-angle while State.ADS is present. */
+	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 0, Units = "deg"))
+	float ADSSpreadAngle = 0.25f;
+
+	// --- Ammo -----------------------------------------------------------------------------------
+
+	UPROPERTY(EditDefaultsOnly, Category = "Ammo", Meta = (ClampMin = 1))
+	int32 MagazineSize = 30;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Ammo", Meta = (ClampMin = 0))
+	int32 MaxReserveAmmo = 120;
+
+	// --- Damage ---------------------------------------------------------------------------------
+
+	UPROPERTY(EditDefaultsOnly, Category = "Damage", Meta = (ClampMin = 0))
+	float BaseDamage = 25.f;
+
+	/** Full damage up to this range. */
+	UPROPERTY(EditDefaultsOnly, Category = "Damage", Meta = (ClampMin = 0, Units = "cm"))
+	float FalloffStartRange = 2500.f;
+
+	/** MinDamageMultiplier from this range on; linear in between. */
+	UPROPERTY(EditDefaultsOnly, Category = "Damage", Meta = (ClampMin = 0, Units = "cm"))
+	float FalloffEndRange = 5000.f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Damage", Meta = (ClampMin = 0, ClampMax = 1))
+	float MinDamageMultiplier = 0.6f;
+
+	/** Physics-asset body (bone) name -> multiplier, e.g. head = 1.5, calf_l = 0.9. Missing = 1. */
+	UPROPERTY(EditDefaultsOnly, Category = "Damage")
+	TMap<FName, float> BoneDamageMultipliers;
+
+	// --- Cosmetics (client only, async loaded) -------------------------------------------------
+
+	UPROPERTY(EditDefaultsOnly, Category = "Cosmetics")
+	TSoftObjectPtr<USkeletalMesh> FirstPersonMesh;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Cosmetics")
+	TSoftObjectPtr<USkeletalMesh> ThirdPersonMesh;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Cosmetics")
+	FName FirstPersonAttachSocket = TEXT("GripPoint");
+
+	UPROPERTY(EditDefaultsOnly, Category = "Cosmetics")
+	FName ThirdPersonAttachSocket = TEXT("weapon_r");
+};

@@ -26,6 +26,8 @@ namespace TFPSGameplayTags
 
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(Event_Death, "Event.Death", "Sent to the owner's ASC when health reaches zero.");
 
+	UE_DEFINE_GAMEPLAY_TAG_COMMENT(GameplayCue_Weapon_Fire, "GameplayCue.Weapon.Fire", "Muzzle flash, tracer and impact for one shot.");
+
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(SetByCaller_Damage, "SetByCaller.Damage", "Damage magnitude computed server-side.");
 
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(Match_Phase_Warmup, "Match.Phase.Warmup", "Pre-match warmup.");

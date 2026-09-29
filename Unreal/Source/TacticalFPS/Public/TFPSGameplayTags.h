@@ -37,6 +37,9 @@ namespace TFPSGameplayTags
 	// Gameplay events.
 	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Event_Death);
 
+	// Gameplay cues.
+	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(GameplayCue_Weapon_Fire);
+
 	// SetByCaller magnitudes.
 	TACTICALFPS_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(SetByCaller_Damage);
 
