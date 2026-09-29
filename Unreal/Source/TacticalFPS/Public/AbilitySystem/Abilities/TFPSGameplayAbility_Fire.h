@@ -25,15 +25,19 @@ struct FTFPSShotTargetData;
  *   Activate -> bind to the ability's target-data delegate and wait. The server never fires on its own
  *               timer; it only validates and applies what the client claims, in order (reliable RPCs).
  *   Per shot -> fire-rate token bucket, shot sanity (origin, age, range, pellet count), ammo, then per
- *               hit: target alive/in range/near its server position, bone exists, no static geometry in
- *               the way. Damage is computed here from the weapon definition; the client never sends it.
+ *               hit: target alive and in range, then the client's ray is re-tested against the target's
+ *               hitboxes rewound to what the shooter was seeing (UTFPSLagCompensationSubsystem), which
+ *               also decides the bone. Finally no static geometry may block the rewound impact. Damage
+ *               is computed here from the weapon definition; the client never sends it.
  *               The fire cue is executed under the client's prediction key, so the shooter doesn't get
  *               it twice.
  *
  * Listen-server host: runs the client path and calls the server processing directly (no RPC).
  *
- * TODO(lag-comp): ValidateHit's position check is a plausibility bound. The rewind subsystem will
- * replace it with a trace against the target's hitboxes rewound to Shot.ClientServerTime.
+ * Rewind time is derived from what the server measures, not what the client claims:
+ *     RewindTime = Now - PlayerState ping (RTT) - SimulatedProxyViewDelay, capped at MaxLagCompensationTime
+ * A client cannot "backtrack" further by forging its timestamp; it can only do so by genuinely lagging,
+ * which the cap bounds.
  */
 UCLASS()
 class TACTICALFPS_API UTFPSGameplayAbility_Fire : public UTFPSGameplayAbility
@@ -72,7 +76,21 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire|Validation", Meta = (Units = "s"))
 	float MaxClockSkew = 0.1f;
 
-	/** Extra room around the target's collision cylinder for limbs and animation, before velocity slack. */
+	/**
+	 * How far behind real server state a client renders other players, on top of network latency
+	 * (CharacterMovement's simulated-proxy smoothing). Added to RTT when choosing the rewind time.
+	 */
+	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire|Validation", Meta = (Units = "s"))
+	float SimulatedProxyViewDelay = 0.05f;
+
+	/** Rewound ray may extend this far past the client's claimed impact (the claim is quantised). */
+	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire|Validation", Meta = (Units = "cm"))
+	float RewindRayOvershoot = 50.f;
+
+	/**
+	 * Fallback for targets without rewind history only: extra room around the target's collision
+	 * cylinder for limbs and animation, before velocity slack.
+	 */
 	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire|Validation", Meta = (Units = "cm"))
 	float MaxTargetPositionError = 100.f;
 
@@ -84,10 +102,15 @@ private:
 	void OnServerTargetDataReceived(const FGameplayAbilityTargetDataHandle& Data, FGameplayTag ApplicationTag);
 	void ProcessShotOnServer(const FTFPSShotTargetData& Shot);
 	bool ValidateShot(const FTFPSShotTargetData& Shot, const UTFPSWeaponDefinition& Weapon) const;
-	bool ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const UTFPSWeaponDefinition& Weapon, FName& OutBone) const;
+	bool ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const UTFPSWeaponDefinition& Weapon,
+		double RewindTime, FName& OutBone, FVector& OutImpact) const;
+	bool ValidateHitPlausibility(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, FName& OutBone) const;
 	void ApplyDamage(AActor* Target, float Damage, const UTFPSWeaponDefinition& Weapon);
 
 	double GetServerWorldTime() const;
+
+	/** Server. World time (GetWorld()->GetTimeSeconds() base) the shooter was seeing when it fired. */
+	double GetRewindTimeForShooter() const;
 
 	UPROPERTY(Transient)
 	TObjectPtr<const UTFPSWeaponDefinition> ActiveWeapon;

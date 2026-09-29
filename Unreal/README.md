@@ -23,6 +23,7 @@ Unreal/
         AbilitySystem/Abilities/TFPSGameplayAbility*  base ability + predicted hitscan fire
         Weapons/TFPSWeaponDefinition.*         data asset: fire mode, RPM, ammo, damage falloff, hit zones
         Weapons/TFPSWeaponComponent.*          equipped weapon, predicted ammo, fire-rate limiting, cosmetics
+        LagCompensation/TFPSLagCompensationSubsystem.*  server-side hitbox history + rewind hit confirmation
         TFPSCollisionChannels.h                Weapon trace channel (see Config/DefaultEngine.ini)
         AbilitySystem/Attributes/TFPSHealthSet.*     health/armor with a server-side damage choke point
         Player/TFPSPlayerState.*               ASC owner (Mixed replication)
@@ -72,5 +73,21 @@ To drop the module into an existing project instead, copy `Source/TacticalFPS` i
 - Firing is predicted on the client and validated on the server; see the header of `TFPSGameplayAbility_Fire.h` for the full flow.
   - The client traces and sends one compact shot packet per shot. The server rate-limits shots, sanity-checks each shot and hit, spends ammo, and computes and applies damage.
   - Ammo prediction uses shot sequence numbers, the way CharacterMovement reconciles saved moves.
-  - The hit-position check is a plausibility bound for now; server-side rewind replaces it next.
+  - Hits are confirmed with server-side rewind (next section).
+
+## Lag compensation
+
+Every frame, the server records each character's hitbox capsules from its physics asset. It interpolates those recorded poses to the moment the shooter was seeing, and re-tests the client's ray against them.
+
+- The server picks the bone, so headshots can't be forged.
+- Nothing is actually moved during rewind. The test is pure math on recorded data, so it can't disturb physics.
+- **Rewind time** = server now − the shooter's measured ping − `SimulatedProxyViewDelay`, capped at `MaxLagCompensationTime` (0.35 s).
+  - It uses the ping the server measures, not a timestamp from the client, so a client can't forge how far back it gets.
+- Hitboxes must be capsules or spheres in the physics asset; boxes and convex shapes are ignored with a warning.
+- Every character skin must share the default skeleton and physics asset, because the server only uses the default body mesh.
+- Targets without history, such as a turret with no physics asset, fall back to the older plausibility check.
+- **Tuning** (server console variables):
+  - `tfps.LagComp.HistorySeconds` (default 0.5)
+  - `tfps.LagComp.HitboxInflation` (default 2 cm)
+  - `tfps.LagComp.JitterWindow` (default 16 ms)
 - Death is a push-model replicated `bIsDead` flag on the pawn, which drives ragdoll and other visuals on every machine. It also sets a replicated `State.Dead` tag on the ASC, which blocks abilities.

@@ -8,6 +8,8 @@
 #include "Engine/World.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/GameStateBase.h"
+#include "GameFramework/PlayerState.h"
+#include "LagCompensation/TFPSLagCompensationSubsystem.h"
 #include "TFPSCollisionChannels.h"
 #include "TFPSGameplayTags.h"
 #include "TacticalFPS.h"
@@ -337,16 +339,19 @@ void UTFPSGameplayAbility_Fire::ProcessShotOnServer(const FTFPSShotTargetData& S
 	}
 
 	// Sum pellets per target so a shotgun blast is one GE application per victim, not one per pellet.
+	const double RewindTime = GetRewindTimeForShooter();
+
 	TMap<AActor*, float, TInlineSetAllocator<4>> DamageByTarget;
 	for (const FTFPSShotHit& Hit : Shot.Hits)
 	{
 		FName ValidatedBone;
-		if (!ValidateHit(Shot, Hit, *Weapon, ValidatedBone))
+		FVector ValidatedImpact;
+		if (!ValidateHit(Shot, Hit, *Weapon, RewindTime, ValidatedBone, ValidatedImpact))
 		{
 			continue;
 		}
 
-		const float Distance = FVector::Dist(Shot.Origin, Hit.ImpactPoint);
+		const float Distance = FVector::Dist(Shot.Origin, ValidatedImpact);
 		DamageByTarget.FindOrAdd(Hit.HitActor.Get()) += Weapon->CalculateDamage(Distance, ValidatedBone);
 	}
 
@@ -389,7 +394,8 @@ bool UTFPSGameplayAbility_Fire::ValidateShot(const FTFPSShotTargetData& Shot, co
 	return FVector::DistSquared(Shot.Origin, Shot.EndPoint) <= FMath::Square(Weapon.MaxRange + 1.f);
 }
 
-bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const UTFPSWeaponDefinition& Weapon, FName& OutBone) const
+bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const UTFPSWeaponDefinition& Weapon,
+	double RewindTime, FName& OutBone, FVector& OutImpact) const
 {
 	AActor* Target = Hit.HitActor.Get();
 	const AActor* Shooter = GetAvatarActorFromActorInfo();
@@ -409,13 +415,66 @@ bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, con
 		return false;
 	}
 
-	if (FVector::DistSquared(Shot.Origin, Hit.ImpactPoint) > FMath::Square(Weapon.MaxRange + 1.f))
+	const FVector Origin = Shot.Origin;
+	const FVector ToClaim = FVector(Hit.ImpactPoint) - Origin;
+	const float ClaimDistance = static_cast<float>(ToClaim.Size());
+	if (ClaimDistance <= KINDA_SMALL_NUMBER || ClaimDistance > Weapon.MaxRange + 1.f)
 	{
 		return false;
 	}
 
-	// Plausibility until rewind exists: the impact must be near where the server has the target now,
-	// widened by how far the target could have moved in the shot's claimed age.
+	// Re-test the client's own ray (origin -> claimed impact) against the target as the shooter saw it.
+	// Only the ray direction is taken from the claim; where and what it hits is decided here.
+	const UTFPSLagCompensationSubsystem* LagComp = GetWorld()->GetSubsystem<UTFPSLagCompensationSubsystem>();
+	FTFPSRewindHit Rewound;
+	const ETFPSRewindResult Result = LagComp
+		? LagComp->ConfirmHit(Target, Origin, ToClaim / ClaimDistance, FMath::Min(ClaimDistance + RewindRayOvershoot, Weapon.MaxRange), RewindTime, Rewound)
+		: ETFPSRewindResult::NoHistory;
+
+	switch (Result)
+	{
+	case ETFPSRewindResult::Hit:
+		OutBone = Rewound.BoneName;
+		OutImpact = Rewound.ImpactPoint;
+		break;
+
+	case ETFPSRewindResult::Miss:
+		UE_LOG(LogTFPS, Verbose, TEXT("[%s] hit on [%s] rejected: ray misses rewound hitboxes (rewind %.0f ms)."),
+			*GetNameSafe(Shooter), *GetNameSafe(Target), (GetWorld()->GetTimeSeconds() - RewindTime) * 1000.0);
+		return false;
+
+	case ETFPSRewindResult::NoHistory:
+		if (!ValidateHitPlausibility(Shot, Hit, OutBone))
+		{
+			return false;
+		}
+		OutImpact = Hit.ImpactPoint;
+		break;
+	}
+
+	// Only static geometry: dynamic objects (doors, vehicles) may legitimately be elsewhere on the server
+	// due to latency. Stop just short of the impact so the target's own surface doesn't count.
+	const FVector ToImpact = OutImpact - Origin;
+	const FVector TraceEnd = Origin + ToImpact.GetSafeNormal() * FMath::Max(ToImpact.Size() - 5.0, 0.0);
+
+	FCollisionQueryParams QueryParams(SCENE_QUERY_STAT(TFPSHitValidation), false, Shooter);
+	QueryParams.AddIgnoredActor(Target);
+
+	if (GetWorld()->LineTraceTestByObjectType(Origin, TraceEnd, FCollisionObjectQueryParams(ECC_WorldStatic), QueryParams))
+	{
+		UE_LOG(LogTFPS, Warning, TEXT("[%s] hit on [%s] rejected: blocked by world geometry."), *GetNameSafe(Shooter), *GetNameSafe(Target));
+		return false;
+	}
+
+	return true;
+}
+
+bool UTFPSGameplayAbility_Fire::ValidateHitPlausibility(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, FName& OutBone) const
+{
+	AActor* Target = Hit.HitActor.Get();
+
+	// The impact must be near where the server has the target now, widened by how far the target could
+	// have moved in the shot's claimed age.
 	const float Age = FMath::Clamp(static_cast<float>(GetServerWorldTime() - Shot.ClientServerTime), 0.f, MaxLagCompensationTime);
 	const float Slack = MaxTargetPositionError + Target->GetVelocity().Size() * Age;
 
@@ -426,30 +485,16 @@ bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, con
 	const FVector Delta = FVector(Hit.ImpactPoint) - Target->GetActorLocation();
 	if (Delta.Size2D() > Radius + Slack || FMath::Abs(Delta.Z) > HalfHeight + Slack)
 	{
-		UE_LOG(LogTFPS, Warning, TEXT("[%s] hit on [%s] rejected: impact too far from target."), *GetNameSafe(Shooter), *GetNameSafe(Target));
+		UE_LOG(LogTFPS, Warning, TEXT("[%s] hit on [%s] rejected: impact too far from target."),
+			*GetNameSafe(GetAvatarActorFromActorInfo()), *GetNameSafe(Target));
 		return false;
 	}
 
-	// Only static geometry: dynamic objects (doors, vehicles) may legitimately be elsewhere on the server
-	// due to latency. Stop just short of the impact so the target's own surface doesn't count.
-	const FVector ToImpact = FVector(Hit.ImpactPoint) - FVector(Shot.Origin);
-	const FVector TraceEnd = FVector(Shot.Origin) + ToImpact.GetSafeNormal() * FMath::Max(ToImpact.Size() - 5.f, 0.f);
-
-	FCollisionQueryParams QueryParams(SCENE_QUERY_STAT(TFPSHitValidation), false, Shooter);
-	QueryParams.AddIgnoredActor(Target);
-
-	if (GetWorld()->LineTraceTestByObjectType(Shot.Origin, TraceEnd, FCollisionObjectQueryParams(ECC_WorldStatic), QueryParams))
-	{
-		UE_LOG(LogTFPS, Warning, TEXT("[%s] hit on [%s] rejected: blocked by world geometry."), *GetNameSafe(Shooter), *GetNameSafe(Target));
-		return false;
-	}
-
-	// A bone that doesn't exist on the target is a forged headshot claim: keep the hit, drop the multiplier.
-	OutBone = NAME_None;
-	if (Hit.BoneName != NAME_None && TargetCharacter && TargetCharacter->GetMesh()->GetBoneIndex(Hit.BoneName) != INDEX_NONE)
-	{
-		OutBone = Hit.BoneName;
-	}
+	// Without history the bone is only a claim; keep it only if it exists on the target.
+	const ACharacter* TargetCharacter = Cast<ACharacter>(Target);
+	OutBone = (Hit.BoneName != NAME_None && TargetCharacter && TargetCharacter->GetMesh()->GetBoneIndex(Hit.BoneName) != INDEX_NONE)
+		? Hit.BoneName
+		: NAME_None;
 
 	return true;
 }
@@ -481,4 +526,24 @@ double UTFPSGameplayAbility_Fire::GetServerWorldTime() const
 	const UWorld* World = GetWorld();
 	const AGameStateBase* GameState = World ? World->GetGameState() : nullptr;
 	return GameState ? GameState->GetServerWorldTimeSeconds() : (World ? World->GetTimeSeconds() : 0.0);
+}
+
+double UTFPSGameplayAbility_Fire::GetRewindTimeForShooter() const
+{
+	// Same clock the lag-compensation subsystem records with.
+	const double Now = GetWorld()->GetTimeSeconds();
+
+	// A listen-server host sees the live server state.
+	if (CurrentActorInfo->IsLocallyControlled())
+	{
+		return Now;
+	}
+
+	// State the client saw left the server one-way-latency before it arrived, was rendered after
+	// SimulatedProxyViewDelay, and the shot took another one-way trip back: RTT + view delay in total.
+	const APlayerState* PlayerState = Cast<APlayerState>(CurrentActorInfo->OwnerActor.Get());
+	const double RoundTrip = PlayerState ? PlayerState->GetPingInMilliseconds() / 1000.0 : 0.0;
+	const double Behind = FMath::Min(RoundTrip + SimulatedProxyViewDelay, static_cast<double>(MaxLagCompensationTime));
+
+	return Now - Behind;
 }

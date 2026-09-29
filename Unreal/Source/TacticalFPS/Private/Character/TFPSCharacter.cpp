@@ -12,6 +12,7 @@
 #include "GameFramework/PlayerController.h"
 #include "GameplayEffect.h"
 #include "Input/TFPSInputConfig.h"
+#include "LagCompensation/TFPSLagCompensationSubsystem.h"
 #include "InputActionValue.h"
 #include "Net/Core/PushModel/PushModel.h"
 #include "Net/UnrealNetwork.h"
@@ -85,6 +86,21 @@ void ATFPSCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 	DOREPLIFETIME_WITH_PARAMS_FAST(ATFPSCharacter, bIsDead, Params);
 }
 
+void ATFPSCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	// Hitboxes come from the server's own body mesh and physics asset, never from client cosmetics,
+	// so every character skin must share the default skeleton and physics asset.
+	if (HasAuthority())
+	{
+		if (UTFPSLagCompensationSubsystem* LagComp = GetWorld()->GetSubsystem<UTFPSLagCompensationSubsystem>())
+		{
+			LagComp->RegisterTarget(this, GetMesh());
+		}
+	}
+}
+
 void ATFPSCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
@@ -127,6 +143,11 @@ void ATFPSCharacter::NotifyControllerChanged()
 void ATFPSCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	UninitializeAbilitySystem();
+
+	if (UTFPSLagCompensationSubsystem* LagComp = GetWorld()->GetSubsystem<UTFPSLagCompensationSubsystem>())
+	{
+		LagComp->UnregisterTarget(this);
+	}
 
 	Super::EndPlay(EndPlayReason);
 }
