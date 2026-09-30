@@ -2,7 +2,9 @@
 
 #include "GameplayEffect.h"
 #include "GameplayEffectExtension.h"
+#include "Game/TFPSGameState.h"
 #include "Net/UnrealNetwork.h"
+#include "Teams/TFPSTeamAgentInterface.h"
 
 UTFPSHealthSet::UTFPSHealthSet()
 	: Health(100.f)
@@ -96,7 +98,7 @@ bool UTFPSHealthSet::PreGameplayEffectExecute(FGameplayEffectModCallbackData& Da
 	}
 
 	// Dead targets take no further damage (prevents double kill credit / negative-health feed spam).
-	if (Data.EvaluatedData.Attribute == GetIncomingDamageAttribute() && bOutOfHealth)
+	if (Data.EvaluatedData.Attribute == GetIncomingDamageAttribute() && (bOutOfHealth || !IsDamageAllowed(Data.EffectSpec)))
 	{
 		Data.EvaluatedData.Magnitude = 0.f;
 	}
@@ -143,6 +145,32 @@ void UTFPSHealthSet::PostGameplayEffectExecute(const FGameplayEffectModCallbackD
 			OnOutOfHealth.Broadcast(Context.GetOriginalInstigator(), Context.GetEffectCauser(), &Data.EffectSpec, DamageDone);
 		}
 	}
+}
+
+bool UTFPSHealthSet::IsDamageAllowed(const FGameplayEffectSpec& Spec) const
+{
+	const UWorld* World = GetWorld();
+	const ATFPSGameState* GameState = World ? World->GetGameState<ATFPSGameState>() : nullptr;
+	if (!GameState)
+	{
+		return true; // No match rules (e.g. a test map with another game mode).
+	}
+
+	// Grenades still in flight when the round ends do nothing.
+	if (!GameState->IsGameplayActive())
+	{
+		return false;
+	}
+
+	// Instigator is the attacker's PlayerState; the victim's ASC owner is ours. Self-damage always applies.
+	const AActor* Attacker = Spec.GetContext().GetOriginalInstigator();
+	const AActor* Victim = GetOwningActor();
+	if (!Attacker || Attacker == Victim || GameState->IsFriendlyFireEnabled())
+	{
+		return true;
+	}
+
+	return !TFPSTeams::AreSameTeam(Attacker, Victim);
 }
 
 void UTFPSHealthSet::ClampAttribute(const FGameplayAttribute& Attribute, float& NewValue) const

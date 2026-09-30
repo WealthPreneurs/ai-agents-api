@@ -24,6 +24,9 @@ Unreal/
         Weapons/TFPSWeaponDefinition.*         data asset: fire mode, RPM, ammo, damage falloff, hit zones
         Weapons/TFPSWeaponComponent.*          equipped weapon, predicted ammo, fire-rate limiting, cosmetics
         LagCompensation/TFPSLagCompensationSubsystem.*  server-side hitbox history + rewind hit confirmation
+        Game/TFPSGameMode.*                    phase machine, teams, spawn selection, respawn, scoring, map rotation
+        Game/TFPSGameState.*                   replicated phase, countdown, team scores, kill feed
+        Teams/TFPSTeamAgentInterface.*         team identity (PlayerState is the source of truth)
         TFPSCollisionChannels.h                Weapon trace channel (see Config/DefaultEngine.ini)
         AbilitySystem/Attributes/TFPSHealthSet.*     health/armor with a server-side damage choke point
         Player/TFPSPlayerState.*               ASC owner (Mixed replication)
@@ -58,7 +61,8 @@ To drop the module into an existing project instead, copy `Source/TacticalFPS` i
    - Give it an ability set containing `TFPSGameplayAbility_Fire` (or a Blueprint child) on `InputTag.Weapon.Fire`.
    - On the character Blueprint's *Weapon Component*, set it as *Default Weapon*.
 7. **Fire cue.** Create a `GameplayCueNotify_Static` for `GameplayCue.Weapon.Fire`. `Location` and `Normal` are the impact, `EffectCauser` is the shooter and `SourceObject` is the weapon definition.
-8. **Game mode.** Use a game mode with Player Controller = `TFPSPlayerController`, Player State = `TFPSPlayerState` and the character Blueprint as the default pawn. The match-lifecycle game mode will replace it later.
+8. **Game mode.** Create a Blueprint of `TFPSGameMode`, set *Default Pawn Class* to the character Blueprint, and use it as the map's (or the project's) game mode. Controller, player state and game state are already set.
+9. **Spawns.** Place Player Starts. Set *Player Start Tag* to `Team0` or `Team1` for team-only spawns; untagged starts are shared.
 
 ## Networking model
 
@@ -91,3 +95,27 @@ Every frame, the server records each character's hitbox capsules from its physic
   - `tfps.LagComp.HitboxInflation` (default 2 cm)
   - `tfps.LagComp.JitterWindow` (default 16 ms)
 - Death is a push-model replicated `bIsDead` flag on the pawn, which drives ragdoll and other visuals on every machine. It also sets a replicated `State.Dead` tag on the ASC, which blocks abilities.
+
+## Match lifecycle
+
+`ATFPSGameMode` runs on the server; `ATFPSGameState` replicates what clients need to see.
+
+```
+Warmup ──(timer, enough players)──> InProgress ──(score limit or time)──> RoundEnd
+  ^  └──(not enough players: extend)                ^                      │
+  │                                                  └──(more rounds)──────┤
+next map <──(timer)── PostGame <──────────────(match decided)──────────────┘
+```
+
+- **The phase machine** is timer-driven, with no tick. Every transition writes the phase tag and the end time to the game state, which forces a net update so countdowns start in sync. Clients compute the time left from the server clock.
+- **Spawning** happens only in Warmup and InProgress; players who join later spectate until the next round.
+  - New players join the smallest team.
+  - Spawn points tagged for another team are skipped, and so are points within 150 cm of a living player.
+  - Among the rest, the game mode picks the point farthest from enemies, with some randomness so equally safe spawns rotate.
+- **Scoring** counts only in InProgress. Enemy kills add to the killer's team score; team kills and suicides only count as deaths. Reaching the score limit ends the round immediately.
+- **Kill feed** is an unreliable multicast from the game state. Scores replicate separately, so a dropped entry costs nothing.
+- **Freezing** happens in RoundEnd and PostGame: pawns stop moving and get a `State.Frozen` tag, which blocks every ability. The health set also rejects all damage outside active phases, and rejects friendly fire unless it's enabled.
+- **Rounds:** each new round respawns everyone with fresh pawns.
+- **Travel** is seamless. PlayerStates keep their team across maps, and stats reset each map. `MapRotation` advances through a `?RotationIndex=` URL option.
+- **Settings** are in `Config/DefaultGame.ini`, and several can be overridden per match through the server URL.
+

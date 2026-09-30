@@ -13,6 +13,7 @@ UTFPSGameplayAbility::UTFPSGameplayAbility(const FObjectInitializer& ObjectIniti
 	ReplicationPolicy = EGameplayAbilityReplicationPolicy::ReplicateNo;
 
 	ActivationBlockedTags.AddTag(TFPSGameplayTags::State_Dead);
+	ActivationBlockedTags.AddTag(TFPSGameplayTags::State_Frozen);
 }
 
 ATFPSCharacter* UTFPSGameplayAbility::GetTFPSCharacterFromActorInfo() const

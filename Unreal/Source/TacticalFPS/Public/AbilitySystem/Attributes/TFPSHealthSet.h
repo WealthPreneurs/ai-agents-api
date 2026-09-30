@@ -69,6 +69,9 @@ protected:
 private:
 	void ClampAttribute(const FGameplayAttribute& Attribute, float& NewValue) const;
 
+	/** Server rules for all damage, whatever its source: match phase and friendly fire. */
+	bool IsDamageAllowed(const FGameplayEffectSpec& Spec) const;
+
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Health, Category = "TFPS|Health", Meta = (AllowPrivateAccess = true))
 	FGameplayAttributeData Health;
 

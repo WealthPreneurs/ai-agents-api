@@ -10,7 +10,8 @@ class UTFPSAbilitySystemComponent;
 class UTFPSWeaponComponent;
 
 /**
- * Project base ability. Defaults to instanced-per-actor + local-predicted, and is blocked while dead.
+ * Project base ability. Defaults to instanced-per-actor + local-predicted, and is blocked while dead
+ * or while the match phase freezes players.
  */
 UCLASS(Abstract)
 class TACTICALFPS_API UTFPSGameplayAbility : public UGameplayAbility

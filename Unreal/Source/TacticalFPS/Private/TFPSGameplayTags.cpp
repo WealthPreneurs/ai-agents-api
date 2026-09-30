@@ -23,6 +23,7 @@ namespace TFPSGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(State_Sprinting, "State.Sprinting", "Owner is sprinting; blocks firing.");
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(State_ADS, "State.ADS", "Owner is aiming down sights.");
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(State_Reloading, "State.Reloading", "Owner is reloading.");
+	UE_DEFINE_GAMEPLAY_TAG_COMMENT(State_Frozen, "State.Frozen", "Match phase forbids acting (round end, post game).");
 
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(Event_Death, "Event.Death", "Sent to the owner's ASC when health reaches zero.");
 

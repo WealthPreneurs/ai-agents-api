@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "GameplayTagContainer.h"
+#include "Teams/TFPSTeamAgentInterface.h"
 
 #include "TFPSCharacter.generated.h"
 
@@ -36,7 +37,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FTFPSCharacterDiedSignature, ATFPSC
  *  - Teardown:        UnPossessed / OnRep_PlayerState(null) / EndPlay -> UninitializeAbilitySystem.
  */
 UCLASS()
-class TACTICALFPS_API ATFPSCharacter : public ACharacter, public IAbilitySystemInterface
+class TACTICALFPS_API ATFPSCharacter : public ACharacter, public IAbilitySystemInterface, public ITFPSTeamAgentInterface
 {
 	GENERATED_BODY()
 
@@ -47,6 +48,10 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	//~End IAbilitySystemInterface
 
+	//~ITFPSTeamAgentInterface
+	virtual uint8 GetTFPSTeamId() const override;
+	//~End ITFPSTeamAgentInterface
+
 	UTFPSAbilitySystemComponent* GetTFPSAbilitySystemComponent() const { return AbilitySystemComponent.Get(); }
 
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
@@ -55,6 +60,15 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "TFPS|Character")
 	bool IsDead() const { return bIsDead; }
+
+	UFUNCTION(BlueprintPure, Category = "TFPS|Character")
+	bool IsMatchFrozen() const { return bMatchFrozen; }
+
+	/**
+	 * Server only. Stops movement and blocks abilities (State.Frozen) for round end / post game. There is
+	 * no unfreeze: the next round spawns fresh pawns.
+	 */
+	void SetMatchFrozen(bool bFrozen);
 
 	/** Server only. Game mode binds here for scoring, killfeed and respawn. */
 	UPROPERTY(BlueprintAssignable, Category = "TFPS|Character")
@@ -110,6 +124,10 @@ private:
 	UFUNCTION()
 	void OnRep_IsDead();
 
+	UFUNCTION()
+	void OnRep_MatchFrozen();
+	void ApplyMatchFrozen();
+
 	void Input_Move(const FInputActionValue& Value);
 	void Input_Look(const FInputActionValue& Value);
 	void Input_JumpPressed();
@@ -131,4 +149,7 @@ private:
 	bool bIsDead = false;
 
 	bool bDeathPresentationDone = false;
+
+	UPROPERTY(ReplicatedUsing = OnRep_MatchFrozen)
+	bool bMatchFrozen = false;
 };

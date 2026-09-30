@@ -76,6 +76,11 @@ UAbilitySystemComponent* ATFPSCharacter::GetAbilitySystemComponent() const
 	return AbilitySystemComponent.Get();
 }
 
+uint8 ATFPSCharacter::GetTFPSTeamId() const
+{
+	return TFPSTeams::GetTeamId(GetPlayerState());
+}
+
 void ATFPSCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
@@ -84,6 +89,7 @@ void ATFPSCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 	FDoRepLifetimeParams Params;
 	Params.bIsPushBased = true;
 	DOREPLIFETIME_WITH_PARAMS_FAST(ATFPSCharacter, bIsDead, Params);
+	DOREPLIFETIME_WITH_PARAMS_FAST(ATFPSCharacter, bMatchFrozen, Params);
 }
 
 void ATFPSCharacter::BeginPlay()
@@ -220,6 +226,11 @@ void ATFPSCharacter::UninitializeAbilitySystem()
 				ASC->RemoveLooseGameplayTag(TFPSGameplayTags::State_Dead);
 				ASC->RemoveReplicatedLooseGameplayTag(TFPSGameplayTags::State_Dead);
 			}
+			if (bMatchFrozen)
+			{
+				ASC->RemoveLooseGameplayTag(TFPSGameplayTags::State_Frozen);
+				ASC->RemoveReplicatedLooseGameplayTag(TFPSGameplayTags::State_Frozen);
+			}
 		}
 
 		ASC->CancelAllAbilities();
@@ -281,6 +292,63 @@ void ATFPSCharacter::HandleOutOfHealth(AActor* DamageInstigator, AActor* DamageC
 	OnDied.Broadcast(this, DamageInstigator);
 
 	SetLifeSpan(CorpseLifeSpan);
+}
+
+void ATFPSCharacter::SetMatchFrozen(bool bFrozen)
+{
+	if (!HasAuthority() || bMatchFrozen == bFrozen)
+	{
+		return;
+	}
+
+	bMatchFrozen = bFrozen;
+	MARK_PROPERTY_DIRTY_FROM_NAME(ATFPSCharacter, bMatchFrozen, this);
+
+	if (UTFPSAbilitySystemComponent* ASC = AbilitySystemComponent.Get())
+	{
+		if (bFrozen)
+		{
+			ASC->CancelAllAbilities();
+			ASC->AddLooseGameplayTag(TFPSGameplayTags::State_Frozen);
+			ASC->AddReplicatedLooseGameplayTag(TFPSGameplayTags::State_Frozen);
+		}
+		else
+		{
+			ASC->RemoveLooseGameplayTag(TFPSGameplayTags::State_Frozen);
+			ASC->RemoveReplicatedLooseGameplayTag(TFPSGameplayTags::State_Frozen);
+		}
+	}
+
+	ApplyMatchFrozen();
+	ForceNetUpdate();
+}
+
+void ATFPSCharacter::OnRep_MatchFrozen()
+{
+	ApplyMatchFrozen();
+}
+
+void ATFPSCharacter::ApplyMatchFrozen()
+{
+	UCharacterMovementComponent* Movement = GetCharacterMovement();
+
+	if (bMatchFrozen)
+	{
+		Movement->StopMovementImmediately();
+		Movement->DisableMovement();
+
+		if (IsLocallyControlled())
+		{
+			if (UTFPSAbilitySystemComponent* ASC = AbilitySystemComponent.Get())
+			{
+				ASC->ClearAbilityInput();
+			}
+		}
+	}
+	else if (!bIsDead)
+	{
+		Movement->SetMovementMode(MOVE_Walking);
+	}
 }
 
 void ATFPSCharacter::OnRep_IsDead()
@@ -391,7 +459,7 @@ void ATFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void ATFPSCharacter::Input_Move(const FInputActionValue& Value)
 {
-	if (bIsDead)
+	if (bIsDead || bMatchFrozen)
 	{
 		return;
 	}
@@ -411,7 +479,7 @@ void ATFPSCharacter::Input_Look(const FInputActionValue& Value)
 
 void ATFPSCharacter::Input_JumpPressed()
 {
-	if (!bIsDead)
+	if (!bIsDead && !bMatchFrozen)
 	{
 		Jump();
 	}
@@ -424,7 +492,7 @@ void ATFPSCharacter::Input_JumpReleased()
 
 void ATFPSCharacter::Input_CrouchPressed()
 {
-	if (!bIsDead)
+	if (!bIsDead && !bMatchFrozen)
 	{
 		Crouch();
 	}
