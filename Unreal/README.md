@@ -31,6 +31,11 @@ Unreal/
         Loadout/TFPSLoadoutComponent.*         on PlayerState: request RPC, server validation, active loadout
         AbilitySystem/Abilities/TFPSWeaponGameplayAbility.*   weapon abilities gated on the active weapon
         AbilitySystem/Abilities/TFPSGameplayAbility_SwitchWeapon.*  predicted weapon swap
+        AbilitySystem/Abilities/TFPSGameplayAbility_Reload.*  predicted, server-timed reload
+        AbilitySystem/Abilities/TFPSGameplayAbility_ADS.*     aim down sights (hold/toggle)
+        AbilitySystem/Abilities/TFPSGameplayAbility_Sprint.*  sprint (toggle/hold)
+        AbilitySystem/Attributes/TFPSMovementSet.*   movement speed multiplier (perks, status effects)
+        Movement/TFPSCharacterMovementComponent.*   predicted sprint / ADS speed via saved-move flags
         LagCompensation/TFPSLagCompensationSubsystem.*  server-side hitbox history + rewind hit confirmation
         Game/TFPSGameMode.*                    phase machine, teams, spawn selection, respawn, scoring, map rotation
         Game/TFPSGameState.*                   replicated phase, countdown, team scores, kill feed
@@ -63,11 +68,18 @@ To drop the module into an existing project instead, copy `Source/TacticalFPS` i
 4. **Character Blueprint.** Create one from `TFPSCharacter`. Assign the meshes, the input config, the mapping context and the default ability set.
 5. **Damage effect.** Create an instant Gameplay Effect with one modifier: `TFPSHealthSet.IncomingDamage`, Add, magnitude from SetByCaller `SetByCaller.Damage`.
 6. **Loadout items.** Create them as data assets under `/Game/Loadout/{Weapons,Attachments,Perks,Equipment}`. They are only recognized in those folders.
-   - **Weapons** (`TFPSWeaponDefinition`): set the slot type, allowed attachments, the attachment cap, stats, bone multipliers (e.g. `head` = 1.5) and the damage effect. Give each weapon an ability set containing `TFPSGameplayAbility_Fire` on `InputTag.Weapon.Fire`.
+   - **Weapons** (`TFPSWeaponDefinition`): set the slot type, allowed attachments, the attachment cap, stats, handling (reload, equip and ADS time, movement multipliers), bone multipliers (e.g. `head` = 1.5) and the damage effect. Give each weapon an ability set with these abilities:
+     - `TFPSGameplayAbility_Fire` on `InputTag.Weapon.Fire`
+     - `TFPSGameplayAbility_ADS` on `InputTag.Weapon.ADS`
+     - `TFPSGameplayAbility_Reload` on `InputTag.Weapon.Reload`
+
+     Use Blueprint children of these for montages and FOV.
    - **Attachments** (`TFPSAttachmentDefinition`): set the attachment slot, stat modifiers, mesh and weapon socket.
    - **Perks** (`TFPSPerkDefinition`): set the perk slot, an ability set for passive or active effects, and weapon stat modifiers.
    - **Equipment** (`TFPSEquipmentDefinition`): set Lethal or Tactical, and an ability set with the throw ability on `InputTag.Equipment.*`.
-   - Put `TFPSGameplayAbility_SwitchWeapon` in the character's default ability set on `InputTag.Weapon.Switch`.
+   - Put these in the character's default ability set:
+     - `TFPSGameplayAbility_SwitchWeapon` on `InputTag.Weapon.Switch`
+     - `TFPSGameplayAbility_Sprint` on `InputTag.Movement.Sprint`
    - Point `DefaultLoadout` in `Config/DefaultGame.ini` at your asset names.
 7. **Fire cue.** Create a `GameplayCueNotify_Static` for `GameplayCue.Weapon.Fire`. `Location` and `Normal` are the impact, `EffectCauser` is the shooter and `SourceObject` is the weapon definition.
 8. **Game mode.** Create a Blueprint of `TFPSGameMode`, set *Default Pawn Class* to the character Blueprint, and use it as the map's (or the project's) game mode. Controller, player state and game state are already set.
@@ -111,6 +123,20 @@ client menu ──RequestLoadout(IDs)──> server: resolve through AssetManage
 - **Weapon abilities:** every weapon's abilities are granted at spawn. `UTFPSWeaponGameplayAbility` lets them activate only while their own weapon is the active one, so a weapon swap never waits on the server to grant anything.
 - **Weapon swap:** predicted on the client, with rollback if the server rejects it. The weapon component enforces equip time on the server, so skipping the swap animation client-side gives no advantage.
 - **Performance:** all loadout items are preloaded on the server at `InitGame`, gameplay data only. Cosmetic meshes stay as soft references and load only on clients.
+
+## Sprint, ADS and reload
+
+- **Sprint and ADS speed** live in `UTFPSCharacterMovementComponent`, not in effects. The abilities set "wants to sprint" and "wants to aim" on the owning client, and those intents travel inside every saved move as compressed flags. The server replays each move at the same speed, so there are no corrections and no extra RPCs.
+  - Sprint speed applies only on the ground, uncrouched, not aiming and moving forward. Client and server evaluate this identically, so a forged sprint flag gains nothing.
+  - Max speed = base × `TFPSMovementSet.MovementSpeedMultiplier` × the held weapon's multiplier × the ADS multiplier while aiming × the sprint multiplier while sprinting.
+  - Simulated proxies get sprinting and aiming as a two-bit, push-model, simulated-only property. Animation Blueprints use `IsSprintingForAnimation` and `IsAimingForAnimation`.
+- **ADS** adds `State.ADS`, which switches firing to ADS spread and applies the ADS move-speed penalty. It's hold-to-aim by default (`bToggle` makes it toggle). Blueprint events receive the weapon's aim time (`ADSTime`) for the camera blend.
+- **Sprint** is press-to-toggle by default. It ends on a second press, or 0.3 s after the player stops being able to sprint. Firing and ADS cancel it, and sprinting cancels ADS.
+- **Reload:**
+  - The client plays the reload, predicts the refilled magazine when it finishes, and signals the server.
+  - The server moves ammo only once `ReloadTimeTolerance` × reload time has passed on its own clock since its activation. Latency cancels out, and a sped-up reload gains nothing.
+  - A server reload counter tells the client when the predicted refill has landed, and shots fired after the predicted reload come out of the predicted magazine.
+  - Firing with rounds still in the magazine cancels a reload, and firing until empty auto-reloads.
 
 ## Lag compensation
 

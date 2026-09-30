@@ -24,8 +24,10 @@ UTFPSGameplayAbility_Fire::UTFPSGameplayAbility_Fire(const FObjectInitializer& O
 	AssetTags.AddTag(TFPSGameplayTags::Ability_Weapon_Fire);
 	SetAssetTags(AssetTags);
 
-	ActivationBlockedTags.AddTag(TFPSGameplayTags::State_Sprinting);
-	ActivationBlockedTags.AddTag(TFPSGameplayTags::State_Reloading);
+	// Pulling the trigger breaks sprint and cancels a reload in progress (CoD-style reload cancel; only
+	// possible with rounds still in the magazine, since CanActivateAbility requires ammo).
+	CancelAbilitiesWithTag.AddTag(TFPSGameplayTags::Ability_Movement_Sprint);
+	CancelAbilitiesWithTag.AddTag(TFPSGameplayTags::Ability_Weapon_Reload);
 
 	FireCueTag = TFPSGameplayTags::GameplayCue_Weapon_Fire;
 }
@@ -129,7 +131,20 @@ void UTFPSGameplayAbility_Fire::EndAbility(const FGameplayAbilitySpecHandle Hand
 
 	ActiveWeapon = nullptr;
 
+	const bool bWasActive = IsActive();
 	Super::EndAbility(Handle, ActorInfo, ActivationInfo, bReplicateEndAbility, bWasCancelled);
+
+	// Ran dry: start a (predicted) reload, like pulling the trigger on an empty gun in CoD.
+	if (bWasActive && bAutoReloadWhenEmpty && !bWasCancelled && ActorInfo && ActorInfo->IsLocallyControlled())
+	{
+		const ATFPSCharacter* Character = Cast<ATFPSCharacter>(ActorInfo->AvatarActor.Get());
+		const UTFPSWeaponComponent* Weapons = Character ? Character->GetWeaponComponent() : nullptr;
+		UAbilitySystemComponent* ASC = ActorInfo->AbilitySystemComponent.Get();
+		if (Weapons && ASC && Weapons->GetAmmoInMagazine() <= 0 && Weapons->CanReload())
+		{
+			ASC->TryActivateAbilitiesByTag(FGameplayTagContainer(TFPSGameplayTags::Ability_Weapon_Reload));
+		}
+	}
 }
 
 void UTFPSGameplayAbility_Fire::OnFireTimer()

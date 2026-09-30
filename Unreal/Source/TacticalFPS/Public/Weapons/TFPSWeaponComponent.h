@@ -69,8 +69,11 @@ public:
 	/** Server only. Acks a rejected shot without spending ammo, so the client's prediction converges. */
 	void ServerRejectShot(uint16 ShotSeq);
 
-	/** Server only. Moves rounds from reserve into the active magazine. */
+	/** Server only. Moves rounds from reserve into the active magazine and bumps the reload counter. */
 	void ServerReload();
+
+	/** True if the active weapon's magazine is not full and there is reserve ammo (predicted on the owner). */
+	bool CanReload() const;
 
 	// --- Owning client --------------------------------------------------------------------------
 
@@ -82,6 +85,15 @@ public:
 
 	/** Owning client. Drops a swap prediction (bound to the swap's rejected-prediction delegate). */
 	void ClearPredictedActiveSlot();
+
+	/**
+	 * Owning client. Shows the refilled magazine as soon as the local reload finishes, until the server's
+	 * reload counter confirms it. Shots fired after this point are subtracted from the predicted magazine.
+	 */
+	void PredictReload();
+
+	/** Owning client. Drops a reload prediction (e.g. the reload was rejected). */
+	void ClearPredictedReload();
 
 	// --- Queries --------------------------------------------------------------------------------
 
@@ -127,6 +139,9 @@ private:
 	UFUNCTION()
 	void OnRep_ActiveSlot();
 
+	UFUNCTION()
+	void OnRep_ServerReloadCount();
+
 	bool IsOwnerLocallyControlled() const;
 	void OnCosmeticsLoaded(const UTFPSWeaponDefinition* LoadedFor, int32 LoadedSlot);
 	void DestroyCosmetics();
@@ -148,6 +163,21 @@ private:
 
 	UPROPERTY(Replicated)
 	uint16 ServerAckedShotSeq = 0;
+
+	/** Incremented by every server reload; lets the owner know when its predicted reload has landed. */
+	UPROPERTY(ReplicatedUsing = OnRep_ServerReloadCount)
+	uint8 ServerReloadCount = 0;
+
+	/** Owning client: a locally finished reload the server hasn't confirmed yet. */
+	struct FPredictedReload
+	{
+		int32 Slot = INDEX_NONE;
+		uint16 ShotSeqAtReload = 0;
+		int32 AmmoInMag = 0;
+		int32 ReserveAmmo = 0;
+		uint8 ExpectedReloadCount = 0;
+	};
+	FPredictedReload PredictedReload;
 
 	/** Owning client: swap shown before the server confirms it. */
 	int32 PredictedActiveSlot = INDEX_NONE;

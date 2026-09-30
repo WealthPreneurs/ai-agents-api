@@ -11,6 +11,7 @@ class UAbilitySystemComponent;
 class UTFPSAbilitySystemComponent;
 class UTFPSHealthSet;
 class UTFPSLoadoutComponent;
+class UTFPSMovementSet;
 
 /**
  * Owns the ASC and attribute sets so loadout-granted abilities, perk effects and stats persist across
@@ -76,6 +77,9 @@ private:
 	// Default subobject of the ASC's owner, so the ASC discovers and registers it automatically.
 	UPROPERTY()
 	TObjectPtr<UTFPSHealthSet> HealthSet;
+
+	UPROPERTY()
+	TObjectPtr<UTFPSMovementSet> MovementSet;
 
 	UPROPERTY(VisibleAnywhere, Category = "TFPS|PlayerState")
 	TObjectPtr<UTFPSLoadoutComponent> LoadoutComponent;

@@ -13,6 +13,7 @@ class UCameraComponent;
 class UInputMappingContext;
 class USkeletalMeshComponent;
 class UTFPSAbilitySystemComponent;
+class UTFPSCharacterMovementComponent;
 class UTFPSInputConfig;
 class UTFPSWeaponComponent;
 struct FGameplayEffectSpec;
@@ -57,6 +58,17 @@ public:
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	UCameraComponent* GetFirstPersonCamera() const { return FirstPersonCamera; }
 	UTFPSWeaponComponent* GetWeaponComponent() const { return WeaponComponent; }
+	UTFPSCharacterMovementComponent* GetTFPSMovementComponent() const;
+
+	/** For animation: locally resolved on the owner and server, replicated for simulated proxies. */
+	UFUNCTION(BlueprintPure, Category = "TFPS|Character")
+	bool IsSprintingForAnimation() const;
+
+	UFUNCTION(BlueprintPure, Category = "TFPS|Character")
+	bool IsAimingForAnimation() const;
+
+	/** Server. Called by the movement component after each move. */
+	void SetReplicatedMovementState(bool bSprinting, bool bAiming);
 
 	UFUNCTION(BlueprintPure, Category = "TFPS|Character")
 	bool IsDead() const { return bIsDead; }
@@ -168,4 +180,8 @@ private:
 
 	UPROPERTY(ReplicatedUsing = OnRep_MatchFrozen)
 	bool bMatchFrozen = false;
+
+	/** Bit 0 = sprinting, bit 1 = aiming. Simulated proxies only; owner and server resolve it locally. */
+	UPROPERTY(Replicated)
+	uint8 ReplicatedMovementState = 0;
 };

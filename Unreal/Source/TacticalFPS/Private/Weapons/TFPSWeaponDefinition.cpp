@@ -25,6 +25,9 @@ FTFPSWeaponStats UTFPSWeaponDefinition::BuildStats(const FTFPSWeaponStatModifier
 
 	Stats.ReloadTime = FMath::Max(ReloadTime * Modifiers.ReloadTimeMultiplier, 0.f);
 	Stats.EquipTime = FMath::Max(EquipTime * Modifiers.EquipTimeMultiplier, 0.f);
+	Stats.ADSTime = FMath::Max(ADSTime * Modifiers.ADSTimeMultiplier, 0.f);
+	Stats.MovementSpeedMultiplier = FMath::Clamp(MovementSpeedMultiplier * Modifiers.MovementSpeedMultiplier, 0.1f, 1.5f);
+	Stats.ADSMovementSpeedMultiplier = FMath::Clamp(ADSMovementSpeedMultiplier, 0.1f, 1.f);
 
 	return Stats;
 }

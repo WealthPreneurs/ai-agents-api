@@ -66,6 +66,10 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire", Meta = (Categories = "GameplayCue"))
 	FGameplayTag FireCueTag;
 
+	/** Start a reload automatically when a trigger pull ends with an empty magazine. */
+	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire")
+	bool bAutoReloadWhenEmpty = true;
+
 	/** Max distance between the claimed trace origin and the server's view location for the shooter. */
 	UPROPERTY(EditDefaultsOnly, Category = "TFPS|Fire|Validation", Meta = (Units = "cm"))
 	float MaxOriginError = 200.f;

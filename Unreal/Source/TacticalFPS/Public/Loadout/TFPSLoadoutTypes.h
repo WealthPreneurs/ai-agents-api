@@ -84,6 +84,14 @@ struct TACTICALFPS_API FTFPSWeaponStatModifiers
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (ClampMin = 0.1))
 	float ReloadTimeMultiplier = 1.f;
 
+	/** <1 aims in faster. */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (ClampMin = 0.1))
+	float ADSTimeMultiplier = 1.f;
+
+	/** Applies to movement speed while this weapon is held (e.g. a light stock). */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (ClampMin = 0.1))
+	float MovementSpeedMultiplier = 1.f;
+
 	/** <1 swaps faster. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Meta = (ClampMin = 0.1))
 	float EquipTimeMultiplier = 1.f;
@@ -123,6 +131,9 @@ struct TACTICALFPS_API FTFPSWeaponStats
 	UPROPERTY(BlueprintReadOnly) float MinDamageMultiplier = 0.6f;
 	UPROPERTY(BlueprintReadOnly) float ReloadTime = 2.2f;
 	UPROPERTY(BlueprintReadOnly) float EquipTime = 0.4f;
+	UPROPERTY(BlueprintReadOnly) float ADSTime = 0.25f;
+	UPROPERTY(BlueprintReadOnly) float MovementSpeedMultiplier = 1.f;
+	UPROPERTY(BlueprintReadOnly) float ADSMovementSpeedMultiplier = 0.6f;
 };
 
 /** A weapon plus its attachments, as equipped. Replicated to everyone (third-person visuals). */

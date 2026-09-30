@@ -9,6 +9,8 @@ void FTFPSWeaponStatModifiers::Combine(const FTFPSWeaponStatModifiers& Other)
 	ADSSpreadMultiplier *= Other.ADSSpreadMultiplier;
 	ReloadTimeMultiplier *= Other.ReloadTimeMultiplier;
 	EquipTimeMultiplier *= Other.EquipTimeMultiplier;
+	ADSTimeMultiplier *= Other.ADSTimeMultiplier;
+	MovementSpeedMultiplier *= Other.MovementSpeedMultiplier;
 	MagazineSizeDelta += Other.MagazineSizeDelta;
 	ReserveAmmoDelta += Other.ReserveAmmoDelta;
 }

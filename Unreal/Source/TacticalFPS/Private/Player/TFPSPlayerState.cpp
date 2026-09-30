@@ -1,6 +1,7 @@
 #include "Player/TFPSPlayerState.h"
 
 #include "AbilitySystem/Attributes/TFPSHealthSet.h"
+#include "AbilitySystem/Attributes/TFPSMovementSet.h"
 #include "AbilitySystem/TFPSAbilitySystemComponent.h"
 #include "Loadout/TFPSLoadoutComponent.h"
 #include "Net/Core/PushModel/PushModel.h"
@@ -14,6 +15,7 @@ ATFPSPlayerState::ATFPSPlayerState(const FObjectInitializer& ObjectInitializer)
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 
 	HealthSet = CreateDefaultSubobject<UTFPSHealthSet>(TEXT("HealthSet"));
+	MovementSet = CreateDefaultSubobject<UTFPSMovementSet>(TEXT("MovementSet"));
 
 	LoadoutComponent = CreateDefaultSubobject<UTFPSLoadoutComponent>(TEXT("LoadoutComponent"));
 

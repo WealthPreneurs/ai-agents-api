@@ -99,6 +99,18 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Handling", Meta = (ClampMin = 0, Units = "s"))
 	float EquipTime = 0.4f;
 
+	/** Aim-in time; drives the ADS ability's camera/animation blend. */
+	UPROPERTY(EditDefaultsOnly, Category = "Handling", Meta = (ClampMin = 0, Units = "s"))
+	float ADSTime = 0.25f;
+
+	/** Movement speed while this weapon is held (LMG < SMG). */
+	UPROPERTY(EditDefaultsOnly, Category = "Handling", Meta = (ClampMin = 0.1, ClampMax = 1.5))
+	float MovementSpeedMultiplier = 1.f;
+
+	/** Additional movement multiplier while aiming down sights. */
+	UPROPERTY(EditDefaultsOnly, Category = "Handling", Meta = (ClampMin = 0.1, ClampMax = 1))
+	float ADSMovementSpeedMultiplier = 0.6f;
+
 	// --- Ammo -----------------------------------------------------------------------------------
 
 	UPROPERTY(EditDefaultsOnly, Category = "Ammo", Meta = (ClampMin = 1))

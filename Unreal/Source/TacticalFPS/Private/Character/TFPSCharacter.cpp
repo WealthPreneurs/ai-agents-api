@@ -16,6 +16,7 @@
 #include "Loadout/TFPSEquipmentDefinition.h"
 #include "Loadout/TFPSLoadoutComponent.h"
 #include "Loadout/TFPSPerkDefinition.h"
+#include "Movement/TFPSCharacterMovementComponent.h"
 #include "InputActionValue.h"
 #include "Net/Core/PushModel/PushModel.h"
 #include "Net/UnrealNetwork.h"
@@ -25,7 +26,7 @@
 #include "Weapons/TFPSWeaponComponent.h"
 
 ATFPSCharacter::ATFPSCharacter(const FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
+	: Super(ObjectInitializer.SetDefaultSubobjectClass<UTFPSCharacterMovementComponent>(ACharacter::CharacterMovementComponentName))
 {
 	// Nothing to do per frame here; movement and meshes tick themselves.
 	PrimaryActorTick.bCanEverTick = false;
@@ -79,6 +80,31 @@ UAbilitySystemComponent* ATFPSCharacter::GetAbilitySystemComponent() const
 	return AbilitySystemComponent.Get();
 }
 
+UTFPSCharacterMovementComponent* ATFPSCharacter::GetTFPSMovementComponent() const
+{
+	return CastChecked<UTFPSCharacterMovementComponent>(GetCharacterMovement());
+}
+
+bool ATFPSCharacter::IsSprintingForAnimation() const
+{
+	return GetLocalRole() == ROLE_SimulatedProxy ? (ReplicatedMovementState & 1) != 0 : GetTFPSMovementComponent()->IsSprinting();
+}
+
+bool ATFPSCharacter::IsAimingForAnimation() const
+{
+	return GetLocalRole() == ROLE_SimulatedProxy ? (ReplicatedMovementState & 2) != 0 : GetTFPSMovementComponent()->WantsToAim();
+}
+
+void ATFPSCharacter::SetReplicatedMovementState(bool bSprinting, bool bAiming)
+{
+	const uint8 NewState = (bSprinting ? 1 : 0) | (bAiming ? 2 : 0);
+	if (NewState != ReplicatedMovementState)
+	{
+		ReplicatedMovementState = NewState;
+		MARK_PROPERTY_DIRTY_FROM_NAME(ATFPSCharacter, ReplicatedMovementState, this);
+	}
+}
+
 uint8 ATFPSCharacter::GetTFPSTeamId() const
 {
 	return TFPSTeams::GetTeamId(GetPlayerState());
@@ -93,6 +119,11 @@ void ATFPSCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 	Params.bIsPushBased = true;
 	DOREPLIFETIME_WITH_PARAMS_FAST(ATFPSCharacter, bIsDead, Params);
 	DOREPLIFETIME_WITH_PARAMS_FAST(ATFPSCharacter, bMatchFrozen, Params);
+
+	FDoRepLifetimeParams SimulatedOnly;
+	SimulatedOnly.bIsPushBased = true;
+	SimulatedOnly.Condition = COND_SimulatedOnly;
+	DOREPLIFETIME_WITH_PARAMS_FAST(ATFPSCharacter, ReplicatedMovementState, SimulatedOnly);
 }
 
 void ATFPSCharacter::BeginPlay()

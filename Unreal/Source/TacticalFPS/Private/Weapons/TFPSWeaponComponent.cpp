@@ -37,6 +37,7 @@ void UTFPSWeaponComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>&
 	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, SlotAmmoInMag, OwnerOnly);
 	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, SlotReserveAmmo, OwnerOnly);
 	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, ServerAckedShotSeq, OwnerOnly);
+	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, ServerReloadCount, OwnerOnly);
 }
 
 // --- Server -------------------------------------------------------------------------------------
@@ -190,6 +191,10 @@ void UTFPSWeaponComponent::ServerReload()
 		return;
 	}
 
+	// Always bump, even if nothing moved, so the owner's reload prediction is resolved either way.
+	++ServerReloadCount;
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, ServerReloadCount, this);
+
 	const int32 Needed = SlotStats[ActiveSlot].MagazineSize - SlotAmmoInMag[ActiveSlot];
 	const int32 Moved = FMath::Clamp(Needed, 0, SlotReserveAmmo[ActiveSlot]);
 	if (Moved == 0)
@@ -203,7 +208,45 @@ void UTFPSWeaponComponent::ServerReload()
 	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotReserveAmmo, this);
 }
 
+bool UTFPSWeaponComponent::CanReload() const
+{
+	const FTFPSWeaponStats* Stats = GetEquippedStats();
+	return Stats && GetAmmoInMagazine() < Stats->MagazineSize && GetReserveAmmo() > 0;
+}
+
 // --- Owning client ------------------------------------------------------------------------------
+
+void UTFPSWeaponComponent::PredictReload()
+{
+	const FTFPSWeaponStats* Stats = GetEquippedStats();
+	if (!Stats)
+	{
+		return;
+	}
+
+	const int32 CurrentMag = GetAmmoInMagazine();
+	const int32 CurrentReserve = GetReserveAmmo();
+	const int32 Moved = FMath::Clamp(Stats->MagazineSize - CurrentMag, 0, CurrentReserve);
+
+	PredictedReload.Slot = GetActiveSlot();
+	PredictedReload.ShotSeqAtReload = LocalShotSeq;
+	PredictedReload.AmmoInMag = CurrentMag + Moved;
+	PredictedReload.ReserveAmmo = CurrentReserve - Moved;
+	PredictedReload.ExpectedReloadCount = static_cast<uint8>(ServerReloadCount + 1);
+}
+
+void UTFPSWeaponComponent::ClearPredictedReload()
+{
+	PredictedReload.Slot = INDEX_NONE;
+}
+
+void UTFPSWeaponComponent::OnRep_ServerReloadCount()
+{
+	if (PredictedReload.Slot != INDEX_NONE && static_cast<int8>(ServerReloadCount - PredictedReload.ExpectedReloadCount) >= 0)
+	{
+		ClearPredictedReload(); // Server's ammo now includes the reload.
+	}
+}
 
 uint16 UTFPSWeaponComponent::PredictShot()
 {
@@ -268,6 +311,20 @@ int32 UTFPSWeaponComponent::GetAmmoInMagazine() const
 		return SlotAmmoInMag[Slot];
 	}
 
+	if (PredictedReload.Slot == Slot)
+	{
+		// Only shots fired after the predicted reload come out of the predicted magazine.
+		int32 ShotsSinceReload = 0;
+		for (const FPendingShot& Shot : PendingShots)
+		{
+			if (Shot.Slot == Slot && static_cast<int16>(Shot.Seq - PredictedReload.ShotSeqAtReload) > 0)
+			{
+				++ShotsSinceReload;
+			}
+		}
+		return FMath::Max(PredictedReload.AmmoInMag - ShotsSinceReload, 0);
+	}
+
 	int32 Pending = 0;
 	for (const FPendingShot& Shot : PendingShots)
 	{
@@ -282,6 +339,11 @@ int32 UTFPSWeaponComponent::GetAmmoInMagazine() const
 int32 UTFPSWeaponComponent::GetReserveAmmo() const
 {
 	const int32 Slot = GetActiveSlot();
+	if (PredictedReload.Slot == Slot && Slot != INDEX_NONE)
+	{
+		return PredictedReload.ReserveAmmo;
+	}
+
 	return SlotReserveAmmo.IsValidIndex(Slot) ? SlotReserveAmmo[Slot] : 0;
 }
 
@@ -297,6 +359,7 @@ void UTFPSWeaponComponent::OnRep_Slots()
 {
 	// New loadout: old predictions refer to weapons that no longer exist.
 	PendingShots.Reset();
+	ClearPredictedReload();
 	LocalShotSeq = ServerAckedShotSeq;
 	PredictedActiveSlot = INDEX_NONE;
 
