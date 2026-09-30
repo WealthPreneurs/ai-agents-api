@@ -1,48 +1,58 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/DataAsset.h"
+#include "Loadout/TFPSLoadoutItemDefinition.h"
+#include "Loadout/TFPSLoadoutTypes.h"
 
 #include "TFPSWeaponDefinition.generated.h"
 
 class UGameplayEffect;
 class USkeletalMesh;
 class UTFPSAbilitySet;
-
-UENUM(BlueprintType)
-enum class ETFPSFireMode : uint8
-{
-	SemiAuto,
-	Burst,
-	FullAuto
-};
+class UTFPSAttachmentDefinition;
 
 /**
- * Static, shared description of a weapon. Never mutated at runtime and never duplicated per player:
- * per-player state (ammo, heat) lives on UTFPSWeaponComponent. Replicates as a stable asset reference,
- * i.e. a NetGUID, not its contents.
+ * Static, shared description of a weapon's base stats. Never mutated at runtime and never duplicated per
+ * player. The effective stats for one player (after attachments and perks) are an FTFPSWeaponStats built
+ * by BuildStats on the server; per-player state (ammo) lives on UTFPSWeaponComponent. Replicates as a
+ * stable asset reference, i.e. a NetGUID, not its contents.
  *
  * Gameplay stats are hard references (the server needs them). Cosmetics are soft references so a
  * dedicated server never loads meshes, and clients load them asynchronously on equip.
  */
 UCLASS(BlueprintType, Const)
-class TACTICALFPS_API UTFPSWeaponDefinition : public UPrimaryDataAsset
+class TACTICALFPS_API UTFPSWeaponDefinition : public UTFPSLoadoutItemDefinition
 {
 	GENERATED_BODY()
 
 public:
-	//~UPrimaryDataAsset
-	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
-	//~End UPrimaryDataAsset
+	virtual FPrimaryAssetType GetLoadoutItemType() const override { return TFPSLoadoutAssetTypes::Weapon(); }
 
-	float GetFireInterval() const { return 60.f / FMath::Max(RoundsPerMinute, 1.f); }
+	/** Base stats with Modifiers applied, clamped to sane ranges. */
+	FTFPSWeaponStats BuildStats(const FTFPSWeaponStatModifiers& Modifiers) const;
 
 	/** Server-side damage for one pellet: base damage x range falloff x hit-zone multiplier. */
-	float CalculateDamage(float Distance, FName HitBone) const;
+	float CalculateDamage(const FTFPSWeaponStats& Stats, float Distance, FName HitBone) const;
+
+	// --- Loadout --------------------------------------------------------------------------------
+
+	UPROPERTY(EditDefaultsOnly, Category = "Loadout")
+	ETFPSWeaponSlotType SlotType = ETFPSWeaponSlotType::Primary;
+
+	/** The only attachments the server will accept on this weapon. */
+	UPROPERTY(EditDefaultsOnly, Category = "Loadout")
+	TArray<TObjectPtr<const UTFPSAttachmentDefinition>> AllowedAttachments;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Loadout", Meta = (ClampMin = 0, ClampMax = 8))
+	int32 MaxAttachments = 5;
 
 	// --- Grants ---------------------------------------------------------------------------------
 
-	/** Fire / ADS / reload abilities (with input tags) granted while this weapon is equipped. */
+	/**
+	 * Fire / ADS / reload abilities (with input tags). Granted for both loadout slots at spawn with this
+	 * definition as SourceObject; UTFPSWeaponGameplayAbility only lets them activate while this weapon
+	 * is the active one, so a swap never waits on the server to grant anything.
+	 */
 	UPROPERTY(EditDefaultsOnly, Category = "Abilities")
 	TObjectPtr<const UTFPSAbilitySet> AbilitySet;
 
@@ -79,6 +89,15 @@ public:
 	/** Cone half-angle while State.ADS is present. */
 	UPROPERTY(EditDefaultsOnly, Category = "Firing", Meta = (ClampMin = 0, Units = "deg"))
 	float ADSSpreadAngle = 0.25f;
+
+	// --- Handling -------------------------------------------------------------------------------
+
+	UPROPERTY(EditDefaultsOnly, Category = "Handling", Meta = (ClampMin = 0, Units = "s"))
+	float ReloadTime = 2.2f;
+
+	/** Time to swap to this weapon. Enforced on the server (see UTFPSWeaponComponent). */
+	UPROPERTY(EditDefaultsOnly, Category = "Handling", Meta = (ClampMin = 0, Units = "s"))
+	float EquipTime = 0.4f;
 
 	// --- Ammo -----------------------------------------------------------------------------------
 

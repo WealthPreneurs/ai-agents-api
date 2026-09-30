@@ -3,9 +3,12 @@
 #include "AbilitySystemComponent.h"
 #include "Character/TFPSCharacter.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "Engine/AssetManager.h"
 #include "Engine/SkeletalMesh.h"
+#include "Engine/StaticMesh.h"
 #include "Engine/StreamableManager.h"
+#include "Loadout/TFPSAttachmentDefinition.h"
 #include "Net/Core/PushModel/PushModel.h"
 #include "Net/UnrealNetwork.h"
 #include "TacticalFPS.h"
@@ -24,26 +27,75 @@ void UTFPSWeaponComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>&
 
 	FDoRepLifetimeParams Everyone;
 	Everyone.bIsPushBased = true;
-	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, EquippedWeapon, Everyone);
+	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, Slots, Everyone);
+	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, ActiveSlot, Everyone);
 
 	FDoRepLifetimeParams OwnerOnly;
 	OwnerOnly.bIsPushBased = true;
 	OwnerOnly.Condition = COND_OwnerOnly;
-	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, AmmoInMag, OwnerOnly);
-	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, ReserveAmmo, OwnerOnly);
+	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, SlotStats, OwnerOnly);
+	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, SlotAmmoInMag, OwnerOnly);
+	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, SlotReserveAmmo, OwnerOnly);
 	DOREPLIFETIME_WITH_PARAMS_FAST(UTFPSWeaponComponent, ServerAckedShotSeq, OwnerOnly);
 }
 
-void UTFPSWeaponComponent::InitializeWeapons(UAbilitySystemComponent* ASC)
+// --- Server -------------------------------------------------------------------------------------
+
+void UTFPSWeaponComponent::InitializeWeapons(UAbilitySystemComponent* ASC, const TArray<FTFPSWeaponSlot>& Loadout, const FTFPSWeaponStatModifiers& GlobalModifiers)
 {
 	check(GetOwner()->HasAuthority());
+	check(ASC);
 
+	WeaponGrantedHandles.TakeFromAbilitySystem(ASC);
 	AbilitySystemComponent = ASC;
 
-	if (DefaultWeapon)
+	Slots.Reset();
+	SlotStats.Reset();
+	SlotAmmoInMag.Reset();
+	SlotReserveAmmo.Reset();
+
+	for (const FTFPSWeaponSlot& Entry : Loadout)
 	{
-		EquipWeapon(DefaultWeapon);
+		if (!Entry.Weapon)
+		{
+			continue; // Empty slot (e.g. no secondary).
+		}
+
+		FTFPSWeaponStatModifiers Modifiers = GlobalModifiers;
+		for (const UTFPSAttachmentDefinition* Attachment : Entry.Attachments)
+		{
+			if (Attachment)
+			{
+				Modifiers.Combine(Attachment->Modifiers);
+			}
+		}
+
+		const FTFPSWeaponStats Stats = Entry.Weapon->BuildStats(Modifiers);
+		Slots.Add(Entry);
+		SlotStats.Add(Stats);
+		SlotAmmoInMag.Add(Stats.MagazineSize);
+		SlotReserveAmmo.Add(Stats.MaxReserveAmmo);
+
+		if (Entry.Weapon->AbilitySet)
+		{
+			// SourceObject = the definition; UTFPSWeaponGameplayAbility gates on it matching the active weapon.
+			Entry.Weapon->AbilitySet->GiveToAbilitySystem(ASC, &WeaponGrantedHandles, const_cast<UTFPSWeaponDefinition*>(Entry.Weapon.Get()));
+		}
 	}
+
+	ActiveSlot = 0;
+	WeaponReadyTime = 0.0;
+	FireRateCredits = MaxFireRateCredits;
+	LastCreditRefillTime = GetWorld()->GetTimeSeconds();
+
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, Slots, this);
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, ActiveSlot, this);
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotStats, this);
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotAmmoInMag, this);
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotReserveAmmo, this);
+
+	// Server doesn't get OnRep; listen-server hosts still need visuals.
+	OnRep_Slots();
 }
 
 void UTFPSWeaponComponent::UninitializeWeapons()
@@ -57,53 +109,41 @@ void UTFPSWeaponComponent::UninitializeWeapons()
 	AbilitySystemComponent.Reset();
 }
 
-void UTFPSWeaponComponent::EquipWeapon(const UTFPSWeaponDefinition* NewWeapon)
+void UTFPSWeaponComponent::ServerSetActiveSlot(int32 NewSlot)
 {
 	check(GetOwner()->HasAuthority());
 
-	UAbilitySystemComponent* ASC = AbilitySystemComponent.Get();
-	if (!ASC)
+	if (!Slots.IsValidIndex(NewSlot) || NewSlot == ActiveSlot)
 	{
-		UE_LOG(LogTFPS, Warning, TEXT("EquipWeapon called on [%s] before InitializeWeapons."), *GetNameSafe(GetOwner()));
 		return;
 	}
 
-	WeaponGrantedHandles.TakeFromAbilitySystem(ASC);
+	ActiveSlot = static_cast<uint8>(NewSlot);
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, ActiveSlot, this);
 
-	EquippedWeapon = NewWeapon;
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, EquippedWeapon, this);
+	WeaponReadyTime = GetWorld()->GetTimeSeconds() + SlotStats[NewSlot].EquipTime * EquipTimeTolerance;
 
-	AmmoInMag = NewWeapon ? NewWeapon->MagazineSize : 0;
-	ReserveAmmo = NewWeapon ? NewWeapon->MaxReserveAmmo : 0;
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, AmmoInMag, this);
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, ReserveAmmo, this);
-
-	FireRateCredits = MaxFireRateCredits;
-	LastCreditRefillTime = GetWorld()->GetTimeSeconds();
-
-	if (NewWeapon && NewWeapon->AbilitySet)
-	{
-		// SourceObject = the definition, so abilities can find the weapon that granted them.
-		NewWeapon->AbilitySet->GiveToAbilitySystem(ASC, &WeaponGrantedHandles, const_cast<UTFPSWeaponDefinition*>(NewWeapon));
-	}
-
-	// Server doesn't get OnRep; listen-server hosts still need visuals.
-	OnRep_EquippedWeapon();
+	OnRep_ActiveSlot();
 }
 
 bool UTFPSWeaponComponent::ServerConsumeFireRateCredit()
 {
 	check(GetOwner()->HasAuthority());
 
-	if (!EquippedWeapon)
+	const FTFPSWeaponStats* Stats = GetEquippedStats();
+	if (!Stats)
 	{
 		return false;
 	}
 
 	const double Now = GetWorld()->GetTimeSeconds();
-	const float Interval = EquippedWeapon->GetFireInterval();
+	if (Now < WeaponReadyTime)
+	{
+		UE_LOG(LogTFPS, Verbose, TEXT("[%s] shot rejected: weapon still being equipped."), *GetNameSafe(GetOwner()));
+		return false;
+	}
 
-	FireRateCredits = FMath::Min(MaxFireRateCredits, FireRateCredits + static_cast<float>((Now - LastCreditRefillTime) / Interval));
+	FireRateCredits = FMath::Min(MaxFireRateCredits, FireRateCredits + static_cast<float>((Now - LastCreditRefillTime) / Stats->FireInterval));
 	LastCreditRefillTime = Now;
 
 	if (FireRateCredits < 1.f)
@@ -121,16 +161,15 @@ bool UTFPSWeaponComponent::ServerConsumeAmmo(uint16 ShotSeq)
 	check(GetOwner()->HasAuthority());
 
 	// Always ack, even on failure, so the client's prediction converges on the server's count.
-	ServerAckedShotSeq = ShotSeq;
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, ServerAckedShotSeq, this);
+	ServerRejectShot(ShotSeq);
 
-	if (AmmoInMag <= 0)
+	if (!SlotAmmoInMag.IsValidIndex(ActiveSlot) || SlotAmmoInMag[ActiveSlot] <= 0)
 	{
 		return false;
 	}
 
-	--AmmoInMag;
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, AmmoInMag, this);
+	--SlotAmmoInMag[ActiveSlot];
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotAmmoInMag, this);
 	return true;
 }
 
@@ -146,39 +185,104 @@ void UTFPSWeaponComponent::ServerReload()
 {
 	check(GetOwner()->HasAuthority());
 
-	if (!EquippedWeapon)
+	if (!SlotStats.IsValidIndex(ActiveSlot))
 	{
 		return;
 	}
 
-	const int32 Needed = EquippedWeapon->MagazineSize - AmmoInMag;
-	const int32 Moved = FMath::Clamp(Needed, 0, ReserveAmmo);
+	const int32 Needed = SlotStats[ActiveSlot].MagazineSize - SlotAmmoInMag[ActiveSlot];
+	const int32 Moved = FMath::Clamp(Needed, 0, SlotReserveAmmo[ActiveSlot]);
 	if (Moved == 0)
 	{
 		return;
 	}
 
-	AmmoInMag += Moved;
-	ReserveAmmo -= Moved;
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, AmmoInMag, this);
-	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, ReserveAmmo, this);
+	SlotAmmoInMag[ActiveSlot] += Moved;
+	SlotReserveAmmo[ActiveSlot] -= Moved;
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotAmmoInMag, this);
+	MARK_PROPERTY_DIRTY_FROM_NAME(UTFPSWeaponComponent, SlotReserveAmmo, this);
 }
+
+// --- Owning client ------------------------------------------------------------------------------
 
 uint16 UTFPSWeaponComponent::PredictShot()
 {
-	// Wraps at 65535; the subtraction in GetAmmoInMagazine is modular so wrap-around is harmless.
-	return ++LocalShotSeq;
+	// Drop shots the server has already acked. Sequence numbers wrap at 65535; the signed 16-bit
+	// difference keeps comparisons correct across the wrap.
+	PendingShots.RemoveAll([this](const FPendingShot& Shot) { return static_cast<int16>(Shot.Seq - ServerAckedShotSeq) <= 0; });
+
+	FPendingShot& Shot = PendingShots.AddDefaulted_GetRef();
+	Shot.Seq = ++LocalShotSeq;
+	Shot.Slot = static_cast<uint8>(GetActiveSlot());
+	return Shot.Seq;
+}
+
+void UTFPSWeaponComponent::PredictActiveSlot(int32 NewSlot)
+{
+	if (!Slots.IsValidIndex(NewSlot))
+	{
+		return;
+	}
+
+	PredictedActiveSlot = NewSlot;
+	RefreshCosmetics();
+	OnWeaponEquipped.Broadcast(GetEquippedWeapon());
+}
+
+void UTFPSWeaponComponent::ClearPredictedActiveSlot()
+{
+	if (PredictedActiveSlot == INDEX_NONE)
+	{
+		return;
+	}
+
+	PredictedActiveSlot = INDEX_NONE;
+	RefreshCosmetics();
+	OnWeaponEquipped.Broadcast(GetEquippedWeapon());
+}
+
+// --- Queries ------------------------------------------------------------------------------------
+
+const UTFPSWeaponDefinition* UTFPSWeaponComponent::GetEquippedWeapon() const
+{
+	const int32 Slot = GetActiveSlot();
+	return Slots.IsValidIndex(Slot) ? Slots[Slot].Weapon.Get() : nullptr;
+}
+
+const FTFPSWeaponStats* UTFPSWeaponComponent::GetEquippedStats() const
+{
+	const int32 Slot = GetActiveSlot();
+	return SlotStats.IsValidIndex(Slot) ? &SlotStats[Slot] : nullptr;
 }
 
 int32 UTFPSWeaponComponent::GetAmmoInMagazine() const
 {
-	if (GetOwner()->HasAuthority() || !IsOwnerLocallyControlled())
+	const int32 Slot = GetActiveSlot();
+	if (!SlotAmmoInMag.IsValidIndex(Slot))
 	{
-		return AmmoInMag;
+		return 0;
 	}
 
-	const uint16 PendingShots = static_cast<uint16>(LocalShotSeq - ServerAckedShotSeq);
-	return FMath::Max(AmmoInMag - static_cast<int32>(PendingShots), 0);
+	if (GetOwner()->HasAuthority() || !IsOwnerLocallyControlled())
+	{
+		return SlotAmmoInMag[Slot];
+	}
+
+	int32 Pending = 0;
+	for (const FPendingShot& Shot : PendingShots)
+	{
+		if (Shot.Slot == Slot && static_cast<int16>(Shot.Seq - ServerAckedShotSeq) > 0)
+		{
+			++Pending;
+		}
+	}
+	return FMath::Max(SlotAmmoInMag[Slot] - Pending, 0);
+}
+
+int32 UTFPSWeaponComponent::GetReserveAmmo() const
+{
+	const int32 Slot = GetActiveSlot();
+	return SlotReserveAmmo.IsValidIndex(Slot) ? SlotReserveAmmo[Slot] : 0;
 }
 
 bool UTFPSWeaponComponent::IsOwnerLocallyControlled() const
@@ -187,16 +291,33 @@ bool UTFPSWeaponComponent::IsOwnerLocallyControlled() const
 	return Pawn && Pawn->IsLocallyControlled();
 }
 
-void UTFPSWeaponComponent::OnRep_EquippedWeapon()
-{
-	// A new weapon means a new magazine; re-base prediction on the next server ack.
-	LocalShotSeq = ServerAckedShotSeq;
+// --- Replication --------------------------------------------------------------------------------
 
-	RefreshCosmetics();
-	OnWeaponEquipped.Broadcast(EquippedWeapon);
+void UTFPSWeaponComponent::OnRep_Slots()
+{
+	// New loadout: old predictions refer to weapons that no longer exist.
+	PendingShots.Reset();
+	LocalShotSeq = ServerAckedShotSeq;
+	PredictedActiveSlot = INDEX_NONE;
+
+	RefreshCosmetics(true);
+	OnWeaponEquipped.Broadcast(GetEquippedWeapon());
 }
 
-void UTFPSWeaponComponent::RefreshCosmetics()
+void UTFPSWeaponComponent::OnRep_ActiveSlot()
+{
+	if (PredictedActiveSlot == ActiveSlot)
+	{
+		PredictedActiveSlot = INDEX_NONE; // Server confirmed the predicted swap.
+	}
+
+	RefreshCosmetics();
+	OnWeaponEquipped.Broadcast(GetEquippedWeapon());
+}
+
+// --- Cosmetics ----------------------------------------------------------------------------------
+
+void UTFPSWeaponComponent::RefreshCosmetics(bool bForce)
 {
 	// Dedicated servers never load or attach weapon meshes: hit registration uses the camera ray and
 	// character hitboxes, not the weapon model.
@@ -205,7 +326,16 @@ void UTFPSWeaponComponent::RefreshCosmetics()
 		return;
 	}
 
+	const UTFPSWeaponDefinition* Weapon = GetEquippedWeapon();
+	const int32 Slot = GetActiveSlot();
+	if (!bForce && CosmeticWeapon.Get() == Weapon && CosmeticSlot == Slot)
+	{
+		return;
+	}
+
 	DestroyCosmetics();
+	CosmeticWeapon = Weapon;
+	CosmeticSlot = Slot;
 
 	if (CosmeticsLoadHandle.IsValid())
 	{
@@ -213,19 +343,26 @@ void UTFPSWeaponComponent::RefreshCosmetics()
 		CosmeticsLoadHandle.Reset();
 	}
 
-	if (!EquippedWeapon)
+	if (!Weapon)
 	{
 		return;
 	}
 
 	TArray<FSoftObjectPath> ToLoad;
-	if (IsOwnerLocallyControlled() && !EquippedWeapon->FirstPersonMesh.IsNull())
+	if (IsOwnerLocallyControlled() && !Weapon->FirstPersonMesh.IsNull())
 	{
-		ToLoad.Add(EquippedWeapon->FirstPersonMesh.ToSoftObjectPath());
+		ToLoad.Add(Weapon->FirstPersonMesh.ToSoftObjectPath());
 	}
-	if (!EquippedWeapon->ThirdPersonMesh.IsNull())
+	if (!Weapon->ThirdPersonMesh.IsNull())
 	{
-		ToLoad.Add(EquippedWeapon->ThirdPersonMesh.ToSoftObjectPath());
+		ToLoad.Add(Weapon->ThirdPersonMesh.ToSoftObjectPath());
+	}
+	for (const UTFPSAttachmentDefinition* Attachment : Slots[Slot].Attachments)
+	{
+		if (Attachment && !Attachment->Mesh.IsNull())
+		{
+			ToLoad.Add(Attachment->Mesh.ToSoftObjectPath());
+		}
 	}
 
 	if (ToLoad.IsEmpty())
@@ -233,16 +370,15 @@ void UTFPSWeaponComponent::RefreshCosmetics()
 		return;
 	}
 
-	const UTFPSWeaponDefinition* LoadingFor = EquippedWeapon;
 	CosmeticsLoadHandle = UAssetManager::GetStreamableManager().RequestAsyncLoad(
 		ToLoad,
-		FStreamableDelegate::CreateWeakLambda(this, [this, LoadingFor]() { OnCosmeticsLoaded(LoadingFor); }));
+		FStreamableDelegate::CreateWeakLambda(this, [this, Weapon, Slot]() { OnCosmeticsLoaded(Weapon, Slot); }));
 }
 
-void UTFPSWeaponComponent::OnCosmeticsLoaded(const UTFPSWeaponDefinition* LoadedFor)
+void UTFPSWeaponComponent::OnCosmeticsLoaded(const UTFPSWeaponDefinition* LoadedFor, int32 LoadedSlot)
 {
 	// The weapon may have changed while loading.
-	if (LoadedFor != EquippedWeapon)
+	if (LoadedFor != GetEquippedWeapon() || LoadedSlot != GetActiveSlot() || !Slots.IsValidIndex(LoadedSlot))
 	{
 		return;
 	}
@@ -253,7 +389,7 @@ void UTFPSWeaponComponent::OnCosmeticsLoaded(const UTFPSWeaponDefinition* Loaded
 		return;
 	}
 
-	auto SpawnMesh = [this](USkeletalMesh* Mesh, USceneComponent* Parent, FName Socket) -> USkeletalMeshComponent*
+	auto SpawnWeaponMesh = [this](USkeletalMesh* Mesh, USceneComponent* Parent, FName Socket) -> USkeletalMeshComponent*
 	{
 		if (!Mesh || !Parent)
 		{
@@ -268,26 +404,71 @@ void UTFPSWeaponComponent::OnCosmeticsLoaded(const UTFPSWeaponDefinition* Loaded
 		return Comp;
 	};
 
+	auto SpawnAttachments = [this, LoadedSlot](USkeletalMeshComponent* WeaponMesh, bool bFirstPerson)
+	{
+		if (!WeaponMesh)
+		{
+			return;
+		}
+
+		for (const UTFPSAttachmentDefinition* Attachment : Slots[LoadedSlot].Attachments)
+		{
+			UStaticMesh* Mesh = Attachment ? Attachment->Mesh.Get() : nullptr;
+			if (!Mesh)
+			{
+				continue;
+			}
+
+			UStaticMeshComponent* Comp = NewObject<UStaticMeshComponent>(GetOwner());
+			Comp->SetStaticMesh(Mesh);
+			Comp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			Comp->SetupAttachment(WeaponMesh, Attachment->AttachSocket);
+			if (bFirstPerson)
+			{
+				Comp->SetOnlyOwnerSee(true);
+				Comp->CastShadow = false;
+			}
+			else
+			{
+				Comp->SetOwnerNoSee(true);
+				Comp->bCastHiddenShadow = true;
+			}
+			Comp->RegisterComponent();
+			AttachmentMeshes.Add(Comp);
+		}
+	};
+
 	if (IsOwnerLocallyControlled())
 	{
-		FirstPersonWeaponMesh = SpawnMesh(LoadedFor->FirstPersonMesh.Get(), Character->GetMesh1P(), LoadedFor->FirstPersonAttachSocket);
+		FirstPersonWeaponMesh = SpawnWeaponMesh(LoadedFor->FirstPersonMesh.Get(), Character->GetMesh1P(), LoadedFor->FirstPersonAttachSocket);
 		if (FirstPersonWeaponMesh)
 		{
 			FirstPersonWeaponMesh->SetOnlyOwnerSee(true);
 			FirstPersonWeaponMesh->CastShadow = false;
+			SpawnAttachments(FirstPersonWeaponMesh, true);
 		}
 	}
 
-	ThirdPersonWeaponMesh = SpawnMesh(LoadedFor->ThirdPersonMesh.Get(), Character->GetMesh(), LoadedFor->ThirdPersonAttachSocket);
+	ThirdPersonWeaponMesh = SpawnWeaponMesh(LoadedFor->ThirdPersonMesh.Get(), Character->GetMesh(), LoadedFor->ThirdPersonAttachSocket);
 	if (ThirdPersonWeaponMesh)
 	{
 		ThirdPersonWeaponMesh->SetOwnerNoSee(true);
 		ThirdPersonWeaponMesh->bCastHiddenShadow = true;
+		SpawnAttachments(ThirdPersonWeaponMesh, false);
 	}
 }
 
 void UTFPSWeaponComponent::DestroyCosmetics()
 {
+	for (UStaticMeshComponent* Comp : AttachmentMeshes)
+	{
+		if (Comp)
+		{
+			Comp->DestroyComponent();
+		}
+	}
+	AttachmentMeshes.Reset();
+
 	if (FirstPersonWeaponMesh)
 	{
 		FirstPersonWeaponMesh->DestroyComponent();

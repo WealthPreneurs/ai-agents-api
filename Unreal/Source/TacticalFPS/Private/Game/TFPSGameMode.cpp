@@ -1,8 +1,10 @@
 #include "Game/TFPSGameMode.h"
 
 #include "Character/TFPSCharacter.h"
+#include "Engine/AssetManager.h"
 #include "EngineUtils.h"
 #include "Game/TFPSGameState.h"
+#include "Loadout/TFPSLoadoutItemDefinition.h"
 #include "GameFramework/PlayerStart.h"
 #include "Kismet/GameplayStatics.h"
 #include "Player/TFPSPlayerController.h"
@@ -33,6 +35,8 @@ void ATFPSGameMode::InitGame(const FString& MapName, const FString& Options, FSt
 	WarmupDuration = UGameplayStatics::GetIntOption(Options, TEXT("Warmup"), static_cast<int32>(WarmupDuration));
 	MapRotationIndex = UGameplayStatics::GetIntOption(Options, TEXT("RotationIndex"), 0);
 
+	PreloadLoadoutItems();
+
 	NumTeams = FMath::Clamp(NumTeams, 2, 8);
 	MinPlayersToStart = FMath::Max(MinPlayersToStart, 1);
 	WarmupDuration = FMath::Max(WarmupDuration, 1.f);
@@ -55,6 +59,30 @@ void ATFPSGameMode::StartPlay()
 ATFPSGameState* ATFPSGameMode::GetTFPSGameState() const
 {
 	return GetGameState<ATFPSGameState>();
+}
+
+void ATFPSGameMode::PreloadLoadoutItems()
+{
+	UAssetManager& AssetManager = UAssetManager::Get();
+
+	const FPrimaryAssetType Types[] = {
+		TFPSLoadoutAssetTypes::Weapon(),
+		TFPSLoadoutAssetTypes::Attachment(),
+		TFPSLoadoutAssetTypes::Perk(),
+		TFPSLoadoutAssetTypes::Equipment(),
+	};
+
+	// Loads gameplay data only: cosmetics on these assets are soft references and stay unloaded.
+	// The AssetManager keeps primary assets it loaded resident until explicitly unloaded.
+	for (const FPrimaryAssetType& Type : Types)
+	{
+		TArray<FPrimaryAssetId> Ids;
+		AssetManager.GetPrimaryAssetIdList(Type, Ids);
+		if (Ids.Num() > 0)
+		{
+			AssetManager.LoadPrimaryAssets(Ids);
+		}
+	}
 }
 
 // --- Phase machine ------------------------------------------------------------------------------

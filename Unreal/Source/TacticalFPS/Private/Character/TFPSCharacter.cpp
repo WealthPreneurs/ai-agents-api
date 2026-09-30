@@ -13,6 +13,9 @@
 #include "GameplayEffect.h"
 #include "Input/TFPSInputConfig.h"
 #include "LagCompensation/TFPSLagCompensationSubsystem.h"
+#include "Loadout/TFPSEquipmentDefinition.h"
+#include "Loadout/TFPSLoadoutComponent.h"
+#include "Loadout/TFPSPerkDefinition.h"
 #include "InputActionValue.h"
 #include "Net/Core/PushModel/PushModel.h"
 #include "Net/UnrealNetwork.h"
@@ -143,7 +146,7 @@ void ATFPSCharacter::NotifyControllerChanged()
 	Super::NotifyControllerChanged();
 
 	// First-person weapon visuals depend on local control, which a client may learn after the weapon replicates.
-	WeaponComponent->RefreshCosmetics();
+	WeaponComponent->RefreshCosmetics(/*bForce*/ true);
 }
 
 void ATFPSCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
@@ -189,7 +192,7 @@ void ATFPSCharacter::InitializeAbilitySystem()
 			DefaultAbilitySet->GiveToAbilitySystem(ASC, &GrantedHandles, this);
 		}
 
-		WeaponComponent->InitializeWeapons(ASC);
+		ApplyLoadout();
 
 		if (const UTFPSHealthSet* HealthSet = ASC->GetSet<UTFPSHealthSet>())
 		{
@@ -216,7 +219,7 @@ void ATFPSCharacter::UninitializeAbilitySystem()
 				HealthSet->OnOutOfHealth.Remove(OutOfHealthHandle);
 			}
 
-			WeaponComponent->UninitializeWeapons();
+			RemoveLoadout();
 			GrantedHandles.TakeFromAbilitySystem(ASC);
 
 			// The dead tag belongs to this body. The ASC outlives it on the PlayerState, so clear it here
@@ -249,6 +252,77 @@ void ATFPSCharacter::UninitializeAbilitySystem()
 
 	OutOfHealthHandle.Reset();
 	AbilitySystemComponent.Reset();
+}
+
+void ATFPSCharacter::ApplyLoadout()
+{
+	check(HasAuthority());
+
+	UTFPSAbilitySystemComponent* ASC = AbilitySystemComponent.Get();
+	ATFPSPlayerState* PS = GetPlayerState<ATFPSPlayerState>();
+	UTFPSLoadoutComponent* LoadoutComponent = PS ? PS->GetLoadoutComponent() : nullptr;
+	if (!ASC || !LoadoutComponent)
+	{
+		return;
+	}
+
+	const FTFPSLoadout& Loadout = LoadoutComponent->GetActiveLoadout();
+
+	// Perks: abilities/effects via GAS, weapon handling via stat modifiers folded into every weapon.
+	FTFPSWeaponStatModifiers PerkModifiers;
+	for (const UTFPSPerkDefinition* Perk : Loadout.Perks)
+	{
+		if (!Perk)
+		{
+			continue;
+		}
+
+		if (Perk->AbilitySet)
+		{
+			Perk->AbilitySet->GiveToAbilitySystem(ASC, &LoadoutGrantedHandles, const_cast<UTFPSPerkDefinition*>(Perk));
+		}
+		PerkModifiers.Combine(Perk->WeaponModifiers);
+	}
+
+	for (const UTFPSEquipmentDefinition* Equipment : { Loadout.Lethal.Get(), Loadout.Tactical.Get() })
+	{
+		if (Equipment && Equipment->AbilitySet)
+		{
+			Equipment->AbilitySet->GiveToAbilitySystem(ASC, &LoadoutGrantedHandles, const_cast<UTFPSEquipmentDefinition*>(Equipment));
+		}
+	}
+
+	WeaponComponent->InitializeWeapons(ASC, Loadout.Weapons, PerkModifiers);
+
+	LoadoutAppliedTime = GetWorld()->GetTimeSeconds();
+}
+
+void ATFPSCharacter::RemoveLoadout()
+{
+	check(HasAuthority());
+
+	WeaponComponent->UninitializeWeapons();
+	LoadoutGrantedHandles.TakeFromAbilitySystem(AbilitySystemComponent.Get());
+}
+
+bool ATFPSCharacter::CanReapplyLoadout(float GraceSeconds) const
+{
+	return HasAuthority()
+		&& !bIsDead
+		&& !bMatchFrozen
+		&& AbilitySystemComponent.IsValid()
+		&& GetWorld()->GetTimeSeconds() - LoadoutAppliedTime <= GraceSeconds;
+}
+
+void ATFPSCharacter::ReapplyLoadout()
+{
+	if (!HasAuthority() || !AbilitySystemComponent.IsValid())
+	{
+		return;
+	}
+
+	RemoveLoadout();
+	ApplyLoadout();
 }
 
 void ATFPSCharacter::HandleOutOfHealth(AActor* DamageInstigator, AActor* DamageCauser, const FGameplayEffectSpec* DamageSpec, float DamageMagnitude)

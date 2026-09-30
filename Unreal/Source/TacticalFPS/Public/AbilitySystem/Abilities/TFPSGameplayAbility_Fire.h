@@ -1,8 +1,9 @@
 #pragma once
 
-#include "AbilitySystem/Abilities/TFPSGameplayAbility.h"
+#include "AbilitySystem/Abilities/TFPSWeaponGameplayAbility.h"
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
+#include "Loadout/TFPSLoadoutTypes.h"
 
 #include "TFPSGameplayAbility_Fire.generated.h"
 
@@ -14,7 +15,8 @@ struct FTFPSShotTargetData;
  * Hitscan fire for semi, burst and full-auto weapons.
  *
  * One activation covers one trigger pull, so a full-auto burst held for 2 seconds is one activation
- * and N shots.
+ * and N shots. All firing parameters come from the owner's FTFPSWeaponStats (weapon x attachments x
+ * perks), which the server computed and replicated to the owner, so both sides use identical numbers.
  *
  * Owning client (predicted):
  *   Activate -> FireShot now, then on a timer at the weapon's fire interval while input is held.
@@ -40,7 +42,7 @@ struct FTFPSShotTargetData;
  * which the cap bounds.
  */
 UCLASS()
-class TACTICALFPS_API UTFPSGameplayAbility_Fire : public UTFPSGameplayAbility
+class TACTICALFPS_API UTFPSGameplayAbility_Fire : public UTFPSWeaponGameplayAbility
 {
 	GENERATED_BODY()
 
@@ -101,8 +103,8 @@ private:
 
 	void OnServerTargetDataReceived(const FGameplayAbilityTargetDataHandle& Data, FGameplayTag ApplicationTag);
 	void ProcessShotOnServer(const FTFPSShotTargetData& Shot);
-	bool ValidateShot(const FTFPSShotTargetData& Shot, const UTFPSWeaponDefinition& Weapon) const;
-	bool ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const UTFPSWeaponDefinition& Weapon,
+	bool ValidateShot(const FTFPSShotTargetData& Shot, const FTFPSWeaponStats& Stats) const;
+	bool ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const FTFPSWeaponStats& Stats,
 		double RewindTime, FName& OutBone, FVector& OutImpact) const;
 	bool ValidateHitPlausibility(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, FName& OutBone) const;
 	void ApplyDamage(AActor* Target, float Damage, const UTFPSWeaponDefinition& Weapon);
@@ -114,6 +116,9 @@ private:
 
 	UPROPERTY(Transient)
 	TObjectPtr<const UTFPSWeaponDefinition> ActiveWeapon;
+
+	/** Snapshot of the active weapon's stats at activation (owning client / host timing and traces). */
+	FTFPSWeaponStats ActiveStats;
 
 	FTimerHandle FireTimerHandle;
 	FDelegateHandle TargetDataDelegateHandle;

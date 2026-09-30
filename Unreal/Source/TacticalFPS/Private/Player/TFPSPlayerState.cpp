@@ -2,6 +2,7 @@
 
 #include "AbilitySystem/Attributes/TFPSHealthSet.h"
 #include "AbilitySystem/TFPSAbilitySystemComponent.h"
+#include "Loadout/TFPSLoadoutComponent.h"
 #include "Net/Core/PushModel/PushModel.h"
 #include "Net/UnrealNetwork.h"
 
@@ -13,6 +14,8 @@ ATFPSPlayerState::ATFPSPlayerState(const FObjectInitializer& ObjectInitializer)
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 
 	HealthSet = CreateDefaultSubobject<UTFPSHealthSet>(TEXT("HealthSet"));
+
+	LoadoutComponent = CreateDefaultSubobject<UTFPSLoadoutComponent>(TEXT("LoadoutComponent"));
 
 	// PlayerState defaults to a very low update rate. The ASC replicates through its owner, so health,
 	// tags and prediction acks would lag without raising this. Tune per game mode against the server's
@@ -76,10 +79,11 @@ void ATFPSPlayerState::CopyProperties(APlayerState* PlayerState)
 {
 	Super::CopyProperties(PlayerState);
 
-	// Seamless travel: keep the team (parties stay together); stats start fresh each map.
+	// Seamless travel: keep the team (parties stay together) and the chosen loadout; stats start fresh.
 	if (ATFPSPlayerState* Next = Cast<ATFPSPlayerState>(PlayerState))
 	{
 		Next->SetTeamId(TeamId);
+		Next->LoadoutComponent->CopyLoadoutFrom(*LoadoutComponent);
 	}
 }
 
@@ -91,6 +95,7 @@ void ATFPSPlayerState::OverrideWith(APlayerState* PlayerState)
 	if (const ATFPSPlayerState* Old = Cast<ATFPSPlayerState>(PlayerState))
 	{
 		SetTeamId(Old->TeamId);
+		LoadoutComponent->CopyLoadoutFrom(*Old->LoadoutComponent);
 		Kills = Old->Kills;
 		Deaths = Old->Deaths;
 		MARK_PROPERTY_DIRTY_FROM_NAME(ATFPSPlayerState, Kills, this);

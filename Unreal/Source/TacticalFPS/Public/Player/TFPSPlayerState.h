@@ -10,6 +10,7 @@
 class UAbilitySystemComponent;
 class UTFPSAbilitySystemComponent;
 class UTFPSHealthSet;
+class UTFPSLoadoutComponent;
 
 /**
  * Owns the ASC and attribute sets so loadout-granted abilities, perk effects and stats persist across
@@ -45,6 +46,9 @@ public:
 	const UTFPSHealthSet* GetHealthSet() const { return HealthSet; }
 
 	UFUNCTION(BlueprintPure, Category = "TFPS|PlayerState")
+	UTFPSLoadoutComponent* GetLoadoutComponent() const { return LoadoutComponent; }
+
+	UFUNCTION(BlueprintPure, Category = "TFPS|PlayerState")
 	int32 GetTeamIdAsInt() const { return TeamId == NoTeam ? -1 : TeamId; }
 
 	UFUNCTION(BlueprintPure, Category = "TFPS|PlayerState")
@@ -72,6 +76,9 @@ private:
 	// Default subobject of the ASC's owner, so the ASC discovers and registers it automatically.
 	UPROPERTY()
 	TObjectPtr<UTFPSHealthSet> HealthSet;
+
+	UPROPERTY(VisibleAnywhere, Category = "TFPS|PlayerState")
+	TObjectPtr<UTFPSLoadoutComponent> LoadoutComponent;
 
 	UPROPERTY(Replicated)
 	uint8 TeamId = NoTeam;

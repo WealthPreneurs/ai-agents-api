@@ -70,6 +70,12 @@ public:
 	 */
 	void SetMatchFrozen(bool bFrozen);
 
+	/** Server. True while a loadout change may still re-equip this life (just spawned, alive, not frozen). */
+	bool CanReapplyLoadout(float GraceSeconds) const;
+
+	/** Server. Strips and re-grants the loadout from the PlayerState's current choice. */
+	void ReapplyLoadout();
+
 	/** Server only. Game mode binds here for scoring, killfeed and respawn. */
 	UPROPERTY(BlueprintAssignable, Category = "TFPS|Character")
 	FTFPSCharacterDiedSignature OnDied;
@@ -118,6 +124,10 @@ private:
 	void InitializeAbilitySystem();
 	void UninitializeAbilitySystem();
 
+	/** Server: grant perks and equipment, and equip the loadout's weapons. */
+	void ApplyLoadout();
+	void RemoveLoadout();
+
 	void HandleOutOfHealth(AActor* DamageInstigator, AActor* DamageCauser, const FGameplayEffectSpec* DamageSpec, float DamageMagnitude);
 	void HandleDeathPresentation();
 
@@ -141,6 +151,12 @@ private:
 	TWeakObjectPtr<UTFPSAbilitySystemComponent> AbilitySystemComponent;
 
 	FTFPSAbilitySet_GrantedHandles GrantedHandles;
+
+	/** Perks and equipment granted for this life. */
+	FTFPSAbilitySet_GrantedHandles LoadoutGrantedHandles;
+
+	/** Server world time the loadout was last applied. */
+	double LoadoutAppliedTime = 0.0;
 
 	FDelegateHandle OutOfHealthHandle;
 

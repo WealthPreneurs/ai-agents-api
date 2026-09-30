@@ -45,6 +45,13 @@ public:
 	virtual void FinishRestartPlayer(AController* NewPlayer, const FRotator& StartRotation) override;
 	//~End AGameModeBase
 
+	/**
+	 * Server. Progression level used to validate loadout unlocks. Override to read the player's level from
+	 * your backend (keyed by UniqueNetId, fetched at login). Never derive it from anything the client sends,
+	 * such as URL options.
+	 */
+	virtual int32 GetUnlockLevel(const APlayerState* PlayerState) const { return DefaultUnlockLevel; }
+
 protected:
 	UPROPERTY(Config, EditDefaultsOnly, Category = "TFPS|Match", Meta = (ClampMin = 2, ClampMax = 8))
 	int32 NumTeams = 2;
@@ -85,6 +92,10 @@ protected:
 	UPROPERTY(Config, EditDefaultsOnly, Category = "TFPS|Match")
 	TArray<FString> MapRotation;
 
+	/** Unlock level everyone gets until a backend provides real progression. High = everything unlocked. */
+	UPROPERTY(Config, EditDefaultsOnly, Category = "TFPS|Loadout")
+	int32 DefaultUnlockLevel = 1000;
+
 	/** Spawn points closer than this to any living player are skipped (spawn blocking / telefrags). */
 	UPROPERTY(Config, EditDefaultsOnly, Category = "TFPS|Spawning", Meta = (Units = "cm"))
 	float SpawnBlockRadius = 150.f;
@@ -99,6 +110,9 @@ protected:
 
 private:
 	ATFPSGameState* GetTFPSGameState() const;
+
+	/** Server: load every registered loadout item up front so validation never hitches on disk IO. */
+	void PreloadLoadoutItems();
 
 	void EnterPhase(FGameplayTag Phase, float Duration);
 	void OnPhaseTimerExpired();

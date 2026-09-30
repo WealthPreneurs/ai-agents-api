@@ -39,13 +39,14 @@ bool UTFPSGameplayAbility_Fire::CanActivateAbility(const FGameplayAbilitySpecHan
 	}
 
 	// CurrentActorInfo is not set yet on a fresh activation, so resolve from the passed-in ActorInfo.
+	// The base class has already checked that this ability's weapon is the active one.
 	const ATFPSCharacter* Character = ActorInfo ? Cast<ATFPSCharacter>(ActorInfo->AvatarActor.Get()) : nullptr;
 	const UTFPSWeaponComponent* Weapons = Character ? Character->GetWeaponComponent() : nullptr;
 
 	// The owning client checks predicted ammo, the server checks authoritative ammo. Predicted ammo is
 	// never higher than the server's, so the server never rejects an activation for ammo the client
 	// thought it had.
-	return Weapons && Weapons->GetEquippedWeapon() && Weapons->GetAmmoInMagazine() > 0;
+	return Weapons && Weapons->GetEquippedStats() && Weapons->GetAmmoInMagazine() > 0;
 }
 
 void UTFPSGameplayAbility_Fire::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo,
@@ -58,13 +59,15 @@ void UTFPSGameplayAbility_Fire::ActivateAbility(const FGameplayAbilitySpecHandle
 	}
 
 	const UTFPSWeaponComponent* Weapons = GetWeaponComponentFromActorInfo();
+	const FTFPSWeaponStats* Stats = Weapons ? Weapons->GetEquippedStats() : nullptr;
 	ActiveWeapon = Weapons ? Weapons->GetEquippedWeapon() : nullptr;
-	if (!ActiveWeapon)
+	if (!ActiveWeapon || !Stats)
 	{
 		EndAbility(Handle, ActorInfo, ActivationInfo, true, true);
 		return;
 	}
 
+	ActiveStats = *Stats;
 	ShotsFiredThisActivation = 0;
 
 	UAbilitySystemComponent* ASC = ActorInfo->AbilitySystemComponent.Get();
@@ -88,10 +91,10 @@ void UTFPSGameplayAbility_Fire::ActivateAbility(const FGameplayAbilitySpecHandle
 
 	FireShot();
 
-	const float Interval = ActiveWeapon->GetFireInterval();
+	const float Interval = ActiveStats.FireInterval;
 	FTimerManager& Timers = GetWorld()->GetTimerManager();
 
-	switch (ActiveWeapon->FireMode)
+	switch (ActiveStats.FireMode)
 	{
 	case ETFPSFireMode::SemiAuto:
 		// Stay active for one interval so a semi-auto can't be clicked faster than its fire rate.
@@ -145,7 +148,7 @@ void UTFPSGameplayAbility_Fire::OnFireTimer()
 
 	const bool bOutOfAmmo = Weapons->GetAmmoInMagazine() <= 0;
 
-	if (ActiveWeapon->FireMode == ETFPSFireMode::FullAuto)
+	if (ActiveStats.FireMode == ETFPSFireMode::FullAuto)
 	{
 		const FGameplayAbilitySpec* Spec = GetCurrentAbilitySpec();
 		if (bOutOfAmmo || !Spec || !Spec->InputPressed)
@@ -159,14 +162,14 @@ void UTFPSGameplayAbility_Fire::OnFireTimer()
 	}
 
 	// Burst: finish the burst regardless of input, then hold for the burst cooldown.
-	if (bOutOfAmmo || ShotsFiredThisActivation >= ActiveWeapon->BurstCount)
+	if (bOutOfAmmo || ShotsFiredThisActivation >= ActiveStats.BurstCount)
 	{
 		FTimerManager& Timers = GetWorld()->GetTimerManager();
 		Timers.ClearTimer(FireTimerHandle);
 
-		if (ActiveWeapon->BurstCooldown > 0.f)
+		if (ActiveStats.BurstCooldown > 0.f)
 		{
-			Timers.SetTimer(FireTimerHandle, this, &ThisClass::K2_EndAbility, ActiveWeapon->BurstCooldown, false);
+			Timers.SetTimer(FireTimerHandle, this, &ThisClass::K2_EndAbility, ActiveStats.BurstCooldown, false);
 		}
 		else
 		{
@@ -211,7 +214,7 @@ void UTFPSGameplayAbility_Fire::FireShot()
 	Shot->ClientServerTime = static_cast<float>(GetServerWorldTime());
 
 	const bool bADS = ASC->HasMatchingGameplayTag(TFPSGameplayTags::State_ADS);
-	const float SpreadHalfAngle = FMath::DegreesToRadians(bADS ? ActiveWeapon->ADSSpreadAngle : ActiveWeapon->HipSpreadAngle);
+	const float SpreadHalfAngle = FMath::DegreesToRadians(bADS ? ActiveStats.ADSSpreadAngle : ActiveStats.HipSpreadAngle);
 	const FVector AimDirection = ViewRotation.Vector();
 
 	// Seeded by shot sequence so the server can reproduce the cone later if spread validation is added.
@@ -220,11 +223,11 @@ void UTFPSGameplayAbility_Fire::FireShot()
 	FCollisionQueryParams QueryParams(SCENE_QUERY_STAT(TFPSWeaponFire), /*bTraceComplex*/ false, Character);
 	QueryParams.bReturnPhysicalMaterial = false;
 
-	const int32 Pellets = FMath::Clamp(ActiveWeapon->PelletsPerShot, 1, FTFPSShotTargetData::MaxHits);
+	const int32 Pellets = FMath::Clamp(ActiveStats.PelletsPerShot, 1, FTFPSShotTargetData::MaxHits);
 	for (int32 Pellet = 0; Pellet < Pellets; ++Pellet)
 	{
 		const FVector Direction = SpreadHalfAngle > 0.f ? SpreadStream.VRandCone(AimDirection, SpreadHalfAngle) : AimDirection;
-		const FVector TraceEnd = ViewLocation + Direction * ActiveWeapon->MaxRange;
+		const FVector TraceEnd = ViewLocation + Direction * ActiveStats.MaxRange;
 
 		FHitResult Hit;
 		const bool bBlocked = GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, TraceEnd, TFPS_TraceChannel_Weapon, QueryParams);
@@ -318,9 +321,11 @@ void UTFPSGameplayAbility_Fire::ProcessShotOnServer(const FTFPSShotTargetData& S
 		return;
 	}
 
+	// Server-authoritative stats for the weapon actually equipped on the server right now.
 	const UTFPSWeaponDefinition* Weapon = Weapons->GetEquippedWeapon();
+	const FTFPSWeaponStats* Stats = Weapons->GetEquippedStats();
 
-	if (!Weapon || Weapon != ActiveWeapon || !Weapons->ServerConsumeFireRateCredit() || !ValidateShot(Shot, *Weapon))
+	if (!Weapon || !Stats || Weapon != ActiveWeapon || !Weapons->ServerConsumeFireRateCredit() || !ValidateShot(Shot, *Stats))
 	{
 		Weapons->ServerRejectShot(Shot.ShotSeq);
 		return;
@@ -346,13 +351,13 @@ void UTFPSGameplayAbility_Fire::ProcessShotOnServer(const FTFPSShotTargetData& S
 	{
 		FName ValidatedBone;
 		FVector ValidatedImpact;
-		if (!ValidateHit(Shot, Hit, *Weapon, RewindTime, ValidatedBone, ValidatedImpact))
+		if (!ValidateHit(Shot, Hit, *Stats, RewindTime, ValidatedBone, ValidatedImpact))
 		{
 			continue;
 		}
 
 		const float Distance = FVector::Dist(Shot.Origin, ValidatedImpact);
-		DamageByTarget.FindOrAdd(Hit.HitActor.Get()) += Weapon->CalculateDamage(Distance, ValidatedBone);
+		DamageByTarget.FindOrAdd(Hit.HitActor.Get()) += Weapon->CalculateDamage(*Stats, Distance, ValidatedBone);
 	}
 
 	for (const TPair<AActor*, float>& Entry : DamageByTarget)
@@ -361,7 +366,7 @@ void UTFPSGameplayAbility_Fire::ProcessShotOnServer(const FTFPSShotTargetData& S
 	}
 }
 
-bool UTFPSGameplayAbility_Fire::ValidateShot(const FTFPSShotTargetData& Shot, const UTFPSWeaponDefinition& Weapon) const
+bool UTFPSGameplayAbility_Fire::ValidateShot(const FTFPSShotTargetData& Shot, const FTFPSWeaponStats& Stats) const
 {
 	const AActor* Shooter = GetAvatarActorFromActorInfo();
 	if (!Shooter)
@@ -385,16 +390,16 @@ bool UTFPSGameplayAbility_Fire::ValidateShot(const FTFPSShotTargetData& Shot, co
 		return false;
 	}
 
-	if (Shot.Hits.Num() > Weapon.PelletsPerShot)
+	if (Shot.Hits.Num() > Stats.PelletsPerShot)
 	{
-		UE_LOG(LogTFPS, Warning, TEXT("[%s] shot rejected: %d hits for %d pellets."), *GetNameSafe(Shooter), Shot.Hits.Num(), Weapon.PelletsPerShot);
+		UE_LOG(LogTFPS, Warning, TEXT("[%s] shot rejected: %d hits for %d pellets."), *GetNameSafe(Shooter), Shot.Hits.Num(), Stats.PelletsPerShot);
 		return false;
 	}
 
-	return FVector::DistSquared(Shot.Origin, Shot.EndPoint) <= FMath::Square(Weapon.MaxRange + 1.f);
+	return FVector::DistSquared(Shot.Origin, Shot.EndPoint) <= FMath::Square(Stats.MaxRange + 1.f);
 }
 
-bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const UTFPSWeaponDefinition& Weapon,
+bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, const FTFPSShotHit& Hit, const FTFPSWeaponStats& Stats,
 	double RewindTime, FName& OutBone, FVector& OutImpact) const
 {
 	AActor* Target = Hit.HitActor.Get();
@@ -418,7 +423,7 @@ bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, con
 	const FVector Origin = Shot.Origin;
 	const FVector ToClaim = FVector(Hit.ImpactPoint) - Origin;
 	const float ClaimDistance = static_cast<float>(ToClaim.Size());
-	if (ClaimDistance <= KINDA_SMALL_NUMBER || ClaimDistance > Weapon.MaxRange + 1.f)
+	if (ClaimDistance <= KINDA_SMALL_NUMBER || ClaimDistance > Stats.MaxRange + 1.f)
 	{
 		return false;
 	}
@@ -428,7 +433,7 @@ bool UTFPSGameplayAbility_Fire::ValidateHit(const FTFPSShotTargetData& Shot, con
 	const UTFPSLagCompensationSubsystem* LagComp = GetWorld()->GetSubsystem<UTFPSLagCompensationSubsystem>();
 	FTFPSRewindHit Rewound;
 	const ETFPSRewindResult Result = LagComp
-		? LagComp->ConfirmHit(Target, Origin, ToClaim / ClaimDistance, FMath::Min(ClaimDistance + RewindRayOvershoot, Weapon.MaxRange), RewindTime, Rewound)
+		? LagComp->ConfirmHit(Target, Origin, ToClaim / ClaimDistance, FMath::Min(ClaimDistance + RewindRayOvershoot, Stats.MaxRange), RewindTime, Rewound)
 		: ETFPSRewindResult::NoHistory;
 
 	switch (Result)

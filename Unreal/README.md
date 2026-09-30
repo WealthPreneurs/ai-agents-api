@@ -21,8 +21,16 @@ Unreal/
         AbilitySystem/TFPSAbilitySet.*               data asset: abilities + effects granted/revoked as a unit
         AbilitySystem/TFPSShotTargetData.*           compact client->server shot payload (custom NetSerialize)
         AbilitySystem/Abilities/TFPSGameplayAbility*  base ability + predicted hitscan fire
-        Weapons/TFPSWeaponDefinition.*         data asset: fire mode, RPM, ammo, damage falloff, hit zones
-        Weapons/TFPSWeaponComponent.*          equipped weapon, predicted ammo, fire-rate limiting, cosmetics
+        Weapons/TFPSWeaponDefinition.*         data asset: base stats, allowed attachments, slot type, hit zones
+        Weapons/TFPSWeaponComponent.*          weapon slots, per-player stats, predicted ammo + swaps, fire-rate/equip-time limits, cosmetics
+        Loadout/TFPSLoadoutTypes.*             stat modifiers, effective stats, loadout request (IDs) / resolved loadout
+        Loadout/TFPSLoadoutItemDefinition.*    base for loadout items (display name, icon, unlock level, asset type)
+        Loadout/TFPSAttachmentDefinition.h     attachment: slot, stat modifiers, mesh + socket
+        Loadout/TFPSPerkDefinition.h           perk: slot, ability set, weapon stat modifiers
+        Loadout/TFPSEquipmentDefinition.h      lethal/tactical: slot, ability set
+        Loadout/TFPSLoadoutComponent.*         on PlayerState: request RPC, server validation, active loadout
+        AbilitySystem/Abilities/TFPSWeaponGameplayAbility.*   weapon abilities gated on the active weapon
+        AbilitySystem/Abilities/TFPSGameplayAbility_SwitchWeapon.*  predicted weapon swap
         LagCompensation/TFPSLagCompensationSubsystem.*  server-side hitbox history + rewind hit confirmation
         Game/TFPSGameMode.*                    phase machine, teams, spawn selection, respawn, scoring, map rotation
         Game/TFPSGameState.*                   replicated phase, countdown, team scores, kill feed
@@ -54,12 +62,13 @@ To drop the module into an existing project instead, copy `Source/TacticalFPS` i
    - Add an instant *attribute reset* effect that overrides Health to MaxHealth. It runs on every spawn, which is how respawns come back at full health.
 4. **Character Blueprint.** Create one from `TFPSCharacter`. Assign the meshes, the input config, the mapping context and the default ability set.
 5. **Damage effect.** Create an instant Gameplay Effect with one modifier: `TFPSHealthSet.IncomingDamage`, Add, magnitude from SetByCaller `SetByCaller.Damage`.
-6. **Weapon.** Create a `TFPSWeaponDefinition` under `/Game/Weapons`.
-   - Fill in fire mode, rate of fire, ammo and damage.
-   - Add bone multipliers, e.g. `head` = 1.5.
-   - Set the damage effect.
-   - Give it an ability set containing `TFPSGameplayAbility_Fire` (or a Blueprint child) on `InputTag.Weapon.Fire`.
-   - On the character Blueprint's *Weapon Component*, set it as *Default Weapon*.
+6. **Loadout items.** Create them as data assets under `/Game/Loadout/{Weapons,Attachments,Perks,Equipment}`. They are only recognized in those folders.
+   - **Weapons** (`TFPSWeaponDefinition`): set the slot type, allowed attachments, the attachment cap, stats, bone multipliers (e.g. `head` = 1.5) and the damage effect. Give each weapon an ability set containing `TFPSGameplayAbility_Fire` on `InputTag.Weapon.Fire`.
+   - **Attachments** (`TFPSAttachmentDefinition`): set the attachment slot, stat modifiers, mesh and weapon socket.
+   - **Perks** (`TFPSPerkDefinition`): set the perk slot, an ability set for passive or active effects, and weapon stat modifiers.
+   - **Equipment** (`TFPSEquipmentDefinition`): set Lethal or Tactical, and an ability set with the throw ability on `InputTag.Equipment.*`.
+   - Put `TFPSGameplayAbility_SwitchWeapon` in the character's default ability set on `InputTag.Weapon.Switch`.
+   - Point `DefaultLoadout` in `Config/DefaultGame.ini` at your asset names.
 7. **Fire cue.** Create a `GameplayCueNotify_Static` for `GameplayCue.Weapon.Fire`. `Location` and `Normal` are the impact, `EffectCauser` is the shooter and `SourceObject` is the weapon definition.
 8. **Game mode.** Create a Blueprint of `TFPSGameMode`, set *Default Pawn Class* to the character Blueprint, and use it as the map's (or the project's) game mode. Controller, player state and game state are already set.
 9. **Spawns.** Place Player Starts. Set *Player Start Tag* to `Team0` or `Team1` for team-only spawns; untagged starts are shared.
@@ -78,6 +87,30 @@ To drop the module into an existing project instead, copy `Source/TacticalFPS` i
   - The client traces and sends one compact shot packet per shot. The server rate-limits shots, sanity-checks each shot and hit, spends ammo, and computes and applies damage.
   - Ammo prediction uses shot sequence numbers, the way CharacterMovement reconciles saved moves.
   - Hits are confirmed with server-side rewind (next section).
+
+## Loadouts and perks
+
+```
+client menu ──RequestLoadout(IDs)──> server: resolve through AssetManager ─> validate ─> fill from defaults
+                                                                                      │
+             <──ActiveLoadout (owner only)── PlayerState.LoadoutComponent <───────────┘
+                                                        │ next spawn, or now if within 5 s of spawning
+                                                        v
+            character: grant perk and equipment ability sets, then equip weapons with
+                       stats = base x attachments x perks
+```
+
+- **What the client sends:** only `FPrimaryAssetId`s. The server resolves each one through the AssetManager registry, so only registered items of the expected type ever resolve.
+- **Validation:**
+  - Weapons must match their slot type, and every item must be unlocked.
+  - Attachments must be in the weapon's `AllowedAttachments` list, with one per attachment slot and no more than `MaxAttachments`.
+  - Perks are limited to one per perk slot, and equipment must match its slot.
+  - Invalid pieces are dropped, or replaced from `DefaultLoadout` for weapons.
+  - The unlock level comes from `ATFPSGameMode::GetUnlockLevel`. Hook that up to your backend; never trust anything the client sends for it.
+- **Stats:** the server builds each weapon's stats from the weapon definition, its attachments and the player's perks. They're sent to the owner only, so client prediction and server validation use identical numbers.
+- **Weapon abilities:** every weapon's abilities are granted at spawn. `UTFPSWeaponGameplayAbility` lets them activate only while their own weapon is the active one, so a weapon swap never waits on the server to grant anything.
+- **Weapon swap:** predicted on the client, with rollback if the server rejects it. The weapon component enforces equip time on the server, so skipping the swap animation client-side gives no advantage.
+- **Performance:** all loadout items are preloaded on the server at `InitGame`, gameplay data only. Cosmetic meshes stay as soft references and load only on clients.
 
 ## Lag compensation
 
