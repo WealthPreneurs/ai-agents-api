@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nelsons/schemas/deals.schema.json",
+  "title": "Deal / Property",
+  "description": "Nelsons Property Group Deals & Properties app. ROI / Profit Estimate is calculated by scripts/underwrite.js, not entered by hand.",
+  "type": "object",
+  "required": ["Deal Name", "Property Address", "Exit Strategy", "Acquisition Status"],
+  "additionalProperties": false,
+  "properties": {
+    "Deal Name": { "type": "string", "minLength": 1 },
+    "Linked Lead": { "type": "string", "description": "Lead Name or CRM item ID of the source lead" },
+    "Property Address": { "type": "string", "minLength": 1 },
+    "Asking Price": { "type": "number", "minimum": 0 },
+    "Repair Estimate": { "type": "number", "minimum": 0 },
+    "ARV": { "type": "number", "minimum": 0, "description": "After Repair Value" },
+    "ROI / Profit Estimate": {
+      "type": "number",
+      "description": "((ARV - (Asking Price + Repair Estimate)) / (Asking Price + Repair Estimate)) * 100"
+    },
+    "Exit Strategy": { "enum": ["Wholesale", "JV", "Rent-To-Own", "Fix & Flip", "Hold"] },
+    "Acquisition Status": {
+      "enum": ["Offer Sent", "Under Contract", "Due Diligence", "Closed", "Cancelled"]
+    },
+    "Contract Deadline": { "type": "string", "format": "date" },
+    "Owner Occupancy Status": {
+      "enum": ["Owner Occupied", "Tenant Occupied", "Vacant", "Unknown"]
+    },
+    "Title Check Complete": { "enum": ["Yes", "No"] },
+    "Notes": { "type": "string" },
+    "Assigned Team Member": { "type": "string" },
+    "Photos / Docs": { "type": "array", "items": { "type": "string" } }
+  }
+}

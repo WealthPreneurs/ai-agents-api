@@ -1,0 +1,18 @@
+{
+  "description": "Nelsons Property Group chart of accounts. Use these category names verbatim in ledgers, QuickBooks/Wave mappings, and expense-import scripts.",
+  "income": [
+    { "category": "Assignment Fees", "examples": ["Wholesale assignment of contract"] },
+    { "category": "Seller Finance Income (Monthly Notes)", "examples": ["Monthly note payments"] },
+    { "category": "Rent-To-Own Installments", "examples": ["RTO monthly installments", "Option fees"] },
+    { "category": "Lawn Care / Handyman Services", "examples": ["Field service invoices"] },
+    { "category": "Consulting / Proposal Fees", "examples": ["Corporate partnership proposals"] }
+  ],
+  "expenses": [
+    { "category": "Marketing & Lead Gen", "examples": ["Direct mail", "FB Ads", "Skip tracing"] },
+    { "category": "Property Costs", "subcategories": ["Repairs", "Permits", "Holding"] },
+    { "category": "Professional Services", "subcategories": ["Legal", "Accounting"] },
+    { "category": "Field Services Payroll/Contractors", "examples": ["1099 crews", "W-2 field payroll"] },
+    { "category": "Travel & Vehicle Use", "examples": ["Mileage", "Fuel", "Property visits"] },
+    { "category": "Office/Tech Subscriptions", "examples": ["CRM", "Phone/SMS", "Software"] }
+  ]
+}

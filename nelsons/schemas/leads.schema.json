@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nelsons/schemas/leads.schema.json",
+  "title": "Lead",
+  "description": "Nelsons Property Group Leads app (Podio / Airtable). Field names match the CRM exactly so CSV imports map 1:1.",
+  "type": "object",
+  "required": ["Lead Name", "Property Address", "Lead Source", "Stage"],
+  "additionalProperties": false,
+  "properties": {
+    "Lead Name": { "type": "string", "minLength": 1, "x-crm-type": "Text" },
+    "Phone Number": { "type": "string", "pattern": "^[0-9+()\\-. ]{7,20}$", "x-crm-type": "Phone" },
+    "Email Address": { "type": "string", "format": "email", "x-crm-type": "Email" },
+    "Property Address": { "type": "string", "minLength": 1, "x-crm-type": "Text/Location" },
+    "Lead Source": {
+      "enum": ["Referral", "FB Ad", "Direct Mail", "Driving for Dollars", "Web Form"],
+      "x-crm-type": "Dropdown"
+    },
+    "Property Type": {
+      "enum": ["Mobile Home on Land", "SFH", "Vacant Land", "Multi-family"],
+      "x-crm-type": "Dropdown"
+    },
+    "Condition of Property": {
+      "enum": ["Excellent", "Good", "Fair", "Poor"],
+      "x-crm-type": "Dropdown"
+    },
+    "Motivation Level": { "enum": ["Hot", "Warm", "Cold"], "x-crm-type": "Category" },
+    "Asking Price": { "type": "number", "minimum": 0, "x-crm-type": "Currency" },
+    "Repair Estimate": { "type": "number", "minimum": 0, "x-crm-type": "Currency" },
+    "Occupancy Status": {
+      "enum": ["Owner Occupied", "Tenant Occupied", "Vacant", "Unknown"],
+      "x-crm-type": "Dropdown",
+      "description": "Option list is not fixed by the spec; these are the default options."
+    },
+    "Notes / Deal Background": { "type": "string", "x-crm-type": "Text" },
+    "Stage": {
+      "enum": ["New Lead", "Contacted", "Offer Sent", "Negotiating", "Under Contract", "Closed"],
+      "x-crm-type": "Category"
+    },
+    "Assigned To": { "type": "string", "x-crm-type": "User" },
+    "File Uploads": { "type": "array", "items": { "type": "string" }, "x-crm-type": "Files" }
+  }
+}
