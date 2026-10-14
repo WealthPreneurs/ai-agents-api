@@ -3,6 +3,7 @@ const fetch = require('node-fetch');
 const { evaluateDeal, validateDeal, DEAL_ENGINE_MODEL } = require('./dealEngine');
 const { requireUser, acquireSlot, releaseSlot, authStatus, DAILY_LIMIT } = require('./dealEngineAuth');
 const { createBilling } = require('./billing');
+const { underwrite } = require('./nelsons/scripts/underwrite');
 const app = express();
 const billing = createBilling();
 
@@ -233,6 +234,15 @@ app.post('/deal-engine/evaluate', requireUser, async (req, res) => {
     releaseSlot(req.user.id);
     res.end();
   }
+});
+
+// Nelsons Property Group underwriting: Buy Box check, ROI, net profit and the
+// Deal Confidence Score. Pure arithmetic (no Claude call), so it does not count
+// toward Deal Engine usage, but it still requires a dashboard login.
+app.post('/nelsons/underwrite', requireUser, (req, res) => {
+  const result = underwrite(req.body);
+  if (!result.ok) return res.status(400).json({ error: result.errors.join(' '), errors: result.errors });
+  res.json(result);
 });
 
 // Subscription status, checkout and customer portal for the dashboard.

@@ -8,6 +8,7 @@ Ai consulting agents automation API
 | GET | `/health` | Status, API key presence, Deal Engine model |
 | POST | `/agent` | Chat with one of the consulting agents (`{ agent, message }`) |
 | POST | `/deal-engine/evaluate` | Kingdom Capital Deal Engine — runs a deal through Joseph, Abraham, Lydia, Solomon, and Steward and returns an Investment Memorandum |
+| POST | `/nelsons/underwrite` | Nelsons Property Group underwriting — Buy Box check, ROI, net profit, Deal Confidence Score (see `nelsons/README.md`) |
 
 ## Kingdom Capital Deal Engine
 

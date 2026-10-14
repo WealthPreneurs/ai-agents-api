@@ -43,6 +43,17 @@ test('Missing core inputs are flagged, not guessed', () => {
   assert.equal(r.errors.length, 2);
 });
 
+test('Bad optional inputs are rejected instead of producing NaN', () => {
+  const base = { askingPrice: 45000, repairEstimate: 12000, arv: 85000 };
+  assert.equal(underwrite({ ...base, closingCosts: '1500' }).ok, false);
+  assert.equal(underwrite({ ...base, holdingCosts: NaN }).ok, false);
+  assert.equal(underwrite({ ...base, sellerMotivation: 'toString' }).ok, false);
+  assert.equal(underwrite({ ...base, marketDemand: 11 }).ok, false);
+  assert.equal(underwrite({ ...base, propertyType: 5 }).ok, false);
+  assert.equal(underwrite(null).ok, false);
+  assert.equal(underwrite([]).ok, false);
+});
+
 test('CLI flags parse', () => {
   assert.deepEqual(parseArgs(['--asking', '45000', '--motivation', 'Warm', '--risk', '3']), {
     askingPrice: 45000,

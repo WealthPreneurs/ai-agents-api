@@ -31,6 +31,26 @@ Flags: `--asking`, `--repairs`, `--arv` (required), `--holding`, `--closing`, `-
 Prints net profit, ROI, the Buy Box result with reasons, the Deal Confidence Score, and every
 default it assumed. You can also `require('./nelsons/scripts/underwrite')` it from code.
 
+## Underwriting API
+
+`POST /nelsons/underwrite` runs the same script on the API server. It requires the same
+dashboard login as the Deal Engine (`Authorization: Bearer <Supabase token>`; set
+`DEAL_ENGINE_AUTH=off` for local development). It makes no Claude call, so it does not use
+up Deal Engine memos.
+
+```bash
+curl -X POST http://localhost:3000/nelsons/underwrite \
+  -H 'Content-Type: application/json' -H "Authorization: Bearer $TOKEN" \
+  -d '{"askingPrice":45000,"repairEstimate":12000,"arv":85000,
+       "propertyType":"Mobile Home on Land","sellerMotivation":"Hot",
+       "marketDemand":7,"inspectionRisk":4,"creativeStructure":8}'
+```
+
+Body fields: `askingPrice`, `repairEstimate`, `arv` (required, numbers), `holdingCosts`,
+`closingCosts` (numbers), `propertyType` (text), `sellerMotivation` (Hot/Warm/Cold or 1–10),
+`marketDemand`, `inspectionRisk`, `creativeStructure` (1–10). Returns the same JSON as the CLI.
+Bad input returns `400` with an `errors` list.
+
 ## Tests
 
 ```bash

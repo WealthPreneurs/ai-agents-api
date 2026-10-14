@@ -70,16 +70,53 @@ function isScore(n) {
 // Underwriting
 // ---------------------------------------------------------------------------
 
-function underwrite(input) {
+const MONEY_FIELDS = {
+  askingPrice: { label: 'Asking Price', required: true },
+  repairEstimate: { label: 'Repair Estimate', required: true },
+  arv: { label: 'ARV', required: true },
+  holdingCosts: { label: 'Holding Costs', required: false },
+  closingCosts: { label: 'Closing Costs', required: false },
+};
+
+const SCORE_FIELDS = {
+  marketDemand: 'Market Demand',
+  inspectionRisk: 'Inspection Risk',
+  creativeStructure: 'Creative Deal Structure Potential',
+};
+
+// Returns a list of problems with the input; empty when it can be underwritten.
+function validateInput(input) {
+  if (!input || typeof input !== 'object' || Array.isArray(input)) {
+    return ['Send the deal as a JSON object.'];
+  }
   const errors = [];
-  const assumptions = [];
-  const required = { askingPrice: 'Asking Price', repairEstimate: 'Repair Estimate', arv: 'ARV' };
-  for (const [key, label] of Object.entries(required)) {
-    if (typeof input[key] !== 'number' || !Number.isFinite(input[key]) || input[key] < 0) {
-      errors.push(`${label} is required and must be a non-negative number.`);
+  for (const [key, { label, required }] of Object.entries(MONEY_FIELDS)) {
+    const value = input[key];
+    if (value == null) {
+      if (required) errors.push(`${label} is required and must be a non-negative number.`);
+    } else if (typeof value !== 'number' || !Number.isFinite(value) || value < 0) {
+      errors.push(`${label} must be a non-negative number.`);
     }
   }
+  if (input.propertyType != null && typeof input.propertyType !== 'string') {
+    errors.push('Property Type must be text.');
+  }
+  const motivation = input.sellerMotivation;
+  if (motivation != null && !Object.hasOwn(MOTIVATION_SCORES, motivation) && !isScore(motivation)) {
+    errors.push('Seller Motivation must be Hot, Warm, Cold, or a number from 1 to 10.');
+  }
+  for (const [key, label] of Object.entries(SCORE_FIELDS)) {
+    if (input[key] != null && !isScore(input[key])) {
+      errors.push(`${label} must be a number from 1 to 10.`);
+    }
+  }
+  return errors;
+}
+
+function underwrite(input) {
+  const errors = validateInput(input);
   if (errors.length) return { ok: false, errors };
+  const assumptions = [];
 
   const { askingPrice, repairEstimate, arv, propertyType } = input;
   let { holdingCosts, closingCosts } = input;
@@ -183,6 +220,7 @@ module.exports = {
   roiPercent,
   confidenceScore,
   checkBuyBox,
+  validateInput,
   underwrite,
   parseArgs,
 };
