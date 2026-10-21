@@ -1,0 +1,120 @@
+{
+  "day": 197,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Listening to Wise Advice",
+  "scripture_passage": "1 Kings 12:1-30",
+  "story_title": "The Kingdom Splits",
+  "summary": "After Solomon died, his son Rehoboam ignored the wise advice of the elders and spoke harshly to the people. Ten tribes broke away and followed Jeroboam, who made golden calves. The kingdom split in two.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After Solomon died, his son Rehoboam became king. The people came to him and said, 'Your father made us work very hard and pay heavy taxes. Please make it lighter, and we will serve you.' Rehoboam said, 'Come back in three days.' First, he asked the older men who had advised his father Solomon. They said, 'If you are kind to these people and speak gently to them, they will serve you forever.' That was wise advice! But Rehoboam didn't like it. So he asked his young friends who had grown up with him. They said, 'Tell them, My little finger is thicker than my father's waist! My father was hard on you, but I will be even harder!' Rehoboam listened to his friends and spoke harshly to the people. The people were so upset that ten of the twelve tribes said, 'We're done with David's family!' They made a man named Jeroboam their king. From then on, there were two kingdoms: Israel in the north, with ten tribes, and Judah in the south, with Jerusalem. Then Jeroboam worried that his people would go to Jerusalem to worship and want Rehoboam back. So he made two golden calves and said, 'These are your gods!' The kingdom split, and the north turned to idols, because one king wouldn't listen to wise advice and speak with kindness.",
+    "scenes": [
+      {
+        "caption": "A new king",
+        "art_direction": "Young Rehoboam on Solomon's throne, looking proud."
+      },
+      {
+        "caption": "'Make it lighter'",
+        "art_direction": "Tired workers and farmers asking the king for mercy."
+      },
+      {
+        "caption": "The elders' advice",
+        "art_direction": "White-bearded advisers speaking gently, hands open."
+      },
+      {
+        "caption": "The young friends' advice",
+        "art_direction": "Rehoboam's friends laughing and holding up their little fingers; arrogant poses."
+      },
+      {
+        "caption": "The kingdom splits",
+        "art_direction": "A map of Israel cracking in two: ten tribes in the north, Judah in the south."
+      },
+      {
+        "caption": "Golden calves",
+        "art_direction": "Jeroboam unveiling two shiny calf statues at Bethel and Dan; people bowing."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 15:22",
+    "text": "Where there is no counsel, plans fail; but in a multitude of counselors they are established.",
+    "translation": "WEB",
+    "tokens": [
+      "Where there is",
+      "no counsel,",
+      "plans fail;",
+      "but in a multitude",
+      "of counselors",
+      "they are established."
+    ],
+    "distractors": [
+      "they fall apart."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can choose to listen to wise advice and speak gently to keep the peace.",
+    "reflection_prompt": "Rehoboam ignored wise advice and spoke harshly. Who gives you wise advice, and how can you show you're listening?",
+    "reflection_choices": [
+      "My parents",
+      "A teacher or coach",
+      "A grandparent or church leader",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peacemaking"
+  },
+  "quiz": [
+    {
+      "question": "What did the older men advise Rehoboam to do?",
+      "options": [
+        "Be even harder on the people",
+        "Be kind and speak gently to the people",
+        "Leave Jerusalem"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'If you will be a servant to this people... and speak good words to them, then they will be your servants forever.'",
+      "verse_ref": "1 Kings 12:7"
+    },
+    {
+      "question": "Whose advice did Rehoboam follow?",
+      "options": [
+        "His young friends'",
+        "The elders'",
+        "Solomon's"
+      ],
+      "correct_index": 0,
+      "explanation": "He forsook the counsel of the old men, and took counsel with the young men who had grown up with him.",
+      "verse_ref": "1 Kings 12:8"
+    },
+    {
+      "question": "What did Jeroboam make for the northern tribes to worship?",
+      "options": [
+        "A new temple",
+        "A tower",
+        "Two golden calves"
+      ],
+      "correct_index": 2,
+      "explanation": "The king made two calves of gold and said, 'Look and see your gods.'",
+      "verse_ref": "1 Kings 12:28"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me listen to wise advice from people who love me. Help me speak gently and kindly, so I can keep the peace instead of starting fights. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "It breaks my heart that my own son Rehoboam didn't listen. Wise advice was right there! Listening to wise people is one of the best ways to keep peace."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "elders_council_circle"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

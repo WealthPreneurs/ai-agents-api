@@ -1,0 +1,120 @@
+{
+  "day": 183,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Turning My Eyes Away",
+  "scripture_passage": "2 Samuel 11:1-5",
+  "story_title": "The King Who Stayed Home",
+  "summary": "When King David should have been with his army, he stayed home. He saw a woman named Bathsheba, who was married to a soldier named Uriah, and he took her for himself even though she wasn't his.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "This week begins a new part of your journey: Character Armor. We'll see how God grows good fruit in our hearts. And it starts with a hard story about King David. In the spring, when kings usually led their armies into battle, David didn't go. He sent his army and stayed home in Jerusalem. One evening, David got up from his bed and walked on the roof of his palace. From there, he saw a beautiful woman. He sent someone to find out who she was. The answer came back: 'This is Bathsheba. She is the wife of Uriah.' Uriah was one of David's own loyal soldiers, away fighting in the war. David knew she was married. He knew she belonged to Uriah. But instead of turning away, David sent for her and took her for himself, as if she were his. That was a serious sin against God, against Uriah, and against Bathsheba. Not long after, Bathsheba sent David a message: 'I'm going to have a baby.' David was the man after God's own heart, the giant-slayer, the songwriter. But even David could fall into sin when he didn't guard his eyes and his heart. Sin often starts small, with one look we don't turn away from.",
+    "scenes": [
+      {
+        "caption": "A new part of the journey",
+        "art_direction": "A glowing suit of armor with an empty space over the heart labeled 'Character Armor.'"
+      },
+      {
+        "caption": "Staying home",
+        "art_direction": "The army marching out of Jerusalem while David watches from the palace."
+      },
+      {
+        "caption": "On the roof",
+        "art_direction": "David walking on his palace roof at evening, looking out over the city."
+      },
+      {
+        "caption": "'She is Uriah's wife'",
+        "art_direction": "A servant reporting to David; David pausing."
+      },
+      {
+        "caption": "Not turning away",
+        "art_direction": "David's shadow growing long as he sends a messenger; muted, somber colors. Nothing else shown."
+      },
+      {
+        "caption": "Sin starts small",
+        "art_direction": "A tiny crack in a stone wall slowly spreading."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 119:37",
+    "text": "Turn my eyes away from looking at worthless things. Revive me in your ways.",
+    "translation": "WEB",
+    "tokens": [
+      "Turn my eyes away",
+      "from looking",
+      "at worthless things.",
+      "Revive me",
+      "in your ways."
+    ],
+    "distractors": [
+      "in my ways."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can ask Yahweh to help me turn my eyes away from things that aren't mine.",
+    "reflection_prompt": "David didn't turn away when he should have. What is something you might need to turn your eyes away from?",
+    "reflection_choices": [
+      "Something I want that isn't mine",
+      "Something I shouldn't watch",
+      "Something that makes me jealous",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "self_control"
+  },
+  "quiz": [
+    {
+      "question": "Where was David when his army went to war?",
+      "options": [
+        "Leading the army",
+        "At home in Jerusalem",
+        "In Bethlehem with sheep"
+      ],
+      "correct_index": 1,
+      "explanation": "David sent Joab and his army, but David stayed at Jerusalem.",
+      "verse_ref": "2 Samuel 11:1"
+    },
+    {
+      "question": "Who was Bathsheba married to?",
+      "options": [
+        "Uriah, one of David's soldiers",
+        "Nathan the prophet",
+        "No one"
+      ],
+      "correct_index": 0,
+      "explanation": "They said, 'Isn't this Bathsheba... the wife of Uriah the Hittite?'",
+      "verse_ref": "2 Samuel 11:3"
+    },
+    {
+      "question": "What did David do that was wrong?",
+      "options": [
+        "He went to war",
+        "He wrote a song",
+        "He took Uriah's wife for himself"
+      ],
+      "correct_index": 2,
+      "explanation": "David sent messengers and took her, even though she was Uriah's wife.",
+      "verse_ref": "2 Samuel 11:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me guard my eyes and my heart. When I see something that isn't mine or isn't good for me, help me turn away and turn to You. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Hello, I'm Solomon, David's son. I'll guide you through the Kingdom of Wisdom. This week is about my father's biggest mistake, and how God gave him a clean heart."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ],
+    "unlock": "character_armor_stand"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: David's adultery with Bathsheba (2 Samuel 11:2-5). Told as 'took her for himself, as if she were his'; no sexual detail; Bathsheba bathing is omitted. Bathsheba is named as wronged. Strongly recommend a parent heads-up card before this week (days 183-186). Confirm wording."
+  }
+}

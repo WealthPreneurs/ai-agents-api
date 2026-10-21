@@ -1,0 +1,120 @@
+{
+  "day": 195,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Wisdom That Points to God",
+  "scripture_passage": "1 Kings 10:1-13; Matthew 12:42",
+  "story_title": "The Queen of Sheba",
+  "summary": "The Queen of Sheba traveled far to test Solomon with hard questions. He answered every one. Amazed by his wisdom, she praised Yahweh. Jesus later said someone greater than Solomon had come.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Stories about Solomon's wisdom spread all over the world. Far away, in the land of Sheba, a queen heard about him. She wanted to see if the stories were true. So she traveled a long way to Jerusalem with a huge caravan of camels carrying spices, gold, and precious stones. When she arrived, she asked Solomon every hard question she could think of. Riddles, puzzles, deep questions about life. And Solomon answered every single one! Nothing was too hard for him to explain. The queen looked at everything: his wisdom, the palace he had built, the food on his table, his servants and their clothes, and the way he worshiped at the temple. She was breathless with amazement! She said, 'Everything I heard about you is true! I didn't believe it until I came and saw it with my own eyes. And I wasn't even told half of it!' Then she said something important: 'Blessed be Yahweh your God, who delighted in you and put you on the throne of Israel!' Solomon's wisdom pointed her to God. Many years later, Jesus said, 'The Queen of the South came from the ends of the earth to hear Solomon's wisdom, and now someone greater than Solomon is here.' Jesus is the wisest King of all.",
+    "scenes": [
+      {
+        "caption": "Stories spread",
+        "art_direction": "Travelers telling stories of Solomon around campfires in faraway lands."
+      },
+      {
+        "caption": "The Queen of Sheba",
+        "art_direction": "A regal queen on a richly decorated camel, leading a long caravan."
+      },
+      {
+        "caption": "Hard questions",
+        "art_direction": "The queen reading riddles from a scroll as Solomon listens, smiling."
+      },
+      {
+        "caption": "Every answer",
+        "art_direction": "Question marks floating up and turning into glowing light bulbs one by one."
+      },
+      {
+        "caption": "Not even half!",
+        "art_direction": "The queen with her hand on her heart, looking around the temple in amazement."
+      },
+      {
+        "caption": "Someone greater",
+        "art_direction": "A soft transition to Jesus teaching on a hillside, crowds listening."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 12:42",
+    "text": "behold, someone greater than Solomon is here.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "behold,",
+      "someone greater",
+      "than Solomon",
+      "is here."
+    ],
+    "distractors": [
+      "is gone."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "When I use the gifts Yahweh gives me, I can point others to Him.",
+    "reflection_prompt": "Solomon's wisdom led the queen to praise God. How could the way you act help someone see what God is like?",
+    "reflection_choices": [
+      "Being kind",
+      "Being honest",
+      "Being joyful",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "sharing_faith"
+  },
+  "quiz": [
+    {
+      "question": "Why did the Queen of Sheba visit Solomon?",
+      "options": [
+        "To buy a horse",
+        "To test him with hard questions",
+        "To get married"
+      ],
+      "correct_index": 1,
+      "explanation": "When she heard of Solomon's fame, she came to test him with hard questions.",
+      "verse_ref": "1 Kings 10:1"
+    },
+    {
+      "question": "What did the queen say about what she had heard?",
+      "options": [
+        "'Not even half was told to me!'",
+        "'It was all made up.'",
+        "'You're not that wise.'"
+      ],
+      "correct_index": 0,
+      "explanation": "She said, 'Behold, not even half was told me!'",
+      "verse_ref": "1 Kings 10:7"
+    },
+    {
+      "question": "Who did Jesus say is greater than Solomon?",
+      "options": [
+        "Moses",
+        "The Queen of Sheba",
+        "Jesus Himself"
+      ],
+      "correct_index": 2,
+      "explanation": "Jesus said, 'Behold, someone greater than Solomon is here.'",
+      "verse_ref": "Matthew 12:42"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Jesus, You are greater than Solomon, the wisest King of all. Help me use the gifts You've given me in ways that point others to You. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "The queen came with her hardest questions. But the best thing that happened was when she praised Yahweh. Wisdom is for pointing people to God."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "olive_oil"
+    ],
+    "unlock": "sheba_caravan"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

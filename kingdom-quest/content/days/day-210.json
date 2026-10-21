@@ -1,0 +1,123 @@
+{
+  "day": 210,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Never Alone",
+  "scripture_passage": "2 Kings 6:8-23",
+  "story_title": "The Hidden Army",
+  "summary": "An enemy army surrounded the city where Elisha was staying. His servant was terrified, but Elisha prayed, and God opened the servant's eyes to see the hills full of horses and chariots of fire. Sabbath Camp looks back at Elisha's story.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! The king of Aram was at war with Israel. But every time he made a secret plan, God told Elisha, and Elisha warned the king of Israel. The king of Aram was furious. 'Who is the spy?' His officers said, 'It's Elisha the prophet. He tells the king of Israel the words you speak in your bedroom!' So the king sent a huge army with horses and chariots to the town of Dothan to capture Elisha. They surrounded the city at night. Early the next morning, Elisha's servant went outside and saw the enemy army everywhere! He ran to Elisha. 'Oh no, master! What should we do?' Elisha calmly said, 'Don't be afraid. Those who are with us are more than those who are with them.' Then Elisha prayed, 'Yahweh, please open his eyes so he can see.' And God opened the servant's eyes. He looked up and saw the hills all around full of horses and chariots of fire, God's angel army, surrounding Elisha! Then God made the enemy soldiers confused, and Elisha led them right into Israel's capital. Instead of fighting them, Elisha said, 'Give them food and water, and send them home.' They feasted, and the raids stopped for a long time. Let's remember: Elisha followed faithfully, the widow's oil overflowed, a rooftop room held a miracle, Naaman was healed, and an axe head floated. This week's big truth: you can stay faithful because Yahweh is always with you.",
+    "scenes": [
+      {
+        "caption": "Secret plans",
+        "art_direction": "The king of Aram whispering battle plans in his bedroom; a tiny glowing ear in the corner; comedic."
+      },
+      {
+        "caption": "Surrounded!",
+        "art_direction": "An enemy army with chariots surrounding the walled town of Dothan at dawn."
+      },
+      {
+        "caption": "'What should we do?'",
+        "art_direction": "Elisha's servant running inside, panicked."
+      },
+      {
+        "caption": "'Don't be afraid'",
+        "art_direction": "Elisha calmly placing his hand on the servant's shoulder."
+      },
+      {
+        "caption": "Horses and chariots of fire!",
+        "art_direction": "The servant's eyes opening to see the hills ablaze with a vast angel army of fiery horses and chariots."
+      },
+      {
+        "caption": "A feast instead of a fight",
+        "art_direction": "Former enemies eating at a long table, then marching home peacefully."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Kings 6:16",
+    "text": "Don't be afraid; for those who are with us are more than those who are with them.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Don't be afraid;",
+      "for those",
+      "who are with us",
+      "are more",
+      "than those",
+      "who are with them."
+    ],
+    "distractors": [
+      "are fewer"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay faithful because Yahweh is always with me.",
+    "reflection_prompt": "Milestone: You can stay faithful because Yahweh is with you! Your next piece of Character Armor is the Shield of Faith. Draw it, and draw God's army of fire around you!",
+    "reflection_choices": [
+      "God is with me at school",
+      "God is with me at night",
+      "God is with me when I'm scared",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did Elisha's servant see when he went outside?",
+      "options": [
+        "A rainbow",
+        "An enemy army surrounding the city",
+        "A flood"
+      ],
+      "correct_index": 1,
+      "explanation": "Behold, an army with horses and chariots was around the city.",
+      "verse_ref": "2 Kings 6:15"
+    },
+    {
+      "question": "What did Elisha say to his servant?",
+      "options": [
+        "'Those who are with us are more than those who are with them.'",
+        "'Run away!'",
+        "'We're doomed.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Elisha said, 'Don't be afraid; for those who are with us are more than those who are with them.'",
+      "verse_ref": "2 Kings 6:16"
+    },
+    {
+      "question": "What did the servant see when God opened his eyes?",
+      "options": [
+        "More enemy soldiers",
+        "An empty field",
+        "Hills full of horses and chariots of fire"
+      ],
+      "correct_index": 2,
+      "explanation": "The mountain was full of horses and chariots of fire around Elisha.",
+      "verse_ref": "2 Kings 6:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, open my eyes to see that You are always with me. When I'm afraid, help me remember that those who are with me are more. Help me stay faithful. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Realm 30 complete! You've earned the Shield of Faith. God's army of fire was there all along! Next, you'll meet kings who started very young, one of them only eight years old!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "shield_of_faith"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Enemy soldiers are struck with blindness or confusion (6:18), described as 'confused.' Confirm."
+  }
+}

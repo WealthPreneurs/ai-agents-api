@@ -1,0 +1,119 @@
+{
+  "day": 203,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: The Gentle Whisper",
+  "scripture_passage": "1 Kings 19:9-18",
+  "story_title": "A Still Small Voice",
+  "summary": "On Mount Horeb, God passed by Elijah. There was a mighty wind, an earthquake, and a fire, but God wasn't in them. Then came a still small voice. God reminded Elijah he wasn't alone. Sabbath Camp looks back at Elijah's story.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! Elijah reached Mount Horeb, the same mountain where God had met Moses. He went into a cave to spend the night. Then Yahweh said, 'What are you doing here, Elijah?' Elijah said, 'I've worked so hard for You. But the people have turned away from You, and I'm the only one left who follows You. And now they're trying to kill me too.' God said, 'Go out and stand on the mountain, for Yahweh is about to pass by.' Suddenly, a powerful wind tore through the mountains and shattered the rocks! But Yahweh wasn't in the wind. Then came an earthquake. But Yahweh wasn't in the earthquake. Then came a fire. But Yahweh wasn't in the fire. And after the fire came a still small voice, a gentle whisper. When Elijah heard it, he wrapped his face in his cloak and stepped out to the cave entrance. God spoke gently to him. He gave Elijah new work to do, and a new helper named Elisha. And God said, 'You're not the only one left. There are seven thousand people in Israel who have never bowed to Baal.' Elijah wasn't alone after all! Let's remember: the kingdom split, ravens fed Elijah, the widow's jar never emptied, fire fell on Carmel, and an angel gave Elijah rest. This week's big truth: Yahweh gives you peace when you're tired or afraid. Sometimes He speaks in a gentle whisper.",
+    "scenes": [
+      {
+        "caption": "A cave on Horeb",
+        "art_direction": "Elijah inside a dark cave on the rocky mountain of God."
+      },
+      {
+        "caption": "A powerful wind",
+        "art_direction": "Wind ripping across the mountain, rocks tumbling."
+      },
+      {
+        "caption": "An earthquake",
+        "art_direction": "The ground shaking and cracking."
+      },
+      {
+        "caption": "A fire",
+        "art_direction": "Flames sweeping across the mountainside."
+      },
+      {
+        "caption": "A gentle whisper",
+        "art_direction": "Everything suddenly still; soft golden light; Elijah stepping out with his cloak over his face."
+      },
+      {
+        "caption": "Seven thousand",
+        "art_direction": "A view across Israel with thousands of tiny lights glowing in homes, faithful people everywhere."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Kings 19:12",
+    "text": "After the fire, there was a still small voice.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "After the fire,",
+      "there was",
+      "a still small voice."
+    ],
+    "distractors": [
+      "a loud trumpet."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me peace when I'm tired or afraid.",
+    "reflection_prompt": "Milestone: Yahweh gives you peace! Your next piece of Character Armor is the Shoes of Peace. Draw them, and write about a quiet place where you can listen for God's gentle whisper.",
+    "reflection_choices": [
+      "My bedroom",
+      "Outside in nature",
+      "Snuggled with family",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peace"
+  },
+  "quiz": [
+    {
+      "question": "Was Yahweh in the wind, the earthquake, or the fire?",
+      "options": [
+        "Yes, in all of them",
+        "No, He was in the still small voice after them",
+        "Only in the fire"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh was not in the wind, earthquake, or fire. After the fire, there was a still small voice.",
+      "verse_ref": "1 Kings 19:11-12"
+    },
+    {
+      "question": "What did God ask Elijah?",
+      "options": [
+        "'What are you doing here, Elijah?'",
+        "'Where is your cloak?'",
+        "'Are you hungry?'"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh said, 'What are you doing here, Elijah?'",
+      "verse_ref": "1 Kings 19:9"
+    },
+    {
+      "question": "How many faithful people did God say were still in Israel?",
+      "options": [
+        "Just Elijah",
+        "Twelve",
+        "Seven thousand"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'I have reserved seven thousand in Israel, all the knees which have not bowed to Baal.'",
+      "verse_ref": "1 Kings 19:18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I'm tired or afraid, help me be still and listen for Your gentle voice. Thank You that I'm never alone. Give me Your peace. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Realm 29 complete! You've earned the Shoes of Peace. God's gentle whisper reminded Elijah he wasn't alone. Next, you'll meet his helper, Elisha!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "gold_thread"
+    ],
+    "unlock": "shoes_of_peace"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

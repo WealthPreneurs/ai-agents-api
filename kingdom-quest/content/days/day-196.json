@@ -1,0 +1,124 @@
+{
+  "day": 196,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Trust Him with All Your Heart",
+  "scripture_passage": "Proverbs 3:1-12; 1 Kings 11:4-6",
+  "story_title": "Trust in Yahweh",
+  "summary": "Solomon wrote, 'Trust in Yahweh with all your heart.' But later in life, Solomon's heart turned away from God. Sabbath Camp looks back at Solomon's wisdom and the lesson of staying faithful.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! In the book of Proverbs, Solomon wrote some of the wisest words ever written, like a father teaching his child. 'My son, don't forget my teaching. Let kindness and truth never leave you. Tie them around your neck. Write them on the tablet of your heart. Trust in Yahweh with all your heart, and don't lean on your own understanding. In all your ways acknowledge Him, and He will make your paths straight.' Leaning on your own understanding means thinking, 'I know best.' But trusting God with all your heart means saying, 'God knows best.' Now, here's the sad part of Solomon's story. When he grew old, Solomon married many wives from other nations who worshiped false gods. And little by little, they turned his heart away from Yahweh. He didn't follow God fully like his father David had. Even the wisest man in the world forgot his own advice. Wisdom isn't just knowing what's right. It's doing what's right, all the way to the end. Let's remember this week: Solomon became king, asked God for wisdom, solved the case of the two mothers, wrote proverbs, built the temple, and pointed the Queen of Sheba to God. This week's big truth: you can ask Yahweh for wisdom and trust Him with all your heart.",
+    "scenes": [
+      {
+        "caption": "A father's teaching",
+        "art_direction": "Solomon writing proverbs on a scroll with a child sitting beside him."
+      },
+      {
+        "caption": "Tie them around your neck",
+        "art_direction": "A necklace with 'kindness' and 'truth' charms glowing."
+      },
+      {
+        "caption": "Straight paths",
+        "art_direction": "A winding, confusing maze turning into a straight, bright road."
+      },
+      {
+        "caption": "A heart turning",
+        "art_direction": "Older Solomon slowly turning toward idols; a compass needle drifting away from 'Yahweh.'"
+      },
+      {
+        "caption": "Wisdom to the end",
+        "art_direction": "A runner crossing a finish line, holding a glowing scroll."
+      },
+      {
+        "caption": "Camp by the temple",
+        "art_direction": "Campfire in the child's village beside the temple, ant hill garden, and wisdom scroll."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in Yahweh with all your heart, and don't lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.",
+    "translation": "WEB",
+    "tokens": [
+      "Trust in Yahweh",
+      "with all your heart,",
+      "and don't lean",
+      "on your own understanding.",
+      "In all your ways",
+      "acknowledge him,",
+      "and he will make",
+      "your paths straight."
+    ],
+    "distractors": [
+      "your paths crooked."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can ask Yahweh for wisdom and trust Him.",
+    "reflection_prompt": "Milestone: You can ask for wisdom and trust God! Your next piece of Character Armor is the Sword of the Spirit, which is God's Word. Draw it, and write one decision you want to trust God's Word with.",
+    "reflection_choices": [
+      "Choosing friends",
+      "How to spend my time",
+      "A problem I'm facing",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What did Solomon say to trust Yahweh with?",
+      "options": [
+        "Half your heart",
+        "All your heart",
+        "Only your money"
+      ],
+      "correct_index": 1,
+      "explanation": "Trust in Yahweh with all your heart.",
+      "verse_ref": "Proverbs 3:5"
+    },
+    {
+      "question": "What will God do when we acknowledge Him in all our ways?",
+      "options": [
+        "Make our paths straight",
+        "Make us famous",
+        "Give us gold"
+      ],
+      "correct_index": 0,
+      "explanation": "In all your ways acknowledge him, and he will make your paths straight.",
+      "verse_ref": "Proverbs 3:6"
+    },
+    {
+      "question": "What happened to Solomon's heart when he was old?",
+      "options": [
+        "It grew stronger for God",
+        "It stayed the same",
+        "It turned away from Yahweh"
+      ],
+      "correct_index": 2,
+      "explanation": "When Solomon was old, his wives turned away his heart after other gods.",
+      "verse_ref": "1 Kings 11:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to trust You with all my heart. When I think I know best, help me remember that You know best. Keep my heart faithful to You all my life. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Realm 28 complete! I asked for wisdom, and God gave it. But I didn't always follow it. Please learn from my mistakes: stay faithful to the end. Next comes a fiery prophet named Elijah!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "sword_of_the_spirit"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Solomon's many foreign wives (1 Kings 11:1-3, 700 wives and 300 concubines) are mentioned only as 'married many wives from other nations who worshiped false gods.' Confirm."
+  }
+}

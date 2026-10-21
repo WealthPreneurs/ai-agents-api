@@ -1,0 +1,119 @@
+{
+  "day": 200,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Choosing Whom to Follow",
+  "scripture_passage": "1 Kings 18:17-29",
+  "story_title": "Showdown on Mount Carmel",
+  "summary": "Elijah challenged 450 prophets of Baal to a contest on Mount Carmel: whichever god answered by fire was the true God. The prophets of Baal shouted all morning, but nothing happened.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After three years with no rain, God told Elijah, 'Go show yourself to Ahab. I will send rain.' When King Ahab saw Elijah, he said, 'Is that you, you troublemaker of Israel?' Elijah answered, 'I'm not the troublemaker. You are, because you have left Yahweh and followed Baal!' Then Elijah gave a challenge. 'Gather all Israel at Mount Carmel, along with the four hundred and fifty prophets of Baal.' When everyone had gathered, Elijah stood before the people and said, 'How long will you keep wavering between two choices? If Yahweh is God, follow Him. But if Baal is God, follow him!' The people didn't say a word. So Elijah set up a contest. 'Let's each prepare a bull for a sacrifice and put it on wood, but don't light the fire. You call on your god, and I will call on Yahweh. The God who answers by fire, He is God!' The people said, 'That's a good idea!' The prophets of Baal went first. From morning until noon they shouted, 'O Baal, answer us!' They danced around their altar. But there was no voice, and no answer. At noon, Elijah started teasing them. 'Shout louder! Maybe he's busy, or traveling, or asleep and needs to wake up!' They shouted louder and kept going all afternoon. But nobody answered. Nobody paid attention. A false god can't answer.",
+    "scenes": [
+      {
+        "caption": "Three years of drought",
+        "art_direction": "Cracked earth and empty riverbeds under a blazing sun."
+      },
+      {
+        "caption": "'You troublemaker!'",
+        "art_direction": "Ahab pointing at Elijah; Elijah pointing right back."
+      },
+      {
+        "caption": "Mount Carmel",
+        "art_direction": "A huge crowd gathered on a mountain ridge overlooking the sea."
+      },
+      {
+        "caption": "'How long will you waver?'",
+        "art_direction": "Elijah standing tall before a silent crowd."
+      },
+      {
+        "caption": "Shouting to Baal",
+        "art_direction": "Hundreds of Baal prophets dancing and shouting around an altar; nothing happens."
+      },
+      {
+        "caption": "'Maybe he's asleep!'",
+        "art_direction": "Elijah cupping his hands and teasing; comedic beat. No self-harm shown."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Kings 18:21",
+    "text": "If Yahweh is God, follow him",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "If Yahweh",
+      "is God,",
+      "follow him"
+    ],
+    "distractors": [
+      "ignore him"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can choose to follow Yahweh with my whole heart, not halfway.",
+    "reflection_prompt": "Elijah asked the people, 'How long will you waver?' What does it look like for you to follow God with your whole heart, not halfway?",
+    "reflection_choices": [
+      "Praying every day",
+      "Obeying even when no one is watching",
+      "Putting God first",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "How many prophets of Baal came to Mount Carmel?",
+      "options": [
+        "Twelve",
+        "Four hundred and fifty",
+        "Ten thousand"
+      ],
+      "correct_index": 1,
+      "explanation": "Elijah said, 'Baal's prophets are four hundred fifty men.'",
+      "verse_ref": "1 Kings 18:22"
+    },
+    {
+      "question": "What did Elijah ask the people?",
+      "options": [
+        "'How long will you waver between two choices?'",
+        "'Who wants lunch?'",
+        "'Where is the rain?'"
+      ],
+      "correct_index": 0,
+      "explanation": "Elijah said, 'How long will you waver between the two sides? If Yahweh is God, follow him.'",
+      "verse_ref": "1 Kings 18:21"
+    },
+    {
+      "question": "What happened when the prophets of Baal called on Baal?",
+      "options": [
+        "Fire came down",
+        "It rained",
+        "There was no answer"
+      ],
+      "correct_index": 2,
+      "explanation": "There was no voice, no answer, and nobody who paid attention.",
+      "verse_ref": "1 Kings 18:29"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the true God! I don't want to follow You halfway. Help me choose You with my whole heart every day. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Elijah was so bold! He stood alone against four hundred and fifty prophets. But he wasn't really alone. The true God was with him, and tomorrow you'll see!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "mount_carmel"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits the Baal prophets cutting themselves (18:28) and Obadiah hiding the prophets (18:3-16). Confirm."
+  }
+}

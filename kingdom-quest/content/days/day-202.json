@@ -1,0 +1,121 @@
+{
+  "day": 202,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Rest When I'm Tired",
+  "scripture_passage": "1 Kings 19:1-8",
+  "story_title": "Elijah Under the Broom Tree",
+  "summary": "When Queen Jezebel threatened Elijah, he ran away, exhausted and discouraged, and sat under a broom tree, wishing it was all over. An angel gave him food, water, and rest, twice.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After the amazing victory on Mount Carmel, you might think Elijah felt on top of the world. But when King Ahab told Queen Jezebel what happened, she sent Elijah a message: 'By this time tomorrow, I will get you!' Elijah was terrified. He ran for his life, all the way to Beersheba, and then another whole day's journey into the wilderness. Finally, he sat down under a broom tree, completely worn out. He was so tired, so scared, and so discouraged that he said, 'I've had enough, Yahweh. I can't do this anymore.' Then he lay down and fell asleep. Suddenly, an angel touched him and said, 'Get up and eat.' Elijah looked around, and there by his head was a warm loaf of bread baked on hot stones and a jar of water! He ate, drank, and lay down again. Then the angel of Yahweh came back a second time, touched him, and said, 'Get up and eat, because the journey is too much for you.' So Elijah ate and drank again. With the strength from that food, he traveled forty days and forty nights to Horeb, the mountain of God. God didn't scold Elijah for being tired and afraid. He gave him rest, food, and gentle care. Sometimes, when we're exhausted, the most spiritual thing we can do is eat, drink, and sleep.",
+    "scenes": [
+      {
+        "caption": "A threatening message",
+        "art_direction": "Jezebel handing a scroll to a messenger with an icy stare."
+      },
+      {
+        "caption": "Running away",
+        "art_direction": "Elijah running across the desert, looking over his shoulder."
+      },
+      {
+        "caption": "Under the broom tree",
+        "art_direction": "Elijah slumped under a small desert tree, head in his hands; gray, heavy colors."
+      },
+      {
+        "caption": "'Get up and eat'",
+        "art_direction": "A gentle angel touching Elijah's shoulder; a warm loaf and a water jar beside him."
+      },
+      {
+        "caption": "A second time",
+        "art_direction": "The angel returning as the sun rises; color slowly returning to the scene."
+      },
+      {
+        "caption": "Strength for the journey",
+        "art_direction": "Elijah walking steadily toward a distant mountain."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who labor and are heavily burdened, and I will give you rest.",
+    "translation": "WEB",
+    "tokens": [
+      "Come to me,",
+      "all you who labor",
+      "and are heavily burdened,",
+      "and I will",
+      "give you rest."
+    ],
+    "distractors": [
+      "give you more work."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh cares for me gently when I'm tired, scared, or sad.",
+    "reflection_prompt": "Elijah was so tired and sad, and God cared for him gently. When you feel really tired or sad, what helps you feel better?",
+    "reflection_choices": [
+      "Rest and sleep",
+      "A snack and some water",
+      "Talking to someone I trust",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peace"
+  },
+  "quiz": [
+    {
+      "question": "Why did Elijah run away?",
+      "options": [
+        "He was going on vacation",
+        "Queen Jezebel threatened him",
+        "He was chasing someone"
+      ],
+      "correct_index": 1,
+      "explanation": "Jezebel sent a messenger to Elijah, and when he saw that, he arose and ran for his life.",
+      "verse_ref": "1 Kings 19:2-3"
+    },
+    {
+      "question": "What did the angel bring Elijah?",
+      "options": [
+        "Bread baked on hot stones and a jar of water",
+        "A sword",
+        "A map"
+      ],
+      "correct_index": 0,
+      "explanation": "There was at his head a cake baked on the coals, and a jar of water.",
+      "verse_ref": "1 Kings 19:6"
+    },
+    {
+      "question": "How long did Elijah travel after eating?",
+      "options": [
+        "One hour",
+        "Seven days",
+        "Forty days and forty nights"
+      ],
+      "correct_index": 2,
+      "explanation": "He went in the strength of that food forty days and forty nights to Horeb, the mountain of God.",
+      "verse_ref": "1 Kings 19:8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for caring for me when I'm tired, scared, or sad. Help me come to You for rest. When I feel really low, help me tell a grown-up I trust. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Even great heroes like Elijah get exhausted and discouraged. If you ever feel really sad or like you can't go on, please tell a grown-up you trust right away. You matter so much."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "linen"
+    ],
+    "unlock": "broom_tree_rest"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Elijah asks to die (1 Kings 19:4), softened to 'I've had enough... I can't do this anymore.' Companion directs kids to a trusted grown-up. Reviewer should consider linking to parent resources on childhood sadness and depression. Confirm."
+  }
+}

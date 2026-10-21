@@ -1,0 +1,122 @@
+{
+  "day": 188,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God's Grace Continues",
+  "scripture_passage": "2 Samuel 12:24-25",
+  "story_title": "A Baby Named Solomon",
+  "summary": "God comforted David and Bathsheba, and they had another son named Solomon. Yahweh loved the baby and sent Nathan to give him a special name: Jedidiah, which means 'loved by Yahweh.'",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "After all that sadness, David comforted Bathsheba, who was now his wife. And God gave them another baby boy. They named him Solomon, which comes from the word for 'peace.' Then something beautiful happened. The Bible says, 'Yahweh loved him.' God sent the prophet Nathan, the same Nathan who had told David the hard truth, with a message. God wanted to give the baby a special name: Jedidiah, which means 'loved by Yahweh.' Think about that. David had done something terrible. There had been real sorrow. But God didn't give up on David's family. God's grace kept going. And this baby, Solomon, would become the next king of Israel, the wisest king who ever lived, the one who would build God's temple. And many generations later, Jesus would be born from this same family line. God doesn't erase the past. But He can bring good out of the hardest stories. He can turn sorrow into hope. That's what grace means: God's love and kindness that we don't deserve, given freely anyway. No matter what has happened in your story, God can still write something beautiful.",
+    "scenes": [
+      {
+        "caption": "Comfort",
+        "art_direction": "David holding Bathsheba's hand gently by a window at dawn."
+      },
+      {
+        "caption": "A new baby",
+        "art_direction": "Baby Solomon in a cradle, sunlight streaming in."
+      },
+      {
+        "caption": "Solomon means peace",
+        "art_direction": "Lettering: 'Solomon = peace' with a dove flying by."
+      },
+      {
+        "caption": "Nathan returns",
+        "art_direction": "Nathan arriving at the palace, smiling this time."
+      },
+      {
+        "caption": "Jedidiah",
+        "art_direction": "Lettering: 'Jedidiah = loved by Yahweh' glowing above the cradle."
+      },
+      {
+        "caption": "A beautiful story",
+        "art_direction": "A family tree branch growing from Solomon toward a star, with blossoms opening along it."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Romans 8:28",
+    "text": "We know that all things work together for good for those who love God, for those who are called according to his purpose.",
+    "translation": "WEB",
+    "tokens": [
+      "We know",
+      "that all things",
+      "work together for good",
+      "for those who love God,",
+      "for those who are called",
+      "according to his purpose."
+    ],
+    "distractors": [
+      "according to luck."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can bring good out of the hardest parts of my story.",
+    "reflection_prompt": "God gave Solomon a name that means 'loved by Yahweh.' God loves you too! Write your name and then 'loved by Yahweh' next to it.",
+    "reflection_choices": [
+      "I'm loved by Yahweh",
+      "God can bring good from hard things",
+      "God's grace is for me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What was the name of David and Bathsheba's new son?",
+      "options": [
+        "Samuel",
+        "Solomon",
+        "Jonathan"
+      ],
+      "correct_index": 1,
+      "explanation": "She bore a son, and he called his name Solomon.",
+      "verse_ref": "2 Samuel 12:24"
+    },
+    {
+      "question": "What does the name Jedidiah mean?",
+      "options": [
+        "Loved by Yahweh",
+        "Strong king",
+        "Wise man"
+      ],
+      "correct_index": 0,
+      "explanation": "Nathan named him Jedidiah, for Yahweh's sake. The name means 'loved by Yahweh.'",
+      "verse_ref": "2 Samuel 12:25"
+    },
+    {
+      "question": "What does the Bible say about baby Solomon?",
+      "options": [
+        "He cried a lot",
+        "He was very tall",
+        "Yahweh loved him"
+      ],
+      "correct_index": 2,
+      "explanation": "The Bible says, 'Yahweh loved him.'",
+      "verse_ref": "2 Samuel 12:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Your grace keeps going, even after hard and sad things. Thank You for loving me. Please bring good out of every part of my story. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "That baby was me! God gave me the name Jedidiah, 'loved by Yahweh,' before I could even talk. He calls you loved too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "linen"
+    ],
+    "unlock": "jedidiah_cradle"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Bathsheba is described as 'now his wife.' Confirm framing of God's grace following David's sin."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "day": 216,
+  "month": 7,
+  "realm": 31,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Treasuring God's Word",
+  "scripture_passage": "2 Kings 22:3-20",
+  "story_title": "The Lost Book Is Found",
+  "summary": "While repairing the temple, the high priest found the long-lost Book of the Law. When it was read to King Josiah, he tore his clothes in sorrow. God saw his tender heart and promised him peace.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "When Josiah was twenty-six years old, he decided to repair God's temple, which had been neglected for years. He sent his secretary, Shaphan, to the high priest Hilkiah with money to pay the carpenters, builders, and stonemasons. While they were cleaning out the temple, Hilkiah found something amazing. He said, 'I've found the Book of the Law in Yahweh's house!' It was God's Word, the books of Moses, and it had been lost for so many years that people had forgotten what it said! Shaphan brought the scroll to King Josiah and read it aloud to him. As Josiah listened to God's words, he realized how far his people had wandered away from God. He tore his royal robes in sorrow. Josiah said, 'Go ask Yahweh about what this book says. God must be very sad with us, because our ancestors didn't obey these words.' So they went to a prophet named Huldah. She said, 'This is what Yahweh says: Because your heart was tender, and you humbled yourself when you heard My words, and you tore your clothes and wept, I have heard you. You will have peace in your lifetime.' Josiah treasured God's Word. When he heard it, it changed his heart. God's Word isn't lost today. We can read it anytime! It's like a lamp that shows us the way.",
+    "scenes": [
+      {
+        "caption": "Repairing the temple",
+        "art_direction": "Workers fixing cracked walls and dusty floors in the temple."
+      },
+      {
+        "caption": "A dusty discovery",
+        "art_direction": "Hilkiah pulling an old scroll from behind broken stones, blowing off the dust."
+      },
+      {
+        "caption": "'I've found the Book!'",
+        "art_direction": "Hilkiah holding up the scroll with wide eyes."
+      },
+      {
+        "caption": "Read to the king",
+        "art_direction": "Shaphan reading aloud to young King Josiah on his throne."
+      },
+      {
+        "caption": "A torn robe",
+        "art_direction": "Josiah tearing his royal robe, tears in his eyes."
+      },
+      {
+        "caption": "Huldah's message",
+        "art_direction": "The prophetess Huldah speaking kindly to the king's messengers."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 119:105",
+    "text": "Your word is a lamp to my feet, and a light for my path.",
+    "translation": "WEB",
+    "tokens": [
+      "Your word",
+      "is a lamp",
+      "to my feet,",
+      "and a light",
+      "for my path."
+    ],
+    "distractors": [
+      "for my pocket."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can treasure Yahweh's Word and let it change my heart.",
+    "reflection_prompt": "Josiah's heart was tender when he heard God's Word. What is your favorite verse or Bible story so far on your journey?",
+    "reflection_choices": [
+      "A memory verse I learned",
+      "A story about courage",
+      "A story about forgiveness",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "What did the high priest find in the temple?",
+      "options": [
+        "Gold coins",
+        "The Book of the Law",
+        "A golden crown"
+      ],
+      "correct_index": 1,
+      "explanation": "Hilkiah said, 'I have found the book of the law in Yahweh's house.'",
+      "verse_ref": "2 Kings 22:8"
+    },
+    {
+      "question": "What did Josiah do when he heard the words of the book?",
+      "options": [
+        "He tore his clothes",
+        "He laughed",
+        "He went to sleep"
+      ],
+      "correct_index": 0,
+      "explanation": "When the king had heard the words of the book of the law, he tore his clothes.",
+      "verse_ref": "2 Kings 22:11"
+    },
+    {
+      "question": "What did God say about Josiah's heart?",
+      "options": [
+        "It was hard",
+        "It was proud",
+        "It was tender"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Because your heart was tender, and you humbled yourself before Yahweh.'",
+      "verse_ref": "2 Kings 22:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for Your Word. It's a lamp to my feet and a light for my path. Give me a tender heart like Josiah's whenever I read or hear it. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "God's Word was lost for years! Can you imagine? Today we can read it any time. Don't let your Bible get dusty. It's a treasure!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "found_scroll"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Huldah's warning of coming judgment on Judah (2 Kings 22:16-17) is summarized as 'God must be very sad with us.' Confirm."
+  }
+}

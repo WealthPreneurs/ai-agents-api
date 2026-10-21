@@ -1,0 +1,123 @@
+{
+  "day": 207,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Making Room for Others",
+  "scripture_passage": "2 Kings 4:8-37",
+  "story_title": "The Room on the Roof",
+  "summary": "A kind woman in Shunem built a little room on her roof for Elisha to stay in. God blessed her with a son. When the boy later died, she ran to Elisha, and God brought him back to life.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Whenever Elisha passed through the town of Shunem, a kind and wealthy woman invited him to eat at her house. One day, she said to her husband, 'This man is a holy man of God. Let's build a small room on our roof for him. We'll put a bed, a table, a chair, and a lamp in it. Then he can stay there whenever he comes.' So they did! Elisha was so thankful. Learning that she had no son, he told her, 'About this time next year, you will hold a son in your arms.' And it happened, just as Elisha said! The boy grew. But one day, while he was out in the fields with his father, he said, 'My head! My head hurts!' They carried him to his mother. He sat on her lap until noon, and then he died. The mother laid him on Elisha's bed, saddled a donkey, and rode as fast as she could to find Elisha. When Elisha's servant asked, 'Is everything all right?' she said, 'It is well.' She trusted God. Elisha came back with her. He went into the room, shut the door, and prayed to Yahweh. He stretched himself over the boy, and the boy's body grew warm. Then the boy sneezed seven times and opened his eyes! Elisha called the mother and said, 'Pick up your son.' Her kindness had made room for God's prophet, and God had done a miracle in that very room.",
+    "scenes": [
+      {
+        "caption": "A kind invitation",
+        "art_direction": "A friendly woman waving Elisha inside for a meal."
+      },
+      {
+        "caption": "A room on the roof",
+        "art_direction": "The husband and wife building a cozy rooftop room with a bed, table, chair, and lamp."
+      },
+      {
+        "caption": "A promised son",
+        "art_direction": "The woman holding a baby, overjoyed."
+      },
+      {
+        "caption": "'My head!'",
+        "art_direction": "A boy in a wheat field holding his head; his father carrying him home. No distress shown in detail."
+      },
+      {
+        "caption": "'It is well'",
+        "art_direction": "The mother riding a donkey hard across the hills, determined and trusting."
+      },
+      {
+        "caption": "Seven sneezes!",
+        "art_direction": "The boy sneezing 'Achoo!' seven times and opening his eyes; Elisha smiling; joyful reunion."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Hebrews 13:2",
+    "text": "Don't forget to show hospitality to strangers, for in doing so, some have entertained angels without knowing it.",
+    "translation": "WEB",
+    "tokens": [
+      "Don't forget",
+      "to show hospitality",
+      "to strangers,",
+      "for in doing so,",
+      "some have entertained angels",
+      "without knowing it."
+    ],
+    "distractors": [
+      "with lots of noise."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can make room for others with kindness and hospitality.",
+    "reflection_prompt": "The Shunammite woman made a special room for Elisha. How could you make someone feel welcome in your home or at school?",
+    "reflection_choices": [
+      "Share my snacks",
+      "Make a guest feel at home",
+      "Save a seat for someone",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "What did the woman and her husband build for Elisha?",
+      "options": [
+        "A barn",
+        "A small room on their roof",
+        "A boat"
+      ],
+      "correct_index": 1,
+      "explanation": "She said, 'Please let's make a little room on the roof, and let's set a bed, a table, a chair, and a lamp stand for him there.'",
+      "verse_ref": "2 Kings 4:10"
+    },
+    {
+      "question": "What did the mother say when Gehazi asked if everything was all right?",
+      "options": [
+        "'It is well.'",
+        "'Go away.'",
+        "'Nothing is right.'"
+      ],
+      "correct_index": 0,
+      "explanation": "She answered, 'It is well.'",
+      "verse_ref": "2 Kings 4:26"
+    },
+    {
+      "question": "What did the boy do when he came back to life?",
+      "options": [
+        "He laughed",
+        "He asked for food",
+        "He sneezed seven times and opened his eyes"
+      ],
+      "correct_index": 2,
+      "explanation": "The child sneezed seven times, and the child opened his eyes.",
+      "verse_ref": "2 Kings 4:35"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me make room for others with kindness and hospitality. Thank You that You see every kind act, and that You can do miracles. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Seven sneezes! I always smile at that part. That kind woman made room for God's prophet, and God filled that little room with a miracle."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "lamp",
+      "linen"
+    ],
+    "unlock": "rooftop_guest_room"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the boy dies after a headache (2 Kings 4:18-20) and is raised. Told gently with the resurrection as the focus. Confirm wording for ages 7-9."
+  }
+}

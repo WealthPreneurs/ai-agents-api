@@ -1,0 +1,120 @@
+{
+  "day": 185,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "A Friend Who Tells the Truth",
+  "scripture_passage": "2 Samuel 12:1-7",
+  "story_title": "Nathan's Story",
+  "summary": "Yahweh sent the prophet Nathan to David. Nathan told a story about a rich man who stole a poor man's only little lamb. When David grew angry, Nathan said, 'You are the man!'",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Yahweh sent the prophet Nathan to King David. Nathan had a hard job: telling the king the truth about his sin. So Nathan told David a story. 'There were two men in a city. One was rich, and one was poor. The rich man had huge flocks of sheep and herds of cattle. But the poor man had nothing except one little ewe lamb that he had bought. He raised it, and it grew up with him and his children. It ate from his plate, drank from his cup, and slept in his arms. It was like a daughter to him. One day, a traveler came to visit the rich man. The rich man didn't want to take one of his own sheep to cook for dinner. So he took the poor man's little lamb and served it to his guest.' David was furious! 'As surely as Yahweh lives, the man who did this deserves to be punished! He must pay back four times as much, because he had no pity!' Then Nathan looked straight at David and said, 'You are the man!' Suddenly, David saw himself in the story. He had everything, and he took the one thing that belonged to Uriah. Nathan was brave enough to tell the king the truth. Real friends love us enough to tell us the truth, even when it's hard to hear.",
+    "scenes": [
+      {
+        "caption": "Sent by God",
+        "art_direction": "Nathan walking up the palace steps, praying quietly."
+      },
+      {
+        "caption": "The rich man",
+        "art_direction": "A man in fancy clothes surrounded by endless flocks."
+      },
+      {
+        "caption": "The little lamb",
+        "art_direction": "A poor family cuddling a fluffy lamb at their table; the lamb sleeping in a child's arms."
+      },
+      {
+        "caption": "Taken!",
+        "art_direction": "The rich man's servant leading the lamb away as the family reaches out; no harm shown."
+      },
+      {
+        "caption": "David's anger",
+        "art_direction": "David rising from his throne, pointing angrily."
+      },
+      {
+        "caption": "'You are the man!'",
+        "art_direction": "Nathan pointing gently but firmly at David; David's face falling as he realizes."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 27:6",
+    "text": "Faithful are the wounds of a friend; although the kisses of an enemy are profuse.",
+    "translation": "WEB",
+    "tokens": [
+      "Faithful are",
+      "the wounds",
+      "of a friend;",
+      "although the kisses",
+      "of an enemy",
+      "are profuse."
+    ],
+    "distractors": [
+      "are honest."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be brave enough to tell the truth in love, and humble enough to listen.",
+    "reflection_prompt": "Nathan was brave to tell David the truth. Has someone ever told you a hard truth that helped you? How did it feel?",
+    "reflection_choices": [
+      "It hurt at first",
+      "It helped me change",
+      "I was thankful later",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "How many lambs did the poor man have?",
+      "options": [
+        "Ten",
+        "Only one little lamb",
+        "None"
+      ],
+      "correct_index": 1,
+      "explanation": "The poor man had nothing, except one little ewe lamb.",
+      "verse_ref": "2 Samuel 12:3"
+    },
+    {
+      "question": "What did David say about the rich man?",
+      "options": [
+        "He must pay back four times as much",
+        "He did nothing wrong",
+        "He should be king"
+      ],
+      "correct_index": 0,
+      "explanation": "David said, 'He shall restore the lamb fourfold, because he did this thing, and because he had no pity.'",
+      "verse_ref": "2 Samuel 12:6"
+    },
+    {
+      "question": "What did Nathan say to David?",
+      "options": [
+        "'Good job!'",
+        "'Let's find the rich man.'",
+        "'You are the man!'"
+      ],
+      "correct_index": 2,
+      "explanation": "Nathan said to David, 'You are the man.'",
+      "verse_ref": "2 Samuel 12:7"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me courage to tell the truth in love like Nathan. And when someone tells me a hard truth, help me be humble and listen. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Nathan was one of my father's most faithful friends. It took great courage to stand before a king and say, 'You are the man!' But that truth saved my father's heart."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "little_ewe_lamb"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

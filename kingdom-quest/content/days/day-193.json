@@ -1,0 +1,121 @@
+{
+  "day": 193,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Wise Words for Life",
+  "scripture_passage": "1 Kings 4:29-34; Proverbs 1:7; 6:6-8",
+  "story_title": "Solomon's Proverbs",
+  "summary": "God gave Solomon great wisdom. He spoke 3,000 proverbs and wrote 1,005 songs, and he taught about plants, animals, birds, and fish. Many of his wise sayings are in the book of Proverbs.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "God gave Solomon wisdom and understanding as big as the sand on the seashore! He was wiser than anyone in the whole world. People came from every nation just to hear him. Solomon spoke three thousand proverbs. A proverb is a short, wise saying that's easy to remember. He also wrote one thousand and five songs! And Solomon loved learning about God's creation. He taught about trees, from the giant cedars of Lebanon to the tiny hyssop plant growing out of a wall. He taught about animals, birds, creeping things, and fish. Many of Solomon's wise sayings are collected in the book of Proverbs. It begins with the most important lesson of all: 'The fear of Yahweh is the beginning of knowledge.' To 'fear' God means to respect Him, honor Him, and put Him first. That's where all real wisdom starts. One of Solomon's proverbs is about ants! 'Go to the ant, you lazy person! Watch what it does and be wise. It has no commander or boss, but it stores up its food in summer and gathers its food at harvest.' Even tiny ants can teach us something. Wisdom is everywhere when we start with God.",
+    "scenes": [
+      {
+        "caption": "Wisdom like sand",
+        "art_direction": "Solomon on a beach, a glowing handful of sand trickling through his fingers."
+      },
+      {
+        "caption": "Visitors from far away",
+        "art_direction": "People in colorful clothing from many nations lining up to hear Solomon."
+      },
+      {
+        "caption": "3,000 proverbs",
+        "art_direction": "Scrolls piling up into a towering stack; scribes writing as fast as they can."
+      },
+      {
+        "caption": "Cedars and hyssop",
+        "art_direction": "Solomon pointing at a towering cedar, then kneeling by a tiny plant in a wall crack."
+      },
+      {
+        "caption": "Go to the ant!",
+        "art_direction": "Close-up of busy ants carrying crumbs into an anthill; a child watching closely."
+      },
+      {
+        "caption": "The beginning of knowledge",
+        "art_direction": "An open scroll of Proverbs glowing with the first verse."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 1:7",
+    "text": "The fear of Yahweh is the beginning of knowledge; but the foolish despise wisdom and instruction.",
+    "translation": "WEB",
+    "tokens": [
+      "The fear of Yahweh",
+      "is the beginning",
+      "of knowledge;",
+      "but the foolish",
+      "despise wisdom",
+      "and instruction."
+    ],
+    "distractors": [
+      "love wisdom"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "My wisdom starts with putting Yahweh first, and I can keep learning all my life.",
+    "reflection_prompt": "Solomon learned from trees, animals, and even ants! What is something in God's creation you'd like to learn more about?",
+    "reflection_choices": [
+      "Animals",
+      "Plants and trees",
+      "Stars and planets",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "curiosity"
+  },
+  "quiz": [
+    {
+      "question": "How many proverbs did Solomon speak?",
+      "options": [
+        "Ten",
+        "Three thousand",
+        "Twelve"
+      ],
+      "correct_index": 1,
+      "explanation": "He spoke three thousand proverbs; and his songs were one thousand five.",
+      "verse_ref": "1 Kings 4:32"
+    },
+    {
+      "question": "What is the beginning of knowledge?",
+      "options": [
+        "The fear of Yahweh",
+        "Reading lots of books",
+        "Being rich"
+      ],
+      "correct_index": 0,
+      "explanation": "The fear of Yahweh is the beginning of knowledge.",
+      "verse_ref": "Proverbs 1:7"
+    },
+    {
+      "question": "What tiny creature did Solomon say we can learn from?",
+      "options": [
+        "A mosquito",
+        "A worm",
+        "The ant"
+      ],
+      "correct_index": 2,
+      "explanation": "Solomon wrote, 'Go to the ant, you sluggard. Consider her ways, and be wise.'",
+      "verse_ref": "Proverbs 6:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to put You first, because that's where wisdom begins. Help me keep learning about You and Your amazing creation. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "I loved studying God's creation! Ants, cedars, birds, fish. Every one of them shows something about how wise God is. What will you discover?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "palm_branch"
+    ],
+    "unlock": "ant_hill_garden"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

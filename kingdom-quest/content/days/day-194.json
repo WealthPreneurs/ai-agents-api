@@ -1,0 +1,124 @@
+{
+  "day": 194,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "A House for God",
+  "scripture_passage": "1 Kings 6:1-38; 8:1-27",
+  "story_title": "Building the Temple",
+  "summary": "Solomon built a beautiful temple for Yahweh in Jerusalem. It took seven years. When the ark was brought in, a cloud filled the temple with God's glory, and Solomon prayed that even the heavens couldn't contain God.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Remember David wanted to build a house for God? God said his son would do it. Now it was time! Solomon began building the temple of Yahweh in Jerusalem. He used huge stones and beautiful cedar wood from Lebanon. Here's something amazing: all the stones were cut and shaped at the quarry before they were brought to the temple site. So while the temple was being built, no one heard the sound of a hammer, an axe, or any iron tool! It was a holy, quiet building site. Inside, the walls were carved with flowers, palm trees, and cherubim, and they were covered with pure gold. The inner room, called the Most Holy Place, was covered with gold from floor to ceiling. It took seven years to build. When it was finished, the priests carried the ark of the covenant into the Most Holy Place. As the priests came out, a cloud filled the temple, the glory of Yahweh! It was so full of God's glory that the priests couldn't even stay inside to serve. Then Solomon prayed, 'Will God really live on earth? Even the highest heavens can't contain You. How much less this temple I've built!' Solomon knew God is too big for any building. But God chose to come close to His people.",
+    "scenes": [
+      {
+        "caption": "Time to build",
+        "art_direction": "Solomon unrolling the temple plans on a hill in Jerusalem."
+      },
+      {
+        "caption": "Cedars from Lebanon",
+        "art_direction": "Massive cedar logs floating on rafts down the coast."
+      },
+      {
+        "caption": "No sound of hammers",
+        "art_direction": "Workers quietly fitting pre-cut stones together; a 'shhh' sign; peaceful."
+      },
+      {
+        "caption": "Gold, flowers, and cherubim",
+        "art_direction": "Golden walls carved with palm trees and blossoms gleaming in lamplight."
+      },
+      {
+        "caption": "Seven years",
+        "art_direction": "A calendar flipping as the temple rises, stone by stone."
+      },
+      {
+        "caption": "The glory fills it",
+        "art_direction": "A brilliant cloud pouring out of the temple doors; priests stepping back in awe."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Kings 8:27",
+    "text": "But will God in very deed dwell on the earth? Behold, heaven and the heaven of heavens can't contain you; how much less this house that I have built!",
+    "translation": "WEB",
+    "tokens": [
+      "But will God",
+      "in very deed",
+      "dwell on the earth?",
+      "Behold, heaven",
+      "and the heaven of heavens",
+      "can't contain you;",
+      "how much less",
+      "this house that I have built!"
+    ],
+    "distractors": [
+      "this tiny box!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is too big for any building, yet He comes close to me.",
+    "reflection_prompt": "Solomon built a beautiful temple to honor God. What could you make or do to honor God this week?",
+    "reflection_choices": [
+      "Make something beautiful",
+      "Do my best work",
+      "Help at church",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What sound was NOT heard while building the temple?",
+      "options": [
+        "Singing",
+        "Hammers or iron tools",
+        "Talking"
+      ],
+      "correct_index": 1,
+      "explanation": "No hammer, axe, or any tool of iron was heard in the house while it was being built.",
+      "verse_ref": "1 Kings 6:7"
+    },
+    {
+      "question": "How long did it take to build the temple?",
+      "options": [
+        "Seven years",
+        "Seven days",
+        "Forty years"
+      ],
+      "correct_index": 0,
+      "explanation": "He was seven years in building it.",
+      "verse_ref": "1 Kings 6:38"
+    },
+    {
+      "question": "What filled the temple when the ark was brought in?",
+      "options": [
+        "Water",
+        "Smoke from a fire",
+        "A cloud of Yahweh's glory"
+      ],
+      "correct_index": 2,
+      "explanation": "The cloud filled Yahweh's house... for Yahweh's glory filled Yahweh's house.",
+      "verse_ref": "1 Kings 8:10-11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You're so big that the highest heavens can't contain You, yet You come close to me. Help me honor You with everything I make and do. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Building that temple was the greatest project of my life! But the best moment was when God's glory filled it. Nothing I built could compare to His presence."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "cedar_wood",
+      "river_stone"
+    ],
+    "unlock": "solomons_temple"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

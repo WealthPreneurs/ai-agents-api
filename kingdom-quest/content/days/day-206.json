@@ -1,0 +1,121 @@
+{
+  "day": 206,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Trusting God With Little",
+  "scripture_passage": "2 Kings 4:1-7",
+  "story_title": "The Widow's Oil",
+  "summary": "A poor widow was about to lose her two sons to pay a debt. Elisha asked what she had: only a little oil. He told her to borrow empty jars. The oil kept pouring until every jar was full, and she could pay her debt.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "One day, a woman came crying to Elisha. 'My husband, who loved Yahweh, has died. And now the man we owe money to is coming to take my two sons as his slaves!' Elisha said, 'How can I help you? Tell me, what do you have in your house?' She said, 'Nothing at all, except a little jar of oil.' Elisha said, 'Go to all your neighbors and borrow empty jars. Lots of them! Don't get just a few. Then go inside, shut the door behind you and your sons, and pour the oil into all the jars. Set each one aside when it's full.' So she did! Her sons ran all over the neighborhood collecting empty jars. Then they went inside and shut the door. She started pouring. The little jar of oil filled one big jar. Then another. And another! Her sons kept bringing her more jars. Finally, she said, 'Bring me another jar.' Her son said, 'There aren't any more!' And at that very moment, the oil stopped flowing. She ran to tell Elisha. He said, 'Go sell the oil and pay your debt. You and your sons can live on what's left.' God used the little she had. And the only limit was how many jars she gathered. Bring God what you have, even if it seems small, and watch what He can do.",
+    "scenes": [
+      {
+        "caption": "A worried mother",
+        "art_direction": "A widow with two boys, tears in her eyes, pleading with Elisha."
+      },
+      {
+        "caption": "'What do you have?'",
+        "art_direction": "A tiny jar of oil sitting alone on an empty shelf."
+      },
+      {
+        "caption": "Borrow jars!",
+        "art_direction": "The two boys running door to door, stacking empty jars in a wobbly tower; comedic."
+      },
+      {
+        "caption": "Shut the door",
+        "art_direction": "The family inside with the door closed, lamplight glowing."
+      },
+      {
+        "caption": "Pouring and pouring",
+        "art_direction": "Golden oil flowing from the little jar into jar after jar; the boys' eyes wide."
+      },
+      {
+        "caption": "No more jars",
+        "art_direction": "The last jar filled; the oil stops; the family hugging in joy."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Corinthians 9:8",
+    "text": "God is able to make all grace abound to you",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "God is able",
+      "to make all grace",
+      "abound",
+      "to you"
+    ],
+    "distractors": [
+      "run out"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can bring Yahweh what I have, even if it's small, and trust Him to multiply it.",
+    "reflection_prompt": "God filled every jar the widow gathered. What 'little jar' do you have that you can offer God?",
+    "reflection_choices": [
+      "A small talent",
+      "A little time",
+      "A kind word",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did the widow have in her house?",
+      "options": [
+        "Lots of gold",
+        "Only a little jar of oil",
+        "Bread and fish"
+      ],
+      "correct_index": 1,
+      "explanation": "She said, 'Your servant has nothing in the house, except a pot of oil.'",
+      "verse_ref": "2 Kings 4:2"
+    },
+    {
+      "question": "What did Elisha tell her to borrow from her neighbors?",
+      "options": [
+        "Empty jars, lots of them",
+        "Money",
+        "Food"
+      ],
+      "correct_index": 0,
+      "explanation": "He said, 'Go, borrow empty containers from all your neighbors. Don't borrow just a few.'",
+      "verse_ref": "2 Kings 4:3"
+    },
+    {
+      "question": "When did the oil stop flowing?",
+      "options": [
+        "After one jar",
+        "When she got tired",
+        "When there were no more jars"
+      ],
+      "correct_index": 2,
+      "explanation": "When the vessels were full, she said, 'Bring me another,' and he said, 'There isn't another.' Then the oil stopped.",
+      "verse_ref": "2 Kings 4:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I don't have much, but I bring You what I have. Thank You that You can multiply even small things. Help me trust You with big faith. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "I love this story! The oil only stopped when the jars ran out. God's grace never runs out. The only question is how much room we make for it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "clay",
+      "clay"
+    ],
+    "unlock": "overflowing_oil_jars"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

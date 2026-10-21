@@ -1,0 +1,121 @@
+{
+  "day": 191,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Asking for What Matters Most",
+  "scripture_passage": "1 Kings 3:3-15",
+  "story_title": "Ask for Anything",
+  "summary": "God appeared to Solomon in a dream and said, 'Ask for whatever you want.' Solomon didn't ask for riches or a long life. He asked for an understanding heart to lead God's people. God was pleased and gave him wisdom, plus riches and honor.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Young King Solomon loved Yahweh and followed his father's instructions. One night, Solomon went to a place called Gibeon to worship God. While he slept there, Yahweh appeared to him in a dream and said, 'Ask for whatever you want Me to give you.' Whatever you want! What would you ask for? Solomon could have asked for gold, a huge army, or a long life. But Solomon said, 'You showed great kindness to my father David. And now You've made me king in his place. But I'm like a little child. I don't know how to lead. And Your people are so many, too many to count. So please give Your servant an understanding heart to judge Your people, so I can tell the difference between good and evil.' God was very pleased with Solomon's request. He said, 'Because you asked for this, and not for a long life or riches or the defeat of your enemies, I will give you what you asked. I will give you a wise and understanding heart, like no one before you and no one after you. And I will also give you what you didn't ask for: riches and honor.' Then Solomon woke up. It had been a dream, but it was real. Solomon knew wisdom matters more than anything money can buy.",
+    "scenes": [
+      {
+        "caption": "Worship at Gibeon",
+        "art_direction": "Solomon offering a sacrifice on a hilltop altar."
+      },
+      {
+        "caption": "A dream",
+        "art_direction": "Solomon asleep as golden light fills his room."
+      },
+      {
+        "caption": "'Ask for whatever you want'",
+        "art_direction": "Floating icons around Solomon: gold coins, a sword, an hourglass, and a glowing heart."
+      },
+      {
+        "caption": "'I'm like a little child'",
+        "art_direction": "Solomon looking small beside a huge crowd of people."
+      },
+      {
+        "caption": "An understanding heart",
+        "art_direction": "Solomon reaching for the glowing heart as the other icons fade."
+      },
+      {
+        "caption": "More than he asked for",
+        "art_direction": "Gold and a crown appearing beside the heart; Solomon waking up amazed."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Kings 3:9",
+    "text": "Give your servant therefore an understanding heart to judge your people, that I may discern between good and evil",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Give your servant",
+      "therefore",
+      "an understanding heart",
+      "to judge your people,",
+      "that I may discern",
+      "between good and evil"
+    ],
+    "distractors": [
+      "a bigger palace"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can ask Yahweh for wisdom, and He loves to give it.",
+    "reflection_prompt": "God told Solomon, 'Ask for whatever you want.' If God asked you that, what would you ask for, and why?",
+    "reflection_choices": [
+      "Wisdom",
+      "A kind heart",
+      "Courage",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What did God say to Solomon in a dream?",
+      "options": [
+        "'Go home.'",
+        "'Ask for whatever you want.'",
+        "'You're too young.'"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Ask what I shall give you.'",
+      "verse_ref": "1 Kings 3:5"
+    },
+    {
+      "question": "What did Solomon ask for?",
+      "options": [
+        "An understanding heart to lead God's people",
+        "Lots of gold",
+        "A long life"
+      ],
+      "correct_index": 0,
+      "explanation": "Solomon asked, 'Give your servant an understanding heart to judge your people.'",
+      "verse_ref": "1 Kings 3:9"
+    },
+    {
+      "question": "What did God give Solomon besides wisdom?",
+      "options": [
+        "Nothing else",
+        "A new name",
+        "Riches and honor"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'I have also given you that which you have not asked, both riches and honor.'",
+      "verse_ref": "1 Kings 3:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I'm like a little child too. I don't always know what to do. Please give me an understanding heart so I can tell right from wrong. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "That dream changed my life. I knew I wasn't ready to be king on my own. Asking God for wisdom was the best decision I ever made."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "wisdom_scroll"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

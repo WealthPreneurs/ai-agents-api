@@ -25,7 +25,13 @@
     { "id": "curiosity", "name": "Curiosity", "badge": "truth_seeker" },
     { "id": "honesty", "name": "Honesty", "badge": "truth_seeker" },
     { "id": "sharing_faith", "name": "Good News Sharer", "badge": "light_bearer" },
-    { "id": "hope", "name": "Hope", "badge": "light_bearer" }
+    { "id": "hope", "name": "Hope", "badge": "light_bearer" },
+    { "id": "peace", "name": "Peace", "badge": "peacemaker" },
+    { "id": "patience", "name": "Patience", "badge": "faithful_servant" },
+    { "id": "goodness", "name": "Goodness", "badge": "faithful_servant" },
+    { "id": "self_control", "name": "Self-Control", "badge": "wise_leader" },
+    { "id": "love", "name": "Love", "badge": "compassionate_friend" },
+    { "id": "perseverance", "name": "Perseverance", "badge": "brave_heart" }
   ],
   "identity_badges": [
     { "id": "beloved_child", "name": "Beloved Child", "kind": "foundation", "anchor_verse": "1 John 3:1", "description": "Awarded to every child at the end of the Foundation phase. Identity is a gift, not an achievement." },

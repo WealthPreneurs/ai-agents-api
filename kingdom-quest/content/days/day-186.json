@@ -1,0 +1,121 @@
+{
+  "day": 186,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Confessing and Being Forgiven",
+  "scripture_passage": "2 Samuel 12:13-23",
+  "story_title": "I Have Sinned",
+  "summary": "David didn't make excuses. He said, 'I have sinned against Yahweh.' Nathan said God had taken away his sin. Still, there were painful consequences, and David's baby son died. David worshiped God through his grief.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "When Nathan said, 'You are the man,' David could have gotten angry. He was the king. He could have sent Nathan away. But instead, David's heart broke. He said, 'I have sinned against Yahweh.' No excuses. No blaming. Just the truth. And Nathan said, 'Yahweh has taken away your sin. You will not die.' God forgave David right away! But Nathan also said that sin has consequences. The baby who had been born would not live. Soon the little baby became very sick. David prayed and begged God for the child. He didn't eat. He lay on the ground all night. For seven days, he cried out to God. Then the baby died. David's servants were afraid to tell him. But when David found out, he got up, washed, changed his clothes, and went to the house of Yahweh to worship. His servants were confused. David explained, 'While the baby was alive, I prayed, hoping God would be gracious. But now he is gone. I will go to him one day, but he won't come back to me.' Even in his sorrow, David trusted God. Forgiveness is a gift, free and complete. Consequences can still hurt. But God stays close to us through all of it.",
+    "scenes": [
+      {
+        "caption": "'I have sinned'",
+        "art_direction": "David kneeling before Nathan, head bowed, tears falling."
+      },
+      {
+        "caption": "Forgiven",
+        "art_direction": "Nathan placing a hand on David's shoulder as gentle light surrounds them."
+      },
+      {
+        "caption": "Praying for the baby",
+        "art_direction": "David lying on the floor in prayer by candlelight."
+      },
+      {
+        "caption": "Seven days",
+        "art_direction": "Seven candles burning down one by one."
+      },
+      {
+        "caption": "Worship in sorrow",
+        "art_direction": "David washed and dressed, walking slowly into the tent of Yahweh."
+      },
+      {
+        "caption": "I will go to him",
+        "art_direction": "David looking up with hope through his tears; a soft, warm light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 John 1:9",
+    "text": "If we confess our sins, he is faithful and righteous to forgive us the sins, and to cleanse us from all unrighteousness.",
+    "translation": "WEB",
+    "tokens": [
+      "If we confess",
+      "our sins,",
+      "he is faithful",
+      "and righteous",
+      "to forgive us the sins,",
+      "and to cleanse us",
+      "from all unrighteousness."
+    ],
+    "distractors": [
+      "from all happiness."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "When I confess my sins, Yahweh forgives me completely.",
+    "reflection_prompt": "David said, 'I have sinned,' with no excuses. Is there something you need to confess to God today? He's ready to forgive you.",
+    "reflection_choices": [
+      "Something I said",
+      "Something I did",
+      "Something I didn't do",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What did David say when Nathan confronted him?",
+      "options": [
+        "'It wasn't my fault!'",
+        "'I have sinned against Yahweh.'",
+        "'Go away!'"
+      ],
+      "correct_index": 1,
+      "explanation": "David said to Nathan, 'I have sinned against Yahweh.'",
+      "verse_ref": "2 Samuel 12:13"
+    },
+    {
+      "question": "What did Nathan say God had done?",
+      "options": [
+        "Taken away David's sin",
+        "Made David king again",
+        "Forgotten about David"
+      ],
+      "correct_index": 0,
+      "explanation": "Nathan said, 'Yahweh also has put away your sin.'",
+      "verse_ref": "2 Samuel 12:13"
+    },
+    {
+      "question": "What did David do after the baby died?",
+      "options": [
+        "He stayed angry at God",
+        "He ran away",
+        "He washed, changed, and worshiped Yahweh"
+      ],
+      "correct_index": 2,
+      "explanation": "David arose, washed, changed his clothing, and came into Yahweh's house and worshiped.",
+      "verse_ref": "2 Samuel 12:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that when I confess my sins, You forgive me completely. Help me say 'I'm sorry' without excuses, and help me trust You even in sad times. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "My father's honesty that day changed everything. God forgave him. If this story makes you sad, or reminds you of someone you miss, talk to God and a grown-up you trust."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the death of David and Bathsheba's infant son as a consequence of David's sin (2 Samuel 12:14-18). Stated plainly and gently. Theologically significant: confirm the framing of forgiveness vs. consequences. Companion points kids to a trusted grown-up. Part of the parent heads-up week."
+  }
+}

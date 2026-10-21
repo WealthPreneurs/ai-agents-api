@@ -1,0 +1,121 @@
+{
+  "day": 201,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Yahweh Is God!",
+  "scripture_passage": "1 Kings 18:30-46",
+  "story_title": "Fire from Heaven",
+  "summary": "Elijah rebuilt Yahweh's altar, soaked it with water three times, and prayed a simple prayer. Fire fell from heaven and burned up everything, even the water. The people shouted, 'Yahweh, He is God!' Then God sent rain.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "In the evening, Elijah said to the people, 'Come close to me.' He rebuilt the broken altar of Yahweh using twelve stones, one for each tribe of Israel. He dug a trench around it. He put the wood and the sacrifice on the altar. Then Elijah said, 'Fill four big jars with water and pour it on the sacrifice and the wood.' They did. 'Do it again!' They did. 'Do it a third time!' Water ran all around the altar and filled the trench. Now nothing could catch fire by accident! Then Elijah prayed a short, simple prayer. 'Yahweh, God of Abraham, Isaac, and Israel, let it be known today that You are God in Israel. Answer me, Yahweh, so these people will know that You are God, and that You are turning their hearts back to You.' Immediately, fire from Yahweh fell from heaven! It burned up the sacrifice, the wood, the stones, the dust, and even licked up all the water in the trench! When the people saw it, they fell on their faces and cried out, 'Yahweh, He is God! Yahweh, He is God!' Then Elijah climbed to the top of Mount Carmel and prayed for rain. Seven times he sent his servant to look at the sea. The seventh time, the servant said, 'There's a little cloud, as small as a man's hand.' Soon the sky turned black with clouds, the wind blew, and a heavy rain began to fall!",
+    "scenes": [
+      {
+        "caption": "Twelve stones",
+        "art_direction": "Elijah carefully stacking twelve stones into an altar as the crowd watches."
+      },
+      {
+        "caption": "Water, water, water!",
+        "art_direction": "People pouring huge jars of water until the trench overflows; kids giggling."
+      },
+      {
+        "caption": "A simple prayer",
+        "art_direction": "Elijah kneeling quietly, hands lifted, eyes closed."
+      },
+      {
+        "caption": "Fire falls!",
+        "art_direction": "A blazing column of fire crashing down from heaven, consuming everything."
+      },
+      {
+        "caption": "'Yahweh, He is God!'",
+        "art_direction": "The whole crowd on their faces, then raising their hands and shouting."
+      },
+      {
+        "caption": "A cloud like a hand",
+        "art_direction": "A tiny cloud over the sea growing into a huge storm; rain pouring on dry land."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Kings 18:39",
+    "text": "Yahweh, he is God! Yahweh, he is God!",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh,",
+      "he is God!",
+      "Yahweh,",
+      "he is God!"
+    ],
+    "distractors": [
+      "Baal is god!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is the one true God, and He answers when I pray.",
+    "reflection_prompt": "Elijah prayed a simple prayer, and God answered with fire! What is a simple prayer you could pray today?",
+    "reflection_choices": [
+      "'God, show me You're with me.'",
+      "'God, help my friend.'",
+      "'God, turn hearts back to You.'",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "How many stones did Elijah use to rebuild the altar?",
+      "options": [
+        "Seven",
+        "Twelve",
+        "One hundred"
+      ],
+      "correct_index": 1,
+      "explanation": "Elijah took twelve stones, according to the number of the tribes of Jacob.",
+      "verse_ref": "1 Kings 18:31"
+    },
+    {
+      "question": "How many times did they pour water on the altar?",
+      "options": [
+        "Three times",
+        "Once",
+        "Ten times"
+      ],
+      "correct_index": 0,
+      "explanation": "He said, 'Do it a second time... Do it a third time,' and they did it the third time.",
+      "verse_ref": "1 Kings 18:34"
+    },
+    {
+      "question": "What did the people shout when the fire fell?",
+      "options": [
+        "'Baal is god!'",
+        "'We're scared!'",
+        "'Yahweh, He is God!'"
+      ],
+      "correct_index": 2,
+      "explanation": "They fell on their faces and said, 'Yahweh, he is God! Yahweh, he is God!'",
+      "verse_ref": "1 Kings 18:39"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are God! You answered Elijah with fire, and You hear my prayers too. Turn people's hearts back to You. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Water poured three times, and the fire still burned it all up! There is no one like Yahweh. And He sent the rain right after, just as He promised."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "lamp"
+    ],
+    "unlock": "altar_of_twelve_stones"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits Elijah having the prophets of Baal killed at the Kishon (1 Kings 18:40). Confirm."
+  }
+}

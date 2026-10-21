@@ -1,0 +1,119 @@
+{
+  "day": 214,
+  "month": 7,
+  "realm": 31,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Never Too Far to Come Back",
+  "scripture_passage": "2 Kings 21:1-2; 2 Chronicles 33:1-16",
+  "story_title": "Manasseh Turns Back",
+  "summary": "Hezekiah's son Manasseh became the most wicked king of Judah. But when he was captured and in great trouble, he humbled himself and prayed. God heard him and brought him home, and Manasseh tore down the idols.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After Hezekiah died, his son Manasseh became king when he was only twelve years old. But Manasseh did not follow his father's example. He did many evil things. He rebuilt the idol altars his father had torn down. He worshiped the stars. He even put idols inside God's own temple! He led the people to do even worse things than the nations God had driven out of the land. God sent prophets to warn him, but Manasseh wouldn't listen. Finally, the army of Assyria captured Manasseh. They put a hook in his nose, bound him with bronze chains, and dragged him away to Babylon. Manasseh was in terrible trouble, far from home. And there, in his distress, something changed. Manasseh humbled himself greatly before Yahweh, the God of his ancestors, and prayed. And God heard him! God was moved by his prayer and brought him back to Jerusalem and to his kingdom. Then Manasseh knew that Yahweh is God. When he got home, he removed the idols from the temple and threw them out of the city. He rebuilt Yahweh's altar and told the people to serve Yahweh. Manasseh was the worst king Judah ever had. But when he turned back to God with a humble heart, God forgave him. No one is ever too far away to come back to God.",
+    "scenes": [
+      {
+        "caption": "A twelve-year-old king",
+        "art_direction": "Young Manasseh on the throne, ignoring his father's portrait on the wall."
+      },
+      {
+        "caption": "Idols everywhere",
+        "art_direction": "Idol altars being rebuilt on hilltops; star symbols painted on the temple walls; dark colors."
+      },
+      {
+        "caption": "Captured",
+        "art_direction": "Manasseh in bronze chains being led away; shown from behind and from a distance."
+      },
+      {
+        "caption": "Humbled",
+        "art_direction": "Manasseh in a dark cell, kneeling, his crown gone, praying with tears."
+      },
+      {
+        "caption": "God hears",
+        "art_direction": "A beam of light breaking into the cell."
+      },
+      {
+        "caption": "Coming home",
+        "art_direction": "Manasseh throwing idols out of the temple and rebuilding God's altar."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 55:7",
+    "text": "Let him return to Yahweh, and he will have mercy on him",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Let him return",
+      "to Yahweh,",
+      "and he will have",
+      "mercy on him"
+    ],
+    "distractors": [
+      "no mercy"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am never too far away to come back to Yahweh.",
+    "reflection_prompt": "Manasseh did terrible things, but when he turned back to God, God forgave him. Is there someone you could pray for, who seems far from God?",
+    "reflection_choices": [
+      "A friend",
+      "A family member",
+      "A leader in my country",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "How old was Manasseh when he became king?",
+      "options": [
+        "Thirty",
+        "Twelve",
+        "Seven"
+      ],
+      "correct_index": 1,
+      "explanation": "Manasseh was twelve years old when he began to reign.",
+      "verse_ref": "2 Chronicles 33:1"
+    },
+    {
+      "question": "What did Manasseh do when he was in great trouble?",
+      "options": [
+        "He humbled himself and prayed to God",
+        "He got even angrier",
+        "He gave up"
+      ],
+      "correct_index": 0,
+      "explanation": "When he was in distress, he begged Yahweh his God, and humbled himself greatly.",
+      "verse_ref": "2 Chronicles 33:12"
+    },
+    {
+      "question": "What did Manasseh do after God brought him home?",
+      "options": [
+        "He built more idols",
+        "He went back to Babylon",
+        "He removed the idols and rebuilt Yahweh's altar"
+      ],
+      "correct_index": 2,
+      "explanation": "He took away the foreign gods and the idol out of Yahweh's house, and built up Yahweh's altar.",
+      "verse_ref": "2 Chronicles 33:15-16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that no one is ever too far away to come back to You. Thank You for Your mercy. I pray for people who seem far from You. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Manasseh was the worst king of all. But God's mercy is bigger than the worst sin. If God could forgive Manasseh, He can forgive anyone who comes back to Him."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Manasseh's child sacrifice, sorcery, and shedding of innocent blood (2 Kings 21:6, 16; 2 Chronicles 33:6) are summarized as 'even worse things.' The hook and bronze chains (2 Chronicles 33:11) are included and shown from a distance. Uses 2 Chronicles, which the curriculum now lists. Confirm."
+  }
+}

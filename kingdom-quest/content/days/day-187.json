@@ -1,0 +1,121 @@
+{
+  "day": 187,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Washed Whiter Than Snow",
+  "scripture_passage": "Psalm 51:1-12",
+  "story_title": "Create in Me a Clean Heart",
+  "summary": "After Nathan's visit, David wrote Psalm 51, a prayer asking God for mercy. He asked God to wash him whiter than snow, give him a clean heart, and restore the joy of being saved.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "After Nathan's visit, David wrote one of the most honest prayers in the whole Bible. It's Psalm 51. David didn't pretend everything was fine. He poured out his heart to God. 'Have mercy on me, God, because of Your loving kindness. Because of Your great compassion, blot out my wrongs. Wash me completely from my sin, and make me clean. For I know what I've done wrong. My sin is always in front of me.' David knew he couldn't fix his heart by himself. Only God could clean it. So he prayed, 'Wash me, and I will be whiter than snow.' Have you ever seen fresh snow that nobody has walked on yet? It's so bright and white and clean! That's what God's forgiveness does. It doesn't just cover up our sin. It washes it away. Then David prayed, 'Create in me a clean heart, O God. Give me a right spirit inside me. Don't throw me away from Your presence. Don't take Your Holy Spirit from me. Give me back the joy of Your salvation.' David didn't just want to feel less guilty. He wanted a new heart. And God loves to give new hearts to anyone who asks.",
+    "scenes": [
+      {
+        "caption": "An honest prayer",
+        "art_direction": "David alone in his room, kneeling with a scroll and pen."
+      },
+      {
+        "caption": "Have mercy",
+        "art_direction": "David's hands lifted up as soft light pours down."
+      },
+      {
+        "caption": "Blot out my wrongs",
+        "art_direction": "Dark ink stains on a page being wiped away by light."
+      },
+      {
+        "caption": "Whiter than snow",
+        "art_direction": "A field of fresh, sparkling snow under a blue sky; a child's untouched footprints just beginning."
+      },
+      {
+        "caption": "A clean heart",
+        "art_direction": "A heart that was gray and cracked becoming bright and whole."
+      },
+      {
+        "caption": "The joy returns",
+        "art_direction": "David smiling with tears, holding his harp again."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 51:7",
+    "text": "Purify me with hyssop, and I will be clean. Wash me, and I will be whiter than snow.",
+    "translation": "WEB",
+    "tokens": [
+      "Purify me",
+      "with hyssop,",
+      "and I will be clean.",
+      "Wash me,",
+      "and I will be",
+      "whiter than snow."
+    ],
+    "distractors": [
+      "darker than night."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can wash my heart clean, whiter than snow.",
+    "reflection_prompt": "David asked God for a clean heart. Draw a heart, and inside, write a prayer asking God to make your heart clean and new.",
+    "reflection_choices": [
+      "Make my heart clean",
+      "Give me a right spirit",
+      "Give me joy again",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What did David ask God for first in Psalm 51?",
+      "options": [
+        "Riches",
+        "Mercy",
+        "A bigger kingdom"
+      ],
+      "correct_index": 1,
+      "explanation": "David prayed, 'Have mercy on me, God, according to your loving kindness.'",
+      "verse_ref": "Psalm 51:1"
+    },
+    {
+      "question": "What did David say he would be after God washed him?",
+      "options": [
+        "Whiter than snow",
+        "Stronger than a lion",
+        "Taller than a tree"
+      ],
+      "correct_index": 0,
+      "explanation": "David prayed, 'Wash me, and I will be whiter than snow.'",
+      "verse_ref": "Psalm 51:7"
+    },
+    {
+      "question": "What did David ask God to give back to him?",
+      "options": [
+        "His crown",
+        "His sword",
+        "The joy of His salvation"
+      ],
+      "correct_index": 2,
+      "explanation": "David prayed, 'Restore to me the joy of your salvation.'",
+      "verse_ref": "Psalm 51:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "God, have mercy on me. Wash me, and I will be whiter than snow. Create in me a clean heart and give me back the joy of knowing You. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "My father prayed this prayer, and God answered. I grew up hearing it. When you mess up, you can pray it too. God loves to give clean hearts."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "snow_white_garden"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

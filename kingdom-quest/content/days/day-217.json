@@ -1,0 +1,124 @@
+{
+  "day": 217,
+  "month": 7,
+  "realm": 31,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Never Too Young to Do Good",
+  "scripture_passage": "2 Kings 23:1-3; 23:21-25",
+  "story_title": "The King Who Turned to God With All His Heart",
+  "summary": "Josiah read God's Word to all the people and made a promise to follow Yahweh with all his heart. He celebrated the greatest Passover in hundreds of years. Region 7 is complete!",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Kingdom of Wisdom! King Josiah gathered all the people of Judah and Jerusalem at the temple: priests, prophets, and everyone, from the youngest to the oldest. Then Josiah himself read the whole Book of the Covenant out loud to them! Josiah stood by a pillar and made a promise in front of Yahweh: to follow Yahweh, to keep His commands with all his heart and all his soul, and to obey every word written in the book. And all the people joined in the promise! Then Josiah said, 'Let's celebrate the Passover to Yahweh, just as it's written in this book.' And they did! It was the greatest Passover since the days of the judges, hundreds of years earlier. The Bible says something amazing about Josiah: 'There was no king like him, before or after, who turned to Yahweh with all his heart, with all his soul, and with all his strength.' Let's look back at this whole region. David confessed his sin and prayed for a clean heart. Solomon asked for wisdom. Elijah heard God's gentle whisper. Elisha stayed faithful, and God opened eyes to see His army of fire. And young kings like Joash and Josiah showed that you're never too young to do good. This region's biggest truth: you're never too young to do what is good.",
+    "scenes": [
+      {
+        "caption": "Everyone gathers",
+        "art_direction": "A huge crowd of all ages filling the temple courts, kids in front."
+      },
+      {
+        "caption": "The king reads",
+        "art_direction": "Josiah reading the scroll aloud as people lean in to listen."
+      },
+      {
+        "caption": "A promise by the pillar",
+        "art_direction": "Josiah standing beside a tall pillar, hand on his heart; the crowd raising their hands too."
+      },
+      {
+        "caption": "The great Passover",
+        "art_direction": "Families celebrating with feasts, music, and joy throughout Jerusalem."
+      },
+      {
+        "caption": "No king like him",
+        "art_direction": "Josiah's name glowing on a royal scroll above all the other kings."
+      },
+      {
+        "caption": "Region 7 complete!",
+        "art_direction": "Map zooms out showing the Kingdom of Wisdom lit up gold; a path glows toward Region 8, the Prophets' Watchtower."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Timothy 4:12",
+    "text": "Let no man despise your youth; but be an example to those who believe, in word, in your way of life, in love, in spirit, in faith, and in purity.",
+    "translation": "WEB",
+    "tokens": [
+      "Let no man",
+      "despise your youth;",
+      "but be an example",
+      "to those who believe,",
+      "in word,",
+      "in your way of life,",
+      "in love, in spirit,",
+      "in faith, and in purity."
+    ],
+    "distractors": [
+      "in laziness,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am never too young to do what is good.",
+    "reflection_prompt": "Milestone: You're never too young to do good! You've earned the Breastplate of Righteousness. Look back at your Blueprint journal from Region 7. Which piece of Character Armor do you need most right now?",
+    "reflection_choices": [
+      "Belt of Truth",
+      "Sword of the Spirit",
+      "Shoes of Peace",
+      "Shield of Faith"
+    ],
+    "trait_unlocked": "goodness"
+  },
+  "quiz": [
+    {
+      "question": "Who did Josiah read the Book of the Covenant to?",
+      "options": [
+        "Only the priests",
+        "All the people, from youngest to oldest",
+        "Only his family"
+      ],
+      "correct_index": 1,
+      "explanation": "The king read in their ears all the words of the book of the covenant, to all the people, both small and great.",
+      "verse_ref": "2 Kings 23:2"
+    },
+    {
+      "question": "What did Josiah promise to do?",
+      "options": [
+        "Follow Yahweh with all his heart and soul",
+        "Build a bigger palace",
+        "Fight more battles"
+      ],
+      "correct_index": 0,
+      "explanation": "Josiah made a covenant to walk after Yahweh, and to keep his commandments with all his heart and all his soul.",
+      "verse_ref": "2 Kings 23:3"
+    },
+    {
+      "question": "What does the Bible say about Josiah?",
+      "options": [
+        "He was the richest king",
+        "He was the oldest king",
+        "No king turned to Yahweh with all his heart like him"
+      ],
+      "correct_index": 2,
+      "explanation": "There was no king like him before him, who turned to Yahweh with all his heart, soul, and might.",
+      "verse_ref": "2 Kings 23:25"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I'm never too young to do good! Help me be an example in what I say, how I live, and how I love. Thank You for this whole journey through the Kingdom of Wisdom! Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "You finished the Kingdom of Wisdom! Thank you for walking with me. Next, a brave queen named Esther will guide you through the Prophets' Watchtower!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "breastplate_of_righteousness"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Josiah's further reforms (2 Kings 23:4-20, including killing the priests of the high places) and his death at Megiddo (23:29-30) are omitted. Confirm."
+  }
+}

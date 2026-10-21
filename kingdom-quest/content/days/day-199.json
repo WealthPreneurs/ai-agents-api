@@ -1,0 +1,122 @@
+{
+  "day": 199,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Generous Faith",
+  "scripture_passage": "1 Kings 17:8-24",
+  "story_title": "The Widow's Flour and Oil",
+  "summary": "God sent Elijah to a poor widow in Zarephath who had only enough flour and oil for one last meal. She shared it with Elijah, and her jar of flour and jug of oil never ran out. Later, God brought her son back to life.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After a while, the brook dried up because there was no rain. So God told Elijah, 'Go to Zarephath. I have commanded a widow there to feed you.' When Elijah got to the town gate, he saw a widow gathering sticks. 'Please bring me a little water and a piece of bread,' he said. The widow answered, 'As surely as Yahweh your God lives, I don't have any bread. I only have a handful of flour in a jar and a little oil in a jug. I'm gathering sticks to make one last meal for my son and me, and then we will starve.' Elijah said, 'Don't be afraid. Go and make your meal, but first make a small loaf for me. Then make something for yourself and your son. For Yahweh says, The jar of flour won't run out, and the jug of oil won't run dry, until the day Yahweh sends rain.' The widow trusted God's word and did what Elijah said. And it happened just as God promised! Every day, there was flour in the jar and oil in the jug. Elijah, the widow, and her son ate for many days. Later, her son became very sick and stopped breathing. Elijah carried him upstairs, stretched out over him three times, and cried out to Yahweh. And God brought the boy back to life! The widow said, 'Now I know that you are a man of God, and Yahweh's word in your mouth is truth.'",
+    "scenes": [
+      {
+        "caption": "The brook dries up",
+        "art_direction": "The little stream shrinking to a few puddles."
+      },
+      {
+        "caption": "A widow gathering sticks",
+        "art_direction": "A thin woman picking up twigs by the town gate."
+      },
+      {
+        "caption": "One last meal",
+        "art_direction": "A nearly empty jar of flour and a tiny jug of oil on a bare table."
+      },
+      {
+        "caption": "'Make one for me first'",
+        "art_direction": "The widow hesitating, then deciding to trust; baking a small loaf."
+      },
+      {
+        "caption": "It never runs out!",
+        "art_direction": "The widow scooping flour from the jar day after day; it never empties."
+      },
+      {
+        "caption": "New life",
+        "art_direction": "Elijah handing the healthy boy back to his overjoyed mother; nothing distressing shown."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Philippians 4:19",
+    "text": "My God will supply every need of yours according to his riches in glory in Christ Jesus.",
+    "translation": "WEB",
+    "tokens": [
+      "My God",
+      "will supply",
+      "every need of yours",
+      "according to his riches",
+      "in glory",
+      "in Christ Jesus."
+    ],
+    "distractors": [
+      "only some needs"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can trust Yahweh enough to be generous, because He supplies what I need.",
+    "reflection_prompt": "The widow shared her last bit of food, and God provided. What is something you could share with someone, even if it's hard?",
+    "reflection_choices": [
+      "My snack",
+      "My toys",
+      "My time",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "What did the widow have left?",
+      "options": [
+        "A big basket of bread",
+        "A handful of flour and a little oil",
+        "Nothing at all"
+      ],
+      "correct_index": 1,
+      "explanation": "She said, 'I don't have a cake, but a handful of meal in a jar, and a little oil in a jar.'",
+      "verse_ref": "1 Kings 17:12"
+    },
+    {
+      "question": "What did God promise about the flour and oil?",
+      "options": [
+        "They wouldn't run out until God sent rain",
+        "They would last one day",
+        "They would turn to gold"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'The jar of meal will not run out, and the jar of oil will not fail, until the day that Yahweh sends rain.'",
+      "verse_ref": "1 Kings 17:14"
+    },
+    {
+      "question": "What did the widow say after God brought her son back to life?",
+      "options": [
+        "'I'm still not sure.'",
+        "'Please leave.'",
+        "'Yahweh's word in your mouth is truth.'"
+      ],
+      "correct_index": 2,
+      "explanation": "She said, 'Now I know that you are a man of God, and that Yahweh's word in your mouth is truth.'",
+      "verse_ref": "1 Kings 17:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You supply everything I need. Help me trust You enough to be generous and share with others, even when I don't have much. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "That widow was so brave! She shared her very last meal, and God never let her jar run empty. When we're generous, we get to see God provide."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "olive_oil"
+    ],
+    "unlock": "never_empty_jar"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The widow's son dies and is raised (1 Kings 17:17-24). Told as 'became very sick and stopped breathing'; the resurrection is the focus. Confirm wording for ages 7-9."
+  }
+}

@@ -58,6 +58,7 @@ curriculum.realms.forEach((realm, i) => {
 if (curriculum.realms.length !== 52) fail('curriculum.realms', `has ${curriculum.realms.length} realms, expected 52`);
 
 // Daily nodes.
+const MAX_WORDS_PER_SECOND = 1.65;
 const realmOfDay = (day) => Math.min(52, Math.ceil(day / 7));
 const regionOfRealm = (realm) => curriculum.regions.find((r) => inRange(realm, r.realms)).region;
 const passagePattern = new RegExp(schema.properties.scripture_passage.pattern);
@@ -114,6 +115,14 @@ for (const file of files) {
   tooLong('companion.message', node.companion && node.companion.message, schema.properties.companion.properties.message.maxLength);
 
   const reel = node.story_reel || {};
+  // Narration pace: at most 1.65 words per second (about 100 wpm), leaving room
+  // for music and pauses in a kids' reel.
+  if (typeof reel.narration === 'string' && reel.duration_seconds) {
+    const wps = reel.narration.split(/\s+/).length / reel.duration_seconds;
+    if (wps > MAX_WORDS_PER_SECOND) {
+      fail(where, `story_reel narration is ${wps.toFixed(2)} words/second (max ${MAX_WORDS_PER_SECOND}); shorten it or raise duration_seconds`);
+    }
+  }
   for (const [i, scene] of (reel.scenes || []).entries()) {
     tooLong(`story_reel.scenes[${i}].caption`, scene.caption, schema.properties.story_reel.properties.scenes.items.properties.caption.maxLength);
   }

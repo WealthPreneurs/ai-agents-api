@@ -1,0 +1,121 @@
+{
+  "day": 215,
+  "month": 7,
+  "realm": 31,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Seeking God While I'm Young",
+  "scripture_passage": "2 Kings 22:1-2; 2 Chronicles 34:1-7",
+  "story_title": "Josiah, King at Eight",
+  "summary": "Josiah became king when he was just eight years old. He did what was right, never turning to the right or the left. At sixteen, he began to seek God, and at twenty, he started removing idols from the land.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Manasseh's grandson was a boy named Josiah. When Josiah was just eight years old, he became king of Judah! Eight years old! That might be about your age right now. Can you imagine being king of a whole country? Josiah's father and grandfather had done many evil things. But Josiah chose a different path. The Bible says he did what was right in Yahweh's eyes and walked in all the ways of his ancestor David. He didn't turn aside to the right or to the left. That means he stayed on God's path, without wandering off. When Josiah was sixteen years old, while he was still young, he began to seek the God of his father David. He wanted to know God for himself. Then, when he was twenty, he started cleaning up the land. He tore down the idol altars on the hilltops. He smashed the carved idols and statues and ground them into dust. He went all through Judah and even into the old northern kingdom, tearing down idols everywhere he went. Josiah didn't let his family's past decide his future. He chose to seek God while he was young. You can make that choice too. You don't have to wait until you're grown up to follow God with your whole heart.",
+    "scenes": [
+      {
+        "caption": "A king at eight",
+        "art_direction": "An eight-year-old boy with a too-big crown sitting on a huge throne; advisors smiling kindly."
+      },
+      {
+        "caption": "A different path",
+        "art_direction": "A path splitting; Josiah choosing the bright one while older family portraits look the other way."
+      },
+      {
+        "caption": "Not to the right or left",
+        "art_direction": "Josiah walking a straight, glowing path without stepping off."
+      },
+      {
+        "caption": "Seeking God at sixteen",
+        "art_direction": "Teenage Josiah praying alone in the temple courts."
+      },
+      {
+        "caption": "Cleaning up the land",
+        "art_direction": "Twenty-year-old Josiah leading workers to tear down hilltop idols."
+      },
+      {
+        "caption": "Ground into dust",
+        "art_direction": "Idols crumbling into dust as a wind blows it away."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 119:9",
+    "text": "How can a young man keep his way pure? By living according to your word.",
+    "translation": "WEB",
+    "tokens": [
+      "How can",
+      "a young man",
+      "keep his way pure?",
+      "By living",
+      "according to your word."
+    ],
+    "distractors": [
+      "according to his feelings."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can seek Yahweh while I'm young and choose His path, no matter what others have done.",
+    "reflection_prompt": "Josiah was eight when he became king, and he chose to follow God. What is one way you can seek God right now, at your age?",
+    "reflection_choices": [
+      "Reading my Bible",
+      "Praying every day",
+      "Making good choices",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "goodness"
+  },
+  "quiz": [
+    {
+      "question": "How old was Josiah when he became king?",
+      "options": [
+        "Twenty",
+        "Eight",
+        "Sixteen"
+      ],
+      "correct_index": 1,
+      "explanation": "Josiah was eight years old when he began to reign.",
+      "verse_ref": "2 Kings 22:1"
+    },
+    {
+      "question": "What does it mean that Josiah didn't turn to the right or the left?",
+      "options": [
+        "He stayed on God's path",
+        "He couldn't turn his head",
+        "He only walked forward in the palace"
+      ],
+      "correct_index": 0,
+      "explanation": "He did that which was right in Yahweh's eyes, and didn't turn aside to the right hand or to the left.",
+      "verse_ref": "2 Kings 22:2"
+    },
+    {
+      "question": "How old was Josiah when he began to seek God?",
+      "options": [
+        "Five",
+        "Thirty",
+        "Sixteen"
+      ],
+      "correct_index": 2,
+      "explanation": "In the eighth year of his reign, while he was yet young, he began to seek the God of David.",
+      "verse_ref": "2 Chronicles 34:3"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to seek You while I'm young. Help me stay on Your path and not turn to the right or left. Help me live by Your Word. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "An eight-year-old king who chose God! Josiah didn't let his family's mistakes decide his future. You get to choose your path too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "gold_thread"
+    ],
+    "unlock": "straight_path"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits Amon's reign and assassination (2 Kings 21:19-26). Josiah burning priests' bones (2 Chronicles 34:5) is omitted. Confirm."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "day": 198,
+  "month": 7,
+  "realm": 29,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Peace in God's Care",
+  "scripture_passage": "1 Kings 16:29-33; 17:1-7",
+  "story_title": "Elijah and the Ravens",
+  "summary": "Wicked King Ahab and Queen Jezebel led Israel to worship Baal. The prophet Elijah announced there would be no rain. God sent Elijah to hide by a brook, where ravens brought him bread and meat every morning and evening.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Many years passed, and the northern kingdom had one bad king after another. Then came the worst of all: King Ahab. He married a woman named Jezebel, who worshiped the false god Baal. Ahab built a temple for Baal and led all of Israel to worship him. Baal was supposed to be the god of rain and storms. So God sent a brave prophet named Elijah with a message. Elijah went right up to King Ahab and said, 'As surely as Yahweh, the God of Israel, lives, there will be no dew or rain in the next few years, except at my word.' That showed who was really in charge of the rain! Then God told Elijah, 'Go hide by the Brook Cherith, east of the Jordan. You can drink from the brook, and I have commanded the ravens to feed you there.' So Elijah went. And every morning and every evening, ravens flew in carrying bread and meat in their beaks for Elijah! And he drank water from the brook. Ravens are wild birds that usually take food, not give it away. But God can use anything to take care of His people. Elijah didn't need to worry. Even in a drought, God's care was right on time, twice a day.",
+    "scenes": [
+      {
+        "caption": "Wicked King Ahab",
+        "art_direction": "Ahab and Jezebel on thrones in front of a large Baal statue."
+      },
+      {
+        "caption": "Elijah's message",
+        "art_direction": "Elijah, a rugged man in a camel-hair cloak, pointing boldly at Ahab."
+      },
+      {
+        "caption": "No more rain",
+        "art_direction": "Fields drying out and clouds disappearing from the sky."
+      },
+      {
+        "caption": "The Brook Cherith",
+        "art_direction": "Elijah resting beside a small stream in a rocky ravine."
+      },
+      {
+        "caption": "Ravens with dinner!",
+        "art_direction": "Black ravens swooping down carrying bread and meat; Elijah smiling."
+      },
+      {
+        "caption": "Morning and evening",
+        "art_direction": "The same scene at sunrise and sunset, ravens arriving right on time."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 6:26",
+    "text": "Your heavenly Father feeds them. Aren't you of much more value than they?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Your heavenly Father",
+      "feeds them.",
+      "Aren't you",
+      "of much more value",
+      "than they?"
+    ],
+    "distractors": [
+      "forgets them."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh takes care of me, so I can have peace instead of worry.",
+    "reflection_prompt": "God sent ravens to feed Elijah! What is something you've been worried about that you can trust God to take care of?",
+    "reflection_choices": [
+      "Something at home",
+      "Something at school",
+      "Something about the future",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peace"
+  },
+  "quiz": [
+    {
+      "question": "What false god did Ahab and Jezebel worship?",
+      "options": [
+        "Dagon",
+        "Baal",
+        "The golden calf"
+      ],
+      "correct_index": 1,
+      "explanation": "Ahab served Baal and worshiped him, and built an altar for Baal.",
+      "verse_ref": "1 Kings 16:31-32"
+    },
+    {
+      "question": "What did Elijah tell Ahab?",
+      "options": [
+        "There would be no dew or rain",
+        "There would be a flood",
+        "There would be a party"
+      ],
+      "correct_index": 0,
+      "explanation": "Elijah said, 'There shall not be dew nor rain these years, but according to my word.'",
+      "verse_ref": "1 Kings 17:1"
+    },
+    {
+      "question": "How did God feed Elijah by the brook?",
+      "options": [
+        "Angels brought pizza",
+        "Elijah went fishing",
+        "Ravens brought him bread and meat"
+      ],
+      "correct_index": 2,
+      "explanation": "The ravens brought him bread and meat in the morning, and bread and meat in the evening.",
+      "verse_ref": "1 Kings 17:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Heavenly Father, You feed the birds, and You care for me even more. When I start to worry, help me trust You and have peace. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Imagine birds bringing you dinner! God took care of Elijah in the strangest way. He knows exactly what you need too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "palm_branch"
+    ],
+    "unlock": "brook_cherith"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Ahab's evil is summarized; Jezebel is named. Confirm."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 192,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Wisdom Sees the Heart",
+  "scripture_passage": "1 Kings 3:16-28",
+  "story_title": "The Two Mothers",
+  "summary": "Two women came to Solomon, both claiming the same baby. Solomon wisely tested them, and the real mother showed her love by wanting the baby to live. All Israel saw that God had given Solomon wisdom.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "One day, two women came to King Solomon with a big problem. The first woman said, 'My lord, this woman and I live in the same house. We each had a baby boy. But in the night, her baby died. So she got up and switched the babies! She took my son and put her baby beside me. In the morning, I knew it wasn't my son!' The second woman said, 'No! The living baby is mine!' They argued back and forth right in front of the king. There were no witnesses, no tests, nobody else who knew the truth. How could anyone decide? Solomon said, 'Bring me a sword.' The servants brought one. Then Solomon said, 'Divide the living child in two, and give half to each woman.' Of course, Solomon would never really hurt the baby. He was testing their hearts. Right away, the real mother cried out, 'Oh, my lord, give her the baby! Don't hurt him!' She loved her son so much she would rather give him away than see him hurt. But the other woman said, 'Go ahead, divide him.' Then Solomon said, 'Give the baby to the first woman. She is his mother.' When all Israel heard about this, they were amazed. They could see that God had given Solomon wisdom to do what was right.",
+    "scenes": [
+      {
+        "caption": "Two mothers",
+        "art_direction": "Two women standing before Solomon's throne, one holding a baby and the other reaching for it."
+      },
+      {
+        "caption": "A switch in the night",
+        "art_direction": "A shadowy flashback of a dark room; no details of the baby's death shown."
+      },
+      {
+        "caption": "Arguing",
+        "art_direction": "The two women pointing at each other; Solomon listening closely, chin in hand."
+      },
+      {
+        "caption": "'Bring me a sword'",
+        "art_direction": "A servant holding a sword out; Solomon's calm face shows he has a plan. The baby is never threatened on screen."
+      },
+      {
+        "caption": "A mother's love",
+        "art_direction": "The real mother reaching out with tears: 'Give her the baby!'"
+      },
+      {
+        "caption": "All Israel amazed",
+        "art_direction": "People in the streets talking excitedly about the wise king."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 2:6",
+    "text": "For Yahweh gives wisdom. Out of his mouth comes knowledge and understanding.",
+    "translation": "WEB",
+    "tokens": [
+      "For Yahweh",
+      "gives wisdom.",
+      "Out of his mouth",
+      "comes knowledge",
+      "and understanding."
+    ],
+    "distractors": [
+      "comes confusion"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me wisdom to see what's true and do what's right.",
+    "reflection_prompt": "Solomon used wisdom to find out the truth. When is a time you needed wisdom to know what was right?",
+    "reflection_choices": [
+      "When friends disagreed",
+      "When I didn't know who was telling the truth",
+      "When I had to make a choice",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What problem did the two women bring to Solomon?",
+      "options": [
+        "They lost their sheep",
+        "They both said the same baby was theirs",
+        "Their house burned down"
+      ],
+      "correct_index": 1,
+      "explanation": "The one said, 'The living one is my son,' and the other said, 'No, the dead one is your son.'",
+      "verse_ref": "1 Kings 3:22"
+    },
+    {
+      "question": "How did the real mother show her love?",
+      "options": [
+        "She asked Solomon to give the baby to the other woman so he would live",
+        "She ran away",
+        "She shouted the loudest"
+      ],
+      "correct_index": 0,
+      "explanation": "She said, 'Oh, my lord, give her the living child, and in no way kill him!'",
+      "verse_ref": "1 Kings 3:26"
+    },
+    {
+      "question": "What did all Israel see about Solomon?",
+      "options": [
+        "He was very tall",
+        "He had lots of gold",
+        "The wisdom of God was in him"
+      ],
+      "correct_index": 2,
+      "explanation": "They saw that the wisdom of God was in him, to do justice.",
+      "verse_ref": "1 Kings 3:28"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You give wisdom! Help me see what's true and do what's right, even when things are confusing. Fill me with Your understanding. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "That was my first big test as king! I didn't know who was telling the truth, but God showed me how to see their hearts. Real love always protects."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "A baby's death (3:19) is mentioned; Solomon's order to divide the child (3:24-25) is included, with the narration stating plainly that he would never really hurt the baby. No harm shown. Confirm."
+  }
+}

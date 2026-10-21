@@ -1,0 +1,121 @@
+{
+  "day": 211,
+  "month": 7,
+  "realm": 31,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Never Too Young",
+  "scripture_passage": "2 Kings 11:1-21; 12:9-15",
+  "story_title": "Joash, the Hidden Prince",
+  "summary": "When wicked Queen Athaliah tried to wipe out the royal family, baby Joash was rescued and hidden in God's temple for six years. At seven years old, he was crowned king, and later he repaired the temple.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "In the southern kingdom of Judah, a wicked woman named Athaliah wanted to be queen so badly that she tried to destroy the whole royal family. But one brave woman named Jehosheba, the king's sister, rescued her baby nephew, Joash. She hid him and his nurse in a bedroom, and then in the temple of Yahweh. For six whole years, little Joash grew up secretly in God's house, while Athaliah ruled the land. Imagine playing hide-and-seek for six years! When Joash was seven years old, the priest Jehoiada made a brave plan. He gathered the temple guards and gave them King David's own spears and shields from the temple. They stood all around the young prince. Then Jehoiada brought Joash out, put the crown on his head, gave him a copy of God's law, and anointed him king. The people clapped their hands and shouted, 'Long live the king!' Joash was only seven years old when he became king! Jehoiada taught him to follow Yahweh. When Joash grew up, he noticed that God's temple was falling apart. So he had a chest made with a hole in its lid and placed it beside the altar. People brought their offerings and dropped them in. The money was used to pay carpenters, builders, and stonemasons to repair God's house. You are never too young for God to use you.",
+    "scenes": [
+      {
+        "caption": "A wicked queen",
+        "art_direction": "Athaliah on a dark throne, scheming; nothing violent shown."
+      },
+      {
+        "caption": "A brave rescue",
+        "art_direction": "Jehosheba scooping up baby Joash and hurrying through a secret corridor."
+      },
+      {
+        "caption": "Hidden in the temple",
+        "art_direction": "Little Joash growing up among the temple's golden lamps and quiet halls."
+      },
+      {
+        "caption": "Six years of hide-and-seek",
+        "art_direction": "Joash peeking out playfully from behind temple curtains; a counter from 1 to 6."
+      },
+      {
+        "caption": "'Long live the king!'",
+        "art_direction": "Seven-year-old Joash with a crown that's a little too big, guards all around, crowds clapping."
+      },
+      {
+        "caption": "The offering chest",
+        "art_direction": "A wooden chest with a hole in its lid; people happily dropping in coins; builders repairing the temple."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Ecclesiastes 12:1",
+    "text": "Remember also your Creator in the days of your youth",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Remember also",
+      "your Creator",
+      "in the days",
+      "of your youth"
+    ],
+    "distractors": [
+      "when you are old"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am never too young for Yahweh to use me for something good.",
+    "reflection_prompt": "Joash became king at seven and later repaired God's house! What is something good you could do for God right now, even though you're young?",
+    "reflection_choices": [
+      "Help at church",
+      "Pray for someone",
+      "Give to people in need",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "goodness"
+  },
+  "quiz": [
+    {
+      "question": "How long was Joash hidden in the temple?",
+      "options": [
+        "Six days",
+        "Six years",
+        "Six months"
+      ],
+      "correct_index": 1,
+      "explanation": "He was with her hidden in Yahweh's house six years.",
+      "verse_ref": "2 Kings 11:3"
+    },
+    {
+      "question": "How old was Joash when he became king?",
+      "options": [
+        "Seven",
+        "Twenty",
+        "Thirty"
+      ],
+      "correct_index": 0,
+      "explanation": "Jehoash was seven years old when he began to reign.",
+      "verse_ref": "2 Kings 11:21"
+    },
+    {
+      "question": "What did Joash use to collect money to repair the temple?",
+      "options": [
+        "A bag",
+        "A barrel",
+        "A chest with a hole in its lid"
+      ],
+      "correct_index": 2,
+      "explanation": "Jehoiada the priest took a chest, bored a hole in its lid, and set it beside the altar.",
+      "verse_ref": "2 Kings 12:9"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I'm never too young for You to use me. Help me remember You now, while I'm young, and help me do good things for You. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Joash grew up in God's house, just like Samuel did. A seven-year-old king! God loves to use young people. That includes you!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "gold_thread"
+    ],
+    "unlock": "offering_chest"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Athaliah murders the royal family (2 Kings 11:1), described as 'tried to destroy the whole royal family'; nothing shown. Athaliah's execution (11:13-16) is omitted. Joash's later decline (2 Chronicles 24:17-25) is omitted. Confirm."
+  }
+}

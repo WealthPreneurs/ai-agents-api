@@ -1,0 +1,113 @@
+{
+  "day": 189,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: A Clean Heart",
+  "scripture_passage": "Psalm 32:1-5; 51",
+  "story_title": "The Joy of Being Forgiven",
+  "summary": "In Psalm 32, David wrote about how miserable he felt when he kept his sin a secret, and how happy he was when he confessed and God forgave him. Sabbath Camp looks back at David's hard week.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! This was a heavy week, but it ends with joy. David wrote another song about what happened, Psalm 32. 'Blessed is the one whose disobedience is forgiven, whose sin is covered! When I kept silent, my bones wasted away from my groaning all day long. Day and night, Your hand was heavy on me. My strength dried up like in the summer heat.' Keeping a secret sin made David feel miserable inside and out. Then David wrote, 'I admitted my sin to You. I didn't hide my wrongdoing. I said, I will confess my sins to Yahweh, and You forgave the guilt of my sin.' What a relief! Let's remember this week. King David stayed home and didn't guard his eyes. He took what wasn't his, then tried to cover it up, which made everything worse. God sent Nathan to tell him the truth: 'You are the man!' David said, 'I have sinned,' and God forgave him. There were painful consequences, but God's grace kept going, and He gave David a son named Solomon. And David prayed, 'Create in me a clean heart.' This week's big truth: Yahweh gives you a clean heart when you tell the truth. You don't have to hide. Confessing leads to freedom and joy.",
+    "scenes": [
+      {
+        "caption": "Camp in the snow garden",
+        "art_direction": "Campfire in the child's village beside a sparkling snow-white garden and the little lamb."
+      },
+      {
+        "caption": "Keeping it secret",
+        "art_direction": "David slumped and gray, carrying a heavy sack labeled 'secret.'"
+      },
+      {
+        "caption": "Telling the truth",
+        "art_direction": "David dropping the sack and lifting his hands to God; color rushing back into the scene."
+      },
+      {
+        "caption": "A clean heart",
+        "art_direction": "The child's avatar holding a bright, clean heart, smiling."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 51:10",
+    "text": "Create in me a clean heart, O God. Renew a right spirit within me.",
+    "translation": "WEB",
+    "tokens": [
+      "Create in me",
+      "a clean heart,",
+      "O God.",
+      "Renew",
+      "a right spirit",
+      "within me."
+    ],
+    "distractors": [
+      "a heavy spirit"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me a clean heart when I tell the truth.",
+    "reflection_prompt": "Milestone: Yahweh gives you a clean heart! Your first piece of Character Armor is the Belt of Truth. Draw it in your Blueprint journal and write: 'I don't have to hide.'",
+    "reflection_choices": [
+      "I can tell the truth",
+      "God forgives me",
+      "I don't have to hide",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "How did David feel when he kept his sin a secret?",
+      "options": [
+        "Happy and strong",
+        "Miserable, like his strength dried up",
+        "Proud"
+      ],
+      "correct_index": 1,
+      "explanation": "David wrote, 'When I kept silence, my bones wasted away... my strength was sapped.'",
+      "verse_ref": "Psalm 32:3-4"
+    },
+    {
+      "question": "What happened when David confessed his sin?",
+      "options": [
+        "God forgave him",
+        "God ignored him",
+        "Nothing changed"
+      ],
+      "correct_index": 0,
+      "explanation": "David wrote, 'I said, I will confess my transgressions to Yahweh, and you forgave the iniquity of my sin.'",
+      "verse_ref": "Psalm 32:5"
+    },
+    {
+      "question": "What did David ask God to create in him?",
+      "options": [
+        "A new palace",
+        "A new army",
+        "A clean heart"
+      ],
+      "correct_index": 2,
+      "explanation": "David prayed, 'Create in me a clean heart, O God.'",
+      "verse_ref": "Psalm 51:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Create in me a clean heart, O God. Thank You that I don't have to hide anything from You. When I tell You the truth, You forgive me and give me joy. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Realm 27 complete! You've earned your first piece of Character Armor: the Belt of Truth. Next week, you'll hear my story, when God asked me what gift I wanted most."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "belt_of_truth"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Introduces Character Armor pieces named after Ephesians 6:14-17: Belt of Truth (realm 27), Sword of the Spirit (28), Shoes of Peace (29), Shield of Faith (30), Breastplate of Righteousness (31). Omits David's later family troubles (2 Samuel 13-20: Amnon, Absalom's rebellion). Confirm."
+  }
+}

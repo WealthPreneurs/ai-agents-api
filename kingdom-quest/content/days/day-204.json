@@ -1,0 +1,121 @@
+{
+  "day": 204,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Faithful to the End",
+  "scripture_passage": "1 Kings 19:19-21; 2 Kings 2:1-6",
+  "story_title": "Elisha Follows",
+  "summary": "Elijah threw his cloak over Elisha while he was plowing, calling him to follow. Elisha said goodbye to his family and followed. Years later, Elisha refused to leave Elijah's side, even when Elijah told him to stay.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Elijah left the mountain and found a young man named Elisha plowing a field. Elisha was working with twelve pairs of oxen. That's a big farm! Elijah walked up and threw his prophet's cloak over Elisha's shoulders. That meant, 'Come follow me and learn to be a prophet.' Elisha ran after Elijah and said, 'Please let me kiss my father and mother goodbye, and then I'll follow you!' Then Elisha did something amazing. He took his oxen, used the wooden plow for firewood, cooked the meat, and gave it to the people to eat. He was saying, 'I'm not coming back to this old life. I'm all in!' Then he followed Elijah and served him. Years went by. One day, Yahweh was about to take Elijah up to heaven in a whirlwind. Elijah and Elisha were walking together, and Elijah said, 'Stay here. Yahweh has sent me to Bethel.' But Elisha said, 'As surely as Yahweh lives, I will not leave you.' At Bethel, Elijah said, 'Stay here. Yahweh has sent me to Jericho.' Elisha said again, 'I will not leave you.' Then at Jericho, Elijah said, 'Stay here. Yahweh has sent me to the Jordan.' And a third time Elisha said, 'I will not leave you!' Elisha was faithful. He stayed close all the way to the end.",
+    "scenes": [
+      {
+        "caption": "Twelve pairs of oxen",
+        "art_direction": "Young Elisha plowing a big field with a long line of oxen."
+      },
+      {
+        "caption": "The cloak",
+        "art_direction": "Elijah throwing his rough cloak over Elisha's shoulders."
+      },
+      {
+        "caption": "Goodbye, Mom and Dad",
+        "art_direction": "Elisha hugging his parents at their farmhouse."
+      },
+      {
+        "caption": "All in!",
+        "art_direction": "Elisha cooking over a fire made from his plow, sharing meat with neighbors."
+      },
+      {
+        "caption": "'Stay here'",
+        "art_direction": "Elijah pointing for Elisha to stay as they walk past a signpost to Bethel."
+      },
+      {
+        "caption": "'I will not leave you!'",
+        "art_direction": "Elisha shaking his head firmly three times at three different signposts."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Luke 9:62",
+    "text": "No one, having put his hand to the plow, and looking back, is fit for God's Kingdom.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "No one,",
+      "having put his hand",
+      "to the plow,",
+      "and looking back,",
+      "is fit",
+      "for God's Kingdom."
+    ],
+    "distractors": [
+      "is fit for a nap."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay faithful and follow Yahweh all the way.",
+    "reflection_prompt": "Elisha said, 'I will not leave you!' three times. What helps you stay faithful to God when it gets hard?",
+    "reflection_choices": [
+      "Friends who follow God too",
+      "Remembering His promises",
+      "Praying every day",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What was Elisha doing when Elijah found him?",
+      "options": [
+        "Fishing",
+        "Plowing with twelve pairs of oxen",
+        "Sleeping"
+      ],
+      "correct_index": 1,
+      "explanation": "Elisha was plowing, with twelve yoke of oxen before him.",
+      "verse_ref": "1 Kings 19:19"
+    },
+    {
+      "question": "What did Elijah throw over Elisha?",
+      "options": [
+        "His cloak",
+        "A rope",
+        "A blanket"
+      ],
+      "correct_index": 0,
+      "explanation": "Elijah passed over to him and put his mantle on him.",
+      "verse_ref": "1 Kings 19:19"
+    },
+    {
+      "question": "What did Elisha say each time Elijah told him to stay?",
+      "options": [
+        "'Okay, goodbye.'",
+        "'I'm tired.'",
+        "'I will not leave you.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Elisha said, 'As Yahweh lives, and as your soul lives, I will not leave you.'",
+      "verse_ref": "2 Kings 2:2"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to follow You all the way, without looking back. Help me stay faithful to You and to the people You've put in my life. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Elisha burned his plow! He was all in. And he stayed by Elijah's side every step. That's what faithfulness looks like."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "elishas_plow_fire"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

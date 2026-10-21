@@ -11,7 +11,7 @@ built on.
 |---|---|
 | `content/curriculum.json` | The Great Map: 12 Regions, 52 Realms, the four identity phases, weekly milestones and anchor verses |
 | `content/catalog.json` | Traits, Identity Badges, Character Companions, Kingdom Builder materials |
-| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–6 (days 1–182) plus sample day 365 |
+| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–7 (days 1–217) plus sample day 365 |
 | `schema/daily-node.schema.json` | JSON Schema for a daily Checkpoint |
 | `supabase/schema.sql` | Family accounts, progress, journal, badges, wallet, village, with row-level security |
 | `scripts/validate-content.js` | Content checker: `npm run validate:kingdom-quest` from the repo root |
@@ -97,7 +97,7 @@ calendar month, and a child can start on any date.
 | 4 | The Wilderness Frontier | Numbers, Deuteronomy, Joshua | 14–17 |
 | 5 | The Valley of Heroes | Judges, Ruth | 18–21 |
 | 6 | The Shepherd's Hills | 1–2 Samuel, Psalms | 22–26 |
-| 7 | The Kingdom of Wisdom | 2 Samuel, 1–2 Kings, Proverbs | 27–31 |
+| 7 | The Kingdom of Wisdom | 2 Samuel, 1–2 Kings, 2 Chronicles, Psalms, Proverbs | 27–31 |
 | 8 | The Prophets' Watchtower | Isaiah, Jonah, Jeremiah, Daniel, Esther | 32–36 |
 | 9 | The City of Rebuilders | Ezra, Nehemiah, Malachi, Luke 1 | 37–40 |
 | 10 | The King Arrives | The Gospels | 41–44 |
@@ -107,7 +107,8 @@ calendar month, and a child can start on any date.
 **A daily Checkpoint (about 10 minutes).**
 
 1. **Story Reel** (60–150 s). Animated, narrated retelling with captions.
-   Pause, replay, and audio-only are always available.
+   Pause, replay, and audio-only are always available. Character Armor weeks
+   (27–39) award one piece of Ephesians 6 armor at each Sabbath Camp.
 2. **Memory Gem.** The key verse is split into 3–8 chunks (`memory_verse.tokens`).
    The child taps chunks into order. Ages 10–12 can turn on Challenge mode,
    which adds decoy chunks (`distractors`). Verses quote the World English
@@ -336,7 +337,8 @@ See `schema/daily-node.schema.json` and `content/days/day-158.json`.
 
 1. Author a Checkpoint as JSON (or in the content studio, which writes the same
    JSON).
-2. `npm run validate:kingdom-quest` checks the schema rules and the map math.
+2. `npm run validate:kingdom-quest` checks the schema rules, the map math, and
+   narration pace (at most 1.65 words per second of reel, about 100 wpm).
 3. A theology reviewer checks the narration, quiz, and prayer against the text
    and sets `review.status` to `theology_reviewed`, recording their name in
    `review.reviewers` (the validator won't accept a `published` node without a
@@ -359,9 +361,8 @@ the translation.
 | v1 (full year) | All 12 region packs, all companions, Kingdom Builder, AI badges with opt-in, Rest & Restore |
 | v1.1 | Voice and drawing journal entries, family devotion mode (parent + child), Spanish |
 
-Today this folder has the full year's map, Regions 1–6 (days 1–182: Creation
-through King David, the whole Foundation and Gifts & Passions phases), and the
-day 365 sample. The remaining 182 Checkpoints follow the same schema. Days with
-sensitive content (death, judgment, the binding of Isaac, the plagues, the
-conquest of Canaan, and the violence in Judges and Samuel) carry `review.notes`
-for the theology reviewer.
+Today this folder has the full year's map, Regions 1–7 (days 1–217: Creation
+through Josiah), and the day 365 sample. The remaining 147 Checkpoints follow
+the same schema. Days with sensitive content (death, judgment, the binding of
+Isaac, the plagues, the conquest of Canaan, violence in Judges and Samuel, and
+David and Bathsheba) carry `review.notes` for the theology reviewer.

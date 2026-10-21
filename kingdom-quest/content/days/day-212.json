@@ -1,0 +1,120 @@
+{
+  "day": 212,
+  "month": 7,
+  "realm": 31,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Bringing My Problems to God",
+  "scripture_passage": "2 Kings 18:1-7; 19:14-36",
+  "story_title": "Hezekiah Trusts God",
+  "summary": "King Hezekiah trusted Yahweh like no other king. When the mighty king of Assyria sent a threatening letter, Hezekiah spread it out before Yahweh in the temple and prayed. God rescued Jerusalem.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Years later, a king named Hezekiah came to the throne of Judah when he was twenty-five years old. He did what was right in Yahweh's eyes, just like King David. He tore down the places where people worshiped idols. He even broke into pieces the old bronze snake that Moses had made in the wilderness, because people had started worshiping it like an idol! The Bible says Hezekiah trusted in Yahweh, the God of Israel. There was no king like him, before or after. During this time, the mighty empire of Assyria had already conquered the northern kingdom of Israel, because the people there had turned away from God for so long. Now the king of Assyria, Sennacherib, surrounded Jerusalem with his huge army. He sent Hezekiah a scary letter: 'Don't let your God fool you! No god of any nation has ever saved them from me!' Hezekiah read the letter. Then he went up to the temple and spread the letter out before Yahweh. He prayed, 'Yahweh, You alone are God of all the kingdoms of the earth. You made heaven and earth. Listen to these insults! Now save us, so all the kingdoms of the earth will know that You alone are God.' That night, God sent His angel against the Assyrian army, and Sennacherib went home and never came back. When you're scared, you can do what Hezekiah did: bring your problem to God and spread it out before Him.",
+    "scenes": [
+      {
+        "caption": "A good king",
+        "art_direction": "Young King Hezekiah, age 25, with a kind face, smashing idol altars."
+      },
+      {
+        "caption": "Breaking the bronze snake",
+        "art_direction": "Hezekiah breaking an old bronze snake on a pole as people gasp; callback to Moses."
+      },
+      {
+        "caption": "The north falls",
+        "art_direction": "A map: the northern kingdom fading as Assyria's armies march in."
+      },
+      {
+        "caption": "A huge army",
+        "art_direction": "Assyrian soldiers camped all around Jerusalem's walls."
+      },
+      {
+        "caption": "A scary letter",
+        "art_direction": "Hezekiah reading a scroll with a worried face."
+      },
+      {
+        "caption": "Spread out before God",
+        "art_direction": "Hezekiah laying the letter flat on the temple floor, kneeling and praying, as warm light fills the room."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Kings 18:5",
+    "text": "He trusted in Yahweh, the God of Israel",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "He trusted",
+      "in Yahweh,",
+      "the God of Israel"
+    ],
+    "distractors": [
+      "in his army,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can bring my problems to Yahweh and spread them out before Him in prayer.",
+    "reflection_prompt": "Hezekiah spread his scary letter out before God. What problem would you like to 'spread out' before God today?",
+    "reflection_choices": [
+      "Something that scares me",
+      "A problem with a friend",
+      "Something I'm worried about",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did Hezekiah break into pieces?",
+      "options": [
+        "A golden calf",
+        "The bronze snake Moses had made",
+        "A stone tablet"
+      ],
+      "correct_index": 1,
+      "explanation": "He broke in pieces the bronze serpent that Moses had made, for the children of Israel burned incense to it.",
+      "verse_ref": "2 Kings 18:4"
+    },
+    {
+      "question": "What does the Bible say about Hezekiah?",
+      "options": [
+        "He trusted in Yahweh",
+        "He was the tallest king",
+        "He had the most horses"
+      ],
+      "correct_index": 0,
+      "explanation": "He trusted in Yahweh, the God of Israel; so that after him was no one like him.",
+      "verse_ref": "2 Kings 18:5"
+    },
+    {
+      "question": "What did Hezekiah do with the threatening letter?",
+      "options": [
+        "He burned it",
+        "He threw it away",
+        "He spread it out before Yahweh in the temple"
+      ],
+      "correct_index": 2,
+      "explanation": "Hezekiah went up to Yahweh's house, and spread it before Yahweh.",
+      "verse_ref": "2 Kings 19:14"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You alone are God. When I'm scared or worried, help me bring my problems to You like Hezekiah did and trust You to help. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "Imagine getting a scary letter like that! Hezekiah didn't panic. He took it straight to God. That's what trusting God looks like."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "hezekiahs_letter"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The angel strikes 185,000 Assyrians (2 Kings 19:35); narration says only 'God sent His angel against the Assyrian army.' Sennacherib's assassination (19:37) is omitted. The fall of the northern kingdom (2 Kings 17-18:12) is summarized in one sentence. Confirm."
+  }
+}

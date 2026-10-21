@@ -1,0 +1,122 @@
+{
+  "day": 205,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God Is With Me Too",
+  "scripture_passage": "2 Kings 2:7-15",
+  "story_title": "The Chariot of Fire",
+  "summary": "Elijah parted the Jordan with his cloak. Elisha asked for a double portion of his spirit. Then a chariot of fire separated them, and Elijah went up to heaven in a whirlwind. Elisha picked up the cloak and parted the river too.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Elijah and Elisha came to the Jordan River. Fifty prophets stood watching from far away. Elijah took off his cloak, rolled it up, and struck the water. The river split in two, and the two men walked across on dry ground! On the other side, Elijah said, 'Tell me, what can I do for you before I am taken away?' Elisha said, 'Please let me have a double portion of your spirit.' He wanted to be filled with God's Spirit to keep doing God's work. Elijah said, 'You've asked a hard thing. But if you see me when I'm taken, it will be yours.' As they kept walking and talking, suddenly a chariot of fire and horses of fire appeared and came between them! And Elijah went up to heaven in a whirlwind! Elisha saw it and cried out, 'My father, my father!' And then Elijah was gone. Elisha tore his own clothes in sadness. Then he picked up Elijah's cloak, which had fallen. He walked back to the Jordan River, struck the water with the cloak, and said, 'Where is Yahweh, the God of Elijah?' And the water split in two again! The prophets watching said, 'The spirit of Elijah rests on Elisha!' Elijah was gone, but God wasn't. The same God who was with Elijah was with Elisha. And He's with you too.",
+    "scenes": [
+      {
+        "caption": "At the Jordan",
+        "art_direction": "Fifty prophets on a distant hill watching Elijah and Elisha at the river."
+      },
+      {
+        "caption": "Rolled-up cloak",
+        "art_direction": "Elijah striking the water with his cloak; the river parts."
+      },
+      {
+        "caption": "A double portion",
+        "art_direction": "Elisha asking humbly; a glowing double symbol appears."
+      },
+      {
+        "caption": "Chariot of fire!",
+        "art_direction": "A blazing chariot and fiery horses swooping between the two men."
+      },
+      {
+        "caption": "Into the whirlwind",
+        "art_direction": "Elijah rising up into a swirling column of wind and light."
+      },
+      {
+        "caption": "'Where is the God of Elijah?'",
+        "art_direction": "Elisha striking the water with the fallen cloak; the river parts again."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 16:8",
+    "text": "I have set Yahweh always before me. Because he is at my right hand, I shall not be moved.",
+    "translation": "WEB",
+    "tokens": [
+      "I have set Yahweh",
+      "always before me.",
+      "Because he is",
+      "at my right hand,",
+      "I shall not",
+      "be moved."
+    ],
+    "distractors": [
+      "be scared away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh, who was with the heroes of the Bible, is with me too.",
+    "reflection_prompt": "Elisha asked, 'Where is the God of Elijah?' and God showed He was right there. Who is someone whose faith in God you admire?",
+    "reflection_choices": [
+      "A parent or grandparent",
+      "A pastor or teacher",
+      "A Bible hero",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "What did Elijah use to part the Jordan River?",
+      "options": [
+        "His staff",
+        "His rolled-up cloak",
+        "A trumpet"
+      ],
+      "correct_index": 1,
+      "explanation": "Elijah took his mantle, rolled it up, and struck the waters, and they were divided.",
+      "verse_ref": "2 Kings 2:8"
+    },
+    {
+      "question": "What did Elisha ask for?",
+      "options": [
+        "A double portion of Elijah's spirit",
+        "Gold",
+        "A chariot"
+      ],
+      "correct_index": 0,
+      "explanation": "Elisha said, 'Please let a double portion of your spirit be on me.'",
+      "verse_ref": "2 Kings 2:9"
+    },
+    {
+      "question": "How did Elijah go up to heaven?",
+      "options": [
+        "He climbed a mountain",
+        "On a big bird",
+        "In a whirlwind, with a chariot of fire"
+      ],
+      "correct_index": 2,
+      "explanation": "A chariot of fire and horses of fire separated them, and Elijah went up by a whirlwind into heaven.",
+      "verse_ref": "2 Kings 2:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You were with Elijah and Elisha, and You are with me. Help me set You always before me, so I won't be moved. Fill me with Your Spirit. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "A chariot of fire! I would have loved to see that. But I love even more what Elisha learned: the God of Elijah was still right there with him."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "linen"
+    ],
+    "unlock": "chariot_of_fire"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits 2 Kings 2:23-25 (the youths and the bears). Confirm."
+  }
+}

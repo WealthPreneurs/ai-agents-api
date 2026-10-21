@@ -1,0 +1,122 @@
+{
+  "day": 190,
+  "month": 7,
+  "realm": 28,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Following God's Ways",
+  "scripture_passage": "1 Kings 1:28-40; 2:1-10",
+  "story_title": "Long Live King Solomon!",
+  "summary": "When David was old, he chose Solomon to be the next king. Solomon was anointed with oil, the trumpet blew, and the people shouted, 'Long live King Solomon!' David told Solomon to walk in God's ways.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "King David grew very old. Before he died, he made sure the next king would be the one God had chosen: his son Solomon. David said, 'Put Solomon on my own mule, and take him down to the Gihon Spring. Let Zadok the priest and Nathan the prophet anoint him king over Israel. Then blow the trumpet and shout, Long live King Solomon!' So that's exactly what they did. Zadok took the horn of oil from the Tabernacle and poured it on Solomon's head. They blew the trumpet, and all the people shouted, 'Long live King Solomon!' Then everyone followed Solomon, playing flutes and celebrating so loudly that the ground shook with the sound! Later, when David was about to die, he called Solomon to his side and gave him his last advice. 'I'm going the way of all the earth. Be strong, and show yourself a man. Keep the charge of Yahweh your God. Walk in His ways and keep His commandments, as it is written in the Law of Moses. Then you will prosper in everything you do and wherever you go.' Then David died and was buried in the City of David. Now young Solomon was king. He had big shoes to fill, and he knew he needed help.",
+    "scenes": [
+      {
+        "caption": "An old king",
+        "art_direction": "Elderly David in bed, speaking firmly to Nathan and Zadok."
+      },
+      {
+        "caption": "On David's mule",
+        "art_direction": "Young Solomon riding the king's mule down to the Gihon Spring."
+      },
+      {
+        "caption": "Anointed",
+        "art_direction": "Zadok pouring oil from a horn over Solomon's head."
+      },
+      {
+        "caption": "'Long live King Solomon!'",
+        "art_direction": "A trumpet blast and a huge cheering crowd."
+      },
+      {
+        "caption": "The ground shook",
+        "art_direction": "Crowds playing flutes and dancing so joyfully that pebbles bounce on the ground."
+      },
+      {
+        "caption": "A father's last words",
+        "art_direction": "David holding Solomon's hand, speaking softly as candlelight glows."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Chronicles 28:9",
+    "text": "know the God of your father, and serve him with a perfect heart and with a willing mind",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "know the God",
+      "of your father,",
+      "and serve him",
+      "with a perfect heart",
+      "and with a willing mind"
+    ],
+    "distractors": [
+      "and with a grumpy mind"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can choose to know Yahweh for myself and walk in His ways.",
+    "reflection_prompt": "David told Solomon to walk in God's ways. What advice about God has someone in your family given you?",
+    "reflection_choices": [
+      "Always pray",
+      "Tell the truth",
+      "Love others",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "Where was Solomon anointed king?",
+      "options": [
+        "In Bethlehem",
+        "At the Gihon Spring",
+        "On Mount Sinai"
+      ],
+      "correct_index": 1,
+      "explanation": "They brought Solomon down to Gihon, and Zadok the priest anointed him.",
+      "verse_ref": "1 Kings 1:38-39"
+    },
+    {
+      "question": "What did the people shout?",
+      "options": [
+        "'Long live King Solomon!'",
+        "'Hooray for David!'",
+        "'Let's go home!'"
+      ],
+      "correct_index": 0,
+      "explanation": "All the people said, 'Long live King Solomon!'",
+      "verse_ref": "1 Kings 1:39"
+    },
+    {
+      "question": "What did David tell Solomon before he died?",
+      "options": [
+        "Build a big army",
+        "Become very rich",
+        "Walk in God's ways and keep His commandments"
+      ],
+      "correct_index": 2,
+      "explanation": "David said, 'Keep the instruction of Yahweh your God, to walk in his ways.'",
+      "verse_ref": "1 Kings 2:3"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to know You for myself, not just hear about You. Help me walk in Your ways and serve You with my whole heart and a willing mind. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "When I heard the crowds shouting my name, the ground literally shook! But my father's last words stayed with me most: 'Walk in God's ways.'"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "gold_thread"
+    ],
+    "unlock": "gihon_spring"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits Adonijah's attempt to take the throne (1 Kings 1:5-27) and David's instructions about Joab and Shimei (2:5-9). Confirm."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 184,
+  "month": 7,
+  "realm": 27,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Hiding Makes It Worse",
+  "scripture_passage": "2 Samuel 11:6-27",
+  "story_title": "Covering Up",
+  "summary": "David tried to hide his sin. When his plans didn't work, he did something even worse: he had loyal Uriah sent to the most dangerous part of the battle, where he was killed. But what David had done displeased Yahweh.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "David didn't want anyone to find out what he had done. So he tried to cover it up. He called Uriah home from the battle and told him, 'Go home and rest with your wife.' But Uriah was so loyal that he slept at the palace door with the king's servants instead. He said, 'The ark and the army are camping in tents in the open field. How could I go home and relax? I won't do it!' David tried again the next night, but Uriah still wouldn't go home. Uriah was a better man than David in that moment. So David did something terrible. He wrote a letter to Joab, his army commander, and sent it with Uriah himself. The letter said, 'Put Uriah in the front line where the fighting is fiercest, and then pull back so he will be killed.' Joab did what the king said, and Uriah died in the battle. After Bathsheba mourned for her husband, David married her, and she had a son. David thought his secret was safe. Nobody knew. But the Bible says one important sentence: 'The thing David had done displeased Yahweh.' Trying to hide a sin almost always leads to more sin. God sees everything. And He loves us too much to let us keep hiding.",
+    "scenes": [
+      {
+        "caption": "Called home",
+        "art_direction": "Uriah arriving at the palace in dusty armor, saluting David."
+      },
+      {
+        "caption": "Loyal Uriah",
+        "art_direction": "Uriah sleeping on a mat by the palace door instead of going home."
+      },
+      {
+        "caption": "'I won't do it!'",
+        "art_direction": "Uriah speaking with honor, pointing toward the battlefield."
+      },
+      {
+        "caption": "A terrible letter",
+        "art_direction": "David writing a scroll by lamplight, his face troubled; the scroll sealed."
+      },
+      {
+        "caption": "The battle",
+        "art_direction": "Distant view of city walls and dust; nothing shown of Uriah's death."
+      },
+      {
+        "caption": "God sees",
+        "art_direction": "David alone in his palace; a soft light shining through the window on him."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Luke 8:17",
+    "text": "For nothing is hidden, that will not be made visible; nor anything secret, that will not be known and come to light.",
+    "translation": "WEB",
+    "tokens": [
+      "For nothing is hidden,",
+      "that will not be",
+      "made visible;",
+      "nor anything secret,",
+      "that will not be known",
+      "and come to light."
+    ],
+    "distractors": [
+      "and stay in the dark."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to hide my wrong choices, because Yahweh sees me and loves me.",
+    "reflection_prompt": "David tried to cover up his sin, and it made things worse. Why do you think it's better to tell the truth right away?",
+    "reflection_choices": [
+      "Hiding leads to more lies",
+      "God already knows",
+      "It helps make things right",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "Why wouldn't Uriah go home to rest?",
+      "options": [
+        "He was too tired",
+        "Because the army and the ark were camping in the field",
+        "He was angry"
+      ],
+      "correct_index": 1,
+      "explanation": "Uriah said, 'The ark, Israel, and Judah stay in tents... shall I then go into my house?'",
+      "verse_ref": "2 Samuel 11:11"
+    },
+    {
+      "question": "Who did David send the letter with?",
+      "options": [
+        "Uriah himself",
+        "Nathan",
+        "Bathsheba"
+      ],
+      "correct_index": 0,
+      "explanation": "David wrote a letter to Joab, and sent it by the hand of Uriah.",
+      "verse_ref": "2 Samuel 11:14"
+    },
+    {
+      "question": "What did Yahweh think about what David had done?",
+      "options": [
+        "He didn't notice",
+        "He was pleased",
+        "It displeased Him"
+      ],
+      "correct_index": 2,
+      "explanation": "The thing that David had done displeased Yahweh.",
+      "verse_ref": "2 Samuel 11:27"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You see everything, and You still love me. When I do something wrong, help me not to hide it or cover it up, but to bring it into the light. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "This is the hardest part of my father's story. Uriah was a good and loyal man. My father's cover-up hurt so many people. Hiding never fixes sin."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: David arranges Uriah's death (2 Samuel 11:14-17). Stated plainly; nothing shown. Part of the parent heads-up week. Confirm wording for ages 7-9."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 209,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God Cares About Small Things",
+  "scripture_passage": "2 Kings 6:1-7",
+  "story_title": "The Floating Axe Head",
+  "summary": "While a group of prophets was cutting trees, one man's borrowed axe head flew off and sank in the river. Elisha threw a stick into the water, and the iron axe head floated to the top.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "The group of prophets who learned from Elisha was growing. One day they said, 'Our meeting place is too small! Let's go down to the Jordan River. Each of us can cut down a tree, and we'll build a bigger place.' Elisha said, 'Go ahead.' Someone asked, 'Will you come with us?' Elisha said, 'I'll come.' So they went down to the river and started chopping trees. Chop, chop, chop! But suddenly, as one man was swinging his axe, the iron axe head flew off the handle and splashed into the river! It sank to the bottom. The man cried out, 'Oh no, my master! It was borrowed!' In those days, iron tools were very expensive. He couldn't afford to pay it back, and he felt terrible about losing something that belonged to someone else. Elisha asked, 'Where did it fall?' The man showed him the spot. Elisha cut a stick and threw it into the water there. And the heavy iron axe head floated up to the top! Elisha said, 'Pick it up.' So the man reached out and grabbed it. This might seem like a small miracle compared to fire from heaven or chariots of fire. But it shows us something wonderful: God cares about the little things that worry us too.",
+    "scenes": [
+      {
+        "caption": "Too small!",
+        "art_direction": "A crowd of young prophets squeezed into a tiny room; comedic."
+      },
+      {
+        "caption": "Down to the river",
+        "art_direction": "The group carrying axes toward the riverbank, Elisha among them."
+      },
+      {
+        "caption": "Chop, chop, chop!",
+        "art_direction": "Busy tree-cutting by the water; wood chips flying."
+      },
+      {
+        "caption": "Splash!",
+        "art_direction": "An iron axe head flying off the handle and splashing into the river."
+      },
+      {
+        "caption": "'It was borrowed!'",
+        "art_direction": "The man with his hands on his head, looking worried."
+      },
+      {
+        "caption": "It floats!",
+        "art_direction": "The iron axe head bobbing up to the surface beside a floating stick; the man grabbing it with joy."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Peter 5:7",
+    "text": "casting all your worries on him, because he cares for you.",
+    "translation": "WEB",
+    "tokens": [
+      "casting",
+      "all your worries",
+      "on him,",
+      "because he",
+      "cares for you."
+    ],
+    "distractors": [
+      "forgets about you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh cares about the little things that worry me, and I can be faithful with what's not mine.",
+    "reflection_prompt": "God cared about one lost axe head. What is a small worry you can give to God today?",
+    "reflection_choices": [
+      "Something I lost",
+      "Something I broke",
+      "A little problem",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "Why did the prophets go down to the Jordan River?",
+      "options": [
+        "To go fishing",
+        "To cut trees to build a bigger place",
+        "To take a bath"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'Let's go to the Jordan and each take a beam, and let's make us a place there to live.'",
+      "verse_ref": "2 Kings 6:2"
+    },
+    {
+      "question": "Why was the man so upset about the axe head?",
+      "options": [
+        "It was borrowed",
+        "It was his favorite",
+        "It was gold"
+      ],
+      "correct_index": 0,
+      "explanation": "He cried, 'Alas, my master! For it was borrowed.'",
+      "verse_ref": "2 Kings 6:5"
+    },
+    {
+      "question": "What did Elisha throw into the water?",
+      "options": [
+        "A rock",
+        "A rope",
+        "A stick"
+      ],
+      "correct_index": 2,
+      "explanation": "He cut down a stick, threw it in there, and made the iron float.",
+      "verse_ref": "2 Kings 6:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You care about the little things that worry me. Help me give You my worries, and help me take good care of things that belong to others. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "A floating axe head! God could have said, 'That's too small for Me to care about.' But He didn't. No worry is too small for Him."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "cedar_wood"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

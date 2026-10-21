@@ -1,0 +1,121 @@
+{
+  "day": 208,
+  "month": 7,
+  "realm": 30,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Faithful Far From Home",
+  "scripture_passage": "2 Kings 5:1-15",
+  "story_title": "Naaman Washes Seven Times",
+  "summary": "Naaman, a great army commander, had a skin disease. A young Israelite servant girl told him about Elisha. Elisha told Naaman to wash in the Jordan seven times. When he finally obeyed, he was healed.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Naaman was the commander of the army of Aram, a powerful and respected man. But Naaman had a serious skin disease called leprosy, and no one could cure him. In Naaman's house was a young girl who had been taken from Israel. She was a servant to Naaman's wife. She was far from home, but she still trusted Yahweh. She said, 'I wish my master would go see the prophet in Samaria. He would heal him!' So Naaman traveled to Israel with horses and chariots. He pulled up in front of Elisha's house. But Elisha didn't even come out! He just sent a messenger: 'Go wash in the Jordan River seven times, and you will be healed.' Naaman was furious. 'I thought he'd at least come out and wave his hand over me! Aren't the rivers back home better than all the rivers in Israel?' But his servants said, 'Sir, if the prophet had asked you to do something hard, wouldn't you have done it? So why not do this simple thing: wash and be clean?' So Naaman went down to the Jordan and dipped himself in the water. One, two, three, four, five, six, seven! When he came up the seventh time, his skin was healthy and smooth, like a young child's! Naaman went back to Elisha and said, 'Now I know there is no God in all the earth except in Israel!' And it all started with one faithful little girl.",
+    "scenes": [
+      {
+        "caption": "A great commander",
+        "art_direction": "Naaman in impressive armor, saluted by soldiers; a patch on his arm he tries to hide."
+      },
+      {
+        "caption": "A little girl's faith",
+        "art_direction": "A young Israelite servant girl speaking kindly to Naaman's wife."
+      },
+      {
+        "caption": "Horses and chariots",
+        "art_direction": "Naaman's grand caravan arriving at Elisha's humble house."
+      },
+      {
+        "caption": "Elisha doesn't come out",
+        "art_direction": "A messenger at the door; Naaman's jaw dropping with offense."
+      },
+      {
+        "caption": "Stomping off",
+        "art_direction": "Naaman red-faced and fuming; comedic beat."
+      },
+      {
+        "caption": "Seven dips!",
+        "art_direction": "Naaman dipping in the river as a counter rises 1 to 7; on the seventh, he rises healed and amazed."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "James 4:10",
+    "text": "Humble yourselves in the sight of the Lord, and he will exalt you.",
+    "translation": "WEB",
+    "tokens": [
+      "Humble yourselves",
+      "in the sight",
+      "of the Lord,",
+      "and he will",
+      "exalt you."
+    ],
+    "distractors": [
+      "forget you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay faithful to Yahweh and point others to Him, wherever I am.",
+    "reflection_prompt": "A young girl far from home pointed Naaman to God. How could you point someone to God, even if you're young?",
+    "reflection_choices": [
+      "Tell them God can help",
+      "Pray for them",
+      "Invite them to church",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "sharing_faith"
+  },
+  "quiz": [
+    {
+      "question": "Who told Naaman about Elisha?",
+      "options": [
+        "The king",
+        "A young servant girl from Israel",
+        "His doctor"
+      ],
+      "correct_index": 1,
+      "explanation": "The little girl said, 'I wish that my lord were with the prophet who is in Samaria! Then he would heal him.'",
+      "verse_ref": "2 Kings 5:3"
+    },
+    {
+      "question": "What did Elisha tell Naaman to do?",
+      "options": [
+        "Wash in the Jordan seven times",
+        "Climb a mountain",
+        "Pay a lot of gold"
+      ],
+      "correct_index": 0,
+      "explanation": "Elisha sent a messenger, saying, 'Go and wash in the Jordan seven times.'",
+      "verse_ref": "2 Kings 5:10"
+    },
+    {
+      "question": "What was Naaman's skin like after the seventh dip?",
+      "options": [
+        "Still sick",
+        "Bright blue",
+        "Like the skin of a little child"
+      ],
+      "correct_index": 2,
+      "explanation": "His flesh was restored like the flesh of a little child, and he was clean.",
+      "verse_ref": "2 Kings 5:14"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me stay faithful to You wherever I am. Like the little servant girl, help me point others to You, even though I'm young. Amen."
+  },
+  "companion": {
+    "id": "solomon",
+    "message": "I love that little girl! She was far from home and had every reason to be sad, but she still pointed her master to God. You can do that too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "linen"
+    ],
+    "unlock": "jordan_washing_steps"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The servant girl was captured in a raid (2 Kings 5:2), described as 'taken from Israel.' Gehazi's greed and punishment (5:20-27) are omitted. Confirm."
+  }
+}
