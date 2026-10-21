@@ -1,0 +1,121 @@
+{
+  "day": 108,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Stepping In First",
+  "scripture_passage": "Joshua 3-4",
+  "story_title": "Crossing the Jordan",
+  "summary": "The Jordan River was flooding, but when the priests carrying the ark stepped into the water, it stopped flowing. All Israel crossed on dry ground, and they set up twelve stones to remember.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "It was harvest season, and the Jordan River was overflowing its banks. How would so many people cross a flooding river? Joshua told the people, 'Get ready. Tomorrow Yahweh will do amazing things among you.' God gave the priests an instruction that took courage: 'Carry the ark of the covenant and step right into the river.' Not near the river. Into it! So the priests picked up the ark and marched toward the rushing water. And the moment their feet touched the edge of the water, the river stopped flowing! The water upstream piled up in a heap far away, at a town called Adam. The priests stood in the middle of the riverbed on dry ground while all of Israel walked across. Then God told Joshua, 'Choose twelve men, one from each tribe. Have each one carry a stone from the middle of the river.' They stacked the twelve stones on the other side. Joshua said, 'In the future, when your children ask, What do these stones mean? tell them how Yahweh dried up the Jordan.' Sometimes leaders have to step in first before they see God move.",
+    "scenes": [
+      {
+        "caption": "A flooding river",
+        "art_direction": "The Jordan rushing high and wide, spilling over its banks."
+      },
+      {
+        "caption": "Tomorrow!",
+        "art_direction": "Joshua addressing the people at sunset; excitement and nervousness on their faces."
+      },
+      {
+        "caption": "Step in",
+        "art_direction": "The priests carrying the golden ark, their feet stepping into the rushing edge of the water."
+      },
+      {
+        "caption": "The river stops!",
+        "art_direction": "The water freezing upstream and piling up in a shimmering heap in the distance."
+      },
+      {
+        "caption": "Dry ground",
+        "art_direction": "Families walking across the riverbed past the priests holding the ark."
+      },
+      {
+        "caption": "Twelve stones",
+        "art_direction": "Twelve men stacking river stones into a memorial; a child pointing and asking, 'What do these mean?'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 4:24",
+    "text": "that all the peoples of the earth may know the hand of Yahweh, that it is mighty",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "that all the peoples",
+      "of the earth",
+      "may know",
+      "the hand of Yahweh,",
+      "that it is mighty"
+    ],
+    "distractors": [
+      "that it is tired"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can give me courage to step out first, and I can lead by example.",
+    "reflection_prompt": "The priests stepped into the river first, and then God stopped the water. What is a brave first step you could take?",
+    "reflection_choices": [
+      "Being the first to say sorry",
+      "Being the first to include someone",
+      "Trying something new",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "leadership"
+  },
+  "quiz": [
+    {
+      "question": "Why was crossing the Jordan especially hard?",
+      "options": [
+        "It was frozen",
+        "It was flooding during harvest time",
+        "It was too shallow"
+      ],
+      "correct_index": 1,
+      "explanation": "The Jordan overflows all its banks all the time of harvest.",
+      "verse_ref": "Joshua 3:15"
+    },
+    {
+      "question": "When did the river stop flowing?",
+      "options": [
+        "When the priests' feet touched the water",
+        "When Joshua shouted",
+        "After a big storm"
+      ],
+      "correct_index": 0,
+      "explanation": "When the feet of the priests who bore the ark dipped into the water, the waters stood still.",
+      "verse_ref": "Joshua 3:15-16"
+    },
+    {
+      "question": "What did the twelve men carry from the middle of the river?",
+      "options": [
+        "Fish",
+        "Shells",
+        "Twelve stones"
+      ],
+      "correct_index": 2,
+      "explanation": "Each man took a stone from the middle of the Jordan, one for each tribe.",
+      "verse_ref": "Joshua 4:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me courage to take brave first steps, even before I see how things will work out. Help me lead by example and trust Your mighty hand. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "I walked right past those priests standing in the riverbed! Their feet were muddy, but their faces were full of faith. Later, I showed my grandkids those twelve stones."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "river_stone"
+    ],
+    "unlock": "twelve_stones_memorial"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "day": 94,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Humble Heart",
+  "scripture_passage": "Numbers 12",
+  "story_title": "Moses, the Humble Leader",
+  "summary": "Miriam and Aaron grew jealous and spoke against Moses. God defended Moses, the most humble man on earth. When Miriam became sick, Moses prayed for her healing.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "One day, Miriam and Aaron, Moses' own sister and brother, started grumbling about him. 'Has Yahweh only spoken through Moses? Hasn't He spoken through us too?' They were jealous of their brother's job. But here is what the Bible says about Moses: he was very humble, more humble than anyone else on the face of the earth. He didn't defend himself. God did. Yahweh called all three of them to the Tabernacle. He came down in the pillar of cloud and said, 'I speak to My prophets in dreams and visions, but with My servant Moses, I speak face to face. He is faithful in all My house. Why weren't you afraid to speak against him?' When the cloud lifted, Miriam's skin had become white with a sickness. Aaron begged Moses for help. And Moses, the one they had criticized, cried out to God: 'Please heal her, God, I beg You!' God answered. Miriam had to stay outside the camp for seven days, and the whole camp waited for her before moving on. Then she came back, healed. Humble people don't need to be the most important. They pray for others, even people who have hurt them.",
+    "scenes": [
+      {
+        "caption": "Grumbling siblings",
+        "art_direction": "Miriam and Aaron whispering behind a tent with frowning faces."
+      },
+      {
+        "caption": "The humble man",
+        "art_direction": "Moses quietly helping an elderly person carry water, unaware of the gossip."
+      },
+      {
+        "caption": "Called to the Tabernacle",
+        "art_direction": "The pillar of cloud descending to the Tabernacle entrance as the three siblings stand before it."
+      },
+      {
+        "caption": "Face to face",
+        "art_direction": "A warm glow around Moses as God's words appear in golden lettering."
+      },
+      {
+        "caption": "Moses prays",
+        "art_direction": "Moses kneeling with his hands raised, praying for his sister."
+      },
+      {
+        "caption": "The camp waits",
+        "art_direction": "The whole camp sitting patiently by their packed tents as Miriam returns, smiling."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Philippians 2:3",
+    "text": "in humility, each counting others better than himself",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "in humility,",
+      "each counting others",
+      "better than himself"
+    ],
+    "distractors": [
+      "worse than himself"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to be the most important, because Yahweh sees my humble heart.",
+    "reflection_prompt": "Moses prayed for his sister even after she spoke against him. Who is someone you could pray for, even if they've been unkind to you?",
+    "reflection_choices": [
+      "A brother or sister",
+      "A classmate",
+      "A friend",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "gentleness"
+  },
+  "quiz": [
+    {
+      "question": "Who spoke against Moses?",
+      "options": [
+        "Joshua and Caleb",
+        "Miriam and Aaron",
+        "Pharaoh and his magicians"
+      ],
+      "correct_index": 1,
+      "explanation": "Miriam and Aaron spoke against Moses.",
+      "verse_ref": "Numbers 12:1"
+    },
+    {
+      "question": "How does the Bible describe Moses?",
+      "options": [
+        "Very humble, more than anyone on earth",
+        "Very proud",
+        "Very rich"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses was very humble, above all the men who were on the surface of the earth.",
+      "verse_ref": "Numbers 12:3"
+    },
+    {
+      "question": "What did the camp do while Miriam stayed outside for seven days?",
+      "options": [
+        "They left without her",
+        "They forgot about her",
+        "They waited for her before moving on"
+      ],
+      "correct_index": 2,
+      "explanation": "The people didn't travel until Miriam was brought in again.",
+      "verse_ref": "Numbers 12:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me a humble heart like Moses. Help me not to be jealous, and help me pray for people even when they've been unkind to me. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Miriam learned a hard lesson that week, but I'll never forget how the whole camp waited for her. In God's family, nobody gets left behind."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Miriam's skin disease (Numbers 12:10) is described as 'white with a sickness'; the reason given in 12:1 (Moses' Cushite wife) is omitted. Confirm this is acceptable."
+  }
+}

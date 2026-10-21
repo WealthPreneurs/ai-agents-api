@@ -1,0 +1,121 @@
+{
+  "day": 96,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Seeing with Faith, Not Fear",
+  "scripture_passage": "Numbers 13:26-33",
+  "story_title": "Two Different Reports",
+  "summary": "Ten spies said the people of Canaan were giants and they felt like grasshoppers. But Caleb said, 'Let's go up at once and take the land, for we are well able to do it!'",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "The twelve spies stood before Moses, Aaron, and all the people. They held up the giant grapes. 'The land really does flow with milk and honey! Look at this fruit!' Everyone cheered. But then ten of the spies kept talking. 'But the people there are strong. The cities have huge walls. And we saw giants! Next to them, we felt like grasshoppers, and that's how we looked to them too.' The crowd started to murmur and panic. Then Caleb stepped forward and quieted the people. 'Let's go up at once and take the land, for we are well able to do it!' But the ten spies argued. 'We can't attack those people. They're stronger than we are!' All twelve spies saw the same land, the same walls, and the same giants. Ten of them looked at how big the giants were. Two of them, Caleb and Joshua, looked at how big God is. Eyes of fear only see problems. Eyes of faith see problems next to a God who is bigger than all of them.",
+    "scenes": [
+      {
+        "caption": "Milk and honey!",
+        "art_direction": "The spies holding up the grapes as the crowd cheers."
+      },
+      {
+        "caption": "But...",
+        "art_direction": "The music drops; ten spies lean in with worried faces."
+      },
+      {
+        "caption": "Like grasshoppers",
+        "art_direction": "A tiny grasshopper-sized Israelite next to a towering giant silhouette; stylized, not scary."
+      },
+      {
+        "caption": "Panic spreads",
+        "art_direction": "Worried faces ripple across the crowd."
+      },
+      {
+        "caption": "'We are well able!'",
+        "art_direction": "Caleb standing on a rock, hand raised, eyes bright with faith."
+      },
+      {
+        "caption": "Two ways to see",
+        "art_direction": "Split screen: a giant looming large in one eye; in the other, God's light making the giant look small."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 13:30",
+    "text": "Let's go up at once, and possess it; for we are well able to overcome it!",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Let's go up",
+      "at once,",
+      "and possess it;",
+      "for we are",
+      "well able",
+      "to overcome it!"
+    ],
+    "distractors": [
+      "too small"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can look at big problems with eyes of faith, because Yahweh is bigger.",
+    "reflection_prompt": "Ten spies saw giants. Caleb saw God. What is a 'giant' problem you could look at with eyes of faith?",
+    "reflection_choices": [
+      "Something hard at school",
+      "Something I'm afraid of",
+      "A problem in my family",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did the spies say about the land?",
+      "options": [
+        "It was a desert",
+        "It flowed with milk and honey",
+        "It was too cold"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'It certainly flows with milk and honey, and this is its fruit.'",
+      "verse_ref": "Numbers 13:27"
+    },
+    {
+      "question": "What did the ten spies say they felt like next to the giants?",
+      "options": [
+        "Grasshoppers",
+        "Mice",
+        "Ants"
+      ],
+      "correct_index": 0,
+      "explanation": "They said, 'We were in our own sight as grasshoppers, and so we were in their sight.'",
+      "verse_ref": "Numbers 13:33"
+    },
+    {
+      "question": "What did Caleb say?",
+      "options": [
+        "'Let's go back to Egypt!'",
+        "'Let's wait ten years.'",
+        "'Let's go up at once, for we are well able!'"
+      ],
+      "correct_index": 2,
+      "explanation": "Caleb said, 'Let's go up at once and possess it, for we are well able to overcome it!'",
+      "verse_ref": "Numbers 13:30"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I see big problems, help me see You as even bigger. Give me eyes of faith like Caleb. With You, I am well able! Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Yes, the giants were big. I saw them! But I had also seen God split the sea. When you remember what God has done, you can face what's in front of you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "calebs_lookout"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

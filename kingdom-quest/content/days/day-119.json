@@ -1,0 +1,124 @@
+{
+  "day": 119,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: As for Me and My House",
+  "scripture_passage": "Joshua 24:1-32",
+  "story_title": "Choose This Day",
+  "summary": "Joshua reminded Israel of all God had done and challenged them to choose whom they would serve. 'As for me and my house, we will serve Yahweh!' Region 4 is complete!",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Wilderness Frontier! Joshua gathered all the tribes of Israel at Shechem. He told them the whole story of what God had done: calling Abraham, giving Isaac and Jacob, sending Moses, bringing them out of Egypt, parting the sea, leading them through the wilderness, and giving them the land. Then Joshua gave them a choice. 'Serve Yahweh with all your heart. Throw away any other gods. If serving Yahweh seems wrong to you, then choose today whom you will serve. But as for me and my house, we will serve Yahweh!' The people answered, 'We will serve Yahweh, for He is our God!' Joshua set up a large stone under an oak tree as a reminder of their promise. Soon after, Joshua died at 110 years old. And Joseph's bones, carried all the way from Egypt, were finally buried at Shechem. Let's look back at this whole region: the cloud, the spies, Caleb's faith, the bronze snake, Moses' teaching, the Jordan, Jericho, and Caleb's mountain. This region's biggest truth: you can choose to serve Yahweh with your whole family, every day.",
+    "scenes": [
+      {
+        "caption": "Gathering at Shechem",
+        "art_direction": "All twelve tribes gathered in a valley between two mountains."
+      },
+      {
+        "caption": "The whole story",
+        "art_direction": "A sweeping storybook montage from Abraham's stars to Jericho's walls."
+      },
+      {
+        "caption": "'Choose today'",
+        "art_direction": "Joshua standing on a rock, arm outstretched, with a fork in the path behind him."
+      },
+      {
+        "caption": "'As for me and my house'",
+        "art_direction": "Joshua with his arm around his family, hands raised together."
+      },
+      {
+        "caption": "A stone of witness",
+        "art_direction": "A large standing stone under a great oak tree."
+      },
+      {
+        "caption": "Joseph comes home",
+        "art_direction": "A respectful burial at Shechem; a faint image of Joseph's coat in the sky."
+      },
+      {
+        "caption": "Region 4 complete!",
+        "art_direction": "Map zooms out showing the Wilderness Frontier lit up gold; a path glows toward Region 5, the Valley of Heroes."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 24:15",
+    "text": "but as for me and my house, we will serve Yahweh.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "but as for me",
+      "and my house,",
+      "we will",
+      "serve Yahweh."
+    ],
+    "distractors": [
+      "serve ourselves."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can choose to serve Yahweh with my whole family.",
+    "reflection_prompt": "Milestone: You can choose to serve Yahweh! Look back at your Blueprint journal from Region 4. Which gift did you discover: seeing with faith, teaching, leading, or serving?",
+    "reflection_choices": [
+      "Seeing with eyes of faith",
+      "Helping others learn about God",
+      "Leading with courage",
+      "Serving God with my family"
+    ],
+    "trait_unlocked": "serving"
+  },
+  "quiz": [
+    {
+      "question": "What did Joshua say he and his family would do?",
+      "options": [
+        "Move to Egypt",
+        "Serve Yahweh",
+        "Build a tower"
+      ],
+      "correct_index": 1,
+      "explanation": "Joshua said, 'As for me and my house, we will serve Yahweh.'",
+      "verse_ref": "Joshua 24:15"
+    },
+    {
+      "question": "How old was Joshua when he died?",
+      "options": [
+        "One hundred ten",
+        "Eighty-five",
+        "One hundred twenty"
+      ],
+      "correct_index": 0,
+      "explanation": "Joshua the son of Nun, the servant of Yahweh, died, being one hundred ten years old.",
+      "verse_ref": "Joshua 24:29"
+    },
+    {
+      "question": "Whose bones were finally buried at Shechem?",
+      "options": [
+        "Moses'",
+        "Abraham's",
+        "Joseph's"
+      ],
+      "correct_index": 2,
+      "explanation": "The bones of Joseph, which the children of Israel brought up out of Egypt, were buried in Shechem.",
+      "verse_ref": "Joshua 24:32"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I choose You today! As for me and my house, we will serve You. Thank You for this whole journey through the Wilderness Frontier. Lead me on! Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "You finished the Wilderness Frontier! Thank you for exploring with me. Next, a wise judge named Deborah will guide you through the Valley of Heroes!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "wilderness_frontier_crown"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

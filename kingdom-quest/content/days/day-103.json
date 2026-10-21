@@ -1,0 +1,117 @@
+{
+  "day": 103,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Remember Where It Comes From",
+  "scripture_passage": "Deuteronomy 8:1-18",
+  "story_title": "Don't Forget!",
+  "summary": "Moses reminded the people how God fed them with manna and kept their clothes from wearing out for forty years. He warned them not to forget God when life got easy in the new land.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Moses kept teaching. 'Remember how Yahweh your God led you all the way these forty years in the wilderness. He let you be hungry, and then He fed you with manna, food you had never seen before. He did it to teach you that people don't live on bread alone, but on every word that comes from Yahweh's mouth.' Then Moses pointed out something amazing. 'For forty years, your clothes didn't wear out, and your feet didn't swell!' Imagine wearing the same sandals for forty years without them falling apart! Then Moses gave a warning. 'Yahweh is bringing you into a good land, with streams and springs, wheat and barley, vines and fig trees, olive oil and honey. You will eat until you're full. But be careful! When you have nice houses and plenty of food and lots of everything, don't forget Yahweh. Don't think, I did this by myself. Remember that Yahweh your God gives you the power to do everything.' Sometimes it's easy to remember God when things are hard. It can be harder to remember Him when things are good.",
+    "scenes": [
+      {
+        "caption": "Remember the journey",
+        "art_direction": "A scrapbook of the wilderness years: manna mornings, the cloud, water from the rock."
+      },
+      {
+        "caption": "More than bread",
+        "art_direction": "A loaf of bread beside a glowing open scroll; the scroll shines brighter."
+      },
+      {
+        "caption": "Forty-year-old sandals",
+        "art_direction": "A close-up of sturdy sandals that still look brand new; a kid examining them in amazement."
+      },
+      {
+        "caption": "A good land",
+        "art_direction": "A lush landscape with wheat fields, vineyards, olive groves, and beehives."
+      },
+      {
+        "caption": "Don't forget!",
+        "art_direction": "A family in a big new house, with a sticky note on the door that says 'Remember Yahweh!'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Deuteronomy 8:3",
+    "text": "man does not live by bread only, but man lives by every word that proceeds out of Yahweh's mouth.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "man does not live",
+      "by bread only,",
+      "but man lives",
+      "by every word",
+      "that proceeds",
+      "out of Yahweh's mouth."
+    ],
+    "distractors": [
+      "by candy only,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "My good things all come from Yahweh, and I'm hungry to learn His words.",
+    "reflection_prompt": "Moses said not to forget God when life is good. What is a good thing in your life that you can thank God for today?",
+    "reflection_choices": [
+      "My home",
+      "My food",
+      "My family and friends",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "curiosity"
+  },
+  "quiz": [
+    {
+      "question": "What did God teach the people with manna?",
+      "options": [
+        "That bread is the most important",
+        "That people live by every word from God",
+        "That manna tastes like honey"
+      ],
+      "correct_index": 1,
+      "explanation": "He fed you with manna to teach you that man doesn't live by bread only, but by every word from Yahweh's mouth.",
+      "verse_ref": "Deuteronomy 8:3"
+    },
+    {
+      "question": "What didn't wear out for forty years?",
+      "options": [
+        "Their clothes",
+        "Their tents",
+        "Their swords"
+      ],
+      "correct_index": 0,
+      "explanation": "Your clothing didn't grow old on you, neither did your foot swell, these forty years.",
+      "verse_ref": "Deuteronomy 8:4"
+    },
+    {
+      "question": "What did Moses warn the people about?",
+      "options": [
+        "Eating too much bread",
+        "Building houses",
+        "Forgetting God when life is good"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses said, 'Beware lest you forget Yahweh your God' when you have eaten and are full.",
+      "verse_ref": "Deuteronomy 8:11-12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for every good thing in my life. Help me never forget that it all comes from You. Make me hungry for Your words. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "It's true! I wore the same sandals for forty years, and they never wore out. Every step reminded me that God was taking care of us."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "palm_branch"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

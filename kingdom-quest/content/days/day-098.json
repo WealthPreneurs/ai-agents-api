@@ -1,0 +1,117 @@
+{
+  "day": 98,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Eyes of Faith",
+  "scripture_passage": "Numbers 14:24-38",
+  "story_title": "Caleb's Different Spirit",
+  "summary": "Because the people refused to trust God, they would wander forty years in the wilderness. But God said Caleb had a different spirit and followed Him fully. Sabbath Camp looks back on the journey from Sinai.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Welcome to Sabbath Camp! God forgave His people, but their choice still had consequences. They had refused to trust Him, so they wouldn't enter the Promised Land. For every day the spies had explored the land, the people would wander one year in the wilderness: forty years. Their children would grow up and enter the land instead. But God made two exceptions. God said, 'My servant Caleb has a different spirit. He has followed Me fully. I will bring him into the land he explored, and his children will have it.' And Joshua would go in too. Let's remember the journey this week. God blessed His people and led them with the cloud. Moses needed help, and God gave him seventy helpers. Moses stayed humble and prayed for his sister. Twelve spies explored the land and carried giant grapes. Ten saw giants. Two saw God. This week's big truth: you can see problems with eyes of faith. Problems might be big, but your God is bigger. And like Caleb, you can follow Him fully.",
+    "scenes": [
+      {
+        "caption": "Forty years",
+        "art_direction": "A calendar flipping forty pages while the camp moves in circles through the desert."
+      },
+      {
+        "caption": "A different spirit",
+        "art_direction": "Caleb glowing softly in the crowd as the words 'followed Me fully' appear."
+      },
+      {
+        "caption": "Joshua and Caleb",
+        "art_direction": "The two friends standing side by side on a hill, looking toward Canaan."
+      },
+      {
+        "caption": "Camp at the edge",
+        "art_direction": "Campfire beside Caleb's lookout and the grapevine in the child's village."
+      },
+      {
+        "caption": "Eyes of faith",
+        "art_direction": "A pair of glasses that, when worn, shows a giant problem shrinking next to God's glowing light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 14:8",
+    "text": "If Yahweh delights in us, then he will bring us into this land, and give it to us",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "If Yahweh",
+      "delights in us,",
+      "then he will bring us",
+      "into this land,",
+      "and give it to us"
+    ],
+    "distractors": [
+      "and take it away"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can see problems with eyes of faith.",
+    "reflection_prompt": "Milestone: You can see with eyes of faith! Draw a pair of 'faith glasses.' On one lens, draw a problem. On the other, draw how big God is.",
+    "reflection_choices": [
+      "I'll follow God fully",
+      "God is bigger than my problems",
+      "I can be brave like Caleb",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "How long would the people wander in the wilderness?",
+      "options": [
+        "Forty days",
+        "Forty years",
+        "Four years"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'For every day a year, you will bear your iniquities, even forty years.'",
+      "verse_ref": "Numbers 14:34"
+    },
+    {
+      "question": "What did God say about Caleb?",
+      "options": [
+        "He had a different spirit and followed God fully",
+        "He was too young",
+        "He was the tallest"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'My servant Caleb, because he had another spirit with him, and has followed me fully.'",
+      "verse_ref": "Numbers 14:24"
+    },
+    {
+      "question": "Which two men would enter the Promised Land?",
+      "options": [
+        "Moses and Aaron",
+        "The ten spies",
+        "Caleb and Joshua"
+      ],
+      "correct_index": 2,
+      "explanation": "God said that only Caleb and Joshua would come into the land.",
+      "verse_ref": "Numbers 14:30"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to follow You fully, like Caleb. Help me see every problem with eyes of faith, knowing that You are bigger than anything. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Realm 14 complete! Forty years is a long time to wait, but God kept His promise to me. Next, you'll see how Moses taught God's people to love Him with all their hearts."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "faith_glasses"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The consequence that the adult generation would die in the wilderness (14:29, 32) is stated as 'they wouldn't enter the Promised Land'; the plague on the ten spies (14:37) is omitted. Confirm."
+  }
+}

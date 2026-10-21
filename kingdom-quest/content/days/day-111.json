@@ -1,0 +1,122 @@
+{
+  "day": 111,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Trusting God's Power",
+  "scripture_passage": "Joshua 6:15-27",
+  "story_title": "The Walls Come Tumbling Down",
+  "summary": "On the seventh day, the people marched around Jericho seven times. When the trumpets sounded and the people shouted, the walls fell flat. Rahab and her family were saved.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "On the seventh day, God's people got up at dawn and began marching around Jericho. Once. Twice. Three times. Four, five, six times. Then, on the seventh time around, the priests blew one long blast on their trumpets. Joshua shouted to the people, 'Shout! For Yahweh has given you the city!' The people gave a huge shout, and the great walls of Jericho fell down flat! The army went straight into the city. But Joshua remembered the promise the spies had made. He said, 'Go to Rahab's house and bring her out, with everyone who belongs to her.' Remember the scarlet cord in the window? Rahab's part of the wall was still standing! The spies brought out Rahab, her father, her mother, her brothers, and all her family, and they were safe. Rahab lived among God's people from that day on. God didn't need swords or ladders to win. He needed people who would trust Him and obey. Some trust in chariots and horses, but we trust in the name of Yahweh our God.",
+    "scenes": [
+      {
+        "caption": "Day seven",
+        "art_direction": "The marchers lining up at dawn as the sky turns gold."
+      },
+      {
+        "caption": "Seven times around",
+        "art_direction": "A counter clicking from 1 to 7 as the line circles faster."
+      },
+      {
+        "caption": "One long blast",
+        "art_direction": "The priests lifting their rams' horns and blowing together."
+      },
+      {
+        "caption": "Shout!",
+        "art_direction": "The whole crowd raising their fists and shouting in one great voice."
+      },
+      {
+        "caption": "The walls fall flat!",
+        "art_direction": "The huge walls crumbling and collapsing into dust; dramatic but with no people shown being hurt."
+      },
+      {
+        "caption": "Rahab is saved",
+        "art_direction": "One section of wall still standing with a scarlet cord in the window; Rahab's family walking out, hugging the spies."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 20:7",
+    "text": "Some trust in chariots, and some in horses, but we trust the name of Yahweh our God.",
+    "translation": "WEB",
+    "tokens": [
+      "Some trust",
+      "in chariots,",
+      "and some in horses,",
+      "but we trust",
+      "the name of Yahweh",
+      "our God."
+    ],
+    "distractors": [
+      "our swords."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's power is greater than any wall I face.",
+    "reflection_prompt": "God brought down Jericho's walls with a shout! What is a 'wall' in your life you need God's power to bring down?",
+    "reflection_choices": [
+      "A fear",
+      "A hard friendship",
+      "A bad habit",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "How many times did they march around Jericho on the seventh day?",
+      "options": [
+        "Once",
+        "Seven times",
+        "Twelve times"
+      ],
+      "correct_index": 1,
+      "explanation": "On the seventh day, they marched around the city seven times.",
+      "verse_ref": "Joshua 6:15"
+    },
+    {
+      "question": "What happened when the people shouted?",
+      "options": [
+        "The walls fell down flat",
+        "It started raining",
+        "The gates opened slowly"
+      ],
+      "correct_index": 0,
+      "explanation": "The people shouted with a great shout, and the wall fell down flat.",
+      "verse_ref": "Joshua 6:20"
+    },
+    {
+      "question": "Who was saved because of the scarlet cord?",
+      "options": [
+        "The king of Jericho",
+        "The guards",
+        "Rahab and her whole family"
+      ],
+      "correct_index": 2,
+      "explanation": "Joshua saved Rahab, her father's household, and all that she had.",
+      "verse_ref": "Joshua 6:25"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, Your power is greater than any wall! I trust in Your name, not in my own strength. Thank You for keeping Your promises, just like You did for Rahab. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "I'll never forget that shout, or the sound of those walls crashing down! But my favorite part was seeing Rahab's family walk out safe, just like we promised."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "gold_thread"
+    ],
+    "unlock": "jericho_walls"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the destruction of Jericho's people and animals (Joshua 6:21) is omitted; the narration says only 'The army went straight into the city.' The conquest is a significant theological question for this age group. Reviewer should decide whether to address it here, perhaps with a parent note."
+  }
+}

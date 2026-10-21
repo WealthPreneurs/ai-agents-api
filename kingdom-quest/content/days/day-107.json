@@ -1,0 +1,121 @@
+{
+  "day": 107,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Brave Faith in Unexpected Places",
+  "scripture_passage": "Joshua 2",
+  "story_title": "Rahab and the Scarlet Cord",
+  "summary": "Joshua sent two spies to Jericho. Rahab, a woman who lived in the city wall, hid them because she believed in Yahweh. The spies promised to save her family if she tied a scarlet cord in her window.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "Joshua secretly sent two spies to look at the city of Jericho. They stayed at the house of a woman named Rahab, whose home was built right into the city wall. The king of Jericho heard there were spies in town and sent soldiers to Rahab's house. But Rahab had hidden the spies on her roof, under stalks of flax drying in the sun. She told the soldiers, 'Yes, the men came here, but they left at dark. Hurry, you can catch them!' The soldiers rushed off. Then Rahab went up to the roof and said to the spies, 'I know that Yahweh has given you this land. We heard how He dried up the Red Sea for you. Everyone here is afraid. Yahweh your God is God in heaven above and on earth below!' Rahab believed in the true God, even though she was from Jericho. She asked, 'Please promise to save my family.' The spies said, 'Tie this scarlet cord in your window. Bring your whole family into your house, and everyone inside will be safe.' Rahab let them down by a rope through her window, and they escaped. Then she tied the scarlet cord in the window. God's family is open to anyone who trusts Him.",
+    "scenes": [
+      {
+        "caption": "Two spies",
+        "art_direction": "Two Israelite men slipping through Jericho's massive gate at dusk."
+      },
+      {
+        "caption": "A house in the wall",
+        "art_direction": "Rahab's cozy home built into the thick city wall, with a window overlooking the outside."
+      },
+      {
+        "caption": "Hidden in the flax",
+        "art_direction": "The spies lying flat under bundles of flax on the rooftop, peeking out."
+      },
+      {
+        "caption": "'They went that way!'",
+        "art_direction": "Rahab pointing soldiers down the road as they rush away."
+      },
+      {
+        "caption": "Rahab's faith",
+        "art_direction": "Rahab on the moonlit roof, speaking earnestly about Yahweh."
+      },
+      {
+        "caption": "The scarlet cord",
+        "art_direction": "A bright red cord fluttering from Rahab's window as the spies climb down a rope."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 2:11",
+    "text": "Yahweh your God, he is God in heaven above, and on earth beneath.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh your God,",
+      "he is God",
+      "in heaven above,",
+      "and on earth beneath."
+    ],
+    "distractors": [
+      "only in Egypt."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh welcomes anyone who trusts Him, and He can use my brave faith.",
+    "reflection_prompt": "Rahab trusted God even though she didn't grow up knowing Him. Who is someone you know who is new to learning about God?",
+    "reflection_choices": [
+      "A friend",
+      "A neighbor",
+      "A new kid at school or church",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "Where did Rahab hide the spies?",
+      "options": [
+        "In a cave",
+        "On her roof under stalks of flax",
+        "In a well"
+      ],
+      "correct_index": 1,
+      "explanation": "She had brought them up to the roof and hidden them with the stalks of flax.",
+      "verse_ref": "Joshua 2:6"
+    },
+    {
+      "question": "What did Rahab say about Yahweh?",
+      "options": [
+        "'He is God in heaven above and on earth below.'",
+        "'He is only for Israel.'",
+        "'I don't know Him.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Rahab said, 'Yahweh your God, he is God in heaven above, and on earth beneath.'",
+      "verse_ref": "Joshua 2:11"
+    },
+    {
+      "question": "What did the spies tell Rahab to tie in her window?",
+      "options": [
+        "A blue ribbon",
+        "A white flag",
+        "A scarlet cord"
+      ],
+      "correct_index": 2,
+      "explanation": "The spies said, 'You shall bind this line of scarlet thread in the window.'",
+      "verse_ref": "Joshua 2:18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Your family is open to anyone who trusts You. Give me brave faith like Rahab's, and help me welcome others who are learning about You. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Rahab's faith amazed me! She had only heard stories about God, and she believed them. Later, she became part of the family line of King David, and of Jesus!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "scarlet_cord_window"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits that Rahab was a prostitute (Joshua 2:1); she is introduced as 'a woman whose home was built into the city wall.' Her lie to the soldiers is told without comment. Confirm both choices."
+  }
+}

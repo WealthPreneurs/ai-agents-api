@@ -1,0 +1,120 @@
+{
+  "day": 110,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Faithful Obedience",
+  "scripture_passage": "Joshua 6:1-14",
+  "story_title": "Marching Around Jericho",
+  "summary": "God gave Joshua a strange battle plan: march around Jericho once a day for six days, silently, with priests blowing trumpets. The people obeyed, even though it seemed odd.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Jericho was shut up tight. No one went in, and no one came out. Its walls were thick and tall. But God told Joshua, 'See, I have given Jericho into your hands.' Then God gave the strangest battle plan ever. 'March around the city once a day for six days. Seven priests will carry trumpets made from rams' horns in front of the ark. On the seventh day, march around the city seven times, with the priests blowing the trumpets. When you hear a long blast, have all the people give a loud shout, and the walls will fall down flat.' No swords. No ladders. Just marching, trumpets, and a shout! Joshua told the people, 'Don't shout or make any sound. Don't say a word until the day I tell you to shout.' So for six days, the people marched around Jericho once each day. The only sound was the priests' trumpets. The people of Jericho must have peeked over the walls and wondered what in the world they were doing! God's ways don't always make sense to us. But faithful obedience means doing what He says, even when it seems strange, and trusting Him with the results.",
+    "scenes": [
+      {
+        "caption": "Shut up tight",
+        "art_direction": "Jericho's massive walls and locked gates, guards patrolling the top."
+      },
+      {
+        "caption": "A strange plan",
+        "art_direction": "Joshua listening with a puzzled expression as God's plan appears in simple icons: feet, trumpets, a shout."
+      },
+      {
+        "caption": "Seven trumpets",
+        "art_direction": "Seven priests holding curved rams' horns, walking in front of the golden ark."
+      },
+      {
+        "caption": "Silent marching",
+        "art_direction": "A long line of people marching quietly around the walls, fingers to their lips."
+      },
+      {
+        "caption": "Puzzled watchers",
+        "art_direction": "Jericho's guards leaning over the wall, scratching their heads; light comedic beat."
+      },
+      {
+        "caption": "Day after day",
+        "art_direction": "A counter ticking from Day 1 to Day 6 as the marchers circle again."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Hebrews 11:30",
+    "text": "By faith, the walls of Jericho fell down, after they had been encircled for seven days.",
+    "translation": "WEB",
+    "tokens": [
+      "By faith,",
+      "the walls of Jericho",
+      "fell down,",
+      "after they had been",
+      "encircled",
+      "for seven days."
+    ],
+    "distractors": [
+      "for one hour."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can obey Yahweh faithfully, even when His ways seem strange to me.",
+    "reflection_prompt": "Marching around a wall seemed like a strange plan, but the people obeyed. What is something God asks you to do that's hard to understand?",
+    "reflection_choices": [
+      "Be kind to someone who's unkind",
+      "Forgive someone",
+      "Wait patiently",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "How many times did they march around Jericho each day for the first six days?",
+      "options": [
+        "Seven times",
+        "Once",
+        "Twice"
+      ],
+      "correct_index": 1,
+      "explanation": "They marched around the city once and returned to the camp. They did this six days.",
+      "verse_ref": "Joshua 6:14"
+    },
+    {
+      "question": "What did the priests blow?",
+      "options": [
+        "Trumpets made from rams' horns",
+        "Silver whistles",
+        "Seashells"
+      ],
+      "correct_index": 0,
+      "explanation": "Seven priests bore seven trumpets of rams' horns before the ark.",
+      "verse_ref": "Joshua 6:4"
+    },
+    {
+      "question": "What did Joshua tell the people to do while marching?",
+      "options": [
+        "Sing loudly",
+        "Clap their hands",
+        "Not make a sound"
+      ],
+      "correct_index": 2,
+      "explanation": "Joshua said, 'You shall not shout nor let your voice be heard... until the day I tell you to shout.'",
+      "verse_ref": "Joshua 6:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me obey You faithfully, even when I don't understand Your plan. I trust that Your ways are good, and that You can do what I can't. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Marching in silence was the hardest part for me! I'm a talker. But we trusted God's plan. Day after day, we kept walking."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "rams_horn_trumpet"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

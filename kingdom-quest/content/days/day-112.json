@@ -1,0 +1,111 @@
+{
+  "day": 112,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Strong and Courageous",
+  "scripture_passage": "Joshua 1-6",
+  "story_title": "Be Strong and Courageous",
+  "summary": "Sabbath Camp looks back at Joshua's first days as leader: God's promise, Rahab's faith, crossing the Jordan, the Commander of Yahweh's army, and the walls of Jericho.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Welcome to Sabbath Camp! What a week with Joshua. Let's remember. After Moses died, God told Joshua, 'Be strong and courageous. I will be with you wherever you go.' Joshua sent two spies to Jericho, and Rahab hid them because she believed Yahweh is God of heaven and earth. She tied a scarlet cord in her window. Then the priests stepped into the flooding Jordan River, and the water stopped! Everyone crossed on dry ground, and they set up twelve stones to remember. Joshua met the Commander of Yahweh's army and bowed down on holy ground. Then God's people marched around Jericho, silently, day after day. On the seventh day, they shouted, and the walls fell flat! Rahab and her family were saved. This week's big truth: Yahweh can make you a strong and courageous leader. Not because you're the biggest or the bravest, but because He is with you wherever you go. Leading starts with listening to God and taking brave steps of faith.",
+    "scenes": [
+      {
+        "caption": "Camp by the twelve stones",
+        "art_direction": "Campfire beside the twelve stones memorial and Jericho walls in the child's village."
+      },
+      {
+        "caption": "Joshua's week",
+        "art_direction": "Storybook recap pages: the scroll, the scarlet cord, the stopped river, the Commander, the trumpets, the falling walls."
+      },
+      {
+        "caption": "Strong and courageous",
+        "art_direction": "The child's avatar standing tall with a banner, Joshua giving a thumbs up beside them."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 1:9",
+    "text": "Haven't I commanded you? Be strong and courageous. Don't be afraid. Don't be dismayed, for Yahweh your God is with you wherever you go.",
+    "translation": "WEB",
+    "tokens": [
+      "Haven't I commanded you?",
+      "Be strong",
+      "and courageous.",
+      "Don't be afraid.",
+      "Don't be dismayed,",
+      "for Yahweh your God",
+      "is with you",
+      "wherever you go."
+    ],
+    "distractors": [
+      "only at home."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can make me a strong and courageous leader.",
+    "reflection_prompt": "Milestone: Yahweh makes you strong and courageous! Write or draw a picture of yourself leading in a brave way, with God right beside you.",
+    "reflection_choices": [
+      "Leading my friends to be kind",
+      "Helping at home",
+      "Standing up for what's right",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "leadership"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Joshua to be?",
+      "options": [
+        "Quiet and careful",
+        "Strong and courageous",
+        "Fast and clever"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Be strong and courageous. Don't be afraid.'",
+      "verse_ref": "Joshua 1:9"
+    },
+    {
+      "question": "What did the people set up after crossing the Jordan?",
+      "options": [
+        "Twelve stones",
+        "A tower",
+        "A golden statue"
+      ],
+      "correct_index": 0,
+      "explanation": "They set up twelve stones from the Jordan as a memorial.",
+      "verse_ref": "Joshua 4:20"
+    },
+    {
+      "question": "What happened to Jericho's walls?",
+      "options": [
+        "They grew taller",
+        "They were painted red",
+        "They fell down flat"
+      ],
+      "correct_index": 2,
+      "explanation": "The people shouted with a great shout, and the wall fell down flat.",
+      "verse_ref": "Joshua 6:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, make me strong and courageous. Thank You for being with me wherever I go. Help me lead by listening to You and taking brave steps of faith. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Realm 16 complete! You've seen how God made Joshua a strong leader. Next, we'll learn what it means to choose to serve God with your whole family."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "gold_thread"
+    ],
+    "unlock": "courage_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

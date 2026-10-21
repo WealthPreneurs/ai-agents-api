@@ -1,0 +1,121 @@
+{
+  "day": 102,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "With All My Heart",
+  "scripture_passage": "Deuteronomy 6:1-9",
+  "story_title": "Love Yahweh with All Your Heart",
+  "summary": "Moses taught the new generation the most important command: Yahweh is one, and you shall love Him with all your heart, soul, and strength. Parents were to teach it to their children everywhere they went.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "The forty years were almost over. The people were camped beside the Jordan River, ready to enter the land. Moses was very old now, and he knew he wouldn't go with them. So he gathered all the people and taught them one last time. His teaching is the book of Deuteronomy. Moses said, 'Hear, O Israel: Yahweh is our God. Yahweh is one. You shall love Yahweh your God with all your heart, with all your soul, and with all your strength.' This was the most important thing! Not just knowing about God, but loving Him with everything. Then Moses said, 'Keep these words on your heart. Teach them to your children. Talk about them when you sit at home and when you walk along the road, when you lie down and when you get up. Tie them on your hands and wear them on your foreheads. Write them on your doorposts and on your gates.' God's words weren't just for Sabbath days. They were for breakfast, bedtime, and walks. Many years later, when someone asked Jesus what the greatest commandment was, He gave this exact answer.",
+    "scenes": [
+      {
+        "caption": "Beside the Jordan",
+        "art_direction": "The camp spread along the riverbank with the green Promised Land across the water."
+      },
+      {
+        "caption": "Moses teaches",
+        "art_direction": "Elderly Moses standing on a rock, speaking to a huge crowd of families."
+      },
+      {
+        "caption": "Hear, O Israel",
+        "art_direction": "The words of the Shema glowing in golden lettering above the crowd."
+      },
+      {
+        "caption": "All your heart, soul, and strength",
+        "art_direction": "Three glowing icons: a heart, a breath of wind, and a strong arm."
+      },
+      {
+        "caption": "Everywhere you go",
+        "art_direction": "A family montage: talking at dinner, walking a road, tucking kids into bed, waking up."
+      },
+      {
+        "caption": "On the doorposts",
+        "art_direction": "A child writing a verse on a small scroll and attaching it to the doorframe."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Deuteronomy 6:5",
+    "text": "You shall love Yahweh your God with all your heart, with all your soul, and with all your might.",
+    "translation": "WEB",
+    "tokens": [
+      "You shall love",
+      "Yahweh your God",
+      "with all your heart,",
+      "with all your soul,",
+      "and with all",
+      "your might."
+    ],
+    "distractors": [
+      "with half your heart,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can love Yahweh with all my heart, and I can help others learn about Him.",
+    "reflection_prompt": "Moses said to talk about God at home, on walks, at bedtime, and in the morning. When is a good time for you to talk about God with your family?",
+    "reflection_choices": [
+      "At dinner",
+      "At bedtime",
+      "In the car",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What does Moses say about Yahweh in the 'Hear, O Israel' words?",
+      "options": [
+        "Yahweh is one",
+        "Yahweh is far away",
+        "Yahweh is tired"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses said, 'Hear, Israel: Yahweh is our God. Yahweh is one.'",
+      "verse_ref": "Deuteronomy 6:4"
+    },
+    {
+      "question": "How are we to love Yahweh?",
+      "options": [
+        "A little bit",
+        "With all our heart, soul, and might",
+        "Only on special days"
+      ],
+      "correct_index": 1,
+      "explanation": "You shall love Yahweh your God with all your heart, soul, and might.",
+      "verse_ref": "Deuteronomy 6:5"
+    },
+    {
+      "question": "Where did Moses say to write God's words?",
+      "options": [
+        "In the sand",
+        "On the clouds",
+        "On the doorposts and gates"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses said, 'You shall write them on the door posts of your house and on your gates.'",
+      "verse_ref": "Deuteronomy 6:9"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are our God, and You are one. I want to love You with all my heart, soul, and strength. Help me talk about You everywhere I go. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "My parents taught me God's words at home, and I taught them to my children too. You can be a teacher of God's love, right in your own family!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "linen"
+    ],
+    "unlock": "doorpost_scroll"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

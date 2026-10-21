@@ -1,0 +1,122 @@
+{
+  "day": 99,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Look and Live",
+  "scripture_passage": "Numbers 21:4-9; John 3:14-15",
+  "story_title": "The Bronze Snake",
+  "summary": "When the people complained against God, poisonous snakes came into the camp. God told Moses to make a bronze snake on a pole, and everyone who looked at it lived. Jesus said this pointed to Him.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Years passed in the wilderness, and the people grew impatient again. They complained against God and Moses: 'Why did you bring us out here? There's no water, and we hate this miserable manna!' Then poisonous snakes came into the camp and bit the people, and many of them died. The people ran to Moses. 'We have sinned! Pray that God will take away the snakes!' So Moses prayed. God said, 'Make a snake out of bronze and put it up on a pole. Anyone who is bitten can look at it and live.' Moses made a bronze snake and lifted it high on a pole in the middle of the camp. And whenever someone who had been bitten looked up at the bronze snake, they lived! They didn't have to make a medicine or climb a mountain. They just had to look and trust God's promise. Many years later, Jesus said, 'Just as Moses lifted up the snake in the wilderness, the Son of Man must be lifted up, so that everyone who believes in Him will have eternal life.' Jesus was lifted up on the cross. When we look to Him and trust Him, we are saved.",
+    "scenes": [
+      {
+        "caption": "Impatient again",
+        "art_direction": "Grumpy people kicking at the dusty ground and shaking manna off their hands."
+      },
+      {
+        "caption": "Snakes in the camp",
+        "art_direction": "Snakes slithering between tents; stylized and quick, with no bites shown up close."
+      },
+      {
+        "caption": "'We have sinned'",
+        "art_direction": "People running to Moses, asking for help."
+      },
+      {
+        "caption": "The bronze snake",
+        "art_direction": "Moses lifting a gleaming bronze snake high on a pole as sunlight catches it."
+      },
+      {
+        "caption": "Look and live!",
+        "art_direction": "People turning their faces upward to the pole; color returning to their cheeks."
+      },
+      {
+        "caption": "Lifted up",
+        "art_direction": "The pole dissolves into a cross on a hill, with light streaming from it."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "John 3:14",
+    "text": "As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "As Moses",
+      "lifted up the serpent",
+      "in the wilderness,",
+      "even so must",
+      "the Son of Man",
+      "be lifted up"
+    ],
+    "distractors": [
+      "be hidden away"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "When I look to Jesus, I am saved, and I can point others to Him.",
+    "reflection_prompt": "The people only had to look at the bronze snake to live. Jesus said He would be lifted up like that. Who could you point to Jesus?",
+    "reflection_choices": [
+      "A friend",
+      "Someone in my family",
+      "A neighbor",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "sharing_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did the people complain about?",
+      "options": [
+        "Too much rain",
+        "No water and the manna",
+        "Too many friends"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'There is no bread, there is no water, and our soul loathes this light bread.'",
+      "verse_ref": "Numbers 21:5"
+    },
+    {
+      "question": "What did God tell Moses to make?",
+      "options": [
+        "A bronze snake on a pole",
+        "A golden calf",
+        "A wall"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Make a venomous snake, and set it on a pole.' Moses made a serpent of bronze.",
+      "verse_ref": "Numbers 21:8-9"
+    },
+    {
+      "question": "What did Jesus say the bronze snake pointed to?",
+      "options": [
+        "A new temple",
+        "Moses being a king",
+        "Jesus being lifted up so believers have eternal life"
+      ],
+      "correct_index": 2,
+      "explanation": "Jesus said, 'As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up.'",
+      "verse_ref": "John 3:14-15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Jesus, thank You for being lifted up on the cross for me. When I look to You and trust You, I am saved. Help me point others to You too. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "I'll never forget looking up at that shining bronze snake. All we had to do was look and trust. That's still how it works today. Look to Jesus!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "bronze_snake_pole"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: 'many of them died' from snakebites (Numbers 21:6). No bites shown up close. Confirm wording for ages 7-9."
+  }
+}

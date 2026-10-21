@@ -1,0 +1,120 @@
+{
+  "day": 95,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Exploring with Eyes of Faith",
+  "scripture_passage": "Numbers 13:1-25",
+  "story_title": "Twelve Spies Go Exploring",
+  "summary": "God told Moses to send twelve spies, one from each tribe, to explore Canaan. They spent forty days in the land and brought back a cluster of grapes so big it took two men to carry.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Finally, God's people reached the edge of the Promised Land. God told Moses, 'Send men to explore the land of Canaan, which I am giving to you. Send one leader from each of the twelve tribes.' Two of the spies were Joshua, from the tribe of Ephraim, and Caleb, from the tribe of Judah. Moses gave them a mission: 'Go see what the land is like. Are the people strong or weak? Are there many or few? Is the land good or bad? Are the cities walled? Is the soil rich? Be brave, and bring back some of the fruit.' So the twelve spies set out. They explored the land from the south all the way to the north. They saw hills, valleys, streams, and cities. In a valley called Eshcol, they found a cluster of grapes so huge that two men had to carry it on a pole between them! They also gathered pomegranates and figs. After forty days, they came back. Everyone had seen the same land. But the question was: would they see it with eyes of fear or eyes of faith?",
+    "scenes": [
+      {
+        "caption": "At the edge",
+        "art_direction": "The camp in the desert with green hills shimmering in the distance."
+      },
+      {
+        "caption": "Twelve leaders",
+        "art_direction": "Twelve spies lined up, each holding a tribe banner; Caleb and Joshua in front."
+      },
+      {
+        "caption": "The mission",
+        "art_direction": "Moses holding up fingers as he lists questions; lettering pops up for each."
+      },
+      {
+        "caption": "Exploring Canaan",
+        "art_direction": "The spies hiking through valleys, along streams, and past walled cities."
+      },
+      {
+        "caption": "A giant cluster of grapes",
+        "art_direction": "Two spies staggering under a pole with a gigantic bunch of grapes; comedic beat."
+      },
+      {
+        "caption": "Forty days later",
+        "art_direction": "The spies walking back into camp with baskets of figs and pomegranates."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 13:20",
+    "text": "Be courageous, and bring some of the fruit of the land.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Be courageous,",
+      "and bring some",
+      "of the fruit",
+      "of the land."
+    ],
+    "distractors": [
+      "of the desert."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me eyes to see the good things He has for me.",
+    "reflection_prompt": "The spies all saw the same land. When you look at your life, what good things has God given you?",
+    "reflection_choices": [
+      "My family",
+      "My friends",
+      "My gifts and talents",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "curiosity"
+  },
+  "quiz": [
+    {
+      "question": "How many spies did Moses send?",
+      "options": [
+        "Two",
+        "Twelve",
+        "Forty"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses sent one man from each of the twelve tribes.",
+      "verse_ref": "Numbers 13:2"
+    },
+    {
+      "question": "Which tribe was Caleb from?",
+      "options": [
+        "Judah",
+        "Levi",
+        "Benjamin"
+      ],
+      "correct_index": 0,
+      "explanation": "From the tribe of Judah, Caleb the son of Jephunneh.",
+      "verse_ref": "Numbers 13:6"
+    },
+    {
+      "question": "How long did the spies explore the land?",
+      "options": [
+        "Seven days",
+        "One year",
+        "Forty days"
+      ],
+      "correct_index": 2,
+      "explanation": "They returned from spying out the land at the end of forty days.",
+      "verse_ref": "Numbers 13:25"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for all the good things You give me. Help me see my life with eyes of faith and notice the good gifts You've prepared for me. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "That's me! I helped carry those grapes, and wow, they were heavy! The land was even better than we imagined. God's promises are always bigger than we expect."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "olive_oil"
+    ],
+    "unlock": "eshcol_grapevine"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 109,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Leaders Follow First",
+  "scripture_passage": "Joshua 5:10-15",
+  "story_title": "The Commander of Yahweh's Army",
+  "summary": "In the Promised Land, the manna stopped and the people ate the land's food. Near Jericho, Joshua met the Commander of Yahweh's army and bowed, taking off his sandals on holy ground.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "The Israelites camped at a place called Gilgal, inside the Promised Land at last! They celebrated the Passover there, remembering how God rescued them from Egypt. The very next day, they ate food grown in the land: roasted grain and flat bread. And on that day, the manna stopped. For forty years, it had appeared every morning. Now God was feeding them in a new way. One day, Joshua walked near Jericho, looking at the huge city walls. Suddenly he saw a man standing in front of him, holding a sword. Joshua walked up and asked, 'Are you on our side or on our enemies' side?' The man answered, 'Neither. I have come as the Commander of Yahweh's army.' Joshua fell face down to the ground and worshiped. 'What does my Lord want to say to His servant?' The Commander said, 'Take off your sandals, for the place where you are standing is holy.' Just like Moses at the burning bush! Joshua was the leader of Israel, but he bowed down to God's leader. The best leaders know they are followers first.",
+    "scenes": [
+      {
+        "caption": "Camp at Gilgal",
+        "art_direction": "Tents set up in green fields with the twelve stones nearby."
+      },
+      {
+        "caption": "The first harvest",
+        "art_direction": "Families roasting grain and baking flat bread over fires, smiling."
+      },
+      {
+        "caption": "No more manna",
+        "art_direction": "A child looking at bare morning ground, then smiling and holding up fresh bread."
+      },
+      {
+        "caption": "A mysterious man",
+        "art_direction": "Joshua near Jericho's huge walls meeting a tall, shining figure with a sword."
+      },
+      {
+        "caption": "'Neither'",
+        "art_direction": "The figure's calm answer in glowing letters; Joshua's eyes widen."
+      },
+      {
+        "caption": "Holy ground",
+        "art_direction": "Joshua bowing and removing his sandals; a callback to Moses at the burning bush."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 5:15",
+    "text": "Take off your sandals, for the place on which you stand is holy.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Take off",
+      "your sandals,",
+      "for the place",
+      "on which you stand",
+      "is holy."
+    ],
+    "distractors": [
+      "is dusty."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can lead best when I follow Yahweh first.",
+    "reflection_prompt": "Joshua asked, 'What does my Lord want to say to me?' What would you like to ask God about how to lead or help others?",
+    "reflection_choices": [
+      "How to be kind",
+      "How to be brave",
+      "How to make good choices",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "What happened to the manna after the people ate the land's food?",
+      "options": [
+        "It doubled",
+        "It stopped",
+        "It turned to gold"
+      ],
+      "correct_index": 1,
+      "explanation": "The manna ceased on the next day, after they had eaten of the produce of the land.",
+      "verse_ref": "Joshua 5:12"
+    },
+    {
+      "question": "Who did Joshua meet near Jericho?",
+      "options": [
+        "The Commander of Yahweh's army",
+        "The king of Jericho",
+        "Rahab"
+      ],
+      "correct_index": 0,
+      "explanation": "He said, 'I have come now as commander of Yahweh's army.'",
+      "verse_ref": "Joshua 5:14"
+    },
+    {
+      "question": "What was Joshua told to do?",
+      "options": [
+        "Run away",
+        "Sharpen his sword",
+        "Take off his sandals because the place was holy"
+      ],
+      "correct_index": 2,
+      "explanation": "The commander said, 'Take off your sandals, for the place on which you stand is holy.'",
+      "verse_ref": "Joshua 5:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me follow You first before I try to lead. Like Joshua, I want to ask, 'What do You want to say to me?' I'm listening. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "When Joshua told me about meeting the Commander, his voice was full of wonder. Even the leader of Israel bowed low before God."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

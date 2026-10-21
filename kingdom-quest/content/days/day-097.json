@@ -1,0 +1,118 @@
+{
+  "day": 97,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Standing Firm When Others Don't",
+  "scripture_passage": "Numbers 14:1-25",
+  "story_title": "The People Rebel",
+  "summary": "The people cried all night and wanted to go back to Egypt. Joshua and Caleb begged them to trust God, but the crowd wanted to stone them. Moses prayed, and God forgave the people.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "That night, the whole community cried and complained. 'We wish we had died in Egypt or in this wilderness! Why is Yahweh bringing us here to die? Let's choose a new leader and go back to Egypt!' Moses and Aaron fell face down in front of everyone. Then Joshua and Caleb tore their clothes in grief and spoke to the crowd: 'The land we explored is very, very good! If Yahweh is pleased with us, He will bring us into this land and give it to us. Don't rebel against Yahweh! Don't be afraid of the people there. Their protection is gone, but Yahweh is with us. Don't be afraid!' But the crowd didn't want to listen. They picked up stones to throw at Joshua and Caleb! Suddenly, the glory of Yahweh appeared at the Tabernacle. God was angry at the people's rebellion. But Moses prayed for them: 'Please forgive these people, because Your love is so great, just as You have forgiven them ever since Egypt.' And God said, 'I have forgiven them, as you asked.' Standing up for what's right isn't always popular. But God sees the people who stand firm.",
+    "scenes": [
+      {
+        "caption": "A night of crying",
+        "art_direction": "Tents lit by lamps; people weeping and arguing loudly."
+      },
+      {
+        "caption": "'Let's go back to Egypt!'",
+        "art_direction": "A man pointing back toward Egypt as others nod."
+      },
+      {
+        "caption": "Joshua and Caleb speak",
+        "art_direction": "Two young men standing before the angry crowd, robes torn, pleading."
+      },
+      {
+        "caption": "Stones in their hands",
+        "art_direction": "Crowd members picking up rocks; tense but nothing thrown."
+      },
+      {
+        "caption": "The glory appears",
+        "art_direction": "Brilliant light bursting from the Tabernacle; the crowd freezes and drops the stones."
+      },
+      {
+        "caption": "Moses prays",
+        "art_direction": "Moses on his knees, interceding; God's answer appears: 'I have forgiven.'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 14:9",
+    "text": "Yahweh is with us. Don't fear them.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh",
+      "is with us.",
+      "Don't fear them."
+    ],
+    "distractors": [
+      "Run away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stand firm for what's right, even when everyone around me is afraid.",
+    "reflection_prompt": "Joshua and Caleb stood up for God when the crowd didn't. When might you need to stand firm when others don't?",
+    "reflection_choices": [
+      "When friends are making fun of someone",
+      "When everyone is complaining",
+      "When people don't believe in God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did the people want to do?",
+      "options": [
+        "Choose a new leader and go back to Egypt",
+        "Build a city",
+        "Climb a mountain"
+      ],
+      "correct_index": 0,
+      "explanation": "They said to one another, 'Let's choose a leader, and let's return into Egypt.'",
+      "verse_ref": "Numbers 14:4"
+    },
+    {
+      "question": "What did Joshua and Caleb tell the people?",
+      "options": [
+        "'Let's run!'",
+        "'Yahweh is with us. Don't be afraid!'",
+        "'You're right, we can't win.'"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'Yahweh is with us. Don't fear them.'",
+      "verse_ref": "Numbers 14:9"
+    },
+    {
+      "question": "What did God say when Moses prayed for the people?",
+      "options": [
+        "'I will never forgive them.'",
+        "'Go to Egypt.'",
+        "'I have forgiven them, as you asked.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh said, 'I have pardoned according to your word.'",
+      "verse_ref": "Numbers 14:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me courage to stand firm for what's right, even when others don't. Thank You that You forgive when we pray. Thank You for being with me. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "That was scary, standing in front of a crowd holding stones. But I knew God was with us. When you stand for Him, you never stand alone."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The crowd's attempt to stone Joshua and Caleb (14:10) is shown as people picking up stones; nothing is thrown. Confirm tone."
+  }
+}

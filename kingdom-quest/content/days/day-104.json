@@ -1,0 +1,122 @@
+{
+  "day": 104,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Passing On Courage",
+  "scripture_passage": "Deuteronomy 30:15-20; 31:1-8",
+  "story_title": "Choose Life! Be Strong!",
+  "summary": "Moses told the people to choose life by loving and obeying God. Then, at 120 years old, he called Joshua in front of everyone and encouraged him: 'Be strong and courageous. Yahweh goes before you.'",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Moses gave the people a choice. 'Today I have set before you life and good, and death and evil. Choose life! Love Yahweh your God, obey His voice, and hold on to Him, for He is your life.' Then Moses said something hard. 'I am one hundred and twenty years old today. Yahweh has told me I will not cross the Jordan River. But Yahweh your God will cross over ahead of you. And Joshua will lead you.' Moses called Joshua to stand in front of all the people. Moses had been teaching Joshua for forty years. Joshua had been his helper on the mountain, in the Tabernacle, and in battle. Now Moses put his hands on Joshua and spoke words of courage. 'Be strong and courageous. You will lead these people into the land. Yahweh Himself goes before you. He will be with you. He will never leave you or forsake you. Don't be afraid. Don't be discouraged.' Moses was a teacher and a mentor. He spent his life pouring into Joshua. One of the greatest gifts you can give is to encourage someone else and help them grow.",
+    "scenes": [
+      {
+        "caption": "Two paths",
+        "art_direction": "A fork in the road: one path glowing with life and light, the other fading into shadow."
+      },
+      {
+        "caption": "Choose life!",
+        "art_direction": "Families stepping onto the bright path together."
+      },
+      {
+        "caption": "One hundred twenty years",
+        "art_direction": "Elderly Moses with a long white beard, still strong, eyes bright."
+      },
+      {
+        "caption": "Forty years of mentoring",
+        "art_direction": "Flashback montage: young Joshua beside Moses on the mountain, at the Tabernacle, on the hill with raised arms."
+      },
+      {
+        "caption": "'Be strong and courageous'",
+        "art_direction": "Moses' hands on Joshua's shoulders before the whole crowd."
+      },
+      {
+        "caption": "Yahweh goes before you",
+        "art_direction": "A path of light stretching ahead of Joshua toward the river."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Deuteronomy 31:8",
+    "text": "Yahweh himself is who goes before you. He will be with you. He will not fail you nor forsake you. Don't be afraid. Don't be discouraged.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh himself",
+      "is who goes before you.",
+      "He will be with you.",
+      "He will not fail you",
+      "nor forsake you.",
+      "Don't be afraid.",
+      "Don't be discouraged."
+    ],
+    "distractors": [
+      "He will forget you"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can encourage others and help them grow, the way Moses helped Joshua.",
+    "reflection_prompt": "Moses spent years teaching and encouraging Joshua. Who is someone younger you could help or encourage?",
+    "reflection_choices": [
+      "A younger brother, sister, or cousin",
+      "A younger kid at school or church",
+      "A new friend",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "encouragement"
+  },
+  "quiz": [
+    {
+      "question": "What did Moses tell the people to choose?",
+      "options": [
+        "Gold",
+        "Life",
+        "A new king"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses said, 'I have set before you life and death... Therefore choose life.'",
+      "verse_ref": "Deuteronomy 30:19"
+    },
+    {
+      "question": "How old was Moses when he spoke to Joshua?",
+      "options": [
+        "One hundred twenty",
+        "Eighty",
+        "Two hundred"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses said, 'I am one hundred twenty years old today.'",
+      "verse_ref": "Deuteronomy 31:2"
+    },
+    {
+      "question": "What did Moses tell Joshua?",
+      "options": [
+        "'Go back to Egypt.'",
+        "'You'll never make it.'",
+        "'Be strong and courageous. Yahweh goes before you.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses said to Joshua, 'Be strong and courageous... Yahweh himself is who goes before you.'",
+      "verse_ref": "Deuteronomy 31:7-8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You go before me and never leave me. Help me be someone who encourages others and helps them grow strong in You. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Joshua was my best friend. I watched Moses mentor him for forty years. Encouraging someone is one of the most powerful gifts you can give."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "cedar_wood"
+    ],
+    "unlock": "mentors_bench"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

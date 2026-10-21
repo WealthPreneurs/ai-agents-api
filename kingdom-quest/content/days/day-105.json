@@ -1,0 +1,123 @@
+{
+  "day": 105,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Teaching God's Ways",
+  "scripture_passage": "Deuteronomy 32:1-4; 34",
+  "story_title": "Moses Sees the Promised Land",
+  "summary": "Moses sang a song about God, his Rock. Then God showed Moses the whole Promised Land from Mount Nebo, and Moses died at 120. Joshua, full of wisdom, became the new leader.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Welcome to Sabbath Camp! Before he died, Moses taught the people a song to help them remember God. 'I will proclaim Yahweh's name! He is the Rock. His work is perfect. All His ways are just. He is a faithful God who does no wrong.' Then Moses climbed Mount Nebo. From the top, God showed him the whole Promised Land: the hills, the valleys, the city of Jericho with its palm trees, all the way to the sea. 'This is the land I promised to Abraham, Isaac, and Jacob. I have let you see it with your eyes.' Years earlier, Moses had disobeyed God by striking a rock in anger instead of speaking to it, so he would not go in. Moses died there, one hundred twenty years old, his eyes still sharp and his body still strong. God Himself buried him. There was never another prophet like Moses, whom Yahweh knew face to face. And Joshua was filled with the spirit of wisdom, because Moses had laid his hands on him. Let's remember this week: the bronze snake, the talking donkey, five brave sisters, and Moses' great teaching. This week's big truth: you can help others learn about Yahweh.",
+    "scenes": [
+      {
+        "caption": "The song of the Rock",
+        "art_direction": "Moses singing as the people listen; a giant, solid rock glows behind him."
+      },
+      {
+        "caption": "Climbing Mount Nebo",
+        "art_direction": "Moses climbing slowly but steadily up a tall mountain."
+      },
+      {
+        "caption": "The whole land",
+        "art_direction": "A sweeping panoramic view of Canaan from the peak: hills, Jericho's palms, the distant sea."
+      },
+      {
+        "caption": "A peaceful goodbye",
+        "art_direction": "Moses sitting on the mountaintop at sunset, smiling; the scene softly fades to light."
+      },
+      {
+        "caption": "Joshua leads",
+        "art_direction": "Joshua standing before the people, full of wisdom."
+      },
+      {
+        "caption": "Camp by the doorpost",
+        "art_direction": "Campfire beside the doorpost scroll, bronze snake, and mentor's bench in the child's village."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Deuteronomy 6:6-7",
+    "text": "These words, which I command you today, shall be on your heart; and you shall teach them diligently to your children",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "These words,",
+      "which I command you today,",
+      "shall be on your heart;",
+      "and you shall",
+      "teach them diligently",
+      "to your children"
+    ],
+    "distractors": [
+      "forget them quickly"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can help others learn about Yahweh.",
+    "reflection_prompt": "Milestone: You can help others learn about Yahweh! Moses taught God's words his whole life. What is one thing about God you could teach someone this week?",
+    "reflection_choices": [
+      "God loves them",
+      "A Bible story I learned",
+      "A memory verse",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "sharing_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did Moses call God in his song?",
+      "options": [
+        "The Rock",
+        "The River",
+        "The Mountain"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses sang, 'The Rock: his work is perfect, for all his ways are just.'",
+      "verse_ref": "Deuteronomy 32:4"
+    },
+    {
+      "question": "From which mountain did Moses see the Promised Land?",
+      "options": [
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Moriah"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses went up from the plains of Moab to Mount Nebo, and Yahweh showed him all the land.",
+      "verse_ref": "Deuteronomy 34:1"
+    },
+    {
+      "question": "Who buried Moses?",
+      "options": [
+        "Joshua",
+        "Aaron",
+        "God Himself"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh buried him in the valley in the land of Moab.",
+      "verse_ref": "Deuteronomy 34:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my Rock. Thank You for teachers like Moses who help us learn about You. Help me teach others about Your love too. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Realm 15 complete! We cried for thirty days when Moses died. But he had prepared Joshua so well. Next, it's time to cross the Jordan!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "gold_thread"
+    ],
+    "unlock": "mount_nebo_lookout"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Moses' death (Deuteronomy 34:5-8), told peacefully. The reason he didn't enter (striking the rock, Numbers 20:7-12) is mentioned in one sentence. Confirm wording."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 116,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Following God Fully, My Whole Life",
+  "scripture_passage": "Joshua 14:6-15",
+  "story_title": "Caleb Asks for a Mountain",
+  "summary": "At 85 years old, Caleb reminded Joshua of God's promise and asked for the hill country where the giants lived. 'I am as strong today as I was then,' he said. And he took the land.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Years passed, and it was time to divide the land among the tribes. One day, an old man came to Joshua. It was Caleb! He said, 'Joshua, remember when Moses sent us to spy out the land? I was forty years old. I came back and told the truth, because I followed Yahweh my God fully. The other spies made the people afraid, but I trusted God. And Moses promised that the land I walked on would belong to me and my children forever. Now look! Yahweh has kept me alive these forty-five years. I am eighty-five years old today. And I am just as strong now as I was the day Moses sent me. I can still fight and travel. So give me this hill country that Yahweh promised me!' This was the very same hill country where the giants lived, the ones who had scared the ten spies! Caleb wasn't afraid then, and he wasn't afraid now. Joshua blessed Caleb and gave him the city of Hebron. Caleb followed God fully his whole life, from forty to eighty-five and beyond. Serving God isn't just for one day. It's for your whole life.",
+    "scenes": [
+      {
+        "caption": "Dividing the land",
+        "art_direction": "Joshua and the leaders with a big map, assigning areas to each tribe."
+      },
+      {
+        "caption": "An old friend",
+        "art_direction": "White-haired Caleb striding up with a walking stick, eyes sparkling."
+      },
+      {
+        "caption": "Remember?",
+        "art_direction": "Flashback: young Caleb carrying giant grapes and standing on a rock saying 'We are well able!'"
+      },
+      {
+        "caption": "Eighty-five and strong",
+        "art_direction": "Old Caleb flexing his arm and climbing a hill easily; younger men panting behind him; comedic beat."
+      },
+      {
+        "caption": "'Give me this mountain!'",
+        "art_direction": "Caleb pointing to a rugged hill country where giant silhouettes once stood."
+      },
+      {
+        "caption": "Hebron",
+        "art_direction": "Joshua blessing Caleb as he receives the city of Hebron."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 14:8",
+    "text": "but I wholly followed Yahweh my God.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "but I",
+      "wholly followed",
+      "Yahweh my God."
+    ],
+    "distractors": [
+      "sometimes followed"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can follow Yahweh fully my whole life, and I'm never too young or too old to serve Him.",
+    "reflection_prompt": "Caleb followed God fully from when he was young until he was old. What do you hope your life of serving God will look like when you grow up?",
+    "reflection_choices": [
+      "Helping people",
+      "Telling others about God",
+      "Using my gifts for Him",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "How old was Caleb when he asked for the hill country?",
+      "options": [
+        "Forty",
+        "Eighty-five",
+        "One hundred twenty"
+      ],
+      "correct_index": 1,
+      "explanation": "Caleb said, 'Now, behold, I am eighty-five years old today.'",
+      "verse_ref": "Joshua 14:10"
+    },
+    {
+      "question": "What did Caleb say about his strength?",
+      "options": [
+        "'I am as strong today as I was back then.'",
+        "'I am too tired now.'",
+        "'I need someone to carry me.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Caleb said, 'As yet I am as strong today as I was in the day that Moses sent me.'",
+      "verse_ref": "Joshua 14:11"
+    },
+    {
+      "question": "Which city did Joshua give Caleb?",
+      "options": [
+        "Jericho",
+        "Ai",
+        "Hebron"
+      ],
+      "correct_index": 2,
+      "explanation": "Joshua blessed him, and he gave Hebron to Caleb for an inheritance.",
+      "verse_ref": "Joshua 14:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to follow You fully my whole life, like Caleb. Keep my faith strong when I'm young and when I'm old. I'm ready to serve You! Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "That was me! Forty-five years I waited for that mountain, and God kept His word. Follow Him fully, my friend. It's the best way to live."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "cedar_wood"
+    ],
+    "unlock": "calebs_mountain"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

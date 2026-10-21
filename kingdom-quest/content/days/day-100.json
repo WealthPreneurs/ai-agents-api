@@ -1,0 +1,119 @@
+{
+  "day": 100,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Listening to God",
+  "scripture_passage": "Numbers 22:21-35; 23:19",
+  "story_title": "Balaam's Talking Donkey",
+  "summary": "A king hired Balaam to curse Israel. On the way, Balaam's donkey saw an angel blocking the road and stopped. When Balaam hit her, God let the donkey talk! In the end, Balaam could only bless Israel.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "As the Israelites camped near the land of Moab, the king of Moab, named Balak, got scared. So he sent for a man named Balaam and offered him money to put a curse on Israel. God let Balaam go, but told him to say only what God told him to say. Still, Balaam's heart was set on the reward, and he set off on his donkey. On the road, the angel of Yahweh stood in the way with a sword. Balaam couldn't see the angel, but his donkey could! The donkey turned off into a field, and Balaam hit her. Then the angel stood in a narrow path between two walls. The donkey squeezed against the wall and crushed Balaam's foot. He hit her again. Then the angel stood where there was no room to turn. The donkey lay down! Balaam was furious and hit her with his stick. Then God opened the donkey's mouth, and she talked! 'What have I done to you that you hit me three times?' Then God opened Balaam's eyes, and he saw the angel. Balaam realized his donkey had saved his life. Later, every time Balaam tried to curse Israel, only blessings came out. God's words can't be changed. 'God is not a man, that He should lie.'",
+    "scenes": [
+      {
+        "caption": "A scared king",
+        "art_direction": "King Balak peering down at the huge Israelite camp from a hilltop."
+      },
+      {
+        "caption": "Off on a donkey",
+        "art_direction": "Balaam riding a sturdy donkey, a bag of coins at his side."
+      },
+      {
+        "caption": "The donkey sees!",
+        "art_direction": "A shining angel on the road that only the donkey's wide eyes notice."
+      },
+      {
+        "caption": "Squeezed against the wall",
+        "art_direction": "The donkey pressing Balaam's foot against a stone wall; comedic 'ouch!'"
+      },
+      {
+        "caption": "The donkey talks!",
+        "art_direction": "The donkey turning her head with a speech bubble; Balaam's jaw dropping."
+      },
+      {
+        "caption": "Only blessings",
+        "art_direction": "Balaam on a mountain trying to curse, but golden blessing words floating out instead."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 23:19",
+    "text": "God is not a man, that he should lie",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "God",
+      "is not a man,",
+      "that he should lie"
+    ],
+    "distractors": [
+      "that he should rest"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can listen to Yahweh, and His good words about me can never be changed.",
+    "reflection_prompt": "Balaam's donkey noticed what Balaam didn't. How can you slow down and pay attention to what God is saying to you?",
+    "reflection_choices": [
+      "Reading my Bible",
+      "Being quiet and praying",
+      "Listening to wise grown-ups",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "Who did King Balak hire to curse Israel?",
+      "options": [
+        "Moses",
+        "Balaam",
+        "Joshua"
+      ],
+      "correct_index": 1,
+      "explanation": "Balak sent messengers to Balaam to come and curse the people.",
+      "verse_ref": "Numbers 22:5-6"
+    },
+    {
+      "question": "Who saw the angel first?",
+      "options": [
+        "The donkey",
+        "Balaam",
+        "King Balak"
+      ],
+      "correct_index": 0,
+      "explanation": "The donkey saw Yahweh's angel standing in the way with his sword drawn.",
+      "verse_ref": "Numbers 22:23"
+    },
+    {
+      "question": "What happened when Balaam tried to curse Israel?",
+      "options": [
+        "The curse worked",
+        "He forgot the words",
+        "Only blessings came out"
+      ],
+      "correct_index": 2,
+      "explanation": "Balaam could only speak the words God gave him, and they were blessings.",
+      "verse_ref": "Numbers 23:11-12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me listen to You and pay attention to what You're saying. Thank You that Your good words about me can never be changed. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "A talking donkey! We laughed about that one for years. But here's the lesson: nobody can curse what God has blessed. His words about you are true forever."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "balaams_donkey"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Balaam strikes his donkey three times (Numbers 22:23-27), played as comedic; the angel has a drawn sword. Confirm tone."
+  }
+}

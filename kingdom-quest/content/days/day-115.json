@@ -1,0 +1,119 @@
+{
+  "day": 115,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Keeping My Promises",
+  "scripture_passage": "Joshua 10:1-14",
+  "story_title": "The Day the Sun Stood Still",
+  "summary": "When five kings attacked Gibeon, Joshua kept Israel's promise and marched all night to help. Joshua prayed, and God made the sun stand still until the battle was won.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Five kings were angry that Gibeon had made peace with Israel. So they joined their armies together and surrounded the city of Gibeon. The Gibeonites sent an urgent message to Joshua: 'Come quickly! Save us! Help us!' Joshua could have said, 'You tricked us. You're on your own.' But Israel had made a promise. So Joshua and his army marched all night long to help their new friends. God told Joshua, 'Don't be afraid of them. I have given them into your hand.' Yahweh fought for Israel. Huge hailstones fell from the sky on the enemy armies as they ran. Then Joshua did something no one had ever done. He prayed in front of all Israel: 'Sun, stand still over Gibeon! Moon, stop over the valley!' And the sun stood still in the middle of the sky. It didn't go down for about a whole day! The Bible says there has never been a day like it before or since, a day when Yahweh listened to a man like that. Because Yahweh fought for Israel. Joshua kept his promise, even to people who had tricked him. And God fought for them.",
+    "scenes": [
+      {
+        "caption": "Five kings",
+        "art_direction": "Five kings in battle gear pointing toward the city of Gibeon."
+      },
+      {
+        "caption": "'Come quickly!'",
+        "art_direction": "A messenger sprinting into Joshua's camp at night."
+      },
+      {
+        "caption": "Marching all night",
+        "art_direction": "Joshua's army walking by torchlight through the hills under the stars."
+      },
+      {
+        "caption": "Hailstones",
+        "art_direction": "Huge hailstones falling from dark clouds on the distant enemy; shown from far away."
+      },
+      {
+        "caption": "'Sun, stand still!'",
+        "art_direction": "Joshua raising his arms toward the sky; the sun frozen in place at noon."
+      },
+      {
+        "caption": "A day like no other",
+        "art_direction": "A calendar page with one extra-long day glowing gold."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 10:14",
+    "text": "Yahweh fought for Israel.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh",
+      "fought",
+      "for Israel."
+    ],
+    "distractors": [
+      "ran from Israel."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can keep my promises and be a loyal friend, even when it's hard.",
+    "reflection_prompt": "Joshua kept his promise even to people who had tricked him. Why do you think keeping promises matters to God?",
+    "reflection_choices": [
+      "God always keeps His promises",
+      "It helps people trust me",
+      "It shows love",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "Why did the five kings attack Gibeon?",
+      "options": [
+        "Gibeon stole their sheep",
+        "Gibeon had made peace with Israel",
+        "They were lost"
+      ],
+      "correct_index": 1,
+      "explanation": "They heard that the inhabitants of Gibeon had made peace with Israel.",
+      "verse_ref": "Joshua 10:1-4"
+    },
+    {
+      "question": "What did Joshua and his army do to help Gibeon?",
+      "options": [
+        "Marched all night",
+        "Sent a letter",
+        "Waited a week"
+      ],
+      "correct_index": 0,
+      "explanation": "Joshua came upon them suddenly, having marched from Gilgal all night.",
+      "verse_ref": "Joshua 10:9"
+    },
+    {
+      "question": "What did Joshua ask God to do?",
+      "options": [
+        "Send rain",
+        "Make it night",
+        "Make the sun stand still"
+      ],
+      "correct_index": 2,
+      "explanation": "Joshua said, 'Sun, stand still on Gibeon! You, moon, stop in the valley of Aijalon!'",
+      "verse_ref": "Joshua 10:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me keep my promises and be a loyal friend, even when it's hard. Thank You that You always keep Your promises to me and fight for me. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "I was there that day! The sun just stayed up in the sky. It was the longest, most amazing day of my life. God fights for people who keep their word."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "sun_dial"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Battle at Gibeon (Joshua 10:10-11) is shown from a distance; the hailstones' deaths are not stated. Joshua 10:15-43 (the five kings and further conquests) is omitted. Confirm."
+  }
+}

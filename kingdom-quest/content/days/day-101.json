@@ -1,0 +1,119 @@
+{
+  "day": 101,
+  "month": 4,
+  "realm": 15,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Speaking Up Wisely",
+  "scripture_passage": "Numbers 27:1-11",
+  "story_title": "Five Brave Sisters",
+  "summary": "Five sisters whose father had died asked Moses for their family's share of the Promised Land. Moses asked God, and God said, 'They are right.'",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "As the new generation got ready to enter the Promised Land, each family was going to receive a piece of land. But there was a problem. Usually, the land passed from fathers to sons. A man named Zelophehad had died, and he didn't have any sons. He had five daughters: Mahlah, Noah, Hoglah, Milcah, and Tirzah. What would happen to their family's share? The five sisters did something brave. They walked right up to the entrance of the Tabernacle, where Moses, the priest, and all the leaders were gathered. They respectfully explained their problem. 'Why should our father's name disappear from his family just because he had no son? Please give us property along with our father's relatives.' Moses didn't know the answer, so he brought their question to Yahweh. And God said, 'The daughters of Zelophehad are right. Give them their father's land.' God even made it a rule for all of Israel! These sisters spoke up wisely and respectfully, and God was pleased. God cares about fairness, and He gives some people a special gift for speaking up for what's right.",
+    "scenes": [
+      {
+        "caption": "Dividing the land",
+        "art_direction": "A large map of Canaan with family names being written on sections."
+      },
+      {
+        "caption": "Five sisters",
+        "art_direction": "Five young women of different heights and personalities, holding hands."
+      },
+      {
+        "caption": "At the Tabernacle",
+        "art_direction": "The sisters walking up to Moses and the gathered leaders."
+      },
+      {
+        "caption": "A respectful question",
+        "art_direction": "The oldest sister speaking calmly while the others nod; the leaders listening closely."
+      },
+      {
+        "caption": "Moses asks God",
+        "art_direction": "Moses kneeling in the Tabernacle; soft light shining down."
+      },
+      {
+        "caption": "'They are right!'",
+        "art_direction": "The sisters hugging in joy as their names are written on the map."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 31:8",
+    "text": "Open your mouth for the mute, in the cause of all who are left desolate.",
+    "translation": "WEB",
+    "tokens": [
+      "Open your mouth",
+      "for the mute,",
+      "in the cause",
+      "of all who are",
+      "left desolate."
+    ],
+    "distractors": [
+      "left happy."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can give me the gift of speaking up wisely for what's right.",
+    "reflection_prompt": "The sisters spoke up respectfully when something wasn't fair. When is a time you could speak up for yourself or someone else?",
+    "reflection_choices": [
+      "When someone is left out",
+      "When a rule seems unfair",
+      "When someone can't speak for themselves",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "How many daughters did Zelophehad have?",
+      "options": [
+        "Five",
+        "Two",
+        "Twelve"
+      ],
+      "correct_index": 0,
+      "explanation": "Zelophehad's daughters were Mahlah, Noah, Hoglah, Milcah, and Tirzah.",
+      "verse_ref": "Numbers 27:1"
+    },
+    {
+      "question": "What did Moses do when he didn't know the answer?",
+      "options": [
+        "He guessed",
+        "He brought their question to Yahweh",
+        "He sent them away"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses brought their cause before Yahweh.",
+      "verse_ref": "Numbers 27:5"
+    },
+    {
+      "question": "What did God say about the sisters?",
+      "options": [
+        "'They should be quiet.'",
+        "'They can have half.'",
+        "'They are right.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh said, 'The daughters of Zelophehad speak right.'",
+      "verse_ref": "Numbers 27:7"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You care about what's fair. Give me courage and wisdom to speak up respectfully for myself and for others. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Those five sisters were so brave! They didn't yell or complain. They asked wisely, and God answered. Your voice matters to Him too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

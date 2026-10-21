@@ -1,0 +1,119 @@
+{
+  "day": 114,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Asking God First",
+  "scripture_passage": "Joshua 9",
+  "story_title": "The Moldy Bread Trick",
+  "summary": "The Gibeonites tricked Joshua with moldy bread and worn-out sandals, pretending to come from far away. Israel made a peace promise without asking God, but they kept their word.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "One day, a group of travelers came to Joshua's camp. Their clothes were ragged. Their sandals were patched and falling apart. Their wineskins were cracked, and their bread was dry and moldy. 'We've come from a very far country,' they said. 'We heard about your God. Please make a peace treaty with us.' Joshua and the leaders looked at the moldy bread and the worn-out sandals. 'They must have traveled a long way,' they thought. So they made a peace promise with them. But the Bible says something important: they did not ask Yahweh for His advice. Three days later, the Israelites found out the truth. These people were the Gibeonites, and they lived just down the road! They had dressed up to trick Israel. The people were upset, but the leaders said, 'We made a promise in the name of Yahweh. We have to keep it.' So Israel kept their word, and the Gibeonites became helpers who cut wood and carried water for the Tabernacle. Things aren't always what they look like. That's why we need God's wisdom, and He gives it to anyone who asks.",
+    "scenes": [
+      {
+        "caption": "Ragged travelers",
+        "art_direction": "A group of people in tattered clothes and patched sandals limping into camp."
+      },
+      {
+        "caption": "Moldy bread",
+        "art_direction": "Close-up of dry, crumbly, moldy bread; a leader wrinkling his nose."
+      },
+      {
+        "caption": "A quick promise",
+        "art_direction": "Joshua and the leaders shaking hands with the travelers."
+      },
+      {
+        "caption": "They didn't ask God",
+        "art_direction": "A glowing scroll and an empty prayer spot nearby, unnoticed."
+      },
+      {
+        "caption": "Just down the road!",
+        "art_direction": "The Israelites arriving at Gibeon three days later, only a short walk away; jaws dropping."
+      },
+      {
+        "caption": "Keeping their word",
+        "art_direction": "Gibeonites carrying water jars and firewood to the Tabernacle."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "James 1:5",
+    "text": "if any of you lacks wisdom, let him ask of God",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "if any of you",
+      "lacks wisdom,",
+      "let him",
+      "ask of God"
+    ],
+    "distractors": [
+      "figure it out alone"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me wisdom when I ask Him before I decide.",
+    "reflection_prompt": "Joshua made a big decision without asking God. What is a decision you could ask God about before you make it?",
+    "reflection_choices": [
+      "Who to be friends with",
+      "What to do with my free time",
+      "How to solve a problem",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "How did the Gibeonites trick Israel?",
+      "options": [
+        "They wore disguises as kings",
+        "They used old clothes, worn sandals, and moldy bread",
+        "They sent a fake letter"
+      ],
+      "correct_index": 1,
+      "explanation": "They took old sacks, wineskins, patched sandals, old garments, and dry, moldy bread.",
+      "verse_ref": "Joshua 9:4-5"
+    },
+    {
+      "question": "What important thing did Israel forget to do?",
+      "options": [
+        "Ask Yahweh for advice",
+        "Eat the bread",
+        "Count the travelers"
+      ],
+      "correct_index": 0,
+      "explanation": "The men took of their provisions, and didn't ask counsel from Yahweh's mouth.",
+      "verse_ref": "Joshua 9:14"
+    },
+    {
+      "question": "What did Israel do when they found out the truth?",
+      "options": [
+        "Broke their promise",
+        "Ran away",
+        "Kept their promise"
+      ],
+      "correct_index": 2,
+      "explanation": "The leaders said, 'We have sworn to them by Yahweh... we may not touch them.'",
+      "verse_ref": "Joshua 9:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I have a decision to make, help me ask You first. Thank You that You give wisdom to anyone who asks. Help me keep my promises too. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "That moldy bread fooled us all! I learned to stop and pray before big decisions. And even when we were tricked, keeping our word mattered to God."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

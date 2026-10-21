@@ -1,0 +1,117 @@
+{
+  "day": 118,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Loving God With All My Heart",
+  "scripture_passage": "Joshua 23",
+  "story_title": "Joshua's Farewell Talk",
+  "summary": "When Joshua was old, he gathered Israel's leaders and reminded them that God had fought for them. He urged them to stay close to God and love Him with all their hearts.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "A long time passed. Joshua was now very old. He called together all the leaders of Israel: the elders, judges, and officers. He wanted to give them one last important talk. 'I am old now,' Joshua said. 'You have seen everything Yahweh your God did for you. Yahweh fought for you! One of you can chase away a thousand, because Yahweh is the One who fights for you, just as He promised. So be very strong. Be careful to obey everything written in the Book of the Law. Don't turn away from it, to the right or to the left. Hold on tight to Yahweh your God, as you have done until now.' Then Joshua said the most important thing of all: 'So be very careful to love Yahweh your God.' Joshua knew that the people needed more than rules. They needed hearts that loved God. He reminded them, 'You know with all your heart and soul that not one of God's good promises has failed.' Joshua was a loyal servant of God to the very end. He wanted the next generation to stay loyal too.",
+    "scenes": [
+      {
+        "caption": "Joshua grows old",
+        "art_direction": "Elderly Joshua with a long white beard, sitting under a tree."
+      },
+      {
+        "caption": "Gathering the leaders",
+        "art_direction": "Elders, judges, and officers arriving and sitting in a circle around him."
+      },
+      {
+        "caption": "God fought for you",
+        "art_direction": "A flashback montage: the Jordan stopping, Jericho's walls falling, the sun standing still."
+      },
+      {
+        "caption": "One chases a thousand",
+        "art_direction": "A playful picture of one small person with a banner and a thousand silhouettes running away."
+      },
+      {
+        "caption": "Hold on tight",
+        "art_direction": "A child holding onto a glowing rope that stretches up to the sky."
+      },
+      {
+        "caption": "Love Yahweh",
+        "art_direction": "Joshua placing his hand over his heart as the leaders do the same."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 23:11",
+    "text": "Take good heed therefore to yourselves, that you love Yahweh your God.",
+    "translation": "WEB",
+    "tokens": [
+      "Take good heed",
+      "therefore to yourselves,",
+      "that you love",
+      "Yahweh your God."
+    ],
+    "distractors": [
+      "that you forget"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay loyal to Yahweh by loving Him with all my heart.",
+    "reflection_prompt": "Joshua said the most important thing was to love God. What helps you remember to love God every day?",
+    "reflection_choices": [
+      "Praying",
+      "Reading or listening to Bible stories",
+      "Singing worship songs",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "Who did Joshua gather for his farewell talk?",
+      "options": [
+        "Only his family",
+        "All the leaders of Israel",
+        "The Egyptians"
+      ],
+      "correct_index": 1,
+      "explanation": "Joshua called for all Israel, for their elders, heads, judges, and officers.",
+      "verse_ref": "Joshua 23:2"
+    },
+    {
+      "question": "How many enemies did Joshua say one Israelite could chase away?",
+      "options": [
+        "A thousand",
+        "Ten",
+        "Two"
+      ],
+      "correct_index": 0,
+      "explanation": "Joshua said, 'One man of you shall chase a thousand; for it is Yahweh your God who fights for you.'",
+      "verse_ref": "Joshua 23:10"
+    },
+    {
+      "question": "What did Joshua say was most important?",
+      "options": [
+        "Being rich",
+        "Having a big army",
+        "To love Yahweh your God"
+      ],
+      "correct_index": 2,
+      "explanation": "Joshua said, 'Take good heed therefore to yourselves, that you love Yahweh your God.'",
+      "verse_ref": "Joshua 23:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to stay loyal to You my whole life. Help me hold on tight to You and love You with all my heart. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Joshua and I grew old together. He never stopped telling people to love God. That's the best thing a friend can leave behind."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

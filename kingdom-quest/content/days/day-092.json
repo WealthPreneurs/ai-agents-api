@@ -1,0 +1,114 @@
+{
+  "day": 92,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Blessed to Bless",
+  "scripture_passage": "Numbers 6:22-27; 9:15-23; 10:11-13",
+  "story_title": "The Blessing and the Cloud",
+  "summary": "Before leaving Sinai, God gave Aaron a special blessing to speak over the people. Then the cloud lifted, and God's people set out on the journey to the Promised Land.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "God's people had camped at Mount Sinai for almost a year. They had built the Tabernacle and learned God's ways. Before they set out, God gave Aaron and his sons special words to speak over the people, a blessing that families still pray today: 'Yahweh bless you and keep you. Yahweh make His face shine on you and be gracious to you. Yahweh turn His face toward you and give you peace.' God said, 'This is how they will put My name on My people, and I will bless them.' Then, one day, the cloud lifted from the Tabernacle. That was the signal! The priests blew silver trumpets. Each tribe packed up its tents and lined up in order, with the ark of the covenant going ahead of them. Whenever the cloud stopped, they stopped. Whenever it moved, they moved, whether it was after two days, a month, or a year. They followed God's lead. God's people were blessed so they could be a blessing. And God gives you the gift of blessing others with your words too.",
+    "scenes": [
+      {
+        "caption": "A year at Sinai",
+        "art_direction": "The organized camp around the Tabernacle, with the mountain behind it."
+      },
+      {
+        "caption": "The priestly blessing",
+        "art_direction": "Aaron raising his hands over a crowd of families; golden words floating down like light."
+      },
+      {
+        "caption": "His face shines on you",
+        "art_direction": "Close-up of children's faces lit by warm, gentle light."
+      },
+      {
+        "caption": "The cloud lifts",
+        "art_direction": "The cloud rising from the Tabernacle as priests lift silver trumpets."
+      },
+      {
+        "caption": "Setting out",
+        "art_direction": "Twelve tribes with colorful banners marching in order behind the ark."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 6:24",
+    "text": "Yahweh bless you, and keep you.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh",
+      "bless you,",
+      "and keep you."
+    ],
+    "distractors": [
+      "and leave you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh blesses me, and He gives me the gift of blessing others with my words.",
+    "reflection_prompt": "Aaron spoke God's blessing over the people. Who is someone you could bless with kind words today?",
+    "reflection_choices": [
+      "My mom or dad",
+      "A brother or sister",
+      "A friend",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "encouragement"
+  },
+  "quiz": [
+    {
+      "question": "What did God give Aaron to speak over the people?",
+      "options": [
+        "A warning",
+        "A special blessing",
+        "A riddle"
+      ],
+      "correct_index": 1,
+      "explanation": "God told Aaron to bless the people with the words, 'Yahweh bless you, and keep you...'",
+      "verse_ref": "Numbers 6:23-24"
+    },
+    {
+      "question": "What was the signal that it was time to travel?",
+      "options": [
+        "The cloud lifted from the Tabernacle",
+        "Moses rang a bell",
+        "The sun came up"
+      ],
+      "correct_index": 0,
+      "explanation": "Whenever the cloud was taken up from the Tent, the children of Israel traveled.",
+      "verse_ref": "Numbers 9:17"
+    },
+    {
+      "question": "What did the priests blow to gather the people?",
+      "options": [
+        "Wooden flutes",
+        "Seashells",
+        "Silver trumpets"
+      ],
+      "correct_index": 2,
+      "explanation": "God told Moses to make two trumpets of silver to call the people and to start the journeys.",
+      "verse_ref": "Numbers 10:2"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, bless me and keep me. Make Your face shine on me and give me peace. Help me use my words to bless the people around me. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Hi! I'm Caleb from the tribe of Judah. I'll be your guide through the Wilderness Frontier. I was there when we left Sinai, and let me tell you, it was an adventure!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "silver_trumpets"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

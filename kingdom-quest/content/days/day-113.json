@@ -1,0 +1,118 @@
+{
+  "day": 113,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Bringing Hidden Things to Light",
+  "scripture_passage": "Joshua 7",
+  "story_title": "Achan's Secret",
+  "summary": "After Jericho, Israel lost a battle at a small town called Ai. God revealed that Achan had secretly stolen and hidden treasure. Hidden sin hurts everyone, but confessing brings it into the light.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "After the amazing victory at Jericho, the next town was a little place called Ai. The spies said, 'It's so small, we only need to send a few thousand men.' But the men of Ai chased Israel away, and the Israelites lost the battle. Joshua was heartbroken. He tore his clothes and fell face down before the ark. 'Yahweh, why did this happen?' God answered, 'Get up! Someone has sinned. At Jericho, I told you not to take anything for yourselves. But someone stole and lied and hid it.' The next morning, God showed Joshua which tribe, then which family, then which person had done it. It was a man named Achan. Joshua said to him kindly, 'My son, please tell me the truth. Don't hide it from me.' Achan confessed: 'It's true. I saw a beautiful robe, silver, and a bar of gold. I wanted them, so I took them and buried them under my tent.' The treasure was found exactly where he said. Achan's sin had serious consequences for him and for all of Israel. Hidden sin always hurts more people than we think. But when we bring it into the light, God can make things right.",
+    "scenes": [
+      {
+        "caption": "Little Ai",
+        "art_direction": "A small town on a hill; the spies shrugging confidently."
+      },
+      {
+        "caption": "A surprising loss",
+        "art_direction": "Israelite soldiers retreating down the hill; shown from far away."
+      },
+      {
+        "caption": "Joshua's prayer",
+        "art_direction": "Joshua on his face before the ark at night, robe torn."
+      },
+      {
+        "caption": "Who did it?",
+        "art_direction": "A glowing light moving from tribe banners to one family's tent."
+      },
+      {
+        "caption": "'Please tell me the truth'",
+        "art_direction": "Joshua kneeling to speak gently with Achan."
+      },
+      {
+        "caption": "Buried treasure",
+        "art_direction": "A robe, silver coins, and a gold bar being dug up from under a tent floor."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Numbers 32:23",
+    "text": "be sure your sin will find you out.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "be sure",
+      "your sin",
+      "will find you out."
+    ],
+    "distractors": [
+      "will stay hidden."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can bring hidden wrongs into the light, because Yahweh helps me make things right.",
+    "reflection_prompt": "Achan hid what he did, and it hurt a lot of people. Is there something you've been hiding that you need to tell God or a grown-up?",
+    "reflection_choices": [
+      "Something I took",
+      "A lie I told",
+      "Something I broke",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "What happened when Israel attacked Ai?",
+      "options": [
+        "They won easily",
+        "They lost the battle",
+        "Ai surrendered"
+      ],
+      "correct_index": 1,
+      "explanation": "The men of Ai chased them and struck them on the descent.",
+      "verse_ref": "Joshua 7:4-5"
+    },
+    {
+      "question": "What did Joshua say to Achan?",
+      "options": [
+        "'My son, please tell me the truth.'",
+        "'Go away!'",
+        "'You're in big trouble.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Joshua said, 'My son, please give glory to Yahweh... and tell me now what you have done. Don't hide it.'",
+      "verse_ref": "Joshua 7:19"
+    },
+    {
+      "question": "Where did Achan hide the treasure?",
+      "options": [
+        "In a cave",
+        "In the river",
+        "Buried under his tent"
+      ],
+      "correct_index": 2,
+      "explanation": "Achan said, 'They are hidden in the ground in the middle of my tent.'",
+      "verse_ref": "Joshua 7:21"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I don't want to hide anything from You. Give me courage to tell the truth and bring hidden wrongs into the light. Thank You that You help me make things right. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "That was a sad day for all of us. Achan's secret didn't stay secret. If you're carrying something you've hidden, tell a grown-up you trust. You'll feel so much lighter."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Achan and his family are stoned (Joshua 7:24-26). Omitted; narration says 'Achan's sin had serious consequences for him and for all of Israel.' Also omits the 36 men killed at Ai (7:5). Confirm this is acceptable."
+  }
+}

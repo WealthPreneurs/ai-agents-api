@@ -1,0 +1,118 @@
+{
+  "day": 93,
+  "month": 4,
+  "realm": 14,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Sharing the Load",
+  "scripture_passage": "Numbers 11:1-30",
+  "story_title": "Too Heavy for One Person",
+  "summary": "The people complained about manna and wanted meat. Moses felt the job was too heavy to carry alone, so God put His Spirit on seventy elders to help him lead.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Not long after setting out, the people started complaining again. 'We're tired of manna! Remember the fish we ate in Egypt? And the cucumbers, melons, leeks, onions, and garlic? Now all we see is this manna!' They forgot that in Egypt they were slaves. Moses heard families crying at the entrances of their tents, and he felt overwhelmed. He prayed, 'Why have You given me this heavy job? I can't carry all these people by myself. It's too heavy for me!' God listened to Moses' honest prayer. He said, 'Gather seventy of the leaders. I will take some of the Spirit that is on you and put it on them. They will help you carry the load, so you won't have to carry it alone.' So the seventy elders gathered around the Tabernacle, and God's Spirit came on them. Two men named Eldad and Medad stayed back in the camp, but the Spirit came on them too! Joshua said, 'Moses, stop them!' But Moses said, 'I wish all of God's people had His Spirit!' God never meant for one person to do everything. We each have gifts to help carry the load together.",
+    "scenes": [
+      {
+        "caption": "Tired of manna",
+        "art_direction": "People poking at manna with bored faces and daydreaming of Egyptian melons and onions."
+      },
+      {
+        "caption": "Crying in the tents",
+        "art_direction": "Families sitting at tent doors complaining."
+      },
+      {
+        "caption": "Too heavy",
+        "art_direction": "Moses carrying an enormous, comically oversized backpack labeled with the whole camp."
+      },
+      {
+        "caption": "Seventy helpers",
+        "art_direction": "Seventy elders standing around the Tabernacle as warm light rests on each of them."
+      },
+      {
+        "caption": "Eldad and Medad",
+        "art_direction": "Two men in the middle of the camp glowing with the Spirit; Joshua running to Moses."
+      },
+      {
+        "caption": "Carrying it together",
+        "art_direction": "The big backpack split into many smaller packs, carried happily by many people."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Galatians 6:2",
+    "text": "Bear one another's burdens, and so fulfill the law of Christ.",
+    "translation": "WEB",
+    "tokens": [
+      "Bear",
+      "one another's burdens,",
+      "and so fulfill",
+      "the law of Christ."
+    ],
+    "distractors": [
+      "your own burdens,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can use my gifts to help carry someone else's load.",
+    "reflection_prompt": "Moses needed helpers to share his load. Who in your life carries a lot, and how could you help them?",
+    "reflection_choices": [
+      "My parents at home",
+      "A teacher",
+      "A friend going through something hard",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "serving"
+  },
+  "quiz": [
+    {
+      "question": "What foods did the people miss from Egypt?",
+      "options": [
+        "Pizza and pasta",
+        "Fish, cucumbers, melons, leeks, onions, and garlic",
+        "Apples and bananas"
+      ],
+      "correct_index": 1,
+      "explanation": "They remembered the fish, cucumbers, melons, leeks, onions, and garlic of Egypt.",
+      "verse_ref": "Numbers 11:5"
+    },
+    {
+      "question": "What did Moses tell God about his job?",
+      "options": [
+        "It was too heavy to carry alone",
+        "It was too easy",
+        "It was boring"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses said, 'I am not able to bear all this people alone, because it is too heavy for me.'",
+      "verse_ref": "Numbers 11:14"
+    },
+    {
+      "question": "How many elders did God choose to help Moses?",
+      "options": [
+        "Twelve",
+        "Three",
+        "Seventy"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Gather to me seventy men of the elders of Israel.'",
+      "verse_ref": "Numbers 11:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that I don't have to carry everything alone. Help me notice when others are carrying a heavy load, and show me how I can help. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Moses was the greatest leader I ever knew, but even he needed help. God gives every one of us gifts so we can share the work. That's how His family works!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits the fire at Taberah (11:1-3) and the plague that followed the quail (11:31-34). Confirm this is acceptable."
+  }
+}

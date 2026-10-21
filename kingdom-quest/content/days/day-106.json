@@ -1,0 +1,122 @@
+{
+  "day": 106,
+  "month": 4,
+  "realm": 16,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Leader Who Listens",
+  "scripture_passage": "Joshua 1:1-11",
+  "story_title": "Joshua Takes the Lead",
+  "summary": "After Moses died, God told Joshua to lead the people across the Jordan. He promised to be with Joshua and told him to keep God's Word on his lips and meditate on it day and night.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "After Moses died, Yahweh spoke to Joshua. 'Moses My servant is dead. Now get up! Lead all these people across the Jordan River into the land I am giving them. Every place you set your foot, I have given you, just as I promised Moses. No one will be able to stand against you all the days of your life. As I was with Moses, so I will be with you. I will never leave you or forsake you.' Joshua had big shoes to fill! Moses was the greatest prophet who ever lived. But God gave Joshua the secret to being a good leader. 'Keep this Book of the Law always on your lips. Think about it day and night, so you will be careful to do everything written in it. Then you will be successful.' A good leader isn't someone who knows everything. A good leader listens to God and does what He says. Then God said, 'Be strong and courageous! Don't be afraid or discouraged, for Yahweh your God is with you wherever you go.' So Joshua told the officers, 'Get your supplies ready. In three days, we're crossing the Jordan!'",
+    "scenes": [
+      {
+        "caption": "A new leader",
+        "art_direction": "Joshua standing alone by the Jordan River at dawn, looking across at the Promised Land."
+      },
+      {
+        "caption": "'Get up!'",
+        "art_direction": "Warm light shining on Joshua as God speaks; Joshua straightening his shoulders."
+      },
+      {
+        "caption": "Every place your foot steps",
+        "art_direction": "Joshua's footprint glowing gold on the ground and spreading across a map of Canaan."
+      },
+      {
+        "caption": "Big shoes to fill",
+        "art_direction": "Joshua stepping into a pair of large sandals; light comedic beat."
+      },
+      {
+        "caption": "Day and night",
+        "art_direction": "Joshua reading a scroll by sunlight and again by lamplight."
+      },
+      {
+        "caption": "'Get ready!'",
+        "art_direction": "Officers running through camp shouting, 'Three days!' as families pack."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Joshua 1:8",
+    "text": "This book of the law shall not depart from your mouth, but you shall meditate on it day and night",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "This book of the law",
+      "shall not depart",
+      "from your mouth,",
+      "but you shall",
+      "meditate on it",
+      "day and night"
+    ],
+    "distractors": [
+      "only on Sundays"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can make me a leader who listens to Him.",
+    "reflection_prompt": "God told Joshua that good leaders keep God's Word close. Where is somewhere you get to lead, even in a small way?",
+    "reflection_choices": [
+      "With younger kids",
+      "In a game or a team",
+      "At home",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "leadership"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Joshua to do after Moses died?",
+      "options": [
+        "Go back to Egypt",
+        "Lead the people across the Jordan",
+        "Build a city in the desert"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Arise, go across this Jordan, you and all these people, to the land I am giving them.'",
+      "verse_ref": "Joshua 1:2"
+    },
+    {
+      "question": "What did God promise Joshua?",
+      "options": [
+        "'As I was with Moses, so I will be with you.'",
+        "'You'll never have to fight.'",
+        "'You'll be famous.'"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'As I was with Moses, so I will be with you. I will not fail you nor forsake you.'",
+      "verse_ref": "Joshua 1:5"
+    },
+    {
+      "question": "How often did God tell Joshua to think about His Word?",
+      "options": [
+        "Once a year",
+        "Only on the Sabbath",
+        "Day and night"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'You shall meditate on it day and night.'",
+      "verse_ref": "Joshua 1:8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me be a leader who listens to You. Keep Your Word in my heart and on my lips, day and night. Thank You for being with me wherever I go. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "My best friend Joshua was a little nervous to take Moses' place. But God told him exactly what he needed to hear. Great leaders start as great listeners."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "joshuas_scroll"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

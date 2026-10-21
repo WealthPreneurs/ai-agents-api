@@ -1,0 +1,120 @@
+{
+  "day": 117,
+  "month": 4,
+  "realm": 17,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Every Promise Kept",
+  "scripture_passage": "Joshua 20; 21:43-45",
+  "story_title": "A Home for Everyone",
+  "summary": "God gave every tribe a place in the land and set up cities of refuge where people could be safe. Not one of God's good promises failed. Every one came true.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Finally, every tribe of Israel received its own land. Judah in the south, the tribes of Joseph in the middle, and others in the north and across the Jordan River. Every family got a place to call home, just as God had promised Abraham hundreds of years before. God also told Joshua to set up six special cities called cities of refuge. If someone caused an accident that hurt another person, they could run to a city of refuge and be safe while the leaders made a fair decision. God built mercy and fairness right into the land! The tribe of Levi, the priests and their helpers, didn't get one big area. Instead, they received towns spread throughout all the tribes, so God's teachers would live among all His people. Then the Bible says something wonderful: 'Yahweh gave Israel all the land He had promised. Not one of all the good promises Yahweh had made to Israel failed. Every one came true.' From Abraham counting the stars, to Joseph's bones, to Moses on the mountain, God had kept every single word. And He keeps His promises to you too.",
+    "scenes": [
+      {
+        "caption": "A map of homes",
+        "art_direction": "A colorful map of Canaan with each tribe's area lighting up as families arrive."
+      },
+      {
+        "caption": "Settling in",
+        "art_direction": "Families planting gardens, building homes, and children playing in their new land."
+      },
+      {
+        "caption": "Cities of refuge",
+        "art_direction": "Six glowing cities marked on the map with open gates and roads leading to them."
+      },
+      {
+        "caption": "Levites everywhere",
+        "art_direction": "Priests and teachers living in towns spread across every tribe, teaching children."
+      },
+      {
+        "caption": "Not one promise failed",
+        "art_direction": "A long scroll unrolling with promises checked off one by one, from Abraham to Joshua."
+      },
+      {
+        "caption": "Promises to you",
+        "art_direction": "The scroll continues to unroll toward the child's avatar."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Hebrews 10:23",
+    "text": "he who promised is faithful.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "he who",
+      "promised",
+      "is faithful."
+    ],
+    "distractors": [
+      "is forgetful."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh keeps every promise, and I can share His mercy and fairness with others.",
+    "reflection_prompt": "God gave every family a home and made safe places for people who needed them. How can you help someone feel safe and welcome?",
+    "reflection_choices": [
+      "Invite someone to sit with me",
+      "Be fair when we play",
+      "Stand up for someone",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "How many cities of refuge were there?",
+      "options": [
+        "Twelve",
+        "Six",
+        "One"
+      ],
+      "correct_index": 1,
+      "explanation": "Six cities were set apart: three west of the Jordan and three east of the Jordan.",
+      "verse_ref": "Joshua 20:7-8"
+    },
+    {
+      "question": "Why did the Levites get towns in every tribe?",
+      "options": [
+        "So God's priests and teachers lived among all the people",
+        "They couldn't decide",
+        "They wanted to travel"
+      ],
+      "correct_index": 0,
+      "explanation": "The Levites received towns spread throughout the land of all the tribes.",
+      "verse_ref": "Joshua 21:41"
+    },
+    {
+      "question": "How many of God's good promises to Israel failed?",
+      "options": [
+        "Half of them",
+        "Just one",
+        "Not one"
+      ],
+      "correct_index": 2,
+      "explanation": "Not one of all the good things which Yahweh had spoken failed. All came to pass.",
+      "verse_ref": "Joshua 21:45"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You keep every single promise. Thank You for giving Your people a home. Help me share Your mercy and fairness with everyone around me. Amen."
+  },
+  "companion": {
+    "id": "caleb",
+    "message": "Every family got a home, just like God said! I sat on my mountain in Hebron and thought about all the promises God had kept. Not one failed."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "palm_branch"
+    ],
+    "unlock": "city_of_refuge"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Cities of refuge are explained as places for 'someone who caused an accident that hurt another person' (Joshua 20:3 concerns unintentional killing). Confirm this softening."
+  }
+}
