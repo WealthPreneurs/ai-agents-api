@@ -1,0 +1,121 @@
+{
+  "day": 162,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Friend Closer Than a Brother",
+  "scripture_passage": "1 Samuel 18:1-4",
+  "story_title": "David and Jonathan",
+  "summary": "After David defeated Goliath, King Saul's son Jonathan became his best friend. Jonathan loved David as himself and made a covenant of friendship, giving David his own robe, armor, sword, bow, and belt.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "After David finished talking with King Saul, something special happened. Saul's son, Prince Jonathan, had been watching. Jonathan was a brave warrior himself. Once, he and his armor-bearer had climbed a cliff and defeated a whole group of Philistines, trusting that God can save by many or by few. When Jonathan saw David's courage and faith, his heart was knit together with David's. The Bible says Jonathan loved David as much as he loved himself. They became best friends. Saul brought David to live at the palace and wouldn't let him go home. Then Jonathan made a covenant with David, a solemn promise of friendship, because he loved him. To show how serious he was, Jonathan took off his own royal robe and gave it to David. He also gave David his armor, his sword, his bow, and his belt. Jonathan was the prince, the king's son. Most people would have expected him to become the next king. But Jonathan wasn't jealous of David at all. He gave David the best he had. True friends celebrate each other and give generously, instead of competing.",
+    "scenes": [
+      {
+        "caption": "A prince watches",
+        "art_direction": "Prince Jonathan standing beside Saul's throne, watching David with admiration."
+      },
+      {
+        "caption": "Jonathan's own courage",
+        "art_direction": "Flashback: Jonathan and his armor-bearer climbing a rocky cliff."
+      },
+      {
+        "caption": "Hearts knit together",
+        "art_direction": "Two threads of golden light weaving together between David and Jonathan."
+      },
+      {
+        "caption": "A covenant",
+        "art_direction": "Jonathan and David clasping hands in a sunlit courtyard."
+      },
+      {
+        "caption": "The royal robe",
+        "art_direction": "Jonathan removing his royal robe and placing it around David's shoulders."
+      },
+      {
+        "caption": "Sword, bow, and belt",
+        "art_direction": "Jonathan handing over his sword, bow, and belt one by one; David amazed."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 18:24",
+    "text": "A man of many companions may be ruined, but there is a friend who sticks closer than a brother.",
+    "translation": "WEB",
+    "tokens": [
+      "A man of",
+      "many companions",
+      "may be ruined,",
+      "but there is a friend",
+      "who sticks closer",
+      "than a brother."
+    ],
+    "distractors": [
+      "who runs away"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be a loyal friend who celebrates others instead of competing with them.",
+    "reflection_prompt": "Jonathan gave David his best things and wasn't jealous. Who is a good friend in your life, and how can you show them you care?",
+    "reflection_choices": [
+      "Share something special",
+      "Cheer for them",
+      "Spend time with them",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "How did Jonathan love David?",
+      "options": [
+        "A little bit",
+        "As much as he loved himself",
+        "Only when they played games"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonathan loved him as his own soul.",
+      "verse_ref": "1 Samuel 18:1"
+    },
+    {
+      "question": "What did Jonathan make with David?",
+      "options": [
+        "A covenant of friendship",
+        "A business deal",
+        "A house"
+      ],
+      "correct_index": 0,
+      "explanation": "Jonathan made a covenant with David, because he loved him as his own soul.",
+      "verse_ref": "1 Samuel 18:3"
+    },
+    {
+      "question": "What did Jonathan give David?",
+      "options": [
+        "A horse",
+        "Gold coins",
+        "His robe, armor, sword, bow, and belt"
+      ],
+      "correct_index": 2,
+      "explanation": "Jonathan gave David his robe, his clothing, his sword, his bow, and his sash.",
+      "verse_ref": "1 Samuel 18:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for my friends. Help me be a loyal friend like Jonathan, who celebrates others and gives generously instead of competing. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Jonathan was my best friend in the whole world. He could have been jealous of me, but instead he gave me his own robe. I'll never forget his kindness."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "friendship_robe"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

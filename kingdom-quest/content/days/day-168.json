@@ -1,0 +1,108 @@
+{
+  "day": 168,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: A Friend at All Times",
+  "scripture_passage": "1 Samuel 18-23",
+  "story_title": "Best Friends Forever",
+  "summary": "Sabbath Camp looks back at the friendship of David and Jonathan: a covenant, a robe, speaking up, the arrows signal, and strengthening each other in God, even when Saul was jealous.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Welcome to Sabbath Camp! This week was all about friendship. Let's remember. After David defeated Goliath, Prince Jonathan's heart was knit with David's. Jonathan made a covenant of friendship and gave David his own robe, armor, sword, bow, and belt. Saul became jealous when the women sang about David's ten thousands. He even threw his spear at David. But David kept acting wisely, and Yahweh was with him. Jonathan bravely spoke up for David to his father. Michal helped David escape through a window. Jonathan and David made a secret plan with arrows, and when Jonathan learned the truth, he warned David. They hugged and cried, and said goodbye in the name of Yahweh. In the wilderness, Jonathan found David and strengthened his faith in God. This week's big truth: you can be a friend who loves at all times. In good times and hard times. When it's easy, and when it costs you something. Jonathan's friendship didn't depend on what David could do for him. And the best friend of all is Jesus, who loves you at all times.",
+    "scenes": [
+      {
+        "caption": "Camp by the arrow stone",
+        "art_direction": "Campfire in the child's village beside the friendship robe, the arrow signal stone, and the cave of Adullam."
+      },
+      {
+        "caption": "A friendship story",
+        "art_direction": "Storybook recap: the robe, the spear, Jonathan speaking up, the window, the arrows, the forest."
+      },
+      {
+        "caption": "Friends at all times",
+        "art_direction": "The child's avatar walking with friends; a warm golden thread connecting them all, with Jesus' light at the center."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 17:17",
+    "text": "A friend loves at all times; and a brother is born for adversity.",
+    "translation": "WEB",
+    "tokens": [
+      "A friend",
+      "loves",
+      "at all times;",
+      "and a brother",
+      "is born",
+      "for adversity."
+    ],
+    "distractors": [
+      "only on sunny days;"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be a friend who loves at all times.",
+    "reflection_prompt": "Milestone: You can be a friend who loves at all times! Make a 'friendship covenant' in your Blueprint journal. Write three promises you want to keep as a friend.",
+    "reflection_choices": [
+      "I'll stick with my friends",
+      "I'll speak up for them",
+      "I'll point them to God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "What did Jonathan give David to show his friendship?",
+      "options": [
+        "A crown",
+        "His robe, armor, sword, bow, and belt",
+        "A chariot"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonathan gave David his robe, sword, bow, and sash.",
+      "verse_ref": "1 Samuel 18:4"
+    },
+    {
+      "question": "Why was Saul jealous of David?",
+      "options": [
+        "The women sang that David defeated ten thousands",
+        "David was rich",
+        "David was older"
+      ],
+      "correct_index": 0,
+      "explanation": "The women sang, 'Saul has slain his thousands, and David his ten thousands.'",
+      "verse_ref": "1 Samuel 18:7-8"
+    },
+    {
+      "question": "What does a friend do, according to Proverbs?",
+      "options": [
+        "Loves only on good days",
+        "Leaves when it's hard",
+        "Loves at all times"
+      ],
+      "correct_index": 2,
+      "explanation": "A friend loves at all times.",
+      "verse_ref": "Proverbs 17:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for friends who love me at all times. Help me be that kind of friend. And thank You for Jesus, the best Friend of all. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Realm 24 complete! Jonathan was a friend who loved at all times. Next, you'll see what I did when I had the chance to get revenge on Saul, and hear some of my favorite songs."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "friendship_covenant_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

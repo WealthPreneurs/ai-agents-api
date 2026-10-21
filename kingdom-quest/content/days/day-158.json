@@ -9,16 +9,33 @@
   "story_title": "David and the Giant Enemy",
   "summary": "David knew that Yahweh was bigger than any giant, no matter how scary things looked.",
   "story_reel": {
-    "duration_seconds": 120,
-    "narration": "For forty days, a giant named Goliath stomped out and shouted at Israel's army. Everyone was afraid. Then a young shepherd named David arrived with food for his brothers. 'Who is this giant who defies the armies of the living God?' David asked. He went to King Saul and said, 'I will go and fight him.' Saul tried to give David his heavy armor, but it didn't fit. So David took it off. He picked up his shepherd's staff, chose five smooth stones from the brook, and walked toward the giant with his sling. Goliath laughed. But David said, 'You come to me with a sword and a spear, but I come to you in the name of Yahweh!' David swung his sling, and one stone flew. Goliath fell to the ground. Everyone learned that day: the battle belongs to Yahweh.",
+    "duration_seconds": 150,
+    "narration": "David went to King Saul and said, 'Don't let anyone lose heart because of this giant. I will go and fight him.' Saul said, 'You can't! You're only a boy, and he has been a warrior since he was young.' But David answered, 'I take care of my father's sheep. When a lion or a bear came and took a lamb, I went after it and rescued the lamb. Yahweh rescued me from the lion and the bear, and He will rescue me from this Philistine.' So Saul said, 'Go, and Yahweh be with you.' Saul tried to give David his own armor and helmet, but they were too big and heavy. David couldn't even walk! So he took them off. He picked up his shepherd's staff, chose five smooth stones from the stream, put them in his shepherd's bag, and walked toward Goliath with his sling. Goliath laughed at him. But David said, 'You come to me with a sword and a spear, but I come to you in the name of Yahweh of Armies, the God you have insulted. Everyone will know that the battle is Yahweh's!' David ran toward the giant, put a stone in his sling, and swung it. The stone struck Goliath on the forehead, and the giant fell facedown to the ground.",
     "scenes": [
-      { "caption": "A giant shouts across the valley.", "art_direction": "Wide valley, two armies on opposite hills; Goliath huge and loud but stylized, not gory or nightmarish." },
-      { "caption": "David arrives with bread and cheese.", "art_direction": "Young David with a satchel, bright eyes, curious." },
-      { "caption": "'I will go and fight him.'", "art_direction": "David before King Saul in a tent; Saul doubtful." },
-      { "caption": "The armor doesn't fit.", "art_direction": "Light comedic beat: oversized helmet slides over David's eyes; he sets it down." },
-      { "caption": "Five smooth stones", "art_direction": "Close-up of hands choosing stones in a sparkling brook." },
-      { "caption": "'I come in the name of Yahweh!'", "art_direction": "David small in frame, Goliath towering; warm light behind David." },
-      { "caption": "The battle is Yahweh's!", "art_direction": "Stone in flight, cut to the giant falling offscreen; no blood. Israel cheers." }
+      {
+        "caption": "'I will go'",
+        "art_direction": "Young David standing before tall King Saul in a tent; Saul doubtful."
+      },
+      {
+        "caption": "The lion and the bear",
+        "art_direction": "Flashback: David protecting a lamb from a lion; dramatic but not gory."
+      },
+      {
+        "caption": "The armor doesn't fit",
+        "art_direction": "Light comedic beat: oversized helmet slides over David's eyes; he sets it down."
+      },
+      {
+        "caption": "Five smooth stones",
+        "art_direction": "Close-up of hands choosing stones in a sparkling brook."
+      },
+      {
+        "caption": "'I come in the name of Yahweh!'",
+        "art_direction": "David small in frame, Goliath towering; warm light behind David."
+      },
+      {
+        "caption": "The battle is Yahweh's!",
+        "art_direction": "Stone in flight, then the giant falling offscreen; no blood. Israel cheers."
+      }
     ]
   },
   "memory_verse": {
@@ -26,33 +43,58 @@
     "text": "Yahweh doesn't save with sword and spear; for the battle is Yahweh's",
     "translation": "WEB",
     "excerpt": true,
-    "tokens": ["Yahweh doesn't save", "with sword and spear;", "for the battle", "is Yahweh's"],
-    "distractors": ["is David's", "with five stones;"]
+    "tokens": [
+      "Yahweh doesn't save",
+      "with sword and spear;",
+      "for the battle",
+      "is Yahweh's"
+    ],
+    "distractors": [
+      "is David's",
+      "with five stones;"
+    ]
   },
   "identity_focus": {
     "core_truth": "Yahweh makes me brave when I face big challenges.",
     "reflection_prompt": "What is one 'giant' challenge you face right now, and how can Yahweh help you face it?",
-    "reflection_choices": ["Something at school", "Something with friends or family", "A fear I have", "Something else (tell or draw it!)"],
+    "reflection_choices": [
+      "Something at school",
+      "Something with friends or family",
+      "A fear I have",
+      "Something else (tell or draw it!)"
+    ],
     "trait_unlocked": "bold_faith"
   },
   "quiz": [
     {
       "question": "Why wasn't David afraid of Goliath?",
-      "options": ["He had armor", "He trusted in Yahweh God", "He was taller than Goliath"],
+      "options": [
+        "He had armor",
+        "He trusted in Yahweh God",
+        "He was taller than Goliath"
+      ],
       "correct_index": 1,
       "explanation": "David said he came 'in the name of Yahweh.' His courage came from trusting God.",
       "verse_ref": "1 Samuel 17:45"
     },
     {
       "question": "What did David do with King Saul's armor?",
-      "options": ["He wore it into battle", "He gave it to his brothers", "He took it off because he wasn't used to it"],
+      "options": [
+        "He wore it into battle",
+        "He gave it to his brothers",
+        "He took it off because he wasn't used to it"
+      ],
       "correct_index": 2,
       "explanation": "David couldn't walk in Saul's armor, so he took it off and went as himself, the way God made him.",
       "verse_ref": "1 Samuel 17:39"
     },
     {
       "question": "How many smooth stones did David pick from the brook?",
-      "options": ["One", "Three", "Five"],
+      "options": [
+        "One",
+        "Three",
+        "Five"
+      ],
       "correct_index": 2,
       "explanation": "David chose five smooth stones and put them in his shepherd's bag.",
       "verse_ref": "1 Samuel 17:40"
@@ -67,8 +109,14 @@
   },
   "rewards": {
     "light_stones": 10,
-    "materials": ["river_stone", "cedar_wood"],
+    "materials": [
+      "river_stone",
+      "cedar_wood"
+    ],
     "unlock": "shepherds_sling_banner"
   },
-  "review": { "status": "draft" }
+  "review": {
+    "status": "draft",
+    "notes": "Original spec sample, rewritten to fit Region 6 (first quiz question kept word for word). Goliath's death and beheading (17:50-51) are omitted; the giant 'fell facedown.' The lion and bear are told as rescuing a lamb. Confirm."
+  }
 }

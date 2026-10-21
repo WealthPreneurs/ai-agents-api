@@ -1,0 +1,120 @@
+{
+  "day": 178,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Dancing with Joy",
+  "scripture_passage": "2 Samuel 6:1-5; 6:12-19",
+  "story_title": "Dancing Before the Ark",
+  "summary": "David brought the ark of the covenant to Jerusalem with music and shouting. He danced before Yahweh with all his might, and afterward he gave gifts of food to everyone.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "David wanted God's presence at the center of his kingdom. So he decided to bring the ark of the covenant, the golden box that showed God's presence among His people, to Jerusalem. The first time they tried, they didn't carry it the way God had commanded. It was supposed to be carried by priests with poles, not on a cart. That first attempt ended in sadness, and David learned to honor God's instructions. Three months later, they tried again, this time God's way. Every six steps, they stopped to worship. Then the celebration began! David and all Israel brought up the ark with shouting and the sound of trumpets. They played harps, lyres, tambourines, and cymbals. And David danced before Yahweh with all his might! He wore a simple linen garment, not his royal robes. He didn't care what anyone thought. He was just overjoyed to worship God. When the ark was set in its tent, David offered sacrifices and blessed the people in Yahweh's name. Then he gave every single person in the crowd, men and women, a loaf of bread, a cake of dates, and a cake of raisins! Michal, David's wife, looked down from a window and thought he looked foolish. But David said, 'I was dancing for Yahweh, and I'll celebrate before Him!'",
+    "scenes": [
+      {
+        "caption": "Bringing the ark",
+        "art_direction": "The golden ark with cherubim on its lid, glowing softly."
+      },
+      {
+        "caption": "God's way",
+        "art_direction": "Priests carrying the ark on their shoulders with long poles."
+      },
+      {
+        "caption": "Every six steps",
+        "art_direction": "The procession pausing to worship; David counting steps on his fingers."
+      },
+      {
+        "caption": "Trumpets and tambourines",
+        "art_direction": "A joyful parade of musicians with harps, cymbals, and trumpets."
+      },
+      {
+        "caption": "Dancing with all his might!",
+        "art_direction": "David spinning and leaping with joy in a simple linen garment."
+      },
+      {
+        "caption": "Bread, dates, and raisins",
+        "art_direction": "David handing out treats to a happy crowd of families."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 150:6",
+    "text": "Let everything that has breath praise Yah! Praise Yah!",
+    "translation": "WEB",
+    "tokens": [
+      "Let everything",
+      "that has breath",
+      "praise Yah!",
+      "Praise Yah!"
+    ],
+    "distractors": [
+      "stay quiet!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can worship Yahweh with my whole heart and body, full of joy.",
+    "reflection_prompt": "David danced before God with all his might. What makes you so happy that you want to dance and praise God?",
+    "reflection_choices": [
+      "Something God did for me",
+      "My family",
+      "A beautiful day",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "joy"
+  },
+  "quiz": [
+    {
+      "question": "What did David bring to Jerusalem?",
+      "options": [
+        "A golden statue",
+        "The ark of the covenant",
+        "A treasure chest"
+      ],
+      "correct_index": 1,
+      "explanation": "David went and brought up the ark of God into the city of David with joy.",
+      "verse_ref": "2 Samuel 6:12"
+    },
+    {
+      "question": "How did David dance before Yahweh?",
+      "options": [
+        "With all his might",
+        "Very slowly",
+        "Only a little"
+      ],
+      "correct_index": 0,
+      "explanation": "David danced before Yahweh with all his might.",
+      "verse_ref": "2 Samuel 6:14"
+    },
+    {
+      "question": "What did David give the people after the celebration?",
+      "options": [
+        "Gold coins",
+        "New clothes",
+        "Bread, a cake of dates, and a cake of raisins"
+      ],
+      "correct_index": 2,
+      "explanation": "He gave to every one a portion of bread, dates, and raisins.",
+      "verse_ref": "2 Samuel 6:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to praise You with everything I have! Fill me with joy as I worship You, and help me share Your goodness with others. Praise Yah! Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "That was the happiest parade of my life! I danced so hard I was out of breath. I didn't care how I looked. I just wanted to celebrate God!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "ark_tent"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Uzzah's death (2 Samuel 6:6-11) is omitted; the narration says 'That first attempt ended in sadness, and David learned to honor God's instructions.' Michal's rebuke is included briefly; the 'uncovered' detail (6:20) is omitted. Confirm."
+  }
+}

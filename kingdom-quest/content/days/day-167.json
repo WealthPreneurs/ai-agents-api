@@ -1,0 +1,122 @@
+{
+  "day": 167,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Strengthening Each Other in God",
+  "scripture_passage": "1 Samuel 22:1-2; 23:14-18",
+  "story_title": "Friends in the Wilderness",
+  "summary": "While David hid from Saul, people in trouble gathered around him in a cave. Later, Jonathan found David in the wilderness and strengthened his faith in God, reminding him of God's promise.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "David was now running for his life. He hid in a cave called Adullam. When his brothers and his father's family heard where he was, they came to join him. Then others came too: people who were in trouble, people who owed money, and people who were unhappy. About four hundred of them! David became their leader. Imagine a group of hurting, troubled people, and David taking care of them and leading them. Later, David hid in the wilderness, moving from place to place. Saul searched for him every day, but God didn't let Saul find him. One day, Jonathan came to see David in a forest at a place called Horesh. Jonathan didn't come with soldiers or weapons. He came to encourage his friend. The Bible says Jonathan 'strengthened David's hand in God.' He said, 'Don't be afraid. My father won't find you. You will be king over Israel, and I will be next to you. Even my father knows this.' Jonathan reminded David of God's promise. The two friends made their covenant again before Yahweh. Then Jonathan went home, and David stayed. Sometimes the best gift a friend can give is to point you back to God.",
+    "scenes": [
+      {
+        "caption": "The cave of Adullam",
+        "art_direction": "A large rocky cave in the hills, with a campfire glowing inside."
+      },
+      {
+        "caption": "A family reunion",
+        "art_direction": "David's brothers and father arriving at the cave entrance, hugging him."
+      },
+      {
+        "caption": "Four hundred in trouble",
+        "art_direction": "A crowd of tired, worried people gathering; David welcoming them warmly."
+      },
+      {
+        "caption": "Hiding in the wilderness",
+        "art_direction": "David moving through rocky desert canyons while Saul's soldiers search far away."
+      },
+      {
+        "caption": "Jonathan finds him",
+        "art_direction": "Jonathan stepping through a quiet forest, empty-handed, smiling."
+      },
+      {
+        "caption": "Strengthened in God",
+        "art_direction": "Jonathan's hand on David's shoulder as golden light rises between them."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Hebrews 10:24",
+    "text": "Let's consider how to provoke one another to love and good works",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Let's consider",
+      "how to provoke",
+      "one another",
+      "to love",
+      "and good works"
+    ],
+    "distractors": [
+      "to anger"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can point my friends back to Yahweh when they're struggling.",
+    "reflection_prompt": "Jonathan strengthened David's faith in God. How could you encourage a friend to trust God when things are hard?",
+    "reflection_choices": [
+      "Remind them of a Bible verse",
+      "Pray with them",
+      "Tell them God loves them",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "encouragement"
+  },
+  "quiz": [
+    {
+      "question": "Where did David hide when he first ran from Saul?",
+      "options": [
+        "In a palace",
+        "In the cave of Adullam",
+        "On a ship"
+      ],
+      "correct_index": 1,
+      "explanation": "David escaped to the cave of Adullam.",
+      "verse_ref": "1 Samuel 22:1"
+    },
+    {
+      "question": "How many people in trouble gathered to David?",
+      "options": [
+        "About four hundred",
+        "Twelve",
+        "Three"
+      ],
+      "correct_index": 0,
+      "explanation": "Everyone who was in distress, in debt, or discontented gathered to him, about four hundred men.",
+      "verse_ref": "1 Samuel 22:2"
+    },
+    {
+      "question": "What did Jonathan do when he visited David in the forest?",
+      "options": [
+        "He arrested him",
+        "He gave him a sword",
+        "He strengthened David's hand in God"
+      ],
+      "correct_index": 2,
+      "explanation": "Jonathan went to David and strengthened his hand in God.",
+      "verse_ref": "1 Samuel 23:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me be the kind of friend who points others back to You. When my friends are scared or struggling, help me encourage them to trust You. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "When Jonathan found me in that forest, I was so tired and discouraged. He didn't bring a sword. He brought courage from God. That's what a true friend does."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "lamp"
+    ],
+    "unlock": "cave_of_adullam"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits Ahimelech and the massacre of the priests at Nob (1 Samuel 21-22). Confirm."
+  }
+}

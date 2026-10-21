@@ -1,0 +1,121 @@
+{
+  "day": 182,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Kindness That Changes Lives",
+  "scripture_passage": "2 Samuel 5-9",
+  "story_title": "A Seat at the King's Table",
+  "summary": "David ruled with justice and kindness. Sabbath Camp looks back at David becoming king and showing kindness to Mephibosheth, and at the whole Shepherd's Hills region. The Gifts & Passions phase is complete!",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Shepherd's Hills! The Bible says David reigned over all Israel and did what was just and right for all his people. Let's remember this week. David waited for God's timing and became king in Hebron, then over all Israel. He captured Jerusalem and named it the City of David. He danced before Yahweh with all his might. God promised David a forever kingdom, and that promise came true in Jesus. And David remembered his promise to Jonathan, found Mephibosheth in a dry, forgotten place, and gave him a seat at the king's table forever. Now let's look back at this whole region. Hannah prayed. Samuel listened. God looked at a shepherd boy's heart. David faced a giant. Jonathan was a friend at all times. David wrote songs, spared his enemy, and showed kindness that changed someone's whole life. And look how far you've come! This is the end of the Gifts & Passions part of your journey. You've discovered gifts like creativity, vision, teaching, leadership, wisdom, courage, friendship, worship, and kindness. This region's biggest truth: your kindness can change someone's whole life. Next, we'll grow Character Armor, the fruit of the Spirit in our lives.",
+    "scenes": [
+      {
+        "caption": "A just king",
+        "art_direction": "David on his throne, listening carefully to people and helping them."
+      },
+      {
+        "caption": "David's week",
+        "art_direction": "Storybook recap: Hebron, the water shaft, dancing, the forever throne, the king's table."
+      },
+      {
+        "caption": "The Shepherd's Hills",
+        "art_direction": "Recap montage: Hannah praying, Samuel listening, the harp, the sling, Jonathan's robe, Psalm 23."
+      },
+      {
+        "caption": "My Gift Map",
+        "art_direction": "A glowing map showing every gift the child discovered from Regions 3 to 6, with icons for each."
+      },
+      {
+        "caption": "Region 6 complete!",
+        "art_direction": "Map zooms out showing the Shepherd's Hills lit up gold; a path glows toward Region 7, the Kingdom of Wisdom."
+      },
+      {
+        "caption": "Camp at the King's table",
+        "art_direction": "Campfire in the child's village beside the king's table and the City of David."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Samuel 9:7",
+    "text": "Don't be afraid; for I will surely show you kindness for Jonathan your father's sake",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Don't be afraid;",
+      "for I will surely",
+      "show you kindness",
+      "for Jonathan",
+      "your father's sake"
+    ],
+    "distractors": [
+      "show you the door"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "My kindness can change someone's whole life.",
+    "reflection_prompt": "Milestone: Your kindness can change someone's whole life! You've finished the Gifts & Passions phase. Look at your Gift Map. Which gift do you think God has given you most of all?",
+    "reflection_choices": [
+      "Creativity or worship",
+      "Courage or leadership",
+      "Wisdom or teaching",
+      "Friendship or kindness"
+    ],
+    "trait_unlocked": "encouragement"
+  },
+  "quiz": [
+    {
+      "question": "How did David rule over his people?",
+      "options": [
+        "Harshly",
+        "With justice and what was right",
+        "Lazily"
+      ],
+      "correct_index": 1,
+      "explanation": "David executed justice and righteousness for all his people.",
+      "verse_ref": "2 Samuel 8:15"
+    },
+    {
+      "question": "What did David give Mephibosheth?",
+      "options": [
+        "A seat at the king's table forever",
+        "A sword",
+        "A horse"
+      ],
+      "correct_index": 0,
+      "explanation": "David said, 'You will eat bread at my table continually.'",
+      "verse_ref": "2 Samuel 9:7"
+    },
+    {
+      "question": "Why did David show kindness to Mephibosheth?",
+      "options": [
+        "Mephibosheth was rich",
+        "Mephibosheth was a soldier",
+        "For Jonathan's sake, keeping his promise"
+      ],
+      "correct_index": 2,
+      "explanation": "David said, 'I will surely show you kindness for Jonathan your father's sake.'",
+      "verse_ref": "2 Samuel 9:7"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for all the gifts You've given me. Help me use them to show kindness that changes lives. Thank You for this whole journey through the Shepherd's Hills! Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "You finished the Shepherd's Hills! Thank you for walking with me. Next, my son Solomon will guide you through the Kingdom of Wisdom, where you'll grow your Character Armor!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "shepherds_hills_crown"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

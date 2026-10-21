@@ -1,0 +1,122 @@
+{
+  "day": 172,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "The Lord Is My Shepherd",
+  "scripture_passage": "Psalm 23",
+  "story_title": "The Shepherd's Song",
+  "summary": "David, who had been a shepherd, wrote a song about Yahweh being his shepherd. God leads him to green pastures and still waters, stays with him in dark valleys, and fills his life with goodness.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "David knew a lot about sheep. When he was a boy, he spent days and nights in the fields with his father's flock. He led them to grassy places to eat. He found calm water for them to drink, because sheep are afraid of fast, rushing water. He used his rod to fight off lions and bears, and his staff to gently pull lost sheep back to safety. One day, David wrote a song that people all over the world still love. He thought, 'I take care of my sheep. But who takes care of me? Yahweh does!' So he wrote: 'Yahweh is my shepherd. I shall lack nothing. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He guides me in the paths of righteousness for His name's sake. Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me. Your rod and Your staff, they comfort me. You prepare a table before me in the presence of my enemies. You anoint my head with oil. My cup runs over. Surely goodness and loving kindness shall follow me all the days of my life, and I will dwell in Yahweh's house forever.' Whatever you need, the Good Shepherd takes care of you.",
+    "scenes": [
+      {
+        "caption": "A shepherd boy",
+        "art_direction": "Young David sitting on a rock among his sheep at sunset."
+      },
+      {
+        "caption": "Green pastures",
+        "art_direction": "Sheep lying down peacefully in a lush, green meadow."
+      },
+      {
+        "caption": "Still waters",
+        "art_direction": "A calm pond reflecting the sky; sheep drinking quietly."
+      },
+      {
+        "caption": "The dark valley",
+        "art_direction": "A narrow shadowy canyon; the Shepherd walking ahead with a glowing staff."
+      },
+      {
+        "caption": "Rod and staff",
+        "art_direction": "A staff gently hooking a lamb out of a thornbush."
+      },
+      {
+        "caption": "A table and an overflowing cup",
+        "art_direction": "A table of good food in the meadow and a cup overflowing with golden light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 23:4",
+    "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me.",
+    "translation": "WEB",
+    "tokens": [
+      "Even though I walk",
+      "through the valley",
+      "of the shadow of death,",
+      "I will fear no evil,",
+      "for you are with me.",
+      "Your rod and your staff,",
+      "they comfort me."
+    ],
+    "distractors": [
+      "they scare me."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is my shepherd, and He takes care of me in every season.",
+    "reflection_prompt": "David wrote about God as his shepherd. Draw yourself as a little lamb with Yahweh, your Shepherd. Where is He leading you?",
+    "reflection_choices": [
+      "To green pastures (rest)",
+      "Beside still waters (peace)",
+      "Through a dark valley (He's with me)",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "Where does the Shepherd lead David in Psalm 23?",
+      "options": [
+        "Into a busy city",
+        "Beside still waters",
+        "Across a stormy sea"
+      ],
+      "correct_index": 1,
+      "explanation": "David wrote, 'He leads me beside still waters.'",
+      "verse_ref": "Psalm 23:2"
+    },
+    {
+      "question": "Why won't David fear in the dark valley?",
+      "options": [
+        "Because God is with him",
+        "Because he is strong",
+        "Because it isn't really dark"
+      ],
+      "correct_index": 0,
+      "explanation": "David wrote, 'I will fear no evil, for you are with me.'",
+      "verse_ref": "Psalm 23:4"
+    },
+    {
+      "question": "What will follow David all the days of his life?",
+      "options": [
+        "Trouble",
+        "His sheep",
+        "Goodness and loving kindness"
+      ],
+      "correct_index": 2,
+      "explanation": "David wrote, 'Surely goodness and loving kindness shall follow me all the days of my life.'",
+      "verse_ref": "Psalm 23:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my shepherd. Thank You for leading me, giving me rest, and staying with me even in dark valleys. Your goodness follows me every day. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "This is my favorite song I ever wrote! I knew how much I cared for my sheep, and I realized God cares for me even more. He's your Shepherd too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "olive_oil"
+    ],
+    "unlock": "still_waters_pond"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

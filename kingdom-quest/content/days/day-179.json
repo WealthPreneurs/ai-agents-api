@@ -1,0 +1,122 @@
+{
+  "day": 179,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Amazed by God's Promise",
+  "scripture_passage": "2 Samuel 7",
+  "story_title": "God's Forever Promise",
+  "summary": "David wanted to build a house for God. Instead, God promised to build David a 'house,' a family line of kings that would last forever. This promise pointed to Jesus, the forever King.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Now David lived in a beautiful cedar palace, and God had given him peace from his enemies. One day, David said to Nathan the prophet, 'Look! I live in a house of cedar, but the ark of God lives in a tent. I want to build a temple for God!' That night, God spoke to Nathan with a message for David. 'I took you from the pasture, from following the sheep, to be ruler over My people. I have been with you wherever you went. Now I will make your name great. You want to build Me a house, but I will build you a house! Not a building, but a family. Your son will build a temple for My name. And I will set up your throne and your kingdom forever.' When David heard this, he went in and sat before Yahweh, amazed. He prayed, 'Who am I, Lord Yahweh, and what is my family, that You have brought me this far? You are great, Lord Yahweh! There is no one like You!' Hundreds of years later, an angel told a young woman named Mary that her son, Jesus, would be given the throne of His father David, and His kingdom would never end. God's forever promise to David came true in Jesus, the King who reigns forever.",
+    "scenes": [
+      {
+        "caption": "A cedar palace",
+        "art_direction": "David looking out from his palace at the simple tent where the ark rests."
+      },
+      {
+        "caption": "'I want to build God a house'",
+        "art_direction": "David talking excitedly with the prophet Nathan."
+      },
+      {
+        "caption": "God speaks at night",
+        "art_direction": "Nathan in prayer as light fills the room."
+      },
+      {
+        "caption": "From the sheep pen",
+        "art_direction": "A flashback of young David with his sheep, then crowned king."
+      },
+      {
+        "caption": "A forever house",
+        "art_direction": "A family tree growing from David, branch after branch, upward toward a star."
+      },
+      {
+        "caption": "'Who am I?'",
+        "art_direction": "David sitting humbly before the ark, hands open, overwhelmed with thankfulness."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Samuel 7:18",
+    "text": "Who am I, Lord Yahweh, and what is my house, that you have brought me this far?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Who am I,",
+      "Lord Yahweh,",
+      "and what is my house,",
+      "that you",
+      "have brought me",
+      "this far?"
+    ],
+    "distractors": [
+      "left me behind?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am amazed by Yahweh's goodness to me, and I'm part of His forever story.",
+    "reflection_prompt": "David said, 'Who am I, that You have brought me this far?' Look back at your journey so far. What has God brought you through?",
+    "reflection_choices": [
+      "A hard time",
+      "A new place",
+      "Learning something new",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "What did David want to build for God?",
+      "options": [
+        "A wall",
+        "A temple, a house for God",
+        "A boat"
+      ],
+      "correct_index": 1,
+      "explanation": "David said, 'I dwell in a house of cedar, but the ark of God dwells within curtains.'",
+      "verse_ref": "2 Samuel 7:2"
+    },
+    {
+      "question": "What kind of 'house' did God promise to build for David?",
+      "options": [
+        "A family line of kings that would last forever",
+        "A bigger palace",
+        "A summer home"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Yahweh will make you a house... your throne shall be established forever.'",
+      "verse_ref": "2 Samuel 7:11, 16"
+    },
+    {
+      "question": "Who fulfilled God's forever promise to David?",
+      "options": [
+        "Solomon",
+        "Samuel",
+        "Jesus"
+      ],
+      "correct_index": 2,
+      "explanation": "The angel told Mary, 'The Lord God will give him the throne of his father David... and of his Kingdom there will be no end.'",
+      "verse_ref": "Luke 1:32-33"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Lord Yahweh, who am I that You've brought me this far? Thank You for being so good to me. Thank You for Jesus, the forever King from David's family. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "When Nathan told me God's promise, I just sat there, amazed. A forever kingdom! I didn't fully understand it then. Now we know: it was all about Jesus."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "forever_throne"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

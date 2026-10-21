@@ -1,0 +1,121 @@
+{
+  "day": 171,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Trusting God's Timing",
+  "scripture_passage": "1 Samuel 26",
+  "story_title": "The Spear and the Water Jug",
+  "summary": "Once again, Saul hunted David. At night, David and Abishai crept into Saul's camp while everyone slept. David took Saul's spear and water jug but refused to harm him, trusting God's timing.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Saul went hunting for David again, this time with three thousand soldiers. One night, Saul's army camped in the wilderness. Saul was sleeping in the middle of the camp, with his spear stuck in the ground near his head. His commander Abner and all the soldiers were sleeping around him. David asked, 'Who will go down with me into the camp?' His nephew Abishai said, 'I will!' So the two of them crept quietly into the camp in the dark. They tiptoed past sleeping soldier after sleeping soldier, all the way to Saul. Abishai whispered, 'God has given your enemy into your hands! Let me pin him with his own spear. One strike, that's all!' But David said, 'Don't harm him! Who can harm Yahweh's anointed king and be innocent? Yahweh will deal with him in His own time.' Instead, David took the spear and the water jug by Saul's head, and they left. No one saw them, and no one woke up, because Yahweh had put them into a deep sleep. From a hilltop far away, David shouted, 'Abner! Why didn't you guard your king? Where is the king's spear and water jug?' Saul recognized David's voice and said, 'You will do great things!' David didn't take what God would give him in His time.",
+    "scenes": [
+      {
+        "caption": "Hunting again",
+        "art_direction": "Saul's army marching through the desert with banners."
+      },
+      {
+        "caption": "A sleeping camp",
+        "art_direction": "Moonlit camp with soldiers snoring in a circle; Saul in the middle with a spear stuck in the ground."
+      },
+      {
+        "caption": "'Who will go with me?'",
+        "art_direction": "Abishai eagerly raising his hand."
+      },
+      {
+        "caption": "Tiptoeing",
+        "art_direction": "David and Abishai stepping carefully over sleeping soldiers; comedic tiptoe."
+      },
+      {
+        "caption": "The spear and the jug",
+        "art_direction": "David gently lifting the spear and a clay water jug as Saul sleeps soundly."
+      },
+      {
+        "caption": "From the hilltop",
+        "art_direction": "David holding up the spear and jug from a distant hill at dawn, calling out."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 37:5",
+    "text": "Commit your way to Yahweh. Trust also in him",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Commit",
+      "your way",
+      "to Yahweh.",
+      "Trust also",
+      "in him"
+    ],
+    "distractors": [
+      "in yourself"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can trust Yahweh's timing instead of grabbing for what I want.",
+    "reflection_prompt": "David could have taken the throne right then, but he waited for God's timing. What is something you're having to wait for?",
+    "reflection_choices": [
+      "Growing up",
+      "An answer to prayer",
+      "Something I really want",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "Who went with David into Saul's camp?",
+      "options": [
+        "Jonathan",
+        "Abishai",
+        "Samuel"
+      ],
+      "correct_index": 1,
+      "explanation": "Abishai said, 'I will go down with you.'",
+      "verse_ref": "1 Samuel 26:6"
+    },
+    {
+      "question": "What did David take from beside Saul's head?",
+      "options": [
+        "His spear and water jug",
+        "His crown",
+        "His sword"
+      ],
+      "correct_index": 0,
+      "explanation": "David took the spear and the jar of water from Saul's head.",
+      "verse_ref": "1 Samuel 26:12"
+    },
+    {
+      "question": "Why did no one in the camp wake up?",
+      "options": [
+        "They were very tired",
+        "It was raining",
+        "Yahweh had put them into a deep sleep"
+      ],
+      "correct_index": 2,
+      "explanation": "A deep sleep from Yahweh had fallen on them.",
+      "verse_ref": "1 Samuel 26:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I commit my way to You. Help me trust Your timing and wait for what You have for me, instead of grabbing for it myself. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Abishai couldn't believe I let Saul go again! But I knew God had promised me the kingdom, and He would give it to me in His time, not mine."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "cedar_wood"
+    ],
+    "unlock": "spear_and_jug"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

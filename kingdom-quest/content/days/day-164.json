@@ -1,0 +1,118 @@
+{
+  "day": 164,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Speaking Up for a Friend",
+  "scripture_passage": "1 Samuel 19:1-7",
+  "story_title": "Jonathan Speaks Up",
+  "summary": "When King Saul told Jonathan and his servants to kill David, Jonathan warned David and then spoke up for him to his father. Saul listened and promised not to harm David.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Saul's jealousy grew worse. One day, he told his son Jonathan and all his servants, 'Kill David!' But Jonathan loved David. He rushed to warn his friend. 'My father is trying to kill you. Be careful tomorrow morning. Hide in the field, and I'll talk to my father about you. Then I'll tell you what I find out.' The next morning, Jonathan went to his father. This took real courage, because Saul was the king and he was very angry. Jonathan said, 'Please don't do anything wrong to David. He hasn't done anything wrong to you. Everything he's done has helped you! He risked his life to fight Goliath, and Yahweh gave Israel a great victory. You saw it, and you were happy! Why would you hurt an innocent man for no reason?' Saul listened to Jonathan. And he made a promise: 'As surely as Yahweh lives, David will not be killed.' So Jonathan called David and told him everything, and brought him back to Saul, and David served the king like before. Jonathan used his words to build up his friend and protect him. A true friend speaks up for you when you're not there.",
+    "scenes": [
+      {
+        "caption": "'Kill David!'",
+        "art_direction": "Saul giving a harsh order to Jonathan and his servants; Jonathan's face falls."
+      },
+      {
+        "caption": "A warning",
+        "art_direction": "Jonathan hurrying to find David in the courtyard, whispering urgently."
+      },
+      {
+        "caption": "Hiding in the field",
+        "art_direction": "David crouching behind a rock in a sunny field."
+      },
+      {
+        "caption": "Jonathan speaks up",
+        "art_direction": "Jonathan standing respectfully but firmly before his father, gesturing kindly toward the field."
+      },
+      {
+        "caption": "Remember Goliath?",
+        "art_direction": "A thought bubble from Saul: David's victory over the giant."
+      },
+      {
+        "caption": "Saul promises",
+        "art_direction": "Saul raising his hand to make a promise; Jonathan smiling with relief."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Ephesians 4:29",
+    "text": "only what is good for building others up",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "only what",
+      "is good",
+      "for building",
+      "others up"
+    ],
+    "distractors": [
+      "for tearing others down"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can use my words to build others up and speak up for my friends.",
+    "reflection_prompt": "Jonathan spoke up for David when he wasn't there. When is a time you could say something good about someone who isn't around?",
+    "reflection_choices": [
+      "When someone is gossiping",
+      "When someone is being left out",
+      "When someone is being blamed unfairly",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "encouragement"
+  },
+  "quiz": [
+    {
+      "question": "What did Jonathan do when he heard his father wanted to kill David?",
+      "options": [
+        "He agreed with his father",
+        "He warned David and spoke up for him",
+        "He ran away"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonathan told David, 'Saul my father seeks to kill you,' and then spoke good of David to his father.",
+      "verse_ref": "1 Samuel 19:2-4"
+    },
+    {
+      "question": "What did Jonathan remind his father about?",
+      "options": [
+        "How David risked his life to fight Goliath",
+        "How David played the harp badly",
+        "How David stole a sheep"
+      ],
+      "correct_index": 0,
+      "explanation": "Jonathan said, 'He put his life in his hand and struck the Philistine, and Yahweh worked a great victory.'",
+      "verse_ref": "1 Samuel 19:5"
+    },
+    {
+      "question": "What did Saul promise after listening to Jonathan?",
+      "options": [
+        "To make Jonathan king",
+        "To send David away",
+        "That David would not be killed"
+      ],
+      "correct_index": 2,
+      "explanation": "Saul swore, 'As Yahweh lives, he shall not be put to death.'",
+      "verse_ref": "1 Samuel 19:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me use my words to build others up. Give me courage to speak up for my friends, especially when they're not there to speak for themselves. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Jonathan stood up to his own father, the king, for me. That's the kind of friend everyone needs, and the kind of friend you can be."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

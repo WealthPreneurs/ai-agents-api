@@ -1,0 +1,123 @@
+{
+  "day": 165,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "God Is My Refuge",
+  "scripture_passage": "1 Samuel 19:8-18; Psalm 59:16",
+  "story_title": "Escape Through the Window",
+  "summary": "When Saul sent soldiers to David's house, David's wife Michal helped him escape through a window at night. David ran to Samuel, and later wrote a song about God being his high tower.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Not long after, war broke out again, and David led the army to a great victory. But when he came back, Saul's jealousy flared up again. While David was playing his harp, Saul threw his spear at him once more. David slipped away, and the spear stuck in the wall. That night, David ran home. But Saul sent men to watch David's house, planning to capture him in the morning. David's wife, Michal, was Saul's daughter. She said, 'If you don't escape tonight, tomorrow you'll be killed!' So Michal let David down through a window, and he ran away into the night. Then Michal put a statue in David's bed, covered it with clothes, and put goat's hair at the head to make it look like David was asleep! When Saul's men came, she said, 'He's sick.' Saul said, 'Bring him to me, bed and all!' But when they pulled back the covers, they found only a statue with goat-hair 'hair'! By then, David had escaped to Samuel in Ramah and told him everything. During those scary days, David wrote a song: 'I will sing of Your strength. I will sing of Your love in the morning, for You have been my high tower, my refuge in the day of my trouble.'",
+    "scenes": [
+      {
+        "caption": "Another spear",
+        "art_direction": "David ducking as the spear sticks in the wall; he slips out the door."
+      },
+      {
+        "caption": "Watchers outside",
+        "art_direction": "Soldiers hiding in the shadows around David's house at night."
+      },
+      {
+        "caption": "Out the window",
+        "art_direction": "Michal helping David climb down a rope from a window into the moonlit street."
+      },
+      {
+        "caption": "A goat-hair disguise",
+        "art_direction": "Michal arranging a statue in the bed with a goat-hair wig; comedic beat."
+      },
+      {
+        "caption": "'Bed and all!'",
+        "art_direction": "Soldiers pulling back the covers to find the fake David; jaws drop."
+      },
+      {
+        "caption": "Safe with Samuel",
+        "art_direction": "David arriving at Samuel's house in Ramah, breathless but safe."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 59:16",
+    "text": "For you have been my high tower, a refuge in the day of my distress.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "For you",
+      "have been",
+      "my high tower,",
+      "a refuge",
+      "in the day",
+      "of my distress."
+    ],
+    "distractors": [
+      "of my party."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is my refuge and my high tower when I'm in trouble.",
+    "reflection_prompt": "David wrote a song about God being his safe place during a scary time. What could you write or draw about God keeping you safe?",
+    "reflection_choices": [
+      "A tower of light",
+      "A shield",
+      "Big strong arms",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "How did Michal help David escape?",
+      "options": [
+        "She hid him in a barrel",
+        "She let him down through a window",
+        "She gave him a horse"
+      ],
+      "correct_index": 1,
+      "explanation": "Michal let David down through the window, and he went, fled, and escaped.",
+      "verse_ref": "1 Samuel 19:12"
+    },
+    {
+      "question": "What did Michal put in David's bed?",
+      "options": [
+        "A statue with goat's hair",
+        "A sheep",
+        "Nothing"
+      ],
+      "correct_index": 0,
+      "explanation": "Michal took the teraphim and laid it in the bed, and put a pillow of goats' hair at its head.",
+      "verse_ref": "1 Samuel 19:13"
+    },
+    {
+      "question": "Where did David go after he escaped?",
+      "options": [
+        "Back to Bethlehem",
+        "To Egypt",
+        "To Samuel in Ramah"
+      ],
+      "correct_index": 2,
+      "explanation": "David fled and escaped, and came to Samuel to Ramah.",
+      "verse_ref": "1 Samuel 19:18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my high tower and my refuge. When I'm scared, I can run to You. I will sing about Your strength and Your love. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "That was a close call! Climbing out of the window in the dark, my heart was pounding. But God kept me safe, and I wrote a song about it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "escape_window"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Michal uses a household idol (teraphim) and lies to Saul's men (1 Samuel 19:13-14); both are told without comment as a comedic escape. Linking Psalm 59 to this event follows its superscription. Confirm."
+  }
+}

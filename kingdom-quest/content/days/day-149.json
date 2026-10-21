@@ -1,0 +1,121 @@
+{
+  "day": 149,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Joyful Song",
+  "scripture_passage": "1 Samuel 1:19-2:11; 2:18-21",
+  "story_title": "Samuel Is Born",
+  "summary": "Yahweh remembered Hannah, and she had a son named Samuel. When he was old enough, she brought him to Eli to serve God, and she sang a song of joy. Every year she brought him a new little robe.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Yahweh remembered Hannah's prayer. She had a baby boy! She named him Samuel, which sounds like 'heard by God,' because she said, 'I asked Yahweh for him.' Hannah didn't forget her promise. When Samuel was old enough, she brought him to the Tabernacle at Shiloh. She said to Eli, 'Do you remember me? I'm the woman who stood here praying. I prayed for this child, and Yahweh gave me what I asked. Now I am giving him to Yahweh for his whole life.' Then Hannah prayed a song of joy: 'My heart rejoices in Yahweh! There is no one holy like Yahweh. There is no one besides You. There is no Rock like our God!' She sang that God lifts up the weak and the poor and turns sad things into joy. Little Samuel stayed with Eli and served Yahweh, wearing a small linen robe. Every year, Hannah made him a new little robe and brought it when the family came to worship. And God blessed Hannah with three more sons and two daughters. Hannah had poured out her sadness to God. Now she poured out her joy.",
+    "scenes": [
+      {
+        "caption": "A baby boy!",
+        "art_direction": "Hannah holding baby Samuel, tears of joy on her face."
+      },
+      {
+        "caption": "Heard by God",
+        "art_direction": "Lettering: 'Samuel = heard by God' sparkling over the cradle."
+      },
+      {
+        "caption": "Keeping her promise",
+        "art_direction": "Hannah holding little Samuel's hand as they walk up to Eli at the Tabernacle."
+      },
+      {
+        "caption": "Hannah's song",
+        "art_direction": "Hannah lifting her hands and singing; golden musical notes swirling upward."
+      },
+      {
+        "caption": "A little robe",
+        "art_direction": "Hannah stitching a small linen robe by lamplight, then holding it up to Samuel."
+      },
+      {
+        "caption": "More children",
+        "art_direction": "Hannah surrounded by happy kids in her home."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Samuel 2:2",
+    "text": "There is no one as holy as Yahweh, for there is no one besides you, nor is there any rock like our God.",
+    "translation": "WEB",
+    "tokens": [
+      "There is no one",
+      "as holy as Yahweh,",
+      "for there is no one",
+      "besides you,",
+      "nor is there any rock",
+      "like our God."
+    ],
+    "distractors": [
+      "like Pharaoh."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh answers prayer, and I can thank Him with a joyful heart.",
+    "reflection_prompt": "Hannah thanked God with a song when He answered her prayer. What answered prayer can you thank God for?",
+    "reflection_choices": [
+      "Someone got better",
+      "I got help with something",
+      "God gave me courage",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "joy"
+  },
+  "quiz": [
+    {
+      "question": "Why did Hannah name her son Samuel?",
+      "options": [
+        "It was her father's name",
+        "Because she asked Yahweh for him",
+        "It means 'little king'"
+      ],
+      "correct_index": 1,
+      "explanation": "She named him Samuel, saying, 'Because I have asked him of Yahweh.'",
+      "verse_ref": "1 Samuel 1:20"
+    },
+    {
+      "question": "What did Hannah sing about God?",
+      "options": [
+        "'There is no Rock like our God!'",
+        "'God is far away.'",
+        "'I did it myself.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Hannah sang, 'There is no one as holy as Yahweh... nor is there any rock like our God.'",
+      "verse_ref": "1 Samuel 2:2"
+    },
+    {
+      "question": "What did Hannah bring Samuel every year?",
+      "options": [
+        "A toy",
+        "A lamb",
+        "A new little robe"
+      ],
+      "correct_index": 2,
+      "explanation": "His mother made him a little robe and brought it to him from year to year.",
+      "verse_ref": "1 Samuel 2:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, there is no Rock like You! Thank You for answering prayers. When You do good things for me, help me remember to thank You with joy. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Samuel grew up in God's house. Years later, he was the one who poured oil on my head. Hannah's prayer changed my life too!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "samuels_little_robe"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

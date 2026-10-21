@@ -1,0 +1,120 @@
+{
+  "day": 157,
+  "month": 6,
+  "realm": 23,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Seeing Problems God's Way",
+  "scripture_passage": "1 Samuel 17:1-31",
+  "story_title": "The Giant's Challenge",
+  "summary": "For forty days, the giant Goliath shouted challenges at Israel's army, and everyone was afraid. When young David brought food to his brothers, he was shocked that no one would stand up for God.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "The Philistines and the Israelites lined up for battle on two hills, with a valley in between. Every morning, a giant named Goliath stepped out from the Philistine army. He was over nine feet tall! He wore a bronze helmet and armor that weighed as much as a grown man, and the head of his spear was as heavy as a bowling ball. Goliath shouted, 'Choose a man to fight me! If he wins, we'll be your servants. If I win, you'll be ours!' King Saul and all the Israelites were terrified. For forty days, morning and evening, Goliath shouted his challenge, and no one would face him. Meanwhile, back in Bethlehem, Jesse said to his youngest son, David, 'Take this grain, bread, and cheese to your brothers at the battle, and see how they're doing.' When David arrived, he heard Goliath shouting. All the soldiers ran away in fear. But David asked, 'Who is this man who dares to insult the armies of the living God?' His oldest brother, Eliab, got angry. 'Why did you come here? You just want to watch the battle!' But David kept asking. Everyone else saw how big the giant was. David saw how big God is.",
+    "scenes": [
+      {
+        "caption": "Two hills, one valley",
+        "art_direction": "Two armies on opposite hillsides with the Valley of Elah between them."
+      },
+      {
+        "caption": "Goliath",
+        "art_direction": "A giant in bronze armor stomping out; large but stylized, not monstrous."
+      },
+      {
+        "caption": "Forty days",
+        "art_direction": "Morning and evening suns rising and setting as Goliath shouts again and again."
+      },
+      {
+        "caption": "Bread and cheese",
+        "art_direction": "Jesse loading young David's bag with bread and a wheel of cheese."
+      },
+      {
+        "caption": "'The living God!'",
+        "art_direction": "David standing among frightened soldiers, his eyes bright with faith."
+      },
+      {
+        "caption": "An angry brother",
+        "art_direction": "Eliab scolding David with crossed arms as David keeps asking questions."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 27:1",
+    "text": "Yahweh is my light and my salvation. Whom shall I fear? Yahweh is the strength of my life. Of whom shall I be afraid?",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh is my light",
+      "and my salvation.",
+      "Whom shall I fear?",
+      "Yahweh is the strength",
+      "of my life.",
+      "Of whom",
+      "shall I be afraid?"
+    ],
+    "distractors": [
+      "I'm afraid of everyone."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can see big problems God's way, remembering how big He is.",
+    "reflection_prompt": "Everyone else saw how big the giant was. David saw how big God is. What helps you remember how big God is?",
+    "reflection_choices": [
+      "Remembering what He's done",
+      "Looking at the stars",
+      "Reading my Bible",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "How long did Goliath shout his challenge?",
+      "options": [
+        "Seven days",
+        "Forty days",
+        "One year"
+      ],
+      "correct_index": 1,
+      "explanation": "The Philistine came near morning and evening, and presented himself forty days.",
+      "verse_ref": "1 Samuel 17:16"
+    },
+    {
+      "question": "What did Jesse send David to bring his brothers?",
+      "options": [
+        "Grain, bread, and cheese",
+        "Swords and shields",
+        "Sheep"
+      ],
+      "correct_index": 0,
+      "explanation": "Jesse sent parched grain, ten loaves, and ten cheeses.",
+      "verse_ref": "1 Samuel 17:17-18"
+    },
+    {
+      "question": "What did David call Israel's army?",
+      "options": [
+        "The army of Saul",
+        "The scared army",
+        "The armies of the living God"
+      ],
+      "correct_index": 2,
+      "explanation": "David said, 'Who is this Philistine, that he should defy the armies of the living God?'",
+      "verse_ref": "1 Samuel 17:26"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my light and my strength. When I face big problems, help me see them Your way and remember how big You are. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "I came to deliver cheese! But when I heard that giant insulting God, something rose up in me. I had seen God protect me before. I knew He was bigger."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

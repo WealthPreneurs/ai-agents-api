@@ -1,0 +1,121 @@
+{
+  "day": 176,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Worth the Wait",
+  "scripture_passage": "2 Samuel 2:1-4; 5:1-5",
+  "story_title": "King at Last!",
+  "summary": "After Saul died, David asked Yahweh what to do. He was crowned king of Judah in Hebron, and seven years later, all the tribes of Israel came and made him king over the whole nation.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After Saul died, David didn't rush to grab the throne. First, he asked Yahweh, 'Should I go up to one of the towns of Judah?' Yahweh said, 'Go up.' David asked, 'Where should I go?' God said, 'To Hebron.' Remember Hebron? That was Caleb's city, the one he asked for when he was eighty-five! So David moved to Hebron with his family and his men. The people of Judah came and anointed David as their king. But the rest of Israel didn't follow him yet. For seven and a half years, David ruled only over Judah while there was conflict with Saul's family. Then one day, leaders from all the tribes of Israel came to David at Hebron. They said, 'We are your own flesh and blood. Even when Saul was king, you were the one who led Israel. And Yahweh said to you, You will shepherd My people Israel and be their ruler.' So David made a covenant with them, and they anointed him king over all Israel. David was thirty years old when he became king, and he reigned for forty years. Years before, Samuel had poured oil on a shepherd boy's head. David had waited, run, hidden, and trusted. Now God's promise had come true. God's timing is always worth the wait.",
+    "scenes": [
+      {
+        "caption": "'Should I go up?'",
+        "art_direction": "David kneeling in prayer at dawn, asking God what to do."
+      },
+      {
+        "caption": "To Hebron",
+        "art_direction": "David's people traveling to Hebron; a little sign with Caleb's mountain in the background."
+      },
+      {
+        "caption": "King of Judah",
+        "art_direction": "The elders of Judah anointing David with oil."
+      },
+      {
+        "caption": "Seven and a half years",
+        "art_direction": "A calendar flipping as David rules over Judah, waiting patiently."
+      },
+      {
+        "caption": "All the tribes come",
+        "art_direction": "Twelve tribal banners arriving at Hebron; leaders bowing before David."
+      },
+      {
+        "caption": "Shepherd of My people",
+        "art_direction": "David crowned king over all Israel, holding a shepherd's staff beside his scepter."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 37:4",
+    "text": "Also delight yourself in Yahweh, and he will give you the desires of your heart.",
+    "translation": "WEB",
+    "tokens": [
+      "Also delight yourself",
+      "in Yahweh,",
+      "and he will give you",
+      "the desires",
+      "of your heart."
+    ],
+    "distractors": [
+      "the desires of your stomach."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh keeps His promises in His perfect time, and waiting is worth it.",
+    "reflection_prompt": "David waited years for God's promise to come true. How do you feel when you have to wait for something?",
+    "reflection_choices": [
+      "Impatient",
+      "Worried",
+      "Hopeful",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What did David do first after Saul died?",
+      "options": [
+        "He grabbed the crown",
+        "He asked Yahweh what to do",
+        "He went back to his sheep"
+      ],
+      "correct_index": 1,
+      "explanation": "David inquired of Yahweh, saying, 'Shall I go up into any of the cities of Judah?'",
+      "verse_ref": "2 Samuel 2:1"
+    },
+    {
+      "question": "Where was David first anointed king of Judah?",
+      "options": [
+        "Hebron",
+        "Jerusalem",
+        "Bethlehem"
+      ],
+      "correct_index": 0,
+      "explanation": "The men of Judah came, and there they anointed David king over the house of Judah in Hebron.",
+      "verse_ref": "2 Samuel 2:4"
+    },
+    {
+      "question": "How old was David when he became king, and how long did he reign?",
+      "options": [
+        "Seventeen, ten years",
+        "Fifty, five years",
+        "Thirty, forty years"
+      ],
+      "correct_index": 2,
+      "explanation": "David was thirty years old when he began to reign, and he reigned forty years.",
+      "verse_ref": "2 Samuel 5:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You keep Your promises in Your perfect time. When I have to wait, help me delight in You and trust that Your timing is best. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "From the day Samuel anointed me to the day I became king over all Israel was many, many years. But God's promise never changed. He's faithful to you too!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "olive_oil"
+    ],
+    "unlock": "hebron_throne"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The civil war between David's house and Saul's house (2 Samuel 2:8-4:12), including Abner's and Ish-bosheth's deaths, is summarized as 'conflict with Saul's family.' Confirm."
+  }
+}

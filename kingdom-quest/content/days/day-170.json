@@ -1,0 +1,120 @@
+{
+  "day": 170,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Gentle Answer",
+  "scripture_passage": "1 Samuel 25:2-35",
+  "story_title": "Abigail the Peacemaker",
+  "summary": "A rich, rude man named Nabal insulted David's men. David angrily set out for revenge, but Nabal's wise wife, Abigail, hurried to meet him with gifts and gentle words, and David thanked God for stopping him.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "A very rich man named Nabal lived near Carmel. He had three thousand sheep and a thousand goats. His wife Abigail was wise and beautiful, but Nabal was harsh and rude. His name even means 'fool'! David's men had protected Nabal's shepherds in the wilderness. So at sheep-shearing time, David sent ten young men to politely ask Nabal for some food. But Nabal insulted them. 'Who is this David? Why should I give my bread and meat to men I don't even know?' When David heard this, he got angry. He told four hundred of his men, 'Grab your swords!' and set out for revenge. A servant told Abigail everything. Abigail moved fast! She packed two hundred loaves of bread, skins of wine, five sheep ready to cook, grain, a hundred clusters of raisins, and two hundred fig cakes. When she met David, she got off her donkey and bowed low. 'Please, my lord, don't pay attention to my foolish husband. Accept this gift. Don't take revenge, so you won't have regrets when Yahweh makes you king.' David's anger melted. 'Blessed be Yahweh, who sent you to meet me today! And blessed be your good judgment, which kept me from taking revenge.' Abigail's gentle answer turned away David's anger.",
+    "scenes": [
+      {
+        "caption": "Rich and rude",
+        "art_direction": "Nabal sitting among huge flocks with a scowl on his face."
+      },
+      {
+        "caption": "A polite request",
+        "art_direction": "David's ten young men bowing respectfully before Nabal."
+      },
+      {
+        "caption": "An insult",
+        "art_direction": "Nabal waving them away rudely; the men's faces drop."
+      },
+      {
+        "caption": "'Grab your swords!'",
+        "art_direction": "David storming off with his men, angry; no fighting shown."
+      },
+      {
+        "caption": "Abigail moves fast",
+        "art_direction": "Comedic speed montage: Abigail packing bread, raisins, fig cakes, and sheep onto donkeys."
+      },
+      {
+        "caption": "A gentle answer",
+        "art_direction": "Abigail bowing before David on the road; David's angry face softening into thankfulness."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 15:1",
+    "text": "A gentle answer turns away wrath, but a harsh word stirs up anger.",
+    "translation": "WEB",
+    "tokens": [
+      "A gentle answer",
+      "turns away wrath,",
+      "but a harsh word",
+      "stirs up anger."
+    ],
+    "distractors": [
+      "stirs up kindness."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be a peacemaker with gentle words and wise actions.",
+    "reflection_prompt": "Abigail stopped a fight with gentle words and kind actions. When is a time you could be a peacemaker?",
+    "reflection_choices": [
+      "When friends are arguing",
+      "When my siblings are fighting",
+      "When someone is angry with me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peacemaking"
+  },
+  "quiz": [
+    {
+      "question": "What does the name Nabal mean?",
+      "options": [
+        "Brave",
+        "Fool",
+        "Rich"
+      ],
+      "correct_index": 1,
+      "explanation": "Abigail said, 'As his name is, so is he. Nabal is his name, and folly is with him.'",
+      "verse_ref": "1 Samuel 25:25"
+    },
+    {
+      "question": "What did Abigail bring to David?",
+      "options": [
+        "Bread, raisins, fig cakes, sheep, and more",
+        "Swords and shields",
+        "A crown"
+      ],
+      "correct_index": 0,
+      "explanation": "Abigail took two hundred loaves, wine, five sheep, grain, raisins, and two hundred cakes of figs.",
+      "verse_ref": "1 Samuel 25:18"
+    },
+    {
+      "question": "What did David say about Abigail?",
+      "options": [
+        "'Go away!'",
+        "'Your husband was right.'",
+        "'Blessed be your good judgment!'"
+      ],
+      "correct_index": 2,
+      "explanation": "David said, 'Blessed is your discretion, and blessed are you, who have kept me today from blood guiltiness.'",
+      "verse_ref": "1 Samuel 25:33"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, make me a peacemaker like Abigail. When people are angry, help me use gentle words and wise actions to bring peace. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "I was so angry that day, and I was about to do something I'd regret. Then Abigail showed up with fig cakes and gentle words. God used her to stop me."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "palm_branch"
+    ],
+    "unlock": "abigails_fig_cakes"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "David's planned revenge (25:13, 22) is stated as 'set out for revenge.' Omits Nabal's death (25:36-38) and David marrying Abigail (25:39-44). Confirm."
+  }
+}

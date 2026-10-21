@@ -1,0 +1,122 @@
+{
+  "day": 181,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Seat at the Table",
+  "scripture_passage": "2 Samuel 9:6-13",
+  "story_title": "Mephibosheth at the King's Table",
+  "summary": "Mephibosheth came before David, afraid. But David said, 'Don't be afraid,' gave him back his grandfather's land, and invited him to eat at the king's table every day, like one of the king's own sons.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "King David sent for Mephibosheth. Imagine how Mephibosheth must have felt. He was the grandson of King Saul, the man who had chased David for years. Maybe David wanted revenge! When Mephibosheth arrived at the palace, he fell on his face before the king, trembling. David said, 'Mephibosheth!' He answered, 'I am your servant.' And then David said the most wonderful words: 'Don't be afraid! I will surely show you kindness for the sake of your father, Jonathan. I will give you back all the land that belonged to your grandfather Saul. And you will always eat at my table.' Mephibosheth couldn't believe it. He bowed and said, 'Who am I, your servant, that you would notice a dead dog like me?' He felt worthless. But David saw him differently. And so Mephibosheth lived in Jerusalem and ate at King David's table every day, just like one of the king's own sons. He couldn't walk, he had nothing to offer, and he thought he was worthless. But the king welcomed him to the table. That's exactly what God does for us through Jesus. He invites us to His table, not because of what we can do, but because of His love.",
+    "scenes": [
+      {
+        "caption": "Trembling",
+        "art_direction": "Mephibosheth bowing low before David's throne, crutches beside him."
+      },
+      {
+        "caption": "'Don't be afraid!'",
+        "art_direction": "David stepping down from his throne, kneeling to Mephibosheth's level, smiling."
+      },
+      {
+        "caption": "Your land restored",
+        "art_direction": "A map of fields and vineyards glowing as they are returned to Mephibosheth."
+      },
+      {
+        "caption": "'A dead dog like me?'",
+        "art_direction": "Mephibosheth with his head down, surprised and unsure."
+      },
+      {
+        "caption": "Ziba's family helps",
+        "art_direction": "Ziba and his many sons and servants working in Mephibosheth's fields."
+      },
+      {
+        "caption": "A seat at the table",
+        "art_direction": "A long royal banquet table; Mephibosheth seated among the king's sons, laughing together."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 23:5",
+    "text": "You prepare a table before me in the presence of my enemies. You anoint my head with oil. My cup runs over.",
+    "translation": "WEB",
+    "tokens": [
+      "You prepare a table",
+      "before me",
+      "in the presence",
+      "of my enemies.",
+      "You anoint my head",
+      "with oil.",
+      "My cup runs over."
+    ],
+    "distractors": [
+      "My cup is empty."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh welcomes me to His table, and my kindness can welcome others too.",
+    "reflection_prompt": "David gave Mephibosheth a seat at his table. How could you give someone a 'seat at your table' this week?",
+    "reflection_choices": [
+      "Invite someone to sit with me at lunch",
+      "Include someone in a game",
+      "Welcome someone new to church",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "What did David say first to Mephibosheth?",
+      "options": [
+        "'Go away!'",
+        "'Don't be afraid!'",
+        "'You're in trouble.'"
+      ],
+      "correct_index": 1,
+      "explanation": "David said to him, 'Don't be afraid; for I will surely show you kindness.'",
+      "verse_ref": "2 Samuel 9:7"
+    },
+    {
+      "question": "Where would Mephibosheth eat every day?",
+      "options": [
+        "At the king's table",
+        "In the kitchen",
+        "In Lo-debar"
+      ],
+      "correct_index": 0,
+      "explanation": "David said, 'You will eat bread at my table continually.'",
+      "verse_ref": "2 Samuel 9:7"
+    },
+    {
+      "question": "How did Mephibosheth eat at the king's table?",
+      "options": [
+        "As a servant",
+        "As a guest once a year",
+        "Like one of the king's own sons"
+      ],
+      "correct_index": 2,
+      "explanation": "Mephibosheth ate at David's table, like one of the king's sons.",
+      "verse_ref": "2 Samuel 9:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for welcoming me to Your table through Jesus, not because of what I can do, but because You love me. Help me welcome others with kindness too. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "When Mephibosheth called himself a dead dog, it broke my heart. He was Jonathan's son! Giving him a seat at my table was one of the best things I ever did."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "olive_oil"
+    ],
+    "unlock": "kings_table"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

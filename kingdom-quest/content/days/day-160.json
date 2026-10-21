@@ -1,0 +1,121 @@
+{
+  "day": 160,
+  "month": 6,
+  "realm": 23,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "My Rock and My Fortress",
+  "scripture_passage": "Psalm 18:1-3; 18:28-36",
+  "story_title": "David's Courage Song",
+  "summary": "David wrote songs about how God gave him courage and strength. In Psalm 18 he called Yahweh his rock, his fortress, and his rescuer, and sang that with God he could leap over a wall.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "David didn't only fight giants. He wrote songs! Many of the songs in the book of Psalms were written by David. Later in his life, after God had rescued him from many enemies, he wrote a song of thanks. Today, it's called Psalm 18. David began: 'I love You, Yahweh, my strength. Yahweh is my rock, my fortress, and my rescuer. My God is my rock, where I take shelter. He is my shield, and the strength of my salvation.' A rock is solid and doesn't move. A fortress is a safe place where enemies can't reach you. A shield protects you. That's what God was to David! Then David sang, 'You light my lamp. Yahweh my God lights up my darkness. With Your help, I can run against an army. With my God, I can leap over a wall!' He sang that God made his feet sure like a deer's, so he could stand on high, rocky places without slipping. David's courage didn't come from himself. It came from knowing God was his rock. You can write your own songs, poems, or pictures about how God has helped you too.",
+    "scenes": [
+      {
+        "caption": "David the songwriter",
+        "art_direction": "David sitting on a rock with his harp and a scroll, writing."
+      },
+      {
+        "caption": "My rock",
+        "art_direction": "A huge, solid boulder glowing gold; waves crash against it and it doesn't move."
+      },
+      {
+        "caption": "My fortress",
+        "art_direction": "A strong stone fortress on a mountain, its gates closed safely."
+      },
+      {
+        "caption": "My shield",
+        "art_direction": "A bright shield blocking arrows that bounce off harmlessly."
+      },
+      {
+        "caption": "You light my lamp",
+        "art_direction": "A small lamp flickering on in a dark room, filling it with light."
+      },
+      {
+        "caption": "Leap over a wall!",
+        "art_direction": "David, with a big grin, leaping over a wall like an athlete; feet like a deer on rocky cliffs."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 18:29",
+    "text": "For by you, I advance through a troop. By my God, I leap over a wall.",
+    "translation": "WEB",
+    "tokens": [
+      "For by you,",
+      "I advance",
+      "through a troop.",
+      "By my God,",
+      "I leap",
+      "over a wall."
+    ],
+    "distractors": [
+      "I hide behind a wall."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is my rock and my fortress, and I can tell about Him through songs and art.",
+    "reflection_prompt": "David wrote a song about how God was his rock. If you made a song, poem, or picture about God, what would you call Him?",
+    "reflection_choices": [
+      "My Rock",
+      "My Shield",
+      "My Light",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "creativity"
+  },
+  "quiz": [
+    {
+      "question": "What did David call Yahweh at the start of Psalm 18?",
+      "options": [
+        "His king",
+        "His rock, fortress, and rescuer",
+        "His shepherd"
+      ],
+      "correct_index": 1,
+      "explanation": "David sang, 'Yahweh is my rock, my fortress, and my deliverer.'",
+      "verse_ref": "Psalm 18:2"
+    },
+    {
+      "question": "What did David say God does in his darkness?",
+      "options": [
+        "Lights it up",
+        "Makes it darker",
+        "Ignores it"
+      ],
+      "correct_index": 0,
+      "explanation": "David sang, 'Yahweh my God will light up my darkness.'",
+      "verse_ref": "Psalm 18:28"
+    },
+    {
+      "question": "What did David say he could do with God's help?",
+      "options": [
+        "Fly like a bird",
+        "Swim across the sea",
+        "Leap over a wall"
+      ],
+      "correct_index": 2,
+      "explanation": "David sang, 'By my God, I leap over a wall.'",
+      "verse_ref": "Psalm 18:29"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my rock, my fortress, and my shield. You light up my darkness. With You, I can leap over walls! Thank You for being my strength. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "I loved writing songs to God! When I remembered how He had helped me, the words just poured out. What song or picture could you make for Him?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "lamp"
+    ],
+    "unlock": "rock_fortress"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

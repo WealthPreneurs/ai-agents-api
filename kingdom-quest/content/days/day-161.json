@@ -1,0 +1,110 @@
+{
+  "day": 161,
+  "month": 6,
+  "realm": 23,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: God Looks at the Heart",
+  "scripture_passage": "1 Samuel 16-17",
+  "story_title": "The Shepherd and the Giant",
+  "summary": "Sabbath Camp looks back at David's anointing, his harp, and his victory over Goliath. God looks at the heart, and He makes us brave.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Welcome to Sabbath Camp! What a week in the Shepherd's Hills. Let's remember. God sent Samuel to Bethlehem to anoint a new king. Seven tall, strong brothers passed by, but God said, 'Yahweh doesn't see the way people see. People look at the outside, but Yahweh looks at the heart.' God chose the youngest, a shepherd boy who wasn't even invited. David played his harp, and it brought peace to troubled King Saul. Then a giant named Goliath shouted at God's people for forty days. Everyone was afraid, but David saw how big God is. He took off Saul's armor, picked up five smooth stones, and said, 'The battle is Yahweh's!' One stone, and the giant fell. The whole army found courage. And David wrote songs about God being his rock. This week's big truth: Yahweh looks at your heart, and He makes you brave. You don't have to be the biggest, the oldest, or the strongest. God sees your heart, and He is with you.",
+    "scenes": [
+      {
+        "caption": "Camp in the shepherd's field",
+        "art_direction": "Campfire in the child's village beside the shepherd's field, harp, and sling banner."
+      },
+      {
+        "caption": "David's week",
+        "art_direction": "Storybook recap: the oil horn, seven brothers, the harp, Goliath, the stones, the falling giant."
+      },
+      {
+        "caption": "God looks at the heart",
+        "art_direction": "The child's avatar with a glowing heart, and a warm light shining on it."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Samuel 16:7",
+    "text": "for I don't see as man sees. For man looks at the outward appearance, but Yahweh looks at the heart.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "for I don't see",
+      "as man sees.",
+      "For man looks",
+      "at the outward appearance,",
+      "but Yahweh",
+      "looks at the heart."
+    ],
+    "distractors": [
+      "looks at the muscles."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh looks at my heart, and He makes me brave.",
+    "reflection_prompt": "Milestone: Yahweh looks at your heart, and He makes you brave! Draw a big heart. Inside, write or draw the things you hope God sees in your heart.",
+    "reflection_choices": [
+      "Love for God",
+      "Courage",
+      "Kindness",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What does Yahweh look at?",
+      "options": [
+        "How tall we are",
+        "The heart",
+        "Our clothes"
+      ],
+      "correct_index": 1,
+      "explanation": "Man looks at the outward appearance, but Yahweh looks at the heart.",
+      "verse_ref": "1 Samuel 16:7"
+    },
+    {
+      "question": "What did David say the battle belongs to?",
+      "options": [
+        "Yahweh",
+        "King Saul",
+        "The army"
+      ],
+      "correct_index": 0,
+      "explanation": "David said, 'The battle is Yahweh's.'",
+      "verse_ref": "1 Samuel 17:47"
+    },
+    {
+      "question": "What did David use to defeat Goliath?",
+      "options": [
+        "Saul's sword",
+        "A bow and arrow",
+        "A sling and a stone"
+      ],
+      "correct_index": 2,
+      "explanation": "David prevailed over the Philistine with a sling and with a stone.",
+      "verse_ref": "1 Samuel 17:50"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for looking at my heart. Make my heart brave and full of love for You. I don't have to be the biggest, because You are with me. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Realm 23 complete! After Goliath, I went to live in King Saul's palace, and I met someone who became my very best friend. You'll meet him next week!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "palm_branch"
+    ],
+    "unlock": "heart_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

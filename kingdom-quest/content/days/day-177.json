@@ -1,0 +1,121 @@
+{
+  "day": 177,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Leading with God's Help",
+  "scripture_passage": "2 Samuel 5:6-12",
+  "story_title": "The City of David",
+  "summary": "David and his men captured the strong fortress of Jerusalem, called Zion, and made it the capital. David grew greater and greater, because Yahweh, the God of Armies, was with him.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "As the new king of all Israel, David needed a capital city. There was a strong fortress on a hill called Jerusalem. It was in the middle of the land, between the tribes, which made it perfect. But a people called the Jebusites lived there, and they were sure no one could capture it. Their walls were high, and their city sat on top of steep hills. They mocked David: 'You'll never get in here! Even the blind and the lame could keep you out!' But David had a plan. He said, 'Whoever wants to capture the Jebusites must go up through the water shaft.' There was a tunnel that brought water into the city from a spring below. David's men climbed up through the tunnel and took the city by surprise! David captured the fortress of Zion and lived there. He called it the City of David. David built up the city all around. Then King Hiram of Tyre, a neighboring king, sent messengers to David, along with cedar logs, carpenters, and stonemasons, and they built David a palace. The Bible says David became greater and greater, because Yahweh, the God of Armies, was with him. And David knew that Yahweh had made him king for the sake of His people, not just for himself.",
+    "scenes": [
+      {
+        "caption": "A city on a hill",
+        "art_direction": "Jerusalem's fortress walls on a steep hill, glowing in the sun."
+      },
+      {
+        "caption": "'You'll never get in!'",
+        "art_direction": "Jebusite guards on the wall laughing and waving."
+      },
+      {
+        "caption": "David's plan",
+        "art_direction": "David pointing to a hidden water tunnel on a map."
+      },
+      {
+        "caption": "Up the water shaft",
+        "art_direction": "David's men climbing up a narrow, dripping tunnel with torches; adventurous."
+      },
+      {
+        "caption": "The City of David",
+        "art_direction": "David standing on the walls of Zion as the sun rises; banners raised."
+      },
+      {
+        "caption": "Cedar from Tyre",
+        "art_direction": "Workers carrying huge cedar logs and building a palace."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 48:1",
+    "text": "Great is Yahweh, and greatly to be praised, in the city of our God, in his holy mountain.",
+    "translation": "WEB",
+    "tokens": [
+      "Great is Yahweh,",
+      "and greatly",
+      "to be praised,",
+      "in the city of our God,",
+      "in his holy mountain."
+    ],
+    "distractors": [
+      "in Pharaoh's palace."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me gifts to lead and serve for the good of others, not just for myself.",
+    "reflection_prompt": "David knew God made him king for the sake of His people. How could you use your gifts to help others, not just yourself?",
+    "reflection_choices": [
+      "Lead a group kindly",
+      "Use a skill to help someone",
+      "Share what I have",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "leadership"
+  },
+  "quiz": [
+    {
+      "question": "What did the Jebusites say to David?",
+      "options": [
+        "'Welcome, king!'",
+        "'Even the blind and the lame could keep you out!'",
+        "'We'll give you gold.'"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'Unless you take away the blind and the lame, you won't come in here.'",
+      "verse_ref": "2 Samuel 5:6"
+    },
+    {
+      "question": "What did David call the fortress of Zion?",
+      "options": [
+        "The City of David",
+        "The Tower of Babel",
+        "New Hebron"
+      ],
+      "correct_index": 0,
+      "explanation": "David lived in the stronghold, and called it the city of David.",
+      "verse_ref": "2 Samuel 5:9"
+    },
+    {
+      "question": "Why did David become greater and greater?",
+      "options": [
+        "He had the biggest army",
+        "He was very rich",
+        "Yahweh, the God of Armies, was with him"
+      ],
+      "correct_index": 2,
+      "explanation": "David grew greater and greater; for Yahweh, the God of Armies, was with him.",
+      "verse_ref": "2 Samuel 5:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are great and greatly to be praised! Help me use the gifts You've given me to serve others and not just myself. Be with me like You were with David. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Jerusalem became my home and the city of God's people. I always knew I was king to serve God's people, not just to sit on a throne."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "cedar_wood"
+    ],
+    "unlock": "city_of_david"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The capture of Jerusalem (2 Samuel 5:6-8) is told as a surprise entry through the water shaft; David's harsh words about 'the blind and the lame' (5:8) are omitted. The water-shaft reading of 5:8 is debated. Confirm."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 151,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Telling the Truth, Even When It's Hard",
+  "scripture_passage": "1 Samuel 3:11-21; 7:3-12",
+  "story_title": "Samuel Grows Up",
+  "summary": "God gave young Samuel a hard message for Eli, and Samuel told him the whole truth. Samuel grew up, and all Israel knew he was God's prophet. Later he led Israel back to God and set up a stone called Ebenezer.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "That night, Yahweh gave Samuel a very hard message. Eli's sons, who were priests, had been doing evil things, and Eli hadn't stopped them. God was going to bring judgment on Eli's family. In the morning, Samuel was afraid to tell Eli. But Eli called him and said, 'What did God say? Don't hide anything from me.' So Samuel told him everything. He didn't leave anything out, even though it was hard. Eli said, 'He is Yahweh. Let Him do what seems good to Him.' Samuel grew up, and Yahweh was with him. Every word Samuel spoke from God came true. All Israel, from Dan in the north to Beersheba in the south, knew that Samuel was a true prophet of Yahweh. Years later, Samuel told the people, 'If you're returning to Yahweh with all your hearts, get rid of your false gods and serve Him only.' And they did! When the Philistines attacked, Samuel prayed, and Yahweh sent loud thunder that threw the enemy into confusion. Samuel set up a stone and named it Ebenezer, which means 'stone of help,' saying, 'Yahweh has helped us all the way.'",
+    "scenes": [
+      {
+        "caption": "A hard message",
+        "art_direction": "Samuel lying awake in the dark, looking worried."
+      },
+      {
+        "caption": "'Don't hide anything'",
+        "art_direction": "Old Eli sitting with Samuel in the morning light, kindly urging him to speak."
+      },
+      {
+        "caption": "The whole truth",
+        "art_direction": "Samuel speaking honestly as Eli bows his head."
+      },
+      {
+        "caption": "Samuel grows up",
+        "art_direction": "A montage of Samuel growing taller, still serving at the Tabernacle."
+      },
+      {
+        "caption": "Turning back to God",
+        "art_direction": "People smashing their idols and gathering to pray."
+      },
+      {
+        "caption": "Ebenezer",
+        "art_direction": "Samuel setting up a large stone as thunder rumbles in the distance; lettering 'Stone of Help.'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 121:2",
+    "text": "My help comes from Yahweh, who made heaven and earth.",
+    "translation": "WEB",
+    "tokens": [
+      "My help",
+      "comes from Yahweh,",
+      "who made",
+      "heaven and earth."
+    ],
+    "distractors": [
+      "comes from me,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can help me tell the truth, even when it's hard.",
+    "reflection_prompt": "Samuel told Eli the truth, even though it was hard. When is it hard for you to tell the truth?",
+    "reflection_choices": [
+      "When I might get in trouble",
+      "When it might hurt someone's feelings",
+      "When I'm embarrassed",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "What did Eli tell Samuel in the morning?",
+      "options": [
+        "'Go back to sleep.'",
+        "'Don't hide anything from me.'",
+        "'Make breakfast.'"
+      ],
+      "correct_index": 1,
+      "explanation": "Eli said, 'What is the thing that he has spoken to you? Please don't hide it from me.'",
+      "verse_ref": "1 Samuel 3:17"
+    },
+    {
+      "question": "How much of God's message did Samuel tell Eli?",
+      "options": [
+        "Everything",
+        "Only the nice parts",
+        "Nothing"
+      ],
+      "correct_index": 0,
+      "explanation": "Samuel told him every whit, and hid nothing from him.",
+      "verse_ref": "1 Samuel 3:18"
+    },
+    {
+      "question": "What does Ebenezer mean?",
+      "options": [
+        "House of God",
+        "City of peace",
+        "Stone of help"
+      ],
+      "correct_index": 2,
+      "explanation": "Samuel set up a stone and called it Ebenezer, saying, 'Yahweh helped us until now.'",
+      "verse_ref": "1 Samuel 7:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me courage to tell the truth, even when it's hard. Thank You for helping me all the way, just like You helped Samuel. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Samuel always told the truth, even hard truths. That's why people trusted him. I needed that kind of honesty in my own life, as you'll see."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "ebenezer_stone"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Eli's sons' sins (1 Samuel 2:12-25) are described only as 'doing evil things.' The ark's capture and the deaths of Eli and his sons (1 Samuel 4-6) are omitted. The Ebenezer quote follows the WEB wording 'Yahweh helped us until now'; check it. Confirm."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 155,
+  "month": 6,
+  "realm": 23,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Chosen by God",
+  "scripture_passage": "1 Samuel 16:1-13",
+  "story_title": "The Youngest Son",
+  "summary": "God sent Samuel to Jesse's family in Bethlehem to anoint a new king. Seven tall, strong sons passed by, but God chose the youngest, a shepherd boy named David. The Spirit of Yahweh came on him.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "Yahweh said to Samuel, 'Fill your horn with oil and go to Bethlehem, to a man named Jesse. I have chosen one of his sons to be king.' So Samuel went to Bethlehem and invited Jesse and his sons to a sacrifice. When Samuel saw the oldest son, Eliab, he thought, 'Surely this is the one!' Eliab was tall and good-looking, like Saul. But Yahweh said, 'Don't look at how handsome or tall he is. I have not chosen him. Yahweh doesn't see the way people see. People look at the outside, but Yahweh looks at the heart.' Jesse had seven of his sons pass in front of Samuel, but Samuel said, 'Yahweh hasn't chosen any of these. Do you have any more sons?' Jesse said, 'There is still the youngest. He's out taking care of the sheep.' Nobody had even thought to invite him! Samuel said, 'Send for him. We won't sit down until he gets here.' So they brought in David. He had a healthy glow, beautiful eyes, and a handsome face. Yahweh said, 'Get up and anoint him. This is the one.' Samuel poured the oil on David's head in front of his brothers, and from that day on, the Spirit of Yahweh came powerfully on David.",
+    "scenes": [
+      {
+        "caption": "To Bethlehem",
+        "art_direction": "Samuel traveling with a horn of oil toward the little town of Bethlehem."
+      },
+      {
+        "caption": "Surely this is the one!",
+        "art_direction": "Tall, impressive Eliab standing tall; Samuel nodding."
+      },
+      {
+        "caption": "God looks at the heart",
+        "art_direction": "Split view: Eliab's outside versus a glowing heart shape that dims."
+      },
+      {
+        "caption": "Seven sons",
+        "art_direction": "Seven brothers lined up in order of height; Samuel shaking his head at each."
+      },
+      {
+        "caption": "'Any more sons?'",
+        "art_direction": "Jesse scratching his head, then pointing toward the distant fields."
+      },
+      {
+        "caption": "The shepherd boy",
+        "art_direction": "Young David running in from the fields, a lamb under his arm, oil poured over his head as light falls on him."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 78:70",
+    "text": "He also chose David his servant, and took him from the sheepfolds",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "He also chose",
+      "David his servant,",
+      "and took him",
+      "from the sheepfolds"
+    ],
+    "distractors": [
+      "from the palace"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh chooses me because of my heart, not how I look or how big I am.",
+    "reflection_prompt": "Nobody even thought to invite David, but God chose him. Have you ever felt left out or overlooked?",
+    "reflection_choices": [
+      "When teams were picked",
+      "When I wasn't invited",
+      "When others got attention",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "Where did God send Samuel to anoint a new king?",
+      "options": [
+        "Jerusalem",
+        "Bethlehem",
+        "Shiloh"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh said, 'I will send you to Jesse the Bethlehemite.'",
+      "verse_ref": "1 Samuel 16:1"
+    },
+    {
+      "question": "What does Yahweh look at?",
+      "options": [
+        "The heart",
+        "How tall someone is",
+        "How strong someone is"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh said, 'Man looks at the outward appearance, but Yahweh looks at the heart.'",
+      "verse_ref": "1 Samuel 16:7"
+    },
+    {
+      "question": "What was David doing when Samuel came?",
+      "options": [
+        "Sleeping",
+        "Playing the harp at a party",
+        "Taking care of the sheep"
+      ],
+      "correct_index": 2,
+      "explanation": "Jesse said, 'There remains yet the youngest. Behold, he is keeping the sheep.'",
+      "verse_ref": "1 Samuel 16:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You look at my heart, not just how I look. Thank You for choosing me. Give me a heart that loves You. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "That was the day Samuel came to my house! I was out with the sheep, and nobody thought to call me in. But God hadn't forgotten me. He doesn't forget you either."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "palm_branch"
+    ],
+    "unlock": "shepherds_field"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

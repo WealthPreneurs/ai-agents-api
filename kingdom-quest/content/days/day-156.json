@@ -1,0 +1,121 @@
+{
+  "day": 156,
+  "month": 6,
+  "realm": 23,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Making Music for God",
+  "scripture_passage": "1 Samuel 16:14-23",
+  "story_title": "David the Harp Player",
+  "summary": "When King Saul was troubled, his servants found a skillful harp player: young David. Whenever David played, Saul felt better. Saul loved David and made him his armor-bearer.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "The Spirit of Yahweh had left Saul, and he was troubled by an evil spirit. He felt tormented, scared, and miserable. His servants said, 'Let us find someone who plays the harp well. When the trouble comes on you, he can play, and you'll feel better.' One servant said, 'I know someone! Jesse of Bethlehem has a son who is very skilled at playing music. He's brave and strong, he speaks wisely, he's good-looking, and Yahweh is with him.' That was David! While David watched sheep, he had practiced his harp out in the fields, playing songs to God under the stars. So Saul sent for him, and David came to the palace with a donkey loaded with bread, wine, and a young goat from his father. Saul liked David very much and made him one of his armor-bearers. And whenever the trouble came on Saul, David would pick up his harp and play. Saul would feel refreshed and better, and the trouble would leave him. God had given David a gift for music, and David practiced and used it to bring peace to someone who was hurting. Your gifts can bring comfort to others too.",
+    "scenes": [
+      {
+        "caption": "A troubled king",
+        "art_direction": "Saul pacing in a dark room, holding his head, shadows swirling around him."
+      },
+      {
+        "caption": "'I know someone!'",
+        "art_direction": "A servant raising his hand eagerly."
+      },
+      {
+        "caption": "Practicing in the fields",
+        "art_direction": "Young David playing a small harp beside his sheep under a starry sky."
+      },
+      {
+        "caption": "To the palace",
+        "art_direction": "David walking up the palace road with a donkey carrying gifts."
+      },
+      {
+        "caption": "David plays",
+        "art_direction": "Golden music notes flowing from David's harp, pushing back the shadows around Saul."
+      },
+      {
+        "caption": "Peace returns",
+        "art_direction": "Saul resting with a calm face as David keeps playing softly."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 33:3",
+    "text": "Sing to him a new song. Play skillfully with a shout of joy!",
+    "translation": "WEB",
+    "tokens": [
+      "Sing to him",
+      "a new song.",
+      "Play skillfully",
+      "with a shout",
+      "of joy!"
+    ],
+    "distractors": [
+      "with a frown!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me gifts, and practicing them can bring comfort to others.",
+    "reflection_prompt": "David practiced his harp in the fields, and his music comforted Saul. What gift could you practice that might help someone else?",
+    "reflection_choices": [
+      "Music or singing",
+      "Drawing or making things",
+      "Telling jokes or stories",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What did Saul's servants suggest to help him?",
+      "options": [
+        "A long nap",
+        "Someone to play the harp",
+        "A big feast"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'Seek out a man who is a skillful player on the harp.'",
+      "verse_ref": "1 Samuel 16:16"
+    },
+    {
+      "question": "What did the servant say about David?",
+      "options": [
+        "He was skilled, brave, wise, and Yahweh was with him",
+        "He was very tall",
+        "He was a great cook"
+      ],
+      "correct_index": 0,
+      "explanation": "He said David was skillful in playing, a mighty man of valor, prudent in speech, and Yahweh was with him.",
+      "verse_ref": "1 Samuel 16:18"
+    },
+    {
+      "question": "What happened when David played the harp for Saul?",
+      "options": [
+        "Saul got angry",
+        "Saul fell asleep forever",
+        "Saul felt refreshed and better"
+      ],
+      "correct_index": 2,
+      "explanation": "David played with his hand, so Saul was refreshed and was well.",
+      "verse_ref": "1 Samuel 16:23"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the gifts You've given me. Help me practice them and use them to bring comfort and joy to people who are hurting. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "I practiced my harp for hours out in the fields with only my sheep listening! I never knew God would use it in a king's palace. Keep practicing your gifts!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "gold_thread"
+    ],
+    "unlock": "davids_harp"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "'An evil spirit from Yahweh' (1 Samuel 16:14) is softened to 'troubled by an evil spirit.' This raises a theological question for the reviewer to frame. Confirm."
+  }
+}

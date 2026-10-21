@@ -1,0 +1,119 @@
+{
+  "day": 150,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Listening for God's Voice",
+  "scripture_passage": "1 Samuel 3:1-10",
+  "story_title": "Samuel Hears His Name",
+  "summary": "One night, young Samuel heard someone call his name three times and ran to Eli each time. Eli realized it was Yahweh and told him to say, 'Speak, Yahweh, for your servant is listening.'",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Young Samuel served Yahweh under Eli. In those days, God didn't speak to people very often. Eli was old, and his eyes were getting weak. One night, Samuel was lying down in the Tabernacle, near the ark of God, while the lamp of God was still burning. Suddenly, a voice called, 'Samuel!' Samuel jumped up and ran to Eli. 'Here I am! You called me.' But Eli said, 'I didn't call you. Go back to bed.' So Samuel lay down. Again the voice called, 'Samuel!' He ran to Eli again. 'Here I am! You called me.' 'I didn't call, my son. Go lie down.' Samuel didn't know yet that it was Yahweh. Then it happened a third time! This time, Eli understood. Yahweh was calling the boy. Eli said, 'Go lie down. If He calls you again, say, Speak, Yahweh, for Your servant is listening.' So Samuel went back. And Yahweh came and stood there and called, just like before: 'Samuel! Samuel!' And Samuel said, 'Speak, for Your servant is listening.' God loves to speak to children. Are you listening?",
+    "scenes": [
+      {
+        "caption": "A rare word",
+        "art_direction": "A quiet, dim Tabernacle at night; old Eli dozing nearby."
+      },
+      {
+        "caption": "The lamp still burning",
+        "art_direction": "A golden lampstand flickering beside the ark."
+      },
+      {
+        "caption": "'Samuel!'",
+        "art_direction": "Young Samuel sitting up on his sleeping mat, looking around."
+      },
+      {
+        "caption": "Running to Eli",
+        "art_direction": "Samuel padding barefoot to Eli's room; Eli waking up sleepily."
+      },
+      {
+        "caption": "Three times!",
+        "art_direction": "A counter: 1, 2, 3; Samuel getting more and more puzzled; gentle comedic beat."
+      },
+      {
+        "caption": "'Speak, I'm listening'",
+        "art_direction": "Samuel lying very still, eyes wide, whispering toward the light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "John 10:27",
+    "text": "My sheep hear my voice, and I know them, and they follow me.",
+    "translation": "WEB",
+    "tokens": [
+      "My sheep",
+      "hear my voice,",
+      "and I know them,",
+      "and they",
+      "follow me."
+    ],
+    "distractors": [
+      "run away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh speaks to kids too, and I can learn to listen for His voice.",
+    "reflection_prompt": "Samuel learned to listen for God's voice. Where is a quiet place where you could listen to God?",
+    "reflection_choices": [
+      "My bedroom",
+      "Outside in nature",
+      "At church",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "Where was Samuel sleeping when God called him?",
+      "options": [
+        "In a tent in the desert",
+        "In the Tabernacle near the ark",
+        "On a boat"
+      ],
+      "correct_index": 1,
+      "explanation": "Samuel was lying down in Yahweh's temple, where the ark of God was.",
+      "verse_ref": "1 Samuel 3:3"
+    },
+    {
+      "question": "Who did Samuel think was calling him?",
+      "options": [
+        "Eli",
+        "His mother",
+        "An angel"
+      ],
+      "correct_index": 0,
+      "explanation": "Samuel ran to Eli and said, 'Here I am; for you called me.'",
+      "verse_ref": "1 Samuel 3:5"
+    },
+    {
+      "question": "What did Samuel finally say to God?",
+      "options": [
+        "'Go away!'",
+        "'Not now.'",
+        "'Speak, for your servant is listening.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Samuel said, 'Speak; for your servant hears.'",
+      "verse_ref": "1 Samuel 3:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, speak to me! I'm listening. Help me hear Your voice when I read the Bible, when I pray, and when I'm quiet. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Samuel was just a boy when God called his name. God still speaks to kids today, through His Word and in quiet moments. Are you listening?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "lamp_of_god"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

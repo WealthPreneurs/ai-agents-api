@@ -1,0 +1,122 @@
+{
+  "day": 169,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Steadfast Heart",
+  "scripture_passage": "1 Samuel 24; Psalm 57:7",
+  "story_title": "David Spares Saul in the Cave",
+  "summary": "While Saul hunted David, Saul walked into the very cave where David was hiding. David's men urged him to strike, but David only cut off a corner of Saul's robe and refused to harm God's anointed king.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "While hunting for David, Saul went into a cave to rest. He didn't know that David and his men were hiding way in the back of that very same cave! David's men whispered, 'This is the day! God has given your enemy into your hands. Do whatever you want to him!' David crept forward quietly in the dark. But instead of hurting Saul, he secretly cut off a small corner of Saul's robe. Afterward, David's heart troubled him, even for doing that. He said to his men, 'Yahweh forbid that I should do anything to harm the king, God's anointed one.' And he didn't let his men attack Saul. When Saul left the cave, David followed him out and called, 'My lord the king!' Saul turned around. David bowed down and held up the piece of robe. 'Look! I cut off the corner of your robe, but I didn't hurt you. I haven't done anything wrong to you, but you're hunting me. May Yahweh judge between us. But I won't lift my hand against you.' Saul cried out loud. 'You are more righteous than I am. You've repaid me with good, but I've repaid you with evil.' During this time, David wrote: 'My heart is steadfast, God. I will sing praises!'",
+    "scenes": [
+      {
+        "caption": "Three thousand soldiers",
+        "art_direction": "Saul leading a long line of soldiers through rocky hills dotted with wild goats."
+      },
+      {
+        "caption": "Into the cave",
+        "art_direction": "Saul stepping into a dark cave entrance alone."
+      },
+      {
+        "caption": "Hiding in the back",
+        "art_direction": "David and his men pressed against the cave walls in the shadows, eyes wide."
+      },
+      {
+        "caption": "A corner of the robe",
+        "art_direction": "David quietly snipping a small piece of fabric from Saul's robe in the dark."
+      },
+      {
+        "caption": "'I won't harm him'",
+        "art_direction": "David holding back his men with his arm."
+      },
+      {
+        "caption": "'You are more righteous'",
+        "art_direction": "Outside the cave, David bowing and holding up the cloth; Saul weeping."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 57:7",
+    "text": "My heart is steadfast, God. My heart is steadfast. I will sing, yes, I will sing praises.",
+    "translation": "WEB",
+    "tokens": [
+      "My heart is steadfast,",
+      "God.",
+      "My heart is steadfast.",
+      "I will sing,",
+      "yes, I will",
+      "sing praises."
+    ],
+    "distractors": [
+      "I will get revenge."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can keep a steady heart that worships Yahweh, even when I'm treated unfairly.",
+    "reflection_prompt": "David could have gotten revenge, but he chose to trust God instead, and then he wrote a song. When you're treated unfairly, how could you worship God instead of getting even?",
+    "reflection_choices": [
+      "Sing a song to God",
+      "Pray about it",
+      "Draw how I feel and give it to God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What did David cut off in the cave?",
+      "options": [
+        "Saul's hair",
+        "A corner of Saul's robe",
+        "Saul's sandal strap"
+      ],
+      "correct_index": 1,
+      "explanation": "David arose and cut off the skirt of Saul's robe secretly.",
+      "verse_ref": "1 Samuel 24:4"
+    },
+    {
+      "question": "Why wouldn't David harm Saul?",
+      "options": [
+        "Saul was God's anointed king",
+        "Saul was too strong",
+        "David was too tired"
+      ],
+      "correct_index": 0,
+      "explanation": "David said, 'Yahweh forbid that I should do this thing to my lord, Yahweh's anointed.'",
+      "verse_ref": "1 Samuel 24:6"
+    },
+    {
+      "question": "What did Saul say to David?",
+      "options": [
+        "'I'll find you again!'",
+        "'Give me back my robe.'",
+        "'You are more righteous than I am.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Saul said to David, 'You are more righteous than I; for you have done good to me.'",
+      "verse_ref": "1 Samuel 24:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, keep my heart steady. When I'm treated unfairly, help me trust You to make things right, and help me sing praises to You instead of getting even. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "My men thought I was crazy for not striking. But God had made Saul king, and I trusted God to work it out. Then I sang about it!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "cave_robe_corner"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Saul's reason for entering the cave (24:3, 'to relieve himself') is softened to 'to rest.' Linking Psalm 57 follows its superscription. Confirm."
+  }
+}

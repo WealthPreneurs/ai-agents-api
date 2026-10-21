@@ -1,0 +1,122 @@
+{
+  "day": 148,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Pouring Out My Heart",
+  "scripture_passage": "1 Samuel 1:1-18",
+  "story_title": "Hannah's Prayer",
+  "summary": "Hannah longed for a baby and was teased by Peninnah. At the Tabernacle in Shiloh, she poured out her heart to Yahweh and promised to give her son back to God. Eli the priest blessed her.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "In the hill country of Ephraim lived a man named Elkanah. He had two wives, Hannah and Peninnah. Peninnah had children, but Hannah had none. Every year, the family traveled to Shiloh to worship Yahweh at the Tabernacle. And every year, Peninnah teased Hannah and made her feel terrible, until Hannah cried and couldn't eat. Elkanah loved Hannah and tried to comfort her, but her heart still ached. One year at Shiloh, Hannah went to the Tabernacle by herself. Deeply hurt, she cried and prayed to Yahweh. She made a promise: 'Yahweh, if You will look at my sadness and give me a son, I will give him back to You for his whole life.' Hannah prayed so hard that her lips moved, but no sound came out. Eli the priest was watching, and he thought something was wrong with her! But Hannah said, 'No, my lord. I've been pouring out my soul to Yahweh.' Eli answered, 'Go in peace. May the God of Israel give you what you've asked.' Hannah went away, ate something, and her face wasn't sad anymore. She had given her worry to God.",
+    "scenes": [
+      {
+        "caption": "Elkanah's family",
+        "art_direction": "A family traveling to Shiloh; Peninnah with her children, Hannah walking quietly behind."
+      },
+      {
+        "caption": "Teasing",
+        "art_direction": "Peninnah whispering unkind words; Hannah turning away with tears."
+      },
+      {
+        "caption": "At the Tabernacle",
+        "art_direction": "The Tabernacle in Shiloh at dusk; Hannah kneeling alone near the doorway."
+      },
+      {
+        "caption": "Lips moving, no sound",
+        "art_direction": "Close-up of Hannah praying silently with all her heart."
+      },
+      {
+        "caption": "Eli watches",
+        "art_direction": "Old Eli on a seat by the doorpost, squinting with a puzzled look."
+      },
+      {
+        "caption": "Go in peace",
+        "art_direction": "Hannah walking away with a peaceful face as the sun sets."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Philippians 4:6",
+    "text": "In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God.",
+    "translation": "WEB",
+    "tokens": [
+      "In nothing be anxious,",
+      "but in everything,",
+      "by prayer and petition",
+      "with thanksgiving,",
+      "let your requests",
+      "be made known to God."
+    ],
+    "distractors": [
+      "be kept to yourself."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can pour out my heart to Yahweh in prayer, and He listens.",
+    "reflection_prompt": "Hannah poured out her whole heart to God. What is something on your heart you want to tell God about today?",
+    "reflection_choices": [
+      "Something I'm sad about",
+      "Something I'm hoping for",
+      "Someone I'm worried about",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "Where did Elkanah's family go every year to worship?",
+      "options": [
+        "Jerusalem",
+        "Shiloh",
+        "Egypt"
+      ],
+      "correct_index": 1,
+      "explanation": "Elkanah went up year by year to worship and sacrifice to Yahweh in Shiloh.",
+      "verse_ref": "1 Samuel 1:3"
+    },
+    {
+      "question": "What did Hannah promise God?",
+      "options": [
+        "To give her son back to God for his whole life",
+        "To build a temple",
+        "To move to a new city"
+      ],
+      "correct_index": 0,
+      "explanation": "Hannah vowed, 'I will give him to Yahweh all the days of his life.'",
+      "verse_ref": "1 Samuel 1:11"
+    },
+    {
+      "question": "What did Hannah tell Eli she had been doing?",
+      "options": [
+        "Sleeping",
+        "Singing",
+        "Pouring out her soul to Yahweh"
+      ],
+      "correct_index": 2,
+      "explanation": "Hannah said, 'I poured out my soul before Yahweh.'",
+      "verse_ref": "1 Samuel 1:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that I can pour out my whole heart to You. When I'm sad or worried, help me bring it to You in prayer and leave it in Your hands. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Hi, I'm David! I'll be your guide through the Shepherd's Hills. Our story starts before I was born, with a mom who prayed with her whole heart."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "shiloh_tabernacle"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Elkanah's two wives are stated plainly. Eli thinks Hannah is drunk (1 Samuel 1:13-14); this is softened to 'he thought something was wrong with her.' Confirm."
+  }
+}

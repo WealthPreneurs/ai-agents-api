@@ -1,0 +1,121 @@
+{
+  "day": 173,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "How Majestic Is Your Name!",
+  "scripture_passage": "Psalm 8",
+  "story_title": "What Is Man?",
+  "summary": "Looking at the night sky, David wrote a song praising God's majestic name. He wondered why the God who made the moon and stars would care about people, yet He crowned them with glory and honor.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "As a shepherd, David spent many nights lying in the fields, looking up at the sky. There were no city lights back then, so the stars were bright and countless. One night, David wrote another song. It's called Psalm 8. 'Yahweh, our Lord, how majestic is Your name in all the earth! You have set Your glory above the heavens.' David sang that God uses even little children and babies to praise Him and to silence His enemies. Then David looked up at the moon and stars and wondered, 'When I look at Your heavens, the work of Your fingers, the moon and the stars, which You have set in place, what are people, that You think of them? Who are we, that You care for us?' The sky is so huge, and we are so small! And yet, David sang, 'You made people just a little lower than God and crowned them with glory and honor.' God made people to care for His creation: the sheep and cattle, the wild animals, the birds of the sky, and the fish of the sea. David ended his song the way he began it: 'Yahweh, our Lord, how majestic is Your name in all the earth!' You are small compared to the stars, but you matter so much to God.",
+    "scenes": [
+      {
+        "caption": "A starry field",
+        "art_direction": "Young David lying in the grass beside his sheep, gazing at a dazzling night sky."
+      },
+      {
+        "caption": "How majestic!",
+        "art_direction": "The words 'How majestic is Your name!' written across the sky in starlight."
+      },
+      {
+        "caption": "Little children praise",
+        "art_direction": "A group of small children singing joyfully with raised hands."
+      },
+      {
+        "caption": "The work of Your fingers",
+        "art_direction": "The moon and stars drawn into the sky by gentle, glowing strokes of light."
+      },
+      {
+        "caption": "What are people?",
+        "art_direction": "David looking tiny under the vast galaxy, smiling with wonder."
+      },
+      {
+        "caption": "Crowned with glory",
+        "art_direction": "A golden crown of light resting on a child's head as animals gather around."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 8:1",
+    "text": "Yahweh, our Lord, how majestic is your name in all the earth!",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh,",
+      "our Lord,",
+      "how majestic",
+      "is your name",
+      "in all the earth!"
+    ],
+    "distractors": [
+      "in only one country!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am small compared to the stars, but I matter so much to Yahweh.",
+    "reflection_prompt": "David looked at the stars and praised God. Draw or paint a picture of God's creation that makes you want to praise Him.",
+    "reflection_choices": [
+      "A starry night",
+      "Mountains or oceans",
+      "Animals",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "creativity"
+  },
+  "quiz": [
+    {
+      "question": "How did David describe God's name?",
+      "options": [
+        "Small and quiet",
+        "Majestic in all the earth",
+        "Hard to say"
+      ],
+      "correct_index": 1,
+      "explanation": "David sang, 'Yahweh, our Lord, how majestic is your name in all the earth!'",
+      "verse_ref": "Psalm 8:1"
+    },
+    {
+      "question": "What did David call the moon and stars?",
+      "options": [
+        "The work of God's fingers",
+        "Lights that people made",
+        "Little fires"
+      ],
+      "correct_index": 0,
+      "explanation": "David wrote, 'When I consider your heavens, the work of your fingers, the moon and the stars.'",
+      "verse_ref": "Psalm 8:3"
+    },
+    {
+      "question": "What did David say God crowned people with?",
+      "options": [
+        "Gold and jewels",
+        "Flowers",
+        "Glory and honor"
+      ],
+      "correct_index": 2,
+      "explanation": "David wrote, 'You have made him a little lower than God, and crowned him with glory and honor.'",
+      "verse_ref": "Psalm 8:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, our Lord, how majestic is Your name! Thank You that the God who made the stars cares about me. Help me praise You with my words and my art. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Have you ever looked up at the night sky and felt small? I did! But then I remembered that the God who made all those stars thinks about me. And you!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "gold_thread"
+    ],
+    "unlock": "starry_field"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

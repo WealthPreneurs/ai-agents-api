@@ -1,0 +1,119 @@
+{
+  "day": 174,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Known and Loved",
+  "scripture_passage": "Psalm 139:1-18; 139:23-24",
+  "story_title": "You Know Me",
+  "summary": "In Psalm 139, David sang that God knows everything about him, is with him everywhere, and carefully knit him together before he was born. He asked God to search his heart and lead him.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "David wrote another song about how well God knows us. It's Psalm 139. 'Yahweh, You have searched me, and You know me. You know when I sit down and when I get up. You understand my thoughts from far away. Before a word is even on my tongue, You know it completely.' God knows everything about you, even the things no one else knows! Then David asked, 'Where could I go to get away from Your Spirit? If I go up to the sky, You are there. If I go to the deepest place, You are there. If I fly on the wings of the morning to the farthest sea, even there Your hand will lead me.' And even darkness isn't dark to God. Night shines as bright as the day for Him. Then David sang about how God made him. 'You formed my inmost being. You knit me together in my mother's womb. I will thank You, for I am fearfully and wonderfully made. All my days were written in Your book before any of them came to be.' At the end, David prayed: 'Search me, God, and know my heart. See if there is any wicked way in me, and lead me in the everlasting way.' You are known completely, and loved completely.",
+    "scenes": [
+      {
+        "caption": "You know me",
+        "art_direction": "A child sitting down and standing up as gentle light follows every movement."
+      },
+      {
+        "caption": "Before I speak",
+        "art_direction": "Speech bubbles appearing with a soft glow already around them before the child speaks."
+      },
+      {
+        "caption": "Up to the sky, down to the sea",
+        "art_direction": "A child soaring into the clouds, then diving deep into the ocean, always surrounded by God's light."
+      },
+      {
+        "caption": "Darkness isn't dark",
+        "art_direction": "A dark bedroom suddenly shimmering with soft, warm light."
+      },
+      {
+        "caption": "Knit together",
+        "art_direction": "Gentle golden threads weaving together into the shape of a baby; tender and wondrous."
+      },
+      {
+        "caption": "Search me, God",
+        "art_direction": "A child holding a glowing heart up to the light, eyes closed in prayer."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 139:13",
+    "text": "For you formed my inmost being. You knit me together in my mother's womb.",
+    "translation": "WEB",
+    "tokens": [
+      "For you formed",
+      "my inmost being.",
+      "You knit me together",
+      "in my mother's womb."
+    ],
+    "distractors": [
+      "by accident."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh knows me completely, made me carefully, and loves me completely.",
+    "reflection_prompt": "David said God knit him together carefully. Draw or write about something special God knit into you when He made you.",
+    "reflection_choices": [
+      "My laugh",
+      "My curiosity",
+      "My caring heart",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "image_bearer"
+  },
+  "quiz": [
+    {
+      "question": "What did David say God knows about him?",
+      "options": [
+        "Only his name",
+        "When he sits and stands, and even his thoughts",
+        "Nothing at all"
+      ],
+      "correct_index": 1,
+      "explanation": "David wrote, 'You know my sitting down and my rising up. You perceive my thoughts from afar.'",
+      "verse_ref": "Psalm 139:2"
+    },
+    {
+      "question": "Where can we go to get away from God's presence?",
+      "options": [
+        "Nowhere, He is everywhere",
+        "To the top of a mountain",
+        "Under the sea"
+      ],
+      "correct_index": 0,
+      "explanation": "David wrote, 'If I ascend up into heaven, you are there. If I make my bed in Sheol, behold, you are there!'",
+      "verse_ref": "Psalm 139:7-8"
+    },
+    {
+      "question": "What did David ask God to do at the end of the song?",
+      "options": [
+        "Make him famous",
+        "Leave him alone",
+        "Search his heart and lead him"
+      ],
+      "correct_index": 2,
+      "explanation": "David prayed, 'Search me, God, and know my heart... Lead me in the everlasting way.'",
+      "verse_ref": "Psalm 139:23-24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You know me completely, and You made me carefully. Thank You for loving me so much. Search my heart, and lead me in Your way. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "When I wrote this song, I was amazed that God knew every single thing about me and still loved me. He knows you just as well, and He loves you just as much."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "knit_together_tapestry"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "day": 152,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Yahweh Is My King",
+  "scripture_passage": "1 Samuel 8",
+  "story_title": "Give Us a King!",
+  "summary": "When Samuel was old, the people demanded a king so they could be like other nations. God told Samuel they were rejecting Him as King. Samuel warned them, but they still insisted.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "When Samuel grew old, he made his sons judges over Israel. But they didn't follow God like their father. They took bribes and weren't fair. So the leaders of Israel came to Samuel and said, 'You're old, and your sons don't walk in your ways. Give us a king to lead us, like all the other nations have!' Samuel was upset, so he prayed to Yahweh. And God said, 'Listen to the people. They haven't rejected you, Samuel. They have rejected Me as their King. But warn them what a king will do.' So Samuel told them, 'A king will take your sons to be soldiers and charioteers. He'll take your daughters to be cooks and bakers. He'll take the best of your fields, your vineyards, and your flocks. He'll take a tenth of everything you have. And one day you'll cry out because of the king you chose.' But the people refused to listen. 'No! We want a king over us. We want to be like all the other nations!' God had been their King all along, leading them, protecting them, and fighting for them. But they wanted to be like everyone else. Sometimes being different is exactly what God wants.",
+    "scenes": [
+      {
+        "caption": "Samuel grows old",
+        "art_direction": "White-haired Samuel at a city gate, his sons whispering with men holding money bags."
+      },
+      {
+        "caption": "'Give us a king!'",
+        "art_direction": "A crowd of elders pointing at neighboring nations with shiny kings on thrones."
+      },
+      {
+        "caption": "Samuel prays",
+        "art_direction": "Samuel kneeling, troubled, as gentle light surrounds him."
+      },
+      {
+        "caption": "They rejected Me",
+        "art_direction": "A golden throne in the sky, empty, as people look away from it."
+      },
+      {
+        "caption": "Samuel's warning",
+        "art_direction": "A list of what a king would take: sons, daughters, fields, flocks, sliding across the screen."
+      },
+      {
+        "caption": "'Like everyone else'",
+        "art_direction": "The crowd chanting with raised fists, wanting to blend in."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 47:7",
+    "text": "For God is the King of all the earth. Sing praises with understanding.",
+    "translation": "WEB",
+    "tokens": [
+      "For God",
+      "is the King",
+      "of all the earth.",
+      "Sing praises",
+      "with understanding."
+    ],
+    "distractors": [
+      "of some of the earth."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is my King, and I don't have to be like everyone else.",
+    "reflection_prompt": "Israel wanted a king so they could be like everyone else. When do you feel pressure to be just like everyone else?",
+    "reflection_choices": [
+      "What I wear",
+      "What I watch or play",
+      "How I talk",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "Why didn't the people want Samuel's sons as leaders?",
+      "options": [
+        "They were too young",
+        "They took bribes and weren't fair",
+        "They lived far away"
+      ],
+      "correct_index": 1,
+      "explanation": "His sons didn't walk in his ways, but took bribes and perverted justice.",
+      "verse_ref": "1 Samuel 8:3"
+    },
+    {
+      "question": "What did God say the people were really rejecting?",
+      "options": [
+        "Him as their King",
+        "Samuel's sons",
+        "The Tabernacle"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh said, 'They have not rejected you, but they have rejected me as the king over them.'",
+      "verse_ref": "1 Samuel 8:7"
+    },
+    {
+      "question": "Why did the people want a king?",
+      "options": [
+        "To build a temple",
+        "To stop the rain",
+        "To be like all the other nations"
+      ],
+      "correct_index": 2,
+      "explanation": "They said, 'We will have a king over us, that we also may be like all the nations.'",
+      "verse_ref": "1 Samuel 8:19-20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my King. Help me follow You even when it means being different from everyone else. I want to be like You, not like everyone else. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "God had always been Israel's true King. Even when I became king years later, I knew I was only serving under the real King."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

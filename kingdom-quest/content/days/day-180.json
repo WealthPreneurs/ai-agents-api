@@ -1,0 +1,121 @@
+{
+  "day": 180,
+  "month": 6,
+  "realm": 26,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Remembering the Forgotten",
+  "scripture_passage": "2 Samuel 4:4; 9:1-5",
+  "story_title": "Is There Anyone Left?",
+  "summary": "Years after Jonathan died, David remembered his promise to his best friend and asked if anyone from Saul's family was still alive. He learned about Jonathan's son, Mephibosheth, who was lame in both feet.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "Years went by. David was a powerful king with a big palace. But David never forgot his best friend, Jonathan, or the promise they had made to each other: to always show kindness to each other's families. One day, David asked, 'Is there anyone still left from Saul's family? I want to show them kindness for Jonathan's sake.' In those days, when a new king took the throne, the old king's family usually hid, afraid they would be hurt. So no one from Saul's family was around the palace. But they found a man named Ziba, who had been a servant of Saul's family. David asked him, 'Is there anyone left from Saul's family I can show God's kindness to?' Ziba said, 'There is still a son of Jonathan. He is lame in both feet.' Here's what had happened. When Jonathan's son Mephibosheth was five years old, news came that Saul and Jonathan had died in battle. His nurse picked him up and ran to escape, but in her hurry, she fell, and he was hurt. Ever since, he couldn't walk. Now he lived far away, in a place called Lo-debar, which means 'no pasture,' a dry, forgotten place. David said, 'Where is he?' A king remembered a forgotten man.",
+    "scenes": [
+      {
+        "caption": "A powerful king",
+        "art_direction": "David on his throne, but gazing thoughtfully at a memory of Jonathan."
+      },
+      {
+        "caption": "A promise remembered",
+        "art_direction": "A glowing flashback of David and Jonathan clasping hands."
+      },
+      {
+        "caption": "'Is anyone left?'",
+        "art_direction": "David asking his servants, who shake their heads."
+      },
+      {
+        "caption": "Ziba",
+        "art_direction": "An old servant bowing before David."
+      },
+      {
+        "caption": "A fall long ago",
+        "art_direction": "Flashback: a nurse running with a little boy in her arms, stumbling; gentle, no injury shown."
+      },
+      {
+        "caption": "Lo-debar",
+        "art_direction": "A dry, dusty, forgotten village far away; a young man with crutches sitting alone."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Luke 14:13",
+    "text": "But when you make a feast, ask the poor, the maimed, the lame, or the blind",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "But when you",
+      "make a feast,",
+      "ask the poor,",
+      "the maimed,",
+      "the lame,",
+      "or the blind"
+    ],
+    "distractors": [
+      "only your friends"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can notice and remember people who are forgotten or left out.",
+    "reflection_prompt": "David remembered someone everyone else had forgotten. Who is someone who might feel forgotten or left out that you could remember?",
+    "reflection_choices": [
+      "A kid who sits alone",
+      "An elderly neighbor or relative",
+      "Someone who is new",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "Why did David want to find someone from Saul's family?",
+      "options": [
+        "To punish them",
+        "To show kindness for Jonathan's sake",
+        "To make them servants"
+      ],
+      "correct_index": 1,
+      "explanation": "David said, 'Is there yet any left of the house of Saul, that I may show him kindness for Jonathan's sake?'",
+      "verse_ref": "2 Samuel 9:1"
+    },
+    {
+      "question": "What was the name of Jonathan's son?",
+      "options": [
+        "Mephibosheth",
+        "Absalom",
+        "Solomon"
+      ],
+      "correct_index": 0,
+      "explanation": "Jonathan had a son who was lame in his feet, and his name was Mephibosheth.",
+      "verse_ref": "2 Samuel 4:4"
+    },
+    {
+      "question": "What does Lo-debar mean?",
+      "options": [
+        "City of kings",
+        "Place of gold",
+        "No pasture"
+      ],
+      "correct_index": 2,
+      "explanation": "Mephibosheth lived in Lo-debar, a name that means 'no pasture,' a dry and forgotten place.",
+      "verse_ref": "2 Samuel 9:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You never forget anyone. Help me notice and remember people who feel forgotten or left out, and show them Your kindness. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "I had everything a king could want. But I couldn't stop thinking about my promise to Jonathan. Is there someone you could remember today?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Mephibosheth's injury (2 Samuel 4:4) is told gently without showing harm. The meaning of 'Lo-debar' as 'no pasture' is a common interpretation; the quiz explanation states it as such. Confirm."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 163,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Jealousy Hurts",
+  "scripture_passage": "1 Samuel 18:5-16",
+  "story_title": "Saul's Jealous Heart",
+  "summary": "David succeeded at everything Saul sent him to do. When the women sang that David had defeated ten thousands, Saul became jealous and angry. But Yahweh was with David, and he kept acting wisely.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Whatever Saul sent David to do, David did it well. So Saul put him in charge of soldiers, and everyone liked him. When the army came home from battle, women from all the towns came out singing and dancing with tambourines. They sang, 'Saul has defeated his thousands, and David his ten thousands!' Saul got very angry. 'They give David ten thousands, but me only thousands! The only thing left for him is the kingdom!' From that day on, Saul kept a jealous eye on David. The next day, while David was playing his harp for Saul, Saul suddenly threw his spear at David! He tried twice, but David jumped out of the way both times. Saul was afraid of David, because Yahweh was with David but had left Saul. So Saul sent David away to lead soldiers in battle, hoping something bad would happen to him. But David kept acting wisely in everything he did, because Yahweh was with him. And all of Israel and Judah loved David. Jealousy started as a small feeling in Saul's heart. But he let it grow and grow until it took over. Jealousy hurts the person who feels it most of all.",
+    "scenes": [
+      {
+        "caption": "Success",
+        "art_direction": "David leading soldiers well; people clapping as he passes."
+      },
+      {
+        "caption": "The song",
+        "art_direction": "Women dancing with tambourines, singing; '1,000' next to Saul and '10,000' next to David."
+      },
+      {
+        "caption": "Saul's face",
+        "art_direction": "Saul's smile fading into a scowl as a green shadow creeps over him."
+      },
+      {
+        "caption": "A jealous eye",
+        "art_direction": "Saul peering at David from behind a pillar."
+      },
+      {
+        "caption": "The spear",
+        "art_direction": "A spear thudding into the wall as David ducks away; quick, not graphic."
+      },
+      {
+        "caption": "Acting wisely",
+        "art_direction": "David calmly leading his men, a gentle golden glow around him."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "James 3:16",
+    "text": "For where jealousy and selfish ambition are, there is confusion and every evil deed.",
+    "translation": "WEB",
+    "tokens": [
+      "For where jealousy",
+      "and selfish ambition are,",
+      "there is confusion",
+      "and every",
+      "evil deed."
+    ],
+    "distractors": [
+      "and every good deed."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can choose wisdom instead of jealousy, even when others treat me unfairly.",
+    "reflection_prompt": "Saul let jealousy grow in his heart. What can you do when you start to feel jealous of someone?",
+    "reflection_choices": [
+      "Thank God for what I have",
+      "Say something nice about them",
+      "Talk to God about it",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What did the women sing about David?",
+      "options": [
+        "'David is the king!'",
+        "'Saul has defeated his thousands, and David his ten thousands!'",
+        "'David plays the harp!'"
+      ],
+      "correct_index": 1,
+      "explanation": "The women sang, 'Saul has slain his thousands, and David his ten thousands.'",
+      "verse_ref": "1 Samuel 18:7"
+    },
+    {
+      "question": "Why was Saul afraid of David?",
+      "options": [
+        "Because Yahweh was with David",
+        "Because David was taller",
+        "Because David had a spear"
+      ],
+      "correct_index": 0,
+      "explanation": "Saul was afraid of David, because Yahweh was with him, and had departed from Saul.",
+      "verse_ref": "1 Samuel 18:12"
+    },
+    {
+      "question": "How did David act even when Saul was jealous?",
+      "options": [
+        "He got revenge",
+        "He ran away forever",
+        "He acted wisely in everything"
+      ],
+      "correct_index": 2,
+      "explanation": "David behaved himself wisely in all his ways; and Yahweh was with him.",
+      "verse_ref": "1 Samuel 18:14"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I feel jealous, help me turn to You instead of letting it grow. When others are unfair to me, help me keep acting wisely. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "I didn't understand why the king was so angry with me. I'd only tried to serve him well. When people are jealous of you, keep doing what's right."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Saul throws his spear at David (18:10-11), shown quickly without injury. 'An evil spirit from God' (18:10) is omitted here. Confirm."
+  }
+}

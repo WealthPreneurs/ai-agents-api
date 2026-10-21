@@ -1,0 +1,120 @@
+{
+  "day": 154,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Listen and Obey",
+  "scripture_passage": "1 Samuel 13:5-14; 15:22-23",
+  "story_title": "To Obey Is Better",
+  "summary": "Saul grew impatient and offered a sacrifice himself instead of waiting for Samuel as God commanded. Samuel told him obeying God matters more than sacrifices, and God would choose a king after His own heart.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Welcome to Sabbath Camp! King Saul had a big test. The Philistines gathered a huge army, and Saul's soldiers were scared. Some even hid in caves. Samuel had told Saul, 'Wait seven days for me. I will come and offer the sacrifice to God.' Saul waited, and waited. On the seventh day, Samuel still hadn't arrived, and soldiers were leaving. So Saul did what only a priest was supposed to do. He offered the sacrifice himself. Just as he finished, Samuel arrived. 'What have you done?' Saul made excuses. 'The people were leaving, and you didn't come!' Samuel said, 'You didn't keep Yahweh's command. Now your kingdom won't last. Yahweh has searched for a man after His own heart.' Later, after Saul disobeyed God again, Samuel told him, 'To obey is better than sacrifice.' God doesn't want us to do big religious things while ignoring what He says. He wants us to listen and obey. Let's remember this week. Hannah poured out her heart. Samuel heard God's voice and said, 'Speak, I'm listening.' Samuel told the truth. And Saul learned that obeying matters most. This week's big truth: you can hear and follow Yahweh's voice.",
+    "scenes": [
+      {
+        "caption": "A huge army",
+        "art_direction": "Philistine chariots massed in the distance; Israelite soldiers hiding in caves."
+      },
+      {
+        "caption": "Waiting",
+        "art_direction": "Saul pacing beside an altar as a sundial counts seven days."
+      },
+      {
+        "caption": "Saul's impatience",
+        "art_direction": "Saul lighting the sacrifice himself, glancing nervously at the road."
+      },
+      {
+        "caption": "'What have you done?'",
+        "art_direction": "Samuel arriving just as the smoke rises; Saul spreading his hands with excuses."
+      },
+      {
+        "caption": "A man after God's heart",
+        "art_direction": "A faint image of a young shepherd boy on a distant hillside."
+      },
+      {
+        "caption": "Camp by the lamp",
+        "art_direction": "Campfire in the child's village beside the lamp of God and the Ebenezer stone."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Samuel 3:10",
+    "text": "Speak; for your servant hears.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Speak;",
+      "for your servant",
+      "hears."
+    ],
+    "distractors": [
+      "sleeps."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can hear and follow Yahweh's voice.",
+    "reflection_prompt": "Milestone: You can hear and follow Yahweh's voice! Write 'Speak, Yahweh, I'm listening' in your Blueprint journal. What do you think God might be saying to you right now?",
+    "reflection_choices": [
+      "'I love you.'",
+      "'Be brave.'",
+      "'Be kind to someone.'",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "How long did Samuel tell Saul to wait?",
+      "options": [
+        "One day",
+        "Seven days",
+        "Forty days"
+      ],
+      "correct_index": 1,
+      "explanation": "Saul waited seven days, according to the time Samuel had set.",
+      "verse_ref": "1 Samuel 13:8"
+    },
+    {
+      "question": "What did Samuel say God was looking for?",
+      "options": [
+        "A man after His own heart",
+        "The tallest man",
+        "The richest man"
+      ],
+      "correct_index": 0,
+      "explanation": "Samuel said, 'Yahweh has sought for himself a man after his own heart.'",
+      "verse_ref": "1 Samuel 13:14"
+    },
+    {
+      "question": "What did Samuel say is better than sacrifice?",
+      "options": [
+        "Gold",
+        "Singing",
+        "To obey"
+      ],
+      "correct_index": 2,
+      "explanation": "Samuel said, 'Behold, to obey is better than sacrifice.'",
+      "verse_ref": "1 Samuel 15:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, speak to me, I'm listening. Help me not just to hear You, but to obey You, even when it means waiting. I want a heart after Yours. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Realm 22 complete! 'A man after God's own heart.' That was me, but I didn't know it yet. I was just a boy watching sheep. Next week, Samuel comes to my house!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "cedar_wood"
+    ],
+    "unlock": "listening_banner"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Saul's rejection is told through his impatient sacrifice (1 Samuel 13) and quotes 15:22-23. The command to destroy the Amalekites (15:1-21) is omitted. Saul's battles (1 Samuel 11, 14) are also omitted. Confirm."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "day": 166,
+  "month": 6,
+  "realm": 24,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Love in Action",
+  "scripture_passage": "1 Samuel 20",
+  "story_title": "The Arrows Signal",
+  "summary": "Jonathan and David made a secret plan with arrows to find out if Saul still wanted to harm David. When Jonathan learned the truth, he warned David with the arrows, and the two friends said a tearful goodbye.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "David ran to find Jonathan. 'What have I done wrong? Why is your father trying to kill me?' Jonathan couldn't believe it. So they made a secret plan. 'Tomorrow is the New Moon feast,' Jonathan said. 'You'll be missed at my father's table. Hide in the field by the big stone. In three days, I'll come out and shoot three arrows, as if I'm shooting at a target. Then I'll send a boy to get them. If I say, The arrows are on this side of you, it's safe, and you can come back. But if I say, The arrows are beyond you, then you must go, because Yahweh is sending you away.' At the feast, Saul noticed David's empty seat. When Jonathan defended David, Saul became furious and even threw his spear at his own son! Now Jonathan knew the truth. The next morning, Jonathan went to the field with a young boy. He shot an arrow far beyond the boy and called out, 'Isn't the arrow beyond you? Hurry! Don't stop!' David understood. The two friends hugged each other and cried, but David cried the most. Jonathan said, 'Go in peace. We've promised each other in the name of Yahweh.' Real love isn't only words. It shows up in action.",
+    "scenes": [
+      {
+        "caption": "'What have I done?'",
+        "art_direction": "David and Jonathan meeting secretly behind a stone wall."
+      },
+      {
+        "caption": "The arrow plan",
+        "art_direction": "Jonathan drawing a diagram in the dirt: a stone, a boy, arrows close and arrows far."
+      },
+      {
+        "caption": "An empty seat",
+        "art_direction": "Saul's feast table with one empty chair; Saul frowning at it."
+      },
+      {
+        "caption": "Saul's anger",
+        "art_direction": "Saul hurling his spear toward Jonathan, who steps aside; quick, no injury."
+      },
+      {
+        "caption": "'The arrow is beyond you!'",
+        "art_direction": "Jonathan shooting an arrow high over a running boy in an open field."
+      },
+      {
+        "caption": "A tearful goodbye",
+        "art_direction": "David and Jonathan embracing by the big stone, both weeping."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 John 3:18",
+    "text": "My little children, let's not love in word only, neither with the tongue only, but in deed and truth.",
+    "translation": "WEB",
+    "tokens": [
+      "My little children,",
+      "let's not love",
+      "in word only,",
+      "neither with the tongue only,",
+      "but in deed",
+      "and truth."
+    ],
+    "distractors": [
+      "but in secret"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can show my love for my friends with actions, not just words.",
+    "reflection_prompt": "Jonathan protected David with a secret plan. What is one action you could take this week to show a friend you care?",
+    "reflection_choices": [
+      "Help them with something",
+      "Stand up for them",
+      "Make or give them something",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "What was the secret signal between Jonathan and David?",
+      "options": [
+        "Ringing a bell",
+        "Where Jonathan's arrows landed",
+        "Waving a flag"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonathan said, 'If I say to the boy, The arrows are beyond you, go your way.'",
+      "verse_ref": "1 Samuel 20:22"
+    },
+    {
+      "question": "What did Saul notice at the New Moon feast?",
+      "options": [
+        "David's empty seat",
+        "Jonathan was late",
+        "The food was cold"
+      ],
+      "correct_index": 0,
+      "explanation": "On the second day of the month, David's place was empty.",
+      "verse_ref": "1 Samuel 20:27"
+    },
+    {
+      "question": "What did Jonathan say as they said goodbye?",
+      "options": [
+        "'Never come back.'",
+        "'I'm angry with you.'",
+        "'Go in peace.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Jonathan said to David, 'Go in peace, because we have both sworn in Yahweh's name.'",
+      "verse_ref": "1 Samuel 20:42"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me love my friends with my actions, not just my words. Make me a friend who shows up, helps, and keeps promises. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Saying goodbye to Jonathan that morning was one of the hardest things I've ever done. But I knew his friendship was real, because he showed it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "river_stone"
+    ],
+    "unlock": "arrow_signal_stone"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Saul throws his spear at Jonathan (20:33), shown quickly without injury. Saul's insult to Jonathan's mother (20:30) is omitted. Confirm."
+  }
+}

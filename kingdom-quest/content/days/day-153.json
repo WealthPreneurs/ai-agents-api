@@ -1,0 +1,121 @@
+{
+  "day": 153,
+  "month": 6,
+  "realm": 22,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Humble Beginnings",
+  "scripture_passage": "1 Samuel 9:1-10:1; 10:17-24",
+  "story_title": "The Tall King Who Hid",
+  "summary": "While searching for his father's lost donkeys, tall and handsome Saul met Samuel, who anointed him king. But when it was time to present him to the people, Saul was hiding among the baggage.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "A man named Kish had a son named Saul. Saul was a handsome young man, and he was a head taller than anyone else in Israel! One day, some of Kish's donkeys wandered off, so Saul and a servant went looking for them. They searched and searched for days, but couldn't find them. Finally the servant said, 'There's a man of God in this town. Maybe he can tell us where to look.' That man was Samuel. The day before, Yahweh had told Samuel, 'Tomorrow I will send you a man from the tribe of Benjamin. Anoint him to be leader over My people.' When Samuel saw Saul, God said, 'This is the man.' Samuel told Saul, 'Don't worry about the donkeys. They've been found.' The next morning, Samuel poured a flask of oil on Saul's head and kissed him. 'Yahweh has anointed you to be leader over His people!' Later, Samuel gathered all the tribes to present their new king. But when they called Saul's name, he was nowhere to be found! They asked God, and God said, 'He's hiding among the baggage.' They ran and brought him out. Saul started out humble. The question was whether he would stay that way.",
+    "scenes": [
+      {
+        "caption": "A head taller",
+        "art_direction": "Tall, handsome Saul towering over the people in his village; comedic size gag."
+      },
+      {
+        "caption": "Lost donkeys",
+        "art_direction": "Saul and a servant searching hills and valleys, calling, 'Here, donkey!'"
+      },
+      {
+        "caption": "'This is the man'",
+        "art_direction": "Samuel at a city gate, looking up at Saul as God speaks to him."
+      },
+      {
+        "caption": "The donkeys are found",
+        "art_direction": "A tiny inset of the donkeys happily back home munching hay."
+      },
+      {
+        "caption": "Anointed",
+        "art_direction": "Samuel pouring oil over Saul's head at dawn; oil glistening."
+      },
+      {
+        "caption": "Hiding in the baggage",
+        "art_direction": "Everyone looking around; Saul's long legs sticking out from behind a pile of sacks; comedic beat."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Peter 5:6",
+    "text": "Humble yourselves therefore under the mighty hand of God, that he may exalt you in due time",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Humble yourselves",
+      "therefore",
+      "under the mighty hand",
+      "of God,",
+      "that he may exalt you",
+      "in due time"
+    ],
+    "distractors": [
+      "right now"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay humble, knowing every good thing in my life comes from Yahweh.",
+    "reflection_prompt": "Saul started out humble, hiding in the baggage. Why do you think it's important to stay humble when good things happen to us?",
+    "reflection_choices": [
+      "So I remember God gave it",
+      "So I don't look down on others",
+      "So I keep listening to God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "gentleness"
+  },
+  "quiz": [
+    {
+      "question": "What was Saul looking for when he met Samuel?",
+      "options": [
+        "A new house",
+        "His father's lost donkeys",
+        "A sword"
+      ],
+      "correct_index": 1,
+      "explanation": "The donkeys of Kish, Saul's father, were lost, so Saul went to look for them.",
+      "verse_ref": "1 Samuel 9:3"
+    },
+    {
+      "question": "How tall was Saul compared to others?",
+      "options": [
+        "A head taller than anyone else",
+        "The shortest in Israel",
+        "The same as everyone"
+      ],
+      "correct_index": 0,
+      "explanation": "From his shoulders and upward he was higher than any of the people.",
+      "verse_ref": "1 Samuel 9:2"
+    },
+    {
+      "question": "Where was Saul hiding when they called his name?",
+      "options": [
+        "In a cave",
+        "Up a tree",
+        "Among the baggage"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh answered, 'Behold, he has hidden himself among the baggage.'",
+      "verse_ref": "1 Samuel 10:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me stay humble. When good things happen, help me remember they come from You, and help me keep listening to You. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Saul was the first king of Israel. Years later, I would serve in his house. He started humble, but it's important to stay humble too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ],
+    "unlock": "anointing_horn"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

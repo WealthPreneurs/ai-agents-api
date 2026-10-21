@@ -1,0 +1,119 @@
+{
+  "day": 175,
+  "month": 6,
+  "realm": 25,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Songs for Yahweh",
+  "scripture_passage": "1 Samuel 31:1-6; 2 Samuel 1:17-27",
+  "story_title": "How the Mighty Have Fallen",
+  "summary": "Saul and Jonathan died in battle against the Philistines. David was heartbroken and wrote a song of grief for them. Sabbath Camp looks back at David's songs and the hard days in the wilderness.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "Welcome to Sabbath Camp! This week ends with a sad story. The Philistines fought against Israel on Mount Gilboa, and Israel lost the battle. King Saul and three of his sons, including David's best friend Jonathan, died that day. When David heard the news, he tore his clothes and cried. He didn't celebrate, even though Saul had been chasing him for years. Instead, David wrote a song of sorrow, called a lament. 'How the mighty have fallen! Saul and Jonathan were loved and lovely in their lives. They were swifter than eagles and stronger than lions.' Then David sang about his best friend: 'I am heartbroken for you, my brother Jonathan. You were very dear to me. Your love for me was wonderful.' David showed us that songs aren't only for happy times. We can bring our sadness to God in songs, poems, and art too. Let's remember this week. David spared Saul in the cave and sang, 'My heart is steadfast.' Abigail made peace. David took the spear and water jug and trusted God's timing. And David wrote Psalm 23, Psalm 8, and Psalm 139. This week's big truth: you can worship Yahweh with your songs and your art, in happy times and in sad times.",
+    "scenes": [
+      {
+        "caption": "Mount Gilboa",
+        "art_direction": "A distant mountain under a gray sky; the battle shown only as far-off dust."
+      },
+      {
+        "caption": "The news",
+        "art_direction": "A messenger arriving at David's camp; David's face falling."
+      },
+      {
+        "caption": "Tears",
+        "art_direction": "David with torn clothes, weeping, his men grieving with him."
+      },
+      {
+        "caption": "A lament",
+        "art_direction": "David with his harp, playing a slow, sad song as soft rain falls."
+      },
+      {
+        "caption": "'My brother Jonathan'",
+        "art_direction": "A faint memory of Jonathan giving David his robe, glowing gently."
+      },
+      {
+        "caption": "Camp by the still waters",
+        "art_direction": "Campfire in the child's village beside the still waters pond, starry field, and tapestry."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 23:1",
+    "text": "Yahweh is my shepherd: I shall lack nothing.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh",
+      "is my shepherd:",
+      "I shall",
+      "lack nothing."
+    ],
+    "distractors": [
+      "lack everything."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can worship Yahweh with my songs and my art.",
+    "reflection_prompt": "Milestone: You can worship Yahweh with your songs and your art! Write a short song, poem, or prayer to God, or draw a picture for Him. It can be happy or sad.",
+    "reflection_choices": [
+      "A happy song of thanks",
+      "A sad song to share my feelings",
+      "A picture of God's creation",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What did David do when he heard Saul and Jonathan had died?",
+      "options": [
+        "He celebrated",
+        "He tore his clothes, cried, and wrote a sad song",
+        "He went to sleep"
+      ],
+      "correct_index": 1,
+      "explanation": "David took hold of his clothes and tore them, and they mourned and wept.",
+      "verse_ref": "2 Samuel 1:11-12"
+    },
+    {
+      "question": "What did David say about Jonathan's love?",
+      "options": [
+        "It was wonderful",
+        "It was small",
+        "It was fake"
+      ],
+      "correct_index": 0,
+      "explanation": "David sang, 'Your love to me was wonderful.'",
+      "verse_ref": "2 Samuel 1:26"
+    },
+    {
+      "question": "How does Psalm 23 begin?",
+      "options": [
+        "'Yahweh is my king'",
+        "'Yahweh is my fortress'",
+        "'Yahweh is my shepherd'"
+      ],
+      "correct_index": 2,
+      "explanation": "Psalm 23 begins, 'Yahweh is my shepherd: I shall lack nothing.'",
+      "verse_ref": "Psalm 23:1"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my shepherd. I want to worship You with my songs and my art, in happy times and sad times. Thank You for listening to every song. Amen."
+  },
+  "companion": {
+    "id": "david",
+    "message": "Realm 25 complete! Losing Jonathan broke my heart. But writing that song helped me. If you're sad about someone you miss, it's okay to cry and to tell God, and a grown-up you trust."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "lament_harp"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the deaths of Saul and Jonathan (1 Samuel 31). Saul's suicide (31:4-5) and the treatment of his body (31:8-13) are omitted; they 'died that day.' 2 Samuel 1:1-16 (the Amalekite messenger) is omitted. Companion points kids to a trusted grown-up. Confirm."
+  }
+}
