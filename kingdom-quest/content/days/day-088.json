@@ -1,0 +1,117 @@
+{
+  "day": 88,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Only One God",
+  "scripture_passage": "Exodus 32",
+  "story_title": "The Golden Calf",
+  "summary": "While Moses was on the mountain, the people grew impatient and made a golden calf to worship. Moses broke the stone tablets, and then he prayed for the people.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Moses had been up on the mountain with God for a long time. The people got impatient. They said to Aaron, 'We don't know what happened to Moses. Make us gods to lead us!' Aaron told them to bring their gold earrings. He melted down the gold and shaped it into a golden calf. The people said, 'This is the god who brought us out of Egypt!' They had a big party and worshiped the statue. How quickly they forgot the real God who parted the sea! Up on the mountain, God told Moses what was happening. When Moses came down and saw the calf and the dancing, he was so angry that he threw down the stone tablets and they broke. He melted the calf and ground it into powder. Moses asked Aaron, 'What did these people do to you, that you led them into such a great sin?' Aaron made an excuse: 'I just threw the gold into the fire, and out came this calf!' The sin had serious consequences. But then Moses went back up to God and prayed for the people, asking God to forgive them. God's people needed a go-between, and Moses stood in the gap for them.",
+    "scenes": [
+      {
+        "caption": "Where is Moses?",
+        "art_direction": "Impatient people looking up at the cloud-covered mountain, tapping their feet."
+      },
+      {
+        "caption": "Bring your gold",
+        "art_direction": "A pile of golden earrings being tossed into a melting pot."
+      },
+      {
+        "caption": "The golden calf",
+        "art_direction": "A shiny golden calf statue; people dancing around it, colors garish and hollow."
+      },
+      {
+        "caption": "Broken tablets",
+        "art_direction": "Moses at the bottom of the mountain, tablets falling and cracking; dramatic but not scary."
+      },
+      {
+        "caption": "A silly excuse",
+        "art_direction": "Aaron shrugging: 'And out came this calf!' with a nervous smile."
+      },
+      {
+        "caption": "Moses prays",
+        "art_direction": "Moses climbing back up the mountain, kneeling and praying for the people."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 John 5:21",
+    "text": "Little children, keep yourselves from idols.",
+    "translation": "WEB",
+    "tokens": [
+      "Little children,",
+      "keep yourselves",
+      "from idols."
+    ],
+    "distractors": [
+      "from friends."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay faithful to Yahweh, even when I have to wait.",
+    "reflection_prompt": "The people made an idol because they were impatient. What is something people today love more than God?",
+    "reflection_choices": [
+      "Money and stuff",
+      "Being popular",
+      "Screens and games",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did the people ask Aaron to make?",
+      "options": [
+        "Gods to lead them",
+        "A boat",
+        "A tower"
+      ],
+      "correct_index": 0,
+      "explanation": "They said to Aaron, 'Come, make us gods, which shall go before us.'",
+      "verse_ref": "Exodus 32:1"
+    },
+    {
+      "question": "What did Moses do with the stone tablets when he saw the calf?",
+      "options": [
+        "He hid them",
+        "He threw them down and broke them",
+        "He gave them to Aaron"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses' anger grew hot, and he threw the tablets out of his hands and broke them.",
+      "verse_ref": "Exodus 32:19"
+    },
+    {
+      "question": "What did Moses do after confronting the people?",
+      "options": [
+        "He left them forever",
+        "He made a new calf",
+        "He went to God and prayed for the people"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses returned to Yahweh and asked Him to forgive their sin.",
+      "verse_ref": "Exodus 32:31-32"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the only true God. Help me never put anything in Your place. When I have to wait, help me stay faithful to You. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "That was one of our worst days. We had seen God do incredible things, and still we made an idol. But my brother prayed for us, and God listened."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits the Levites' execution of about 3,000 people (Exodus 32:26-29) and the plague (32:35); narration says 'The sin had serious consequences.' Confirm this is acceptable."
+  }
+}

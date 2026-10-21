@@ -1,0 +1,120 @@
+{
+  "day": 74,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Safe in His Shadow",
+  "scripture_passage": "Exodus 9-10",
+  "story_title": "Hail, Locusts, and Darkness",
+  "summary": "God sent plagues on Egypt's animals, painful boils, hail, locusts, and three days of darkness. But again and again, God protected His people in Goshen.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Pharaoh's heart was still hard, so the plagues kept coming. First, a sickness struck the Egyptians' horses, donkeys, camels, cows, and sheep. But not one animal belonging to the Israelites got sick. Then painful sores called boils broke out on the Egyptians and their animals. Even the magicians were covered in them! Next, Moses stretched his hand toward the sky, and God sent thunder and the worst hailstorm Egypt had ever seen, with fire flashing in the middle of it. Hail smashed the crops and trees across the land. But in Goshen, where the Israelites lived, not a single hailstone fell. Then God sent a strong east wind that brought swarms of locusts, grasshopper-like bugs that ate every green plant left in Egypt. The ground turned black with them! Finally, Moses stretched out his hand, and thick darkness covered Egypt for three days. People couldn't see each other. But all the Israelites had light where they lived. Again and again, God made a difference between Egypt and His people. When we belong to Him, we are safe in His shadow.",
+    "scenes": [
+      {
+        "caption": "Animals protected",
+        "art_direction": "Split view: sick Egyptian cattle on one side, healthy Israelite flocks grazing in Goshen."
+      },
+      {
+        "caption": "Boils",
+        "art_direction": "Egyptian magicians wincing and scratching; stylized and not gross."
+      },
+      {
+        "caption": "Hail and fire",
+        "art_direction": "A dramatic storm of hailstones and lightning over Egyptian fields."
+      },
+      {
+        "caption": "Not in Goshen",
+        "art_direction": "The storm stops at a glowing border; Goshen's fields stay green and calm."
+      },
+      {
+        "caption": "Locusts",
+        "art_direction": "A dark cloud of locusts sweeping over the land, nibbling every plant."
+      },
+      {
+        "caption": "Darkness you can feel",
+        "art_direction": "Egypt in total darkness; Goshen's homes glowing with warm lamplight."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 91:1",
+    "text": "He who dwells in the secret place of the Most High will rest in the shadow of the Almighty.",
+    "translation": "WEB",
+    "tokens": [
+      "He who dwells",
+      "in the secret place",
+      "of the Most High",
+      "will rest",
+      "in the shadow",
+      "of the Almighty."
+    ],
+    "distractors": [
+      "of the pyramids."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I belong to Yahweh, and He is my safe place.",
+    "reflection_prompt": "God kept His people safe in Goshen during the plagues. Where do you feel the safest, and how is God like that place?",
+    "reflection_choices": [
+      "In my bed at night",
+      "In my parent's arms",
+      "At church",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "What happened to the Israelites' animals when the sickness came?",
+      "options": [
+        "They all got sick",
+        "Not one of them got sick",
+        "They ran away"
+      ],
+      "correct_index": 1,
+      "explanation": "Nothing died of all that belonged to the children of Israel.",
+      "verse_ref": "Exodus 9:4-6"
+    },
+    {
+      "question": "Where did no hail fall?",
+      "options": [
+        "In the land of Goshen",
+        "On Pharaoh's palace",
+        "On the pyramids"
+      ],
+      "correct_index": 0,
+      "explanation": "Only in the land of Goshen, where the children of Israel were, there was no hail.",
+      "verse_ref": "Exodus 9:26"
+    },
+    {
+      "question": "What did the Israelites have during the three days of darkness?",
+      "options": [
+        "Candy",
+        "Fireworks",
+        "Light where they lived"
+      ],
+      "correct_index": 2,
+      "explanation": "All the children of Israel had light in their dwellings.",
+      "verse_ref": "Exodus 10:23"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that I belong to You. When scary things happen around me, help me rest in Your shadow and remember You are my safe place. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "During those days, our homes in Goshen were like islands of light. God showed everyone that He takes care of the people who belong to Him."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

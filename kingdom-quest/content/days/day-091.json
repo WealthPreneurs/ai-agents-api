@@ -1,0 +1,122 @@
+{
+  "day": 91,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Made to Create",
+  "scripture_passage": "Exodus 39:42-43; 40:33-38",
+  "story_title": "The Glory Fills the Tabernacle",
+  "summary": "The people finished building the Tabernacle exactly as God commanded, and God's glory filled it. Sabbath Camp looks back at the whole Freedom Road. Region 3 is complete!",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Freedom Road! The workers finished the Tabernacle exactly the way God had commanded. Moses looked over all the work, and when he saw that they had done everything just right, he blessed them. Then Moses set everything up: the golden ark, the lampstand, the table, the altar, and the beautiful curtains. When the work was finished, the cloud covered the tent, and the glory of Yahweh filled the Tabernacle! It was so full of God's glory that even Moses couldn't go inside. From then on, whenever the cloud lifted, the people packed up and traveled. When it stayed, they stayed. God lived right in the middle of His people. Let's look back at this whole region. God's people were slaves, but God heard their cries. He called Moses from a burning bush. He sent plagues, gave the Passover, and parted the sea. Miriam danced, and God provided water, manna, and His presence. And God filled Bezalel and the workers with skill to build something beautiful for Him. This region's biggest truth: Yahweh fills you with skill to make beautiful things.",
+    "scenes": [
+      {
+        "caption": "The work is finished",
+        "art_direction": "Workers stepping back to admire the completed Tabernacle in the camp."
+      },
+      {
+        "caption": "Moses blesses them",
+        "art_direction": "Moses inspecting the craftsmanship and smiling, hands raised in blessing."
+      },
+      {
+        "caption": "The glory fills it",
+        "art_direction": "The cloud settles on the Tabernacle and brilliant golden light pours out of every opening."
+      },
+      {
+        "caption": "Follow the cloud",
+        "art_direction": "Families packing up as the cloud lifts, then setting up camp when it stops."
+      },
+      {
+        "caption": "Region 3 complete!",
+        "art_direction": "Map zooms out showing the Freedom Road lit up gold; a path glows toward Region 4, the Wilderness Frontier."
+      },
+      {
+        "caption": "Your Tabernacle courtyard",
+        "art_direction": "The child's village with a finished Tabernacle courtyard, built from the materials they've collected."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 35:31",
+    "text": "He has filled him with the Spirit of God, in wisdom, in understanding, in knowledge, and in all kinds of workmanship",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "He has filled him",
+      "with the Spirit of God,",
+      "in wisdom,",
+      "in understanding,",
+      "in knowledge,",
+      "and in all kinds of workmanship"
+    ],
+    "distractors": [
+      "in laziness,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh fills me with skill to make beautiful things.",
+    "reflection_prompt": "Milestone: Yahweh fills you with skill! Look back at your Blueprint journal from Region 3. What gift or skill do you think God has given you?",
+    "reflection_choices": [
+      "Creating and building",
+      "Music and worship",
+      "Helping and serving",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "creativity"
+  },
+  "quiz": [
+    {
+      "question": "What did Moses do when he saw the work was finished just right?",
+      "options": [
+        "He blessed the workers",
+        "He asked them to start over",
+        "He went to sleep"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses saw all the work, and they had done it as Yahweh had commanded. Moses blessed them.",
+      "verse_ref": "Exodus 39:43"
+    },
+    {
+      "question": "What filled the Tabernacle when it was finished?",
+      "options": [
+        "Water",
+        "The glory of Yahweh",
+        "Gold coins"
+      ],
+      "correct_index": 1,
+      "explanation": "The cloud covered the Tent of Meeting, and Yahweh's glory filled the tabernacle.",
+      "verse_ref": "Exodus 40:34"
+    },
+    {
+      "question": "How did the people know when to travel?",
+      "options": [
+        "Moses rang a bell",
+        "They traveled every day",
+        "When the cloud lifted from the Tabernacle"
+      ],
+      "correct_index": 2,
+      "explanation": "When the cloud was taken up from over the tabernacle, the children of Israel went onward.",
+      "verse_ref": "Exodus 40:36"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for rescuing me and for filling me with gifts and skills. Help me use them to make beautiful things that honor You. I'm ready for the next part of the journey! Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "You finished the Freedom Road! Thank you for dancing and walking with me. Next, a brave scout named Caleb will guide you through the Wilderness Frontier!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "tabernacle_courtyard"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

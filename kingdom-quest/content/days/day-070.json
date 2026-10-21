@@ -1,0 +1,116 @@
+{
+  "day": 70,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Small but Called",
+  "scripture_passage": "Exodus 4:18-31",
+  "story_title": "Moses Goes Back to Egypt",
+  "summary": "Moses returned to Egypt and met Aaron at the mountain of God. When the Israelites heard that God had seen their suffering, they bowed and worshiped. Sabbath Camp looks back at Moses' early life.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Welcome to Sabbath Camp! Moses said goodbye to Jethro and set out for Egypt with his wife and sons, carrying the staff of God in his hand. Out in the wilderness, at the mountain of God, he met his brother Aaron. Aaron ran to him and kissed him! Moses told Aaron everything God had said. When they reached Egypt, they gathered the leaders of Israel. Aaron told them all God's words, and Moses showed them the signs. And the people believed! When they heard that Yahweh had seen their suffering and had come to help them, they bowed down and worshiped. Let's remember this week. God's people were slaves, but they kept growing. Two brave midwives obeyed God. A baby floated in a basket while his sister watched. Moses made a big mistake and ran away, but God met him in a burning bush. Moses felt small and slow with words, but God said, 'I will be with your mouth.' This week's big truth: Yahweh knows your name and uses you, even when you feel small.",
+    "scenes": [
+      {
+        "caption": "Heading back",
+        "art_direction": "Moses with his family and a donkey, staff in hand, walking toward Egypt."
+      },
+      {
+        "caption": "Brothers reunite",
+        "art_direction": "Aaron running across the desert to hug Moses."
+      },
+      {
+        "caption": "The people believe",
+        "art_direction": "Israelite elders bowing in worship as Aaron speaks and Moses holds up his staff."
+      },
+      {
+        "caption": "Camp by the bush",
+        "art_direction": "Campfire beside the burning bush and reed basket in the child's village."
+      },
+      {
+        "caption": "Small but called",
+        "art_direction": "Recap: brick kiln, midwives, basket, well in Midian, burning bush, all glowing."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 4:12",
+    "text": "Now therefore go, and I will be with your mouth, and teach you what you shall speak.",
+    "translation": "WEB",
+    "tokens": [
+      "Now therefore go,",
+      "and I will be",
+      "with your mouth,",
+      "and teach you",
+      "what you shall speak."
+    ],
+    "distractors": [
+      "what you should eat."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh knows my name and uses me even when I feel small.",
+    "reflection_prompt": "Milestone: Yahweh uses you even when you feel small! Draw yourself next to the burning bush and write what you think God is calling you to do.",
+    "reflection_choices": [
+      "Be kind to someone",
+      "Speak up for someone",
+      "Tell someone about God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "Where did Moses meet Aaron?",
+      "options": [
+        "In Pharaoh's palace",
+        "At the mountain of God in the wilderness",
+        "At the Nile River"
+      ],
+      "correct_index": 1,
+      "explanation": "Aaron went and met Moses on God's mountain and kissed him.",
+      "verse_ref": "Exodus 4:27"
+    },
+    {
+      "question": "What did the Israelites do when they heard God had seen their suffering?",
+      "options": [
+        "They bowed and worshiped",
+        "They ran away",
+        "They laughed"
+      ],
+      "correct_index": 0,
+      "explanation": "When they heard Yahweh had seen their affliction, they bowed their heads and worshiped.",
+      "verse_ref": "Exodus 4:31"
+    },
+    {
+      "question": "What did God promise to do with Moses' mouth?",
+      "options": [
+        "Make it bigger",
+        "Close it",
+        "Be with it and teach him what to say"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'I will be with your mouth, and teach you what you shall speak.'",
+      "verse_ref": "Exodus 4:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You know my name. Even when I feel small, You can use me. Be with my mouth and teach me what to say. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Realm 10 complete! When my brothers came home, our whole community bowed down to worship. God was about to do something amazing!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "olive_oil"
+    ],
+    "unlock": "small_but_called_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

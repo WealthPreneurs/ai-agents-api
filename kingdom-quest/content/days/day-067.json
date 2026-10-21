@@ -1,0 +1,120 @@
+{
+  "day": 67,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Hears Our Cries",
+  "scripture_passage": "Exodus 2:11-25",
+  "story_title": "Moses Runs Away",
+  "summary": "Grown-up Moses tried to help his people in his own way and had to run away to Midian. There he became a shepherd, while God heard the Israelites crying out.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Moses grew up in Pharaoh's palace as an Egyptian prince. But he knew he was a Hebrew. One day, when he was grown, Moses went out to see his people at work. He saw an Egyptian beating a Hebrew slave. Moses was so angry that he looked around, and when he thought no one was watching, he killed the Egyptian and hid him in the sand. The next day, he saw two Hebrews fighting. 'Why are you hitting your friend?' he asked. One of them said, 'Who made you our ruler? Are you going to kill me too?' Moses realized everyone knew what he had done. When Pharaoh heard, he wanted to kill Moses. So Moses ran far away to the land of Midian. At a well there, some shepherds were bullying seven sisters. Moses stood up for them and watered their flock. Their father, a priest named Jethro, welcomed Moses. Moses married one of the daughters, Zipporah, and became a shepherd. Years went by. Back in Egypt, God's people cried out to God. And God heard them. He remembered His promise to Abraham, Isaac, and Jacob.",
+    "scenes": [
+      {
+        "caption": "A prince who is a Hebrew",
+        "art_direction": "Adult Moses in Egyptian royal clothes, looking out from the palace at the brick pits."
+      },
+      {
+        "caption": "Angry and wrong",
+        "art_direction": "Moses' fist clenched; cut away before anything happens; sand blowing across an empty scene."
+      },
+      {
+        "caption": "'Who made you our ruler?'",
+        "art_direction": "Two Hebrew men pointing at Moses; his face falls."
+      },
+      {
+        "caption": "Running to Midian",
+        "art_direction": "Moses fleeing across a vast desert alone."
+      },
+      {
+        "caption": "Standing up at the well",
+        "art_direction": "Moses chasing off bullying shepherds and helping seven sisters water their sheep."
+      },
+      {
+        "caption": "God hears",
+        "art_direction": "Israelite slaves praying under the stars; their cries rise as soft light toward heaven."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 2:24",
+    "text": "God heard their groaning, and God remembered his covenant with Abraham, with Isaac, and with Jacob.",
+    "translation": "WEB",
+    "tokens": [
+      "God heard",
+      "their groaning,",
+      "and God remembered",
+      "his covenant",
+      "with Abraham,",
+      "with Isaac, and with Jacob."
+    ],
+    "distractors": [
+      "and God forgot"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh hears me when I cry out, and He doesn't give up on me when I get it wrong.",
+    "reflection_prompt": "Moses tried to fix things his own way, and it went wrong. When have you tried to solve a problem in anger, and what could you do instead?",
+    "reflection_choices": [
+      "Take a breath and calm down",
+      "Ask a grown-up for help",
+      "Pray first",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Where did Moses run to?",
+      "options": [
+        "Canaan",
+        "The land of Midian",
+        "Babel"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses fled from the face of Pharaoh and lived in the land of Midian.",
+      "verse_ref": "Exodus 2:15"
+    },
+    {
+      "question": "What did Moses do at the well in Midian?",
+      "options": [
+        "He stood up for seven sisters and watered their flock",
+        "He took a nap",
+        "He dug a new well"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses stood up and helped them and watered their flock.",
+      "verse_ref": "Exodus 2:17"
+    },
+    {
+      "question": "What did God do when the Israelites cried out?",
+      "options": [
+        "He was too busy",
+        "He sent them to sleep",
+        "He heard them and remembered His covenant"
+      ],
+      "correct_index": 2,
+      "explanation": "God heard their groaning and remembered His covenant with Abraham, Isaac, and Jacob.",
+      "verse_ref": "Exodus 2:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You hear me when I cry out to You. When I'm angry, help me not to act in my own way, but to come to You first. Thank You that You never give up on me. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "My brother made a big mistake that day. He had to run away, and we didn't see him for forty years. But God hadn't given up on Moses, and He hasn't given up on you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Moses kills an Egyptian (Exodus 2:12). Stated plainly and framed as wrong ('angry and wrong'); nothing shown. Confirm wording for ages 7-9."
+  }
+}

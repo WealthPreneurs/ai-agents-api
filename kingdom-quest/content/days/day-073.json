@@ -1,0 +1,118 @@
+{
+  "day": 73,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Don't Wait Until Tomorrow",
+  "scripture_passage": "Exodus 8",
+  "story_title": "Frogs, Gnats, and Flies",
+  "summary": "God sent frogs everywhere, then gnats, then swarms of flies, but He kept His people in Goshen safe from the flies. Pharaoh kept promising and then changing his mind.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Seven days later, God sent the second plague: frogs! Aaron stretched his staff over the water, and frogs hopped out everywhere. Frogs in houses, frogs in beds, frogs in ovens, frogs in the bread bowls. Ribbit! Pharaoh called Moses. 'Pray to Yahweh to take away the frogs, and I'll let the people go!' Moses said, 'When do you want them gone?' And Pharaoh said, 'Tomorrow.' Tomorrow?! He wanted one more night with the frogs! Moses said, 'It will be as you say, so you will know there is no one like Yahweh our God.' The next day, the frogs died, and the people piled them up in big, stinky heaps. But as soon as the frogs were gone, Pharaoh changed his mind. Then God sent gnats. Aaron struck the dust, and it turned into tiny biting bugs. The magicians tried, but they couldn't copy it. They told Pharaoh, 'This is the finger of God!' Then came swarms of flies. But God made a difference: there were no flies in Goshen, where His people lived. Pharaoh kept saying yes and then no. When God asks us to do something, it's best not to wait until tomorrow.",
+    "scenes": [
+      {
+        "caption": "Frogs everywhere!",
+        "art_direction": "Comedic montage: frogs in beds, ovens, bread bowls, and on Pharaoh's crown."
+      },
+      {
+        "caption": "'Tomorrow'",
+        "art_direction": "Pharaoh with a frog on his head saying 'Tomorrow'; Moses raising an eyebrow."
+      },
+      {
+        "caption": "Stinky heaps",
+        "art_direction": "Egyptians holding their noses next to piles of frogs; cartoonish."
+      },
+      {
+        "caption": "Gnats from the dust",
+        "art_direction": "A cloud of tiny gnats rising as Aaron strikes the ground."
+      },
+      {
+        "caption": "'The finger of God!'",
+        "art_direction": "Pharaoh's magicians throwing up their hands in defeat."
+      },
+      {
+        "caption": "No flies in Goshen",
+        "art_direction": "Split screen: Egypt buzzing with flies, Goshen peaceful and clear."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 8:10",
+    "text": "there is no one like Yahweh our God",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "there is",
+      "no one like",
+      "Yahweh our God"
+    ],
+    "distractors": [
+      "Pharaoh our king"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can obey Yahweh today instead of putting it off until tomorrow.",
+    "reflection_prompt": "Pharaoh said 'tomorrow' instead of 'today.' What is something you know you should do but keep putting off?",
+    "reflection_choices": [
+      "Saying sorry to someone",
+      "Cleaning up or doing a chore",
+      "Spending time with God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "When did Pharaoh want the frogs to go away?",
+      "options": [
+        "Right now",
+        "Tomorrow",
+        "Next year"
+      ],
+      "correct_index": 1,
+      "explanation": "Pharaoh said, 'Tomorrow.'",
+      "verse_ref": "Exodus 8:10"
+    },
+    {
+      "question": "What did the magicians say when they couldn't make gnats?",
+      "options": [
+        "'This is the finger of God!'",
+        "'We need more practice.'",
+        "'It's just a trick.'"
+      ],
+      "correct_index": 0,
+      "explanation": "The magicians said to Pharaoh, 'This is God's finger.'",
+      "verse_ref": "Exodus 8:19"
+    },
+    {
+      "question": "Where were there no flies?",
+      "options": [
+        "In Pharaoh's palace",
+        "At the Nile",
+        "In Goshen, where God's people lived"
+      ],
+      "correct_index": 2,
+      "explanation": "God set apart the land of Goshen, where His people lived, so no swarms of flies would be there.",
+      "verse_ref": "Exodus 8:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, there is no one like You! Help me obey You today and not put it off until tomorrow. Thank You for protecting Your people. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Can you imagine frogs in your bed? Ugh! Pharaoh could have said 'today,' but he said 'tomorrow.' When God speaks, today is always the best day to listen."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "frog_pond"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

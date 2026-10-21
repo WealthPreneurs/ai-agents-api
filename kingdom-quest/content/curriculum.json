@@ -16,7 +16,7 @@
   "regions": [
     { "region": 1, "name": "The Garden of Beginnings", "books": "Genesis 1-11, Job", "realms": [1, 4], "companion": "eve" },
     { "region": 2, "name": "The Land of Promises", "books": "Genesis 12-50", "realms": [5, 9], "companion": "joseph" },
-    { "region": 3, "name": "The Freedom Road", "books": "Exodus, Leviticus", "realms": [10, 13], "companion": "miriam" },
+    { "region": 3, "name": "The Freedom Road", "books": "Exodus", "realms": [10, 13], "companion": "miriam" },
     { "region": 4, "name": "The Wilderness Frontier", "books": "Numbers, Deuteronomy, Joshua", "realms": [14, 17], "companion": "caleb" },
     { "region": 5, "name": "The Valley of Heroes", "books": "Judges, Ruth", "realms": [18, 21], "companion": "deborah" },
     { "region": 6, "name": "The Shepherd's Hills", "books": "1-2 Samuel, Psalms", "realms": [22, 26], "companion": "david" },
@@ -40,7 +40,7 @@
     { "realm": 10, "title": "The Burning Bush", "passage": "Exodus 1-4", "phase": "foundation", "milestone": "Yahweh knows my name and uses me even when I feel small.", "anchor_verse": "Exodus 4:12" },
     { "realm": 11, "title": "Plagues and Passover", "passage": "Exodus 5-12", "phase": "foundation", "milestone": "I am rescued by Yahweh.", "anchor_verse": "Exodus 12:13" },
     { "realm": 12, "title": "Through the Sea", "passage": "Exodus 13-17", "phase": "foundation", "milestone": "I am deeply loved and protected.", "anchor_verse": "Exodus 14:14" },
-    { "realm": 13, "title": "Builders of the Tabernacle", "passage": "Exodus 19-20, 31, 35-40", "phase": "gifts", "milestone": "Yahweh fills me with skill to make beautiful things.", "anchor_verse": "Exodus 35:31", "gift_focus": "creativity" },
+    { "realm": 13, "title": "Builders of the Tabernacle", "passage": "Exodus 19-40", "phase": "gifts", "milestone": "Yahweh fills me with skill to make beautiful things.", "anchor_verse": "Exodus 35:31", "gift_focus": "creativity" },
     { "realm": 14, "title": "Twelve Spies, Two Brave Hearts", "passage": "Numbers 13-14", "phase": "gifts", "milestone": "I can see problems with eyes of faith.", "anchor_verse": "Numbers 14:8", "gift_focus": "vision" },
     { "realm": 15, "title": "Moses the Teacher", "passage": "Deuteronomy 6, 31-34", "phase": "gifts", "milestone": "I can help others learn about Yahweh.", "anchor_verse": "Deuteronomy 6:6-7", "gift_focus": "teaching" },
     { "realm": 16, "title": "The Walls of Jericho", "passage": "Joshua 1-6", "phase": "gifts", "milestone": "Yahweh can make me a strong and courageous leader.", "anchor_verse": "Joshua 1:9", "gift_focus": "leadership" },

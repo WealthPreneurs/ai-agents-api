@@ -1,0 +1,121 @@
+{
+  "day": 80,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Makes a Way",
+  "scripture_passage": "Exodus 14:15-31",
+  "story_title": "Walls of Water",
+  "summary": "God told Moses to stretch his staff over the sea. A strong wind blew all night, the waters parted, and the Israelites walked through on dry ground with walls of water on both sides.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Yahweh said to Moses, 'Tell the people to move forward. Lift up your staff and stretch your hand over the sea.' The pillar of cloud moved from in front of the Israelites to behind them, standing between them and the Egyptian army. On the Egyptian side it was dark, but on the Israelite side it gave light all night. Moses stretched out his hand over the sea. Then Yahweh sent a strong east wind that blew all night long. The water split apart! The sea floor became dry ground, and the waters stood up like walls on their right and on their left. The Israelites walked right through the middle of the sea on dry land! Can you imagine fish swimming in the walls beside you? The Egyptian army chased them into the sea. But their chariot wheels got stuck. When all the Israelites were safely across, Moses stretched out his hand again, and the waters came crashing back and covered the army. Not one of the Egyptian soldiers who chased them survived. When the Israelites saw God's mighty power, they trusted Yahweh and His servant Moses.",
+    "scenes": [
+      {
+        "caption": "'Move forward!'",
+        "art_direction": "Moses lifting his staff high over the dark sea."
+      },
+      {
+        "caption": "The pillar moves",
+        "art_direction": "The cloud pillar sliding behind the Israelites, glowing on one side and dark on the other."
+      },
+      {
+        "caption": "A wind all night",
+        "art_direction": "Howling wind pushing the waves apart in swirling patterns."
+      },
+      {
+        "caption": "Walls of water",
+        "art_direction": "Families walking on dry sea floor between towering turquoise walls with fish and sea creatures visible inside."
+      },
+      {
+        "caption": "Stuck wheels",
+        "art_direction": "Chariot wheels sinking into mud far behind; shown from a distance."
+      },
+      {
+        "caption": "Safe on the other side",
+        "art_direction": "The waters closing in the distance as the Israelites cheer on the far shore; no drowning shown."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 43:2",
+    "text": "When you pass through the waters, I will be with you",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "When you pass",
+      "through the waters,",
+      "I will be",
+      "with you"
+    ],
+    "distractors": [
+      "far from you"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can make a way where there seems to be no way.",
+    "reflection_prompt": "God made a path right through the sea! What is something that feels impossible that you can ask God to help with?",
+    "reflection_choices": [
+      "A friendship that's broken",
+      "Something I'm afraid of",
+      "A problem I can't solve",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did God use to push back the waters?",
+      "options": [
+        "A huge earthquake",
+        "A strong east wind all night",
+        "Giant buckets"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh caused the sea to go back by a strong east wind all the night.",
+      "verse_ref": "Exodus 14:21"
+    },
+    {
+      "question": "What were the waters like on each side of the Israelites?",
+      "options": [
+        "Like walls",
+        "Like a river",
+        "Like rain"
+      ],
+      "correct_index": 0,
+      "explanation": "The waters were a wall to them on their right hand and on their left.",
+      "verse_ref": "Exodus 14:22"
+    },
+    {
+      "question": "What did the people do when they saw God's great power?",
+      "options": [
+        "They went back to Egypt",
+        "They forgot about it",
+        "They trusted Yahweh and Moses"
+      ],
+      "correct_index": 2,
+      "explanation": "The people feared Yahweh, and they believed in Yahweh and in His servant Moses.",
+      "verse_ref": "Exodus 14:31"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You made a way through the sea! I believe You can make a way through anything I face. Help me trust You and keep moving forward. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "I walked through the sea! I could see the water rising up on both sides like glass. No one in our family has ever forgotten that walk."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "palm_branch"
+    ],
+    "unlock": "red_sea_path"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the Egyptian army drowning (Exodus 14:27-28). Stated plainly ('Not one... survived'); nothing shown. Confirm wording for ages 7-9."
+  }
+}

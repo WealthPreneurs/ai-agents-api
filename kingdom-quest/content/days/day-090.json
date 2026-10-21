@@ -1,0 +1,120 @@
+{
+  "day": 90,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Everyone Has a Gift to Give",
+  "scripture_passage": "Exodus 35:4-36:7",
+  "story_title": "Too Many Gifts!",
+  "summary": "Moses asked everyone with a willing heart to bring gifts for the Tabernacle. People brought gold, yarn, wood, and their skills. They gave so much that Moses had to tell them to stop!",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Moses gathered all the people and said, 'Whoever has a willing heart, bring a gift for Yahweh's Tabernacle.' And the people came! Everyone whose heart was stirred brought something. Men and women brought gold jewelry: bracelets, earrings, rings, and necklaces. Others brought blue, purple, and red yarn, fine linen, goat hair, and animal skins. Some brought silver and bronze, and others brought wood. Skilled women spun yarn with their hands. Leaders brought precious stones and spices and oil for the lamps. But they didn't only bring things. They brought their skills too! Everyone who was gifted came to help with the work. Bezalel and Oholiab even had a gift for teaching others how to do it. The people kept bringing gifts every morning. Finally, the workers came to Moses and said, 'The people are bringing more than enough!' So Moses sent a message through the camp: 'Stop! Don't bring any more!' Everyone had something to give, and everyone gave with joy. That's what happens when God's people share their gifts together.",
+    "scenes": [
+      {
+        "caption": "A willing heart",
+        "art_direction": "Moses speaking to the crowd; hearts glowing in people's chests as they listen."
+      },
+      {
+        "caption": "Bringing gifts",
+        "art_direction": "A joyful parade of people carrying jewelry, yarn, linen, wood, and spices."
+      },
+      {
+        "caption": "Spinning yarn",
+        "art_direction": "Skilled women spinning colorful yarn together, laughing."
+      },
+      {
+        "caption": "Teachers",
+        "art_direction": "Bezalel and Oholiab showing young apprentices how to carve and weave."
+      },
+      {
+        "caption": "More than enough!",
+        "art_direction": "Piles of gifts overflowing the workshop; workers scratching their heads."
+      },
+      {
+        "caption": "'Stop!'",
+        "art_direction": "A messenger running through camp with a big STOP sign; people cheering and laughing."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Corinthians 9:7",
+    "text": "for God loves a cheerful giver.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "for God loves",
+      "a cheerful",
+      "giver."
+    ],
+    "distractors": [
+      "a grumpy"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I have gifts to share, and Yahweh loves it when I give with a cheerful heart.",
+    "reflection_prompt": "Some people gave things, and some gave their skills. What is one gift or skill you could share with your family, church, or school?",
+    "reflection_choices": [
+      "Helping with my hands",
+      "Making something",
+      "Teaching someone what I know",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "creativity"
+  },
+  "quiz": [
+    {
+      "question": "Who did Moses ask to bring gifts?",
+      "options": [
+        "Only the rich people",
+        "Whoever had a willing heart",
+        "Only the leaders"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses said, 'Whoever is of a willing heart, let him bring it as Yahweh's offering.'",
+      "verse_ref": "Exodus 35:5"
+    },
+    {
+      "question": "What did skilled women do to help?",
+      "options": [
+        "Spun yarn with their hands",
+        "Built walls",
+        "Cooked dinner"
+      ],
+      "correct_index": 0,
+      "explanation": "All the women who were wise-hearted spun with their hands.",
+      "verse_ref": "Exodus 35:25"
+    },
+    {
+      "question": "Why did Moses tell the people to stop bringing gifts?",
+      "options": [
+        "They were bringing junk",
+        "The Tabernacle was cancelled",
+        "They brought more than enough"
+      ],
+      "correct_index": 2,
+      "explanation": "The people brought much more than enough for the work, so Moses told them to stop.",
+      "verse_ref": "Exodus 36:5-6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the gifts You've given me. Help me give cheerfully, sharing my things and my skills to help others and honor You. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "I'll never forget the day we had too many gifts! Everyone wanted to help. What gift do you have that you could share?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread",
+      "olive_oil"
+    ],
+    "unlock": "weavers_loom"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

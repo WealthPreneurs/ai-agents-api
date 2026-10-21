@@ -1,0 +1,118 @@
+{
+  "day": 83,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Daily Bread",
+  "scripture_passage": "Exodus 16",
+  "story_title": "Bread from Heaven",
+  "summary": "When the people were hungry, God sent quail in the evening and manna, bread from heaven, every morning. They had to gather it each day, trusting God to provide again tomorrow.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "A month after leaving Egypt, the people were hungry, and they complained again. 'In Egypt, we had pots of meat and all the bread we wanted! You brought us out here to starve!' God was patient. He said, 'I will rain down bread from heaven for you.' That evening, quail, little birds, flew in and covered the camp, so the people had meat to eat. The next morning, when the dew dried up, there was something thin and flaky all over the ground, like frost. The people asked, 'What is it?' In Hebrew, that sounds like 'manna.' Moses said, 'It is the bread Yahweh has given you to eat.' It tasted like wafers made with honey! God gave them special instructions. Gather just enough for each day. Don't save any for tomorrow. Some people didn't listen and saved some anyway. The next morning, it was full of worms and stank! But on the sixth day, they gathered twice as much, so they could rest on the Sabbath. For forty years, God gave them manna every single morning. God wanted them to trust Him one day at a time.",
+    "scenes": [
+      {
+        "caption": "Hungry and grumbling",
+        "art_direction": "People rubbing their tummies and complaining near their tents."
+      },
+      {
+        "caption": "Quail!",
+        "art_direction": "A flock of little birds swooping into camp at sunset; kids chasing them."
+      },
+      {
+        "caption": "Flakes on the ground",
+        "art_direction": "Morning sunlight sparkling on white, frosty flakes covering the ground."
+      },
+      {
+        "caption": "'What is it?'",
+        "art_direction": "A family kneeling and poking the flakes curiously; lettering 'Manna = What is it?'"
+      },
+      {
+        "caption": "Tastes like honey wafers",
+        "art_direction": "A child taking a bite and smiling with delight."
+      },
+      {
+        "caption": "Don't save it!",
+        "art_direction": "A grumpy man opening a jar of old manna full of wiggly worms; light comedic beat."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 6:11",
+    "text": "Give us today our daily bread.",
+    "translation": "WEB",
+    "tokens": [
+      "Give us",
+      "today",
+      "our daily bread."
+    ],
+    "distractors": [
+      "our weekly treats."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me what I need for today, and I can trust Him for tomorrow.",
+    "reflection_prompt": "God gave manna every day so His people would trust Him daily. What is something you need God's help with today?",
+    "reflection_choices": [
+      "Being patient",
+      "Being kind",
+      "Feeling brave",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did God send in the evening?",
+      "options": [
+        "Fish",
+        "Quail",
+        "Honey"
+      ],
+      "correct_index": 1,
+      "explanation": "In the evening, quail came up and covered the camp.",
+      "verse_ref": "Exodus 16:13"
+    },
+    {
+      "question": "What does the word manna sound like in Hebrew?",
+      "options": [
+        "'What is it?'",
+        "'Good morning!'",
+        "'Bread time!'"
+      ],
+      "correct_index": 0,
+      "explanation": "When the children of Israel saw it, they said one to another, 'What is it?'",
+      "verse_ref": "Exodus 16:15"
+    },
+    {
+      "question": "What happened when people saved manna for the next day?",
+      "options": [
+        "It turned to gold",
+        "It grew bigger",
+        "It got worms and smelled bad"
+      ],
+      "correct_index": 2,
+      "explanation": "Some left of it until the morning, and it bred worms and became foul.",
+      "verse_ref": "Exodus 16:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for giving me what I need every day. Give us today our daily bread. Help me trust You one day at a time. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Manna was delicious, like honey crackers! Every single morning for forty years, it was there. God never missed one day. He won't miss a day with you either."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "olive_oil"
+    ],
+    "unlock": "manna_basket"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

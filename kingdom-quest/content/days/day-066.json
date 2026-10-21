@@ -1,0 +1,121 @@
+{
+  "day": 66,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Watches Over Me",
+  "scripture_passage": "Exodus 2:1-10",
+  "story_title": "The Baby in the Basket",
+  "summary": "A Hebrew mother hid her baby boy, then placed him in a basket in the Nile while his sister watched. Pharaoh's daughter found him, and he grew up as Moses.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "A Hebrew mother and father had a beautiful baby boy. Because of Pharaoh's cruel order, his mother hid him for three whole months. But babies get louder as they grow! When she couldn't hide him any longer, she made a basket out of reeds and covered it with tar so it would float, like a tiny ark. She put her baby inside and set the basket among the tall reeds by the riverbank. His big sister stood nearby, watching to see what would happen. Soon, Pharaoh's daughter came down to the river to bathe. She saw the basket and sent her servant to get it. When she opened it, the baby was crying, and her heart filled with compassion. 'This is one of the Hebrew babies,' she said. Then the baby's sister bravely stepped forward. 'Shall I go find a Hebrew woman to nurse the baby for you?' 'Yes, go,' said the princess. And the sister ran and got the baby's own mother! The princess even paid her to take care of him. When he grew older, he became the princess's son, and she named him Moses, because she drew him out of the water.",
+    "scenes": [
+      {
+        "caption": "A beautiful baby",
+        "art_direction": "A Hebrew mother rocking her baby in a dim, cozy home, keeping very quiet."
+      },
+      {
+        "caption": "A basket boat",
+        "art_direction": "The mother's hands weaving a reed basket and brushing it with dark tar."
+      },
+      {
+        "caption": "Among the reeds",
+        "art_direction": "The basket floating gently among tall papyrus; a young girl peeking from behind the reeds."
+      },
+      {
+        "caption": "The princess",
+        "art_direction": "Pharaoh's daughter and her servants arriving at the riverbank in fine clothes."
+      },
+      {
+        "caption": "A crying baby",
+        "art_direction": "The princess opening the basket, her face softening with compassion."
+      },
+      {
+        "caption": "'Shall I find a nurse?'",
+        "art_direction": "The big sister bravely stepping forward; then running to bring her mother."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 121:3",
+    "text": "He will not allow your foot to be moved. He who keeps you will not slumber.",
+    "translation": "WEB",
+    "tokens": [
+      "He will not allow",
+      "your foot",
+      "to be moved.",
+      "He who keeps you",
+      "will not slumber."
+    ],
+    "distractors": [
+      "will fall asleep."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh watches over me all the time, and I can watch out for others too.",
+    "reflection_prompt": "Moses' big sister watched over him by the river. Who is someone you can watch out for and help?",
+    "reflection_choices": [
+      "A younger brother, sister, or cousin",
+      "A friend",
+      "A new kid",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "How long did Moses' mother hide him?",
+      "options": [
+        "Three days",
+        "Three months",
+        "Three years"
+      ],
+      "correct_index": 1,
+      "explanation": "When she saw he was a fine child, she hid him three months.",
+      "verse_ref": "Exodus 2:2"
+    },
+    {
+      "question": "Who watched the basket in the river?",
+      "options": [
+        "The baby's sister",
+        "A soldier",
+        "Pharaoh"
+      ],
+      "correct_index": 0,
+      "explanation": "His sister stood far off, to see what would be done to him.",
+      "verse_ref": "Exodus 2:4"
+    },
+    {
+      "question": "What does the name Moses mean?",
+      "options": [
+        "Little king",
+        "Brave one",
+        "Drawn out of the water"
+      ],
+      "correct_index": 2,
+      "explanation": "She named him Moses, saying, 'Because I drew him out of the water.'",
+      "verse_ref": "Exodus 2:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You never sleep and You're always watching over me. Help me watch out for others, especially those who are smaller or need help. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "That was me hiding in the reeds! My heart was pounding when I talked to the princess. But God gave me courage, and my baby brother came home to our mom."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "clay"
+    ],
+    "unlock": "reed_basket"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Exodus 2:4 does not name the sister; she is identified as Miriam from Numbers 26:59 and tradition. The companion speaks as Miriam in the first person. Confirm this is acceptable."
+  }
+}

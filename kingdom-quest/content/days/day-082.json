@@ -1,0 +1,119 @@
+{
+  "day": 82,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Yahweh Who Heals",
+  "scripture_passage": "Exodus 15:22-27",
+  "story_title": "Bitter Water Made Sweet",
+  "summary": "After three days without water, the Israelites found only bitter water at Marah and complained. God showed Moses a piece of wood that made the water sweet, and He said, 'I am Yahweh who heals you.'",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Just three days after the big celebration, God's people were walking through the hot desert, and they couldn't find any water. Finally, they came to a place with water. But when they tasted it, it was bitter and yucky. They couldn't drink it! So they named the place Marah, which means bitter. The people grumbled and complained to Moses. 'What are we supposed to drink?' Moses cried out to Yahweh. God showed Moses a piece of wood. Moses threw it into the water, and the water became sweet! Everyone could drink. Then God made a promise: 'If you listen to Me and do what is right, I am Yahweh who heals you.' After that, God led them to a beautiful place called Elim. There were twelve springs of water and seventy palm trees. They camped there by the water. Three days earlier, they had seen God part the sea, but they quickly forgot and complained. When things are bitter, instead of grumbling, we can bring our problems to God, the One who heals.",
+    "scenes": [
+      {
+        "caption": "Three thirsty days",
+        "art_direction": "The crowd trudging across hot sand, water skins empty."
+      },
+      {
+        "caption": "Bitter water!",
+        "art_direction": "People spitting out water and making funny sour faces; comedic beat."
+      },
+      {
+        "caption": "Grumbling",
+        "art_direction": "A crowd of frowning faces surrounding Moses."
+      },
+      {
+        "caption": "A piece of wood",
+        "art_direction": "Moses throwing a branch into the pool; sparkles spreading across the water."
+      },
+      {
+        "caption": "Sweet!",
+        "art_direction": "Children cupping water and drinking happily."
+      },
+      {
+        "caption": "Elim",
+        "art_direction": "An oasis with twelve bubbling springs and seventy palm trees; tents set up in the shade."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 15:26",
+    "text": "I am Yahweh who heals you.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I am",
+      "Yahweh",
+      "who heals you."
+    ],
+    "distractors": [
+      "who leaves you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh heals me, and I can bring Him my problems instead of complaining.",
+    "reflection_prompt": "The people grumbled when the water was bitter. What is something you tend to complain about that you could bring to God instead?",
+    "reflection_choices": [
+      "Food I don't like",
+      "Chores",
+      "Things not going my way",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "joy"
+  },
+  "quiz": [
+    {
+      "question": "What does Marah mean?",
+      "options": [
+        "Sweet",
+        "Bitter",
+        "Water"
+      ],
+      "correct_index": 1,
+      "explanation": "They couldn't drink the waters of Marah, for they were bitter. So it was called Marah.",
+      "verse_ref": "Exodus 15:23"
+    },
+    {
+      "question": "What did Moses throw into the water to make it sweet?",
+      "options": [
+        "A piece of wood",
+        "Some sugar",
+        "His sandals"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh showed him a tree, and he threw it into the waters, and the waters were made sweet.",
+      "verse_ref": "Exodus 15:25"
+    },
+    {
+      "question": "What did the people find at Elim?",
+      "options": [
+        "A city",
+        "A giant",
+        "Twelve springs and seventy palm trees"
+      ],
+      "correct_index": 2,
+      "explanation": "At Elim there were twelve springs of water and seventy palm trees.",
+      "verse_ref": "Exodus 15:27"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the God who heals. When things in my life feel bitter, help me come to You instead of complaining. Make bitter things sweet. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "We went from dancing to grumbling so fast! I'm not proud of that. But God was patient with us. He made the water sweet and led us to a beautiful oasis."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "palm_branch"
+    ],
+    "unlock": "elim_oasis"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "day": 86,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "God's Good Ways",
+  "scripture_passage": "Exodus 20:1-17",
+  "story_title": "The Ten Commandments",
+  "summary": "God spoke the Ten Commandments to His people from Mount Sinai: ten good rules for loving God and loving others, later written on tablets of stone.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "From the top of Mount Sinai, God spoke to all His people. He began, 'I am Yahweh your God, who brought you out of Egypt, out of slavery.' God had rescued them first. Now He was showing them how to live as His free people. Then He gave them Ten Commandments. The first four are about loving God. One: You shall have no other gods before Me. Two: Don't make idols to worship. Three: Don't misuse God's name. Four: Remember the Sabbath day and keep it holy. The last six are about loving other people. Five: Honor your father and your mother. Six: Don't murder. Seven: Be faithful in marriage. Eight: Don't steal. Nine: Don't lie about others. Ten: Don't covet, which means don't be jealous of what belongs to someone else. Later, God wrote these commandments on two tablets of stone with His own finger. God's commands aren't meant to take away our fun. They're like guardrails on a mountain road, keeping us safe and showing us how to love God and love others well.",
+    "scenes": [
+      {
+        "caption": "God speaks",
+        "art_direction": "The fiery mountain with a deep, warm voice echoing; people listening in awe."
+      },
+      {
+        "caption": "Rescued first",
+        "art_direction": "A quick flashback: the Red Sea and the Freedom Gate."
+      },
+      {
+        "caption": "Four for loving God",
+        "art_direction": "Four glowing tablets with simple icons: one crown, no idols, a speech bubble with a heart, a resting moon."
+      },
+      {
+        "caption": "Six for loving others",
+        "art_direction": "Six more icons: family hug, heart, two rings, open hand, truth speech bubble, happy-for-you smile."
+      },
+      {
+        "caption": "Tablets of stone",
+        "art_direction": "Two stone tablets with glowing letters, carved as if by light."
+      },
+      {
+        "caption": "Guardrails",
+        "art_direction": "A winding mountain road with guardrails keeping a happy family safe."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 20:3",
+    "text": "You shall have no other gods before me.",
+    "translation": "WEB",
+    "tokens": [
+      "You shall have",
+      "no other gods",
+      "before me."
+    ],
+    "distractors": [
+      "beside Pharaoh."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's commands show me how to love Him and love others well.",
+    "reflection_prompt": "God's commandments help us love God and others. Which commandment do you think is easiest for you to keep? Which is hardest?",
+    "reflection_choices": [
+      "Honoring my parents",
+      "Telling the truth",
+      "Not being jealous",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What did God remind His people of before giving the commandments?",
+      "options": [
+        "That He rescued them from slavery in Egypt",
+        "That they were in trouble",
+        "That He was tired"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'I am Yahweh your God, who brought you out of the land of Egypt, out of the house of bondage.'",
+      "verse_ref": "Exodus 20:2"
+    },
+    {
+      "question": "What is the first commandment?",
+      "options": [
+        "Don't steal",
+        "You shall have no other gods before me",
+        "Honor your parents"
+      ],
+      "correct_index": 1,
+      "explanation": "The first commandment is, 'You shall have no other gods before me.'",
+      "verse_ref": "Exodus 20:3"
+    },
+    {
+      "question": "Which commandment comes with a promise?",
+      "options": [
+        "Don't lie",
+        "Remember the Sabbath",
+        "Honor your father and your mother"
+      ],
+      "correct_index": 2,
+      "explanation": "'Honor your father and your mother, that your days may be long in the land.'",
+      "verse_ref": "Exodus 20:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for rescuing me and showing me how to live. Help me put You first and love others well. Your ways are good! Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Hearing God's voice from the mountain was overwhelming! But His words were good. They showed us how free people love God and each other."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "stone_tablets"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

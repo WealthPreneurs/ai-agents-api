@@ -1,0 +1,121 @@
+{
+  "day": 75,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Saved by the Lamb",
+  "scripture_passage": "Exodus 12:1-28",
+  "story_title": "The First Passover",
+  "summary": "God told each Israelite family to sacrifice a perfect lamb and put its blood on their doorframes. That night, the judgment would pass over every house marked by the blood.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "God told Moses that one last plague was coming, the most serious of all. The firstborn son in every Egyptian home would die. But God gave His people a way to be safe. 'Every family must choose a lamb,' God said. 'It must be a perfect lamb with nothing wrong with it. On the fourteenth day of the month, at twilight, sacrifice the lamb. Then take some of its blood and paint it on the sides and top of your doorframe. That night, roast the lamb and eat it with flat bread made without yeast and with bitter herbs. Eat it with your sandals on your feet, your belt fastened, and your walking stick in your hand, ready to leave in a hurry!' Then God said, 'The blood will be a sign. When I see the blood, I will pass over you.' This night would be called the Passover, and God's people would remember it every year. Many years later, Jesus would be called the Lamb of God. Just like the blood of the lamb protected God's people, Jesus' sacrifice on the cross rescues everyone who trusts in Him.",
+    "scenes": [
+      {
+        "caption": "One last plague",
+        "art_direction": "Moses speaking to the Israelite elders by lamplight, serious faces."
+      },
+      {
+        "caption": "A perfect lamb",
+        "art_direction": "A family choosing a spotless white lamb from the flock; kids petting it gently."
+      },
+      {
+        "caption": "Blood on the doorframes",
+        "art_direction": "A father painting the doorposts with a hyssop branch at twilight; marks shown simply as red lines."
+      },
+      {
+        "caption": "Ready to go!",
+        "art_direction": "A family eating roasted lamb and flat bread while standing, sandals on, staffs in hand."
+      },
+      {
+        "caption": "Passed over",
+        "art_direction": "A soft protective light covering every marked door in the village."
+      },
+      {
+        "caption": "The Lamb of God",
+        "art_direction": "The doorframe dissolves into the shape of a cross on a hill at sunrise."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Corinthians 5:7",
+    "text": "Christ, our Passover, has been sacrificed in our place.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Christ,",
+      "our Passover,",
+      "has been sacrificed",
+      "in our place."
+    ],
+    "distractors": [
+      "in Egypt."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am saved because Jesus, the Lamb of God, took my place.",
+    "reflection_prompt": "The lamb's blood kept God's people safe. Jesus is called the Lamb of God. How does it make you feel that Jesus took your place?",
+    "reflection_choices": [
+      "Thankful",
+      "Safe",
+      "Loved",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What kind of lamb did each family need to choose?",
+      "options": [
+        "A perfect lamb without any blemish",
+        "The biggest lamb",
+        "Any lamb at all"
+      ],
+      "correct_index": 0,
+      "explanation": "Your lamb shall be without blemish, a male a year old.",
+      "verse_ref": "Exodus 12:5"
+    },
+    {
+      "question": "Where did they put the lamb's blood?",
+      "options": [
+        "On their clothes",
+        "On the doorframes of their houses",
+        "In the river"
+      ],
+      "correct_index": 1,
+      "explanation": "They put the blood on the two doorposts and on the lintel of their houses.",
+      "verse_ref": "Exodus 12:7"
+    },
+    {
+      "question": "How did God tell them to eat the Passover meal?",
+      "options": [
+        "Lying down",
+        "Slowly, over many hours",
+        "Dressed and ready to leave in a hurry"
+      ],
+      "correct_index": 2,
+      "explanation": "They were to eat with belts fastened, sandals on, and staff in hand, in haste.",
+      "verse_ref": "Exodus 12:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the Passover lamb that kept Your people safe. Thank You even more for Jesus, the Lamb of God, who took my place. I'm so grateful. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "I remember that night so clearly: the smell of roasting lamb, my sandals on, everyone ready. And the red marks on every door. We trusted God, and He kept us safe."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "olive_oil"
+    ],
+    "unlock": "passover_door"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the coming death of Egypt's firstborn is stated (Exodus 11:5; 12:12) as the reason for the Passover sign. Lamb sacrifice is described simply. Confirm tone."
+  }
+}

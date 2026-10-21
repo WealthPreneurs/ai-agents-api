@@ -1,0 +1,116 @@
+{
+  "day": 64,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "A High Tower in Trouble",
+  "scripture_passage": "Exodus 1:1-14",
+  "story_title": "Slaves in Egypt",
+  "summary": "Many years after Joseph, a new Pharaoh who didn't know Joseph made the Israelites slaves. But the harder Egypt made their lives, the more God's people grew.",
+  "story_reel": {
+    "duration_seconds": 105,
+    "narration": "Jacob's family had come to Egypt with just seventy people. But after Joseph and his brothers died, their families kept growing and growing until the land was filled with Israelites. Then a new king came to power in Egypt, a Pharaoh who didn't know anything about Joseph. He looked at all the Israelites and got nervous. 'There are too many of them,' he said. 'What if they join our enemies?' So Pharaoh made the Israelites slaves. He put harsh slave masters over them. They had to make bricks out of mud and straw, build whole cities for Pharaoh, and work hard in the fields under the hot sun. Their lives were bitter and hard. But here's the amazing part: the more Egypt tried to crush them, the more they multiplied and spread. Pharaoh couldn't stop God's promise to Abraham. God's people were suffering, but God had not forgotten them. He was about to raise up a rescuer.",
+    "scenes": [
+      {
+        "caption": "A growing family",
+        "art_direction": "Montage of Israelite families multiplying in green Goshen, kids everywhere."
+      },
+      {
+        "caption": "A new Pharaoh",
+        "art_direction": "A stern new king on the throne, scowling at a map covered in Israelite homes."
+      },
+      {
+        "caption": "Slavery begins",
+        "art_direction": "Israelites hauling heavy loads under harsh overseers; serious, not graphic."
+      },
+      {
+        "caption": "Mud and straw bricks",
+        "art_direction": "Close-up of hands pressing mud into brick molds under the sun."
+      },
+      {
+        "caption": "Still growing",
+        "art_direction": "Despite the hardship, more and more children appear in the camps; a faint warm light over them."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 9:9",
+    "text": "Yahweh will also be a high tower for the oppressed; a high tower in times of trouble.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh will also be",
+      "a high tower",
+      "for the oppressed;",
+      "a high tower",
+      "in times of trouble."
+    ],
+    "distractors": [
+      "in times of fun."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh sees people who are suffering, and He is my safe tower in hard times.",
+    "reflection_prompt": "God's people were treated unfairly, but God hadn't forgotten them. Is there someone who is being treated unfairly that you can pray for?",
+    "reflection_choices": [
+      "Someone at school",
+      "People in another country",
+      "Someone in my family",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Why did the new Pharaoh become afraid of the Israelites?",
+      "options": [
+        "They were too many",
+        "They were too loud",
+        "They had too many camels"
+      ],
+      "correct_index": 0,
+      "explanation": "Pharaoh said, 'The people of the children of Israel are more and mightier than we.'",
+      "verse_ref": "Exodus 1:9"
+    },
+    {
+      "question": "What kind of work did the Israelites have to do?",
+      "options": [
+        "Fishing in the Nile",
+        "Making bricks and working in the fields",
+        "Building boats"
+      ],
+      "correct_index": 1,
+      "explanation": "The Egyptians made their lives bitter with hard service in mortar, brick, and the field.",
+      "verse_ref": "Exodus 1:14"
+    },
+    {
+      "question": "What happened the more the Egyptians made the Israelites suffer?",
+      "options": [
+        "They gave up",
+        "They went back to Canaan",
+        "They multiplied and grew even more"
+      ],
+      "correct_index": 2,
+      "explanation": "The more they afflicted them, the more they multiplied and the more they spread out.",
+      "verse_ref": "Exodus 1:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You see people who are treated unfairly. Be a high tower for everyone who is suffering. Help me trust You when things are hard. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Hello, I'm Miriam! I grew up as a slave girl in Egypt. Life was hard, but my family never stopped believing that God would rescue us. Let's walk the Freedom Road together!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "palm_branch"
+    ],
+    "unlock": "brick_kiln"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "day": 84,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Loved and Protected",
+  "scripture_passage": "Exodus 17",
+  "story_title": "Water from the Rock",
+  "summary": "God gave water from a rock, and when the people were attacked, Aaron and Hur held up Moses' hands until Joshua's army won. Sabbath Camp looks back at the journey through the sea and wilderness.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Welcome to Sabbath Camp! At a place called Rephidim, the people had no water again, and they argued with Moses. God told Moses, 'Strike the rock at Horeb with your staff, and water will come out.' Moses did, and fresh water gushed out of the rock! Then an army called the Amalekites attacked. Moses told a young man named Joshua to lead the Israelite fighters. Moses stood on top of a hill with the staff of God, holding up his hands. As long as Moses' hands were raised, Israel was winning. But when his arms got tired and dropped, the Amalekites started winning. So Aaron and Hur rolled a stone for Moses to sit on, and they stood on each side, holding up his arms until sunset. And Israel won! Moses built an altar and named it 'Yahweh Is My Banner.' Let's remember this week. A pillar of cloud and fire. Walls of water. Miriam's song. Sweet water, manna, and water from a rock. This week's big truth: you are deeply loved and protected. Yahweh fights for you.",
+    "scenes": [
+      {
+        "caption": "Water from the rock",
+        "art_direction": "Moses striking a big rock; a crystal-clear stream bursting out; people cheering."
+      },
+      {
+        "caption": "Joshua leads",
+        "art_direction": "Young Joshua stepping forward bravely; the battle shown only as distant dust."
+      },
+      {
+        "caption": "Hands held high",
+        "art_direction": "Moses on a hilltop with staff raised; Aaron and Hur holding up his tired arms as the sun sets."
+      },
+      {
+        "caption": "Yahweh Is My Banner",
+        "art_direction": "A simple stone altar with a banner fluttering above it."
+      },
+      {
+        "caption": "Camp by the rock",
+        "art_direction": "Campfire beside the Red Sea path, tambourine, oasis, and manna basket in the child's village."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 14:14",
+    "text": "Yahweh will fight for you, and you shall be still.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh",
+      "will fight for you,",
+      "and you",
+      "shall be still."
+    ],
+    "distractors": [
+      "shall be scared."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am deeply loved and protected.",
+    "reflection_prompt": "Milestone: You are deeply loved and protected! Aaron and Hur held up Moses' arms when he was tired. Who holds you up when you're tired? Whose arms can you help hold up?",
+    "reflection_choices": [
+      "My family holds me up",
+      "My friends hold me up",
+      "I can help someone else",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "What came out when Moses struck the rock?",
+      "options": [
+        "Fire",
+        "Water",
+        "Gold"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses struck the rock, and water came out of it, that the people could drink.",
+      "verse_ref": "Exodus 17:6"
+    },
+    {
+      "question": "Who held up Moses' arms?",
+      "options": [
+        "Aaron and Hur",
+        "Joshua and Caleb",
+        "Miriam and Zipporah"
+      ],
+      "correct_index": 0,
+      "explanation": "Aaron and Hur held up his hands, the one on the one side, and the other on the other side.",
+      "verse_ref": "Exodus 17:12"
+    },
+    {
+      "question": "What did Moses name the altar he built?",
+      "options": [
+        "The Rock of Water",
+        "The Hill of Victory",
+        "Yahweh Is My Banner"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses built an altar and named it 'Yahweh Is My Banner' (Yahweh-Nissi).",
+      "verse_ref": "Exodus 17:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You fight for me, and You hold me up. Thank You for loving and protecting me. Help me hold up others when they're tired too. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Realm 12 complete! God fought for us at the sea and in the wilderness. Next, we'll arrive at a mountain where God Himself will come down to meet us!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "lamp"
+    ],
+    "unlock": "yahweh_is_my_banner"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The battle with Amalek (Exodus 17:8-13) is shown only as distant dust; the narration says 'Israel won.' The altar name is given as 'Yahweh Is My Banner' (Yahweh-Nissi); check against the WEB rendering of Exodus 17:15."
+  }
+}

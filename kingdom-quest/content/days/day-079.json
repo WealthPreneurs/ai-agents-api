@@ -1,0 +1,114 @@
+{
+  "day": 79,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Don't Be Afraid",
+  "scripture_passage": "Exodus 14:1-14",
+  "story_title": "Trapped at the Sea",
+  "summary": "Pharaoh changed his mind and chased the Israelites with his army. Trapped between the sea and the chariots, the people panicked, but Moses said, 'Don't be afraid. Stand still and see what Yahweh will do.'",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Back in Egypt, Pharaoh changed his mind again. 'What have we done? We let our slaves go!' He got into his chariot and took six hundred of his best chariots, plus all the other chariots of Egypt, and chased after the Israelites. God's people were camped by the Red Sea. When they looked up and saw the Egyptian army thundering toward them, they were terrified. The sea was in front of them, and the army was behind them. They were trapped! The people cried out to God, and they also yelled at Moses: 'Weren't there enough graves in Egypt? Why did you bring us out here to die? We should have stayed!' But Moses answered with faith: 'Don't be afraid! Stand still, and see the salvation of Yahweh, which He will do for you today. The Egyptians you see today, you will never see again. Yahweh will fight for you. You only need to be still.' When you're trapped and scared, remember Moses' words. God is bigger than whatever is chasing you.",
+    "scenes": [
+      {
+        "caption": "Pharaoh changes his mind",
+        "art_direction": "Pharaoh pacing, then shouting for his chariots."
+      },
+      {
+        "caption": "Six hundred chariots",
+        "art_direction": "A line of golden chariots racing across the desert, dust flying."
+      },
+      {
+        "caption": "Trapped!",
+        "art_direction": "Wide shot: the Israelite camp squeezed between a deep blue sea and an approaching cloud of dust."
+      },
+      {
+        "caption": "Panic",
+        "art_direction": "People pointing and shouting at Moses; children clinging to parents."
+      },
+      {
+        "caption": "'Stand still!'",
+        "art_direction": "Moses raising his staff on a rock, calm and confident, as the pillar of cloud glows behind him."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 14:13",
+    "text": "Don't be afraid. Stand still, and see the salvation of Yahweh",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Don't be afraid.",
+      "Stand still,",
+      "and see",
+      "the salvation of Yahweh"
+    ],
+    "distractors": [
+      "and run away"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to be afraid, because Yahweh is bigger than anything chasing me.",
+    "reflection_prompt": "The Israelites felt trapped between the sea and the army. Is there a situation where you feel stuck or scared?",
+    "reflection_choices": [
+      "A problem with friends",
+      "A worry at night",
+      "Something at school",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "How many of his best chariots did Pharaoh take?",
+      "options": [
+        "Six hundred",
+        "Ten",
+        "Twelve thousand"
+      ],
+      "correct_index": 0,
+      "explanation": "Pharaoh took six hundred chosen chariots, and all the chariots of Egypt.",
+      "verse_ref": "Exodus 14:7"
+    },
+    {
+      "question": "What did the people say to Moses when they saw the army?",
+      "options": [
+        "'Let's fight!'",
+        "'Why did you bring us out here to die?'",
+        "'We trust you completely!'"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'Because there were no graves in Egypt, have you taken us away to die in the wilderness?'",
+      "verse_ref": "Exodus 14:11"
+    },
+    {
+      "question": "What did Moses tell the people to do?",
+      "options": [
+        "Run back to Egypt",
+        "Swim across",
+        "Don't be afraid. Stand still and see God's salvation"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses said, 'Don't be afraid. Stand still, and see the salvation of Yahweh.'",
+      "verse_ref": "Exodus 14:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I feel trapped and scared, help me not to be afraid. Help me stand still and trust that You are bigger than anything I face. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "I was so scared that day. The sea was in front of us and the army was behind us. But my brother's voice was calm. He knew God would make a way."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

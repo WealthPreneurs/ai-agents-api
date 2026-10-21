@@ -1,0 +1,118 @@
+{
+  "day": 69,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "The Great I AM",
+  "scripture_passage": "Exodus 3:13-4:17",
+  "story_title": "I AM Who I AM",
+  "summary": "God told Moses His name, I AM WHO I AM, and gave him signs to show Pharaoh. When Moses said he wasn't good at speaking, God sent his brother Aaron to help him.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Moses had more questions. 'If I go to the Israelites and they ask, What is His name? what should I say?' God said, 'I AM WHO I AM. Tell them, I AM has sent me to you.' God's name means He has always been, and He always will be. He doesn't need anyone or anything. He just is! That's why we call Him Yahweh. But Moses was still worried. 'What if they don't believe me?' So God gave Moses signs. 'Throw your staff on the ground.' Moses did, and it turned into a snake! Moses ran from it. 'Now grab it by the tail.' When he did, it became a staff again. Then God said, 'Put your hand inside your cloak.' When Moses pulled it out, his hand was white with sickness. When he put it back and took it out again, it was healthy! Still, Moses said, 'Lord, I'm not good with words. I'm slow at speaking.' God said, 'Who made people's mouths? Is it not I, Yahweh? Go, and I will help you speak.' Moses begged, 'Please send someone else.' So God said, 'Your brother Aaron can speak well. He will help you.'",
+    "scenes": [
+      {
+        "caption": "'What is His name?'",
+        "art_direction": "Moses kneeling before the burning bush, asking his question."
+      },
+      {
+        "caption": "I AM WHO I AM",
+        "art_direction": "The words 'I AM' glowing in golden letters, stretching back and forward through time."
+      },
+      {
+        "caption": "Staff to snake!",
+        "art_direction": "Moses' staff wriggling into a snake; Moses jumping back; light comedic beat."
+      },
+      {
+        "caption": "Snake to staff",
+        "art_direction": "Moses nervously grabbing the snake's tail as it turns back into wood."
+      },
+      {
+        "caption": "A sign in his hand",
+        "art_direction": "Moses' hand turning pale, then healthy again; soft, not gross."
+      },
+      {
+        "caption": "Aaron will help",
+        "art_direction": "Across the desert, Aaron setting out to meet his brother."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 3:14",
+    "text": "I AM has sent me to you.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I AM",
+      "has sent me",
+      "to you."
+    ],
+    "distractors": [
+      "Pharaoh has sent me"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is the great I AM, and He made me just right for what He asks me to do.",
+    "reflection_prompt": "Moses thought he wasn't good enough with words. What is something you think you aren't good enough at?",
+    "reflection_choices": [
+      "Talking in front of people",
+      "Schoolwork",
+      "Sports or music",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What name did God tell Moses?",
+      "options": [
+        "'I AM WHO I AM'",
+        "'The Great King'",
+        "'The God of Egypt'"
+      ],
+      "correct_index": 0,
+      "explanation": "God said to Moses, 'I AM WHO I AM. Tell them, I AM has sent me to you.'",
+      "verse_ref": "Exodus 3:14"
+    },
+    {
+      "question": "What did Moses' staff turn into?",
+      "options": [
+        "A tree",
+        "A snake",
+        "A sword"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses threw his staff on the ground, and it became a snake.",
+      "verse_ref": "Exodus 4:3"
+    },
+    {
+      "question": "Who did God send to help Moses speak?",
+      "options": [
+        "Joshua",
+        "Pharaoh's daughter",
+        "His brother Aaron"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Isn't there Aaron, your brother? I know that he can speak well.'",
+      "verse_ref": "Exodus 4:14"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Great I AM, You have always been and You always will be. When I feel like I'm not good enough, remind me that You made me and You will help me. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "My brother Aaron was a great talker, and Moses was a great listener to God. God puts people together so we can help each other!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "shepherds_staff"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

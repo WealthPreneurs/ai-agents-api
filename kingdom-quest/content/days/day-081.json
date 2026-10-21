@@ -1,0 +1,117 @@
+{
+  "day": 81,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Sing to Yahweh!",
+  "scripture_passage": "Exodus 15:1-21",
+  "story_title": "Miriam's Song",
+  "summary": "On the other side of the sea, Moses and the people sang a song of praise. Miriam picked up her tambourine, and all the women danced and sang, 'Sing to Yahweh!'",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "When God's people reached the other side of the sea and saw what God had done, they couldn't keep quiet! Moses and the Israelites sang a brand-new song to Yahweh: 'I will sing to Yahweh, for He has triumphed gloriously! The horse and its rider He has thrown into the sea. Yah is my strength and my song. He has become my salvation. This is my God, and I will praise Him!' Yah is a short way of saying Yahweh. They sang about how no one is like God, majestic in holiness, awesome in glory, doing wonders. They sang that God's unfailing love had led the people He rescued. Then Miriam, Moses' and Aaron's sister, picked up her tambourine. All the women followed her with tambourines and dancing! Miriam sang, 'Sing to Yahweh, for He has triumphed gloriously!' What a celebration! When God does something amazing in our lives, it's right to stop and praise Him, with singing, dancing, art, or a thankful heart.",
+    "scenes": [
+      {
+        "caption": "Safe on the shore",
+        "art_direction": "The whole crowd on the far shore at sunrise, staring at the calm sea in awe."
+      },
+      {
+        "caption": "A new song",
+        "art_direction": "Moses leading the people in song, arms raised; lyrics floating in hand-lettered type."
+      },
+      {
+        "caption": "Yah is my strength",
+        "art_direction": "Sparkling lettering: 'Yah = Yahweh' with musical notes swirling around."
+      },
+      {
+        "caption": "Miriam's tambourine",
+        "art_direction": "Miriam lifting her tambourine high, ribbons flowing, joyful smile."
+      },
+      {
+        "caption": "Everyone dances!",
+        "art_direction": "Women and children dancing in circles with tambourines; colorful, joyful celebration."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 15:2",
+    "text": "Yah is my strength and song. He has become my salvation.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yah is",
+      "my strength",
+      "and song.",
+      "He has become",
+      "my salvation."
+    ],
+    "distractors": [
+      "my secret."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can praise Yahweh with music, dancing, art, and my whole heart.",
+    "reflection_prompt": "Miriam praised God with her tambourine. How do you like to praise God best?",
+    "reflection_choices": [
+      "Singing",
+      "Dancing",
+      "Drawing or making art",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What did Moses and the people do after crossing the sea?",
+      "options": [
+        "They took a nap",
+        "They sang a song to Yahweh",
+        "They built a city"
+      ],
+      "correct_index": 1,
+      "explanation": "Moses and the children of Israel sang this song to Yahweh.",
+      "verse_ref": "Exodus 15:1"
+    },
+    {
+      "question": "What instrument did Miriam play?",
+      "options": [
+        "A tambourine",
+        "A harp",
+        "A trumpet"
+      ],
+      "correct_index": 0,
+      "explanation": "Miriam the prophetess took a tambourine in her hand, and all the women went out after her.",
+      "verse_ref": "Exodus 15:20"
+    },
+    {
+      "question": "What did Miriam sing?",
+      "options": [
+        "'Let's go home!'",
+        "'We are strong!'",
+        "'Sing to Yahweh, for He has triumphed gloriously!'"
+      ],
+      "correct_index": 2,
+      "explanation": "Miriam sang, 'Sing to Yahweh, for he has triumphed gloriously.'",
+      "verse_ref": "Exodus 15:21"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my strength and my song! Thank You for all the amazing things You've done. I want to praise You with everything I have! Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "That's my favorite day! I grabbed my tambourine and couldn't stop dancing. Will you dance and sing with me? God loves to hear your praise!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "linen"
+    ],
+    "unlock": "miriams_tambourine"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

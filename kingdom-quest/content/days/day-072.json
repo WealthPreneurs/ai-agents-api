@@ -1,0 +1,119 @@
+{
+  "day": 72,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Know That I Am God",
+  "scripture_passage": "Exodus 7",
+  "story_title": "The Staff and the River",
+  "summary": "Aaron's staff became a snake and swallowed the magicians' staffs. Then God turned the Nile River to blood, the first of ten plagues, but Pharaoh's heart stayed hard.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Moses was eighty years old and Aaron was eighty-three when they went back to Pharaoh. God told them, 'When Pharaoh asks for a miracle, throw down your staff.' So Aaron threw down his staff, and it became a snake! But Pharaoh called his magicians, and they used secret tricks to make their staffs turn into snakes too. Then something amazing happened: Aaron's staff swallowed up all of their staffs! Still, Pharaoh's heart was hard, and he wouldn't listen. So God sent the first plague, a disaster to show His power. The next morning, Moses met Pharaoh at the Nile River. Aaron stretched his staff over the water, and the whole Nile turned to blood! The fish died, the river stank, and the Egyptians couldn't drink the water. The Egyptians worshiped the Nile like a god. But Yahweh showed that He is the only true God, more powerful than any river. Pharaoh's magicians copied the trick, and Pharaoh went back to his palace with a hard heart. God was showing Egypt, and everyone, that He alone is God.",
+    "scenes": [
+      {
+        "caption": "Eighty and eighty-three",
+        "art_direction": "Elderly Moses and Aaron with white beards, walking boldly into the palace."
+      },
+      {
+        "caption": "Snakes!",
+        "art_direction": "Aaron's staff becoming a snake; magicians throwing down their staffs, which also become snakes."
+      },
+      {
+        "caption": "Swallowed!",
+        "art_direction": "Aaron's snake swallowing the others; magicians' jaws drop; light comedic beat."
+      },
+      {
+        "caption": "At the Nile",
+        "art_direction": "Moses and Aaron at the riverbank at dawn as Pharaoh walks by."
+      },
+      {
+        "caption": "A river of red",
+        "art_direction": "The Nile turning deep red from Aaron's staff outward; stylized, not gory."
+      },
+      {
+        "caption": "A hard heart",
+        "art_direction": "Pharaoh turning his back and walking away; a stone texture over his chest."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 46:10",
+    "text": "Be still, and know that I am God.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Be still,",
+      "and know",
+      "that I am God."
+    ],
+    "distractors": [
+      "that I am Pharaoh."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is the one true God, more powerful than anything people worship.",
+    "reflection_prompt": "The Egyptians worshiped the river, but God showed He is more powerful. What are some things people today put in God's place?",
+    "reflection_choices": [
+      "Money",
+      "Being famous",
+      "Games and screens",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What happened to the magicians' staffs?",
+      "options": [
+        "They turned to gold",
+        "Aaron's staff swallowed them up",
+        "They flew away"
+      ],
+      "correct_index": 1,
+      "explanation": "Aaron's staff swallowed up their staffs.",
+      "verse_ref": "Exodus 7:12"
+    },
+    {
+      "question": "How old was Moses when he spoke to Pharaoh?",
+      "options": [
+        "Eighty",
+        "Thirty",
+        "One hundred twenty"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses was eighty years old, and Aaron eighty-three, when they spoke to Pharaoh.",
+      "verse_ref": "Exodus 7:7"
+    },
+    {
+      "question": "What was the first plague?",
+      "options": [
+        "Frogs",
+        "Darkness",
+        "The Nile turned to blood"
+      ],
+      "correct_index": 2,
+      "explanation": "All the waters in the river were turned to blood.",
+      "verse_ref": "Exodus 7:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the one true God. Nothing is more powerful than You. Help me put You first and be still and know that You are God. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "I'll never forget watching the river turn red. The Egyptians thought the Nile was a god, but our God showed He's the only One who is truly God."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "nile_riverbank"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The plague accounts (days 72-76) are told as God's judgment on Egypt's gods and Pharaoh's hard heart. Confirm framing, especially Pharaoh's heart being hardened (Exodus 7:3, 13)."
+  }
+}

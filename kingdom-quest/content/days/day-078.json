@@ -1,0 +1,117 @@
+{
+  "day": 78,
+  "month": 3,
+  "realm": 12,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Following God's Lead",
+  "scripture_passage": "Exodus 13:17-22",
+  "story_title": "The Cloud and the Fire",
+  "summary": "God led His people out of Egypt by a pillar of cloud during the day and a pillar of fire at night. They also carried Joseph's bones, just as he had asked.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "When God's people left Egypt, God didn't take them the shortest way. The short road went through the land of the Philistines, and God knew His people weren't ready for a war. They might get scared and want to go back to Egypt. So God led them the long way, through the wilderness toward the Red Sea. And they carried something special with them: Joseph's bones! Remember how Joseph said, 'God will surely come to help you. Carry my bones with you'? Moses kept that promise. Then God did something amazing to guide them. During the day, Yahweh went ahead of them in a tall pillar of cloud to show them the way. At night, He went ahead of them in a pillar of fire to give them light. So they could travel day or night. And the pillar never left its place in front of the people. God didn't just tell them where to go. He went with them, every single step. When you don't know which way to go, God goes ahead of you too.",
+    "scenes": [
+      {
+        "caption": "Not the short way",
+        "art_direction": "A map showing a short road blocked by a fortress and a long road curving through the desert."
+      },
+      {
+        "caption": "Joseph's bones",
+        "art_direction": "Israelites respectfully carrying a carved wooden chest; Joseph's coat pattern on the side."
+      },
+      {
+        "caption": "Pillar of cloud",
+        "art_direction": "A towering, gentle white column of cloud leading the crowd across golden sand."
+      },
+      {
+        "caption": "Pillar of fire",
+        "art_direction": "At night, the column glows as warm fire, lighting up thousands of tents."
+      },
+      {
+        "caption": "Always in front",
+        "art_direction": "Children looking up and pointing as the pillar moves ahead."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 13:21",
+    "text": "Yahweh went before them by day in a pillar of cloud, to lead them on their way",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh went before them",
+      "by day",
+      "in a pillar of cloud,",
+      "to lead them",
+      "on their way"
+    ],
+    "distractors": [
+      "to leave them"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh goes ahead of me and leads me, day and night.",
+    "reflection_prompt": "God led His people with a cloud and fire. How does God lead you today?",
+    "reflection_choices": [
+      "Through the Bible",
+      "Through my parents",
+      "Through prayer",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "Why didn't God lead the people the short way?",
+      "options": [
+        "It was too sandy",
+        "They might see war and want to go back to Egypt",
+        "It was too dark"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Lest perhaps the people change their minds when they see war, and they return to Egypt.'",
+      "verse_ref": "Exodus 13:17"
+    },
+    {
+      "question": "Whose bones did Moses take with them?",
+      "options": [
+        "Joseph's",
+        "Abraham's",
+        "Pharaoh's"
+      ],
+      "correct_index": 0,
+      "explanation": "Moses took the bones of Joseph with him, as Joseph had asked.",
+      "verse_ref": "Exodus 13:19"
+    },
+    {
+      "question": "How did God lead the people at night?",
+      "options": [
+        "With the moon",
+        "With a big map",
+        "With a pillar of fire"
+      ],
+      "correct_index": 2,
+      "explanation": "By night Yahweh went before them in a pillar of fire, to give them light.",
+      "verse_ref": "Exodus 13:21"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for going ahead of me. When I don't know which way to go, help me follow You. Thank You for being with me every step. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "That pillar of cloud was so tall! At night, it glowed like a giant campfire. Every morning, I'd look out my tent and see it, and I knew God was still with us."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "linen"
+    ],
+    "unlock": "pillar_of_fire"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "day": 77,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Rescued!",
+  "scripture_passage": "Exodus 5-12",
+  "story_title": "When I See the Blood",
+  "summary": "Sabbath Camp looks back at the plagues and the Passover: Pharaoh's hard heart, God's power over Egypt's gods, the lamb's blood on the doors, and God's people walking out free.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Welcome to Sabbath Camp! What a week on the Freedom Road. Let's remember. Moses and Aaron told Pharaoh, 'Let My people go!' But Pharaoh asked, 'Who is Yahweh?' and made the work even harder. Moses was discouraged, but God promised, 'I will bring you out.' Then God sent plagues, one after another: blood, frogs, gnats, flies, sick animals, boils, hail, locusts, and darkness. Each one showed that Yahweh is more powerful than all the gods of Egypt. And again and again, God protected His people in Goshen. Then came the Passover. Each family chose a perfect lamb and put its blood on their doorframe. God said, 'When I see the blood, I will pass over you.' That very night, God's people walked out of Egypt, free after 430 years! This week's big truth: you are rescued by Yahweh. Just like the lamb's blood kept the Israelites safe, Jesus, the Lamb of God, rescues you.",
+    "scenes": [
+      {
+        "caption": "Camp by the Freedom Gate",
+        "art_direction": "Campfire beside the Passover door and Freedom Gate in the child's village."
+      },
+      {
+        "caption": "Ten plagues",
+        "art_direction": "Ten glowing icons appearing one by one: blood, frog, gnat, fly, cow, bandage, hail, locust, moon, door."
+      },
+      {
+        "caption": "When I see the blood",
+        "art_direction": "The Passover door glowing; light passing over it gently."
+      },
+      {
+        "caption": "Rescued!",
+        "art_direction": "The child's avatar walking through the Freedom Gate beside Israelite families."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 12:13",
+    "text": "When I see the blood, I will pass over you",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "When I see",
+      "the blood,",
+      "I will",
+      "pass over you"
+    ],
+    "distractors": [
+      "forget you"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am rescued by Yahweh.",
+    "reflection_prompt": "Milestone: You are rescued! Draw a door with the Passover mark, and write inside it: 'Jesus rescued me.' Who would you like to tell about this?",
+    "reflection_choices": [
+      "My family",
+      "A friend",
+      "Someone who doesn't know Jesus",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What did God say He would do when He saw the blood?",
+      "options": [
+        "Pass over them",
+        "Take their lamb",
+        "Open the door"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'When I see the blood, I will pass over you.'",
+      "verse_ref": "Exodus 12:13"
+    },
+    {
+      "question": "How many plagues did God send on Egypt?",
+      "options": [
+        "Three",
+        "Ten",
+        "Twelve"
+      ],
+      "correct_index": 1,
+      "explanation": "There were ten plagues, from the Nile turning to blood to the death of the firstborn.",
+      "verse_ref": "Exodus 7-12"
+    },
+    {
+      "question": "Who is called the Lamb of God?",
+      "options": [
+        "Moses",
+        "Aaron",
+        "Jesus"
+      ],
+      "correct_index": 2,
+      "explanation": "John the Baptist saw Jesus and said, 'Behold, the Lamb of God, who takes away the sin of the world!'",
+      "verse_ref": "John 1:29"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for rescuing Your people from Egypt, and thank You for rescuing me through Jesus. I am Yours! Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Realm 11 complete! We were free! But Pharaoh wasn't done yet, and a big sea was in our way. Get ready for the most amazing thing I've ever seen."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "rescued_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

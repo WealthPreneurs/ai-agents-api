@@ -1,0 +1,117 @@
+{
+  "day": 71,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Keep Trusting When It Gets Harder",
+  "scripture_passage": "Exodus 5:1-6:9",
+  "story_title": "Let My People Go!",
+  "summary": "Moses and Aaron told Pharaoh, 'Let my people go!' Pharaoh refused and made the slaves work even harder. Moses was discouraged, but God promised, 'I will bring you out.'",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Moses and Aaron marched into Pharaoh's palace. 'This is what Yahweh, the God of Israel, says: Let My people go!' Pharaoh sneered. 'Who is Yahweh, that I should listen to Him? I don't know Yahweh, and I will not let Israel go!' Then Pharaoh did something cruel. He told the slave masters, 'Stop giving them straw to make bricks. Make them find their own straw, but they still have to make the same number of bricks!' The Israelites had to search the fields for stubble, and they couldn't keep up. The slave masters beat the Israelite foremen. The people were angry with Moses and Aaron. 'You've made things worse!' Moses was discouraged. He prayed, 'Lord, why have You brought trouble on these people? Why did You send me? Ever since I spoke to Pharaoh, things have gotten worse!' God answered, 'Now you will see what I will do to Pharaoh. I am Yahweh. I will bring you out. I will rescue you. I will take you as My people, and I will be your God.' Sometimes things get harder before they get better. But God is still working.",
+    "scenes": [
+      {
+        "caption": "'Let My people go!'",
+        "art_direction": "Moses and Aaron standing tall in Pharaoh's grand throne room."
+      },
+      {
+        "caption": "'Who is Yahweh?'",
+        "art_direction": "Pharaoh lounging on his throne, waving them away with a sneer."
+      },
+      {
+        "caption": "No more straw",
+        "art_direction": "Israelites scrambling across dry fields, gathering stubble under a hot sun."
+      },
+      {
+        "caption": "'You've made it worse!'",
+        "art_direction": "Frustrated Israelite foremen confronting Moses and Aaron."
+      },
+      {
+        "caption": "Moses prays",
+        "art_direction": "Moses alone at night, kneeling and pouring out his honest questions."
+      },
+      {
+        "caption": "'I will bring you out'",
+        "art_direction": "Warm light breaking through clouds; four golden promises appear: bring out, rescue, take, be your God."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 6:6",
+    "text": "I am Yahweh, and I will bring you out",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I am Yahweh,",
+      "and I will",
+      "bring you out"
+    ],
+    "distractors": [
+      "leave you there"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can keep trusting Yahweh even when things get harder before they get better.",
+    "reflection_prompt": "Moses prayed honestly when things got worse. Is there something that feels like it's getting harder instead of easier? Tell God about it.",
+    "reflection_choices": [
+      "Something at school",
+      "Something with my family",
+      "Something I've been praying about",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did Pharaoh say when Moses told him to let God's people go?",
+      "options": [
+        "'Who is Yahweh, that I should listen?'",
+        "'Okay, they can go.'",
+        "'Let me think about it.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Pharaoh said, 'Who is Yahweh, that I should listen to his voice to let Israel go?'",
+      "verse_ref": "Exodus 5:2"
+    },
+    {
+      "question": "How did Pharaoh make the work harder?",
+      "options": [
+        "He took away their food",
+        "He stopped giving them straw for bricks",
+        "He made them build a pyramid"
+      ],
+      "correct_index": 1,
+      "explanation": "Pharaoh said, 'You shall no longer give the people straw to make brick... Let them gather straw for themselves.'",
+      "verse_ref": "Exodus 5:7"
+    },
+    {
+      "question": "What did God promise Moses?",
+      "options": [
+        "'You can go home now.'",
+        "'Pharaoh will be nice.'",
+        "'I am Yahweh, and I will bring you out.'"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'I am Yahweh, and I will bring you out from under the burdens of the Egyptians.'",
+      "verse_ref": "Exodus 6:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, sometimes things get harder before they get better. Thank You that I can tell You how I really feel. Help me keep trusting that You are working. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Those were hard days. Some people were mad at my brothers. But Moses did the right thing: he told God exactly how he felt. You can do that too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

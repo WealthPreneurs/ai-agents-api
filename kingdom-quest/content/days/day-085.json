@@ -1,0 +1,119 @@
+{
+  "day": 85,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Yahweh's Treasured People",
+  "scripture_passage": "Exodus 19",
+  "story_title": "The Mountain of Fire",
+  "summary": "At Mount Sinai, God told the Israelites they were His own treasured possession. Then He came down on the mountain with thunder, lightning, smoke, and a loud trumpet blast.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Three months after leaving Egypt, God's people arrived at the bottom of Mount Sinai and set up camp. Moses climbed up the mountain, and God spoke to him: 'You saw what I did to Egypt, and how I carried you on eagles' wings and brought you to Myself. If you obey Me and keep My covenant, you will be My own treasured possession out of all the nations. You will be a kingdom of priests and a holy nation.' Out of every nation on earth, God chose Israel to be His special people, to show the world what He is like! The people said, 'We will do everything Yahweh has said.' Then God told the people to get ready, because in three days He would come down on the mountain. On the morning of the third day, there was thunder and lightning. A thick cloud covered the mountain. A trumpet blast grew louder and louder. The whole mountain shook and smoked like a furnace, because Yahweh came down on it in fire. Everyone in the camp trembled. God is awesome and holy, and He wants to be close to His people.",
+    "scenes": [
+      {
+        "caption": "Arriving at Sinai",
+        "art_direction": "The camp spread out at the base of a massive, rugged mountain."
+      },
+      {
+        "caption": "On eagles' wings",
+        "art_direction": "A majestic eagle soaring with a tiny camp of tents on its wings; dreamlike."
+      },
+      {
+        "caption": "Treasured possession",
+        "art_direction": "A glowing treasure chest opening to reveal faces of Israelite families shining like jewels."
+      },
+      {
+        "caption": "Get ready!",
+        "art_direction": "People washing their clothes in preparation."
+      },
+      {
+        "caption": "The mountain of fire",
+        "art_direction": "Thunder, lightning, and thick cloud over the mountain, with fire glowing at the peak."
+      },
+      {
+        "caption": "A trumpet blast",
+        "art_direction": "Sound waves rippling across the camp; people trembling in awe, not terror."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 19:5",
+    "text": "you shall be my own possession from among all peoples",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "you shall be",
+      "my own possession",
+      "from among",
+      "all peoples"
+    ],
+    "distractors": [
+      "forgotten"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am Yahweh's treasure, and He made me on purpose for a purpose.",
+    "reflection_prompt": "God called His people His treasured possession and gave them a purpose. This begins a new part of your journey: discovering your gifts! What do you think you're good at?",
+    "reflection_choices": [
+      "Making things",
+      "Helping people",
+      "Learning and thinking",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "How did God say He carried His people out of Egypt?",
+      "options": [
+        "On horses",
+        "On eagles' wings",
+        "On a boat"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'I bore you on eagles' wings, and brought you to myself.'",
+      "verse_ref": "Exodus 19:4"
+    },
+    {
+      "question": "What did God say His people would be?",
+      "options": [
+        "His own treasured possession",
+        "Slaves again",
+        "Kings of Egypt"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'You shall be my own possession from among all peoples.'",
+      "verse_ref": "Exodus 19:5"
+    },
+    {
+      "question": "What happened on the mountain on the third day?",
+      "options": [
+        "It snowed",
+        "Everyone fell asleep",
+        "Thunder, lightning, smoke, and a loud trumpet"
+      ],
+      "correct_index": 2,
+      "explanation": "There were thunders and lightnings, a thick cloud on the mountain, and the sound of an exceedingly loud trumpet.",
+      "verse_ref": "Exodus 19:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that I am Your treasure. You made me on purpose and for a purpose. Help me discover the gifts You've given me so I can use them for You. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Welcome to a new part of your journey! At Sinai, God showed us we were His treasure with a special purpose. Now you'll start discovering the gifts God put in you!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "mount_sinai"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

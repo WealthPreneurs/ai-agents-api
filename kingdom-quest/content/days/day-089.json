@@ -1,0 +1,119 @@
+{
+  "day": 89,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "God's Presence Goes With Me",
+  "scripture_passage": "Exodus 33:12-34:10; 34:29-35",
+  "story_title": "God's Glory Passes By",
+  "summary": "Moses asked God to go with His people and to show him His glory. God hid Moses in a rock, passed by, and proclaimed that He is merciful, gracious, and full of love. Moses' face shone.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "After the golden calf, Moses prayed, 'If Your presence doesn't go with us, don't send us from here.' God answered, 'My presence will go with you, and I will give you rest.' Then Moses asked something bold: 'Please show me Your glory.' God said, 'No one can see My face and live. But I will put you in a gap in the rock and cover you with My hand while My glory passes by. Then you will see My back.' So Moses cut two new stone tablets and climbed the mountain. Yahweh came down in a cloud and passed in front of Moses, proclaiming His name: 'Yahweh, Yahweh, a merciful and gracious God, slow to anger, and full of loving kindness and faithfulness, forgiving sin.' This is how God describes Himself! Moses bowed down and worshiped. God wrote His commandments again on the new tablets. When Moses came down the mountain, his face was shining so brightly from being with God that the people were afraid to come near him. He had to cover his face with a veil. Spending time with God changes us.",
+    "scenes": [
+      {
+        "caption": "Moses prays",
+        "art_direction": "Moses in a tent of meeting, pleading with God inside a pillar of cloud."
+      },
+      {
+        "caption": "'Show me Your glory'",
+        "art_direction": "Moses looking up hopefully."
+      },
+      {
+        "caption": "The cleft of the rock",
+        "art_direction": "Moses tucked in a crevice of the mountain; a great hand of light covering the opening."
+      },
+      {
+        "caption": "God's glory passes",
+        "art_direction": "A brilliant, golden light sweeping past, with words appearing: Merciful, Gracious, Loving, Faithful, Forgiving."
+      },
+      {
+        "caption": "New tablets",
+        "art_direction": "Moses carrying two fresh stone tablets down the mountain."
+      },
+      {
+        "caption": "A shining face",
+        "art_direction": "Moses' face glowing; people shielding their eyes; Moses putting on a veil."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 33:14",
+    "text": "My presence will go with you, and I will give you rest.",
+    "translation": "WEB",
+    "tokens": [
+      "My presence",
+      "will go with you,",
+      "and I will",
+      "give you rest."
+    ],
+    "distractors": [
+      "give you work."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is merciful and gracious, and His presence goes with me.",
+    "reflection_prompt": "God described Himself as merciful, gracious, loving, and forgiving. Which of these words about God means the most to you today?",
+    "reflection_choices": [
+      "Merciful",
+      "Gracious",
+      "Loving",
+      "Forgiving"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did God promise when Moses prayed?",
+      "options": [
+        "'My presence will go with you.'",
+        "'You can go alone.'",
+        "'Go back to Egypt.'"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'My presence will go with you, and I will give you rest.'",
+      "verse_ref": "Exodus 33:14"
+    },
+    {
+      "question": "Where did God hide Moses when His glory passed by?",
+      "options": [
+        "In a tent",
+        "In a gap in the rock",
+        "Behind a tree"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'I will put you in a cleft of the rock, and will cover you with my hand.'",
+      "verse_ref": "Exodus 33:22"
+    },
+    {
+      "question": "What happened to Moses' face after being with God?",
+      "options": [
+        "It got sunburned",
+        "It turned blue",
+        "It shone"
+      ],
+      "correct_index": 2,
+      "explanation": "Moses didn't know that the skin of his face shone because he had been speaking with God.",
+      "verse_ref": "Exodus 34:29"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are merciful, gracious, and full of love. Thank You that Your presence goes with me. Change me as I spend time with You. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "When my brother came down with his face glowing, we were all amazed. Being close to God changes you from the inside out."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "river_stone"
+    ],
+    "unlock": "cleft_of_the_rock"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

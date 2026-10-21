@@ -1,0 +1,118 @@
+{
+  "day": 68,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Holy Ground",
+  "scripture_passage": "Exodus 3:1-12",
+  "story_title": "The Burning Bush",
+  "summary": "While Moses was tending sheep, God spoke to him from a bush that burned but didn't burn up. God told Moses He had seen His people's suffering and was sending Moses to rescue them.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Moses had been a shepherd in Midian for forty years. One day, he led his flock to the far side of the wilderness, to Horeb, the mountain of God. There Moses saw something strange. A bush was on fire, but it wasn't burning up! 'I'm going to go see this amazing sight,' Moses said. As he came closer, God called to him from the bush: 'Moses! Moses!' 'Here I am,' Moses answered. God said, 'Don't come any closer. Take off your sandals, for the place where you are standing is holy ground.' Moses covered his face, afraid to look at God. Then God said, 'I have seen the suffering of My people in Egypt. I have heard their cries. I know their pain. I have come down to rescue them and bring them to a good land, flowing with milk and honey. So now, go. I am sending you to Pharaoh to bring My people out of Egypt.' Moses said, 'Who am I to go to Pharaoh?' And God answered, 'I will be with you.'",
+    "scenes": [
+      {
+        "caption": "Forty years a shepherd",
+        "art_direction": "Older Moses with a gray beard and staff, leading sheep across a rocky wilderness."
+      },
+      {
+        "caption": "A bush on fire",
+        "art_direction": "A desert bush engulfed in bright, living flames, yet every leaf stays green."
+      },
+      {
+        "caption": "'Moses! Moses!'",
+        "art_direction": "Moses stopping in his tracks, startled, as the flames brighten."
+      },
+      {
+        "caption": "Holy ground",
+        "art_direction": "Moses kneeling and slipping off his sandals, covering his face."
+      },
+      {
+        "caption": "'I have seen My people'",
+        "art_direction": "Within the flames, glimpses of Israelite slaves in Egypt; God's compassion felt in the music."
+      },
+      {
+        "caption": "'Who am I?'",
+        "art_direction": "Moses looking small next to the blazing bush; warm words 'I will be with you' glow."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 3:12",
+    "text": "Certainly I will be with you.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Certainly",
+      "I will be",
+      "with you."
+    ],
+    "distractors": [
+      "without you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh calls me by name, and He promises to be with me.",
+    "reflection_prompt": "God called Moses by name from the burning bush. If God called your name today, what would you say?",
+    "reflection_choices": [
+      "'Here I am!'",
+      "'Who, me?'",
+      "'I'm listening!'",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "listening"
+  },
+  "quiz": [
+    {
+      "question": "What was strange about the burning bush?",
+      "options": [
+        "It was blue",
+        "It burned but didn't burn up",
+        "It was singing"
+      ],
+      "correct_index": 1,
+      "explanation": "The bush burned with fire, and the bush was not consumed.",
+      "verse_ref": "Exodus 3:2"
+    },
+    {
+      "question": "Why did God tell Moses to take off his sandals?",
+      "options": [
+        "The ground was holy",
+        "His feet were dirty",
+        "It was too hot"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Take off your sandals, for the place you are standing on is holy ground.'",
+      "verse_ref": "Exodus 3:5"
+    },
+    {
+      "question": "What did God promise when Moses asked, 'Who am I?'",
+      "options": [
+        "'You'll be famous.'",
+        "'Pharaoh will like you.'",
+        "'I will be with you.'"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Certainly I will be with you.'",
+      "verse_ref": "Exodus 3:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You know my name. When I feel too small for what You ask, remind me that You are with me. Here I am! Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Forty years after he ran away, God met my brother in a burning bush! God is never too late. He calls each of us by name."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "burning_bush"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

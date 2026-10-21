@@ -1,0 +1,118 @@
+{
+  "day": 65,
+  "month": 3,
+  "realm": 10,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Brave Enough to Obey God",
+  "scripture_passage": "Exodus 1:15-22",
+  "story_title": "Two Brave Midwives",
+  "summary": "Pharaoh ordered the Hebrew midwives to harm the baby boys, but Shiphrah and Puah feared God and protected the babies. God blessed them for their courage.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Pharaoh's plan wasn't working. The Israelites kept growing. So he came up with a terrible new plan. He called two Hebrew midwives, women who helped mothers when their babies were born. Their names were Shiphrah and Puah. Pharaoh ordered them to let the baby girls live, but to kill the baby boys. But Shiphrah and Puah loved God more than they feared Pharaoh. They knew every baby was made in God's image. So they disobeyed the king and let the boys live. Pharaoh called them in, furious. 'Why have you let the boys live?' The midwives answered cleverly, 'The Hebrew women are so strong, their babies are born before we even get there!' God was kind to Shiphrah and Puah. He blessed them with families of their own. But then Pharaoh gave an even worse order to everyone in Egypt: every Hebrew baby boy had to be thrown into the Nile River. It was a dark, dangerous time. But two brave women showed that obeying God matters more than obeying anyone else, even a king.",
+    "scenes": [
+      {
+        "caption": "Pharaoh's new plan",
+        "art_direction": "Pharaoh pacing in his throne room, angry that the Israelites keep growing."
+      },
+      {
+        "caption": "Shiphrah and Puah",
+        "art_direction": "Two kind women with gentle faces and strong hands, standing before the throne."
+      },
+      {
+        "caption": "A terrible order",
+        "art_direction": "Pharaoh pointing harshly; the midwives exchanging a quiet, brave look."
+      },
+      {
+        "caption": "Protecting the babies",
+        "art_direction": "The midwives smiling as they hand a healthy baby to a mother; warm lamplight."
+      },
+      {
+        "caption": "A clever answer",
+        "art_direction": "The midwives calmly answering an angry Pharaoh; Pharaoh scratching his head."
+      },
+      {
+        "caption": "God blesses them",
+        "art_direction": "The two women each with families of their own, laughing in the sunlight."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Acts 5:29",
+    "text": "We must obey God rather than men.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "We must",
+      "obey God",
+      "rather than men."
+    ],
+    "distractors": [
+      "rather than God."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be brave enough to do what's right, even when someone powerful tells me to do wrong.",
+    "reflection_prompt": "Shiphrah and Puah obeyed God instead of a king. When might you need courage to do what's right instead of what someone tells you?",
+    "reflection_choices": [
+      "When someone wants me to be mean",
+      "When someone wants me to keep a bad secret",
+      "When someone wants me to lie",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What were the names of the two brave midwives?",
+      "options": [
+        "Shiphrah and Puah",
+        "Sarah and Rebekah",
+        "Miriam and Leah"
+      ],
+      "correct_index": 0,
+      "explanation": "The Hebrew midwives were named Shiphrah and Puah.",
+      "verse_ref": "Exodus 1:15"
+    },
+    {
+      "question": "Why did the midwives disobey Pharaoh?",
+      "options": [
+        "They didn't hear him",
+        "They feared God",
+        "They wanted money"
+      ],
+      "correct_index": 1,
+      "explanation": "The midwives feared God and didn't do what the king commanded.",
+      "verse_ref": "Exodus 1:17"
+    },
+    {
+      "question": "How did God reward the midwives?",
+      "options": [
+        "He made them rich",
+        "He made them queens",
+        "He gave them families of their own"
+      ],
+      "correct_index": 2,
+      "explanation": "Because the midwives feared God, He gave them families.",
+      "verse_ref": "Exodus 1:21"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me courage like Shiphrah and Puah. Help me always choose what's right, even when it's hard or scary. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Shiphrah and Puah were heroes in our community! If anyone ever tells you to do something you know is wrong, it's always okay to say no and tell a grown-up you trust."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 22) is stated plainly. Nothing is shown. Companion points kids to a trusted grown-up. Confirm wording for ages 7-9."
+  }
+}

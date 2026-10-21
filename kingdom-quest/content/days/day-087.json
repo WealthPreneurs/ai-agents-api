@@ -1,0 +1,119 @@
+{
+  "day": 87,
+  "month": 3,
+  "realm": 13,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Gifted to Build",
+  "scripture_passage": "Exodus 25:1-9; 31:1-11",
+  "story_title": "God's Tent Among His People",
+  "summary": "God gave Moses plans for a special tent called the Tabernacle, where He would live among His people. He filled Bezalel and Oholiab with His Spirit and with skill to build it.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Moses stayed on the mountain with God for forty days and forty nights. God gave him amazing plans. 'Let the people make Me a sanctuary, a holy place, so I can live among them.' It would be a beautiful tent called the Tabernacle. Inside would be a golden box called the ark of the covenant, a golden lampstand with cups shaped like almond flowers, a table for special bread, and curtains of blue, purple, and red yarn with angels woven into them. God wanted to live right in the middle of His people's camp! But who could build such a beautiful thing? God said, 'I have chosen Bezalel. I have filled him with My Spirit, with wisdom, understanding, and knowledge, and with skill in every kind of craft: working with gold, silver, and bronze, cutting stones, carving wood, and making all kinds of beautiful things.' God also gave him a partner, Oholiab, and gave skill to all the gifted workers. Isn't that amazing? Being creative and skillful is a gift from God's Spirit. God gave Bezalel his talents for a purpose, and He gives you gifts for a purpose too.",
+    "scenes": [
+      {
+        "caption": "Forty days on the mountain",
+        "art_direction": "Moses on the mountaintop inside a glowing cloud, scrolls unrolling."
+      },
+      {
+        "caption": "Plans for a holy tent",
+        "art_direction": "Blueprint-style animation of the Tabernacle and its courtyard."
+      },
+      {
+        "caption": "Golden treasures",
+        "art_direction": "The ark of the covenant with two golden cherubim; an almond-tree lampstand glowing."
+      },
+      {
+        "caption": "Colorful curtains",
+        "art_direction": "Blue, purple, and scarlet curtains woven with golden cherubim, rippling gently."
+      },
+      {
+        "caption": "Bezalel",
+        "art_direction": "A craftsman with strong, skilled hands at a workbench, glowing softly with God's Spirit."
+      },
+      {
+        "caption": "Gifted workers",
+        "art_direction": "Montage: metalworkers, woodcarvers, weavers, and jewelers each shining with a little light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Exodus 25:8",
+    "text": "Let them make me a sanctuary, that I may dwell among them.",
+    "translation": "WEB",
+    "tokens": [
+      "Let them make me",
+      "a sanctuary,",
+      "that I may",
+      "dwell among them."
+    ],
+    "distractors": [
+      "stay far from them."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me gifts and skills so I can make beautiful things for Him.",
+    "reflection_prompt": "God filled Bezalel with skill to create. What do you love to make or build?",
+    "reflection_choices": [
+      "Drawings or paintings",
+      "Things with blocks, wood, or tools",
+      "Music or stories",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "craftsmanship"
+  },
+  "quiz": [
+    {
+      "question": "Why did God want the people to build a sanctuary?",
+      "options": [
+        "So He could live among them",
+        "To store their food",
+        "To hide from enemies"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Let them make me a sanctuary, that I may dwell among them.'",
+      "verse_ref": "Exodus 25:8"
+    },
+    {
+      "question": "Who did God fill with His Spirit and skill to build the Tabernacle?",
+      "options": [
+        "Pharaoh",
+        "Bezalel",
+        "Joshua"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'I have called by name Bezalel... I have filled him with the Spirit of God.'",
+      "verse_ref": "Exodus 31:2-3"
+    },
+    {
+      "question": "What kinds of skills did God give Bezalel?",
+      "options": [
+        "Only singing",
+        "Only cooking",
+        "Working with gold, silver, bronze, stone, and wood"
+      ],
+      "correct_index": 2,
+      "explanation": "God gave him skill to work in gold, silver, bronze, cutting stones, and carving wood.",
+      "verse_ref": "Exodus 31:4-5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the gifts and skills You've given me. Help me use my creativity to make beautiful things that honor You. Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "Bezalel was amazing! His hands could turn gold into something breathtaking. Your gifts come from God too. What will you create with them?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "cedar_wood"
+    ],
+    "unlock": "craftsmans_workshop"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

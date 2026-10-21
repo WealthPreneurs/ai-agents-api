@@ -1,0 +1,120 @@
+{
+  "day": 76,
+  "month": 3,
+  "realm": 11,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Brought Out with Joy",
+  "scripture_passage": "Exodus 12:29-42",
+  "story_title": "Free at Last!",
+  "summary": "At midnight, the last plague struck Egypt. Pharaoh finally told the Israelites to go. After 430 years, God's people left Egypt, free at last!",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "At midnight, just as God had said, the last plague struck Egypt. The firstborn in every Egyptian home died, from Pharaoh's palace to the prison. A great cry of sorrow rose up across the land. But every house with the lamb's blood on the doorframe was passed over. That very night, Pharaoh called for Moses and Aaron. 'Get up! Leave my people, you and all the Israelites! Go and worship Yahweh, as you asked. Take your flocks and herds and go!' The Egyptians begged the Israelites to hurry. The Israelites grabbed their bread dough before it had time to rise and wrapped their kneading bowls in their clothes. The Egyptians even gave them silver, gold, and clothing! About six hundred thousand men, plus women and children, walked out of Egypt, along with lots of animals. God's people had lived in Egypt for 430 years. And on that very day, Yahweh brought them out. Can you imagine the singing? God had kept His promise. His people were free!",
+    "scenes": [
+      {
+        "caption": "Midnight",
+        "art_direction": "A dark Egyptian city under a quiet sky; a distant cry; nothing shown."
+      },
+      {
+        "caption": "'Go!'",
+        "art_direction": "Pharaoh, grief-stricken, waving Moses and Aaron away."
+      },
+      {
+        "caption": "Hurry!",
+        "art_direction": "Israelite families grabbing bread dough, wrapping bowls, tying sandals."
+      },
+      {
+        "caption": "Gifts of gold",
+        "art_direction": "Egyptian neighbors handing jewelry and clothes to Israelites."
+      },
+      {
+        "caption": "A great exodus",
+        "art_direction": "A massive crowd of families and flocks streaming out of Egypt at dawn."
+      },
+      {
+        "caption": "Free at last!",
+        "art_direction": "Children dancing and adults singing as the sun rises over the desert."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 105:43",
+    "text": "He brought his people out with joy, his chosen with singing.",
+    "translation": "WEB",
+    "tokens": [
+      "He brought",
+      "his people out",
+      "with joy,",
+      "his chosen",
+      "with singing."
+    ],
+    "distractors": [
+      "with sadness,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh rescues me and fills my heart with joy.",
+    "reflection_prompt": "God's people walked out of Egypt free and full of joy. What is something God has set you free from, or something that makes you joyful?",
+    "reflection_choices": [
+      "Fear",
+      "Feeling alone",
+      "Something that was hard",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "joy"
+  },
+  "quiz": [
+    {
+      "question": "When did the last plague happen?",
+      "options": [
+        "At noon",
+        "At midnight",
+        "At sunrise"
+      ],
+      "correct_index": 1,
+      "explanation": "At midnight, Yahweh struck all the firstborn in the land of Egypt.",
+      "verse_ref": "Exodus 12:29"
+    },
+    {
+      "question": "What did the Israelites take with them in a hurry?",
+      "options": [
+        "Bread dough that hadn't risen yet",
+        "Pharaoh's throne",
+        "Their houses"
+      ],
+      "correct_index": 0,
+      "explanation": "The people took their dough before it was leavened, with their kneading troughs bound in their clothes.",
+      "verse_ref": "Exodus 12:34"
+    },
+    {
+      "question": "How long had the Israelites lived in Egypt?",
+      "options": [
+        "Forty years",
+        "Seventy years",
+        "430 years"
+      ],
+      "correct_index": 2,
+      "explanation": "The time the children of Israel lived in Egypt was 430 years.",
+      "verse_ref": "Exodus 12:40"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for rescuing Your people from slavery. Thank You for rescuing me too. Fill my heart with joy and singing because of what You've done! Amen."
+  },
+  "companion": {
+    "id": "miriam",
+    "message": "After 430 years, we walked out free! I was so happy I wanted to sing, and soon I would. God keeps His promises, even when it takes a long time."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "freedom_gate"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: death of Egypt's firstborn (Exodus 12:29-30). Stated plainly with 'a great cry of sorrow'; nothing shown. Consider a parent heads-up card. Confirm wording."
+  }
+}

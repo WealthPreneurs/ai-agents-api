@@ -11,7 +11,7 @@ built on.
 |---|---|
 | `content/curriculum.json` | The Great Map: 12 Regions, 52 Realms, the four identity phases, weekly milestones and anchor verses |
 | `content/catalog.json` | Traits, Identity Badges, Character Companions, Kingdom Builder materials |
-| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–2 (days 1–63) plus samples day 158 and day 365 |
+| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–3 (days 1–91) plus samples day 158 and day 365 |
 | `schema/daily-node.schema.json` | JSON Schema for a daily Checkpoint |
 | `supabase/schema.sql` | Family accounts, progress, journal, badges, wallet, village, with row-level security |
 | `scripts/validate-content.js` | Content checker: `npm run validate:kingdom-quest` from the repo root |
@@ -93,7 +93,7 @@ calendar month, and a child can start on any date.
 |---|---|---|---|
 | 1 | The Garden of Beginnings | Genesis 1–11, Job | 1–4 |
 | 2 | The Land of Promises | Genesis 12–50 | 5–9 |
-| 3 | The Freedom Road | Exodus, Leviticus | 10–13 |
+| 3 | The Freedom Road | Exodus | 10–13 |
 | 4 | The Wilderness Frontier | Numbers, Deuteronomy, Joshua | 14–17 |
 | 5 | The Valley of Heroes | Judges, Ruth | 18–21 |
 | 6 | The Shepherd's Hills | 1–2 Samuel, Psalms | 22–26 |
@@ -359,8 +359,8 @@ the translation.
 | v1 (full year) | All 12 region packs, all companions, Kingdom Builder, AI badges with opt-in, Rest & Restore |
 | v1.1 | Voice and drawing journal entries, family devotion mode (parent + child), Spanish |
 
-Today this folder has the full year's map, Regions 1–2 (days 1–63: Creation
-through Joseph), and two later samples (158, 365). The remaining 300
+Today this folder has the full year's map, Regions 1–3 (days 1–91: Creation
+through the Tabernacle), and two later samples (158, 365). The remaining 272
 Checkpoints follow the same schema. Days with sensitive content (death,
-judgment, the binding of Isaac, Potiphar's wife) carry `review.notes` for the
-theology reviewer.
+judgment, the binding of Isaac, Potiphar's wife, the plagues and the Red Sea)
+carry `review.notes` for the theology reviewer.
