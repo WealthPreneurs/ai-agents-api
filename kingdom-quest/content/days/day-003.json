@@ -1,0 +1,115 @@
+{
+  "day": 3,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "The Sky Tells His Glory",
+  "scripture_passage": "Genesis 1:11-19",
+  "story_title": "Plants, Sun, Moon, and Stars",
+  "summary": "God filled the land with plants and trees full of seeds, then placed the sun, moon, and stars in the sky to mark days, seasons, and years.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "The land was ready, but it was bare and brown. So God said, 'Let the land grow plants!' Suddenly green shoots popped up everywhere. Grass, flowers, and fruit trees spread across the hills, and every one of them had seeds inside, so more plants could grow. God saw that it was good. That was the third day. On the fourth day, God placed lights in the sky. He made the great light, the sun, to rule the day, and the smaller light, the moon, to rule the night. And then, almost as if it were easy, the Bible says, 'He also made the stars.' Scientists today count billions and billions of them! God gave the sun, moon, and stars to mark days and seasons and years. Every time you look up, the sky is telling you how great and glorious God is.",
+    "scenes": [
+      {
+        "caption": "Bare land",
+        "art_direction": "Wide shot of empty brown hills under a pale sky."
+      },
+      {
+        "caption": "Everything grows!",
+        "art_direction": "Time-lapse burst of grass, wildflowers, and fruit trees in bright flat-vector style."
+      },
+      {
+        "caption": "Seeds inside",
+        "art_direction": "Close-up: a fruit splits open to show seeds, sparkling gently."
+      },
+      {
+        "caption": "Sun and moon",
+        "art_direction": "Sun rises on one side, moon on the other, tracing arcs across a layered sky."
+      },
+      {
+        "caption": "Billions of stars",
+        "art_direction": "Camera pulls back from earth into a deep starfield that keeps filling in."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 19:1",
+    "text": "The heavens declare the glory of God. The expanse shows his handiwork.",
+    "translation": "WEB",
+    "tokens": [
+      "The heavens",
+      "declare",
+      "the glory of God.",
+      "The expanse",
+      "shows his handiwork."
+    ],
+    "distractors": [
+      "shows the moon."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am known by the God who made every star.",
+    "reflection_prompt": "The same God who made billions of stars knows your name. What is your favorite thing in creation that shows how great God is?",
+    "reflection_choices": [
+      "The stars at night",
+      "Trees and flowers",
+      "Sunsets",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What did God make grow on the third day?",
+      "options": [
+        "Fish",
+        "Plants and trees",
+        "Birds"
+      ],
+      "correct_index": 1,
+      "explanation": "God made grass, plants, and fruit trees, each with seeds inside.",
+      "verse_ref": "Genesis 1:11-12"
+    },
+    {
+      "question": "What did God make to rule the day?",
+      "options": [
+        "The sun",
+        "The moon",
+        "The clouds"
+      ],
+      "correct_index": 0,
+      "explanation": "God made the greater light, the sun, to rule the day and the moon to rule the night.",
+      "verse_ref": "Genesis 1:16"
+    },
+    {
+      "question": "Besides the sun and moon, what else did God make on the fourth day?",
+      "options": [
+        "Mountains",
+        "Rainbows",
+        "The stars"
+      ],
+      "correct_index": 2,
+      "explanation": "'He also made the stars.' God made every single one!",
+      "verse_ref": "Genesis 1:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, the sky shows how amazing You are. Thank You for the sun that warms me and the stars that sparkle at night. Thank You that the God of the stars knows me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Adam and I used to lie in the grass and watch the stars appear one by one. Look up tonight. Every star is saying, 'Our God is great!'"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ],
+    "unlock": "fruit_tree"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

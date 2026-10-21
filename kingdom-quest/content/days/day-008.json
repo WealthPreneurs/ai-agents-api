@@ -1,0 +1,115 @@
+{
+  "day": 8,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Trusting God's Word",
+  "scripture_passage": "Genesis 2:16-17; 3:1-5",
+  "story_title": "The Sneaky Question",
+  "summary": "God gave Adam and Eve one rule for their good. Then a crafty serpent came with a sneaky question that made them doubt God's word.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "The Garden of Eden was full of good things. Adam and Eve could eat from almost every tree. God gave them just one rule: 'Don't eat from the tree of the knowledge of good and evil. If you do, you will surely die.' God gave that rule to protect them, because He loved them. One day, a crafty serpent came to Eve. It asked a sneaky question: 'Did God really say you can't eat from any tree in the garden?' That wasn't what God had said at all! Eve answered that they could eat from the trees, but not from the one in the middle. Then the serpent told a lie: 'You won't really die. God just doesn't want you to be like Him.' The serpent wanted Eve to think God was holding back something good. That's how temptation often works. It makes us doubt that God's words are true and good.",
+    "scenes": [
+      {
+        "caption": "A garden full of yes",
+        "art_direction": "Adam and Eve picking fruit from many trees; bright, happy colors."
+      },
+      {
+        "caption": "One loving rule",
+        "art_direction": "The tree in the middle glows softly; a gentle 'not this one' gesture from the light."
+      },
+      {
+        "caption": "A crafty serpent",
+        "art_direction": "A sleek, shadowy serpent slides along a branch; stylized, not scary."
+      },
+      {
+        "caption": "'Did God really say...?'",
+        "art_direction": "Question marks swirl around Eve as she listens, puzzled."
+      },
+      {
+        "caption": "A lie",
+        "art_direction": "The serpent's words in twisted lettering; the warm light dims slightly."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 119:11",
+    "text": "I have hidden your word in my heart, that I might not sin against you.",
+    "translation": "WEB",
+    "tokens": [
+      "I have hidden",
+      "your word",
+      "in my heart,",
+      "that I might not",
+      "sin against you."
+    ],
+    "distractors": [
+      "in my pocket,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's words are true, and His rules come from His love for me.",
+    "reflection_prompt": "The serpent tried to make Eve doubt God. When is it hard for you to believe God's way is best?",
+    "reflection_choices": [
+      "When I want something a lot",
+      "When my friends do something else",
+      "When I don't understand why",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "Which tree did God tell Adam and Eve not to eat from?",
+      "options": [
+        "The apple tree",
+        "The tree of the knowledge of good and evil",
+        "The tree of life"
+      ],
+      "correct_index": 1,
+      "explanation": "God said not to eat from the tree of the knowledge of good and evil.",
+      "verse_ref": "Genesis 2:17"
+    },
+    {
+      "question": "What did the serpent ask Eve?",
+      "options": [
+        "'Did God really say...?'",
+        "'What is your name?'",
+        "'Do you like fruit?'"
+      ],
+      "correct_index": 0,
+      "explanation": "The serpent asked a sneaky question to make Eve doubt what God said.",
+      "verse_ref": "Genesis 3:1"
+    },
+    {
+      "question": "What lie did the serpent tell?",
+      "options": [
+        "'God is not real.'",
+        "'The fruit is poison.'",
+        "'You won't really die.'"
+      ],
+      "correct_index": 2,
+      "explanation": "The serpent said, 'You won't really die,' which was the opposite of what God said.",
+      "verse_ref": "Genesis 3:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, Your words are always true. When I hear sneaky voices that make me doubt You, help me remember what You said. Hide Your word in my heart. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "I wish I had remembered how much Yahweh loved me when I heard that question. His rules were never meant to keep good from us. They were meant to keep us safe."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "scripture_scroll_stand"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

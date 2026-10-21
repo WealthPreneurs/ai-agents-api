@@ -1,0 +1,115 @@
+{
+  "day": 20,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Promise Keeper",
+  "scripture_passage": "Genesis 8:20-9:17",
+  "story_title": "The Rainbow Promise",
+  "summary": "Noah built an altar to thank God. God made a covenant never again to flood the whole earth, and He set His rainbow in the clouds as a sign.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "The very first thing Noah did after leaving the ark was build an altar to worship Yahweh. He was so thankful! God was pleased with Noah's worship. Then God blessed Noah and his family and said, 'Be fruitful, multiply, and fill the earth.' God also made a covenant, a special, unbreakable promise. He said, 'Never again will a flood destroy all life on the earth.' And to help everyone remember, God gave a sign. He set His rainbow in the clouds. God said, 'Whenever the rainbow appears in the clouds, I will remember My covenant.' Every rainbow you've ever seen is a reminder that God keeps His promises. Noah's family saw the very first one stretch across the sky. And thousands of years later, God is still keeping that promise. His faithfulness is new every morning.",
+    "scenes": [
+      {
+        "caption": "An altar of thanks",
+        "art_direction": "Noah's family gathered around a simple stone altar, hands raised."
+      },
+      {
+        "caption": "God blesses them",
+        "art_direction": "Warm golden light pours over the family."
+      },
+      {
+        "caption": "A covenant",
+        "art_direction": "Hand-lettered words 'Never Again' appear across a calm sky."
+      },
+      {
+        "caption": "The rainbow!",
+        "art_direction": "A brilliant rainbow unfurls across the clouds; the family gasps."
+      },
+      {
+        "caption": "Still keeping His promise",
+        "art_direction": "Montage of rainbows over modern cities, farms, and the child's own village."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Lamentations 3:23",
+    "text": "They are new every morning. Great is your faithfulness.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "They are new",
+      "every morning.",
+      "Great is",
+      "your faithfulness."
+    ],
+    "distractors": [
+      "every winter."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh keeps His promises to me.",
+    "reflection_prompt": "The rainbow reminds us God keeps His promises. What is a promise from God you want to remember?",
+    "reflection_choices": [
+      "He will never leave me",
+      "He loves me forever",
+      "He forgives me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What was the first thing Noah built after leaving the ark?",
+      "options": [
+        "A house",
+        "An altar to worship God",
+        "A tower"
+      ],
+      "correct_index": 1,
+      "explanation": "Noah built an altar to Yahweh and worshiped Him.",
+      "verse_ref": "Genesis 8:20"
+    },
+    {
+      "question": "What did God promise Noah?",
+      "options": [
+        "Never again to destroy all life with a flood",
+        "It would never rain again",
+        "No one would ever be sick"
+      ],
+      "correct_index": 0,
+      "explanation": "God promised never again to destroy all life with a flood.",
+      "verse_ref": "Genesis 9:11"
+    },
+    {
+      "question": "What sign did God give to remember His promise?",
+      "options": [
+        "A star",
+        "A dove",
+        "A rainbow"
+      ],
+      "correct_index": 2,
+      "explanation": "God set His rainbow in the clouds as the sign of His covenant.",
+      "verse_ref": "Genesis 9:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the rainbow. Every time I see one, help me remember that You always keep Your promises. Your faithfulness is great! Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Next time you see a rainbow, stop and say, 'Thank You, Yahweh!' Every single one is a promise kept."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "rainbow_arch"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

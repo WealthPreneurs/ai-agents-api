@@ -1,0 +1,108 @@
+{
+  "day": 21,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Promises Kept",
+  "scripture_passage": "Genesis 6-9",
+  "story_title": "Noah's Big Week",
+  "summary": "Sabbath Camp looks back at Noah: walking with God, building the ark, the flood, the dove, and the rainbow promise.",
+  "story_reel": {
+    "duration_seconds": 95,
+    "narration": "Welcome to Sabbath Camp! What a week! Let's remember. The world was full of evil, but Noah walked with God and found favor in Yahweh's eyes. God told Noah to build an ark, and Noah did everything God commanded, even before a single raindrop fell. Then the animals came two by two, and Yahweh shut the door. It rained forty days and forty nights, but inside the ark, Noah's family was safe. God remembered Noah. The waters went down, and a dove brought back an olive leaf. When Noah stepped out, he worshiped God. And God set His rainbow in the clouds as a sign of His promise. This week's big truth is simple and strong: Yahweh keeps His promises. To Noah, and to you.",
+    "scenes": [
+      {
+        "caption": "Rainbow over camp",
+        "art_direction": "Campfire on the hillside with the rainbow arch arching over the child's village."
+      },
+      {
+        "caption": "Noah's story recap",
+        "art_direction": "Storybook pages flip: the ark plans, animals two by two, the closed door, the dove."
+      },
+      {
+        "caption": "Promise kept",
+        "art_direction": "The rainbow glows brighter with each recap beat."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 9:13",
+    "text": "I set my rainbow in the cloud, and it will be for a sign of a covenant between me and the earth.",
+    "translation": "WEB",
+    "tokens": [
+      "I set my rainbow",
+      "in the cloud,",
+      "and it will be",
+      "for a sign of a covenant",
+      "between me",
+      "and the earth."
+    ],
+    "distractors": [
+      "for a decoration"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh keeps His promises to me.",
+    "reflection_prompt": "Milestone: Yahweh keeps His promises! Draw your own rainbow in your Blueprint journal and write one of God's promises on each color.",
+    "reflection_choices": [
+      "He is always with me",
+      "He loves me",
+      "He forgives me",
+      "He has a plan for me"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "Who found favor in Yahweh's eyes?",
+      "options": [
+        "Cain",
+        "Noah",
+        "The neighbors"
+      ],
+      "correct_index": 1,
+      "explanation": "Noah found favor in Yahweh's eyes.",
+      "verse_ref": "Genesis 6:8"
+    },
+    {
+      "question": "What is the rainbow a sign of?",
+      "options": [
+        "God's covenant promise",
+        "Good weather tomorrow",
+        "Treasure"
+      ],
+      "correct_index": 0,
+      "explanation": "The rainbow is the sign of God's covenant with the earth.",
+      "verse_ref": "Genesis 9:13"
+    },
+    {
+      "question": "What did the dove bring back to Noah?",
+      "options": [
+        "A twig",
+        "A fish",
+        "An olive leaf"
+      ],
+      "correct_index": 2,
+      "explanation": "The dove returned with an olive leaf, showing the land was drying.",
+      "verse_ref": "Genesis 8:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for keeping every promise. Thank You for keeping Noah's family safe and for keeping me safe too. I trust You. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Three Realms done! You've seen how Yahweh keeps His promises. Your rainbow arch will shine over your village as a reminder."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "promise_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

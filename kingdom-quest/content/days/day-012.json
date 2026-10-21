@@ -1,0 +1,115 @@
+{
+  "day": 12,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "The First Promise",
+  "scripture_passage": "Genesis 3:14-15",
+  "story_title": "A Rescuer Is Coming",
+  "summary": "Even in the middle of sad news, God made a promise: one day a child from the woman's family would crush the serpent's head. This was the first promise of Jesus.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Right in the middle of the hardest moment in the garden, God made a promise. He spoke to the serpent and said, 'I will put hatred between you and the woman, and between your offspring and hers. He will crush your head, and you will bruise his heel.' What does that mean? God was promising that one day, someone would be born from Eve's family who would defeat the serpent and all its evil. The serpent would hurt Him, like a bite on the heel, but He would win, like stepping on a snake's head. Thousands of years later, that promise came true. Jesus was born. On the cross, evil hurt Him. But Jesus rose again and won the victory over sin and death. From the very beginning, before Adam and Eve even left the garden, God already had a rescue plan. And His plan was Jesus.",
+    "scenes": [
+      {
+        "caption": "A promise in the shadows",
+        "art_direction": "Dim garden; a single bright star-like light appears in the sky."
+      },
+      {
+        "caption": "Speaking to the serpent",
+        "art_direction": "The serpent coils back as radiant light shines toward it."
+      },
+      {
+        "caption": "Heel and head",
+        "art_direction": "Symbolic animation: a sandal steps down as the serpent strikes; the serpent shrinks away."
+      },
+      {
+        "caption": "The promise travels through time",
+        "art_direction": "A golden thread winds forward through generations of silhouetted families."
+      },
+      {
+        "caption": "Jesus wins",
+        "art_direction": "An empty tomb at sunrise, then the golden thread loops back to Eden."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 3:15",
+    "text": "He will bruise your head, and you will bruise his heel.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "He will bruise",
+      "your head,",
+      "and you will bruise",
+      "his heel."
+    ],
+    "distractors": [
+      "his hand."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh had a rescue plan for me from the very beginning.",
+    "reflection_prompt": "God promised a Rescuer right after the very first sin. How does it feel to know God planned to rescue you before you were even born?",
+    "reflection_choices": [
+      "Safe",
+      "Loved",
+      "Amazed",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Who was God speaking to when He made this promise?",
+      "options": [
+        "Adam",
+        "An angel",
+        "The serpent"
+      ],
+      "correct_index": 2,
+      "explanation": "God spoke these words to the serpent, promising its defeat.",
+      "verse_ref": "Genesis 3:14-15"
+    },
+    {
+      "question": "Who did God say would crush the serpent's head?",
+      "options": [
+        "A child from the woman's family",
+        "A lion",
+        "A great king's army"
+      ],
+      "correct_index": 0,
+      "explanation": "God said the woman's offspring would crush the serpent's head.",
+      "verse_ref": "Genesis 3:15"
+    },
+    {
+      "question": "Who is the promised Rescuer who defeats evil?",
+      "options": [
+        "Noah",
+        "Jesus",
+        "Adam"
+      ],
+      "correct_index": 1,
+      "explanation": "Jesus came to destroy the works of the devil. He is the promised Rescuer.",
+      "verse_ref": "1 John 3:8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You had a rescue plan from the very start. Thank You for sending Jesus to defeat sin and evil. I'm so glad You never gave up on Your people. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "When I heard that promise, I held onto it with all my heart. A Rescuer from my own family! Yahweh kept that promise in Jesus."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "promise_star"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

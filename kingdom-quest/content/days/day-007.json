@@ -1,0 +1,112 @@
+{
+  "day": 7,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Rest and Remember",
+  "scripture_passage": "Genesis 2:1-3",
+  "story_title": "The Day God Rested",
+  "summary": "God finished His work of creation and rested on the seventh day. He blessed that day and made it holy. Sabbath Camp looks back on the first week of the world.",
+  "story_reel": {
+    "duration_seconds": 90,
+    "narration": "Welcome to Sabbath Camp! After six days of creating, God finished His work. On the seventh day, He rested. God wasn't tired. He rested because His work was complete and very good. Then God blessed the seventh day and made it holy, a special day to stop, enjoy, and remember Him. Let's remember this week together. On day one, light. On day two, the sky. On day three, land, seas, and plants. On day four, the sun, moon, and stars. On day five, fish and birds. On day six, animals, and then people, made in God's own image. Of all the things God made, only people were made to be like Him. That includes you. Today, take a deep breath, rest, and enjoy being God's very good creation.",
+    "scenes": [
+      {
+        "caption": "Welcome to Sabbath Camp",
+        "art_direction": "Cozy campfire on a hillside overlooking Eden; Eve waves hello."
+      },
+      {
+        "caption": "God rested",
+        "art_direction": "Peaceful, still garden at sunset; leaves gently moving, no work happening."
+      },
+      {
+        "caption": "Six days of wonder",
+        "art_direction": "Quick, playful recap montage of days one through six with number badges."
+      },
+      {
+        "caption": "Made in His image",
+        "art_direction": "The mirror pond reflects the child's own avatar beside Adam and Eve."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 1:27",
+    "text": "God created man in his own image. In God's image he created him; male and female he created them.",
+    "translation": "WEB",
+    "tokens": [
+      "God created man",
+      "in his own image.",
+      "In God's image",
+      "he created him;",
+      "male and female",
+      "he created them."
+    ],
+    "distractors": [
+      "in the angels' image."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am made in Yahweh's image.",
+    "reflection_prompt": "Milestone: You are made in Yahweh's image! Finish this sentence in your Blueprint journal: 'Because God made me in His image, I...'",
+    "reflection_choices": [
+      "...am loved",
+      "...can create beautiful things",
+      "...can love other people",
+      "...can talk with God"
+    ],
+    "trait_unlocked": "image_bearer"
+  },
+  "quiz": [
+    {
+      "question": "Why did God rest on the seventh day?",
+      "options": [
+        "He was very tired",
+        "His work was finished and very good",
+        "He ran out of ideas"
+      ],
+      "correct_index": 1,
+      "explanation": "God finished all His work and rested. He wasn't tired; His work was complete.",
+      "verse_ref": "Genesis 2:2"
+    },
+    {
+      "question": "What did God do to the seventh day?",
+      "options": [
+        "He blessed it and made it holy",
+        "He made it the longest day",
+        "He skipped it"
+      ],
+      "correct_index": 0,
+      "explanation": "God blessed the seventh day and made it holy.",
+      "verse_ref": "Genesis 2:3"
+    },
+    {
+      "question": "What was made in God's own image?",
+      "options": [
+        "The stars",
+        "The lions",
+        "People"
+      ],
+      "correct_index": 2,
+      "explanation": "Only people were made in God's image, male and female.",
+      "verse_ref": "Genesis 1:27"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for rest. Thank You for making me in Your image. As I rest today, help me remember that I am Yours and You call me very good. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "You finished your first Realm! Rest is a gift from Yahweh. Before you go, place your Image Bearer Mirror in your garden so you always remember who made you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "sabbath_campfire"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

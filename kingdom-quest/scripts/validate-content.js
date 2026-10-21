@@ -99,7 +99,19 @@ for (const file of files) {
   if (node.is_sabbath_camp !== (node.day % 7 === 0)) fail(where, `is_sabbath_camp should be ${node.day % 7 === 0}`);
   if (!passagePattern.test(node.scripture_passage || '')) fail(where, `scripture_passage "${node.scripture_passage}" is not a reference`);
 
+  const tooLong = (field, value, max) => {
+    if (typeof value === 'string' && value.length > max) fail(where, `${field} is ${value.length} characters (max ${max})`);
+  };
+  tooLong('theme', node.theme, schema.properties.theme.maxLength);
+  tooLong('story_title', node.story_title, schema.properties.story_title.maxLength);
+  tooLong('summary', node.summary, schema.properties.summary.maxLength);
+  tooLong('micro_prayer.text', node.micro_prayer && node.micro_prayer.text, schema.properties.micro_prayer.properties.text.maxLength);
+  tooLong('companion.message', node.companion && node.companion.message, schema.properties.companion.properties.message.maxLength);
+
   const reel = node.story_reel || {};
+  for (const [i, scene] of (reel.scenes || []).entries()) {
+    tooLong(`story_reel.scenes[${i}].caption`, scene.caption, schema.properties.story_reel.properties.scenes.items.properties.caption.maxLength);
+  }
   if (!(reel.duration_seconds >= 60 && reel.duration_seconds <= 150)) fail(where, 'story_reel.duration_seconds must be 60-150');
   if (!Array.isArray(reel.scenes) || reel.scenes.length < 3) fail(where, 'story_reel needs at least 3 scenes');
 
@@ -112,7 +124,7 @@ for (const file of files) {
   }
 
   const identity = node.identity_focus || {};
-  if (!truthPattern.test(identity.core_truth || '')) fail(where, 'identity_focus.core_truth should start with Yahweh, I, Jesus, or My');
+  if (!truthPattern.test(identity.core_truth || '')) fail(where, 'identity_focus.core_truth should start with Yahweh, I, Jesus, My, or When');
   if (!traitIds.has(identity.trait_unlocked)) fail(where, `unknown trait "${identity.trait_unlocked}"`);
 
   if (!Array.isArray(node.quiz) || node.quiz.length !== 3) {
@@ -129,7 +141,11 @@ for (const file of files) {
     });
   }
 
-  if (!companionIds.has(node.companion && node.companion.id)) fail(where, `unknown companion "${node.companion && node.companion.id}"`);
+  const companionId = node.companion && node.companion.id;
+  if (!companionIds.has(companionId)) fail(where, `unknown companion "${companionId}"`);
+  else if (companionId !== curriculum.regions[regionOfRealm(realm) - 1].companion) {
+    fail(where, `companion should be the region's guide "${curriculum.regions[regionOfRealm(realm) - 1].companion}"`);
+  }
   const rewards = node.rewards || {};
   if (!Number.isInteger(rewards.light_stones) || rewards.light_stones < 0) fail(where, 'rewards.light_stones must be a non-negative integer');
   for (const m of rewards.materials || []) if (!materialIds.has(m)) fail(where, `unknown material "${m}"`);

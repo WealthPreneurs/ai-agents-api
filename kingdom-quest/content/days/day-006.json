@@ -1,0 +1,117 @@
+{
+  "day": 6,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Made to Care",
+  "scripture_passage": "Genesis 2:4-25",
+  "story_title": "The Garden of Eden",
+  "summary": "Yahweh formed the man from the dust, breathed life into him, and placed him in the Garden of Eden to care for it. Then He made the woman, and they were together.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Genesis tells the story again, up close. Yahweh God scooped up dust from the ground and formed a man. Then He breathed into him the breath of life, and the man became a living person. His name was Adam. God planted a beautiful garden in Eden, full of trees that were lovely to look at and good to eat. A river flowed through it to water it all. In the middle of the garden stood the tree of life and the tree of the knowledge of good and evil. God put Adam in the garden to work it and take care of it. Then God said, 'It is not good for the man to be alone.' God brought the animals to Adam, and Adam gave each one a name. But none of them was a partner just right for him. So God made a woman from Adam's side, and brought her to him. Adam was overjoyed! God made people for friendship with Him and with each other.",
+    "scenes": [
+      {
+        "caption": "Formed from the dust",
+        "art_direction": "Earthy close-up of soil gathering into a human shape; gentle light, reverent tone."
+      },
+      {
+        "caption": "The breath of life",
+        "art_direction": "A soft breeze of golden light; the man opens his eyes and smiles."
+      },
+      {
+        "caption": "The Garden of Eden",
+        "art_direction": "Lush isometric garden with a winding river, fruit trees, and two glowing trees at the center."
+      },
+      {
+        "caption": "Naming the animals",
+        "art_direction": "Adam pointing to animals as hand-lettered names appear: 'Lion!' 'Giraffe!' 'Hedgehog!'"
+      },
+      {
+        "caption": "Not alone anymore",
+        "art_direction": "Adam meets Eve; joyful music swells; they walk together through the garden."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 2:15",
+    "text": "Yahweh God took the man, and put him into the garden of Eden to cultivate and keep it.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh God",
+      "took the man,",
+      "and put him",
+      "into the garden of Eden",
+      "to cultivate",
+      "and keep it."
+    ],
+    "distractors": [
+      "and leave it."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh made me to care for His world and for the people around me.",
+    "reflection_prompt": "God gave Adam the job of caring for the garden. What is one thing God has given you to take care of?",
+    "reflection_choices": [
+      "A pet or a plant",
+      "My room or my things",
+      "A brother, sister, or friend",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "serving"
+  },
+  "quiz": [
+    {
+      "question": "What did God make the man from?",
+      "options": [
+        "Dust from the ground",
+        "A tree branch",
+        "Water"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh formed the man from the dust and breathed into him the breath of life.",
+      "verse_ref": "Genesis 2:7"
+    },
+    {
+      "question": "What did God say was not good?",
+      "options": [
+        "The river",
+        "For the man to be alone",
+        "The animals"
+      ],
+      "correct_index": 1,
+      "explanation": "God said it was not good for the man to be alone, so He made the woman.",
+      "verse_ref": "Genesis 2:18"
+    },
+    {
+      "question": "What did Adam do with the animals God brought to him?",
+      "options": [
+        "Raced them",
+        "Hid from them",
+        "Gave them names"
+      ],
+      "correct_index": 2,
+      "explanation": "Adam named every animal God brought to him.",
+      "verse_ref": "Genesis 2:19-20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You breathed life into people and made us to be together. Thank You for my family and friends. Help me take good care of the things and people You have given me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Eden was the most beautiful place I have ever known. But the best part wasn't the trees or the river. It was being with Yahweh and with Adam."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "river_stone"
+    ],
+    "unlock": "eden_river"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

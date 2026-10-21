@@ -1,0 +1,116 @@
+{
+  "day": 22,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Building God's Way",
+  "scripture_passage": "Genesis 11:1-9",
+  "story_title": "The Tower of Babel",
+  "summary": "People tried to build a tower to the heavens to make a name for themselves. God confused their language and scattered them across the earth.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "After the flood, Noah's family grew into many families. Everyone spoke the same language. Some of them settled on a wide plain and had an idea: 'Come, let's make bricks and build a city with a tower that reaches up to the heavens. Let's make a name for ourselves!' They wanted to be great and famous on their own, without God. And instead of spreading out across the earth like God told them, they wanted to stay in one place. So Yahweh came down to see the city and the tower. He confused their language, so suddenly they couldn't understand each other! 'Pass me a brick!' might have sounded like 'Blibber blabber!' They couldn't keep building. So they scattered across the whole earth. That place was called Babel. When we build our lives to make ourselves look great, it doesn't last. When we build with God, our work has a purpose.",
+    "scenes": [
+      {
+        "caption": "One language",
+        "art_direction": "Crowds of people chatting and laughing together on a wide plain."
+      },
+      {
+        "caption": "Let's build a tower!",
+        "art_direction": "Brick-making assembly line; a tower rising in Monument Valley-style geometry."
+      },
+      {
+        "caption": "A name for ourselves",
+        "art_direction": "Workers carving their own names into the tower in big letters."
+      },
+      {
+        "caption": "Blibber blabber!",
+        "art_direction": "Speech bubbles turn into scrambled symbols; workers look confused; comedic beat."
+      },
+      {
+        "caption": "Scattered",
+        "art_direction": "Groups walking off in every direction, the unfinished tower behind them."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 127:1",
+    "text": "Unless Yahweh builds the house, they labor in vain who build it.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Unless Yahweh",
+      "builds the house,",
+      "they labor in vain",
+      "who build it."
+    ],
+    "distractors": [
+      "who live in it."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to make a name for myself, because Yahweh already knows my name.",
+    "reflection_prompt": "The people at Babel wanted to be famous. What is something you could build or do to help others instead of to look great?",
+    "reflection_choices": [
+      "Help someone with a project",
+      "Make a gift for someone",
+      "Include someone left out",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "craftsmanship"
+  },
+  "quiz": [
+    {
+      "question": "What did the people want to build?",
+      "options": [
+        "A city and a tower reaching to the heavens",
+        "A giant boat",
+        "A bridge across the sea"
+      ],
+      "correct_index": 0,
+      "explanation": "They said, 'Let's build a city, and a tower whose top reaches to the sky.'",
+      "verse_ref": "Genesis 11:4"
+    },
+    {
+      "question": "Why did they want to build the tower?",
+      "options": [
+        "To worship God",
+        "To make a name for themselves",
+        "To see the stars better"
+      ],
+      "correct_index": 1,
+      "explanation": "They wanted to make a name for themselves.",
+      "verse_ref": "Genesis 11:4"
+    },
+    {
+      "question": "What did God do?",
+      "options": [
+        "Knocked the tower over with wind",
+        "Made it rain again",
+        "Confused their language and scattered them"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh confused their language and scattered them over the earth.",
+      "verse_ref": "Genesis 11:7-8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I don't need to be famous to matter, because You already know my name. Help me build my life with You and use what I make to help others. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "People keep trying to build towers to make themselves great. But the best things are built with Yahweh. What will you build with Him?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "river_stone"
+    ],
+    "unlock": "builders_kiln"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

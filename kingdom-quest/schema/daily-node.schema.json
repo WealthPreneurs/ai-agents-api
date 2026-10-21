@@ -75,7 +75,7 @@
       "additionalProperties": false,
       "required": ["core_truth", "reflection_prompt", "trait_unlocked"],
       "properties": {
-        "core_truth": { "type": "string", "pattern": "^(Yahweh|I|Jesus|My)\\b", "description": "First-person or Yahweh-centered truth statement." },
+        "core_truth": { "type": "string", "pattern": "^(Yahweh|I|Jesus|My|When)\\b", "description": "First-person or Yahweh-centered truth statement (\"When I...\" is allowed)." },
         "reflection_prompt": { "type": "string" },
         "reflection_choices": {
           "type": "array",
@@ -139,7 +139,8 @@
       "properties": {
         "status": { "enum": ["draft", "theology_reviewed", "published"] },
         "reviewers": { "type": "array", "items": { "type": "string" } },
-        "reviewed_at": { "type": "string", "format": "date" }
+        "reviewed_at": { "type": "string", "format": "date" },
+        "notes": { "type": "string", "description": "Guidance for the theology reviewer, e.g. sensitive content to check for age-appropriateness." }
       }
     }
   }

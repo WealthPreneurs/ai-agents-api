@@ -1,0 +1,114 @@
+{
+  "day": 10,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Comes Looking",
+  "scripture_passage": "Genesis 3:8-10",
+  "story_title": "Hiding in the Garden",
+  "summary": "When Adam and Eve hid among the trees, Yahweh came walking in the garden and called, 'Where are you?'",
+  "story_reel": {
+    "duration_seconds": 105,
+    "narration": "That evening, when the air grew cool, Adam and Eve heard a sound they used to love: Yahweh God walking in the garden. But this time, instead of running to Him, they ran away. They hid among the trees. Have you ever hidden after doing something wrong? Then Yahweh called out, 'Where are you?' God already knew where they were. He knows everything! He wasn't asking because He was lost. He was asking because He wanted them to come out and come back to Him. Adam answered from behind the trees, 'I heard You, and I was afraid, so I hid.' Even after they sinned, God came looking for them. That's what Yahweh is like. When we hide, He comes looking. When we run away, He calls our name.",
+    "scenes": [
+      {
+        "caption": "The cool of the day",
+        "art_direction": "Evening garden with long shadows and soft orange light."
+      },
+      {
+        "caption": "They hide",
+        "art_direction": "Adam and Eve crouching behind a big tree, peeking out nervously."
+      },
+      {
+        "caption": "'Where are you?'",
+        "art_direction": "Warm light moving through the garden path; the words appear gently, not angrily."
+      },
+      {
+        "caption": "'I was afraid'",
+        "art_direction": "Adam stepping halfway out from behind the tree, head down."
+      },
+      {
+        "caption": "He comes looking",
+        "art_direction": "Light reaches the tree where they hid, glowing warmly around them."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 139:7",
+    "text": "Where could I go from your Spirit? Or where could I flee from your presence?",
+    "translation": "WEB",
+    "tokens": [
+      "Where could I go",
+      "from your Spirit?",
+      "Or where could I flee",
+      "from your presence?"
+    ],
+    "distractors": [
+      "from your garden?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh comes looking for me, even when I want to hide.",
+    "reflection_prompt": "God called, 'Where are you?' because He wanted Adam and Eve to come back to Him. What would you want to say to God if He called your name?",
+    "reflection_choices": [
+      "'Here I am!'",
+      "'I'm sorry.'",
+      "'Thank You for finding me.'",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "What did Adam and Eve hear in the garden?",
+      "options": [
+        "Yahweh God walking in the garden",
+        "Thunder",
+        "The serpent laughing"
+      ],
+      "correct_index": 0,
+      "explanation": "They heard Yahweh God walking in the garden in the cool of the day.",
+      "verse_ref": "Genesis 3:8"
+    },
+    {
+      "question": "Where did Adam and Eve hide?",
+      "options": [
+        "In a cave",
+        "Among the trees",
+        "In the river"
+      ],
+      "correct_index": 1,
+      "explanation": "They hid from Yahweh among the trees of the garden.",
+      "verse_ref": "Genesis 3:8"
+    },
+    {
+      "question": "Why did Adam say he hid?",
+      "options": [
+        "He was playing a game",
+        "He was tired",
+        "He was afraid"
+      ],
+      "correct_index": 2,
+      "explanation": "Adam said, 'I heard You, and I was afraid, so I hid.'",
+      "verse_ref": "Genesis 3:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You come looking for me. When I'm afraid or when I mess up, help me run to You instead of away from You. Here I am! Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "I'll never forget hearing Him call, 'Where are you?' He wasn't angry like I expected. He came looking for us. He will always come looking for you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "garden_lantern"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

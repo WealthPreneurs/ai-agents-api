@@ -1,0 +1,114 @@
+{
+  "day": 23,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Is Near to Every Nation",
+  "scripture_passage": "Genesis 10:32; 11:10-32",
+  "story_title": "Families Everywhere",
+  "summary": "After Babel, Noah's descendants spread out into many nations. Among them was a family from Ur: Terah, his son Abram, and Abram's wife Sarai.",
+  "story_reel": {
+    "duration_seconds": 105,
+    "narration": "After Babel, people spread out across the whole earth. Families became tribes, and tribes became nations, each with its own language and land. Some went to the mountains, some to the deserts, some to the coasts. Genesis lists their names, like a giant family tree, because every family matters to God. One branch of Noah's family came through his son Shem. Many generations later, in a city called Ur, lived a man named Terah. Terah had a son named Abram. Abram married a woman named Sarai. But Sarai had no children, and that made her very sad. Terah took his family and set out toward a land called Canaan, but they stopped and settled in a place called Haran. God was watching this family closely. He had big plans for Abram. And the Bible tells us that God is not far from any of us, no matter what nation we come from.",
+    "scenes": [
+      {
+        "caption": "Spreading out",
+        "art_direction": "Map animation of people traveling outward in colorful lines across continents."
+      },
+      {
+        "caption": "A giant family tree",
+        "art_direction": "Illustrated tree with branches labeled by family names, growing outward."
+      },
+      {
+        "caption": "The city of Ur",
+        "art_direction": "Bustling ancient city with a ziggurat; Terah's family at their home."
+      },
+      {
+        "caption": "Abram and Sarai",
+        "art_direction": "A young couple; Sarai gazing at a cradle that is empty, gently sad."
+      },
+      {
+        "caption": "To Haran",
+        "art_direction": "The family's caravan traveling along a river, stopping at Haran under a starry sky."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Acts 17:27",
+    "text": "he is not far from each one of us.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "he is",
+      "not far",
+      "from each one of us."
+    ],
+    "distractors": [
+      "from only some of us."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is near to me and to people from every nation.",
+    "reflection_prompt": "God loves people from every nation, every language, and every family. Who is someone different from you that God loves too?",
+    "reflection_choices": [
+      "A kid at my school",
+      "A neighbor",
+      "People in another country",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "empathy"
+  },
+  "quiz": [
+    {
+      "question": "What happened to people after Babel?",
+      "options": [
+        "They went back to Eden",
+        "They built another tower",
+        "They spread out into nations across the earth"
+      ],
+      "correct_index": 2,
+      "explanation": "The nations spread out across the earth after the flood and Babel.",
+      "verse_ref": "Genesis 10:32"
+    },
+    {
+      "question": "Who was Abram's father?",
+      "options": [
+        "Terah",
+        "Noah",
+        "Adam"
+      ],
+      "correct_index": 0,
+      "explanation": "Terah was the father of Abram.",
+      "verse_ref": "Genesis 11:27"
+    },
+    {
+      "question": "What was the name of Abram's wife?",
+      "options": [
+        "Eve",
+        "Sarai",
+        "Rebekah"
+      ],
+      "correct_index": 1,
+      "explanation": "Abram's wife was named Sarai.",
+      "verse_ref": "Genesis 11:29"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You are near to everyone in every nation. Thank You for being near to me. Help me love people who are different from me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "All these families came from my family long ago! Yahweh watched over every one. And now He's about to do something amazing through Abram."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ],
+    "unlock": "family_tree"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

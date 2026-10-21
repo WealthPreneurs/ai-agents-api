@@ -1,0 +1,116 @@
+{
+  "day": 28,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: God Can Do All Things",
+  "scripture_passage": "Job 42",
+  "story_title": "Job Is Restored",
+  "summary": "Job trusted that God can do all things. He prayed for his friends, and God blessed the rest of his life even more than the beginning. Region 1 is complete!",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Garden of Beginnings! After God spoke from the storm, Job said, 'I know that You can do all things, and no plan of Yours can be stopped.' Job didn't have every answer, but he knew God, and that changed everything. Then God asked Job to pray for his three friends, the ones who had said wrong things. And Job did! He forgave them and prayed for them. After that, God restored Job. He gave him twice as much as he had before, and Job had seven sons and three daughters again. His daughters were the most beautiful in the land. God blessed the last part of Job's life even more than the first. Look how far you've come! You've seen creation, the garden, the first promise, Noah's rainbow, Babel, and Job. Through every story, one thing is true: Yahweh is with us, and He can do all things.",
+    "scenes": [
+      {
+        "caption": "Final Sabbath Camp of Region 1",
+        "art_direction": "Campfire at dusk overlooking the child's whole Eden village, now full of items they've built."
+      },
+      {
+        "caption": "'You can do all things'",
+        "art_direction": "Job standing tall in morning light, peaceful."
+      },
+      {
+        "caption": "Praying for his friends",
+        "art_direction": "Job with hands raised over his three friends, who bow their heads."
+      },
+      {
+        "caption": "Restored",
+        "art_direction": "Job's family and flocks growing again; joyful feast with seven sons and three daughters."
+      },
+      {
+        "caption": "Region 1 complete!",
+        "art_direction": "Map zooms out showing the Garden of Beginnings lit up gold; a path glows toward Region 2."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Job 42:2",
+    "text": "I know that you can do all things, and that no purpose of yours can be restrained.",
+    "translation": "WEB",
+    "tokens": [
+      "I know",
+      "that you can",
+      "do all things,",
+      "and that no purpose of yours",
+      "can be restrained."
+    ],
+    "distractors": [
+      "do some things,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is with me when life is hard.",
+    "reflection_prompt": "Milestone: Yahweh is with you when life is hard! Look back at your Blueprint journal from Region 1. What is your favorite truth you learned about who God says you are?",
+    "reflection_choices": [
+      "I am made in His image",
+      "He comes looking for me",
+      "He keeps His promises",
+      "He is with me in hard times"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What did Job say God can do?",
+      "options": [
+        "Only small things",
+        "All things",
+        "Nothing in a storm"
+      ],
+      "correct_index": 1,
+      "explanation": "Job said, 'I know that you can do all things.'",
+      "verse_ref": "Job 42:2"
+    },
+    {
+      "question": "What did Job do for his three friends?",
+      "options": [
+        "He prayed for them",
+        "He sent them away",
+        "He ignored them"
+      ],
+      "correct_index": 0,
+      "explanation": "Job prayed for his friends, and Yahweh restored his fortunes.",
+      "verse_ref": "Job 42:10"
+    },
+    {
+      "question": "How did God bless the last part of Job's life?",
+      "options": [
+        "Less than the beginning",
+        "The same as before",
+        "More than the beginning"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh blessed the latter end of Job more than his beginning.",
+      "verse_ref": "Job 42:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for this first part of my journey. You made me, You find me, You keep Your promises, and You are with me in hard times. You can do all things! Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "You finished the Garden of Beginnings! I'm so proud of you. Now it's time to meet a new friend. Joseph will guide you through the Land of Promises!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "garden_of_beginnings_crown"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

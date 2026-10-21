@@ -1,0 +1,115 @@
+{
+  "day": 18,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Safe with God",
+  "scripture_passage": "Genesis 7",
+  "story_title": "The Flood",
+  "summary": "Noah, his family, and the animals went into the ark, and Yahweh shut them in. It rained for forty days and nights, but God kept them safe.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "When the ark was finished, God told Noah, 'Go into the ark, you and your whole family.' The animals came two by two, birds and beasts and creeping things, and went inside. Noah, his wife, his three sons, and their wives, eight people in all, stepped in. Then the Bible says, 'Yahweh shut him in.' God Himself closed the door. Then the rain began. It poured for forty days and forty nights. Springs burst up from deep in the earth. The water rose higher and higher until it covered even the tallest mountains. Everything outside the ark was swept away. It was a sad and serious time, because people had turned away from God. But inside the ark, Noah's family and the animals were safe. The ark floated on the water, held up by God's care. When storms come in our lives, God is our safe place.",
+    "scenes": [
+      {
+        "caption": "Two by two",
+        "art_direction": "Joyful line of animal pairs walking up the ramp: giraffes ducking, elephants stomping, birds fluttering."
+      },
+      {
+        "caption": "Eight people",
+        "art_direction": "Noah's family waving as they step inside."
+      },
+      {
+        "caption": "Yahweh shut them in",
+        "art_direction": "A great glow closes the door with a gentle, solid 'thud.'"
+      },
+      {
+        "caption": "The rain",
+        "art_direction": "Heavy rain drumming on the roof; inside, warm lamplight and animals snuggled together."
+      },
+      {
+        "caption": "Floating safely",
+        "art_direction": "The ark riding calm waves under a gray sky; no depiction of people drowning."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 46:1",
+    "text": "God is our refuge and strength, a very present help in trouble.",
+    "translation": "WEB",
+    "tokens": [
+      "God is",
+      "our refuge",
+      "and strength,",
+      "a very present help",
+      "in trouble."
+    ],
+    "distractors": [
+      "a far away help"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is my safe place when storms come.",
+    "reflection_prompt": "Inside the ark, Noah's family was safe even in a huge storm. What is a 'storm' you have faced, and how did God help you?",
+    "reflection_choices": [
+      "Someone got sick",
+      "Moving or changing schools",
+      "A big fight or sad news",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Who shut the door of the ark?",
+      "options": [
+        "Noah",
+        "Yahweh",
+        "Noah's sons"
+      ],
+      "correct_index": 1,
+      "explanation": "After everyone was inside, Yahweh shut him in.",
+      "verse_ref": "Genesis 7:16"
+    },
+    {
+      "question": "How long did it rain?",
+      "options": [
+        "Forty days and forty nights",
+        "Seven days",
+        "One year"
+      ],
+      "correct_index": 0,
+      "explanation": "Rain fell on the earth for forty days and forty nights.",
+      "verse_ref": "Genesis 7:12"
+    },
+    {
+      "question": "How many people were inside the ark?",
+      "options": [
+        "Two",
+        "Twelve",
+        "Eight"
+      ],
+      "correct_index": 2,
+      "explanation": "Noah, his wife, his three sons, and their three wives: eight people.",
+      "verse_ref": "Genesis 7:13; 1 Peter 3:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my refuge and my strength. When storms come in my life, help me remember that I am safe with You. Thank You for always being near. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "When I think of that door closing, I think of Yahweh's hands keeping His people safe. Whatever storm you face, He's holding you too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: judgment in the Flood. Narration says 'everything outside the ark was swept away' and gives the reason; no drowning shown. Confirm tone."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "day": 24,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Loving God in Good Times",
+  "scripture_passage": "Job 1:1-12",
+  "story_title": "A Man Named Job",
+  "summary": "Job lived in the land of Uz and loved God with his whole heart. He was blameless and upright, and he prayed for his children.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Around this time in history, in a land called Uz, lived a man named Job. Job had a big family, seven sons and three daughters, and lots of animals: thousands of sheep, camels, oxen, and donkeys. He was one of the greatest men in the East. But the most important thing about Job wasn't his riches. The Bible says Job was blameless and upright. He loved God and turned away from evil. Job even got up early to pray and offer sacrifices for his children, just in case they had sinned. One day, the angels came before Yahweh, and Satan, God's enemy, came with them. God said, 'Have you seen My servant Job? There is no one like him.' Satan answered, 'Job only loves You because You've given him so many good things. Take them away, and he'll stop.' God allowed Satan to test Job, but set a limit. God was confident that Job's love was real.",
+    "scenes": [
+      {
+        "caption": "The land of Uz",
+        "art_direction": "Wide desert landscape with tents, flocks, and a large family home."
+      },
+      {
+        "caption": "Job's family",
+        "art_direction": "Job with his ten children, laughing together at a feast."
+      },
+      {
+        "caption": "Praying for his children",
+        "art_direction": "Early morning; Job kneeling at an altar as the sun rises."
+      },
+      {
+        "caption": "In the heavenly court",
+        "art_direction": "Abstract, majestic throne room of light; Satan shown as a shadowy figure, not a cartoon devil."
+      },
+      {
+        "caption": "A limit",
+        "art_direction": "A bright boundary line of light around Job's home."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 34:8",
+    "text": "Oh taste and see that Yahweh is good. Blessed is the man who takes refuge in him.",
+    "translation": "WEB",
+    "tokens": [
+      "Oh taste and see",
+      "that Yahweh is good.",
+      "Blessed is the man",
+      "who takes refuge",
+      "in him."
+    ],
+    "distractors": [
+      "who takes candy"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can love Yahweh for who He is, not just for what He gives me.",
+    "reflection_prompt": "Job loved God for who He is, not just for the good things God gave him. What do you love most about God Himself?",
+    "reflection_choices": [
+      "He is kind",
+      "He is powerful",
+      "He is always with me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "Where did Job live?",
+      "options": [
+        "Egypt",
+        "The land of Uz",
+        "Babel"
+      ],
+      "correct_index": 1,
+      "explanation": "There was a man in the land of Uz whose name was Job.",
+      "verse_ref": "Job 1:1"
+    },
+    {
+      "question": "How does the Bible describe Job?",
+      "options": [
+        "Blameless and upright, a man who loved God",
+        "A king of a great city",
+        "A shepherd boy"
+      ],
+      "correct_index": 0,
+      "explanation": "Job was blameless and upright, feared God, and turned away from evil.",
+      "verse_ref": "Job 1:1"
+    },
+    {
+      "question": "What did Job do for his children?",
+      "options": [
+        "Built them a tower",
+        "Sent them away",
+        "Prayed and offered sacrifices for them"
+      ],
+      "correct_index": 2,
+      "explanation": "Job rose early and offered sacrifices for each of his children.",
+      "verse_ref": "Job 1:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I love You because of who You are. Thank You for every good gift, but most of all, thank You for being my God. Help me love You in good times and hard times. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Job prayed for his children every morning. I wish I could have met him! This week we'll see how his love for God stayed strong."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Satan appears in the heavenly court (Job 1:6-12). Confirm the portrayal (shadowy figure, God sets the limit) and wording."
+  }
+}

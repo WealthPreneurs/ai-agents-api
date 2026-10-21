@@ -1,0 +1,110 @@
+{
+  "day": 14,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Found and Forgiven",
+  "scripture_passage": "Genesis 3",
+  "story_title": "Where Are You?",
+  "summary": "Sabbath Camp looks back at the garden: the sneaky question, the wrong choice, the God who came looking, and the first promise of a Rescuer.",
+  "story_reel": {
+    "duration_seconds": 95,
+    "narration": "Welcome back to Sabbath Camp! This week was a hard story, but a hope-filled one. Let's remember. God gave Adam and Eve a garden full of good things and one loving rule. A serpent asked a sneaky question and told a lie. Adam and Eve chose their own way and felt ashamed, so they hid. But then came the most important part: Yahweh came looking for them. He called, 'Where are you?' He didn't stop loving them. He promised a Rescuer who would crush the serpent's head, and that Rescuer is Jesus. He even made clothes to cover them. When you mess up, you might want to hide like Adam and Eve. But God is still calling your name. You can come out, tell Him the truth, and be forgiven.",
+    "scenes": [
+      {
+        "caption": "Back at camp",
+        "art_direction": "Campfire on the hillside; the garden gate and promise star visible below."
+      },
+      {
+        "caption": "Remembering the week",
+        "art_direction": "Storybook-page recap: the tree, the serpent, fig leaves, the hiding place."
+      },
+      {
+        "caption": "'Where are you?'",
+        "art_direction": "Warm light calling through the trees; the words glow gently."
+      },
+      {
+        "caption": "Come out and be forgiven",
+        "art_direction": "The child's avatar steps out from behind a tree into the warm light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 3:9",
+    "text": "Yahweh God called to the man, and said to him, \"Where are you?\"",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh God",
+      "called to the man,",
+      "and said to him,",
+      "\"Where are you?\""
+    ],
+    "distractors": [
+      "\"Go away!\""
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "When I mess up, Yahweh still comes looking for me.",
+    "reflection_prompt": "Milestone: You are found and forgiven! Write or draw a picture of you coming out of your hiding place and running to Yahweh.",
+    "reflection_choices": [
+      "I'm running to Him",
+      "He's giving me a hug",
+      "I'm telling Him the truth",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What did God call out to Adam?",
+      "options": [
+        "'Where are you?'",
+        "'Go away!'",
+        "'Who are you?'"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh called to the man, 'Where are you?'",
+      "verse_ref": "Genesis 3:9"
+    },
+    {
+      "question": "What did God promise in the garden?",
+      "options": [
+        "A bigger garden",
+        "A Rescuer who would crush the serpent's head",
+        "That nothing would ever be hard"
+      ],
+      "correct_index": 1,
+      "explanation": "God promised that the woman's offspring would crush the serpent's head.",
+      "verse_ref": "Genesis 3:15"
+    },
+    {
+      "question": "What did God make to cover Adam and Eve?",
+      "options": [
+        "Fig leaves",
+        "A tent",
+        "Clothes of animal skins"
+      ],
+      "correct_index": 2,
+      "explanation": "Adam and Eve made fig leaves, but God made them coats of skins.",
+      "verse_ref": "Genesis 3:21"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for always coming to find me. When I mess up, I don't have to hide. I can come to You and be forgiven because of Jesus. I love You. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "You've finished your second Realm! I know this part of my story is a sad one, but I hope you remember the best part: Yahweh comes looking for His children."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ],
+    "unlock": "found_and_forgiven_bench"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

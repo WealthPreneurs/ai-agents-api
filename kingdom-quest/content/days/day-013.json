@@ -1,0 +1,116 @@
+{
+  "day": 13,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Covered by His Care",
+  "scripture_passage": "Genesis 3:20-24",
+  "story_title": "Leaving the Garden",
+  "summary": "God made clothes of animal skins for Adam and Eve before they left the garden. Even when they had to leave, God cared for them.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Adam named his wife Eve, which means 'living,' because she would be the mother of all people. Then Yahweh God did something kind. Adam and Eve's fig leaves weren't enough. So God Himself made them clothes from animal skins and dressed them. Sin still had consequences. God sent Adam and Eve out of the Garden of Eden so they would not eat from the tree of life and live forever in their sin. He placed mighty cherubim, angels, and a flaming sword to guard the way back to the tree of life. It must have been hard to leave. But notice what God did first: He covered them. He cared for them. He sent them out with a promise in their hearts. Even when we face hard consequences, God doesn't stop caring for us. And one day, through Jesus, the way to the tree of life would open again.",
+    "scenes": [
+      {
+        "caption": "Eve, mother of all living",
+        "art_direction": "Adam speaking Eve's name as soft lettering appears: 'Eve = living.'"
+      },
+      {
+        "caption": "God makes them clothes",
+        "art_direction": "Warm light gently wraps Adam and Eve in simple, sturdy garments; fig leaves fall away."
+      },
+      {
+        "caption": "Leaving Eden",
+        "art_direction": "Adam and Eve walking out through the garden gate, looking back."
+      },
+      {
+        "caption": "The guarded way",
+        "art_direction": "Majestic cherubim of light and a flickering sword at the garden entrance; awe, not terror."
+      },
+      {
+        "caption": "A promise in their hearts",
+        "art_direction": "The promise star from yesterday shines above them as they walk into the wider world."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 3:21",
+    "text": "Yahweh God made coats of skins for Adam and for his wife, and clothed them.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh God",
+      "made coats of skins",
+      "for Adam",
+      "and for his wife,",
+      "and clothed them."
+    ],
+    "distractors": [
+      "and sent them away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh still takes care of me, even when I face hard consequences.",
+    "reflection_prompt": "God covered Adam and Eve before they left. How has someone shown you kindness even when you'd made a mistake?",
+    "reflection_choices": [
+      "A parent forgave me",
+      "A friend stayed kind",
+      "A teacher helped me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What name did Adam give his wife?",
+      "options": [
+        "Eve",
+        "Sarah",
+        "Miriam"
+      ],
+      "correct_index": 0,
+      "explanation": "Adam named her Eve because she would be the mother of all living.",
+      "verse_ref": "Genesis 3:20"
+    },
+    {
+      "question": "What did God make for Adam and Eve?",
+      "options": [
+        "A boat",
+        "Clothes from animal skins",
+        "A new garden"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh God made coats of skins for them and clothed them.",
+      "verse_ref": "Genesis 3:21"
+    },
+    {
+      "question": "What guarded the way to the tree of life?",
+      "options": [
+        "A fence",
+        "A lion",
+        "Cherubim and a flaming sword"
+      ],
+      "correct_index": 2,
+      "explanation": "God placed cherubim and a flaming sword to guard the way to the tree of life.",
+      "verse_ref": "Genesis 3:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for taking care of me, even when I make mistakes. Thank You for covering me with Your love. Thank You that Jesus opens the way back to You. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Leaving the garden was hard. But I'll always remember the moment Yahweh clothed us with His own hands. He never stopped caring for us."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "cedar_wood"
+    ],
+    "unlock": "garden_gate"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

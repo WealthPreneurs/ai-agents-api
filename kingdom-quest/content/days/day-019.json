@@ -1,0 +1,116 @@
+{
+  "day": 19,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Remembers",
+  "scripture_passage": "Genesis 8:1-19",
+  "story_title": "The Dove and the Olive Leaf",
+  "summary": "God remembered Noah. The waters went down, the ark rested on the mountains of Ararat, and a dove returned with an olive leaf.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "For many months, Noah's family floated on the water. Then the Bible says, 'God remembered Noah.' God never forgot him, but now it was time to act. God sent a wind across the earth, and the waters began to go down. The ark came to rest on the mountains of Ararat. Noah waited. Then he opened a window and sent out a raven, which flew back and forth. Next, he sent out a dove, but it found no place to land and came back. Seven days later, Noah sent the dove out again. That evening it returned with a fresh olive leaf in its beak! Noah knew the land was drying out. Seven more days, and the dove didn't come back at all. Finally, God said, 'Come out of the ark!' Noah's family and all the animals stepped onto dry ground. God remembers His people, and He keeps the seasons turning, just as He promised.",
+    "scenes": [
+      {
+        "caption": "God remembered Noah",
+        "art_direction": "A warm wind sweeps across the endless water; ripples spread."
+      },
+      {
+        "caption": "Resting on Ararat",
+        "art_direction": "The ark bumps gently onto a mountaintop as the waters lower."
+      },
+      {
+        "caption": "The raven and the dove",
+        "art_direction": "Noah releasing birds from a window; the dove returns tired."
+      },
+      {
+        "caption": "An olive leaf!",
+        "art_direction": "Close-up of the dove with a bright green leaf; Noah's family cheers."
+      },
+      {
+        "caption": "Come out!",
+        "art_direction": "The door opens; animals burst out onto fresh green ground."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 8:22",
+    "text": "While the earth remains, seed time and harvest, and cold and heat, and summer and winter, and day and night will not cease.",
+    "translation": "WEB",
+    "tokens": [
+      "While the earth remains,",
+      "seed time and harvest,",
+      "and cold and heat,",
+      "and summer and winter,",
+      "and day and night",
+      "will not cease."
+    ],
+    "distractors": [
+      "will soon stop."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh never forgets me, even when I have to wait.",
+    "reflection_prompt": "Noah had to wait a long time inside the ark. What is something you are waiting for right now?",
+    "reflection_choices": [
+      "An answer to a prayer",
+      "Something to get better",
+      "A special day",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What did God send to make the waters go down?",
+      "options": [
+        "A wind",
+        "Fire",
+        "An earthquake"
+      ],
+      "correct_index": 0,
+      "explanation": "God remembered Noah and made a wind pass over the earth, and the waters went down.",
+      "verse_ref": "Genesis 8:1"
+    },
+    {
+      "question": "Where did the ark come to rest?",
+      "options": [
+        "On a beach",
+        "On the mountains of Ararat",
+        "In a desert"
+      ],
+      "correct_index": 1,
+      "explanation": "The ark rested on the mountains of Ararat.",
+      "verse_ref": "Genesis 8:4"
+    },
+    {
+      "question": "What did the dove bring back?",
+      "options": [
+        "A fish",
+        "A seashell",
+        "An olive leaf"
+      ],
+      "correct_index": 2,
+      "explanation": "The dove came back with a freshly plucked olive leaf in its mouth.",
+      "verse_ref": "Genesis 8:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You never forget me. When I have to wait, help me be patient like Noah and trust that You are working. Thank You for every season. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Waiting is hard, isn't it? Noah waited and waited, and Yahweh remembered him at just the right time. He remembers you too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ],
+    "unlock": "dove_nest"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

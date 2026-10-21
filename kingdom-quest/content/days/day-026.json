@@ -1,0 +1,114 @@
+{
+  "day": 26,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Being There for a Friend",
+  "scripture_passage": "Job 2:11-13; 3; 42:7",
+  "story_title": "Friends Who Sat Close",
+  "summary": "Job's three friends came to comfort him and sat with him in silence for seven days. Later they said things that weren't true about God, and God corrected them.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "When Job's three friends, Eliphaz, Bildad, and Zophar, heard about everything that had happened, they traveled from far away to comfort him. When they saw Job from a distance, they almost didn't recognize him. They cried out loud and tore their robes. Then they did something very wise. They sat down on the ground with Job for seven days and seven nights, and no one said a word. They could see how much he was hurting. Sometimes the best thing a friend can do is just be there. After seven days, Job finally spoke. He poured out his sadness and his questions. Then his friends started talking, and talking, and talking. They kept saying, 'You must have done something wrong to deserve this.' But that wasn't true! At the end of the story, God told the friends they had not spoken rightly about Him. Good friends don't need all the answers. They just need to stay close and love.",
+    "scenes": [
+      {
+        "caption": "Three friends travel",
+        "art_direction": "Three travelers crossing the desert on camels."
+      },
+      {
+        "caption": "They cried",
+        "art_direction": "Friends seeing Job from a distance, hands over their mouths."
+      },
+      {
+        "caption": "Seven days of silence",
+        "art_direction": "Four figures sitting on the ground as days pass; sun and moon cycle overhead."
+      },
+      {
+        "caption": "Too many words",
+        "art_direction": "Speech bubbles pile up over the friends; Job looks tired."
+      },
+      {
+        "caption": "Stay close and love",
+        "art_direction": "Symbolic final frame: an arm around a shoulder, warm glow."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Romans 12:15",
+    "text": "Rejoice with those who rejoice. Weep with those who weep.",
+    "translation": "WEB",
+    "tokens": [
+      "Rejoice",
+      "with those who rejoice.",
+      "Weep",
+      "with those who weep."
+    ],
+    "distractors": [
+      "Laugh at those who weep."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be a friend who stays close when someone is hurting.",
+    "reflection_prompt": "Job's friends sat with him for seven days without saying a word. Who is someone you could be there for this week?",
+    "reflection_choices": [
+      "A friend who is sad",
+      "Someone in my family",
+      "A kid who is new or alone",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "empathy"
+  },
+  "quiz": [
+    {
+      "question": "Who were Job's three friends?",
+      "options": [
+        "Shem, Ham, and Japheth",
+        "Eliphaz, Bildad, and Zophar",
+        "Adam, Cain, and Abel"
+      ],
+      "correct_index": 1,
+      "explanation": "Eliphaz, Bildad, and Zophar came to comfort Job.",
+      "verse_ref": "Job 2:11"
+    },
+    {
+      "question": "How long did the friends sit with Job without speaking?",
+      "options": [
+        "Seven days and seven nights",
+        "One hour",
+        "Forty days"
+      ],
+      "correct_index": 0,
+      "explanation": "They sat with him on the ground seven days and seven nights, and no one spoke.",
+      "verse_ref": "Job 2:13"
+    },
+    {
+      "question": "What did God say about the friends' words at the end of the story?",
+      "options": [
+        "They were very wise",
+        "They were funny",
+        "They had not spoken rightly about Him"
+      ],
+      "correct_index": 2,
+      "explanation": "God told Eliphaz that he and his friends had not spoken what was right about Him.",
+      "verse_ref": "Job 42:7"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me be a good friend. When someone is hurting, help me stay close, listen, and love them. Thank You for the friends who are there for me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Being a good friend doesn't mean having all the answers. Sometimes it just means sitting close and caring. You can do that for someone this week!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "friendship_bench"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "day": 16,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Walking with God",
+  "scripture_passage": "Genesis 5:21-24; 6:1-10",
+  "story_title": "Noah Finds Favor",
+  "summary": "As the world filled with people, it also filled with evil. But Enoch walked with God, and Noah found favor in Yahweh's eyes.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Many years passed. People spread out, built cities, and had families. In one family lived a man named Enoch. The Bible says something beautiful about him: 'Enoch walked with God.' He stayed close to God every day. And one day, God simply took Enoch to be with Him. But as time went on, most people stopped walking with God. Their hearts became full of evil, and the earth filled with violence. Yahweh was grieved. It hurt His heart to see His good world spoiled. But one man was different. His name was Noah. The Bible says, 'Noah found favor in Yahweh's eyes.' Noah walked with God, just like Enoch had. He had three sons named Shem, Ham, and Japheth. Even when everyone around you is choosing wrong, you can choose to walk with God. One faithful heart matters to Him.",
+    "scenes": [
+      {
+        "caption": "The world fills up",
+        "art_direction": "Isometric cities and farms spreading across the land."
+      },
+      {
+        "caption": "Enoch walked with God",
+        "art_direction": "A man walking along a sunlit path beside a soft column of light."
+      },
+      {
+        "caption": "Hearts turn away",
+        "art_direction": "City colors turn harsh and gray; people turning their backs on the light."
+      },
+      {
+        "caption": "Yahweh is grieved",
+        "art_direction": "Rain-like streaks of light falling softly; quiet, sorrowful music."
+      },
+      {
+        "caption": "Noah is different",
+        "art_direction": "Noah and his three sons standing in a single bright spot in a gray landscape."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 6:8",
+    "text": "But Noah found favor in Yahweh's eyes.",
+    "translation": "WEB",
+    "tokens": [
+      "But Noah",
+      "found favor",
+      "in Yahweh's eyes."
+    ],
+    "distractors": [
+      "in the king's eyes."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can walk with Yahweh even when others don't.",
+    "reflection_prompt": "Noah walked with God even when no one else did. Where is it hard for you to follow God when others don't?",
+    "reflection_choices": [
+      "At school",
+      "With my friends",
+      "Online or playing games",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What does the Bible say about Enoch?",
+      "options": [
+        "He built a tower",
+        "He walked with God",
+        "He was a king"
+      ],
+      "correct_index": 1,
+      "explanation": "Enoch walked with God, and then God took him.",
+      "verse_ref": "Genesis 5:24"
+    },
+    {
+      "question": "Why was Yahweh grieved?",
+      "options": [
+        "People's hearts were full of evil",
+        "It didn't rain enough",
+        "The animals were loud"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh saw that people's hearts were full of evil, and it grieved His heart.",
+      "verse_ref": "Genesis 6:5-6"
+    },
+    {
+      "question": "What were the names of Noah's three sons?",
+      "options": [
+        "Cain, Abel, and Seth",
+        "Abraham, Isaac, and Jacob",
+        "Shem, Ham, and Japheth"
+      ],
+      "correct_index": 2,
+      "explanation": "Noah had three sons: Shem, Ham, and Japheth.",
+      "verse_ref": "Genesis 6:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to walk with You every day like Enoch and Noah. When it's hard to follow You, help me stay close to You. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "I lived long before Noah, but I prayed for families like his. One person who walks with God can change the whole story."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "walking_path"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

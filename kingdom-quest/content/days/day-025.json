@@ -1,0 +1,116 @@
+{
+  "day": 25,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Trusting God in Hard Times",
+  "scripture_passage": "Job 1:13-2:10",
+  "story_title": "Job's Hardest Days",
+  "summary": "Job lost his animals, his servants, his children, and his health. In his grief, he fell down and worshiped, saying, 'Blessed be Yahweh's name.'",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Then came Job's hardest days. One messenger ran to Job: 'Raiders took your oxen and donkeys!' Before he finished, another came: 'Fire fell and burned up the sheep!' Then another: 'Your camels were stolen!' And then the worst news of all. A great wind had knocked down the house where Job's children were eating together, and they had died. Job's heart broke. He tore his robe and shaved his head, which is what people did when they were deeply sad. Then Job fell to the ground and worshiped. He said, 'Yahweh gave, and Yahweh has taken away. Blessed be Yahweh's name.' Later, Job even became very sick, with painful sores all over his body. His wife told him to give up on God, but Job said, 'Shall we accept good from God, and not trouble?' Job was sad, and that was okay. But in all this, Job did not sin. He kept trusting God.",
+    "scenes": [
+      {
+        "caption": "Messengers arrive",
+        "art_direction": "A series of running messengers approaching Job's tent; sky darkening."
+      },
+      {
+        "caption": "Terrible news",
+        "art_direction": "Job listening, hand over his heart; no depiction of the deaths, only an empty feast table."
+      },
+      {
+        "caption": "A broken heart",
+        "art_direction": "Job with his torn robe, sitting in quiet sorrow; soft, gentle music."
+      },
+      {
+        "caption": "He worshiped",
+        "art_direction": "Job kneeling with face to the ground; a faint warm light remains around him."
+      },
+      {
+        "caption": "Still trusting",
+        "art_direction": "Job, now sick and sitting on ash, looking up; his eyes still holding hope."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Job 1:21",
+    "text": "Yahweh gave, and Yahweh has taken away. Blessed be Yahweh's name.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh gave,",
+      "and Yahweh",
+      "has taken away.",
+      "Blessed be",
+      "Yahweh's name."
+    ],
+    "distractors": [
+      "Forgotten be"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is with me when life is hard, and I can be sad and still trust Him.",
+    "reflection_prompt": "Job was very sad, and he still trusted God. Is there something sad in your life you want to tell God about?",
+    "reflection_choices": [
+      "Someone I miss",
+      "Something I lost",
+      "Something that hurts",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did Job do after he heard the terrible news?",
+      "options": [
+        "He ran away",
+        "He fell to the ground and worshiped",
+        "He got angry at God"
+      ],
+      "correct_index": 1,
+      "explanation": "Job tore his robe, fell to the ground, and worshiped.",
+      "verse_ref": "Job 1:20"
+    },
+    {
+      "question": "What did Job say?",
+      "options": [
+        "'Yahweh gave, and Yahweh has taken away. Blessed be Yahweh's name.'",
+        "'This isn't fair!'",
+        "'I don't believe in God anymore.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Job said, 'Yahweh gave, and Yahweh has taken away. Blessed be Yahweh's name.'",
+      "verse_ref": "Job 1:21"
+    },
+    {
+      "question": "Did Job sin by blaming God?",
+      "options": [
+        "Yes, many times",
+        "Only once",
+        "No, in all this Job did not sin"
+      ],
+      "correct_index": 2,
+      "explanation": "In all this, Job didn't sin or blame God.",
+      "verse_ref": "Job 1:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, sometimes life is really hard and I feel sad. Thank You that I can tell You how I feel. Help me trust You like Job did, even when I don't understand. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Job's story is a sad one, and it's okay to feel sad hearing it. If something sad is happening in your life, talk to God and to a grown-up you trust. You're not alone."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the death of Job's children (Job 1:18-19). Companion message points kids to a trusted grown-up. Consider a parent heads-up card before this day."
+  }
+}

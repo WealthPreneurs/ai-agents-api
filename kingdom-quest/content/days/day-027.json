@@ -1,0 +1,120 @@
+{
+  "day": 27,
+  "month": 1,
+  "realm": 4,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Is Bigger",
+  "scripture_passage": "Job 38-41",
+  "story_title": "God Speaks from the Storm",
+  "summary": "God answered Job out of a whirlwind, asking him about the wonders of creation. Job saw that God is far bigger and wiser than he could imagine.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Job had asked God many questions. Why did this happen? Where are You? Finally, God answered, out of a mighty storm! But instead of explaining everything, God asked Job questions. 'Where were you when I laid the foundations of the earth? Tell Me, if you understand! Who decided how big it would be? Who told the ocean, This far and no farther? Have you ever commanded the morning to begin? Can you send lightning bolts and make them say, Here we are? Who gives the horse its strength? Does the eagle fly high because you command it?' God talked about lions, ravens, mountain goats, wild donkeys, ostriches, and enormous creatures in the sea. Question after question showed Job how big, wise, and powerful God is. God didn't tell Job every reason. But He showed Job something even better: Himself. When you don't understand what's happening, remember who holds the whole world.",
+    "scenes": [
+      {
+        "caption": "Out of the storm",
+        "art_direction": "A great whirlwind on the horizon, radiant with light; Job shielding his eyes. Awe, not fear."
+      },
+      {
+        "caption": "The foundations of the earth",
+        "art_direction": "Planet earth assembling like a model, mountains placed like building blocks."
+      },
+      {
+        "caption": "This far and no farther",
+        "art_direction": "Ocean waves rushing up to a shoreline and stopping exactly at a glowing line."
+      },
+      {
+        "caption": "Lightning says 'Here we are!'",
+        "art_direction": "Playful lightning bolts bowing in the sky."
+      },
+      {
+        "caption": "Horse, eagle, and more",
+        "art_direction": "Majestic animal montage: galloping horse, soaring eagle, ostrich, mountain goats."
+      },
+      {
+        "caption": "Job sees God",
+        "art_direction": "Job kneeling, small against the wide sky, peaceful."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Job 38:4",
+    "text": "Where were you when I laid the foundations of the earth? Declare, if you have understanding.",
+    "translation": "WEB",
+    "tokens": [
+      "Where were you",
+      "when I laid",
+      "the foundations",
+      "of the earth?",
+      "Declare,",
+      "if you have understanding."
+    ],
+    "distractors": [
+      "of the tower?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is bigger and wiser than any problem I face.",
+    "reflection_prompt": "God showed Job how big and wise He is. What is a question you would like to ask God?",
+    "reflection_choices": [
+      "Why do sad things happen?",
+      "How did You make everything?",
+      "What is my purpose?",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "curiosity"
+  },
+  "quiz": [
+    {
+      "question": "How did God answer Job?",
+      "options": [
+        "In a dream",
+        "Out of a whirlwind",
+        "Through a letter"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh answered Job out of the whirlwind.",
+      "verse_ref": "Job 38:1"
+    },
+    {
+      "question": "What was one of God's first questions to Job?",
+      "options": [
+        "'Where were you when I laid the foundations of the earth?'",
+        "'Why are you sad?'",
+        "'What is your name?'"
+      ],
+      "correct_index": 0,
+      "explanation": "God asked, 'Where were you when I laid the foundations of the earth?'",
+      "verse_ref": "Job 38:4"
+    },
+    {
+      "question": "Which of these animals did God ask Job about?",
+      "options": [
+        "The kangaroo",
+        "The penguin",
+        "The eagle"
+      ],
+      "correct_index": 2,
+      "explanation": "God asked, 'Is it at your command that the eagle mounts up?'",
+      "verse_ref": "Job 39:27"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are so big and so wise! When I don't understand what's happening, help me remember that You hold the whole world, and You hold me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "God didn't give Job every answer, but He gave Job Himself. And that was enough. You can bring your big questions to Him too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "stargazing_hill"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "day": 4,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Every Creature Is His",
+  "scripture_passage": "Genesis 1:20-25",
+  "story_title": "Fish, Birds, and Every Animal",
+  "summary": "God filled the seas with fish, the sky with birds, and the land with every kind of animal, and He saw that it was good.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "On the fifth day, God said, 'Let the waters swarm with living creatures, and let birds fly across the sky!' Splash! The seas filled with fish of every color, from tiny shimmering minnows to enormous sea creatures. Whoosh! Birds took off into the air, singing, soaring, and flapping. God blessed them and said, 'Be fruitful and multiply. Fill the seas and the skies!' Then, on the sixth day, God said, 'Let the land bring out living creatures!' Out came cattle and creeping things and wild animals of every kind. Elephants with long trunks. Rabbits with twitching noses. Ladybugs with tiny spots. Each one was made 'after its kind,' different and special. And God saw that it was good. Every animal you have ever seen at the zoo, in your backyard, or in a book was God's idea first.",
+    "scenes": [
+      {
+        "caption": "The seas come alive",
+        "art_direction": "Underwater scene bursting with colorful fish; a gentle whale glides past."
+      },
+      {
+        "caption": "Birds take flight",
+        "art_direction": "Flocks rise from sea cliffs in sweeping patterns."
+      },
+      {
+        "caption": "'Be fruitful and multiply!'",
+        "art_direction": "Nests with eggs, schools of fish growing larger; warm blessing glow."
+      },
+      {
+        "caption": "Animals on the land",
+        "art_direction": "Playful parade: elephant, rabbit, lion, ladybug, giraffe, each popping in with a sound."
+      },
+      {
+        "caption": "It was good.",
+        "art_direction": "Wide shot of the whole living world at golden hour."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 1:25",
+    "text": "God saw that it was good.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "God saw",
+      "that it",
+      "was good."
+    ],
+    "distractors": [
+      "was bad."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh made every creature different, and He made me different on purpose too.",
+    "reflection_prompt": "God made every animal after its own kind, all different. What is one way God made you different from everyone else?",
+    "reflection_choices": [
+      "The way I look",
+      "Something I am good at",
+      "Something I love to do",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "image_bearer"
+  },
+  "quiz": [
+    {
+      "question": "What did God make on the fifth day?",
+      "options": [
+        "Fish and birds",
+        "People",
+        "The sun"
+      ],
+      "correct_index": 0,
+      "explanation": "On the fifth day God filled the waters with creatures and the sky with birds.",
+      "verse_ref": "Genesis 1:20-21"
+    },
+    {
+      "question": "What did God tell the fish and birds to do?",
+      "options": [
+        "Stay small",
+        "Be fruitful and multiply",
+        "Go to sleep"
+      ],
+      "correct_index": 1,
+      "explanation": "God blessed them and said, 'Be fruitful and multiply.'",
+      "verse_ref": "Genesis 1:22"
+    },
+    {
+      "question": "What did God think when He looked at the land animals?",
+      "options": [
+        "It was too many",
+        "It was unfinished",
+        "It was good"
+      ],
+      "correct_index": 2,
+      "explanation": "God saw that it was good. Every creature was His good idea.",
+      "verse_ref": "Genesis 1:25"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for every fish, bird, and animal. You are so creative! Thank You for making me different on purpose. Help me take care of the creatures You made. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Can you imagine meeting every animal for the very first time? Each one shows something about how creative Yahweh is, and so do you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "garden_animals"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

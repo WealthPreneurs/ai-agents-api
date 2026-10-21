@@ -1,0 +1,116 @@
+{
+  "day": 5,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Very Good",
+  "scripture_passage": "Genesis 1:26-31",
+  "story_title": "People Made in God's Image",
+  "summary": "God made people in His own image to know Him and care for His world. When He looked at everything He had made, it was very good.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Everything was ready: light, sky, seas, plants, stars, and animals. Then God did something He had not done before. He said, 'Let us make people in our image, to be like us.' So God created people in His own image, male and female. That means people are like a mirror that can show what God is like. We can love, create, think, choose, and talk with God. No animal, no star, no mountain was made like that. Then God blessed the man and the woman. He gave them a big job: to fill the earth and take care of every living creature. He gave them plants and fruit for food. Then God looked at everything He had made, and it was not just good. It was very good! You were made in God's image too. That is the most important thing about you.",
+    "scenes": [
+      {
+        "caption": "Everything is ready",
+        "art_direction": "Slow pan across the finished world, quiet and expectant."
+      },
+      {
+        "caption": "'Let us make people'",
+        "art_direction": "Soft radiant light gathers over the garden; God is never shown with a face, only light."
+      },
+      {
+        "caption": "Made in His image",
+        "art_direction": "A man and a woman, warm diverse skin tones, opening their eyes with wonder; a mirror-like shimmer passes over them."
+      },
+      {
+        "caption": "A big job",
+        "art_direction": "The couple tending plants and gently greeting animals."
+      },
+      {
+        "caption": "Very good!",
+        "art_direction": "Hand-lettered 'Very Good!' sparkles across a sunset sky."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 1:31",
+    "text": "God saw everything that he had made, and, behold, it was very good.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "God saw everything",
+      "that he had made,",
+      "and, behold,",
+      "it was very good."
+    ],
+    "distractors": [
+      "it was okay."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am made in Yahweh's image, and He calls me very good.",
+    "reflection_prompt": "Being made in God's image means you can love, create, think, and talk with Him. Which of these do you most enjoy doing?",
+    "reflection_choices": [
+      "Loving and helping people",
+      "Creating and making things",
+      "Thinking and learning",
+      "Talking with God"
+    ],
+    "trait_unlocked": "image_bearer"
+  },
+  "quiz": [
+    {
+      "question": "What job did God give people?",
+      "options": [
+        "To take care of the earth and its creatures",
+        "To build tall towers",
+        "To count the stars"
+      ],
+      "correct_index": 0,
+      "explanation": "God told people to fill the earth and care for every living creature.",
+      "verse_ref": "Genesis 1:28"
+    },
+    {
+      "question": "What food did God give people at first?",
+      "options": [
+        "Candy",
+        "Plants and fruit with seeds",
+        "Nothing"
+      ],
+      "correct_index": 1,
+      "explanation": "God gave them every plant with seeds and every tree with fruit for food.",
+      "verse_ref": "Genesis 1:29"
+    },
+    {
+      "question": "How did God describe everything after He made people?",
+      "options": [
+        "Good enough",
+        "Not finished",
+        "Very good"
+      ],
+      "correct_index": 2,
+      "explanation": "God saw everything He had made, and it was very good!",
+      "verse_ref": "Genesis 1:31"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for making me in Your image. Thank You that You call Your creation very good. Help me show what You are like by how I love, think, and create. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "The very first thing I knew was that I was made by God and loved by Him. That is true about you too. You are His image bearer!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "river_stone"
+    ],
+    "unlock": "image_bearer_mirror_pond"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

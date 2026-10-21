@@ -1,0 +1,115 @@
+{
+  "day": 17,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Obeying When It's Hard",
+  "scripture_passage": "Genesis 6:11-22",
+  "story_title": "Build an Ark!",
+  "summary": "God told Noah to build a huge boat called an ark to save his family and the animals. Noah did everything God commanded.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "God spoke to Noah: 'I am going to send a flood on the earth. But I will make a covenant with you. Build an ark.' An ark is an enormous boat. God gave Noah exact instructions. Make it out of gopher wood. Cover it with pitch inside and out to keep the water out. Make it about 450 feet long. That's longer than a football field! Give it three decks, a roof, and a door in the side. Then bring your family inside, along with two of every kind of animal, a male and a female, and plenty of food. Imagine Noah's neighbors watching him build a giant boat on dry land! It probably looked silly. But the Bible says, 'Noah did everything just as God commanded him.' Noah trusted God even before he could see the rain. Obeying God sometimes means doing something before we understand it all.",
+    "scenes": [
+      {
+        "caption": "God speaks to Noah",
+        "art_direction": "Noah kneeling in a field as warm light surrounds him."
+      },
+      {
+        "caption": "The plans",
+        "art_direction": "Blueprint-style animation of the ark with measurements and three decks."
+      },
+      {
+        "caption": "Longer than a football field!",
+        "art_direction": "Scale comparison: the ark beside a modern sports field."
+      },
+      {
+        "caption": "Neighbors stare",
+        "art_direction": "People pointing and shaking heads as Noah's family hammers away; light comedic beat."
+      },
+      {
+        "caption": "Everything God commanded",
+        "art_direction": "The finished ark at sunset, door open, Noah smiling."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 6:22",
+    "text": "Thus Noah did. According to all that God commanded him, so he did.",
+    "translation": "WEB",
+    "tokens": [
+      "Thus Noah did.",
+      "According to all",
+      "that God commanded him,",
+      "so he did."
+    ],
+    "distractors": [
+      "so he waited."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can obey Yahweh even when I don't understand everything yet.",
+    "reflection_prompt": "Noah obeyed God even when it looked silly to others. What is one thing God asks you to do that's hard to obey?",
+    "reflection_choices": [
+      "Being kind when someone isn't",
+      "Telling the truth",
+      "Listening to my parents",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What kind of wood did God tell Noah to use?",
+      "options": [
+        "Gopher wood",
+        "Pine wood",
+        "Bamboo"
+      ],
+      "correct_index": 0,
+      "explanation": "God told Noah to make the ark of gopher wood.",
+      "verse_ref": "Genesis 6:14"
+    },
+    {
+      "question": "How many of each kind of animal did Noah bring?",
+      "options": [
+        "Ten",
+        "Two, a male and a female",
+        "One"
+      ],
+      "correct_index": 1,
+      "explanation": "God said to bring two of every kind, male and female, to keep them alive.",
+      "verse_ref": "Genesis 6:19"
+    },
+    {
+      "question": "How much of God's instructions did Noah follow?",
+      "options": [
+        "Only the easy parts",
+        "Half of them",
+        "Everything God commanded"
+      ],
+      "correct_index": 2,
+      "explanation": "Noah did everything just as God commanded him.",
+      "verse_ref": "Genesis 6:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me trust and obey You, even when I don't understand everything. Make me faithful like Noah, even if others think it's silly. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Imagine building something that big for years and years before seeing a single raindrop! Noah's faith shows us that obeying God is always worth it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "cedar_wood"
+    ],
+    "unlock": "ark_workshop"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

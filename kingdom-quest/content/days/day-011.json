@@ -1,0 +1,110 @@
+{
+  "day": 11,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Owning My Choices",
+  "scripture_passage": "Genesis 3:11-19",
+  "story_title": "The Blame Game",
+  "summary": "When God asked what happened, Adam blamed Eve and Eve blamed the serpent. Sin brought hard consequences into God's good world.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "God asked Adam a simple question: 'Did you eat from the tree I told you not to eat from?' Adam could have said, 'Yes, I did. I'm sorry.' Instead, he pointed at Eve and said, 'The woman You gave me, she gave me the fruit.' He even blamed God a little! Then God asked Eve, 'What have you done?' And Eve pointed at the serpent: 'The serpent tricked me.' Everyone blamed someone else. Sound familiar? Then God explained that sin would bring hard things into the world. The serpent would crawl on its belly. Having children would hurt. Work would become hard, with thorns and thistles growing in the fields. And one day, people's bodies would return to the dust. Sin has real consequences. But hiding and blaming never fix it. The Bible tells us there is a better way: telling the truth, and finding mercy.",
+    "scenes": [
+      {
+        "caption": "A simple question",
+        "art_direction": "Adam and Eve standing before soft radiant light in the dimmed garden."
+      },
+      {
+        "caption": "Pointing fingers",
+        "art_direction": "Adam points at Eve, Eve points at the serpent; a playful but honest 'blame chain' animation."
+      },
+      {
+        "caption": "Thorns and thistles",
+        "art_direction": "Prickly weeds growing in a field Adam is trying to dig; he wipes his brow."
+      },
+      {
+        "caption": "A better way",
+        "art_direction": "The blame arrows fade away, replaced by an open hand and the word 'Truth.'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 28:13",
+    "text": "He who conceals his sins doesn't prosper, but whoever confesses and renounces them finds mercy.",
+    "translation": "WEB",
+    "tokens": [
+      "He who conceals his sins",
+      "doesn't prosper,",
+      "but whoever confesses",
+      "and renounces them",
+      "finds mercy."
+    ],
+    "distractors": [
+      "finds trouble."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can tell Yahweh the truth, and He gives me mercy.",
+    "reflection_prompt": "Adam and Eve blamed someone else. Why do you think it's hard to say 'I did it, and I'm sorry'?",
+    "reflection_choices": [
+      "I'm afraid of getting in trouble",
+      "I feel embarrassed",
+      "I want to look good",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "Who did Adam blame?",
+      "options": [
+        "The woman",
+        "The serpent",
+        "No one"
+      ],
+      "correct_index": 0,
+      "explanation": "Adam said, 'The woman whom you gave to be with me, she gave me fruit.'",
+      "verse_ref": "Genesis 3:12"
+    },
+    {
+      "question": "Who did Eve blame?",
+      "options": [
+        "Adam",
+        "The serpent",
+        "The animals"
+      ],
+      "correct_index": 1,
+      "explanation": "Eve said, 'The serpent deceived me, and I ate.'",
+      "verse_ref": "Genesis 3:13"
+    },
+    {
+      "question": "What would make Adam's work in the fields hard?",
+      "options": [
+        "Too much rain",
+        "Hungry birds",
+        "Thorns and thistles"
+      ],
+      "correct_index": 2,
+      "explanation": "God said the ground would grow thorns and thistles, making work hard.",
+      "verse_ref": "Genesis 3:18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I do something wrong, help me not to hide or blame others. Give me courage to tell the truth. Thank You that You give mercy to people who confess. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Adam and I blamed everyone but ourselves. I've learned since then: telling the truth is scary for a moment, but it leads to mercy."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

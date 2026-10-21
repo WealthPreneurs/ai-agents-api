@@ -1,0 +1,114 @@
+{
+  "day": 2,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Yahweh Speaks Light",
+  "scripture_passage": "Genesis 1:3-10",
+  "story_title": "Light, Sky, and Sea",
+  "summary": "On the first days of creation, God spoke light into the darkness, stretched out the sky, and gathered the waters into seas so dry land appeared.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Imagine the deepest darkness you can think of. No sun, no lamps, not even a tiny star. Then God spoke: 'Let there be light!' And there was light. God saw that the light was good, and He separated it from the darkness. He called the light 'day' and the darkness 'night.' That was the first day. Next, God made a great open space, the sky, to divide the waters above from the waters below. That was the second day. Then God said, 'Let the waters be gathered into one place, and let dry land appear.' The waves rushed back, and mountains and beaches rose up. God called the dry land 'earth' and the waters 'seas.' And God saw that it was good. Nothing is too dark for Yahweh. One word from Him changes everything.",
+    "scenes": [
+      {
+        "caption": "Darkness everywhere",
+        "art_direction": "Soft black-indigo screen with faint swirling water texture; gentle ambient hum."
+      },
+      {
+        "caption": "'Let there be light!'",
+        "art_direction": "A sunrise-colored burst spreads outward; the screen splits into a bright half and a starless dark half."
+      },
+      {
+        "caption": "Day and night",
+        "art_direction": "Labels 'Day' and 'Night' float in hand-lettered type as the light settles."
+      },
+      {
+        "caption": "The sky opens up",
+        "art_direction": "Clouds lift upward, revealing a wide blue dome above the waters."
+      },
+      {
+        "caption": "Seas and dry land",
+        "art_direction": "Monument Valley-style terraced land rising from rolling waves; beaches and hills appear."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 1:3",
+    "text": "God said, \"Let there be light,\" and there was light.",
+    "translation": "WEB",
+    "tokens": [
+      "God said,",
+      "\"Let there be light,\"",
+      "and there was",
+      "light."
+    ],
+    "distractors": [
+      "and there was sound."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can bring light into any dark place in my life.",
+    "reflection_prompt": "God turned darkness into light. Is there something that feels dark or scary to you that you want to give to Yahweh?",
+    "reflection_choices": [
+      "Being afraid at night",
+      "Feeling lonely",
+      "Something that worries me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What did God call the light?",
+      "options": [
+        "Day",
+        "Night",
+        "Sun"
+      ],
+      "correct_index": 0,
+      "explanation": "God called the light 'day' and the darkness 'night.'",
+      "verse_ref": "Genesis 1:5"
+    },
+    {
+      "question": "What did God make on the second day?",
+      "options": [
+        "The animals",
+        "The sky",
+        "The trees"
+      ],
+      "correct_index": 1,
+      "explanation": "On the second day God made the sky to divide the waters above from the waters below.",
+      "verse_ref": "Genesis 1:6-8"
+    },
+    {
+      "question": "What did God call the waters He gathered together?",
+      "options": [
+        "Rivers",
+        "Puddles",
+        "Seas"
+      ],
+      "correct_index": 2,
+      "explanation": "God called the dry land 'earth' and the gathered waters 'seas.'",
+      "verse_ref": "Genesis 1:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You spoke and light appeared. When something feels dark or scary, help me remember that You are stronger than the dark. Shine Your light in me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "I never saw the world before the light, but I loved every sunrise in the garden. Each morning reminds us that Yahweh's light always wins."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "eden_sunrise_backdrop"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

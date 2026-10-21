@@ -1,0 +1,114 @@
+{
+  "day": 9,
+  "month": 1,
+  "realm": 2,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "When We Choose Wrong",
+  "scripture_passage": "Genesis 3:6-7",
+  "story_title": "The Choice",
+  "summary": "Eve and Adam chose to eat the fruit God had told them not to eat. Right away they felt ashamed and tried to cover themselves.",
+  "story_reel": {
+    "duration_seconds": 100,
+    "narration": "Eve looked at the tree. The fruit looked good to eat. It was beautiful, and she wanted the wisdom the serpent promised. So she took some and ate it. Then she gave some to Adam, who was right there with her, and he ate it too. In that moment, everything changed. Their eyes were opened, but not in the way they hoped. Instead of feeling wise, they felt ashamed. For the first time, they wanted to hide. They grabbed fig leaves and sewed them together to cover themselves. This was the very first sin, choosing their own way instead of God's way. Sin always promises something good, but it leaves us feeling empty and afraid. The Bible tells us that everyone, every single person, has sinned. But keep listening, because this story is not over. God has a plan.",
+    "scenes": [
+      {
+        "caption": "The fruit looks good",
+        "art_direction": "Close-up of glowing fruit; Eve's hand hesitates."
+      },
+      {
+        "caption": "A choice",
+        "art_direction": "Eve takes a bite and hands the fruit to Adam beside her; no dramatic effects, just a quiet, heavy moment."
+      },
+      {
+        "caption": "Everything changes",
+        "art_direction": "Colors in the garden shift from bright to muted grays and blues."
+      },
+      {
+        "caption": "Fig leaves",
+        "art_direction": "Adam and Eve hurriedly stitching large fig leaves, looking embarrassed."
+      },
+      {
+        "caption": "Not the end",
+        "art_direction": "A tiny warm light remains in the corner of the screen as the narrator says 'God has a plan.'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Romans 3:23",
+    "text": "all have sinned, and fall short of the glory of God",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "all have sinned,",
+      "and fall short",
+      "of the glory",
+      "of God"
+    ],
+    "distractors": [
+      "some have sinned,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am not the only one who makes wrong choices, and Yahweh has a plan to rescue me.",
+    "reflection_prompt": "Everyone makes wrong choices sometimes. How do you usually feel after you choose wrong?",
+    "reflection_choices": [
+      "I want to hide",
+      "I feel sad",
+      "I want to make it right",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "Who did Eve give the fruit to?",
+      "options": [
+        "The serpent",
+        "Adam, who was with her",
+        "An angel"
+      ],
+      "correct_index": 1,
+      "explanation": "Eve gave some to her husband, who was with her, and he ate it too.",
+      "verse_ref": "Genesis 3:6"
+    },
+    {
+      "question": "How did Adam and Eve feel after they ate?",
+      "options": [
+        "Ashamed, and they wanted to cover themselves",
+        "Wiser and happier",
+        "Hungry for more"
+      ],
+      "correct_index": 0,
+      "explanation": "Their eyes were opened, they knew they were naked, and they felt ashamed.",
+      "verse_ref": "Genesis 3:7"
+    },
+    {
+      "question": "What did Adam and Eve use to cover themselves?",
+      "options": [
+        "Animal fur",
+        "Flower petals",
+        "Fig leaves"
+      ],
+      "correct_index": 2,
+      "explanation": "They sewed fig leaves together to cover themselves.",
+      "verse_ref": "Genesis 3:7"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I make wrong choices too. Thank You that You don't stop loving me when I do. Help me choose Your way, and thank You for Your plan to rescue me. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "That was the saddest day of my life. I'm telling you the truth about it because Yahweh didn't give up on us, and He won't give up on you either."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

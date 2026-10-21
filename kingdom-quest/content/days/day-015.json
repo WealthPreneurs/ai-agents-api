@@ -1,0 +1,116 @@
+{
+  "day": 15,
+  "month": 1,
+  "realm": 3,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Ruling Over Anger",
+  "scripture_passage": "Genesis 4:1-16",
+  "story_title": "Cain and Abel",
+  "summary": "Adam and Eve's son Cain grew jealous and angry at his brother Abel. God warned Cain to master sin, but Cain let his anger win.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Adam and Eve had two sons. Cain grew crops, and Abel took care of sheep. One day, both brothers brought gifts to God. Abel brought the best of his flock, given with a faithful heart. God was pleased with Abel's offering, but not with Cain's. Cain became very angry, and his face showed it. God spoke to Cain kindly: 'Why are you angry? If you do what is right, you will be accepted. But sin is crouching at your door like a hungry animal. It wants to control you, but you must rule over it.' God gave Cain a warning and a choice. Sadly, Cain didn't listen. He let his anger grow, and he hurt his brother Abel, and Abel died. God asked Cain, 'Where is your brother?' Cain said, 'Am I my brother's keeper?' Even then, God showed mercy. He put a mark on Cain to protect him. Anger is a feeling, but we can ask God to help us rule over it.",
+    "scenes": [
+      {
+        "caption": "Two brothers",
+        "art_direction": "Cain in a wheat field, Abel with a flock of sheep; distinct, friendly character designs."
+      },
+      {
+        "caption": "Two offerings",
+        "art_direction": "Both brothers at simple stone altars; Abel's glows warmly."
+      },
+      {
+        "caption": "Sin crouches at the door",
+        "art_direction": "Stylized shadow creature lurking at a doorway near Cain; symbolic, not frightening."
+      },
+      {
+        "caption": "A sad choice",
+        "art_direction": "Cut to an empty field and Abel's staff lying in the grass; no violence shown."
+      },
+      {
+        "caption": "A mark of mercy",
+        "art_direction": "Gentle light touching Cain's forehead as he walks away."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 4:7",
+    "text": "sin crouches at the door. Its desire is for you, but you are to rule over it.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "sin crouches",
+      "at the door.",
+      "Its desire is for you,",
+      "but you are",
+      "to rule over it."
+    ],
+    "distractors": [
+      "to run from it."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can rule over my anger with Yahweh's help, instead of letting it rule me.",
+    "reflection_prompt": "God told Cain he could rule over sin. What helps you calm down when you feel angry or jealous?",
+    "reflection_choices": [
+      "Taking deep breaths",
+      "Praying",
+      "Talking to a grown-up",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "gentleness"
+  },
+  "quiz": [
+    {
+      "question": "What jobs did Cain and Abel have?",
+      "options": [
+        "Cain farmed the ground; Abel kept sheep",
+        "Both were builders",
+        "Both were fishermen"
+      ],
+      "correct_index": 0,
+      "explanation": "Abel was a keeper of sheep, and Cain worked the ground.",
+      "verse_ref": "Genesis 4:2"
+    },
+    {
+      "question": "What did God warn Cain about?",
+      "options": [
+        "A storm",
+        "Sin crouching at the door",
+        "A wild animal"
+      ],
+      "correct_index": 1,
+      "explanation": "God warned that sin was crouching at the door, but Cain could rule over it.",
+      "verse_ref": "Genesis 4:7"
+    },
+    {
+      "question": "How did God show mercy to Cain?",
+      "options": [
+        "He gave him a sheep",
+        "He let him go back to Eden",
+        "He put a mark on him to protect him"
+      ],
+      "correct_index": 2,
+      "explanation": "God put a mark on Cain so that no one would harm him.",
+      "verse_ref": "Genesis 4:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, sometimes I feel angry or jealous. Thank You that I can come to You with those feelings. Help me rule over my anger and treat others with kindness. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Cain and Abel were my sons. That day broke my heart. God warned Cain because He loved him. When you feel anger growing, listen to God's voice and choose love."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Abel's death. Narration says Cain 'hurt his brother Abel, and Abel died'; no violence shown. Confirm wording for ages 7-9."
+  }
+}
