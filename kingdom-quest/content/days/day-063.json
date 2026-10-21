@@ -1,0 +1,117 @@
+{
+  "day": 63,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Meant for Good",
+  "scripture_passage": "Genesis 50:20-26",
+  "story_title": "God Meant It for Good",
+  "summary": "Joseph told his brothers that what they meant for evil, God meant for good. Sabbath Camp looks back at Joseph's family and the whole Land of Promises.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Land of Promises! Joseph said to his brothers, 'You meant to hurt me, but God meant it for good, to save many people's lives.' Then Joseph comforted them and spoke kindly to them. He promised, 'I will take care of you and your little ones.' Joseph lived to be 110 years old. Before he died, he said, 'God will surely come to help you and bring you back to the land He promised to Abraham, Isaac, and Jacob.' Let's look back at this whole region! God called Abraham and promised to bless the whole world through his family. God provided a ram on the mountain. He gave Jacob a new name. And He was with Joseph from the pit to the palace. Through every twist and turn, every mistake and every sorrow, God kept His promises and worked everything for good. This region's biggest truth: you are chosen, provided for, given a new name, never alone, and forgiven. And you can forgive too.",
+    "scenes": [
+      {
+        "caption": "Final Sabbath Camp of Region 2",
+        "art_direction": "Campfire at dusk overlooking the child's village, now with tents, wells, a stairway, and an Egyptian granary."
+      },
+      {
+        "caption": "'God meant it for good'",
+        "art_direction": "Joseph speaking gently to his kneeling brothers, helping them up."
+      },
+      {
+        "caption": "Little ones",
+        "art_direction": "Joseph surrounded by happy nieces, nephews, and grandchildren."
+      },
+      {
+        "caption": "A promise for the future",
+        "art_direction": "Elderly Joseph pointing toward a distant Canaan as the sun sets."
+      },
+      {
+        "caption": "Region 2 complete!",
+        "art_direction": "Map zooms out showing the Land of Promises lit up gold; a path glows toward Region 3, the Freedom Road."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 50:20",
+    "text": "As for you, you meant evil against me, but God meant it for good",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "As for you,",
+      "you meant evil",
+      "against me,",
+      "but God",
+      "meant it for good"
+    ],
+    "distractors": [
+      "meant it for nothing"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am forgiven, and I can forgive.",
+    "reflection_prompt": "Milestone: You are forgiven, and you can forgive! Look back at your Blueprint journal from Region 2. Which truth about who God says you are means the most to you?",
+    "reflection_choices": [
+      "I am chosen and called",
+      "Yahweh provides for me",
+      "God gives me a new start",
+      "I am forgiven, and I can forgive"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What did Joseph say God meant his hard story for?",
+      "options": [
+        "For good, to save many lives",
+        "For punishment",
+        "For nothing"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph said, 'You meant evil against me, but God meant it for good, to save many people alive.'",
+      "verse_ref": "Genesis 50:20"
+    },
+    {
+      "question": "How old was Joseph when he died?",
+      "options": [
+        "Seventy",
+        "Two hundred",
+        "One hundred ten"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph died, being one hundred ten years old.",
+      "verse_ref": "Genesis 50:26"
+    },
+    {
+      "question": "What did Joseph promise God would do for his family?",
+      "options": [
+        "Make them kings of Egypt",
+        "Bring them back to the land He promised",
+        "Give them more grain"
+      ],
+      "correct_index": 1,
+      "explanation": "Joseph said, 'God will surely visit you, and bring you up out of this land to the land He promised.'",
+      "verse_ref": "Genesis 50:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for forgiving me and for working all things for good. Help me forgive others like Joseph did. Thank You for this whole journey through the Land of Promises. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "You finished the Land of Promises! Thank you for walking through my family's story with me. Next, my friend Miriam will guide you down the Freedom Road!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "land_of_promises_crown"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

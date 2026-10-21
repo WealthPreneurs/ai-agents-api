@@ -1,0 +1,116 @@
+{
+  "day": 43,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "What Matters Most",
+  "scripture_passage": "Genesis 25:19-34",
+  "story_title": "Twins and a Bowl of Stew",
+  "summary": "Isaac and Rebekah had twins, Esau and Jacob. One day hungry Esau traded his birthright, his family's special blessing, for a bowl of red stew.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Isaac and Rebekah prayed for a baby, and God answered with twins! Before they were born, the babies wrestled inside Rebekah, and God told her, 'Two nations are inside you. The older will serve the younger.' The first baby came out red and hairy, so they named him Esau. The second came out holding onto Esau's heel, so they named him Jacob, which sounds like 'heel-grabber.' As the boys grew, Esau became a skilled hunter who loved the outdoors. Jacob was quieter and stayed near the tents. One day, Jacob was cooking a pot of red lentil stew. Esau came in from the field, starving. 'Give me some of that red stuff!' he said. Jacob saw his chance. 'First, sell me your birthright.' The birthright was the oldest son's special place and blessing in the family. Esau said, 'I'm about to die of hunger! What good is a birthright to me?' He traded something precious for one bowl of soup. Esau didn't value what God had given him. What matters most to you?",
+    "scenes": [
+      {
+        "caption": "Twins!",
+        "art_direction": "Rebekah and Isaac with two newborns; one red and fuzzy, one grabbing his brother's heel."
+      },
+      {
+        "caption": "Two very different boys",
+        "art_direction": "Split screen: Esau with a bow in the fields, Jacob tending a cooking fire by the tents."
+      },
+      {
+        "caption": "Red stew",
+        "art_direction": "Close-up of a bubbling pot of red lentil stew, steam swirling."
+      },
+      {
+        "caption": "'I'm starving!'",
+        "art_direction": "Esau bursting into the tent, dramatically flopping down; comedic beat."
+      },
+      {
+        "caption": "A bad trade",
+        "art_direction": "A glowing 'Birthright' scroll sliding across the table in exchange for a bowl of soup."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 6:33",
+    "text": "But seek first God's Kingdom, and his righteousness; and all these things will be given to you as well.",
+    "translation": "WEB",
+    "tokens": [
+      "But seek first",
+      "God's Kingdom,",
+      "and his righteousness;",
+      "and all these things",
+      "will be given to you",
+      "as well."
+    ],
+    "distractors": [
+      "seek first your dinner,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can put Yahweh first, because what He gives me is more valuable than anything.",
+    "reflection_prompt": "Esau traded something precious for a quick snack. What is something you might be tempted to put ahead of God?",
+    "reflection_choices": [
+      "Games or screens",
+      "Wanting my own way",
+      "Being popular",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Rebekah before the twins were born?",
+      "options": [
+        "'The older will serve the younger.'",
+        "'They will be kings.'",
+        "'They will be fishermen.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh said, 'Two nations are in your womb... The elder will serve the younger.'",
+      "verse_ref": "Genesis 25:23"
+    },
+    {
+      "question": "Why was Jacob given his name?",
+      "options": [
+        "He was very tall",
+        "He was born holding Esau's heel",
+        "He loved to cook"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob came out with his hand holding Esau's heel.",
+      "verse_ref": "Genesis 25:26"
+    },
+    {
+      "question": "What did Esau trade his birthright for?",
+      "options": [
+        "A coat",
+        "A camel",
+        "A bowl of red stew"
+      ],
+      "correct_index": 2,
+      "explanation": "Esau sold his birthright to Jacob for bread and lentil stew.",
+      "verse_ref": "Genesis 25:33-34"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are more important than anything else. Help me seek You first and not trade what matters most for something that only lasts a moment. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "My dad Jacob and my uncle Esau had a rocky start! This week you'll see how God took a heel-grabber and turned him into someone new."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "stew_pot"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

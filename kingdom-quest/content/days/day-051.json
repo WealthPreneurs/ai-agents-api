@@ -1,0 +1,119 @@
+{
+  "day": 51,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Near the Brokenhearted",
+  "scripture_passage": "Genesis 37:12-36",
+  "story_title": "Into the Pit",
+  "summary": "Joseph's jealous brothers threw him into a pit and sold him to traders headed to Egypt. They tricked their father into thinking Joseph was dead.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "One day, Jacob sent Joseph to check on his brothers, who were far away taking care of the sheep. When the brothers saw Joseph coming in his special coat, they said, 'Here comes the dreamer! Let's get rid of him.' But the oldest brother, Reuben, said, 'Let's not hurt him. Just throw him into this pit.' Reuben secretly planned to rescue Joseph later. So when Joseph arrived, they tore off his coat and threw him into a deep, empty pit. Joseph cried out for help, but they sat down to eat. Then they saw a group of traders on camels heading to Egypt. Judah said, 'Let's sell him instead!' So they pulled Joseph out and sold him for twenty pieces of silver. The brothers dipped Joseph's coat in goat's blood and took it to their father. Jacob thought a wild animal had killed his son, and he wept for many days. Meanwhile, Joseph was taken far away to Egypt. Joseph's heart was broken. But Joseph wasn't alone. Yahweh is near to the brokenhearted.",
+    "scenes": [
+      {
+        "caption": "'Here comes the dreamer!'",
+        "art_direction": "The brothers spotting Joseph's bright coat on the horizon."
+      },
+      {
+        "caption": "Reuben's idea",
+        "art_direction": "Reuben holding up his hands to stop the others."
+      },
+      {
+        "caption": "The pit",
+        "art_direction": "Joseph looking up from the bottom of a dry pit; only the sky visible above. Tender, not violent."
+      },
+      {
+        "caption": "Traders on camels",
+        "art_direction": "A caravan winding past; Judah pointing at it."
+      },
+      {
+        "caption": "Twenty pieces of silver",
+        "art_direction": "Coins dropping into a brother's hand as Joseph is led away, looking back."
+      },
+      {
+        "caption": "A father's grief",
+        "art_direction": "Jacob holding the torn coat, weeping; the scene fades to Joseph in a caravan under the stars."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 34:18",
+    "text": "Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh is near",
+      "to those who have",
+      "a broken heart,",
+      "and saves those",
+      "who have a crushed spirit."
+    ],
+    "distractors": [
+      "is far from"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is near to me when my heart is broken.",
+    "reflection_prompt": "Joseph was hurt by people in his own family. When your heart feels broken, who can you talk to?",
+    "reflection_choices": [
+      "God",
+      "My mom or dad",
+      "Another grown-up I trust",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Which brother said not to hurt Joseph but to throw him into a pit?",
+      "options": [
+        "Reuben",
+        "Judah",
+        "Benjamin"
+      ],
+      "correct_index": 0,
+      "explanation": "Reuben said, 'Let's not take his life... throw him into this pit.' He planned to rescue Joseph.",
+      "verse_ref": "Genesis 37:21-22"
+    },
+    {
+      "question": "How much did the brothers sell Joseph for?",
+      "options": [
+        "A bag of gold",
+        "One camel",
+        "Twenty pieces of silver"
+      ],
+      "correct_index": 2,
+      "explanation": "They sold Joseph to the Ishmaelites for twenty pieces of silver.",
+      "verse_ref": "Genesis 37:28"
+    },
+    {
+      "question": "What did the brothers tell their father?",
+      "options": [
+        "Joseph went on a trip",
+        "A wild animal had killed Joseph",
+        "Joseph got lost"
+      ],
+      "correct_index": 1,
+      "explanation": "They brought the coat dipped in blood, and Jacob said, 'An evil animal has devoured him.'",
+      "verse_ref": "Genesis 37:33"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You are near when my heart is broken. When people hurt me, help me remember You haven't left me. Help me talk to You and to grown-ups I trust. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "That pit was the darkest place I've ever been. If someone has hurt you, please tell a grown-up you trust. And know this: God saw me in that pit, and He sees you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: family betrayal and Joseph sold into slavery; the bloodied coat is mentioned (Genesis 37:31). Companion points kids to a trusted grown-up. Confirm wording for ages 7-9."
+  }
+}

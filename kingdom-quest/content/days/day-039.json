@@ -1,0 +1,120 @@
+{
+  "day": 39,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Will Provide",
+  "scripture_passage": "Genesis 22:1-14",
+  "story_title": "The Mountain of Provision",
+  "summary": "God tested Abraham by asking him to offer Isaac. Abraham trusted that God would provide, and God stopped him and provided a ram instead, pointing to Jesus, the Lamb of God.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "This is one of the hardest stories in the Bible, so let's listen carefully. When Isaac was a young man, God tested Abraham. He said, 'Take your son, your only son Isaac, whom you love, and go to the land of Moriah. Offer him there as a sacrifice.' Abraham must have been confused and heartbroken. But early the next morning, he set out with Isaac. As they climbed the mountain, Isaac asked, 'Father, we have the wood and the fire, but where is the lamb?' Abraham said, 'God will provide the lamb, my son.' Abraham trusted God completely. The Bible tells us he believed God could even raise Isaac from the dead. At the top, just as Abraham was about to obey, the angel of Yahweh called out, 'Abraham! Stop! Don't hurt the boy. Now I know you trust God.' Abraham looked up and saw a ram caught in a bush by its horns. God had provided! God never wanted Isaac to die. And many years later, on a hill in that same land, God gave His own Son, Jesus, as the Lamb who takes away the sin of the world.",
+    "scenes": [
+      {
+        "caption": "A hard test",
+        "art_direction": "Abraham alone at night, deep in thought, a soft light near him."
+      },
+      {
+        "caption": "The journey",
+        "art_direction": "Abraham and teenage Isaac walking toward distant mountains with a donkey and bundle of wood."
+      },
+      {
+        "caption": "'Where is the lamb?'",
+        "art_direction": "Isaac looking up at his father with an honest question; Abraham's hand on his shoulder."
+      },
+      {
+        "caption": "'Stop!'",
+        "art_direction": "A burst of bright light at the mountaintop; no knife or binding shown in detail."
+      },
+      {
+        "caption": "A ram in the thicket",
+        "art_direction": "A ram with horns caught in a bush, lit by golden sunlight."
+      },
+      {
+        "caption": "The Lamb of God",
+        "art_direction": "The scene dissolves into a distant hill with a cross at sunrise."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 22:8",
+    "text": "God will provide himself the lamb for a burnt offering, my son.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "God will provide",
+      "himself the lamb",
+      "for a burnt offering,",
+      "my son."
+    ],
+    "distractors": [
+      "a lion"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh provides what I need, and He gave Jesus for me.",
+    "reflection_prompt": "Abraham trusted that God would provide. What is something you need God to provide for you or your family?",
+    "reflection_choices": [
+      "Courage",
+      "Help with a problem",
+      "Something my family needs",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did Isaac ask his father on the way up the mountain?",
+      "options": [
+        "'Where is the lamb?'",
+        "'Are we there yet?'",
+        "'Can we go home?'"
+      ],
+      "correct_index": 0,
+      "explanation": "Isaac asked, 'Here is the fire and the wood, but where is the lamb?'",
+      "verse_ref": "Genesis 22:7"
+    },
+    {
+      "question": "What did Abraham answer?",
+      "options": [
+        "'I don't know.'",
+        "'We forgot it.'",
+        "'God will provide the lamb.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Abraham said, 'God will provide himself the lamb, my son.'",
+      "verse_ref": "Genesis 22:8"
+    },
+    {
+      "question": "What did God provide instead of Isaac?",
+      "options": [
+        "A dove",
+        "A ram caught in a bush",
+        "A cow"
+      ],
+      "correct_index": 1,
+      "explanation": "Abraham saw a ram caught in the thicket by its horns and offered it instead of his son.",
+      "verse_ref": "Genesis 22:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the God who provides. Thank You for giving Jesus, the Lamb of God, for me. Help me trust You with everything, even when things are hard to understand. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "This story is hard to hear, and it's okay to have questions. Ask a grown-up you trust about it. Here's what Abraham learned: Yahweh always provides, and He gave us Jesus."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "mount_moriah_ram"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the binding of Isaac. Isaac is shown as a young man (not a small child); no binding or knife shown. Narration states God never wanted Isaac to die and points to Hebrews 11:19 and Jesus as the Lamb (John 1:29). Strongly recommend a parent heads-up card before this day."
+  }
+}

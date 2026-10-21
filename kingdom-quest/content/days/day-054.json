@@ -1,0 +1,118 @@
+{
+  "day": 54,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Answers Belong to God",
+  "scripture_passage": "Genesis 40",
+  "story_title": "Dreams in Prison",
+  "summary": "In prison, Joseph helped Pharaoh's cupbearer and baker understand their dreams, giving the credit to God. The cupbearer was set free but forgot all about Joseph.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "While Joseph was in prison, two of Pharaoh's officials were thrown in too: the cupbearer, who served Pharaoh his drinks, and the baker, who made Pharaoh's bread. One morning, Joseph noticed they both looked sad. 'Why are you so sad today?' he asked. 'We each had a dream, and no one can tell us what it means.' Joseph said, 'Don't interpretations belong to God? Tell me your dreams.' The cupbearer dreamed of a vine with three branches that grew grapes, which he squeezed into Pharaoh's cup. Joseph said, 'In three days, Pharaoh will give you your job back.' Then Joseph asked, 'When you're free, please remember me and tell Pharaoh about me.' The baker's dream was different. He carried three baskets of bread on his head, but birds ate from them. Sadly, his dream meant his story would not end well. Three days later, everything happened just as Joseph said. The cupbearer got his job back. But he forgot all about Joseph. Two whole years went by. Joseph had to keep waiting and trusting God.",
+    "scenes": [
+      {
+        "caption": "Two new prisoners",
+        "art_direction": "The cupbearer and the baker entering the prison in fancy but rumpled outfits."
+      },
+      {
+        "caption": "Why so sad?",
+        "art_direction": "Joseph kindly approaching them in the morning light through prison bars."
+      },
+      {
+        "caption": "The vine dream",
+        "art_direction": "Dream sequence: a vine sprouting three branches that blossom into grapes."
+      },
+      {
+        "caption": "The basket dream",
+        "art_direction": "Dream sequence: three bread baskets on a head, birds swooping; soft, muted colors."
+      },
+      {
+        "caption": "'Remember me!'",
+        "art_direction": "Joseph calling after the cupbearer as he leaves, free."
+      },
+      {
+        "caption": "Two years of waiting",
+        "art_direction": "Calendar pages flipping as Joseph waits, still serving others in the prison."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 40:8",
+    "text": "Don't interpretations belong to God?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Don't",
+      "interpretations",
+      "belong to God?"
+    ],
+    "distractors": [
+      "belong to Joseph?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can use the gifts Yahweh gives me to help others and give Him the credit.",
+    "reflection_prompt": "Joseph noticed when others were sad and helped them. Who around you might need someone to notice them?",
+    "reflection_choices": [
+      "A friend who seems sad",
+      "Someone sitting alone",
+      "Someone in my family",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "What did Joseph say about understanding dreams?",
+      "options": [
+        "'I'm the smartest dreamer.'",
+        "'Ask Pharaoh.'",
+        "'Don't interpretations belong to God?'"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph said, 'Don't interpretations belong to God? Please tell it to me.'",
+      "verse_ref": "Genesis 40:8"
+    },
+    {
+      "question": "What did Joseph say would happen to the cupbearer in three days?",
+      "options": [
+        "He would get his job back",
+        "He would become king",
+        "He would be forgotten"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph said, 'Within three more days, Pharaoh will restore you to your office.'",
+      "verse_ref": "Genesis 40:13"
+    },
+    {
+      "question": "What did the cupbearer do when he got out of prison?",
+      "options": [
+        "He rescued Joseph right away",
+        "He forgot about Joseph",
+        "He visited Joseph every day"
+      ],
+      "correct_index": 1,
+      "explanation": "The chief cupbearer didn't remember Joseph, but forgot him.",
+      "verse_ref": "Genesis 40:23"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the gifts You've given me. Help me notice when others are sad, use my gifts to help them, and always give You the credit. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Those two years felt so long. I wondered if anyone would ever remember me. But God hadn't forgotten. He was setting up something bigger than I could imagine."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The baker's execution (Genesis 40:19, 22) is softened to 'his story would not end well.' Confirm this is acceptable."
+  }
+}

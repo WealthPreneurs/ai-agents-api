@@ -1,0 +1,114 @@
+{
+  "day": 32,
+  "month": 2,
+  "realm": 5,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Believing God's Promise",
+  "scripture_passage": "Genesis 15",
+  "story_title": "Count the Stars",
+  "summary": "Abram worried because he had no children. God took him outside and told him to count the stars, promising his family would be just as many. Abram believed God.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Years went by, and Abram and Sarai still had no children. One night, Yahweh spoke to Abram in a vision: 'Don't be afraid, Abram. I am your shield, your very great reward.' But Abram was worried. He said, 'Lord, how can You bless me? I don't even have a child. My servant will get everything when I die.' So God brought Abram outside into the dark night. 'Look up at the sky,' God said. 'Count the stars, if you can.' Abram looked up. There were more stars than he could ever count. Then God said, 'That's how many your family will be.' Abram had no children yet. Sarai was too old to have a baby. But Abram believed Yahweh. And God was so pleased with Abram's trust that He counted it as righteousness, as being right with God. God then made a covenant with Abram, promising to give the land to his family. Believing God's promises is what pleases Him most.",
+    "scenes": [
+      {
+        "caption": "Still waiting",
+        "art_direction": "Abram and Sarai sitting quietly at the tent entrance, an empty cradle nearby."
+      },
+      {
+        "caption": "'I am your shield'",
+        "art_direction": "A glowing shield of light appearing over Abram in a dream-like vision."
+      },
+      {
+        "caption": "Abram's worry",
+        "art_direction": "Abram with his head in his hands, speaking honestly to God."
+      },
+      {
+        "caption": "Count the stars!",
+        "art_direction": "Abram outside under a breathtaking Milky Way, pointing and trying to count; numbers float up and get lost."
+      },
+      {
+        "caption": "He believed",
+        "art_direction": "Abram's face lit by starlight, peaceful and smiling."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 15:6",
+    "text": "He believed in Yahweh, who credited it to him for righteousness.",
+    "translation": "WEB",
+    "tokens": [
+      "He believed",
+      "in Yahweh,",
+      "who credited it to him",
+      "for righteousness."
+    ],
+    "distractors": [
+      "for a reward."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is my shield, and I can believe His promises even before I see them.",
+    "reflection_prompt": "Abram believed God before he could see the promise come true. What is something you are trusting God for?",
+    "reflection_choices": [
+      "Help with a problem",
+      "Someone I'm praying for",
+      "Something I'm hoping for",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did God call Himself when He spoke to Abram?",
+      "options": [
+        "Abram's shield",
+        "Abram's servant",
+        "Abram's king"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Don't be afraid, Abram. I am your shield, your exceedingly great reward.'",
+      "verse_ref": "Genesis 15:1"
+    },
+    {
+      "question": "What did God tell Abram to count?",
+      "options": [
+        "Sheep",
+        "Grains of sand",
+        "The stars"
+      ],
+      "correct_index": 2,
+      "explanation": "God told Abram to look at the sky and count the stars. His offspring would be that many.",
+      "verse_ref": "Genesis 15:5"
+    },
+    {
+      "question": "What did Abram do when God made this promise?",
+      "options": [
+        "He laughed at it",
+        "He believed Yahweh",
+        "He forgot about it"
+      ],
+      "correct_index": 1,
+      "explanation": "Abram believed in Yahweh, and God credited it to him as righteousness.",
+      "verse_ref": "Genesis 15:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my shield. Thank You for Your promises. Even when I can't see how things will work out, help me believe You like Abram did. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "I was one of those stars! Abram's family grew and grew, just like God said. Next time you look up at night, remember: God keeps His word."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "star_counting_rooftop"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

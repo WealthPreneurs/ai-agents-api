@@ -1,0 +1,116 @@
+{
+  "day": 45,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Is With Me Everywhere",
+  "scripture_passage": "Genesis 28:10-22",
+  "story_title": "Jacob's Stairway Dream",
+  "summary": "Running from home, Jacob slept on a stone and dreamed of a stairway to heaven with angels. God promised to be with him wherever he went.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Jacob was alone and running from home. When the sun went down, he stopped in the middle of nowhere. He grabbed a stone for a pillow and lay down to sleep. Then Jacob had an amazing dream. He saw a stairway reaching from the earth all the way up to heaven, and angels were going up and down on it! At the top stood Yahweh. God said, 'I am Yahweh, the God of Abraham and Isaac. I will give this land to you and your family. Your family will be like the dust of the earth, and all the families of the earth will be blessed through you. Look, I am with you. I will keep you wherever you go, and I will bring you back to this land. I will not leave you.' Jacob woke up and said, 'Surely Yahweh is in this place, and I didn't even know it!' He set up his stone pillow as a pillar and named the place Bethel, which means 'house of God.' Even when Jacob had messed up and was running away, God came to him with a promise.",
+    "scenes": [
+      {
+        "caption": "Alone at night",
+        "art_direction": "Jacob setting a stone down under a vast desert sky."
+      },
+      {
+        "caption": "The stairway",
+        "art_direction": "A glowing stairway of light rising into the clouds, angels ascending and descending."
+      },
+      {
+        "caption": "'I am with you'",
+        "art_direction": "Radiant light at the top of the stairs; no face shown; the words appear in warm lettering."
+      },
+      {
+        "caption": "'Yahweh is in this place!'",
+        "art_direction": "Jacob waking up with wide eyes in the dawn light."
+      },
+      {
+        "caption": "Bethel",
+        "art_direction": "Jacob pouring oil on a standing stone pillar; lettering 'Bethel = house of God.'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 28:15",
+    "text": "Behold, I am with you, and will keep you, wherever you go",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Behold,",
+      "I am with you,",
+      "and will keep you,",
+      "wherever you go"
+    ],
+    "distractors": [
+      "only at home"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is with me wherever I go, even after I mess up.",
+    "reflection_prompt": "Jacob felt alone, but God was right there with him. Where is a place you want to remember that God is with you?",
+    "reflection_choices": [
+      "At school",
+      "In my bedroom at night",
+      "When I travel",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "What did Jacob use as a pillow?",
+      "options": [
+        "A blanket",
+        "A stone",
+        "A sack of grain"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob took one of the stones of the place and put it under his head.",
+      "verse_ref": "Genesis 28:11"
+    },
+    {
+      "question": "What did Jacob see in his dream?",
+      "options": [
+        "A stairway to heaven with angels going up and down",
+        "A giant tower",
+        "A flood"
+      ],
+      "correct_index": 0,
+      "explanation": "Jacob dreamed of a stairway reaching to heaven with God's angels ascending and descending.",
+      "verse_ref": "Genesis 28:12"
+    },
+    {
+      "question": "What does Bethel mean?",
+      "options": [
+        "City of kings",
+        "Place of stones",
+        "House of God"
+      ],
+      "correct_index": 2,
+      "explanation": "Jacob called the place Bethel, which means house of God.",
+      "verse_ref": "Genesis 28:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You are with me wherever I go. Even when I've made mistakes, You come to me. Help me notice You everywhere. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "My father never forgot that night at Bethel. He was running away, and God ran toward him. God is in the places you least expect too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "olive_oil"
+    ],
+    "unlock": "bethel_stairway"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

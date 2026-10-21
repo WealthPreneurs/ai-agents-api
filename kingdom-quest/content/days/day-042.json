@@ -1,0 +1,106 @@
+{
+  "day": 42,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Yahweh Provides",
+  "scripture_passage": "Genesis 18-24",
+  "story_title": "On Yahweh's Mountain",
+  "summary": "Sabbath Camp looks back at Abraham's family: three visitors, Abraham's prayer, Isaac's birth, the ram on the mountain, and Rebekah at the well. Yahweh provides!",
+  "story_reel": {
+    "duration_seconds": 95,
+    "narration": "Welcome to Sabbath Camp! Let's look back at this amazing week. Three visitors came to Abraham's tent, and Yahweh asked, 'Is anything too hard for Yahweh?' Abraham prayed boldly for Lot, and God rescued him. Then, just as God promised, Isaac was born, and Sarah laughed with joy. On Mount Moriah, Abraham trusted God completely, and God provided a ram. Abraham named that place 'Yahweh Will Provide.' God promised that all nations would be blessed through Abraham's family. And at a well far away, God led a servant to Rebekah, a kind young woman who became Isaac's wife. This week's big truth: Yahweh provides what we need. Not always what we want, and not always when we expect it. But He always provides, and His greatest gift is Jesus.",
+    "scenes": [
+      {
+        "caption": "Camp by the well",
+        "art_direction": "Campfire beside Rebekah's well and the Oak of Mamre in the child's village."
+      },
+      {
+        "caption": "Abraham's family story",
+        "art_direction": "Storybook recap: three visitors, the prayer altar, baby Isaac, the ram, the camels."
+      },
+      {
+        "caption": "Yahweh Will Provide",
+        "art_direction": "Mount Moriah glowing in the distance, with the words appearing above it."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 22:14",
+    "text": "On Yahweh's mountain, it will be provided.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "On Yahweh's",
+      "mountain,",
+      "it will be provided."
+    ],
+    "distractors": [
+      "it will be lost."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh provides what I need.",
+    "reflection_prompt": "Milestone: Yahweh provides! Make a list or draw pictures in your Blueprint journal of things God has provided for you.",
+    "reflection_choices": [
+      "My family",
+      "Food and a home",
+      "Friends",
+      "Jesus"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did Abraham name the place where God provided the ram?",
+      "options": [
+        "Bethel",
+        "Yahweh Will Provide",
+        "Babel"
+      ],
+      "correct_index": 1,
+      "explanation": "Abraham called the name of that place 'Yahweh Will Provide.'",
+      "verse_ref": "Genesis 22:14"
+    },
+    {
+      "question": "What did Yahweh ask when Sarah laughed?",
+      "options": [
+        "'Is anything too hard for Yahweh?'",
+        "'Why are you sad?'",
+        "'Who made bread?'"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh asked Abraham, 'Is anything too hard for Yahweh?'",
+      "verse_ref": "Genesis 18:14"
+    },
+    {
+      "question": "How did Abraham's servant know Rebekah was the one?",
+      "options": [
+        "She was the tallest",
+        "She wore a crown",
+        "She offered to water his camels, just as he prayed"
+      ],
+      "correct_index": 2,
+      "explanation": "Rebekah offered to water the camels, just as the servant had asked God in prayer.",
+      "verse_ref": "Genesis 24:14, 19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the God who provides. Thank You for everything You give me, and most of all for Jesus. Help me trust You to provide what I need. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Realm 6 complete! My family learned again and again that Yahweh provides. Next, you'll meet my father, Jacob. His story is a wild one!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "provision_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

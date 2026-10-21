@@ -1,0 +1,118 @@
+{
+  "day": 62,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Forgiving Again and Again",
+  "scripture_passage": "Genesis 48:8-20; 49:8-10; 50:15-19",
+  "story_title": "Jacob's Blessings",
+  "summary": "Before he died, Jacob blessed his grandsons and his sons, promising that a king would come from Judah's family. Afterward, the brothers feared Joseph, but he reassured them.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Jacob lived in Egypt for seventeen years. When he grew very old, Joseph brought his two sons, Manasseh and Ephraim, to receive a blessing. Jacob crossed his arms and put his right hand on the younger boy, Ephraim, giving him the bigger blessing. God often chooses the unexpected! Then Jacob gathered all twelve of his sons and blessed each one. To Judah he said, 'The scepter will not depart from Judah.' That meant kings would come from Judah's family. And the greatest King of all, Jesus, would be born from Judah's family one day! After Jacob died, the brothers got scared. 'What if Joseph has been waiting until now to get revenge?' They sent a message: 'Please forgive us.' Then they came and bowed down before him. 'We are your servants.' Joseph wept. He said, 'Don't be afraid. Am I in the place of God?' Joseph had already forgiven them, and he forgave them again. Real forgiveness keeps forgiving, just as Christ forgives us.",
+    "scenes": [
+      {
+        "caption": "Seventeen years in Egypt",
+        "art_direction": "Elderly Jacob resting in a sunny room in Goshen with grandchildren playing."
+      },
+      {
+        "caption": "Crossed hands",
+        "art_direction": "Jacob crossing his arms to bless Ephraim and Manasseh; Joseph surprised."
+      },
+      {
+        "caption": "Twelve sons blessed",
+        "art_direction": "Twelve brothers gathered around Jacob's bed, each receiving a hand on the head."
+      },
+      {
+        "caption": "The scepter of Judah",
+        "art_direction": "A golden scepter glows over Judah, its light stretching toward a distant Bethlehem star."
+      },
+      {
+        "caption": "The brothers are afraid",
+        "art_direction": "The brothers whispering nervously in a hallway."
+      },
+      {
+        "caption": "'Don't be afraid'",
+        "art_direction": "Joseph lifting his brothers to their feet with tears in his eyes."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Colossians 3:13",
+    "text": "even as Christ forgave you, so you also do.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "even as Christ",
+      "forgave you,",
+      "so you also do."
+    ],
+    "distractors": [
+      "so you can forget."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can keep forgiving others, just as Jesus keeps forgiving me.",
+    "reflection_prompt": "Joseph's brothers were afraid he hadn't really forgiven them. Why do you think it's important to keep forgiving?",
+    "reflection_choices": [
+      "So friendships can heal",
+      "Because Jesus forgives me",
+      "So I'm not carrying anger",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "Which grandson did Jacob bless with his right hand?",
+      "options": [
+        "Ephraim, the younger",
+        "Manasseh, the older",
+        "Benjamin"
+      ],
+      "correct_index": 0,
+      "explanation": "Israel stretched out his right hand and laid it on Ephraim's head, who was the younger.",
+      "verse_ref": "Genesis 48:14"
+    },
+    {
+      "question": "What did Jacob say about Judah?",
+      "options": [
+        "He would be a fisherman",
+        "The scepter would not depart from Judah",
+        "He would live in Babel"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob said, 'The scepter will not depart from Judah.' Kings, and one day Jesus, would come from his family.",
+      "verse_ref": "Genesis 49:10"
+    },
+    {
+      "question": "What did Joseph say when his brothers were afraid?",
+      "options": [
+        "'Now you'll be sorry.'",
+        "'Go back to Canaan.'",
+        "'Don't be afraid. Am I in the place of God?'"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph said, 'Don't be afraid, for am I in the place of God?'",
+      "verse_ref": "Genesis 50:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Jesus keeps forgiving me. Help me keep forgiving others too, even when it's hard, and help me trust You with what's fair. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "My brothers worried I'd been holding a grudge. But I'd given that hurt to God long ago. When you forgive, you can keep choosing to forgive."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "scepter_of_judah"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

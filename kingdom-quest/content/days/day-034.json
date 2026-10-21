@@ -1,0 +1,120 @@
+{
+  "day": 34,
+  "month": 2,
+  "realm": 5,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "A New Name, A Big Promise",
+  "scripture_passage": "Genesis 17",
+  "story_title": "Abram Becomes Abraham",
+  "summary": "When Abram was 99, God Almighty appeared to him, gave him the new name Abraham, renamed Sarai as Sarah, and promised they would have a son named Isaac.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "When Abram was ninety-nine years old, Yahweh appeared to him and said, 'I am God Almighty. Walk before Me and be blameless.' Abram fell on his face to the ground. Then God said, 'Your name will no longer be Abram. Your name will be Abraham, because I will make you the father of many nations!' God made a covenant with Abraham, a forever promise to be his God and the God of his children after him. Then God said, 'Your wife's name will be Sarah, which means princess. I will bless her, and she will have a son.' Abraham laughed! He thought, 'How can a hundred-year-old man and a ninety-year-old woman have a baby?' But God said, 'Sarah will have a son, and you will name him Isaac.' The name Isaac means 'he laughs.' God gave Abraham and Sarah new names because He was making them into something new. When God calls you His, He gives you a new identity too.",
+    "scenes": [
+      {
+        "caption": "Ninety-nine years old",
+        "art_direction": "Elderly Abram with a long white beard, sitting by his tent."
+      },
+      {
+        "caption": "'I am God Almighty'",
+        "art_direction": "Overwhelming warm light; Abram bowing face to the ground."
+      },
+      {
+        "caption": "Abram becomes Abraham",
+        "art_direction": "Hand-lettered 'Abram' transforms into 'Abraham' with a sparkle; map of many nations unfolds."
+      },
+      {
+        "caption": "Sarai becomes Sarah",
+        "art_direction": "A princess crown shimmers above Sarah's head as her name changes."
+      },
+      {
+        "caption": "Abraham laughs",
+        "art_direction": "Abraham chuckling with his hand on his belly; gentle comedic beat."
+      },
+      {
+        "caption": "A son named Isaac",
+        "art_direction": "Lettering: 'Isaac = he laughs' with a baby rattle icon."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 17:1",
+    "text": "I am God Almighty. Walk before me, and be blameless.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I am",
+      "God Almighty.",
+      "Walk before me,",
+      "and be blameless."
+    ],
+    "distractors": [
+      "and be famous."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I belong to God Almighty, and He gives me a new identity.",
+    "reflection_prompt": "God gave Abraham and Sarah new names. If God gave you a name that describes who He made you to be, what might it be?",
+    "reflection_choices": [
+      "Brave One",
+      "Kind Heart",
+      "Joy Bringer",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "How old was Abram when God appeared to him and changed his name?",
+      "options": [
+        "Ninety-nine",
+        "Fifty",
+        "Twenty-five"
+      ],
+      "correct_index": 0,
+      "explanation": "When Abram was ninety-nine years old, Yahweh appeared to him.",
+      "verse_ref": "Genesis 17:1"
+    },
+    {
+      "question": "What does the name Abraham mean?",
+      "options": [
+        "Strong warrior",
+        "Father of many nations",
+        "Shepherd boy"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'I have made you the father of many nations.'",
+      "verse_ref": "Genesis 17:5"
+    },
+    {
+      "question": "What did God say to name the promised son?",
+      "options": [
+        "Ishmael",
+        "Jacob",
+        "Isaac"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Sarah your wife will bear you a son. You shall call his name Isaac.'",
+      "verse_ref": "Genesis 17:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "God Almighty, thank You that I belong to You. Thank You for giving me a new identity as Your child. Help me walk with You every day. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Can you imagine being ninety-nine and getting a new name? God is never too late. My grandfather Isaac's name was a joke that turned into joy!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ],
+    "unlock": "name_stone"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits the sign of circumcision (Genesis 17:10-14) for age-appropriateness; the covenant is described as 'a forever promise.' Confirm this is acceptable."
+  }
+}

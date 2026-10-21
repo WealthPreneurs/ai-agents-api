@@ -1,0 +1,116 @@
+{
+  "day": 52,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Doing My Best for God",
+  "scripture_passage": "Genesis 39:1-6",
+  "story_title": "Joseph in Potiphar's House",
+  "summary": "In Egypt, Joseph was sold to Potiphar, an officer of Pharaoh. Yahweh was with Joseph, and Joseph worked so faithfully that Potiphar put him in charge of everything.",
+  "story_reel": {
+    "duration_seconds": 105,
+    "narration": "The traders brought Joseph to Egypt, a land of pyramids, palaces, and the great Nile River. There they sold him to a man named Potiphar, the captain of Pharaoh's guard. Joseph was a slave, far from home, in a country where he didn't even know the language. He could have been bitter and lazy. Instead, Joseph worked hard and did his very best. And the Bible says, 'Yahweh was with Joseph, and he prospered.' Potiphar noticed that everything Joseph did turned out well. He could see that Yahweh was with him! So Potiphar made Joseph his personal helper and put him in charge of his whole house and everything he owned. And God blessed Potiphar's house because of Joseph. Joseph didn't choose where he ended up, but he chose how he would act. Whatever job you have, at home or at school, you can do it as if you're doing it for God.",
+    "scenes": [
+      {
+        "caption": "Welcome to Egypt",
+        "art_direction": "Grand Egyptian city skyline with pyramids, palm trees, and the Nile in bright flat colors."
+      },
+      {
+        "caption": "Sold to Potiphar",
+        "art_direction": "Joseph standing before a stern Egyptian officer in a courtyard."
+      },
+      {
+        "caption": "Working hard",
+        "art_direction": "Joseph carrying jars, sweeping, learning to read Egyptian signs; cheerful work montage."
+      },
+      {
+        "caption": "'Yahweh was with Joseph'",
+        "art_direction": "A gentle glow following Joseph as he works; plants bloom where he walks."
+      },
+      {
+        "caption": "In charge of everything",
+        "art_direction": "Potiphar handing Joseph a ring of keys; servants bowing respectfully."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Colossians 3:23",
+    "text": "whatever you do, work heartily, as for the Lord, and not for men",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "whatever you do,",
+      "work heartily,",
+      "as for the Lord,",
+      "and not for men"
+    ],
+    "distractors": [
+      "work lazily,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can do my best in every job, because I'm doing it for Yahweh.",
+    "reflection_prompt": "Joseph did his best even when he was a slave. What is a job you could do with all your heart, as if you were doing it for God?",
+    "reflection_choices": [
+      "My chores",
+      "My schoolwork",
+      "Practicing a skill",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "serving"
+  },
+  "quiz": [
+    {
+      "question": "Who bought Joseph in Egypt?",
+      "options": [
+        "Pharaoh",
+        "Potiphar, captain of Pharaoh's guard",
+        "A farmer"
+      ],
+      "correct_index": 1,
+      "explanation": "Potiphar, an officer of Pharaoh and captain of the guard, bought Joseph.",
+      "verse_ref": "Genesis 39:1"
+    },
+    {
+      "question": "Why did Joseph prosper in Potiphar's house?",
+      "options": [
+        "Yahweh was with him",
+        "He was the strongest",
+        "He had lots of money"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh was with Joseph, and he was a prosperous man.",
+      "verse_ref": "Genesis 39:2"
+    },
+    {
+      "question": "What did Potiphar put Joseph in charge of?",
+      "options": [
+        "Only the garden",
+        "The horses",
+        "His whole house and everything he owned"
+      ],
+      "correct_index": 2,
+      "explanation": "Potiphar made Joseph overseer over his house, and all that he had he put into his hand.",
+      "verse_ref": "Genesis 39:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me work with all my heart in everything I do, whether at home, at school, or anywhere else. I want to do my best for You. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Egypt was so different from home! I missed my father every day. But I decided to work hard and trust God. And He was with me in every room of that house."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "linen"
+    ],
+    "unlock": "potiphars_courtyard"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

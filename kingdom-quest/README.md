@@ -11,7 +11,7 @@ built on.
 |---|---|
 | `content/curriculum.json` | The Great Map: 12 Regions, 52 Realms, the four identity phases, weekly milestones and anchor verses |
 | `content/catalog.json` | Traits, Identity Badges, Character Companions, Kingdom Builder materials |
-| `content/days/day-NNN.json` | Daily Checkpoints: all of Region 1 (days 1–28) plus samples day 158 and day 365 |
+| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–2 (days 1–63) plus samples day 158 and day 365 |
 | `schema/daily-node.schema.json` | JSON Schema for a daily Checkpoint |
 | `supabase/schema.sql` | Family accounts, progress, journal, badges, wallet, village, with row-level security |
 | `scripts/validate-content.js` | Content checker: `npm run validate:kingdom-quest` from the repo root |
@@ -359,7 +359,8 @@ the translation.
 | v1 (full year) | All 12 region packs, all companions, Kingdom Builder, AI badges with opt-in, Rest & Restore |
 | v1.1 | Voice and drawing journal entries, family devotion mode (parent + child), Spanish |
 
-Today this folder has the full year's map, all of Region 1 (days 1–28:
-Creation, the Garden, Noah, Babel, and Job), and two later samples (158, 365).
-The remaining 335 Checkpoints follow the same schema. Days that cover death or
-judgment (15, 18, 24, 25) carry `review.notes` for the theology reviewer.
+Today this folder has the full year's map, Regions 1–2 (days 1–63: Creation
+through Joseph), and two later samples (158, 365). The remaining 300
+Checkpoints follow the same schema. Days with sensitive content (death,
+judgment, the binding of Isaac, Potiphar's wife) carry `review.notes` for the
+theology reviewer.

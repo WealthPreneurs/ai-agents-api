@@ -1,0 +1,119 @@
+{
+  "day": 50,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Love Doesn't Envy",
+  "scripture_passage": "Genesis 37:1-11",
+  "story_title": "The Coat and the Dreams",
+  "summary": "Jacob loved Joseph most and gave him a special coat. When Joseph told his brothers about his dreams of them bowing to him, their jealousy grew into hatred.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Jacob, now called Israel, had twelve sons. But he loved Joseph more than all the others, because Joseph was born when Jacob was old. Jacob gave seventeen-year-old Joseph a beautiful, richly decorated coat. When Joseph's brothers saw it, they were jealous. They couldn't even say a kind word to him. Then Joseph had a dream. 'Listen!' he told his brothers. 'We were tying up bundles of grain in the field. Suddenly my bundle stood up, and all your bundles gathered around and bowed down to mine!' His brothers said, 'Do you really think you'll rule over us?' and they hated him even more. Then Joseph had another dream. 'The sun, the moon, and eleven stars were bowing down to me!' Even his father scolded him: 'Will your mother, your brothers, and I bow to you?' But Jacob kept thinking about it. Jealousy is like a seed. If we let it grow, it can turn into something terrible. God's love helps us celebrate others instead of envying them.",
+    "scenes": [
+      {
+        "caption": "Twelve brothers",
+        "art_direction": "A big, busy family scene with twelve boys of different ages; Joseph the second youngest."
+      },
+      {
+        "caption": "The special coat",
+        "art_direction": "Jacob placing a vibrant, richly patterned robe on Joseph's shoulders."
+      },
+      {
+        "caption": "Jealous looks",
+        "art_direction": "The older brothers glaring with crossed arms; green tint creeping into the scene."
+      },
+      {
+        "caption": "Bowing bundles",
+        "art_direction": "Dream sequence: wheat sheaves standing up and bowing to one in the middle; whimsical."
+      },
+      {
+        "caption": "Sun, moon, and eleven stars",
+        "art_direction": "Dream sequence: celestial bodies bowing in the night sky."
+      },
+      {
+        "caption": "A growing seed",
+        "art_direction": "A small dark seed sprouting into a thorny vine between the brothers."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Corinthians 13:4",
+    "text": "Love is patient and is kind",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Love",
+      "is patient",
+      "and is kind"
+    ],
+    "distractors": [
+      "and is jealous"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can celebrate other people's good things instead of being jealous.",
+    "reflection_prompt": "Joseph's brothers let jealousy grow in their hearts. When do you feel jealous, and what could you do instead?",
+    "reflection_choices": [
+      "When someone gets something I want",
+      "When someone gets more attention",
+      "When someone is better at something",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "What special gift did Jacob give Joseph?",
+      "options": [
+        "A sword",
+        "A beautiful, richly decorated coat",
+        "A camel"
+      ],
+      "correct_index": 1,
+      "explanation": "Israel made Joseph a richly decorated coat.",
+      "verse_ref": "Genesis 37:3"
+    },
+    {
+      "question": "In Joseph's first dream, what bowed down to his bundle of grain?",
+      "options": [
+        "His brothers' bundles of grain",
+        "Sheep",
+        "Trees"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph's brothers' sheaves came around and bowed down to his sheaf.",
+      "verse_ref": "Genesis 37:7"
+    },
+    {
+      "question": "How old was Joseph when this story began?",
+      "options": [
+        "Five",
+        "Thirty",
+        "Seventeen"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph was seventeen years old, feeding the flock with his brothers.",
+      "verse_ref": "Genesis 37:2"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I feel jealous, help me remember how much You love me. Help me be happy for others when good things happen to them. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Looking back, I wasn't very wise about sharing those dreams! And my brothers let jealousy grow. This is my story, and I'll tell you the whole thing."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "josephs_coat"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

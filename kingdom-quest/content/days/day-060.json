@@ -1,0 +1,119 @@
+{
+  "day": 60,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Forgiveness Revealed",
+  "scripture_passage": "Genesis 45",
+  "story_title": "I Am Joseph!",
+  "summary": "Joseph revealed who he was and forgave his brothers, telling them God had sent him ahead to save lives. He invited the whole family to come live in Egypt.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Joseph couldn't hold back any longer. He sent all his servants out of the room. Then he burst into tears, crying so loudly that people in Pharaoh's palace heard him. He said to his brothers, 'I am Joseph! Is my father still alive?' His brothers couldn't answer. They were terrified! The brother they had sold was now the second most powerful man in Egypt. But Joseph said, 'Come close to me. I am Joseph, your brother, the one you sold into Egypt. But don't be upset or angry with yourselves. God sent me here ahead of you to save lives!' Joseph threw his arms around Benjamin and wept, and Benjamin wept too. Then he kissed all his brothers and cried with them. After that, they finally talked together. Joseph sent his brothers home with wagons, food, and gifts. 'Go get our father and bring everyone here. I'll take care of you.' When Jacob heard that Joseph was alive, he could hardly believe it. But when he saw the wagons, his spirit came alive again. 'My son Joseph is still alive! I will go and see him.'",
+    "scenes": [
+      {
+        "caption": "'Everyone out!'",
+        "art_direction": "Servants hurrying out of the hall as Joseph trembles with emotion."
+      },
+      {
+        "caption": "'I am Joseph!'",
+        "art_direction": "Joseph removing his Egyptian headdress; his brothers' jaws drop."
+      },
+      {
+        "caption": "Terrified brothers",
+        "art_direction": "The brothers stepping back in fear."
+      },
+      {
+        "caption": "'Come close to me'",
+        "art_direction": "Joseph opening his arms wide with tears streaming down."
+      },
+      {
+        "caption": "Hugs and tears",
+        "art_direction": "Joseph embracing Benjamin, then all the brothers in a big group hug."
+      },
+      {
+        "caption": "Jacob's joy",
+        "art_direction": "Old Jacob seeing the Egyptian wagons on the horizon, his face lighting up."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 45:5",
+    "text": "God sent me before you to preserve life.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "God sent me",
+      "before you",
+      "to preserve life."
+    ],
+    "distractors": [
+      "to punish you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can forgive others because Yahweh can turn even hurtful things into good.",
+    "reflection_prompt": "Joseph forgave the brothers who hurt him. Is there someone you need to forgive? You can ask God to help you.",
+    "reflection_choices": [
+      "A friend",
+      "A brother or sister",
+      "Someone at school",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What did Joseph say when he revealed himself?",
+      "options": [
+        "'I am Joseph! Is my father still alive?'",
+        "'You are all spies!'",
+        "'Go away!'"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph said to his brothers, 'I am Joseph! Does my father still live?'",
+      "verse_ref": "Genesis 45:3"
+    },
+    {
+      "question": "Why did Joseph say God sent him to Egypt?",
+      "options": [
+        "To become rich",
+        "To preserve life",
+        "To punish his brothers"
+      ],
+      "correct_index": 1,
+      "explanation": "Joseph said, 'God sent me before you to preserve life.'",
+      "verse_ref": "Genesis 45:5"
+    },
+    {
+      "question": "What happened when Jacob saw the wagons Joseph sent?",
+      "options": [
+        "He got angry",
+        "He fell asleep",
+        "His spirit came alive again"
+      ],
+      "correct_index": 2,
+      "explanation": "When Jacob saw the wagons, his spirit revived.",
+      "verse_ref": "Genesis 45:27"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, forgiving can be really hard. Please help me forgive people who have hurt me, like Joseph did. Thank You that You can turn hurtful things into good. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "That was the happiest day of my life! Forgiving my brothers set my heart free. Forgiving doesn't mean what happened was okay. It means you let God handle it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "linen"
+    ],
+    "unlock": "forgiveness_fountain"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

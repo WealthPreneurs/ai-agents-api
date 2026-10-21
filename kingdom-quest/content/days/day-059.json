@@ -1,0 +1,119 @@
+{
+  "day": 59,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Greater Love",
+  "scripture_passage": "Genesis 44",
+  "story_title": "The Silver Cup",
+  "summary": "Joseph hid his silver cup in Benjamin's sack to test his brothers. When Benjamin was about to be taken as a slave, Judah offered to take his place.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Joseph had one more test for his brothers. He told his servant, 'Fill their sacks with grain, and put my silver cup in the youngest one's sack.' The next morning, the brothers set off for home. But soon Joseph's servant chased after them. 'Why have you stolen my master's silver cup?' The brothers were shocked. 'We would never do that! If you find it with any of us, that one can die, and the rest of us will be slaves!' The servant searched each sack, from the oldest to the youngest. And there it was, in Benjamin's sack! The brothers tore their clothes in grief and went back to Joseph. Joseph said, 'The one who had the cup will be my slave. The rest of you can go home.' Years before, the brothers had sold Joseph and gone home without him. Would they abandon Benjamin too? Then Judah stepped forward. 'Please, my lord, let me stay as your slave instead of the boy. If I go home without him, it will break my father's heart.' Judah was willing to give up his own freedom for his brother. The brothers had truly changed.",
+    "scenes": [
+      {
+        "caption": "A secret plan",
+        "art_direction": "Joseph whispering to his steward, holding up a shining silver cup."
+      },
+      {
+        "caption": "The chase",
+        "art_direction": "The steward galloping after the brothers' donkey caravan."
+      },
+      {
+        "caption": "Search the sacks!",
+        "art_direction": "Grain sacks opened one by one, oldest to youngest; suspense music."
+      },
+      {
+        "caption": "In Benjamin's sack!",
+        "art_direction": "The silver cup gleaming in Benjamin's sack; brothers gasping."
+      },
+      {
+        "caption": "Back before Joseph",
+        "art_direction": "The brothers kneeling, faces to the ground, Benjamin trembling."
+      },
+      {
+        "caption": "'Let me stay instead'",
+        "art_direction": "Judah stepping forward, hand on Benjamin's shoulder, brave and humble."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "John 15:13",
+    "text": "Greater love has no one than this, that someone lay down his life for his friends.",
+    "translation": "WEB",
+    "tokens": [
+      "Greater love",
+      "has no one than this,",
+      "that someone",
+      "lay down his life",
+      "for his friends."
+    ],
+    "distractors": [
+      "for his money."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can show great love by putting others before myself.",
+    "reflection_prompt": "Judah offered to take Benjamin's place. Jesus did the same for us! How can you put someone else first this week?",
+    "reflection_choices": [
+      "Let someone go first",
+      "Give up something I want for someone else",
+      "Stand up for someone",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "Where did Joseph's servant put the silver cup?",
+      "options": [
+        "In Reuben's sack",
+        "In Benjamin's sack",
+        "On a camel"
+      ],
+      "correct_index": 1,
+      "explanation": "Joseph told his steward to put the silver cup in the sack of the youngest.",
+      "verse_ref": "Genesis 44:2"
+    },
+    {
+      "question": "Who offered to stay as a slave instead of Benjamin?",
+      "options": [
+        "Judah",
+        "Simeon",
+        "Levi"
+      ],
+      "correct_index": 0,
+      "explanation": "Judah said, 'Please let your servant stay instead of the boy, a bondservant to my lord.'",
+      "verse_ref": "Genesis 44:33"
+    },
+    {
+      "question": "Why did Judah not want to go home without Benjamin?",
+      "options": [
+        "He was afraid of the desert",
+        "He wanted to live in Egypt",
+        "It would break his father's heart"
+      ],
+      "correct_index": 2,
+      "explanation": "Judah said that if the boy wasn't with them, their father would die of grief.",
+      "verse_ref": "Genesis 44:30-31"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Jesus gave His life for me. Help me love others like that, putting them first and standing up for them. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "When Judah offered to take Benjamin's place, I knew my brothers' hearts were different. I couldn't keep my secret any longer..."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "silver_cup"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

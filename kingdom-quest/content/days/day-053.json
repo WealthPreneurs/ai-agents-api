@@ -1,0 +1,119 @@
+{
+  "day": 53,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Running from Wrong",
+  "scripture_passage": "Genesis 39:7-23",
+  "story_title": "Joseph Says No",
+  "summary": "When Potiphar's wife kept pressuring Joseph to do wrong, he refused and ran. She lied about him, and he was thrown into prison, but Yahweh was still with him.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Joseph grew into a strong, handsome young man. Potiphar's wife wanted Joseph to do something that would betray her husband and dishonor God. Day after day, she kept pressuring him. But Joseph said no. 'My master trusts me with everything in this house. How could I do such a wicked thing and sin against God?' One day, when no one else was around, she grabbed Joseph by his cloak. Joseph didn't stay to argue. He ran! He left his cloak in her hand and got out of there. Then Potiphar's wife told a lie. She said Joseph had tried to hurt her, and she showed his cloak as proof. Potiphar was furious and threw Joseph into prison. Joseph had done the right thing, and he still ended up in prison. That doesn't seem fair! But even there, Yahweh was with Joseph. God showed him kindness, and the prison keeper put Joseph in charge of all the other prisoners. Doing the right thing is always worth it, even when it costs us, because God sees.",
+    "scenes": [
+      {
+        "caption": "A trusted servant",
+        "art_direction": "Joseph managing the household, keys at his belt."
+      },
+      {
+        "caption": "Pressure",
+        "art_direction": "Potiphar's wife watching Joseph from a doorway with a scheming look; nothing suggestive shown."
+      },
+      {
+        "caption": "'How could I sin against God?'",
+        "art_direction": "Joseph shaking his head firmly, hand raised."
+      },
+      {
+        "caption": "He ran!",
+        "art_direction": "Joseph sprinting out of the house, his cloak left behind in her hand."
+      },
+      {
+        "caption": "A lie",
+        "art_direction": "Potiphar's wife holding up the cloak to an angry Potiphar."
+      },
+      {
+        "caption": "Prison, but not alone",
+        "art_direction": "Joseph in a stone prison, a soft light beside him; the keeper handing him a clipboard-like tablet."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 39:9",
+    "text": "How then can I do this great wickedness, and sin against God?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "How then can I",
+      "do this great wickedness,",
+      "and sin",
+      "against God?"
+    ],
+    "distractors": [
+      "and get away with it?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh helps me say no to wrong and run from it.",
+    "reflection_prompt": "Joseph ran away from doing wrong. When is a time you could walk away or say no to something you know is wrong?",
+    "reflection_choices": [
+      "When friends want me to be mean",
+      "When I'm tempted to lie",
+      "When I see something I shouldn't watch",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did Joseph say when he was pressured to do wrong?",
+      "options": [
+        "'How can I sin against God?'",
+        "'Maybe tomorrow.'",
+        "'No one will find out.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph said, 'How then can I do this great wickedness, and sin against God?'",
+      "verse_ref": "Genesis 39:9"
+    },
+    {
+      "question": "What did Joseph leave behind when he ran away?",
+      "options": [
+        "His sandals",
+        "His cloak",
+        "His keys"
+      ],
+      "correct_index": 1,
+      "explanation": "Joseph left his garment in her hand and ran outside.",
+      "verse_ref": "Genesis 39:12"
+    },
+    {
+      "question": "What happened to Joseph in prison?",
+      "options": [
+        "He escaped",
+        "He was forgotten by God",
+        "Yahweh was with him, and the keeper put him in charge"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh was with Joseph and showed him kindness. The keeper put the prisoners in Joseph's care.",
+      "verse_ref": "Genesis 39:21-22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me courage to say no to wrong things and to run away from temptation. Even when doing right is hard, help me remember that You see me. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Running away was the bravest thing I ever did. Sometimes the strongest thing you can do is leave. And if someone pressures you, tell a grown-up you trust."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Potiphar's wife (Genesis 39:7-18). The temptation is described only as 'something that would betray her husband and dishonor God'; the false accusation as 'Joseph had tried to hurt her.' Companion points kids to a trusted grown-up. Confirm wording for ages 7-9."
+  }
+}

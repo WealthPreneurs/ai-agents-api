@@ -1,0 +1,108 @@
+{
+  "day": 35,
+  "month": 2,
+  "realm": 5,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Chosen and Called",
+  "scripture_passage": "Genesis 12-17",
+  "story_title": "Abram's Adventure",
+  "summary": "Sabbath Camp looks back at Abram: answering God's call, choosing peace, counting the stars, the God who sees, and his new name, Abraham.",
+  "story_reel": {
+    "duration_seconds": 100,
+    "narration": "Welcome to Sabbath Camp! This week we followed Abram on a great adventure. Let's remember. Yahweh called Abram to leave home and go to a land He would show him. Abram went, not knowing where. God promised, 'I will bless you, and you will be a blessing.' Abram chose peace and let Lot pick first. He rescued Lot and refused riches, because everything belongs to God. One night, God told Abram to count the stars. Abram believed Him! When Hagar ran away, God found her and showed He is the God who sees. And finally, God gave Abram a new name: Abraham, father of many nations. Here is this week's big truth: God chose Abraham, not because he was perfect, but because God loved him and had a plan. God has chosen and called you too, to know Him and to be a blessing.",
+    "scenes": [
+      {
+        "caption": "Camp under the stars",
+        "art_direction": "Campfire beside Abraham's tent in the child's village; a sky full of countable stars."
+      },
+      {
+        "caption": "Abram's week",
+        "art_direction": "Storybook recap pages: the caravan, the peaceful hilltop, starry night, the spring, the name stone."
+      },
+      {
+        "caption": "You are called too",
+        "art_direction": "A golden thread from Abraham's tent reaches all the way to the child's avatar."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 12:2",
+    "text": "I will make of you a great nation. I will bless you and make your name great. You will be a blessing.",
+    "translation": "WEB",
+    "tokens": [
+      "I will make of you",
+      "a great nation.",
+      "I will bless you",
+      "and make your name great.",
+      "You will be",
+      "a blessing."
+    ],
+    "distractors": [
+      "a king."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I am chosen and called by Yahweh.",
+    "reflection_prompt": "Milestone: You are chosen and called! God blessed Abraham so he could be a blessing. Write or draw one way you can be a blessing to someone this week.",
+    "reflection_choices": [
+      "Help someone at home",
+      "Encourage a friend",
+      "Share something I have",
+      "Pray for someone"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did God promise Abram he would be?",
+      "options": [
+        "A king of Egypt",
+        "A blessing",
+        "The strongest man"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'I will bless you... You will be a blessing.'",
+      "verse_ref": "Genesis 12:2"
+    },
+    {
+      "question": "What did God tell Abram to count?",
+      "options": [
+        "The stars",
+        "His coins",
+        "His camels"
+      ],
+      "correct_index": 0,
+      "explanation": "God told Abram to count the stars, if he could. His family would be as many.",
+      "verse_ref": "Genesis 15:5"
+    },
+    {
+      "question": "What new name did God give Abram?",
+      "options": [
+        "Israel",
+        "Isaac",
+        "Abraham"
+      ],
+      "correct_index": 2,
+      "explanation": "God changed Abram's name to Abraham, father of many nations.",
+      "verse_ref": "Genesis 17:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for choosing me and calling me Yours. Bless me so I can be a blessing to others. I'll follow You wherever You lead. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Realm 5 complete! God's call to Abraham is part of your story too. You've been chosen to know Him and to bless others. Let's keep going!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "blessing_well"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

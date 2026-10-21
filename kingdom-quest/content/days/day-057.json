@@ -1,0 +1,118 @@
+{
+  "day": 57,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God's Plans Stand",
+  "scripture_passage": "Genesis 42",
+  "story_title": "The Brothers Come to Egypt",
+  "summary": "When famine struck, Joseph's ten brothers came to Egypt to buy grain and bowed before him, not knowing who he was. Joseph tested them to see if their hearts had changed.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Just as God said, the seven good years ended and a terrible famine began. There was no food anywhere, except in Egypt, where Joseph had stored grain. Back in Canaan, Jacob told his sons, 'I hear there is grain in Egypt. Go buy some, so we don't starve.' So ten of Joseph's brothers traveled to Egypt. But Jacob kept Benjamin, the youngest, at home. Benjamin was Joseph's only full brother, and Jacob was afraid of losing him too. In Egypt, the brothers came before the governor and bowed down with their faces to the ground. They didn't recognize him, but Joseph recognized them! He remembered his dreams. They had come true! Joseph decided to test his brothers to see if their hearts had changed. He spoke harshly and said, 'You are spies!' He kept Simeon in prison and told them to bring their youngest brother back. The brothers whispered to each other, 'This is happening because of what we did to Joseph.' Joseph understood every word. He turned away and cried. God's plans had been working all along.",
+    "scenes": [
+      {
+        "caption": "Famine everywhere",
+        "art_direction": "Dry, cracked fields and empty baskets in Canaan."
+      },
+      {
+        "caption": "Ten brothers travel",
+        "art_direction": "The brothers on donkeys crossing the desert toward Egypt; Benjamin waving from home."
+      },
+      {
+        "caption": "They bow down",
+        "art_direction": "Ten brothers bowing before Joseph on a high seat; a faint echo of the bowing-sheaves dream."
+      },
+      {
+        "caption": "Joseph recognizes them",
+        "art_direction": "Close-up of Joseph's eyes widening with memory."
+      },
+      {
+        "caption": "'You are spies!'",
+        "art_direction": "Joseph speaking sternly through an interpreter; brothers looking frightened."
+      },
+      {
+        "caption": "Joseph cries",
+        "art_direction": "Joseph turning away behind a pillar, wiping tears."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 33:11",
+    "text": "The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations.",
+    "translation": "WEB",
+    "tokens": [
+      "The counsel of Yahweh",
+      "stands fast forever,",
+      "the thoughts",
+      "of his heart",
+      "to all generations."
+    ],
+    "distractors": [
+      "for a little while,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's plans for me stand firm, even when I can't see them working.",
+    "reflection_prompt": "Joseph's dreams came true more than twenty years later! What is something you hope God will do in your life someday?",
+    "reflection_choices": [
+      "Use my gifts to help people",
+      "Heal my family",
+      "Help me be brave",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "Why did Joseph's brothers go to Egypt?",
+      "options": [
+        "To find Joseph",
+        "To buy grain during the famine",
+        "To visit Pharaoh"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob sent them to Egypt to buy grain so they would live and not die.",
+      "verse_ref": "Genesis 42:1-3"
+    },
+    {
+      "question": "Which brother stayed home with Jacob?",
+      "options": [
+        "Benjamin",
+        "Reuben",
+        "Judah"
+      ],
+      "correct_index": 0,
+      "explanation": "Jacob didn't send Benjamin, Joseph's brother, because he was afraid harm might come to him.",
+      "verse_ref": "Genesis 42:4"
+    },
+    {
+      "question": "Which brother did Joseph keep in Egypt?",
+      "options": [
+        "Levi",
+        "Benjamin",
+        "Simeon"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph took Simeon and bound him before their eyes.",
+      "verse_ref": "Genesis 42:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, Your plans always stand. Even when I can't see what You're doing, help me trust that You're working everything out. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "When my brothers bowed in front of me, I remembered my dreams from so long ago. I wanted to see if their hearts had changed. Mine was about to change too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

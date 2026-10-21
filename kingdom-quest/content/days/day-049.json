@@ -1,0 +1,107 @@
+{
+  "day": 49,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: A New Name",
+  "scripture_passage": "Genesis 25-33",
+  "story_title": "From Jacob to Israel",
+  "summary": "Sabbath Camp looks back at Jacob's journey: the stew, the stolen blessing, the stairway dream, Laban's trick, the wrestling match, and the reunion with Esau.",
+  "story_reel": {
+    "duration_seconds": 100,
+    "narration": "Welcome to Sabbath Camp! What a journey we've had with Jacob. Let's remember. Jacob was born holding his brother's heel. He traded stew for Esau's birthright and tricked his father for the blessing. He had to run away from home. But at Bethel, God showed him a stairway to heaven and promised, 'I am with you wherever you go.' In Haran, the trickster got tricked by Laban, and Leah learned to praise God. On the way home, Jacob wrestled with God all night and wouldn't let go. That's when God said, 'Your name will no longer be Jacob, but Israel.' Israel means 'he struggles with God.' The heel-grabber became the father of a nation! And then Jacob and Esau made peace. Here's this week's big truth: God doesn't leave us the way we were. He gives us a new name and a new start.",
+    "scenes": [
+      {
+        "caption": "Camp by the river",
+        "art_direction": "Campfire beside the Jabbok river crossing and the Bethel stairway in the child's village."
+      },
+      {
+        "caption": "Jacob's journey",
+        "art_direction": "Storybook recap pages: the stew pot, goatskins, stairway, wedding veil, wrestling at dawn, the reunion hug."
+      },
+      {
+        "caption": "Jacob becomes Israel",
+        "art_direction": "Hand-lettered 'Jacob' transforms into 'Israel,' then into a map of twelve tribes."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 32:28",
+    "text": "Your name will no longer be called Jacob, but Israel",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Your name",
+      "will no longer",
+      "be called Jacob,",
+      "but Israel"
+    ],
+    "distractors": [
+      "but Esau"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me a new name and a new start.",
+    "reflection_prompt": "Milestone: Yahweh gives you a new start! Jacob went from 'heel-grabber' to 'Israel.' Write or draw what you used to be like and what God is making you into.",
+    "reflection_choices": [
+      "From worried to trusting",
+      "From angry to peaceful",
+      "From selfish to generous",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "What new name did God give Jacob?",
+      "options": [
+        "Abraham",
+        "Israel",
+        "Isaac"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Your name will no longer be called Jacob, but Israel.'",
+      "verse_ref": "Genesis 32:28"
+    },
+    {
+      "question": "What did God promise Jacob at Bethel?",
+      "options": [
+        "'I am with you wherever you go.'",
+        "'You will be rich.'",
+        "'You will never be tricked.'"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'I am with you, and will keep you, wherever you go.'",
+      "verse_ref": "Genesis 28:15"
+    },
+    {
+      "question": "What did Esau do when he and Jacob met again?",
+      "options": [
+        "He took Jacob's sheep",
+        "He sent Jacob away",
+        "He hugged him, and they cried together"
+      ],
+      "correct_index": 2,
+      "explanation": "Esau ran to Jacob, embraced him, and they wept.",
+      "verse_ref": "Genesis 33:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You don't leave me the way I was. Thank You for giving me a new start. Help me become all You made me to be. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Realm 7 complete! My father's new name, Israel, became the name of our whole family. Next up is my story. Get ready for a coat, some dreams, and a deep pit!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "israel_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

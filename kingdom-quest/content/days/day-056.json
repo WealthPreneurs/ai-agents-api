@@ -1,0 +1,120 @@
+{
+  "day": 56,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: From the Pit to the Palace",
+  "scripture_passage": "Genesis 41:37-57",
+  "story_title": "Joseph, Ruler of Egypt",
+  "summary": "Pharaoh made Joseph ruler over all Egypt. Joseph stored grain during the good years. Sabbath Camp looks back at Joseph's journey from the pit to the palace.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "Welcome to Sabbath Camp! Pharaoh was amazed by Joseph's wisdom. He said, 'Can we find anyone like this man, who has the Spirit of God?' Then Pharaoh made Joseph ruler over all of Egypt, second only to Pharaoh himself! He put his own ring on Joseph's finger, dressed him in fine linen, and put a gold chain around his neck. Joseph was thirty years old. During the seven good years, Joseph traveled all over Egypt storing up so much grain they stopped counting it. Joseph had two sons. He named the first Manasseh, which means 'God made me forget my trouble,' and the second Ephraim, which means 'God made me fruitful in the land of my suffering.' Let's remember Joseph's journey: a special coat, jealous brothers, a deep pit, slavery, prison, and finally the palace. In every single place, the Bible says, Yahweh was with Joseph. This week's big truth: Yahweh is with you, even in the pit.",
+    "scenes": [
+      {
+        "caption": "Pharaoh's decision",
+        "art_direction": "Pharaoh standing and pointing at Joseph in the throne room; courtiers gasp."
+      },
+      {
+        "caption": "Ring, robe, and chain",
+        "art_direction": "Joseph receiving a signet ring, linen robe, and gold chain."
+      },
+      {
+        "caption": "Too much grain to count!",
+        "art_direction": "Granaries overflowing; scribes giving up on counting and throwing their scrolls in the air."
+      },
+      {
+        "caption": "Manasseh and Ephraim",
+        "art_direction": "Joseph holding his two baby sons, smiling with tears of joy."
+      },
+      {
+        "caption": "Camp by the granary",
+        "art_direction": "Campfire in the child's village beside the coat, courtyard, and granary items."
+      },
+      {
+        "caption": "Pit to palace",
+        "art_direction": "Recap path: pit, Potiphar's house, prison, palace, with a soft glow following Joseph at every step."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 39:2",
+    "text": "Yahweh was with Joseph, and he was a prosperous man.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh",
+      "was with Joseph,",
+      "and he was",
+      "a prosperous man."
+    ],
+    "distractors": [
+      "was far from Joseph,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is with me even in the pit.",
+    "reflection_prompt": "Milestone: Yahweh is with you even in the pit! Draw Joseph's journey or your own journey, with God's light in every place.",
+    "reflection_choices": [
+      "God was with me in a hard time",
+      "God is with me now",
+      "God will be with me tomorrow",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What did Pharaoh make Joseph?",
+      "options": [
+        "His cook",
+        "Ruler over all Egypt",
+        "A prisoner again"
+      ],
+      "correct_index": 1,
+      "explanation": "Pharaoh said, 'I have set you over all the land of Egypt.'",
+      "verse_ref": "Genesis 41:41"
+    },
+    {
+      "question": "How old was Joseph when he began to serve Pharaoh?",
+      "options": [
+        "Thirty",
+        "Seventeen",
+        "Fifty"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph was thirty years old when he stood before Pharaoh.",
+      "verse_ref": "Genesis 41:46"
+    },
+    {
+      "question": "What does Manasseh mean?",
+      "options": [
+        "King of Egypt",
+        "Seven years",
+        "God made me forget my trouble"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph named him Manasseh, saying, 'God has made me forget all my toil.'",
+      "verse_ref": "Genesis 41:51"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You were with Joseph in every place, and You are with me in every place too. Even in hard times, I am not alone. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Realm 8 complete! From the pit to the palace, God never left me. But my story isn't finished. Next week, some familiar faces show up in Egypt."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "linen"
+    ],
+    "unlock": "pharaohs_signet_ring"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

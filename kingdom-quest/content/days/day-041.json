@@ -1,0 +1,119 @@
+{
+  "day": 41,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Led by God",
+  "scripture_passage": "Genesis 24",
+  "story_title": "Rebekah at the Well",
+  "summary": "Abraham's servant prayed for God to show him the right wife for Isaac. Rebekah kindly offered to water his camels, just as he had prayed, and she agreed to go.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Abraham was very old, and he wanted to find a wife for Isaac from his own family back home. So he sent his most trusted servant on a long journey with ten camels. When the servant reached a well outside the city, he stopped and prayed: 'Yahweh, God of my master Abraham, please give me success today. When the young women come to get water, let the one who says, Have a drink, and I'll water your camels too, be the one You've chosen for Isaac.' Before he even finished praying, a young woman named Rebekah came out with a water jar. The servant asked for a drink. Rebekah said, 'Drink, my lord!' Then she said, 'I'll get water for your camels too!' Ten thirsty camels drink a lot of water, but Rebekah kept running back and forth until they were all finished. The servant bowed and worshiped. He said, 'Yahweh has led me on the way!' When Rebekah's family asked her, 'Will you go?' she said, 'I will go.' And Isaac loved her.",
+    "scenes": [
+      {
+        "caption": "A long journey",
+        "art_direction": "Abraham's servant leading ten camels across the desert."
+      },
+      {
+        "caption": "A prayer at the well",
+        "art_direction": "The servant kneeling by a stone well at evening, eyes closed."
+      },
+      {
+        "caption": "Rebekah arrives",
+        "art_direction": "A young woman with a water jar on her shoulder walking toward the well."
+      },
+      {
+        "caption": "Ten thirsty camels",
+        "art_direction": "Funny montage of Rebekah running back and forth with her jar as camels gulp; a counter ticks up."
+      },
+      {
+        "caption": "'I will go'",
+        "art_direction": "Rebekah nodding bravely to her family, then riding a camel toward Canaan."
+      },
+      {
+        "caption": "Isaac and Rebekah",
+        "art_direction": "Isaac walking in a field at sunset, looking up to see the caravan arrive."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 24:27",
+    "text": "As for me, Yahweh has led me on the way",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "As for me,",
+      "Yahweh has led me",
+      "on the way"
+    ],
+    "distractors": [
+      "has left me"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh leads me when I pray, and I can serve others with a kind heart.",
+    "reflection_prompt": "Rebekah went above and beyond to help a stranger. What is one way you could do more than you're asked to help someone?",
+    "reflection_choices": [
+      "Help clean up without being asked",
+      "Carry something for someone",
+      "Help a classmate",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "serving"
+  },
+  "quiz": [
+    {
+      "question": "What did Abraham's servant do when he reached the well?",
+      "options": [
+        "He took a nap",
+        "He prayed for God's help",
+        "He went to the city market"
+      ],
+      "correct_index": 1,
+      "explanation": "The servant prayed, 'Yahweh, the God of my master Abraham, please give me success today.'",
+      "verse_ref": "Genesis 24:12"
+    },
+    {
+      "question": "What did Rebekah offer to do for the servant's camels?",
+      "options": [
+        "Water them all",
+        "Feed them bread",
+        "Ride them"
+      ],
+      "correct_index": 0,
+      "explanation": "Rebekah said, 'I will also draw for your camels, until they have done drinking.'",
+      "verse_ref": "Genesis 24:19"
+    },
+    {
+      "question": "What did Rebekah say when her family asked if she would go?",
+      "options": [
+        "'Maybe later.'",
+        "'No, thank you.'",
+        "'I will go.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Rebekah said, 'I will go.'",
+      "verse_ref": "Genesis 24:58"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for leading me when I pray. Give me a kind heart like Rebekah's, ready to help others even when it's hard work. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Rebekah was my grandmother! Her kindness at that well changed our whole family's story. Small acts of kindness can be part of God's big plans."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "clay"
+    ],
+    "unlock": "rebekahs_well"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 55,
+  "month": 2,
+  "realm": 8,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God-Given Wisdom",
+  "scripture_passage": "Genesis 41:1-36",
+  "story_title": "Pharaoh's Strange Dreams",
+  "summary": "Pharaoh dreamed of seven fat cows eaten by seven skinny cows. Joseph explained that God was warning of seven years of plenty followed by seven years of famine, and he gave a wise plan.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "One night, Pharaoh, the king of Egypt, had a strange dream. Seven fat, healthy cows came up out of the Nile River. Then seven skinny, bony cows came up and ate the fat ones! Then Pharaoh had a second dream: seven plump heads of grain were swallowed up by seven thin, dried-up heads. In the morning, Pharaoh called all his wise men, but no one could explain the dreams. Then the cupbearer suddenly remembered. 'There's a young Hebrew man in prison who explains dreams!' Pharaoh sent for Joseph right away. Joseph shaved, changed his clothes, and stood before the king. Pharaoh said, 'I hear you can explain dreams.' Joseph said, 'It isn't me. God will give Pharaoh the answer.' Joseph explained: 'Both dreams mean the same thing. God is showing you what He's about to do. There will be seven years of plenty, then seven years of famine.' Then Joseph gave a plan: 'Choose a wise man to store up grain during the good years, so there will be food during the famine.' God gave Joseph wisdom to solve a problem for a whole nation.",
+    "scenes": [
+      {
+        "caption": "Seven fat cows",
+        "art_direction": "Dream sequence: plump, happy cows wading out of a glowing Nile."
+      },
+      {
+        "caption": "Seven skinny cows",
+        "art_direction": "Dream sequence: bony cows gobbling up the fat ones; whimsical, not gross."
+      },
+      {
+        "caption": "No one can explain",
+        "art_direction": "Wise men in tall hats scratching their heads and flipping through scrolls."
+      },
+      {
+        "caption": "'There's a young man in prison!'",
+        "art_direction": "The cupbearer slapping his forehead as he remembers."
+      },
+      {
+        "caption": "Before Pharaoh",
+        "art_direction": "Joseph, freshly shaved and dressed, standing in a grand throne room."
+      },
+      {
+        "caption": "The plan",
+        "art_direction": "Joseph drawing a simple chart: 7 full baskets, then 7 empty ones, with storehouses in between."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 41:16",
+    "text": "It isn't in me. God will give Pharaoh an answer of peace.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "It isn't in me.",
+      "God will give",
+      "Pharaoh",
+      "an answer of peace."
+    ],
+    "distractors": [
+      "I will give"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives me wisdom to solve problems and help others.",
+    "reflection_prompt": "God gave Joseph wisdom to solve a big problem. What is a problem you'd like God to help you think through?",
+    "reflection_choices": [
+      "A problem at school",
+      "A problem with a friend",
+      "A problem at home",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "problem_solving"
+  },
+  "quiz": [
+    {
+      "question": "What did Pharaoh see in his first dream?",
+      "options": [
+        "Seven fat cows eaten by seven skinny cows",
+        "Seven lions",
+        "Seven boats"
+      ],
+      "correct_index": 0,
+      "explanation": "Seven fat cows came up out of the river, then seven thin cows ate them.",
+      "verse_ref": "Genesis 41:2-4"
+    },
+    {
+      "question": "Who reminded Pharaoh about Joseph?",
+      "options": [
+        "Potiphar",
+        "The cupbearer",
+        "Joseph's brothers"
+      ],
+      "correct_index": 1,
+      "explanation": "The chief cupbearer remembered Joseph and told Pharaoh about him.",
+      "verse_ref": "Genesis 41:9-12"
+    },
+    {
+      "question": "What did the dreams mean?",
+      "options": [
+        "Pharaoh would win a war",
+        "The Nile would dry up forever",
+        "Seven years of plenty, then seven years of famine"
+      ],
+      "correct_index": 2,
+      "explanation": "Joseph explained there would be seven years of plenty followed by seven years of famine.",
+      "verse_ref": "Genesis 41:29-30"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for giving wisdom to those who ask. Help me use my mind to solve problems and help others, and help me give You the credit like Joseph did. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Standing before Pharaoh, I knew I didn't have the answer myself. But God did! When you face a hard problem, ask Him for wisdom."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "palm_branch"
+    ],
+    "unlock": "egyptian_granary"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

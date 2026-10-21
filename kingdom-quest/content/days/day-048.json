@@ -1,0 +1,116 @@
+{
+  "day": 48,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Making Things Right",
+  "scripture_passage": "Genesis 33",
+  "story_title": "Brothers Reunite",
+  "summary": "Jacob bowed seven times as he approached Esau. But instead of attacking, Esau ran to Jacob, hugged him, and they wept together. The brothers made peace.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "The next morning, Jacob looked up and saw Esau coming with his four hundred men. Jacob's heart pounded. He walked out in front of his family and bowed to the ground seven times as he got closer to his brother. What would Esau do? Then something amazing happened. Esau ran to meet Jacob! He threw his arms around him, hugged him, and kissed him. And the two brothers cried together. All those years of anger melted away. Esau saw Jacob's big family and said, 'Who are all these?' Jacob introduced his wives and children, and they all bowed. Jacob begged Esau to accept his gifts. Jacob said, 'Seeing your face is like seeing the face of God, because you have welcomed me so kindly.' God had been working in both brothers' hearts. Twenty years before, Jacob had stolen from Esau. Now, Esau forgave him. Forgiveness can heal even the deepest hurts.",
+    "scenes": [
+      {
+        "caption": "Esau approaches",
+        "art_direction": "A long line of men on the horizon; Jacob's family huddled behind him."
+      },
+      {
+        "caption": "Seven bows",
+        "art_direction": "Jacob bowing low again and again as he walks forward."
+      },
+      {
+        "caption": "Esau runs!",
+        "art_direction": "Esau sprinting toward Jacob with open arms; music swells."
+      },
+      {
+        "caption": "A big hug",
+        "art_direction": "The two brothers embracing and weeping; joyful tears."
+      },
+      {
+        "caption": "Meet the family",
+        "art_direction": "Jacob's children shyly peeking out from behind their mothers to wave at Uncle Esau."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Ephesians 4:32",
+    "text": "And be kind to one another, tender hearted, forgiving each other, just as God also in Christ forgave you.",
+    "translation": "WEB",
+    "tokens": [
+      "And be kind",
+      "to one another,",
+      "tender hearted,",
+      "forgiving each other,",
+      "just as God also in Christ",
+      "forgave you."
+    ],
+    "distractors": [
+      "forgetting each other,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be brave to make things right, and I can forgive like Yahweh forgives me.",
+    "reflection_prompt": "Jacob and Esau made peace after twenty years. Is there someone you need to make things right with?",
+    "reflection_choices": [
+      "A brother or sister",
+      "A friend",
+      "A parent",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peacemaking"
+  },
+  "quiz": [
+    {
+      "question": "How many times did Jacob bow as he approached Esau?",
+      "options": [
+        "Three",
+        "Seven",
+        "Ten"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob bowed himself to the ground seven times until he came near to his brother.",
+      "verse_ref": "Genesis 33:3"
+    },
+    {
+      "question": "What did Esau do when he saw Jacob?",
+      "options": [
+        "He ran to him, hugged him, and they cried",
+        "He turned away",
+        "He shouted at him"
+      ],
+      "correct_index": 0,
+      "explanation": "Esau ran to meet him, embraced him, fell on his neck, kissed him, and they wept.",
+      "verse_ref": "Genesis 33:4"
+    },
+    {
+      "question": "What did Jacob say seeing Esau's face was like?",
+      "options": [
+        "Looking in a mirror",
+        "Seeing a stranger",
+        "Seeing the face of God"
+      ],
+      "correct_index": 2,
+      "explanation": "Jacob said, 'I have seen your face, as one sees the face of God, and you were pleased with me.'",
+      "verse_ref": "Genesis 33:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for forgiving me. Help me be brave to make things right when I've hurt someone, and help me forgive others like You forgive me. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Watching my father and uncle hug and cry is one of my earliest memories. Years later, I would have my own chance to forgive my brothers."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil"
+    ],
+    "unlock": "reunion_tree"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

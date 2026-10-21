@@ -1,0 +1,119 @@
+{
+  "day": 58,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "A Tender Heart",
+  "scripture_passage": "Genesis 43",
+  "story_title": "Benjamin and the Feast",
+  "summary": "Judah promised to protect Benjamin, and the brothers returned to Egypt. Joseph was so moved to see Benjamin that he left the room to cry, then held a feast for them.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "The grain ran out, and the family needed more food. But they couldn't go back to Egypt without Benjamin. Jacob didn't want to let him go. Then Judah stepped forward. Remember Judah? He was the one who had said, 'Let's sell Joseph.' But Judah had changed. He said, 'Father, send the boy with me. I will be responsible for him. If I don't bring him back, let me carry the blame forever.' So Jacob let Benjamin go, and the brothers returned to Egypt with gifts and double the money. When Joseph saw Benjamin, his little brother, his heart was overflowing. He hurried out of the room to his own chamber and wept. Then he washed his face, came back, and said, 'Serve the meal!' Joseph seated the brothers in order from oldest to youngest, which amazed them. How could he know? And he gave Benjamin five times as much food as anyone else! They feasted together. Joseph had every reason to be cold and harsh, but his heart was tender toward his family.",
+    "scenes": [
+      {
+        "caption": "Out of grain again",
+        "art_direction": "Jacob's family looking into an empty grain sack."
+      },
+      {
+        "caption": "Judah's promise",
+        "art_direction": "Judah kneeling before his father, hand on his heart."
+      },
+      {
+        "caption": "Back to Egypt",
+        "art_direction": "The brothers and young Benjamin traveling with gifts of honey, nuts, and spices."
+      },
+      {
+        "caption": "Joseph sees Benjamin",
+        "art_direction": "Joseph freezing as Benjamin walks in; then hurrying away."
+      },
+      {
+        "caption": "Tears in private",
+        "art_direction": "Joseph weeping in his chamber, then splashing water on his face."
+      },
+      {
+        "caption": "The feast",
+        "art_direction": "Long banquet table; brothers seated oldest to youngest, staring at each other in surprise; Benjamin's plate piled high."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Romans 12:10",
+    "text": "be tenderly affectionate to one another",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "be tenderly",
+      "affectionate",
+      "to one another"
+    ],
+    "distractors": [
+      "be cold"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can keep a tender heart toward my family, even when they have hurt me.",
+    "reflection_prompt": "Judah promised to protect Benjamin, and Joseph showed kindness to his brothers. How can you show love to someone in your family today?",
+    "reflection_choices": [
+      "Give a hug",
+      "Help with a chore",
+      "Say something kind",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "Which brother promised to be responsible for Benjamin?",
+      "options": [
+        "Reuben",
+        "Judah",
+        "Simeon"
+      ],
+      "correct_index": 1,
+      "explanation": "Judah said, 'I will be collateral for him. From my hand will you require him.'",
+      "verse_ref": "Genesis 43:9"
+    },
+    {
+      "question": "What did Joseph do when he saw Benjamin?",
+      "options": [
+        "He hurried out and wept",
+        "He laughed",
+        "He sent him away"
+      ],
+      "correct_index": 0,
+      "explanation": "Joseph's heart yearned for his brother, and he went into his room and wept there.",
+      "verse_ref": "Genesis 43:30"
+    },
+    {
+      "question": "How much more food did Benjamin get at the feast?",
+      "options": [
+        "Twice as much",
+        "The same",
+        "Five times as much"
+      ],
+      "correct_index": 2,
+      "explanation": "Benjamin's portion was five times as much as any of theirs.",
+      "verse_ref": "Genesis 43:34"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, give me a tender heart toward my family. Help me show love to them, protect them, and be kind, even when it's hard. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Seeing my little brother Benjamin after all those years... I couldn't hold back my tears! It's okay to cry. A tender heart is a strong heart."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "palm_branch"
+    ],
+    "unlock": "feast_table"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

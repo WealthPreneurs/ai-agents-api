@@ -1,0 +1,115 @@
+{
+  "day": 33,
+  "month": 2,
+  "realm": 5,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "The God Who Sees Me",
+  "scripture_passage": "Genesis 16",
+  "story_title": "Hagar and the God Who Sees",
+  "summary": "Sarai and Abram tried to make God's promise happen their own way, and it caused hurt. When Hagar ran away into the wilderness, Yahweh found her and saw her.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Sarai was tired of waiting for a baby. So she came up with her own plan instead of waiting for God's. She gave her Egyptian servant Hagar to Abram as a second wife, so Hagar could have a baby for the family. But Sarai's plan caused a lot of hurt. When Hagar was going to have a baby, she and Sarai stopped getting along. Sarai treated Hagar harshly, and Hagar ran away into the wilderness. Alone and afraid, Hagar sat down by a spring of water. Then the angel of Yahweh found her there. He said, 'Hagar, where have you come from, and where are you going?' He told her that God had heard her trouble. She would have a son, and she should name him Ishmael, which means 'God hears.' Hagar was amazed. She gave Yahweh a new name: 'You are the God who sees me.' Hagar wasn't important to most people. But she was important to God. He saw her, and He sees you too.",
+    "scenes": [
+      {
+        "caption": "Tired of waiting",
+        "art_direction": "Sarai looking at mothers with babies in the camp, sighing."
+      },
+      {
+        "caption": "A plan of their own",
+        "art_direction": "Sarai talking to Abram and gesturing toward Hagar; muted, uneasy colors."
+      },
+      {
+        "caption": "Hagar runs away",
+        "art_direction": "Hagar walking alone across a vast desert under a hot sun."
+      },
+      {
+        "caption": "By the spring",
+        "art_direction": "Hagar sitting by a small spring; a figure of light appears beside her."
+      },
+      {
+        "caption": "'You are the God who sees'",
+        "art_direction": "Hagar looking up with tears turning to wonder; a warm circle of light around her."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 16:13",
+    "text": "You are a God who sees",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "You are",
+      "a God",
+      "who sees"
+    ],
+    "distractors": [
+      "who sleeps"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh sees me and hears me, even when I feel alone.",
+    "reflection_prompt": "Hagar felt alone, but God saw her and heard her. When is a time you felt like no one noticed you?",
+    "reflection_choices": [
+      "At school",
+      "At home",
+      "With my friends",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "Where did the angel of Yahweh find Hagar?",
+      "options": [
+        "In a palace",
+        "By a spring in the wilderness",
+        "In Abram's tent"
+      ],
+      "correct_index": 1,
+      "explanation": "The angel of Yahweh found her by a spring of water in the wilderness.",
+      "verse_ref": "Genesis 16:7"
+    },
+    {
+      "question": "What name did God tell Hagar to give her son?",
+      "options": [
+        "Ishmael, which means 'God hears'",
+        "Isaac",
+        "Lot"
+      ],
+      "correct_index": 0,
+      "explanation": "Hagar was told to name him Ishmael, because Yahweh had heard her affliction.",
+      "verse_ref": "Genesis 16:11"
+    },
+    {
+      "question": "What name did Hagar give to Yahweh?",
+      "options": [
+        "The God who builds",
+        "The God who rests",
+        "The God who sees"
+      ],
+      "correct_index": 2,
+      "explanation": "Hagar called Yahweh 'a God who sees.'",
+      "verse_ref": "Genesis 16:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You see me and hear me. When I feel alone or forgotten, help me remember that You are the God who sees me. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "When I was far from home, I learned what Hagar learned: no matter where you are, Yahweh sees you. You are never invisible to Him."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "spring_of_seeing"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sarai giving Hagar to Abram as a second wife (Genesis 16:2-3) is told plainly and framed as 'her own plan instead of waiting for God's.' Confirm wording for ages 7-9."
+  }
+}

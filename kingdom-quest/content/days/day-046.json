@@ -1,0 +1,119 @@
+{
+  "day": 46,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Praising God Anyway",
+  "scripture_passage": "Genesis 29:1-35",
+  "story_title": "Jacob Meets His Match",
+  "summary": "Jacob worked seven years to marry Rachel, but Laban tricked him into marrying her sister Leah. God saw Leah and blessed her, and she learned to praise Him.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Jacob finally arrived in Haran. At a well, he met a beautiful shepherdess named Rachel, his uncle Laban's daughter. Jacob loved Rachel right away! He told Laban, 'I'll work for you for seven years if I can marry Rachel.' Jacob worked hard for seven years, and the Bible says it seemed like only a few days because he loved her so much. But on the wedding day, Laban played a trick. He gave Jacob his older daughter Leah instead! Jacob, the trickster, had been tricked. Laban said, 'Work seven more years, and you can marry Rachel too.' So Jacob ended up with two wives, which caused lots of sadness. Jacob loved Rachel more, and Leah felt unloved. But Yahweh saw Leah. He blessed her with sons. With each son, Leah hoped Jacob would love her. But when her fourth son was born, Leah said something different: 'This time I will praise Yahweh.' She named him Judah, which means praise. Leah found her worth in God's love, not in what others thought. And from Judah's family, Jesus would one day be born!",
+    "scenes": [
+      {
+        "caption": "Rachel at the well",
+        "art_direction": "Jacob rolling a heavy stone off a well for Rachel and her sheep."
+      },
+      {
+        "caption": "Seven years like a few days",
+        "art_direction": "Seasons flashing by quickly as Jacob works, smiling at Rachel."
+      },
+      {
+        "caption": "The trick",
+        "art_direction": "A wedding veil lifted to reveal Leah; Jacob's jaw drops; Laban shrugs."
+      },
+      {
+        "caption": "Leah feels unseen",
+        "art_direction": "Leah alone at the edge of the tent, looking downcast."
+      },
+      {
+        "caption": "'This time I will praise Yahweh'",
+        "art_direction": "Leah holding baby Judah up toward the sky, joyful and free."
+      },
+      {
+        "caption": "A royal line",
+        "art_direction": "A glowing line traced from Judah forward toward a distant star over Bethlehem."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 34:1",
+    "text": "I will bless Yahweh at all times. His praise will always be in my mouth.",
+    "translation": "WEB",
+    "tokens": [
+      "I will bless Yahweh",
+      "at all times.",
+      "His praise",
+      "will always be",
+      "in my mouth."
+    ],
+    "distractors": [
+      "only on good days."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh sees me and loves me, even when I feel unloved by others.",
+    "reflection_prompt": "Leah learned to praise God even when she felt unloved. What is something you can praise God for today, no matter how you feel?",
+    "reflection_choices": [
+      "He loves me",
+      "He made me",
+      "He is always with me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "How long did Jacob first work to marry Rachel?",
+      "options": [
+        "One year",
+        "Seven years",
+        "Forty years"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob served seven years for Rachel, and they seemed to him like a few days.",
+      "verse_ref": "Genesis 29:20"
+    },
+    {
+      "question": "Who did Laban trick Jacob into marrying first?",
+      "options": [
+        "Leah",
+        "Rebekah",
+        "Sarah"
+      ],
+      "correct_index": 0,
+      "explanation": "In the morning, Jacob found that it was Leah.",
+      "verse_ref": "Genesis 29:25"
+    },
+    {
+      "question": "What did Leah name her fourth son, which means praise?",
+      "options": [
+        "Isaac",
+        "Joseph",
+        "Judah"
+      ],
+      "correct_index": 2,
+      "explanation": "Leah said, 'This time I will praise Yahweh,' and named him Judah.",
+      "verse_ref": "Genesis 29:35"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You see me and love me, even when I feel left out. Help me praise You at all times, like Leah did. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Our family had a lot of jealousy, and I'll tell you more about that soon. But I love that God saw Leah. He sees the people others overlook."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Jacob's marriage to two sisters (polygamy) is stated plainly with the comment that it 'caused lots of sadness'; Bilhah and Zilpah (Genesis 30) are omitted. The quiz quotes Genesis 29:35 in paraphrase; the Memory Gem uses Psalm 34:1 instead. Confirm."
+  }
+}

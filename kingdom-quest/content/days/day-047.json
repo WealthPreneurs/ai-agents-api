@@ -1,0 +1,118 @@
+{
+  "day": 47,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Holding On to God",
+  "scripture_passage": "Genesis 32:1-32",
+  "story_title": "Jacob Wrestles with God",
+  "summary": "On his way home to face Esau, Jacob prayed and then wrestled all night with a mysterious man. Jacob held on and wouldn't let go until he was blessed.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "After twenty years, God told Jacob to go home. But there was a problem: Esau. Jacob heard Esau was coming to meet him with four hundred men, and Jacob was terrified. So Jacob prayed: 'God of my father Abraham and my father Isaac, I am not worthy of all the kindness You have shown me. Please save me from my brother. You promised to do me good.' Jacob sent gifts of goats, sheep, camels, cows, and donkeys ahead to Esau. That night, Jacob was alone by the river Jabbok. Suddenly, a man grabbed him, and they wrestled until dawn! The man touched Jacob's hip and hurt it, but Jacob still wouldn't let go. The man said, 'Let me go, for the day is breaking.' Jacob said, 'I won't let you go unless you bless me.' Then Jacob realized he had been wrestling with God Himself. He named the place Peniel, which means 'face of God,' and said, 'I have seen God face to face, and my life was spared.' Jacob limped away, but he was holding on to God.",
+    "scenes": [
+      {
+        "caption": "Time to go home",
+        "art_direction": "Jacob's large family and flocks packing up in Haran."
+      },
+      {
+        "caption": "Four hundred men!",
+        "art_direction": "A messenger reporting to Jacob; Jacob's face goes pale."
+      },
+      {
+        "caption": "Jacob prays",
+        "art_direction": "Jacob kneeling by the river, hands open, honest and humble."
+      },
+      {
+        "caption": "Wrestling till dawn",
+        "art_direction": "Two silhouettes grappling by a moonlit river; dramatic but not violent."
+      },
+      {
+        "caption": "'I won't let you go!'",
+        "art_direction": "Jacob holding on tight as the sky begins to glow with sunrise."
+      },
+      {
+        "caption": "Peniel",
+        "art_direction": "Jacob limping into the sunrise, smiling, leaning on his staff."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 32:26",
+    "text": "I won't let you go unless you bless me.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I won't",
+      "let you go",
+      "unless you bless me."
+    ],
+    "distractors": [
+      "unless you leave me."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can hold on to Yahweh in prayer, even when I'm afraid.",
+    "reflection_prompt": "Jacob held on to God and wouldn't let go. What is something you want to keep praying about until God answers?",
+    "reflection_choices": [
+      "A worry I have",
+      "Someone I love",
+      "A big decision",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "Why was Jacob afraid to go home?",
+      "options": [
+        "Esau was coming with four hundred men",
+        "He was lost",
+        "A storm was coming"
+      ],
+      "correct_index": 0,
+      "explanation": "Jacob heard Esau was coming with four hundred men, and he was greatly afraid.",
+      "verse_ref": "Genesis 32:6-7"
+    },
+    {
+      "question": "What did Jacob say to the man he wrestled?",
+      "options": [
+        "'Leave me alone!'",
+        "'Who are you?'",
+        "'I won't let you go unless you bless me.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Jacob said, 'I won't let you go unless you bless me.'",
+      "verse_ref": "Genesis 32:26"
+    },
+    {
+      "question": "What does Peniel mean?",
+      "options": [
+        "River crossing",
+        "Face of God",
+        "Strong man"
+      ],
+      "correct_index": 1,
+      "explanation": "Jacob called the place Peniel, saying, 'I have seen God face to face.'",
+      "verse_ref": "Genesis 32:30"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I'm afraid, I want to hold on to You. Help me keep praying and trusting You, even when it's hard. I won't let go! Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "I was just a little boy when my father came back limping from the river. He walked differently after that night, and he trusted God differently too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "jabbok_river_crossing"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

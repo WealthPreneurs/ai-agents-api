@@ -1,0 +1,119 @@
+{
+  "day": 61,
+  "month": 2,
+  "realm": 9,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Goes With Me",
+  "scripture_passage": "Genesis 46:1-7; 46:28-34; 47:1-12",
+  "story_title": "Jacob Goes to Egypt",
+  "summary": "God told Jacob not to be afraid to go to Egypt, because He would go with him. Jacob and Joseph were reunited, and Pharaoh gave the family the land of Goshen.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Jacob packed up everything: his family, his animals, and all he owned. On the way, he stopped at Beersheba and worshiped God. That night, God spoke to him in a vision: 'Jacob, Jacob!' 'Here I am,' Jacob answered. God said, 'I am God, the God of your father. Don't be afraid to go down to Egypt. I will make you a great nation there. I will go down with you into Egypt, and I will surely bring you back again.' So Jacob's family, seventy people in all, traveled to Egypt. When Joseph heard they were near, he jumped into his chariot and raced to meet his father. When he saw Jacob, Joseph threw his arms around him and cried for a long time. Jacob said, 'Now I can die in peace, because I have seen your face and know you are alive.' Pharaoh welcomed the family and gave them the best land in Egypt, called Goshen, to live in and care for their flocks. Old Jacob even blessed Pharaoh! Wherever God's people go, He goes with them.",
+    "scenes": [
+      {
+        "caption": "Packing up again",
+        "art_direction": "Jacob's huge family loading wagons and herding flocks."
+      },
+      {
+        "caption": "'Here I am'",
+        "art_direction": "Old Jacob praying at night at Beersheba; soft light and a voice calling his name."
+      },
+      {
+        "caption": "Seventy people",
+        "art_direction": "A long caravan of families with children and animals heading south."
+      },
+      {
+        "caption": "Joseph's chariot",
+        "art_direction": "Joseph racing in a chariot across the sand, cape flying."
+      },
+      {
+        "caption": "Father and son",
+        "art_direction": "Joseph embracing his elderly father; both weeping with joy."
+      },
+      {
+        "caption": "The land of Goshen",
+        "art_direction": "Green pastures by the Nile; Jacob's family settling in with their flocks."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 46:4",
+    "text": "I will go down with you into Egypt.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I will",
+      "go down with you",
+      "into Egypt."
+    ],
+    "distractors": [
+      "stay here without you"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to be afraid of new places, because Yahweh goes with me.",
+    "reflection_prompt": "God told Jacob, 'Don't be afraid. I will go with you.' Where is somewhere you're going soon where you need to remember God is with you?",
+    "reflection_choices": [
+      "A new place",
+      "The doctor or dentist",
+      "A big event",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "joy"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Jacob about going to Egypt?",
+      "options": [
+        "'Don't be afraid. I will go with you.'",
+        "'Stay home.'",
+        "'Go alone.'"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Don't be afraid to go down into Egypt... I will go down with you.'",
+      "verse_ref": "Genesis 46:3-4"
+    },
+    {
+      "question": "How many people in Jacob's family came to Egypt?",
+      "options": [
+        "Twelve",
+        "Seventy",
+        "One thousand"
+      ],
+      "correct_index": 1,
+      "explanation": "All the people of the house of Jacob who came into Egypt were seventy.",
+      "verse_ref": "Genesis 46:27"
+    },
+    {
+      "question": "What land did Pharaoh give Jacob's family?",
+      "options": [
+        "Canaan",
+        "Babel",
+        "Goshen"
+      ],
+      "correct_index": 2,
+      "explanation": "Pharaoh told Joseph to let them live in the land of Goshen, the best of the land.",
+      "verse_ref": "Genesis 47:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You go with me everywhere. When I'm going somewhere new or scary, help me remember You're right there beside me. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Hugging my father again after twenty-two years... words can't describe it. God brought our whole family back together."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "cedar_wood"
+    ],
+    "unlock": "goshen_pasture"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

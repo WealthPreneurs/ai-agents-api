@@ -1,0 +1,114 @@
+{
+  "day": 38,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "God Keeps His Word",
+  "scripture_passage": "Genesis 21:1-21",
+  "story_title": "Isaac, the Laughter Baby",
+  "summary": "Just as God promised, Sarah had a son, Isaac, when Abraham was 100 years old. God also cared for Hagar and Ishmael in the wilderness.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Yahweh did exactly what He said He would do. Sarah, who was ninety years old, had a baby boy! Abraham was one hundred years old. They named him Isaac, just as God had said. Remember, Isaac means 'he laughs.' Sarah said, 'God has made me laugh, and everyone who hears about this will laugh with me!' This time it was a laugh of pure joy. As Isaac grew, Ishmael, Hagar's son, began making fun of him. Sarah asked Abraham to send Hagar and Ishmael away. Abraham was very sad, because Ishmael was his son too. But God told Abraham, 'Don't worry. I will make Ishmael into a nation too.' So Hagar and Ishmael went into the desert with bread and water. When the water ran out, Hagar was afraid Ishmael would die. But God heard the boy crying. He opened Hagar's eyes, and she saw a well of water! God was with Ishmael as he grew up. God keeps His word, and He takes care of everyone who cries out to Him.",
+    "scenes": [
+      {
+        "caption": "A baby is born!",
+        "art_direction": "Joyful tent scene; elderly Sarah holding baby Isaac, Abraham beaming."
+      },
+      {
+        "caption": "'God has made me laugh!'",
+        "art_direction": "Sarah laughing with joy as neighbors gather and laugh along."
+      },
+      {
+        "caption": "A hard goodbye",
+        "art_direction": "Abraham giving Hagar bread and water at dawn, looking sad."
+      },
+      {
+        "caption": "Out of water",
+        "art_direction": "Hagar in the desert, worried, with Ishmael resting under a bush."
+      },
+      {
+        "caption": "A well appears",
+        "art_direction": "Hagar's eyes opening to see a sparkling well nearby; relief and joy."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 21:1",
+    "text": "Yahweh visited Sarah as he had said, and Yahweh did to Sarah as he had spoken.",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh visited Sarah",
+      "as he had said,",
+      "and Yahweh did to Sarah",
+      "as he had spoken."
+    ],
+    "distractors": [
+      "as he had forgotten."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh keeps His word to me, and He hears me when I cry out.",
+    "reflection_prompt": "God turned Sarah's waiting into joy and heard Ishmael's cry. When has God turned something hard into something good for you?",
+    "reflection_choices": [
+      "A prayer was answered",
+      "Something scary turned out okay",
+      "I got help when I needed it",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "joy"
+  },
+  "quiz": [
+    {
+      "question": "How old was Abraham when Isaac was born?",
+      "options": [
+        "Fifty",
+        "Seventy-five",
+        "One hundred"
+      ],
+      "correct_index": 2,
+      "explanation": "Abraham was one hundred years old when his son Isaac was born.",
+      "verse_ref": "Genesis 21:5"
+    },
+    {
+      "question": "What did Sarah say when Isaac was born?",
+      "options": [
+        "'God has made me laugh!'",
+        "'I'm too tired.'",
+        "'This is a dream.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Sarah said, 'God has made me laugh. Everyone who hears will laugh with me.'",
+      "verse_ref": "Genesis 21:6"
+    },
+    {
+      "question": "What did God show Hagar in the desert?",
+      "options": [
+        "A city",
+        "A well of water",
+        "A camel"
+      ],
+      "correct_index": 1,
+      "explanation": "God opened her eyes, and she saw a well of water.",
+      "verse_ref": "Genesis 21:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for keeping every promise. Thank You for hearing me when I cry out. Fill my heart with joy as I remember all You have done. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Grandpa Isaac's birth made everyone laugh with joy! And God didn't forget Hagar and Ishmael either. He takes care of every family."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ],
+    "unlock": "laughter_cradle"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

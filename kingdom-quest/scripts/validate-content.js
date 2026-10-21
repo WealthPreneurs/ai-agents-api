@@ -97,6 +97,11 @@ for (const file of files) {
   const realmInfo = curriculum.realms[realm - 1];
   if (node.identity_phase !== realmInfo.phase) fail(where, `identity_phase should be "${realmInfo.phase}"`);
   if (node.is_sabbath_camp !== (node.day % 7 === 0)) fail(where, `is_sabbath_camp should be ${node.day % 7 === 0}`);
+  // Sabbath Camp hosts the realm's Identity Milestone and replays its anchor verse.
+  if (node.day % 7 === 0) {
+    if ((node.identity_focus || {}).core_truth !== realmInfo.milestone) fail(where, `Sabbath Camp core_truth should be the realm milestone "${realmInfo.milestone}"`);
+    if ((node.memory_verse || {}).reference !== realmInfo.anchor_verse) fail(where, `Sabbath Camp memory_verse should be the realm anchor verse ${realmInfo.anchor_verse}`);
+  }
   if (!passagePattern.test(node.scripture_passage || '')) fail(where, `scripture_passage "${node.scripture_passage}" is not a reference`);
 
   const tooLong = (field, value, max) => {

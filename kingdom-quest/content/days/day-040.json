@@ -1,0 +1,116 @@
+{
+  "day": 40,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Blessing for Every Nation",
+  "scripture_passage": "Genesis 22:15-19; 23",
+  "story_title": "A Promise for the Whole World",
+  "summary": "God repeated His promise that all nations would be blessed through Abraham's family. Later, Sarah died, and Abraham bought a field to bury her in the land God promised.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "After God provided the ram on the mountain, the angel of Yahweh called to Abraham a second time. 'Because you have obeyed, I will bless you. I will make your family as many as the stars in the sky and the sand on the seashore. And through your offspring, all the nations of the earth will be blessed!' This is a giant promise. All the nations, every country, every language, every family on earth, would be blessed through Abraham's family. That promise came true in Jesus, who was born from Abraham's family to bring God's love to the whole world. Years later, Sarah died when she was 127 years old. Abraham was very sad and wept for her. He bought a field with a cave called Machpelah and buried Sarah there. It was the first piece of the promised land Abraham's family owned. Even in his sadness, Abraham trusted that God would keep every promise.",
+    "scenes": [
+      {
+        "caption": "A second promise",
+        "art_direction": "Abraham and Isaac on the mountaintop as the angel's voice echoes."
+      },
+      {
+        "caption": "Stars and sand",
+        "art_direction": "Split screen: a starry sky above, endless seashore sand below, both sparkling."
+      },
+      {
+        "caption": "All nations blessed",
+        "art_direction": "A spinning globe lighting up with families from every continent."
+      },
+      {
+        "caption": "Sarah's goodbye",
+        "art_direction": "Abraham kneeling beside Sarah's resting place, tearful; tender and quiet."
+      },
+      {
+        "caption": "The cave of Machpelah",
+        "art_direction": "Abraham paying for a field with a cave, a small stake planted in the promised land."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 22:18",
+    "text": "All the nations of the earth will be blessed by your offspring, because you have obeyed my voice.",
+    "translation": "WEB",
+    "tokens": [
+      "All the nations",
+      "of the earth",
+      "will be blessed",
+      "by your offspring,",
+      "because you have obeyed",
+      "my voice."
+    ],
+    "distractors": [
+      "some of the nations"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's love is for every nation, and I get to be part of His big story.",
+    "reflection_prompt": "God promised to bless all nations through Abraham's family. What country or group of people would you like to pray for?",
+    "reflection_choices": [
+      "A country I've heard about",
+      "People who don't know Jesus yet",
+      "Kids in another part of the world",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "sharing_faith"
+  },
+  "quiz": [
+    {
+      "question": "Through Abraham's offspring, who would be blessed?",
+      "options": [
+        "Only Abraham's family",
+        "All the nations of the earth",
+        "Only kings"
+      ],
+      "correct_index": 1,
+      "explanation": "God said all the nations of the earth would be blessed by Abraham's offspring.",
+      "verse_ref": "Genesis 22:18"
+    },
+    {
+      "question": "How old was Sarah when she died?",
+      "options": [
+        "127",
+        "90",
+        "200"
+      ],
+      "correct_index": 0,
+      "explanation": "Sarah lived 127 years.",
+      "verse_ref": "Genesis 23:1"
+    },
+    {
+      "question": "Where did Abraham bury Sarah?",
+      "options": [
+        "In Egypt",
+        "On Mount Moriah",
+        "In the cave of Machpelah"
+      ],
+      "correct_index": 2,
+      "explanation": "Abraham buried Sarah in the cave of the field of Machpelah.",
+      "verse_ref": "Genesis 23:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Your love is for every nation. Thank You for sending Jesus through Abraham's family to bless the whole world. Let me be part of Your big story. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Abraham, Isaac, and my father Jacob were all buried in that cave too. It's where our family planted its hope in God's promise."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

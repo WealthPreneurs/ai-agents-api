@@ -1,0 +1,119 @@
+{
+  "day": 36,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Nothing Is Too Hard",
+  "scripture_passage": "Genesis 18:1-15",
+  "story_title": "Three Visitors",
+  "summary": "Abraham welcomed three visitors with a feast. One was Yahweh, who promised Sarah would have a son within a year. Sarah laughed, but nothing is too hard for Yahweh.",
+  "story_reel": {
+    "duration_seconds": 110,
+    "narration": "It was the hottest part of the day. Abraham was sitting at the entrance of his tent near the oak trees of Mamre when he looked up and saw three men standing nearby. Abraham jumped up and ran to greet them! He bowed and said, 'Please stay! Let me bring water to wash your feet and a little bread.' Then Abraham hurried. He asked Sarah to bake bread. He ran to pick out a calf for a meal. He brought milk and butter too. Abraham served his guests with joy. These were no ordinary visitors. One of them was Yahweh Himself! He said, 'About this time next year, Sarah will have a son.' Sarah was listening inside the tent, and she laughed to herself. 'I'm too old!' she thought. Yahweh asked, 'Why did Sarah laugh? Is anything too hard for Yahweh?' Sarah was afraid and said, 'I didn't laugh.' But God said kindly, 'Yes, you did.' Nothing is too hard for our God.",
+    "scenes": [
+      {
+        "caption": "The heat of the day",
+        "art_direction": "Shimmering heat over Abraham's tent by great oak trees."
+      },
+      {
+        "caption": "Three visitors",
+        "art_direction": "Three mysterious travelers glowing softly at the edges; Abraham running to meet them."
+      },
+      {
+        "caption": "Hurry, hurry!",
+        "art_direction": "Fun, fast-paced montage: Sarah kneading bread, Abraham carrying bowls of milk, a servant cooking."
+      },
+      {
+        "caption": "A feast under the tree",
+        "art_direction": "Guests eating in the shade as Abraham stands nearby, serving."
+      },
+      {
+        "caption": "Sarah laughs",
+        "art_direction": "Sarah behind the tent flap, covering her mouth to hide a giggle."
+      },
+      {
+        "caption": "'Is anything too hard?'",
+        "art_direction": "The words glowing in the air, with a gentle smile from the visitor."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 18:14",
+    "text": "Is anything too hard for Yahweh?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Is anything",
+      "too hard",
+      "for Yahweh?"
+    ],
+    "distractors": [
+      "too easy"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can do anything, and I can serve others with joy.",
+    "reflection_prompt": "Abraham hurried to welcome and serve his guests. How can you make someone feel welcome this week?",
+    "reflection_choices": [
+      "Invite someone to play",
+      "Share a snack",
+      "Greet a visitor with a smile",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "Where was Abraham sitting when the visitors came?",
+      "options": [
+        "At the entrance of his tent by the oaks of Mamre",
+        "In a city gate",
+        "On a boat"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh appeared to Abraham by the oaks of Mamre as he sat in the tent door in the heat of the day.",
+      "verse_ref": "Genesis 18:1"
+    },
+    {
+      "question": "What did Sarah do when she heard she would have a son?",
+      "options": [
+        "She sang",
+        "She laughed to herself",
+        "She ran away"
+      ],
+      "correct_index": 1,
+      "explanation": "Sarah laughed within herself, thinking she was too old.",
+      "verse_ref": "Genesis 18:12"
+    },
+    {
+      "question": "What question did Yahweh ask?",
+      "options": [
+        "'Where is the bread?'",
+        "'Who are you?'",
+        "'Is anything too hard for Yahweh?'"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh asked, 'Is anything too hard for Yahweh?'",
+      "verse_ref": "Genesis 18:14"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, nothing is too hard for You! Help me believe that when I face big problems. And help me welcome and serve others with joy, like Abraham did. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "My great-grandmother Sarah laughed because it seemed impossible. Then God turned her laugh of doubt into a laugh of joy. Nothing is too hard for Him!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "palm_branch"
+    ],
+    "unlock": "oak_of_mamre"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

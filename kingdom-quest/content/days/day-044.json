@@ -1,0 +1,118 @@
+{
+  "day": 44,
+  "month": 2,
+  "realm": 7,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "The Trouble with Tricks",
+  "scripture_passage": "Genesis 27",
+  "story_title": "The Stolen Blessing",
+  "summary": "Jacob disguised himself as Esau to trick his blind father Isaac into giving him the family blessing. The lie broke his family apart, and Jacob had to run away.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Isaac was old and almost blind. One day, he told Esau, 'Go hunt and cook me my favorite meal, and then I will give you my blessing.' Rebekah overheard. She wanted Jacob to get the blessing instead. So she made a plan. She cooked Isaac's favorite food. She dressed Jacob in Esau's clothes and covered his arms and neck with goatskins so he would feel hairy like his brother. Jacob went to his father and lied: 'I am Esau.' Isaac was puzzled. 'The voice is Jacob's voice, but the hands are Esau's hands.' He gave Jacob the blessing. Just after Jacob left, Esau came in with the meal. When he found out what had happened, he cried out loudly and was furious. He even planned to hurt Jacob. Rebekah told Jacob, 'Run to my brother Laban in Haran!' Jacob got the blessing, but he lost his home, his brother, and his peace. Tricks and lies always cost more than they seem. God still had a plan for Jacob, but it would be a long road.",
+    "scenes": [
+      {
+        "caption": "An old, blind father",
+        "art_direction": "Isaac resting in his tent, eyes cloudy, speaking to Esau."
+      },
+      {
+        "caption": "Rebekah's plan",
+        "art_direction": "Rebekah whispering to Jacob behind a tent flap; shifty, nervous mood."
+      },
+      {
+        "caption": "The disguise",
+        "art_direction": "Jacob wearing Esau's robe and goatskin sleeves; light comedic but uneasy beat."
+      },
+      {
+        "caption": "'The voice is Jacob's'",
+        "art_direction": "Isaac feeling Jacob's hairy arm, puzzled."
+      },
+      {
+        "caption": "Esau's cry",
+        "art_direction": "Esau standing in the tent doorway with a tray of food, shocked and heartbroken."
+      },
+      {
+        "caption": "Running away",
+        "art_direction": "Jacob fleeing alone across the hills at dusk."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 12:22",
+    "text": "Lying lips are an abomination to Yahweh, but those who do the truth are his delight.",
+    "translation": "WEB",
+    "tokens": [
+      "Lying lips",
+      "are an abomination",
+      "to Yahweh,",
+      "but those who do the truth",
+      "are his delight."
+    ],
+    "distractors": [
+      "are his secret."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to trick anyone, because Yahweh delights in the truth.",
+    "reflection_prompt": "Jacob's lie hurt his whole family. Why do you think telling the truth matters so much to God?",
+    "reflection_choices": [
+      "It helps people trust each other",
+      "God is truth",
+      "Lies hurt people",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "What did Jacob use to make his arms feel hairy like Esau's?",
+      "options": [
+        "Goatskins",
+        "Wool socks",
+        "Lion fur"
+      ],
+      "correct_index": 0,
+      "explanation": "Rebekah put the skins of young goats on Jacob's hands and neck.",
+      "verse_ref": "Genesis 27:16"
+    },
+    {
+      "question": "What did Isaac say when he touched Jacob?",
+      "options": [
+        "'You smell like a camel.'",
+        "'The voice is Jacob's voice, but the hands are Esau's hands.'",
+        "'You are too short.'"
+      ],
+      "correct_index": 1,
+      "explanation": "Isaac said, 'The voice is Jacob's voice, but the hands are the hands of Esau.'",
+      "verse_ref": "Genesis 27:22"
+    },
+    {
+      "question": "Where did Rebekah tell Jacob to run?",
+      "options": [
+        "To Egypt",
+        "To the sea",
+        "To her brother Laban in Haran"
+      ],
+      "correct_index": 2,
+      "explanation": "Rebekah said, 'Flee to Laban, my brother, in Haran.'",
+      "verse_ref": "Genesis 27:43"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to be someone who tells the truth. When I'm tempted to trick or lie, help me be honest, even when it's hard. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "My father told me about this day many times. He always said, 'Joseph, a blessing you get by lying never feels like a blessing.'"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

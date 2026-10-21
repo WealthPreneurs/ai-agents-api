@@ -1,0 +1,119 @@
+{
+  "day": 29,
+  "month": 2,
+  "realm": 5,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Answering Yahweh's Call",
+  "scripture_passage": "Genesis 12:1-9",
+  "story_title": "Abram Answers the Call",
+  "summary": "Yahweh told Abram to leave his home for a land He would show him, and promised to bless him and make him a blessing. Abram trusted God and went.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "Abram lived in a place called Haran with his wife Sarai and his family. One day, Yahweh spoke to him: 'Leave your country, your relatives, and your father's house, and go to the land I will show you.' God didn't tell Abram where the land was. He just said, 'Go.' Then God made Abram an amazing promise: 'I will make you a great nation. I will bless you and make your name great. You will be a blessing, and all the families of the earth will be blessed through you.' Abram was seventy-five years old. That's old to start an adventure! But Abram packed up everything. He took Sarai, his nephew Lot, his servants, and his animals, and set out. When they reached the land of Canaan, Yahweh appeared to Abram and said, 'I will give this land to your family.' Abram built an altar there and worshiped. He didn't know where the road would lead, but he knew who was leading him.",
+    "scenes": [
+      {
+        "caption": "Life in Haran",
+        "art_direction": "A comfortable tent home by a river; Abram and Sarai with family and flocks."
+      },
+      {
+        "caption": "'Go to the land I will show you'",
+        "art_direction": "Abram looking up at a starry sky as warm light surrounds him; no face shown for God."
+      },
+      {
+        "caption": "A great promise",
+        "art_direction": "Golden threads stretch from Abram's tent out across a map to many families and nations."
+      },
+      {
+        "caption": "Packing up",
+        "art_direction": "Busy scene of camels being loaded, sheep gathered, Lot helping."
+      },
+      {
+        "caption": "Into the unknown",
+        "art_direction": "The caravan walking along a winding road that fades into mist ahead."
+      },
+      {
+        "caption": "An altar in Canaan",
+        "art_direction": "Abram stacking stones on a hilltop at sunset, arms raised in thanks."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Hebrews 11:8",
+    "text": "He went out, not knowing where he went.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "He went out,",
+      "not knowing",
+      "where he went."
+    ],
+    "distractors": [
+      "knowing everything"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh calls me, and I can follow Him even when I can't see the whole path.",
+    "reflection_prompt": "Abram followed God without knowing where he was going. What is something new or unknown that you're facing right now?",
+    "reflection_choices": [
+      "A new school or class",
+      "Moving or a change at home",
+      "Trying something I've never done",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did Yahweh tell Abram to do?",
+      "options": [
+        "Build a tower",
+        "Leave his country and go to a land God would show him",
+        "Stay in Haran forever"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh said, 'Leave your country, your relatives, and your father's house, and go to the land I will show you.'",
+      "verse_ref": "Genesis 12:1"
+    },
+    {
+      "question": "How old was Abram when he left Haran?",
+      "options": [
+        "Seventy-five",
+        "Twenty",
+        "Ten"
+      ],
+      "correct_index": 0,
+      "explanation": "Abram was seventy-five years old when he left Haran.",
+      "verse_ref": "Genesis 12:4"
+    },
+    {
+      "question": "Who went with Abram?",
+      "options": [
+        "Noah and his sons",
+        "No one",
+        "Sarai and his nephew Lot"
+      ],
+      "correct_index": 2,
+      "explanation": "Abram took his wife Sarai and his nephew Lot with him.",
+      "verse_ref": "Genesis 12:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for calling me to follow You. When I can't see what's ahead, help me trust that You are leading me. Make me a blessing to others. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Hi, I'm Joseph! I'll be your guide through the Land of Promises. Abram was my great-grandfather, and his adventure with Yahweh starts right here!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "cedar_wood"
+    ],
+    "unlock": "abrahams_tent"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 37,
+  "month": 2,
+  "realm": 6,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Praying for Others",
+  "scripture_passage": "Genesis 18:16-33; 19:15-29",
+  "story_title": "Abraham Prays for a City",
+  "summary": "When God revealed that Sodom would be judged, Abraham prayed boldly for the city. God rescued Lot and his daughters, but Lot's wife looked back.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "As the visitors got up to leave, Yahweh told Abraham that the cities of Sodom and Gomorrah were full of terrible evil, and judgment was coming. Abraham's nephew Lot lived in Sodom! So Abraham stepped closer and began to pray. 'Will You destroy the good people along with the wicked? What if there are fifty good people there?' God said, 'For fifty, I will not destroy it.' Abraham kept asking. 'What about forty-five? Forty? Thirty? Twenty?' Each time, God said yes. Finally Abraham asked, 'What if there are only ten?' And God said, 'For the sake of ten, I will not destroy it.' Abraham prayed boldly because he knew God is fair and merciful. But there weren't even ten good people in Sodom. So God sent angels to rescue Lot. They took Lot, his wife, and his two daughters by the hand and led them out, saying, 'Run! Don't look back!' But Lot's wife looked back, and she became a pillar of salt. God remembered Abraham's prayer and saved Lot. Our prayers for others matter.",
+    "scenes": [
+      {
+        "caption": "Walking toward Sodom",
+        "art_direction": "Abraham walking with the visitors along a ridge overlooking two distant cities."
+      },
+      {
+        "caption": "Abraham prays",
+        "art_direction": "Abraham stepping forward, hands open, speaking earnestly."
+      },
+      {
+        "caption": "Fifty... forty... ten",
+        "art_direction": "Numbers counting down in glowing lettering as Abraham asks again and again."
+      },
+      {
+        "caption": "Run! Don't look back!",
+        "art_direction": "Angels of light leading Lot's family by the hand out of the city at dawn."
+      },
+      {
+        "caption": "A pillar of salt",
+        "art_direction": "A white salt pillar on the road, shown from a distance; solemn, not scary."
+      },
+      {
+        "caption": "God remembered Abraham",
+        "art_direction": "Abraham looking out over the valley at sunrise, praying."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "James 5:16",
+    "text": "The insistent prayer of a righteous person is powerfully effective.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "The insistent prayer",
+      "of a righteous person",
+      "is powerfully",
+      "effective."
+    ],
+    "distractors": [
+      "is too small"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh listens when I pray for other people.",
+    "reflection_prompt": "Abraham kept praying for the people of Sodom. Who is someone you want to keep praying for?",
+    "reflection_choices": [
+      "Someone in my family",
+      "A friend",
+      "Someone who doesn't know God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "Who did Abraham pray for?",
+      "options": [
+        "The people of Egypt",
+        "The city of Sodom, where Lot lived",
+        "His camels"
+      ],
+      "correct_index": 1,
+      "explanation": "Abraham prayed for Sodom, where his nephew Lot lived.",
+      "verse_ref": "Genesis 18:23-24"
+    },
+    {
+      "question": "What was the smallest number of good people Abraham asked about?",
+      "options": [
+        "Ten",
+        "Fifty",
+        "One hundred"
+      ],
+      "correct_index": 0,
+      "explanation": "Abraham asked, 'What if ten are found there?' and God said He would not destroy it for ten.",
+      "verse_ref": "Genesis 18:32"
+    },
+    {
+      "question": "What happened to Lot's wife when she looked back?",
+      "options": [
+        "She got lost",
+        "She fell asleep",
+        "She became a pillar of salt"
+      ],
+      "correct_index": 2,
+      "explanation": "Lot's wife looked back from behind him, and she became a pillar of salt.",
+      "verse_ref": "Genesis 19:26"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You listen when I pray for others. Help me pray boldly like Abraham for my family, my friends, and people who don't know You yet. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "Abraham kept asking and asking because he cared about people. Your prayers matter to God too. Who will you pray for today?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "prayer_altar"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: judgment of Sodom and Lot's wife. Sodom's sin is described only as 'terrible evil'; Genesis 19:1-14 and 19:30-38 are omitted. The destruction itself is not shown. Confirm tone."
+  }
+}

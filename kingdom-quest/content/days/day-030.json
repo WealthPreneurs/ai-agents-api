@@ -1,0 +1,113 @@
+{
+  "day": 30,
+  "month": 2,
+  "realm": 5,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Choosing Peace",
+  "scripture_passage": "Genesis 13",
+  "story_title": "Abram Lets Lot Choose",
+  "summary": "When Abram's and Lot's herdsmen started fighting, Abram chose peace and let Lot pick the land first. Then God renewed His promise to Abram.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "God blessed Abram and Lot with so many sheep, goats, and cattle that the land couldn't hold them all. Soon, Abram's herdsmen and Lot's herdsmen started arguing about grass and water. Abram didn't want his family fighting. So he said to Lot, 'Let's not argue. We're family! The whole land is in front of us. You choose first. If you go left, I'll go right. If you go right, I'll go left.' Abram was older. He could have taken the best for himself. But he chose peace. Lot looked out and saw the Jordan Valley, green and well-watered like a garden. So Lot chose that land and moved toward the city of Sodom. After Lot left, Yahweh spoke to Abram: 'Look north and south, east and west. All the land you see, I will give to you and your family forever. I will make your family as many as the dust of the earth!' When we choose peace, we can trust God to take care of us.",
+    "scenes": [
+      {
+        "caption": "Too many animals!",
+        "art_direction": "Hillside crowded with flocks; sheep bumping into each other comically."
+      },
+      {
+        "caption": "Herdsmen argue",
+        "art_direction": "Two groups of shepherds pointing and shouting at a watering hole."
+      },
+      {
+        "caption": "'You choose first'",
+        "art_direction": "Abram and Lot on a high hill, Abram gesturing generously to the land."
+      },
+      {
+        "caption": "Lot chooses the valley",
+        "art_direction": "Lot gazing at the lush green Jordan Valley with a city glinting in the distance."
+      },
+      {
+        "caption": "As many as the dust",
+        "art_direction": "Abram scooping up a handful of dust that sparkles into countless tiny lights."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 5:9",
+    "text": "Blessed are the peacemakers, for they shall be called children of God.",
+    "translation": "WEB",
+    "tokens": [
+      "Blessed are",
+      "the peacemakers,",
+      "for they shall be called",
+      "children of God."
+    ],
+    "distractors": [
+      "the winners,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can choose peace, and Yahweh calls peacemakers His children.",
+    "reflection_prompt": "Abram let Lot choose first to keep the peace. When is a time you could let someone else go first?",
+    "reflection_choices": [
+      "Choosing a game",
+      "Picking a seat or a snack",
+      "Taking turns with a toy",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peacemaking"
+  },
+  "quiz": [
+    {
+      "question": "Why did Abram's and Lot's herdsmen argue?",
+      "options": [
+        "They had too many animals for the land",
+        "They lost their sheep",
+        "They wanted to go home"
+      ],
+      "correct_index": 0,
+      "explanation": "The land couldn't support them both because they had so many animals, so their herdsmen quarreled.",
+      "verse_ref": "Genesis 13:6-7"
+    },
+    {
+      "question": "What did Abram say to Lot?",
+      "options": [
+        "'I get the best land.'",
+        "'Let's not argue. You choose first.'",
+        "'Go back to Haran.'"
+      ],
+      "correct_index": 1,
+      "explanation": "Abram said, 'Let there be no strife between us. If you go left, I will go right.'",
+      "verse_ref": "Genesis 13:8-9"
+    },
+    {
+      "question": "What did God say Abram's family would be as many as?",
+      "options": [
+        "The trees",
+        "The fish",
+        "The dust of the earth"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'I will make your offspring as the dust of the earth.'",
+      "verse_ref": "Genesis 13:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me be a peacemaker. When I want to argue or have my own way, help me choose kindness and trust You to take care of me. Amen."
+  },
+  "companion": {
+    "id": "joseph",
+    "message": "My brothers and I didn't always choose peace like Great-grandfather Abram. Being a peacemaker takes courage, but God sees it, and He calls you His child."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}
