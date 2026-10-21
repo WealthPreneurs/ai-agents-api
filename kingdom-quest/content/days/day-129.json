@@ -1,0 +1,118 @@
+{
+  "day": 129,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Brave Even When Scared",
+  "scripture_passage": "Judges 6:25-32",
+  "story_title": "Tearing Down the Idol",
+  "summary": "God told Gideon to tear down his father's altar to Baal. Gideon was afraid, so he did it at night, but he obeyed. When the town was angry, his father stood up for him.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "That same night, Yahweh gave Gideon his first job. 'Take your father's bull and tear down your father's altar to Baal. Cut down the wooden idol next to it. Then build a proper altar to Yahweh your God.' This was a big deal. Gideon's own father had an altar to a fake god, and the whole town worshiped there! Gideon took ten of his servants and did everything Yahweh told him. But he was afraid of his family and the townspeople. So instead of doing it in the daytime, he did it at night. In the morning, the townspeople woke up and saw the altar smashed and the idol chopped down. 'Who did this?' they shouted. They found out it was Gideon. They went to his father, Joash, and said, 'Bring out your son. He must die!' But Joash stood up for Gideon. 'Are you going to fight for Baal? If Baal really is a god, he can fight for himself!' After that, Gideon got a new nickname: Jerubbaal, which means 'Let Baal fight him.' Gideon was afraid, but he obeyed anyway. Being brave doesn't mean you're not scared. It means doing what's right even when you are.",
+    "scenes": [
+      {
+        "caption": "A big first job",
+        "art_direction": "Gideon listening at night as God gives him instructions."
+      },
+      {
+        "caption": "Ten servants",
+        "art_direction": "Gideon and ten helpers sneaking out under the moon with tools and a bull."
+      },
+      {
+        "caption": "Down it comes!",
+        "art_direction": "The Baal altar crumbling and the wooden pole falling; done in silhouette."
+      },
+      {
+        "caption": "Morning surprise",
+        "art_direction": "Townspeople waking up and gasping at the smashed altar; comedic double-takes."
+      },
+      {
+        "caption": "'Who did this?'",
+        "art_direction": "An angry crowd pointing at Gideon's house."
+      },
+      {
+        "caption": "Joash stands up",
+        "art_direction": "Gideon's father blocking the doorway, arms crossed, defending his son."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Corinthians 16:13",
+    "text": "Watch! Stand firm in the faith! Be courageous! Be strong!",
+    "translation": "WEB",
+    "tokens": [
+      "Watch!",
+      "Stand firm",
+      "in the faith!",
+      "Be courageous!",
+      "Be strong!"
+    ],
+    "distractors": [
+      "Be sleepy!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can obey Yahweh even when I'm scared.",
+    "reflection_prompt": "Gideon was afraid, but he obeyed anyway. What is something right you could do even though it feels scary?",
+    "reflection_choices": [
+      "Tell the truth",
+      "Stand up for someone",
+      "Say no to something wrong",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Gideon to tear down?",
+      "options": [
+        "A city wall",
+        "His father's altar to Baal",
+        "A tower"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Throw down the altar of Baal that your father has, and cut down the Asherah that is by it.'",
+      "verse_ref": "Judges 6:25"
+    },
+    {
+      "question": "Why did Gideon do it at night?",
+      "options": [
+        "He was afraid of his family and the townspeople",
+        "It was cooler",
+        "He forgot during the day"
+      ],
+      "correct_index": 0,
+      "explanation": "Because he feared his father's household and the men of the city, he did it by night.",
+      "verse_ref": "Judges 6:27"
+    },
+    {
+      "question": "What did Joash say when the people wanted to punish Gideon?",
+      "options": [
+        "'Take him!'",
+        "'Let's build a new altar.'",
+        "'If Baal is a god, let him fight for himself!'"
+      ],
+      "correct_index": 2,
+      "explanation": "Joash said, 'If he is a god, let him contend for himself.'",
+      "verse_ref": "Judges 6:31"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I don't always feel brave. Help me obey You even when I'm scared. Stand firm with me and make me strong. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Gideon was brave even though he was scared, and that's real courage! Sometimes God starts with small steps of obedience before the big ones."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

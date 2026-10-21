@@ -1,0 +1,121 @@
+{
+  "day": 121,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Asking Boldly",
+  "scripture_passage": "Judges 1:11-15",
+  "story_title": "Achsah Asks for Springs",
+  "summary": "Caleb's daughter Achsah married Othniel and received land in the dry south. She boldly asked her father for springs of water too, and Caleb gave her the upper and lower springs.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Remember Caleb, the brave spy who asked for a mountain? He had a daughter named Achsah. Caleb promised that whoever captured the city of Debir would marry Achsah. A brave young man named Othniel, Caleb's nephew, took the city, so Achsah became his wife. As a wedding gift, Caleb gave them land in the Negev, the dry southern desert. But dry land without water isn't much use for crops or animals! So Achsah did something bold. She got off her donkey and went to her father. Caleb asked, 'What do you want?' Achsah answered, 'Give me a blessing! You've given me land in the dry south. Please give me springs of water too.' And Caleb gave her the upper springs and the lower springs. Achsah knew her father loved her, so she asked boldly for what her family needed. Our Father in heaven loves us even more than Caleb loved Achsah. He gives good gifts, and He wants us to come to Him and ask. Every good and perfect gift comes from Him.",
+    "scenes": [
+      {
+        "caption": "Caleb's daughter",
+        "art_direction": "Young Achsah standing proudly beside her father Caleb in Hebron."
+      },
+      {
+        "caption": "Othniel",
+        "art_direction": "A brave young man raising a banner over the gates of Debir."
+      },
+      {
+        "caption": "Dry land",
+        "art_direction": "A wedding gift of land in the desert, dry and cracked."
+      },
+      {
+        "caption": "Off the donkey",
+        "art_direction": "Achsah sliding off her donkey and walking straight up to her father."
+      },
+      {
+        "caption": "'Give me a blessing!'",
+        "art_direction": "Achsah asking with confidence; Caleb smiling warmly."
+      },
+      {
+        "caption": "Upper and lower springs",
+        "art_direction": "Two sparkling springs bubbling up, turning the dry land green."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "James 1:17",
+    "text": "Every good gift and every perfect gift is from above",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Every good gift",
+      "and every",
+      "perfect gift",
+      "is from above"
+    ],
+    "distractors": [
+      "is from below"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can ask my Father in heaven boldly, because every good gift comes from Him.",
+    "reflection_prompt": "Achsah asked her father boldly because she knew he loved her. What is something you could boldly ask God for, for yourself or someone else?",
+    "reflection_choices": [
+      "Wisdom",
+      "Help for my family",
+      "A friend",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "Who was Achsah's father?",
+      "options": [
+        "Moses",
+        "Caleb",
+        "Joshua"
+      ],
+      "correct_index": 1,
+      "explanation": "Caleb said, 'He who strikes Kiriath Sepher, I will give him Achsah my daughter as his wife.'",
+      "verse_ref": "Judges 1:12"
+    },
+    {
+      "question": "What did Achsah ask her father for?",
+      "options": [
+        "Springs of water",
+        "A bigger house",
+        "Gold"
+      ],
+      "correct_index": 0,
+      "explanation": "She said, 'Give me a blessing... give me also springs of water.'",
+      "verse_ref": "Judges 1:15"
+    },
+    {
+      "question": "What did Caleb give her?",
+      "options": [
+        "Nothing",
+        "One small well",
+        "The upper springs and the lower springs"
+      ],
+      "correct_index": 2,
+      "explanation": "Caleb gave her the upper springs and the lower springs.",
+      "verse_ref": "Judges 1:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Father in heaven, thank You that You love to give good gifts. Help me come to You boldly and ask for what I need, trusting that You love me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "I love Achsah's story! She knew her father's heart, so she asked boldly. You can come to your heavenly Father the same way."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "palm_branch"
+    ],
+    "unlock": "achsahs_springs"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Caleb offers his daughter as a prize to whoever captures the city (Judges 1:12). Stated plainly without comment. Confirm this is acceptable or add framing."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 137,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Guarding My Heart",
+  "scripture_passage": "Judges 16:4-17",
+  "story_title": "Samson and Delilah",
+  "summary": "The Philistine rulers paid Delilah to find out the secret of Samson's strength. She kept pressuring him day after day until he finally told her: his hair had never been cut.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Later, Samson fell in love with a woman named Delilah. The five rulers of the Philistines came to her with a deal. 'Find out the secret of Samson's great strength, and how we can capture him. Each of us will give you eleven hundred pieces of silver!' That was a fortune! So Delilah asked Samson, 'Tell me the secret of your strength.' Samson teased her. 'If they tie me with seven fresh bowstrings, I'll be as weak as anyone.' So she tied him up with bowstrings and shouted, 'Samson, the Philistines are here!' He snapped them like string. Then he said, 'Use new ropes.' Snap! Then, 'Weave my hair into the loom.' He pulled the whole loom away! Delilah pouted. 'How can you say you love me when you won't trust me?' Day after day, she nagged and pressured him, until he was sick of it. Finally, Samson told her everything. 'No razor has ever touched my head, because I've been a Nazirite to God since birth. If my head is shaved, my strength will leave me.' Samson knew Delilah was trying to trap him, but he told her anyway. He didn't guard his heart.",
+    "scenes": [
+      {
+        "caption": "A deal",
+        "art_direction": "Five Philistine rulers placing heavy bags of silver before Delilah."
+      },
+      {
+        "caption": "Fresh bowstrings",
+        "art_direction": "Samson snapping bowstrings with a yawn; comedic beat."
+      },
+      {
+        "caption": "New ropes",
+        "art_direction": "Ropes popping off as Delilah shouts, 'The Philistines are here!'"
+      },
+      {
+        "caption": "The loom",
+        "art_direction": "Samson standing up with a whole wooden loom tangled in his hair; silly."
+      },
+      {
+        "caption": "Day after day",
+        "art_direction": "A calendar flipping as Delilah frowns and nags; Samson covering his ears."
+      },
+      {
+        "caption": "The secret",
+        "art_direction": "Samson, tired and defeated, whispering the truth as shadows grow in the room."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 4:23",
+    "text": "Keep your heart with all diligence, for out of it is the wellspring of life.",
+    "translation": "WEB",
+    "tokens": [
+      "Keep your heart",
+      "with all diligence,",
+      "for out of it",
+      "is the wellspring",
+      "of life."
+    ],
+    "distractors": [
+      "is nothing"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can guard my heart and choose friends who help me follow Yahweh.",
+    "reflection_prompt": "Delilah kept pressuring Samson until he gave in. What can you do when someone keeps pressuring you to do something wrong?",
+    "reflection_choices": [
+      "Keep saying no",
+      "Walk away",
+      "Tell a grown-up I trust",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "How much silver did each Philistine ruler offer Delilah?",
+      "options": [
+        "Ten pieces",
+        "Eleven hundred pieces",
+        "One piece"
+      ],
+      "correct_index": 1,
+      "explanation": "They said, 'We will each give you eleven hundred pieces of silver.'",
+      "verse_ref": "Judges 16:5"
+    },
+    {
+      "question": "What did Delilah say when Samson wouldn't tell her his secret?",
+      "options": [
+        "'How can you say you love me?'",
+        "'Never mind.'",
+        "'I'll find out another way.'"
+      ],
+      "correct_index": 0,
+      "explanation": "She said, 'How can you say, I love you, when your heart is not with me?'",
+      "verse_ref": "Judges 16:15"
+    },
+    {
+      "question": "What was the secret Samson finally told?",
+      "options": [
+        "He ate honey every day",
+        "He wore a magic ring",
+        "His hair had never been cut because he was a Nazirite"
+      ],
+      "correct_index": 2,
+      "explanation": "Samson said, 'No razor has ever come on my head; for I have been a Nazirite to God.'",
+      "verse_ref": "Judges 16:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me guard my heart. Give me wisdom to choose good friends and courage to say no when someone pressures me to do wrong. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Samson was strong enough to break ropes, but not strong enough to walk away from pressure. Real strength is saying no and choosing friends who help you follow God."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Samson and Delilah's relationship is described only as 'fell in love.' Pressure is framed for kids with a trusted-grown-up option. Confirm."
+  }
+}

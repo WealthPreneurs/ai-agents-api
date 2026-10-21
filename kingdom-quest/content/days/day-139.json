@@ -1,0 +1,120 @@
+{
+  "day": 139,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Strength for the Weak",
+  "scripture_passage": "Judges 16:23-31; Hebrews 11:32-34",
+  "story_title": "Samson's Last Prayer",
+  "summary": "At a festival for their god Dagon, the Philistines brought Samson out to mock him. Samson prayed, 'Remember me and strengthen me once more,' and pushed down the pillars of the temple.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "The Philistine rulers held a huge festival to celebrate. They praised their false god Dagon, shouting, 'Our god has given Samson, our enemy, into our hands!' The temple was packed, with about three thousand people on the roof alone. 'Bring out Samson to entertain us!' they shouted. So they brought Samson out of the prison. A young servant led him by the hand. Samson said, 'Let me feel the pillars that hold up the temple, so I can lean on them.' Then Samson prayed one more time: 'Lord Yahweh, remember me. Please, God, strengthen me just this once.' Samson put one hand on each of the two middle pillars. He said, 'Let me die with the Philistines!' Then he pushed with all his might. The pillars cracked, and the temple came crashing down on the rulers and all the people. Samson died that day too. In his death, he defeated more of Israel's enemies than he had in his whole life. Samson made many bad choices. But when he was weak, blind, and humbled, he finally turned to God, and God answered. The book of Hebrews lists Samson among the heroes of faith. God gives strength to the weak who call on Him.",
+    "scenes": [
+      {
+        "caption": "A festival for Dagon",
+        "art_direction": "A crowded Philistine temple with a large fish-shaped idol; people cheering."
+      },
+      {
+        "caption": "'Bring out Samson!'",
+        "art_direction": "Samson led out by a young servant, head bowed, hair grown long."
+      },
+      {
+        "caption": "The pillars",
+        "art_direction": "Samson's hands reaching out to feel two massive stone pillars."
+      },
+      {
+        "caption": "A last prayer",
+        "art_direction": "Samson lifting his face upward, praying; a small golden glow returning."
+      },
+      {
+        "caption": "He pushed",
+        "art_direction": "The pillars cracking; the temple collapsing shown from far outside in a cloud of dust. No people shown."
+      },
+      {
+        "caption": "A hero of faith",
+        "art_direction": "A scroll with the words of Hebrews 11, Samson's name written among other heroes."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 40:29",
+    "text": "He gives power to the weak. He increases the strength of him who has no might.",
+    "translation": "WEB",
+    "tokens": [
+      "He gives power",
+      "to the weak.",
+      "He increases",
+      "the strength",
+      "of him who",
+      "has no might."
+    ],
+    "distractors": [
+      "has lots of muscles."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh gives strength to me when I'm weak and I call on Him.",
+    "reflection_prompt": "Samson called on God when he was at his weakest. When you feel weak or tired, how can you call on God?",
+    "reflection_choices": [
+      "Pray a short prayer",
+      "Say a memory verse",
+      "Ask someone to pray with me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What false god were the Philistines celebrating?",
+      "options": [
+        "Baal",
+        "Dagon",
+        "Pharaoh"
+      ],
+      "correct_index": 1,
+      "explanation": "The lords of the Philistines gathered to offer a great sacrifice to Dagon their god.",
+      "verse_ref": "Judges 16:23"
+    },
+    {
+      "question": "What did Samson pray?",
+      "options": [
+        "'Lord Yahweh, remember me and strengthen me just this once.'",
+        "'Let me go home.'",
+        "'Give me my eyes back.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Samson called to Yahweh, 'Lord Yahweh, remember me, please, and strengthen me, please, only this once.'",
+      "verse_ref": "Judges 16:28"
+    },
+    {
+      "question": "Where is Samson listed in the New Testament?",
+      "options": [
+        "As a king",
+        "As a prophet",
+        "Among the heroes of faith in Hebrews 11"
+      ],
+      "correct_index": 2,
+      "explanation": "Hebrews 11 names Samson among those who through faith were made strong out of weakness.",
+      "verse_ref": "Hebrews 11:32-34"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I'm weak, I can call on You. Thank You that You give power to the weak. Remember me and strengthen me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Samson's story ends in a hard way, but he ended up calling on God. Strength isn't about muscles. It's about turning to God, especially when we're weak."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the temple collapse kills Samson and about 3,000 Philistines (Judges 16:27-30). Stated plainly, including Samson's death; the collapse is shown only from far outside. The 'avenged for my two eyes' part of 16:28 is omitted. Consider a parent heads-up card. Confirm."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 124,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Building Others Up",
+  "scripture_passage": "Judges 4:8-16",
+  "story_title": "Go! This Is the Day!",
+  "summary": "Barak said he would only go if Deborah went with him. Deborah went and encouraged him: 'Go! This is the day!' Yahweh threw Sisera's army into confusion, and Israel won.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Barak was nervous. Nine hundred iron chariots! So he said to Deborah, 'If you go with me, I'll go. But if you don't go with me, I won't go.' Deborah said, 'I will certainly go with you. But because of the way you're doing this, the honor of the victory won't be yours. Yahweh will hand Sisera over to a woman.' So Deborah went with Barak, and ten thousand men followed him up Mount Tabor. When Sisera heard about it, he gathered all nine hundred chariots by the Kishon River. Then Deborah turned to Barak and said, 'Go! This is the day Yahweh has given Sisera into your hand. Hasn't Yahweh gone out ahead of you?' So Barak charged down the mountain with his ten thousand men. And Yahweh threw Sisera and all his chariots into a panic! Later, Deborah's song tells how the Kishon River rose up and swept the enemy away. Those mighty iron chariots got stuck in the mud! Sisera jumped out of his chariot and ran away on foot. Deborah didn't fight the battle herself. Her gift was encouraging Barak at just the right moment.",
+    "scenes": [
+      {
+        "caption": "Barak's condition",
+        "art_direction": "Barak looking nervous, saying 'Only if you come with me.'"
+      },
+      {
+        "caption": "'I will go with you'",
+        "art_direction": "Deborah nodding and picking up her cloak."
+      },
+      {
+        "caption": "Up Mount Tabor",
+        "art_direction": "Ten thousand men climbing a rounded mountain behind Barak and Deborah."
+      },
+      {
+        "caption": "'Go! This is the day!'",
+        "art_direction": "Deborah pointing down the mountain, eyes blazing with faith; Barak lifting his banner."
+      },
+      {
+        "caption": "Chariots in a panic",
+        "art_direction": "Distant view of chariots spinning in circles and getting stuck as rain pours down."
+      },
+      {
+        "caption": "Stuck in the mud",
+        "art_direction": "Iron wheels sinking into a muddy riverbank; Sisera running away on foot."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Thessalonians 5:11",
+    "text": "Therefore exhort one another, and build each other up, even as you also do.",
+    "translation": "WEB",
+    "tokens": [
+      "Therefore exhort",
+      "one another,",
+      "and build",
+      "each other up,",
+      "even as",
+      "you also do."
+    ],
+    "distractors": [
+      "and tear each other down,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can use my words to build others up and give them courage.",
+    "reflection_prompt": "Deborah encouraged Barak right when he needed it. Who needs encouragement from you this week?",
+    "reflection_choices": [
+      "A friend who's nervous",
+      "Someone trying something hard",
+      "A brother, sister, or parent",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "encouragement"
+  },
+  "quiz": [
+    {
+      "question": "What did Barak say to Deborah?",
+      "options": [
+        "'I'll go alone.'",
+        "'If you go with me, I'll go.'",
+        "'I'm not going.'"
+      ],
+      "correct_index": 1,
+      "explanation": "Barak said, 'If you will go with me, then I will go.'",
+      "verse_ref": "Judges 4:8"
+    },
+    {
+      "question": "What did Deborah tell Barak on the day of battle?",
+      "options": [
+        "'Go! This is the day!'",
+        "'Let's wait.'",
+        "'Run away!'"
+      ],
+      "correct_index": 0,
+      "explanation": "Deborah said, 'Go; for this is the day in which Yahweh has delivered Sisera into your hand.'",
+      "verse_ref": "Judges 4:14"
+    },
+    {
+      "question": "What did Yahweh do to Sisera's army?",
+      "options": [
+        "Gave them more chariots",
+        "Made them win",
+        "Threw them into confusion"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh confused Sisera, all his chariots, and all his army.",
+      "verse_ref": "Judges 4:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me encourage others with my words. Show me who needs courage today, and help me say the right thing at the right time. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Barak just needed someone to believe in him and remind him that God was going first. Your words can do that for someone too!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Battle at the Kishon (Judges 4:15-16) shown from a distance; 4:16 ('not a man was left') omitted. Confirm."
+  }
+}

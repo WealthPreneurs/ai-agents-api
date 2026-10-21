@@ -1,0 +1,120 @@
+{
+  "day": 120,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Remember and Tell",
+  "scripture_passage": "Judges 2:6-19",
+  "story_title": "The Generation That Forgot",
+  "summary": "After Joshua died, a new generation grew up that didn't know Yahweh. Again and again they turned away, got into trouble, cried out, and God sent leaders called judges to rescue them.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Joshua and the leaders who had seen God's great miracles grew old and died. Then something sad happened. A whole new generation grew up who didn't know Yahweh or remember what He had done for Israel. Nobody had told them the stories! Nobody had shown them the twelve stones by the Jordan. So the people started worshiping the fake gods of the nations around them, called Baals. And when they turned away from God, they lost His protection. Enemy nations attacked them and made their lives miserable. Then the people would cry out to God for help. And God, full of compassion, would raise up a leader called a judge to rescue them. While the judge was alive, things were good. But when the judge died, the people would turn away again. Over and over, the same pattern: turn away, trouble, cry out, rescue. This sad cycle fills the whole book of Judges. But it also shows something wonderful: every single time His people cried out, God answered. And it shows why telling the next generation about God matters so much.",
+    "scenes": [
+      {
+        "caption": "Joshua's generation",
+        "art_direction": "Elderly leaders sitting together, telling stories by the twelve stones; then their chairs empty."
+      },
+      {
+        "caption": "A generation that forgot",
+        "art_direction": "Young people walking past the twelve stones without noticing them; dust covering them."
+      },
+      {
+        "caption": "Fake gods",
+        "art_direction": "People bowing to lifeless statues; the colors dull and gray."
+      },
+      {
+        "caption": "Trouble comes",
+        "art_direction": "Enemy raiders on the horizon; villagers hiding their grain."
+      },
+      {
+        "caption": "They cry out",
+        "art_direction": "Families on their knees, lifting their hands to the sky."
+      },
+      {
+        "caption": "The cycle",
+        "art_direction": "A wheel turning with four icons: turning away, trouble, crying out, and a judge's rescue."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 78:4",
+    "text": "telling to the generation to come the praises of Yahweh",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "telling",
+      "to the generation",
+      "to come",
+      "the praises of Yahweh"
+    ],
+    "distractors": [
+      "the secrets of Egypt"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can help the next generation remember what Yahweh has done.",
+    "reflection_prompt": "A whole generation forgot God because no one told them the stories. Which Bible story would you most like to tell someone younger than you?",
+    "reflection_choices": [
+      "Creation",
+      "Noah and the rainbow",
+      "The Red Sea",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "sharing_faith"
+  },
+  "quiz": [
+    {
+      "question": "What was wrong with the generation after Joshua?",
+      "options": [
+        "They were too busy farming",
+        "They didn't know Yahweh or what He had done",
+        "They lived in Egypt"
+      ],
+      "correct_index": 1,
+      "explanation": "Another generation arose after them who didn't know Yahweh, nor the work which he had done for Israel.",
+      "verse_ref": "Judges 2:10"
+    },
+    {
+      "question": "What did God do when the people cried out?",
+      "options": [
+        "He raised up judges to rescue them",
+        "He ignored them",
+        "He sent them back to Egypt"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh raised up judges, who saved them out of the hand of those who plundered them.",
+      "verse_ref": "Judges 2:16"
+    },
+    {
+      "question": "What happened after each judge died?",
+      "options": [
+        "Everyone stayed faithful forever",
+        "They built a temple",
+        "The people turned away from God again"
+      ],
+      "correct_index": 2,
+      "explanation": "When the judge was dead, they turned back and did worse than their fathers.",
+      "verse_ref": "Judges 2:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I never want to forget what You've done. Help me remember Your stories and tell them to others, especially kids younger than me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Hello! I'm Deborah. I lived during the days of the judges, when God's people kept forgetting Him. I'll guide you through the Valley of Heroes. Let's remember together!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "lamp"
+    ],
+    "unlock": "story_circle"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

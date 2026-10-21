@@ -1,0 +1,120 @@
+{
+  "day": 142,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Loyal Love",
+  "scripture_passage": "Ruth 1:6-18",
+  "story_title": "Where You Go, I Will Go",
+  "summary": "Naomi decided to go home to Bethlehem and urged her daughters-in-law to stay in Moab. Orpah said goodbye, but Ruth clung to Naomi and promised to go wherever she went.",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "One day, Naomi heard that Yahweh had blessed His people in Israel with food again. So she decided to go home to Bethlehem. Ruth and Orpah started the journey with her. But on the road, Naomi stopped and said, 'Go back home to your mothers. May Yahweh be kind to you, just as you have been kind to me. May He give you each a new home and a new husband.' She kissed them goodbye, and they all cried. 'No,' they said, 'we'll go with you!' But Naomi said, 'Go back, my daughters. I have nothing left to give you.' They cried again. Then Orpah kissed Naomi goodbye and went back home. But Ruth held on tight to Naomi. 'Look,' said Naomi, 'your sister-in-law is going back to her people and her gods. Go with her.' But Ruth said something beautiful: 'Don't ask me to leave you! Where you go, I will go. Where you stay, I will stay. Your people will be my people, and your God will be my God.' Ruth chose to love Naomi when it was hard. And she chose to follow Naomi's God, Yahweh. When Naomi saw that Ruth was determined, she stopped arguing.",
+    "scenes": [
+      {
+        "caption": "Good news from home",
+        "art_direction": "A traveler telling Naomi that Bethlehem has bread again."
+      },
+      {
+        "caption": "On the road",
+        "art_direction": "Three women walking together along a dusty road toward Israel."
+      },
+      {
+        "caption": "'Go back home'",
+        "art_direction": "Naomi stopping and turning to her daughters-in-law with tears."
+      },
+      {
+        "caption": "Orpah says goodbye",
+        "art_direction": "Orpah hugging Naomi and slowly walking back toward Moab."
+      },
+      {
+        "caption": "Ruth holds on",
+        "art_direction": "Ruth wrapping her arms around Naomi, refusing to let go."
+      },
+      {
+        "caption": "'Your God will be my God'",
+        "art_direction": "Ruth and Naomi walking on together toward Bethlehem as the sun rises."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "John 15:12",
+    "text": "This is my commandment, that you love one another, even as I have loved you.",
+    "translation": "WEB",
+    "tokens": [
+      "This is my commandment,",
+      "that you love",
+      "one another,",
+      "even as",
+      "I have loved you."
+    ],
+    "distractors": [
+      "I have ignored you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can show loyal love to someone who needs a friend.",
+    "reflection_prompt": "Ruth stayed with Naomi even when it was hard. Who is someone who needs you to stick with them?",
+    "reflection_choices": [
+      "A friend going through a hard time",
+      "A family member",
+      "Someone who feels alone",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "loyalty"
+  },
+  "quiz": [
+    {
+      "question": "Why did Naomi decide to go back to Bethlehem?",
+      "options": [
+        "She missed the weather",
+        "She heard Yahweh had given His people food again",
+        "Her sons asked her to"
+      ],
+      "correct_index": 1,
+      "explanation": "She had heard that Yahweh had visited his people in giving them bread.",
+      "verse_ref": "Ruth 1:6"
+    },
+    {
+      "question": "Who went back to Moab?",
+      "options": [
+        "Orpah",
+        "Ruth",
+        "Naomi"
+      ],
+      "correct_index": 0,
+      "explanation": "Orpah kissed her mother-in-law, but Ruth stayed with her.",
+      "verse_ref": "Ruth 1:14"
+    },
+    {
+      "question": "What did Ruth say about Naomi's God?",
+      "options": [
+        "'I don't know Him.'",
+        "'I'll think about it.'",
+        "'Your God will be my God.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Ruth said, 'Your people will be my people, and your God my God.'",
+      "verse_ref": "Ruth 1:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Jesus, thank You for loving me. Help me love others the way You love me, sticking with them even when it's hard. Make me a loyal friend. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Ruth's promise to Naomi is one of the most beautiful things anyone has ever said. She chose loyalty and chose Yahweh. You can be that kind of friend too!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "olive_oil"
+    ],
+    "unlock": "road_to_bethlehem"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

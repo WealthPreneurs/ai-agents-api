@@ -1,0 +1,121 @@
+{
+  "day": 146,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "A Redeemer Comes",
+  "scripture_passage": "Ruth 3-4:12",
+  "story_title": "Boaz, the Family Redeemer",
+  "summary": "Ruth asked Boaz to be the family redeemer. Boaz promised to help and kept his word at the city gate, buying back Naomi's land and marrying Ruth so the family line would continue.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "When the harvest was over, Naomi said to Ruth, 'My daughter, I want to find you a home where you'll be cared for.' Naomi gave Ruth a plan. Ruth went to the threshing floor where Boaz was working late into the night. In that culture, Ruth used a special way to ask Boaz to marry her and be the family redeemer. She said, 'Spread the corner of your garment over me, because you are a family redeemer.' Boaz was amazed. 'May Yahweh bless you! Everyone in town knows you are a woman of noble character. I will do what you ask. But there is one relative who is even closer than I am. I'll talk to him first.' The next morning, Boaz went to the town gate, where important things were decided. He sat with ten elders and the closer relative. 'Will you buy back Naomi's land and marry Ruth?' The man said, 'I can't. You do it.' To make the deal official, the man took off his sandal and gave it to Boaz! That's how people sealed promises back then. Boaz said, 'Today, I have bought everything that belonged to Naomi's family, and Ruth will be my wife.' The elders blessed them. Boaz kept his promise, and Naomi's family was redeemed.",
+    "scenes": [
+      {
+        "caption": "Naomi's plan",
+        "art_direction": "Naomi whispering to Ruth by lamplight, smiling."
+      },
+      {
+        "caption": "The threshing floor",
+        "art_direction": "A barn-like threshing floor under the moon, piles of grain everywhere; nothing romantic or suggestive shown."
+      },
+      {
+        "caption": "'You are a family redeemer'",
+        "art_direction": "Ruth speaking respectfully as Boaz listens, surprised and honored."
+      },
+      {
+        "caption": "At the city gate",
+        "art_direction": "Boaz sitting with ten elders and the closer relative at the gate of Bethlehem."
+      },
+      {
+        "caption": "The sandal deal",
+        "art_direction": "The relative handing Boaz his sandal as elders nod; light comedic beat."
+      },
+      {
+        "caption": "Redeemed!",
+        "art_direction": "The elders raising their hands in blessing over Boaz and Ruth."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 31:30",
+    "text": "Charm is deceitful, and beauty is vain; but a woman who fears Yahweh, she shall be praised.",
+    "translation": "WEB",
+    "tokens": [
+      "Charm is deceitful,",
+      "and beauty is vain;",
+      "but a woman",
+      "who fears Yahweh,",
+      "she shall be praised."
+    ],
+    "distractors": [
+      "she shall be ignored."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh values a faithful heart, and I can be someone who keeps my word.",
+    "reflection_prompt": "Everyone in town knew Ruth was faithful and good, and Boaz kept his promise. What do you hope people say about your character?",
+    "reflection_choices": [
+      "That I'm kind",
+      "That I'm honest",
+      "That I keep my promises",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What did Ruth ask Boaz to be?",
+      "options": [
+        "Her boss",
+        "Her family redeemer",
+        "Her teacher"
+      ],
+      "correct_index": 1,
+      "explanation": "Ruth said, 'Spread the corner of your garment over your servant; for you are a near kinsman.'",
+      "verse_ref": "Ruth 3:9"
+    },
+    {
+      "question": "What did everyone in town know about Ruth?",
+      "options": [
+        "That she was a woman of noble character",
+        "That she was rich",
+        "That she was a queen"
+      ],
+      "correct_index": 0,
+      "explanation": "Boaz said, 'All the city of my people knows that you are a worthy woman.'",
+      "verse_ref": "Ruth 3:11"
+    },
+    {
+      "question": "How did the closer relative seal the deal with Boaz?",
+      "options": [
+        "He signed a paper",
+        "He shook hands",
+        "He took off his sandal and gave it to Boaz"
+      ],
+      "correct_index": 2,
+      "explanation": "The near kinsman drew off his sandal and gave it to Boaz to confirm the deal.",
+      "verse_ref": "Ruth 4:7-8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to have a faithful heart like Ruth and keep my promises like Boaz. Thank You that Jesus is our Redeemer who rescues us. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Boaz was a family redeemer who rescued Naomi's family. Many years later, Jesus would come as the greatest Redeemer of all, rescuing everyone who trusts Him!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood",
+      "gold_thread"
+    ],
+    "unlock": "city_gate_bench"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The threshing floor scene (Ruth 3:4-14) is described as a culturally specific way of asking for marriage and protection; uncovering his feet and lying there is omitted. Confirm."
+  }
+}

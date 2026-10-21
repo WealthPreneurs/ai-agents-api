@@ -1,0 +1,114 @@
+{
+  "day": 141,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Comfort in Sad Times",
+  "scripture_passage": "Ruth 1:1-5",
+  "story_title": "Sad Days in Moab",
+  "summary": "During a famine in the days of the judges, Naomi and her family moved to Moab. There her husband and both her sons died, leaving Naomi with her two daughters-in-law, Ruth and Orpah.",
+  "story_reel": {
+    "duration_seconds": 115,
+    "narration": "During the days when the judges ruled, there was a famine in Israel. A man named Elimelech lived in Bethlehem with his wife, Naomi, and their two sons, Mahlon and Chilion. Because there wasn't enough food, they left their home and moved to the country of Moab. Moab was a land where people didn't worship Yahweh. Then sadness came to Naomi's family. Her husband, Elimelech, died. Naomi was left with her two sons. The sons married Moabite women. One was named Orpah, and the other was named Ruth. They lived there about ten years. Then something even sadder happened. Both of Naomi's sons died too. Naomi was all alone in a foreign land, with no husband and no sons, only her two daughters-in-law. Naomi's heart was broken. Sometimes very sad things happen in life, and we don't understand why. The book of Ruth begins with sorrow. But keep listening, because God was working quietly through these sad days, and His comfort was coming.",
+    "scenes": [
+      {
+        "caption": "Famine in Bethlehem",
+        "art_direction": "Dry, empty fields around the little town of Bethlehem."
+      },
+      {
+        "caption": "Moving to Moab",
+        "art_direction": "Elimelech, Naomi, and their two sons traveling with a donkey toward the hills of Moab."
+      },
+      {
+        "caption": "A new family",
+        "art_direction": "Two weddings: Mahlon and Ruth, Chilion and Orpah, with Naomi smiling."
+      },
+      {
+        "caption": "Sorrow",
+        "art_direction": "Naomi sitting quietly with Ruth and Orpah beside her, holding hands; soft, gentle colors."
+      },
+      {
+        "caption": "God is working",
+        "art_direction": "A tiny warm glow in the corner of the scene, like a candle in the dark."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 5:4",
+    "text": "Blessed are those who mourn, for they shall be comforted.",
+    "translation": "WEB",
+    "tokens": [
+      "Blessed are",
+      "those who mourn,",
+      "for they shall",
+      "be comforted."
+    ],
+    "distractors": [
+      "be forgotten."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh sees when I'm sad, and He brings comfort.",
+    "reflection_prompt": "Naomi went through a very sad time. When someone you know is sad, how can you show them you care?",
+    "reflection_choices": [
+      "Sit with them",
+      "Give them a hug",
+      "Make them a card",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "empathy"
+  },
+  "quiz": [
+    {
+      "question": "Why did Naomi's family leave Bethlehem?",
+      "options": [
+        "They wanted adventure",
+        "There was a famine",
+        "A king sent them away"
+      ],
+      "correct_index": 1,
+      "explanation": "There was a famine in the land, and a man of Bethlehem went to live in the country of Moab.",
+      "verse_ref": "Ruth 1:1"
+    },
+    {
+      "question": "What were the names of Naomi's daughters-in-law?",
+      "options": [
+        "Orpah and Ruth",
+        "Sarah and Rebekah",
+        "Miriam and Deborah"
+      ],
+      "correct_index": 0,
+      "explanation": "They took wives of the women of Moab; the name of the one was Orpah, and the name of the other was Ruth.",
+      "verse_ref": "Ruth 1:4"
+    },
+    {
+      "question": "Who did Naomi have left after her husband and sons died?",
+      "options": [
+        "No one at all",
+        "Her parents",
+        "Her two daughters-in-law"
+      ],
+      "correct_index": 2,
+      "explanation": "The woman was bereaved of her two children and of her husband, but Ruth and Orpah were with her.",
+      "verse_ref": "Ruth 1:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You see when people are sad. Comfort everyone who is grieving today. Help me care for people who are hurting. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Ruth's story happened during the days of the judges, the same era as mine. It starts with a lot of sadness. If you're sad about someone you miss, talk to God and a grown-up you trust."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: deaths of Naomi's husband and both sons (Ruth 1:3-5). Told gently; companion points kids to a trusted grown-up. Confirm."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "day": 147,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Caring Deeply",
+  "scripture_passage": "Ruth 4:13-22",
+  "story_title": "A Baby Named Obed",
+  "summary": "Boaz and Ruth had a son named Obed, and Naomi held him with joy. Obed became the grandfather of King David. Sabbath Camp looks back at the Valley of Heroes. Region 5 is complete!",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Valley of Heroes! Boaz married Ruth, and Yahweh gave them a baby boy. The women of Bethlehem said to Naomi, 'Praise Yahweh! He has not left you without a family redeemer. This child will give you new life and take care of you when you're old. And your daughter-in-law who loves you, who is better to you than seven sons, gave birth to him!' Naomi took the baby in her arms and cared for him. The neighbor women named him Obed. Then the Bible tells us something amazing. Obed became the father of Jesse, and Jesse became the father of David! Ruth, the foreigner from Moab, became the great-grandmother of King David. And many years later, Jesus was born from that same family. Let's look back at this whole region. God's people kept forgetting Him, but He kept rescuing them. Deborah gave wise counsel. Gideon became a mighty warrior. Samson learned his strength came from God. And Ruth showed loyal love that changed history. This region's biggest truth: you can care deeply for others, the way Yahweh cares for you.",
+    "scenes": [
+      {
+        "caption": "A baby is born",
+        "art_direction": "Ruth and Boaz holding newborn Obed, glowing with joy."
+      },
+      {
+        "caption": "Naomi's joy",
+        "art_direction": "Naomi cradling baby Obed, surrounded by smiling women; her face full of life."
+      },
+      {
+        "caption": "Better than seven sons",
+        "art_direction": "Naomi and Ruth embracing, with the baby between them."
+      },
+      {
+        "caption": "A royal family tree",
+        "art_direction": "A family tree growing from Ruth and Boaz to Obed, Jesse, David, and onward to a star over Bethlehem."
+      },
+      {
+        "caption": "Region 5 complete!",
+        "art_direction": "Map zooms out showing the Valley of Heroes lit up gold; a path glows toward Region 6, the Shepherd's Hills."
+      },
+      {
+        "caption": "Camp in the barley field",
+        "art_direction": "Campfire in the child's village beside Boaz's barley field and the city gate bench."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Ruth 1:16",
+    "text": "where you go, I will go; and where you stay, I will stay. Your people will be my people, and your God my God.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "where you go,",
+      "I will go;",
+      "and where you stay,",
+      "I will stay.",
+      "Your people",
+      "will be my people,",
+      "and your God",
+      "my God."
+    ],
+    "distractors": [
+      "I will leave;"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can care deeply for others the way Yahweh cares for me.",
+    "reflection_prompt": "Milestone: You can care deeply for others! Look back at your Blueprint journal from Region 5. Which gift did you discover: wise counsel, courage, strength, or caring for others?",
+    "reflection_choices": [
+      "Helping others decide wisely",
+      "Being brave like Gideon",
+      "Using my strength for God",
+      "Caring deeply like Ruth"
+    ],
+    "trait_unlocked": "empathy"
+  },
+  "quiz": [
+    {
+      "question": "What was the name of Ruth and Boaz's son?",
+      "options": [
+        "David",
+        "Obed",
+        "Jesse"
+      ],
+      "correct_index": 1,
+      "explanation": "The neighbor women named him Obed.",
+      "verse_ref": "Ruth 4:17"
+    },
+    {
+      "question": "What did the women say Ruth was better to Naomi than?",
+      "options": [
+        "Seven sons",
+        "A bag of gold",
+        "A big house"
+      ],
+      "correct_index": 0,
+      "explanation": "They said, 'Your daughter-in-law, who loves you, who is better to you than seven sons.'",
+      "verse_ref": "Ruth 4:15"
+    },
+    {
+      "question": "Who was Ruth's great-grandson?",
+      "options": [
+        "Moses",
+        "Samson",
+        "King David"
+      ],
+      "correct_index": 2,
+      "explanation": "Obed became the father of Jesse, and Jesse the father of David.",
+      "verse_ref": "Ruth 4:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for caring for me so deeply. Help me care for others with loyal love like Ruth. Thank You for this whole journey through the Valley of Heroes! Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "You finished the Valley of Heroes! Thank you for journeying with me. Next, you'll meet Ruth's great-grandson, a shepherd boy named David, who will guide you through the Shepherd's Hills!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "valley_of_heroes_crown"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "day": 135,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Strength Is a Gift",
+  "scripture_passage": "Judges 14:1-14",
+  "story_title": "The Lion and the Riddle",
+  "summary": "When a young lion roared at Samson, the Spirit of Yahweh came on him and he fought it off with his bare hands. Later, he found bees and honey inside it and made up a famous riddle.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "When Samson grew up, he went down to the Philistine town of Timnah and wanted to marry a Philistine woman there. His parents weren't happy about it, but they went with him to arrange the wedding. Along the way, near the vineyards of Timnah, a young lion came roaring at Samson! Then the Spirit of Yahweh came powerfully on him, and Samson fought off the lion with his bare hands, as easily as if it were a baby goat. He didn't even tell his parents about it! Some time later, Samson passed by the same spot. A swarm of bees had made a hive inside the lion's body, and it was full of honey! Samson scooped some out and ate it as he walked, and he even shared some with his parents. At his wedding feast, Samson made up a riddle for the thirty young Philistine men there: 'Out of the eater came something to eat. Out of the strong came something sweet.' Can you guess the answer? A lion and honey! God gave Samson amazing strength. The question was: would he use his gift God's way?",
+    "scenes": [
+      {
+        "caption": "Down to Timnah",
+        "art_direction": "Samson, with long braided hair, walking with his parents toward a Philistine town."
+      },
+      {
+        "caption": "A roaring lion!",
+        "art_direction": "A young lion leaping out of the vineyard; dramatic but not gory."
+      },
+      {
+        "caption": "The Spirit comes",
+        "art_direction": "Golden light surging around Samson as he wrestles the lion away; shown in silhouette."
+      },
+      {
+        "caption": "A secret",
+        "art_direction": "Samson walking on, whistling innocently, as his parents chat ahead."
+      },
+      {
+        "caption": "Bees and honey",
+        "art_direction": "A buzzing beehive and dripping golden honeycomb; Samson licking his fingers."
+      },
+      {
+        "caption": "The riddle",
+        "art_direction": "Samson at a wedding feast, leaning in with a grin; puzzled Philistine faces."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 19:10",
+    "text": "sweeter also than honey and the extract of the honeycomb",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "sweeter also",
+      "than honey",
+      "and the extract",
+      "of the honeycomb"
+    ],
+    "distractors": [
+      "than vinegar"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "My strengths are gifts from Yahweh, and I can choose to use them His way.",
+    "reflection_prompt": "God gave Samson incredible strength. What is something you're strong at, and how could you use it for God?",
+    "reflection_choices": [
+      "Sports or running",
+      "Thinking and puzzles",
+      "Helping and caring",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "curiosity"
+  },
+  "quiz": [
+    {
+      "question": "What came roaring at Samson near Timnah?",
+      "options": [
+        "A bear",
+        "A young lion",
+        "A wolf"
+      ],
+      "correct_index": 1,
+      "explanation": "A young lion roared against him.",
+      "verse_ref": "Judges 14:5"
+    },
+    {
+      "question": "What did Samson find in the lion later?",
+      "options": [
+        "Bees and honey",
+        "Gold coins",
+        "A bird's nest"
+      ],
+      "correct_index": 0,
+      "explanation": "There was a swarm of bees in the body of the lion, and honey.",
+      "verse_ref": "Judges 14:8"
+    },
+    {
+      "question": "What was the answer to Samson's riddle?",
+      "options": [
+        "A tree and fruit",
+        "A cow and milk",
+        "A lion and honey"
+      ],
+      "correct_index": 2,
+      "explanation": "'Out of the eater came something to eat. Out of the strong came something sweet.' A lion and honey!",
+      "verse_ref": "Judges 14:14, 18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for the strengths You've given me. Help me remember they come from You, and help me use them in ways that honor You. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Samson had a great sense of humor, and that riddle was clever! But being strong and clever isn't enough. We also need to follow God's ways."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "olive_oil"
+    ],
+    "unlock": "honeycomb"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Samson's marriage to a Philistine against his parents' wishes (14:1-4) is mentioned. Eating from a carcass broke his Nazirite vow (Numbers 6:6), which is not explained. The riddle's aftermath (14:15-20, including killing thirty men) is omitted. Confirm."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "day": 134,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Known Before I Was Born",
+  "scripture_passage": "Judges 13",
+  "story_title": "A Baby Promised",
+  "summary": "An angel told Manoah's wife she would have a son who would be a Nazirite, set apart for God, whose hair must never be cut. The boy was named Samson, and Yahweh blessed him as he grew.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "Once again, Israel did evil in Yahweh's sight, and the Philistines ruled over them for forty years. In the town of Zorah lived a man named Manoah and his wife. They had no children. One day, the angel of Yahweh appeared to Manoah's wife and said, 'You will have a son. He will be a Nazirite, set apart for God from the day he's born. No razor may ever touch his head. He will begin to rescue Israel from the Philistines.' A Nazirite made a special promise to God, and long hair was the sign of it. The woman ran to tell her husband. Manoah prayed, 'Lord, please let the man of God come again and teach us how to raise this boy.' God answered his prayer, and the angel came back. Manoah offered him a meal, and then asked, 'What is your name?' The angel said, 'Why do you ask? It is wonderful.' Then, as Manoah offered a sacrifice, the angel went up toward heaven in the flame from the altar! In time, the baby was born, and they named him Samson. The boy grew, and Yahweh blessed him. Before Samson was even born, God knew him and had a purpose for him. The same is true for you.",
+    "scenes": [
+      {
+        "caption": "Forty years of trouble",
+        "art_direction": "Philistine soldiers in feathered helmets patrolling an Israelite village."
+      },
+      {
+        "caption": "Manoah and his wife",
+        "art_direction": "A kind couple in a small home in Zorah, wishing for a child."
+      },
+      {
+        "caption": "The angel appears",
+        "art_direction": "A shining figure in a field greeting the woman."
+      },
+      {
+        "caption": "No razor",
+        "art_direction": "A small pair of scissors with a gentle 'X' over them; a promise symbol."
+      },
+      {
+        "caption": "'Teach us'",
+        "art_direction": "Manoah praying earnestly for wisdom to raise his son."
+      },
+      {
+        "caption": "Up in the flame",
+        "art_direction": "The angel rising up in the altar fire as the couple falls on their faces in awe."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Jeremiah 1:5",
+    "text": "Before I formed you in the womb, I knew you.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Before I formed you",
+      "in the womb,",
+      "I knew you."
+    ],
+    "distractors": [
+      "I forgot you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh knew me before I was born and gave me gifts for a purpose.",
+    "reflection_prompt": "God had a purpose for Samson before he was born. What gifts do you think God gave you before you were even born?",
+    "reflection_choices": [
+      "A strong body",
+      "A creative mind",
+      "A caring heart",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "What could never touch Samson's head?",
+      "options": [
+        "A crown",
+        "A razor",
+        "A hat"
+      ],
+      "correct_index": 1,
+      "explanation": "The angel said, 'No razor shall come on his head, for the child shall be a Nazirite to God.'",
+      "verse_ref": "Judges 13:5"
+    },
+    {
+      "question": "What did Manoah pray for?",
+      "options": [
+        "That God would teach them how to raise the boy",
+        "That the boy would be rich",
+        "That the Philistines would leave"
+      ],
+      "correct_index": 0,
+      "explanation": "Manoah prayed, 'Let the man of God come again to us, and teach us what we shall do to the child.'",
+      "verse_ref": "Judges 13:8"
+    },
+    {
+      "question": "How did the angel leave?",
+      "options": [
+        "He walked away",
+        "He flew on a bird",
+        "He went up in the flame from the altar"
+      ],
+      "correct_index": 2,
+      "explanation": "The angel of Yahweh ascended in the flame of the altar.",
+      "verse_ref": "Judges 13:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You knew me before I was born. Thank You for the gifts You've given me. Help me use them for Your purpose. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Samson's story starts with such hope! God gave him an amazing gift. This week, we'll see how he used it, sometimes well and sometimes not."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "olive_oil",
+      "linen"
+    ],
+    "unlock": "nazirite_vow_scroll"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

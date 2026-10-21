@@ -1,0 +1,121 @@
+{
+  "day": 127,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "How God Sees Me",
+  "scripture_passage": "Judges 6:1-12",
+  "story_title": "Gideon in the Winepress",
+  "summary": "The Midianites swarmed Israel like locusts and stole their crops. While Gideon secretly threshed wheat in a winepress, an angel appeared and called him a mighty warrior.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "The Israelites turned away from God again. This time, the Midianites came. For seven years, every harvest time, Midianite raiders swarmed into Israel with their camels and tents, like a huge cloud of locusts. They ate all the crops and took the sheep, cattle, and donkeys. There were so many camels you couldn't count them! The Israelites were so scared that they hid in caves and mountain hideouts. They cried out to Yahweh. One day, a young man named Gideon was threshing wheat, beating the grain to separate it from the stalks. But he wasn't doing it out in the open field where the wind could blow the chaff away. He was hiding inside a winepress, a pit in the ground, so the Midianites wouldn't see him and steal his grain. Then the angel of Yahweh sat down under an oak tree nearby and said to Gideon, 'Yahweh is with you, you mighty warrior!' Gideon must have looked around to see who the angel was talking to. Mighty warrior? He was hiding in a hole! But God doesn't just see who we are today. He sees who He made us to be.",
+    "scenes": [
+      {
+        "caption": "Like locusts",
+        "art_direction": "A massive wave of camels and tents sweeping across Israel's fields; stylized, from far away."
+      },
+      {
+        "caption": "Hiding in caves",
+        "art_direction": "Israelite families peeking out from mountain caves."
+      },
+      {
+        "caption": "The winepress",
+        "art_direction": "Gideon crouched in a stone pit, nervously beating wheat with a stick and glancing over the edge."
+      },
+      {
+        "caption": "A visitor under the oak",
+        "art_direction": "A shining figure calmly sitting under a large oak tree nearby."
+      },
+      {
+        "caption": "'Mighty warrior!'",
+        "art_direction": "Gideon freezing mid-swing, looking behind him to see who the angel means; comedic beat."
+      },
+      {
+        "caption": "Who God sees",
+        "art_direction": "Gideon's reflection in a puddle showing a strong, confident warrior."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 139:14",
+    "text": "I will give thanks to you, for I am fearfully and wonderfully made.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I will give thanks",
+      "to you,",
+      "for I am",
+      "fearfully and",
+      "wonderfully made."
+    ],
+    "distractors": [
+      "accidentally made."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh sees more in me than I see in myself.",
+    "reflection_prompt": "God called Gideon a mighty warrior while he was hiding. What do you think God sees in you that you might not see yet?",
+    "reflection_choices": [
+      "Courage",
+      "Kindness",
+      "Leadership",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did the Midianites do to Israel?",
+      "options": [
+        "Brought them gifts",
+        "Swarmed in like locusts and stole their crops",
+        "Built them houses"
+      ],
+      "correct_index": 1,
+      "explanation": "They came in as locusts for multitude... and they came into the land to destroy it.",
+      "verse_ref": "Judges 6:5"
+    },
+    {
+      "question": "Where was Gideon threshing wheat?",
+      "options": [
+        "In a winepress, to hide from the Midianites",
+        "On a mountaintop",
+        "In the open field"
+      ],
+      "correct_index": 0,
+      "explanation": "Gideon was beating out wheat in the wine press, to hide it from the Midianites.",
+      "verse_ref": "Judges 6:11"
+    },
+    {
+      "question": "What did the angel call Gideon?",
+      "options": [
+        "A little farmer",
+        "A scared boy",
+        "A mighty man of valor"
+      ],
+      "correct_index": 2,
+      "explanation": "The angel said, 'Yahweh is with you, you mighty man of valor!'",
+      "verse_ref": "Judges 6:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You see more in me than I see in myself. Help me believe what You say about me and become who You made me to be. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "I love how God saw Gideon! Gideon saw a scared farmer. God saw a mighty warrior. What God says about you is truer than what you feel."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "cedar_wood"
+    ],
+    "unlock": "gideons_winepress"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

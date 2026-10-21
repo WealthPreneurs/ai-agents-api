@@ -1,0 +1,120 @@
+{
+  "day": 125,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Singing About God's Victory",
+  "scripture_passage": "Judges 4:17-24; 5:1-31",
+  "story_title": "Deborah's Song",
+  "summary": "A brave woman named Jael stopped Sisera, just as Deborah had said. Then Deborah and Barak sang a song praising Yahweh for the victory, and the land had peace for forty years.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Sisera ran until he reached the tent of a woman named Jael. Jael was brave, and she stopped Sisera for good, just as Deborah had said: the honor would go to a woman. On that day, God gave Israel victory over King Jabin. Then Deborah and Barak sang a song together, one of the oldest songs in the Bible! 'Hear, O kings! Listen, O rulers! I, even I, will sing to Yahweh! I will sing praise to Yahweh, the God of Israel!' The song told the whole story. It said that before the battle, the roads were empty and the villages were afraid, until Deborah arose, a mother in Israel. It praised the leaders and volunteers who willingly offered themselves. It even said the stars fought from heaven, and the river Kishon swept the enemy away! The song ended with a beautiful prayer: 'Let those who love Yahweh be like the sun when it rises in its strength.' And the land had peace for forty years. When God does something great, it's good to stop and sing about it. Songs help us remember what God has done.",
+    "scenes": [
+      {
+        "caption": "Jael's tent",
+        "art_direction": "A tent at the edge of the plain, with a brave woman standing at the entrance; nothing violent shown."
+      },
+      {
+        "caption": "Victory!",
+        "art_direction": "Israelite villagers coming out of hiding, cheering."
+      },
+      {
+        "caption": "Deborah and Barak sing",
+        "art_direction": "Deborah and Barak on a hillside, singing with arms raised; musical notes floating up."
+      },
+      {
+        "caption": "The stars fought",
+        "art_direction": "Shooting stars streaking across the night sky above the river."
+      },
+      {
+        "caption": "Like the rising sun",
+        "art_direction": "A brilliant sunrise over peaceful fields, with families stepping into the light."
+      },
+      {
+        "caption": "Forty years of peace",
+        "art_direction": "Children playing safely on open roads."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Judges 5:3",
+    "text": "I, even I, will sing to Yahweh.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I,",
+      "even I,",
+      "will sing",
+      "to Yahweh."
+    ],
+    "distractors": [
+      "will hide"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can use my voice to celebrate what Yahweh has done.",
+    "reflection_prompt": "Deborah wrote a song about God's victory. If you wrote a song about something God has done for you, what would it be about?",
+    "reflection_choices": [
+      "How He made me",
+      "How He helped me",
+      "How He loves me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "Who stopped Sisera?",
+      "options": [
+        "Barak",
+        "A brave woman named Jael",
+        "King Jabin"
+      ],
+      "correct_index": 1,
+      "explanation": "Deborah had said Yahweh would sell Sisera into the hand of a woman. Jael was that woman.",
+      "verse_ref": "Judges 4:9, 21"
+    },
+    {
+      "question": "What did Deborah sing?",
+      "options": [
+        "'I will sing to Yahweh!'",
+        "'I am the greatest!'",
+        "'Let's go home!'"
+      ],
+      "correct_index": 0,
+      "explanation": "Deborah sang, 'I, even I, will sing to Yahweh.'",
+      "verse_ref": "Judges 5:3"
+    },
+    {
+      "question": "What did the song say those who love Yahweh will be like?",
+      "options": [
+        "A rushing river",
+        "A mighty chariot",
+        "The sun rising in its strength"
+      ],
+      "correct_index": 2,
+      "explanation": "The song ends, 'Let those who love him be as the sun when it rises in its strength.'",
+      "verse_ref": "Judges 5:31"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I want to sing about the great things You've done! Let me be like the sun rising in its strength because I love You. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Barak and I sang that song with all our hearts! Writing songs about God helps us remember. Maybe you'll write one too!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "song_of_deborah_harp"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Jael kills Sisera with a tent peg (Judges 4:21; 5:26). Narration says only that 'she stopped Sisera for good'; nothing shown. Confirm this level of detail."
+  }
+}

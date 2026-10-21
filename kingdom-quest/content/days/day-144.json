@@ -1,0 +1,119 @@
+{
+  "day": 144,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Kindness Overflowing",
+  "scripture_passage": "Ruth 2:1-16",
+  "story_title": "Ruth in Boaz's Field",
+  "summary": "Ruth gathered leftover grain in the field of Boaz, a relative of Naomi. Boaz had heard about her kindness to Naomi, so he protected her, shared his food, and told his workers to leave extra grain for her.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Ruth said to Naomi, 'Let me go to the fields and pick up the leftover grain behind the harvesters.' God's law said farmers should leave some grain behind for poor people and foreigners to gather. This was called gleaning. So Ruth went out to work. And it just so happened that she ended up in a field belonging to a man named Boaz, a relative of Naomi's husband! Boaz came from town and greeted his workers: 'Yahweh be with you!' They answered, 'Yahweh bless you!' Then Boaz noticed Ruth. 'Who is that young woman?' His foreman told him she was the Moabite who came back with Naomi and had been working hard all morning. Boaz went to Ruth and said, 'Stay in my field. Stay close to my workers. I've told the young men not to bother you. When you're thirsty, drink from our water jars.' Ruth bowed and asked, 'Why are you being so kind to me? I'm a foreigner!' Boaz said, 'I've heard everything you've done for Naomi. May Yahweh reward you, the God of Israel, under whose wings you have come to take refuge.' At lunchtime, Boaz shared his food with her. Then he secretly told his workers, 'Pull out some extra grain and leave it for her!'",
+    "scenes": [
+      {
+        "caption": "Gleaning",
+        "art_direction": "Ruth bending down to pick up stalks of barley behind the harvesters."
+      },
+      {
+        "caption": "It just so happened",
+        "art_direction": "A wide shot of fields with a small sign: 'Boaz's Field.' A soft glow over it."
+      },
+      {
+        "caption": "'Yahweh be with you!'",
+        "art_direction": "Boaz greeting his workers warmly; they wave back."
+      },
+      {
+        "caption": "'Who is that?'",
+        "art_direction": "Boaz pointing to Ruth as his foreman explains."
+      },
+      {
+        "caption": "Under His wings",
+        "art_direction": "Boaz speaking kindly to Ruth; behind them, an image of great sheltering wings."
+      },
+      {
+        "caption": "Extra grain",
+        "art_direction": "Workers secretly dropping handfuls of barley for Ruth with winks and smiles."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Ruth 2:12",
+    "text": "under whose wings you have come to take refuge",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "under whose wings",
+      "you have come",
+      "to take refuge"
+    ],
+    "distractors": [
+      "to hide away"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh shelters me under His wings, and I can be generous and kind to others.",
+    "reflection_prompt": "Boaz went out of his way to be kind to Ruth, a foreigner. How could you show extra kindness to someone who is new or different?",
+    "reflection_choices": [
+      "Share my snack or lunch",
+      "Invite them to join in",
+      "Help them find their way",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "What did Ruth do in the fields?",
+      "options": [
+        "Planted seeds",
+        "Gathered leftover grain behind the harvesters",
+        "Took care of sheep"
+      ],
+      "correct_index": 1,
+      "explanation": "She went and gleaned in the field after the reapers.",
+      "verse_ref": "Ruth 2:3"
+    },
+    {
+      "question": "How did Boaz greet his workers?",
+      "options": [
+        "'Yahweh be with you!'",
+        "'Work faster!'",
+        "'Good morning!'"
+      ],
+      "correct_index": 0,
+      "explanation": "Boaz said to the reapers, 'Yahweh be with you.'",
+      "verse_ref": "Ruth 2:4"
+    },
+    {
+      "question": "What did Boaz secretly tell his workers to do?",
+      "options": [
+        "Send Ruth away",
+        "Watch her closely",
+        "Leave extra grain for her to pick up"
+      ],
+      "correct_index": 2,
+      "explanation": "Boaz said, 'Also pull out some for her from the bundles, and leave it.'",
+      "verse_ref": "Ruth 2:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for sheltering me under Your wings. Help me be generous and kind like Boaz, especially to people who are new or different from me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Notice how it 'just so happened' that Ruth picked Boaz's field? That wasn't luck. God was quietly guiding every step."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "linen"
+    ],
+    "unlock": "boaz_barley_field"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

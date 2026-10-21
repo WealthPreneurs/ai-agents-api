@@ -1,0 +1,113 @@
+{
+  "day": 143,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Listening to Hurting Hearts",
+  "scripture_passage": "Ruth 1:19-22",
+  "story_title": "Call Me Mara",
+  "summary": "When Naomi and Ruth arrived in Bethlehem, the women asked, 'Is this Naomi?' Naomi said to call her Mara, meaning bitter. But they arrived just as the barley harvest began.",
+  "story_reel": {
+    "duration_seconds": 125,
+    "narration": "Naomi and Ruth walked all the way to Bethlehem. When they arrived, the whole town was buzzing. The women said, 'Can this be Naomi?' Naomi had been gone for more than ten years. She looked so different, tired and sad. Naomi's name means 'pleasant.' But she said, 'Don't call me Naomi. Call me Mara,' which means 'bitter.' 'The Almighty has made my life very bitter. I went away full, but Yahweh has brought me back empty.' Naomi was very honest about how sad she felt. And notice: she said she came back empty, but Ruth was standing right beside her! Sometimes when we're sad, it's hard to see the good things God has given us. The Bible ends this chapter with a little sentence full of hope: 'They arrived in Bethlehem at the beginning of the barley harvest.' Harvest time! Food was coming. God was already preparing something good. When someone is hurting, like Naomi, they don't always need us to fix it. Sometimes they need us to listen and stay close, like Ruth did.",
+    "scenes": [
+      {
+        "caption": "Arriving in Bethlehem",
+        "art_direction": "Two tired travelers walking through the gates of Bethlehem."
+      },
+      {
+        "caption": "'Is this Naomi?'",
+        "art_direction": "Women at the well gasping and whispering to each other."
+      },
+      {
+        "caption": "'Call me Mara'",
+        "art_direction": "Naomi with a heavy, sad face; the word 'Naomi' fading and 'Mara' appearing."
+      },
+      {
+        "caption": "Not empty",
+        "art_direction": "Ruth standing quietly beside Naomi, holding her hand; a soft glow around Ruth."
+      },
+      {
+        "caption": "Barley harvest",
+        "art_direction": "Golden barley fields ripe and waving in the breeze just outside town."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 147:3",
+    "text": "He heals the broken in heart, and binds up their wounds.",
+    "translation": "WEB",
+    "tokens": [
+      "He heals",
+      "the broken in heart,",
+      "and binds up",
+      "their wounds."
+    ],
+    "distractors": [
+      "and ignores them."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can listen to people who are hurting and stay close to them, like Yahweh does.",
+    "reflection_prompt": "Naomi felt empty, but Ruth stayed beside her. How can you be a good listener when someone is sad?",
+    "reflection_choices": [
+      "Let them talk without interrupting",
+      "Stay close to them",
+      "Pray for them",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "empathy"
+  },
+  "quiz": [
+    {
+      "question": "What did the women of Bethlehem ask when they saw Naomi?",
+      "options": [
+        "'Where's your husband?'",
+        "'Is this Naomi?'",
+        "'Who is your friend?'"
+      ],
+      "correct_index": 1,
+      "explanation": "All the city was moved about them, and they asked, 'Is this Naomi?'",
+      "verse_ref": "Ruth 1:19"
+    },
+    {
+      "question": "What new name did Naomi ask to be called?",
+      "options": [
+        "Mara, which means bitter",
+        "Sarah",
+        "Joy"
+      ],
+      "correct_index": 0,
+      "explanation": "She said, 'Don't call me Naomi. Call me Mara; for the Almighty has dealt very bitterly with me.'",
+      "verse_ref": "Ruth 1:20"
+    },
+    {
+      "question": "When did Naomi and Ruth arrive in Bethlehem?",
+      "options": [
+        "In the winter",
+        "During a storm",
+        "At the beginning of the barley harvest"
+      ],
+      "correct_index": 2,
+      "explanation": "They came to Bethlehem in the beginning of barley harvest.",
+      "verse_ref": "Ruth 1:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You heal broken hearts. When people around me are hurting, help me listen well and stay close to them, the way You stay close to me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Naomi was honest about her sadness, and that's okay. God can handle our honest feelings. And look, a harvest was waiting just outside town!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

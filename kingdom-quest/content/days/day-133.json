@@ -1,0 +1,116 @@
+{
+  "day": 133,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Mighty Warrior",
+  "scripture_passage": "Judges 6-8",
+  "story_title": "Yahweh Is With You, Mighty Warrior",
+  "summary": "After the victory, the people wanted Gideon to be their king, but he said, 'Yahweh will rule over you.' Sabbath Camp looks back at Gideon's journey from the winepress to the victory.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Welcome to Sabbath Camp! After the great victory, the Israelites said to Gideon, 'Rule over us, you and your son and your grandson, because you saved us from Midian!' But Gideon said, 'I will not rule over you, and my son will not rule over you. Yahweh will rule over you.' Gideon knew who had really won the battle. Sadly, Gideon later made a gold object that the people began to worship, and it became a trap for him and his family. Even heroes make mistakes. But the land had peace for forty years while Gideon lived. Let's remember this week. Gideon was hiding in a winepress when the angel called him a mighty warrior. Gideon said, 'Who, me? I'm the least!' But God said, 'I will be with you.' Gideon tore down an idol even though he was scared. He asked God for signs with a fleece, and God patiently answered. God shrank Gideon's army to three hundred, and they won with trumpets, jars, and torches. This week's big truth: Yahweh sees a mighty warrior in you. Not because you're strong on your own, but because He is with you.",
+    "scenes": [
+      {
+        "caption": "'Be our king!'",
+        "art_direction": "A crowd lifting Gideon on their shoulders; Gideon shaking his head."
+      },
+      {
+        "caption": "'Yahweh will rule'",
+        "art_direction": "Gideon pointing up to the sky with a humble smile."
+      },
+      {
+        "caption": "Even heroes make mistakes",
+        "art_direction": "A golden object in Gideon's town, with people beginning to bow to it; muted colors."
+      },
+      {
+        "caption": "Camp by the winepress",
+        "art_direction": "Campfire beside the winepress, fleece, and torch-and-jar in the child's village."
+      },
+      {
+        "caption": "Mighty warrior",
+        "art_direction": "The child's avatar looking into a puddle and seeing a strong, brave reflection."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Judges 6:12",
+    "text": "Yahweh is with you, you mighty man of valor!",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Yahweh",
+      "is with you,",
+      "you mighty man",
+      "of valor!"
+    ],
+    "distractors": [
+      "of fear!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh sees a mighty warrior in me.",
+    "reflection_prompt": "Milestone: Yahweh sees a mighty warrior in you! Draw your 'puddle reflection.' What does God see when He looks at you?",
+    "reflection_choices": [
+      "A brave heart",
+      "A kind heart",
+      "A strong helper",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did Gideon say when the people asked him to be their king?",
+      "options": [
+        "'Yes! I'll be king forever.'",
+        "'Yahweh will rule over you.'",
+        "'Ask my son.'"
+      ],
+      "correct_index": 1,
+      "explanation": "Gideon said, 'I will not rule over you, neither shall my son rule over you. Yahweh shall rule over you.'",
+      "verse_ref": "Judges 8:23"
+    },
+    {
+      "question": "Where was Gideon when the angel first appeared to him?",
+      "options": [
+        "Threshing wheat in a winepress",
+        "Leading an army",
+        "Sleeping in a cave"
+      ],
+      "correct_index": 0,
+      "explanation": "Gideon was beating out wheat in the wine press, to hide it from the Midianites.",
+      "verse_ref": "Judges 6:11"
+    },
+    {
+      "question": "How long did the land have peace in Gideon's days?",
+      "options": [
+        "Seven years",
+        "Three hundred days",
+        "Forty years"
+      ],
+      "correct_index": 2,
+      "explanation": "The land had rest forty years in the days of Gideon.",
+      "verse_ref": "Judges 8:28"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You see a mighty warrior in me. Help me believe what You say about me and remember that You are the One who wins every battle. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Realm 19 complete! Gideon learned that God's strength is what matters. Next, you'll meet the strongest man in the Bible, and see what happens when strength is misused."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "mighty_warrior_banner"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Gideon's ephod (Judges 8:27) is mentioned briefly as a gold object that became a trap. Omits Gideon's punishment of Succoth and Penuel (8:13-17) and Abimelech (Judges 9). Confirm."
+  }
+}

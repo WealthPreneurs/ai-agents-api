@@ -1,0 +1,120 @@
+{
+  "day": 136,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Overcoming Evil with Good",
+  "scripture_passage": "Judges 15",
+  "story_title": "Revenge and the Spring",
+  "summary": "Samson and the Philistines kept getting revenge on each other. After one battle, Samson was terribly thirsty and cried out to God, and God split open a hollow to give him water.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Things got worse between Samson and the Philistines. When Samson's wedding went wrong and his wife was given to another man, Samson got angry and wanted revenge. He caught three hundred foxes, tied their tails together in pairs, and tied torches to them. Then he set the torches on fire and let the foxes run through the Philistines' fields, burning up their grain! The Philistines got revenge back. Then Samson got revenge again. Revenge, revenge, revenge. It just kept going! Finally, the Philistines came with an army to capture Samson. The men of Judah were afraid, so they tied Samson up with new ropes and handed him over. But the Spirit of Yahweh came on Samson. The ropes snapped like burnt thread! He grabbed the jawbone of a donkey and defeated a thousand Philistines. Afterward, Samson was so thirsty he thought he would die. He cried out to Yahweh. And God split open a hollow place in the ground, and water gushed out! Samson drank, and his strength came back. He named it the Spring of the One Who Called. Samson's revenge only made things worse. But when he called out to God, God answered.",
+    "scenes": [
+      {
+        "caption": "Wanting revenge",
+        "art_direction": "Samson with clenched fists and a stormy face."
+      },
+      {
+        "caption": "Foxes and torches",
+        "art_direction": "Pairs of foxes with torches racing through golden wheat fields, smoke rising; stylized, not cruel."
+      },
+      {
+        "caption": "Back and forth",
+        "art_direction": "A ping-pong animation of angry arrows going back and forth between Samson and the Philistines."
+      },
+      {
+        "caption": "Ropes snap!",
+        "art_direction": "New ropes popping off Samson's arms like threads as golden light surges."
+      },
+      {
+        "caption": "So thirsty",
+        "art_direction": "Samson collapsed on a dry hillside, lips cracked, crying out to the sky."
+      },
+      {
+        "caption": "The Spring of the One Who Called",
+        "art_direction": "Water bursting up from a hollow in the ground; Samson drinking and smiling."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Romans 12:21",
+    "text": "Don't be overcome by evil, but overcome evil with good.",
+    "translation": "WEB",
+    "tokens": [
+      "Don't be overcome",
+      "by evil,",
+      "but overcome",
+      "evil",
+      "with good."
+    ],
+    "distractors": [
+      "with revenge."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stop the cycle of getting even and overcome evil with good.",
+    "reflection_prompt": "Samson and the Philistines kept getting revenge on each other. When someone hurts you, what could you do instead of getting even?",
+    "reflection_choices": [
+      "Walk away and calm down",
+      "Tell a grown-up",
+      "Do something kind",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peacemaking"
+  },
+  "quiz": [
+    {
+      "question": "What did Samson tie to the foxes' tails?",
+      "options": [
+        "Bells",
+        "Torches",
+        "Ribbons"
+      ],
+      "correct_index": 1,
+      "explanation": "Samson caught three hundred foxes, turned them tail to tail, and put a torch between every two tails.",
+      "verse_ref": "Judges 15:4"
+    },
+    {
+      "question": "What happened to the new ropes when the Spirit came on Samson?",
+      "options": [
+        "They became like burnt thread and fell off",
+        "They got tighter",
+        "They turned to gold"
+      ],
+      "correct_index": 0,
+      "explanation": "The ropes on his arms became as flax that was burned with fire.",
+      "verse_ref": "Judges 15:14"
+    },
+    {
+      "question": "What did God do when Samson was thirsty and called out?",
+      "options": [
+        "Sent rain",
+        "Sent a camel",
+        "Split open a hollow so water came out"
+      ],
+      "correct_index": 2,
+      "explanation": "God split the hollow place that is in Lehi, and water came out of it.",
+      "verse_ref": "Judges 15:19"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when someone hurts me, help me not to get even. Help me overcome evil with good. Thank You that You answer when I call out to You. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Revenge is like a fire that keeps spreading. Samson learned that the hard way. When you're hurt, call out to God like Samson did at the spring."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ],
+    "unlock": "spring_of_the_caller"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the revenge cycle (Judges 15:1-8), including the Philistines burning Samson's wife and her father (15:6), which is omitted. 'Defeated a thousand Philistines' with a jawbone (15:15) is stated plainly; nothing shown. The fox scene is stylized. Confirm."
+  }
+}

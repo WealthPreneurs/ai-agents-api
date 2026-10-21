@@ -1,0 +1,115 @@
+{
+  "day": 126,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Wise Helpers",
+  "scripture_passage": "Judges 1-5",
+  "story_title": "The Palm Tree Judge",
+  "summary": "Sabbath Camp looks back at the first judges: the generation that forgot, Achsah's bold request, Othniel's Spirit-filled leadership, and Deborah's wise counsel and encouragement.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Welcome to Sabbath Camp! This week we entered the Valley of Heroes. Let's remember. After Joshua died, a generation grew up that didn't know God, because no one told them the stories. They fell into a sad cycle: turning away, trouble, crying out, and rescue. But every time they cried out, God sent help. Achsah boldly asked her father for springs of water, and he gave her two. Othniel, filled with God's Spirit, became the first judge. Then God raised up Deborah, who judged Israel under a palm tree and helped people make wise decisions. When Barak was afraid, she said, 'Go! This is the day! Hasn't Yahweh gone out ahead of you?' God sent the rain and the river, and the iron chariots got stuck in the mud. Then Deborah sang a song of victory. This week's big truth: Yahweh can give you wisdom to help others decide well. Being wise doesn't mean being the boss. It means listening to God and pointing others toward Him.",
+    "scenes": [
+      {
+        "caption": "Camp under the palm",
+        "art_direction": "Campfire beneath the Palm of Deborah in the child's village, beside Achsah's springs."
+      },
+      {
+        "caption": "The cycle",
+        "art_direction": "The four-part wheel from day 120 turning, with a golden 'God answers' arrow at the top."
+      },
+      {
+        "caption": "Deborah's week",
+        "art_direction": "Storybook recap: springs, Othniel, the palm tree, the mountain, chariots in the mud, the song."
+      },
+      {
+        "caption": "Wise helpers",
+        "art_direction": "The child's avatar helping two friends talk through a problem, with Deborah smiling nearby."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Judges 4:14",
+    "text": "Go; for this is the day in which Yahweh has delivered Sisera into your hand. Hasn't Yahweh gone out before you?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Go;",
+      "for this is the day",
+      "in which Yahweh",
+      "has delivered Sisera",
+      "into your hand.",
+      "Hasn't Yahweh",
+      "gone out before you?"
+    ],
+    "distractors": [
+      "stayed behind you?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can give me wisdom to help others decide well.",
+    "reflection_prompt": "Milestone: Yahweh gives you wisdom to help others! Draw yourself under your own 'palm tree,' helping someone. Who is it, and what are you helping them with?",
+    "reflection_choices": [
+      "Helping a friend solve a problem",
+      "Encouraging someone to be brave",
+      "Pointing someone to God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "Why did the generation after Joshua forget God?",
+      "options": [
+        "They moved far away",
+        "No one told them what God had done",
+        "They were too young"
+      ],
+      "correct_index": 1,
+      "explanation": "Another generation arose who didn't know Yahweh, nor the work which he had done for Israel.",
+      "verse_ref": "Judges 2:10"
+    },
+    {
+      "question": "Who was the first judge?",
+      "options": [
+        "Othniel",
+        "Gideon",
+        "Samson"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh raised up Othniel, Caleb's younger brother's son, as a savior.",
+      "verse_ref": "Judges 3:9"
+    },
+    {
+      "question": "What did Deborah ask Barak on the day of battle?",
+      "options": [
+        "'Are you hungry?'",
+        "'Where are the chariots?'",
+        "'Hasn't Yahweh gone out before you?'"
+      ],
+      "correct_index": 2,
+      "explanation": "Deborah said, 'Hasn't Yahweh gone out before you?'",
+      "verse_ref": "Judges 4:14"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for always answering when Your people cry out. Give me wisdom to help others make good choices and to point them to You. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Realm 18 complete! Next, you'll meet a young man hiding in a winepress who didn't feel brave at all. But God saw something in him that he didn't see in himself."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "olive_oil"
+    ],
+    "unlock": "wise_counsel_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

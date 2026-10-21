@@ -1,0 +1,120 @@
+{
+  "day": 122,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Not by Might",
+  "scripture_passage": "Judges 3:7-11",
+  "story_title": "Othniel, the First Judge",
+  "summary": "When Israel turned away and was ruled by a cruel king for eight years, they cried out to God. The Spirit of Yahweh came on Othniel, and he rescued them. The land had peace for forty years.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Here is how the first cycle went. The Israelites did evil in Yahweh's sight. They forgot their God and served the Baals. So God let a king named Cushan-Rishathaim, a very long name, rule over them. For eight years, they served this cruel king. Then the people cried out to Yahweh. And Yahweh raised up a rescuer: Othniel, the same brave young man who married Achsah! The Bible says, 'The Spirit of Yahweh came on him.' That was Othniel's secret. He wasn't strong on his own. God's Spirit gave him wisdom and courage to lead. Othniel became Israel's judge. He led the people out to battle, and Yahweh gave him victory over the king. After that, the land had peace for forty years, until Othniel died. Othniel was the nephew of Caleb, and he had probably heard Caleb's stories about trusting God all his life. Caleb's faith had been passed down! God doesn't need the strongest or the loudest people. He works through people who are filled with His Spirit.",
+    "scenes": [
+      {
+        "caption": "Turning away",
+        "art_direction": "Israelites bowing before Baal statues; the twelve stones forgotten in the background."
+      },
+      {
+        "caption": "A king with a long name",
+        "art_direction": "A cruel king on a throne; his name stretching across the screen in tiny letters; light comedic beat."
+      },
+      {
+        "caption": "Eight hard years",
+        "art_direction": "Israelites carrying heavy loads for the foreign king."
+      },
+      {
+        "caption": "They cry out",
+        "art_direction": "Families praying at night under the stars."
+      },
+      {
+        "caption": "The Spirit comes",
+        "art_direction": "Warm golden light settling on Othniel as he looks up."
+      },
+      {
+        "caption": "Forty years of peace",
+        "art_direction": "Fields of wheat, children playing, and families resting under trees."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Zechariah 4:6",
+    "text": "Not by might, nor by power, but by my Spirit, says Yahweh of Armies.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Not by might,",
+      "nor by power,",
+      "but by my Spirit,",
+      "says Yahweh",
+      "of Armies."
+    ],
+    "distractors": [
+      "but by my muscles,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's Spirit gives me what I need to lead and help others.",
+    "reflection_prompt": "Othniel grew up hearing Caleb's stories of faith. Who has passed their faith on to you?",
+    "reflection_choices": [
+      "A parent or grandparent",
+      "A teacher at church",
+      "A friend",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "leadership"
+  },
+  "quiz": [
+    {
+      "question": "How long did the cruel king rule over Israel?",
+      "options": [
+        "Forty years",
+        "Eight years",
+        "Two days"
+      ],
+      "correct_index": 1,
+      "explanation": "The children of Israel served Cushan Rishathaim eight years.",
+      "verse_ref": "Judges 3:8"
+    },
+    {
+      "question": "What came on Othniel?",
+      "options": [
+        "The Spirit of Yahweh",
+        "A crown",
+        "A great storm"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh's Spirit came on him, and he judged Israel.",
+      "verse_ref": "Judges 3:10"
+    },
+    {
+      "question": "How long did the land have peace after Othniel's victory?",
+      "options": [
+        "One year",
+        "Ten years",
+        "Forty years"
+      ],
+      "correct_index": 2,
+      "explanation": "The land had rest forty years.",
+      "verse_ref": "Judges 3:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I don't need to be the strongest or the loudest. Fill me with Your Spirit so I can help and lead others the way You want. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Othniel was the first judge, and he was Caleb's nephew! Faith is often passed down in families. Who will you pass your faith on to?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Omits Ehud (Judges 3:12-30) and Shamgar (3:31) for age-appropriateness. Othniel's battle is described as 'Yahweh gave him victory.' Confirm."
+  }
+}

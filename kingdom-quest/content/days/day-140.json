@@ -1,0 +1,112 @@
+{
+  "day": 140,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Strength from God",
+  "scripture_passage": "Judges 13-16; 21:25",
+  "story_title": "The Strongest Man",
+  "summary": "Sabbath Camp looks back at Samson's story: a promised baby, a lion and honey, revenge, Delilah, prison, and his last prayer. The book of Judges ends with everyone doing what was right in their own eyes.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Welcome to Sabbath Camp! This was a hard week with Samson. Let's remember. Before Samson was born, God gave him a purpose and an amazing gift of strength. He fought off a lion with his bare hands and found honey inside. But Samson often used his strength for himself, to get revenge and to do whatever he wanted. When Delilah pressured him, he gave away his secret, and his strength left him. The Philistines put him in prison. But his hair began to grow again, and in his weakness, Samson finally prayed, 'Lord Yahweh, remember me and strengthen me.' And God answered. The book of Judges ends with a sad sentence: 'In those days there was no king in Israel. Everyone did what was right in his own eyes.' The people needed more than a strong judge. They needed hearts that followed God, and a true King. This week's big truth: your strength is a gift to use for Yahweh. Whatever you're strong at, it came from Him, and it's best used His way.",
+    "scenes": [
+      {
+        "caption": "Camp by the spring",
+        "art_direction": "Campfire beside the honeycomb and the Spring of the One Who Called in the child's village."
+      },
+      {
+        "caption": "Samson's story",
+        "art_direction": "Storybook recap: the angel's flame, the lion, the foxes, the loom, the millstone, the pillars."
+      },
+      {
+        "caption": "No king in Israel",
+        "art_direction": "A sad map of Israel with people walking in every direction, each following their own arrow."
+      },
+      {
+        "caption": "A gift to use for God",
+        "art_direction": "The child's avatar holding up a glowing gift box labeled with their strengths, offering it upward."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Judges 16:28",
+    "text": "Lord Yahweh, remember me, please, and strengthen me, please, only this once",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Lord Yahweh,",
+      "remember me, please,",
+      "and strengthen me,",
+      "please,",
+      "only this once"
+    ],
+    "distractors": [
+      "forget me,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "My strength is a gift to use for Yahweh.",
+    "reflection_prompt": "Milestone: Your strength is a gift to use for Yahweh! Draw a gift box. Inside it, write or draw a strength God gave you and how you'll use it for Him.",
+    "reflection_choices": [
+      "Using my body to help",
+      "Using my mind to solve problems",
+      "Using my voice to encourage",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "What was Samson's special gift from God?",
+      "options": [
+        "Singing",
+        "Great strength",
+        "Speed"
+      ],
+      "correct_index": 1,
+      "explanation": "The Spirit of Yahweh came on Samson mightily and gave him great strength.",
+      "verse_ref": "Judges 14:6"
+    },
+    {
+      "question": "How does the book of Judges end?",
+      "options": [
+        "Everyone did what was right in their own eyes",
+        "Everyone followed God forever",
+        "Samson became king"
+      ],
+      "correct_index": 0,
+      "explanation": "In those days there was no king in Israel. Everyone did that which was right in his own eyes.",
+      "verse_ref": "Judges 21:25"
+    },
+    {
+      "question": "What did Samson pray at the very end?",
+      "options": [
+        "'Make me king.'",
+        "'Give me gold.'",
+        "'Remember me and strengthen me.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Samson prayed, 'Lord Yahweh, remember me, please, and strengthen me, please, only this once.'",
+      "verse_ref": "Judges 16:28"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, every strength I have comes from You. Help me use my gifts Your way, not just my own way. Remember me and strengthen me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Realm 20 complete! Samson's story teaches us that gifts are best used God's way. Next, during these same dark days, you'll meet a loyal friend whose kindness changed history."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "strength_gift_box"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

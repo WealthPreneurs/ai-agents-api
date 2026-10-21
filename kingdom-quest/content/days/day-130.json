@@ -1,0 +1,118 @@
+{
+  "day": 130,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Honest Prayers",
+  "scripture_passage": "Judges 6:33-40",
+  "story_title": "The Wet Fleece and the Dry Fleece",
+  "summary": "As the enemy armies gathered, God's Spirit came on Gideon. But Gideon still had doubts, so he asked God for a sign with a wool fleece. God patiently answered twice.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "The Midianites and their allies gathered a huge army and camped in the valley. Then the Spirit of Yahweh came on Gideon! He blew a trumpet and sent messengers through the tribes, and thousands of men came to follow him. But Gideon still had doubts. So he prayed to God. 'If You will really save Israel through me, as You said, here's what I'll do. I'll put a wool fleece on the threshing floor. If dew is only on the fleece and the ground around it is dry, then I'll know You will save Israel through me.' The next morning, Gideon got up early and squeezed the fleece. A whole bowl full of water came out! But the ground was dry. Then Gideon prayed again, a little nervously. 'Please don't be angry with me. Let me ask just one more time. This time, make the fleece dry and the ground wet with dew.' And that night, God did it. The fleece was dry, and the ground all around was wet! God was so patient with Gideon. You don't need to test God to know He is with you, because He has already given us His Word. But God is never too busy for your honest questions.",
+    "scenes": [
+      {
+        "caption": "A huge army gathers",
+        "art_direction": "Enemy tents filling a valley as far as the eye can see."
+      },
+      {
+        "caption": "The Spirit comes",
+        "art_direction": "Gideon lifting a ram's horn trumpet as golden light surrounds him."
+      },
+      {
+        "caption": "Thousands follow",
+        "art_direction": "Men streaming in from the hills to join Gideon."
+      },
+      {
+        "caption": "A wet fleece",
+        "art_direction": "Gideon squeezing a soaking wool fleece into a bowl at dawn; the ground around it dusty."
+      },
+      {
+        "caption": "'Just one more time'",
+        "art_direction": "Gideon praying nervously with his hands clasped."
+      },
+      {
+        "caption": "A dry fleece",
+        "art_direction": "A fluffy, dry fleece sitting in the middle of glistening wet grass."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Mark 9:24",
+    "text": "I believe. Help my unbelief!",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I believe.",
+      "Help",
+      "my unbelief!"
+    ],
+    "distractors": [
+      "I don't care."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can bring Yahweh my honest questions and doubts, and He is patient with me.",
+    "reflection_prompt": "Gideon had doubts, and God was patient. Is there a question or doubt you'd like to bring to God?",
+    "reflection_choices": [
+      "Is God really with me?",
+      "Will God help me?",
+      "Does God hear my prayers?",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "What came on Gideon when the enemy army gathered?",
+      "options": [
+        "Fear",
+        "The Spirit of Yahweh",
+        "A sickness"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh's Spirit came on Gideon, and he blew a trumpet.",
+      "verse_ref": "Judges 6:34"
+    },
+    {
+      "question": "The first time, what did Gideon ask God to do with the fleece?",
+      "options": [
+        "Make the fleece wet and the ground dry",
+        "Turn the fleece to gold",
+        "Make the fleece disappear"
+      ],
+      "correct_index": 0,
+      "explanation": "Gideon asked for dew on the fleece only, and dry ground all around.",
+      "verse_ref": "Judges 6:37"
+    },
+    {
+      "question": "What happened the second time?",
+      "options": [
+        "Nothing happened",
+        "Both were wet",
+        "The fleece was dry, and the ground was wet"
+      ],
+      "correct_index": 2,
+      "explanation": "God did so that night: it was dry on the fleece only, and there was dew on all the ground.",
+      "verse_ref": "Judges 6:40"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, I believe. Help me when I have doubts. Thank You for being patient with my questions and for always being with me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Gideon asked twice, and God answered twice. Isn't God kind? You can always bring your questions to Him. He'd love to hear from you."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ],
+    "unlock": "gideons_fleece"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "day": 132,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Yahweh Is On My Side",
+  "scripture_passage": "Judges 7:9-23",
+  "story_title": "Trumpets, Jars, and Torches",
+  "summary": "God encouraged Gideon with an enemy soldier's dream. Then Gideon's 300 men surrounded the camp at night with trumpets, clay jars, and torches. They blew, smashed, and shouted, and the enemy army fled in confusion.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "That night, God told Gideon, 'If you're still afraid, sneak down to the enemy camp and listen.' So Gideon and his servant crept to the edge of the camp. They heard one Midianite soldier telling his friend about a dream. 'A round loaf of barley bread came tumbling into our camp. It hit a tent so hard the tent fell flat!' His friend said, 'That's the sword of Gideon! God has given us into his hand!' Gideon bowed down and worshiped God right there. Then he ran back and said, 'Get up! Yahweh has given you the victory!' Gideon gave each of his three hundred men a trumpet and an empty clay jar with a torch hidden inside. In the middle of the night, they surrounded the enemy camp. Gideon said, 'Watch me, and do what I do.' Then they all blew their trumpets, smashed the jars, held up their blazing torches, and shouted, 'The sword of Yahweh and of Gideon!' The Midianites woke up to trumpets, crashing, fire, and shouting all around them. They panicked and ran away in confusion! Gideon's men didn't even move from their places. Yahweh had won the battle.",
+    "scenes": [
+      {
+        "caption": "Sneaking down",
+        "art_direction": "Gideon and his servant tiptoeing toward the dark enemy camp."
+      },
+      {
+        "caption": "The bread dream",
+        "art_direction": "Dream bubble: a giant barley loaf rolling into camp and flattening a tent; comedic."
+      },
+      {
+        "caption": "Gideon worships",
+        "art_direction": "Gideon kneeling in the shadows, overjoyed."
+      },
+      {
+        "caption": "Trumpets, jars, and torches",
+        "art_direction": "Three hundred men each holding a ram's horn and a clay jar with a glow inside."
+      },
+      {
+        "caption": "Smash! Shout!",
+        "art_direction": "Jars shattering in unison, torches blazing in a ring around the camp; 'The sword of Yahweh and of Gideon!'"
+      },
+      {
+        "caption": "The enemy flees",
+        "art_direction": "Distant view of enemy soldiers running in every direction in the dark; no fighting shown."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 118:6",
+    "text": "Yahweh is on my side. I will not be afraid. What can man do to me?",
+    "translation": "WEB",
+    "tokens": [
+      "Yahweh",
+      "is on my side.",
+      "I will not",
+      "be afraid.",
+      "What can man",
+      "do to me?"
+    ],
+    "distractors": [
+      "I will run away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is on my side, so I don't have to be afraid.",
+    "reflection_prompt": "God gave Gideon a special encouragement before the battle. How has God encouraged you when you were afraid?",
+    "reflection_choices": [
+      "Through a Bible verse",
+      "Through a person",
+      "Through a feeling of peace",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did the Midianite soldier dream about?",
+      "options": [
+        "A giant lion",
+        "A loaf of barley bread knocking over a tent",
+        "A flood"
+      ],
+      "correct_index": 1,
+      "explanation": "He dreamed a cake of barley bread tumbled into the camp and struck a tent so that it fell.",
+      "verse_ref": "Judges 7:13"
+    },
+    {
+      "question": "What did each of Gideon's men carry?",
+      "options": [
+        "A trumpet and a clay jar with a torch inside",
+        "A sword and a shield",
+        "A bow and arrows"
+      ],
+      "correct_index": 0,
+      "explanation": "He put into the hands of all of them trumpets and empty pitchers, with torches within the pitchers.",
+      "verse_ref": "Judges 7:16"
+    },
+    {
+      "question": "What did Gideon's men shout?",
+      "options": [
+        "'Run away!'",
+        "'Surprise!'",
+        "'The sword of Yahweh and of Gideon!'"
+      ],
+      "correct_index": 2,
+      "explanation": "They shouted, 'The sword of Yahweh and of Gideon!'",
+      "verse_ref": "Judges 7:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are on my side! Thank You for encouraging me when I'm afraid. I won't be afraid, because You are with me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Trumpets, smashing jars, and torches! What a strange battle plan. But God's plans always work. Three hundred brave men didn't even have to fight."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "lamp"
+    ],
+    "unlock": "torch_and_jar"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The rout of Midian (Judges 7:22-25), including the enemy fighting each other and the deaths of Oreb and Zeeb, is shown only as enemies fleeing. Confirm."
+  }
+}

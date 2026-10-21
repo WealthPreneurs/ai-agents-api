@@ -1,0 +1,120 @@
+{
+  "day": 138,
+  "month": 5,
+  "realm": 20,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "God's Mercy Is New",
+  "scripture_passage": "Judges 16:18-22",
+  "story_title": "Samson Captured",
+  "summary": "While Samson slept, Delilah had his hair cut, and his strength left him. The Philistines captured him, blinded him, and made him work in prison. But his hair began to grow again.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "Delilah knew Samson had told her the truth this time. She sent for the Philistine rulers, and they came with the silver. She lulled Samson to sleep on her lap and had a man shave off the seven braids of his hair. Then she shouted, 'Samson, the Philistines are here!' Samson woke up and thought, 'I'll get free like before.' But the Bible says one of the saddest sentences in all of Judges: he didn't know that Yahweh had left him. His strength was gone. The Philistines grabbed him. They blinded him and took him to the city of Gaza. They put him in bronze chains and made him grind grain in the prison, walking around and around like an animal pulling a millstone. The mighty Samson had fallen so far. He had broken his promise to God, one choice at a time. But then the Bible adds one small sentence full of hope: 'The hair on his head began to grow again.' God wasn't finished with Samson. Even when we fail badly, God's mercy is still there. It's new every morning.",
+    "scenes": [
+      {
+        "caption": "The silver arrives",
+        "art_direction": "Philistine rulers handing over bags of silver in the shadows."
+      },
+      {
+        "caption": "Seven braids",
+        "art_direction": "Samson asleep; braids being gently cut off in silhouette."
+      },
+      {
+        "caption": "'The Philistines are here!'",
+        "art_direction": "Samson jumping up, confident, then realizing his strength is gone."
+      },
+      {
+        "caption": "Yahweh had left him",
+        "art_direction": "The golden glow that always surrounded Samson fading to gray."
+      },
+      {
+        "caption": "Grinding grain",
+        "art_direction": "Samson in chains walking around a millstone in a dark prison; no injury shown."
+      },
+      {
+        "caption": "Growing again",
+        "art_direction": "A close-up of short hair beginning to grow, with a tiny ray of light through the prison window."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Lamentations 3:22",
+    "text": "It is because of Yahweh's loving kindnesses that we are not consumed, because his compassion doesn't fail.",
+    "translation": "WEB",
+    "tokens": [
+      "It is because",
+      "of Yahweh's loving kindnesses",
+      "that we are",
+      "not consumed,",
+      "because his compassion",
+      "doesn't fail."
+    ],
+    "distractors": [
+      "runs out."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's compassion for me doesn't fail, even when I fail.",
+    "reflection_prompt": "Samson made bad choices, but God wasn't finished with him. Is there a mistake you're worried God won't forgive?",
+    "reflection_choices": [
+      "Something I said",
+      "Something I did",
+      "Something I didn't do",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What happened when Samson's hair was cut?",
+      "options": [
+        "He became even stronger",
+        "His strength left him",
+        "He fell asleep forever"
+      ],
+      "correct_index": 1,
+      "explanation": "His strength went from him.",
+      "verse_ref": "Judges 16:19"
+    },
+    {
+      "question": "What didn't Samson know when he woke up?",
+      "options": [
+        "That Yahweh had left him",
+        "Where he was",
+        "What time it was"
+      ],
+      "correct_index": 0,
+      "explanation": "He didn't know that Yahweh had departed from him.",
+      "verse_ref": "Judges 16:20"
+    },
+    {
+      "question": "What began to happen to Samson's hair in prison?",
+      "options": [
+        "It turned white",
+        "It fell out",
+        "It began to grow again"
+      ],
+      "correct_index": 2,
+      "explanation": "The hair of his head began to grow again after he was shaved.",
+      "verse_ref": "Judges 16:22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Your compassion never fails, even when I fail. When I mess up, help me turn back to You. Thank You that You're not finished with me. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "This part of Samson's story is very sad. But I love that little sentence about his hair growing back. God never gives up on His people."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Samson is blinded (Judges 16:21). Stated plainly ('They blinded him'); no injury shown. Confirm wording for ages 7-9."
+  }
+}

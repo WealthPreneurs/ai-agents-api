@@ -1,0 +1,119 @@
+{
+  "day": 131,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "God Gets the Glory",
+  "scripture_passage": "Judges 7:1-8",
+  "story_title": "Too Many Soldiers!",
+  "summary": "Gideon had 32,000 soldiers, but God said, 'Too many!' He sent home the fearful, then tested the rest by how they drank water. Only 300 remained, so everyone would know God won the battle.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Gideon's army set up camp by a spring. There were thirty-two thousand soldiers! But the Midianite army was far bigger. Then Yahweh said something surprising: 'You have too many men. If I let you win with this many, Israel might brag and say, We saved ourselves.' So God told Gideon, 'Tell everyone who is afraid to go home.' Twenty-two thousand men left! Only ten thousand were left. But God said, 'There are still too many. Take them down to the water, and I will test them there.' At the stream, God told Gideon to watch how the men drank. Most of them knelt down and put their faces in the water to drink. But three hundred men scooped up water in their hands and lapped it like dogs, staying alert. God said, 'With these three hundred men, I will save you. Send the rest home.' Three hundred against an army as thick as locusts! God made the army tiny on purpose, so that when Israel won, everyone would know it was God's power and not their own. God loves to use small things to do big things, so He gets the glory.",
+    "scenes": [
+      {
+        "caption": "Thirty-two thousand",
+        "art_direction": "A huge army camped by a spring, a giant number counter overhead."
+      },
+      {
+        "caption": "'Too many!'",
+        "art_direction": "The counter flashing red as God speaks; Gideon's jaw dropping."
+      },
+      {
+        "caption": "Afraid? Go home!",
+        "art_direction": "Long lines of soldiers walking away; the counter dropping to 10,000."
+      },
+      {
+        "caption": "The water test",
+        "art_direction": "Soldiers at a stream; most with faces in the water, a few scooping water to their mouths and looking around."
+      },
+      {
+        "caption": "Three hundred",
+        "art_direction": "The counter landing on 300; a small group standing alert beside Gideon."
+      },
+      {
+        "caption": "Tiny army, big God",
+        "art_direction": "A small band of soldiers in the foreground, a massive enemy camp below, and a warm light above."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Corinthians 4:7",
+    "text": "that the exceeding greatness of the power may be of God, and not from ourselves.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "that the exceeding greatness",
+      "of the power",
+      "may be of God,",
+      "and not",
+      "from ourselves."
+    ],
+    "distractors": [
+      "from our muscles."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can do big things through small things, so He gets the glory.",
+    "reflection_prompt": "God made Gideon's army small so everyone would see His power. When has God helped you do something you couldn't do on your own?",
+    "reflection_choices": [
+      "Something at school",
+      "Something brave",
+      "Something kind",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "Why did God say Gideon had too many soldiers?",
+      "options": [
+        "There wasn't enough food",
+        "So Israel wouldn't brag that they saved themselves",
+        "The camp was too crowded"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Lest Israel brag against me, saying, My own hand has saved me.'",
+      "verse_ref": "Judges 7:2"
+    },
+    {
+      "question": "How many men went home because they were afraid?",
+      "options": [
+        "Twenty-two thousand",
+        "Three hundred",
+        "One hundred"
+      ],
+      "correct_index": 0,
+      "explanation": "Twenty-two thousand of the people returned, and ten thousand remained.",
+      "verse_ref": "Judges 7:3"
+    },
+    {
+      "question": "How many men were left after the water test?",
+      "options": [
+        "Ten thousand",
+        "One thousand",
+        "Three hundred"
+      ],
+      "correct_index": 2,
+      "explanation": "The number of those who lapped, putting their hand to their mouth, was three hundred men.",
+      "verse_ref": "Judges 7:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You can do big things through small things. Use me, even when I feel small, so that everyone can see how great You are. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Can you imagine being one of those three hundred? Seeing everyone else go home! But God's math is different from ours. With Him, three hundred is plenty."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

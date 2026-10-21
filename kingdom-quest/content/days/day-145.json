@@ -1,0 +1,120 @@
+{
+  "day": 145,
+  "month": 5,
+  "realm": 21,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Hope Rekindled",
+  "scripture_passage": "Ruth 2:17-23",
+  "story_title": "Naomi's Hope Returns",
+  "summary": "Ruth came home with a huge basket of barley and told Naomi about Boaz. Naomi was amazed and praised God, because Boaz was a close relative who could help them.",
+  "story_reel": {
+    "duration_seconds": 130,
+    "narration": "At the end of the day, Ruth beat out the barley she had gathered. It came to about an ephah, which is enough to fill a big basket! She carried it all home and also gave Naomi the leftover lunch Boaz had shared. Naomi's eyes went wide. 'Where did you work today? Blessed be the man who noticed you!' Ruth said, 'The man's name is Boaz.' Naomi gasped. 'May Yahweh bless him! Yahweh has not stopped showing His kindness to the living and the dead! That man is our close relative. He is one of our family redeemers.' A family redeemer was a relative who could rescue a family in trouble by buying back their land or caring for them. For the first time in a long time, Naomi had hope! She had called herself 'Mara,' bitter. But now she was praising God's kindness. Ruth kept working in Boaz's fields until the end of the barley harvest and the wheat harvest, and she lived with Naomi. Ruth's hard work and Boaz's kindness brought hope back to Naomi's heart. Our kindness can help others see God's kindness.",
+    "scenes": [
+      {
+        "caption": "Beating the barley",
+        "art_direction": "Ruth beating stalks at sunset, golden grain piling up."
+      },
+      {
+        "caption": "A big basket",
+        "art_direction": "Ruth staggering home with an overflowing basket; comedic huff."
+      },
+      {
+        "caption": "'Where did you work?'",
+        "art_direction": "Naomi's eyes going wide at the sight of all the grain."
+      },
+      {
+        "caption": "'His name is Boaz'",
+        "art_direction": "Naomi gasping, hands over her mouth, then clapping with joy."
+      },
+      {
+        "caption": "Family redeemer",
+        "art_direction": "A simple picture of a relative with open arms gathering a family under a roof."
+      },
+      {
+        "caption": "Hope returns",
+        "art_direction": "Naomi's face glowing as the word 'Mara' fades and 'Naomi' shines again."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 41:10",
+    "text": "I will strengthen you. Yes, I will help you.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "I will",
+      "strengthen you.",
+      "Yes,",
+      "I will help you."
+    ],
+    "distractors": [
+      "I will leave you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's kindness brings hope, and my kindness can help others see it.",
+    "reflection_prompt": "Ruth's hard work and Boaz's kindness gave Naomi hope again. Who could you bring a little hope to this week?",
+    "reflection_choices": [
+      "Someone who's been sad",
+      "Someone who's lonely",
+      "Someone who's worried",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "How much barley did Ruth gather?",
+      "options": [
+        "A handful",
+        "About an ephah, a big basketful",
+        "Ten wagons"
+      ],
+      "correct_index": 1,
+      "explanation": "She beat out what she had gleaned, and it was about an ephah of barley.",
+      "verse_ref": "Ruth 2:17"
+    },
+    {
+      "question": "What did Naomi say about Yahweh?",
+      "options": [
+        "He has not stopped showing His kindness",
+        "He forgot about her",
+        "He was angry with her"
+      ],
+      "correct_index": 0,
+      "explanation": "Naomi said, 'Blessed be he of Yahweh, who has not abandoned his kindness to the living and to the dead.'",
+      "verse_ref": "Ruth 2:20"
+    },
+    {
+      "question": "Who did Naomi say Boaz was?",
+      "options": [
+        "A stranger",
+        "A king",
+        "A close relative and family redeemer"
+      ],
+      "correct_index": 2,
+      "explanation": "Naomi said, 'The man is a close relative to us, one of our near kinsmen.'",
+      "verse_ref": "Ruth 2:20"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for Your kindness that never stops. Help me bring hope to others through my kindness and hard work. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "I love watching Naomi's hope come back! God's kindness had been there all along, and Ruth's faithful love helped Naomi see it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "olive_oil"
+    ],
+    "unlock": "barley_basket"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

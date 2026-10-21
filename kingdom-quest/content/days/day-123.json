@@ -1,0 +1,121 @@
+{
+  "day": 123,
+  "month": 5,
+  "realm": 18,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Wise Counsel",
+  "scripture_passage": "Judges 4:1-7",
+  "story_title": "Deborah Under the Palm Tree",
+  "summary": "When King Jabin's army with 900 iron chariots oppressed Israel, the people came to Deborah, a prophet who judged under a palm tree. She told Barak that God was calling him to lead the army.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Once again, after the judge Ehud died, the people turned away from God. This time, a Canaanite king named Jabin ruled over them. His army commander was a man named Sisera, and Sisera had nine hundred iron chariots. Iron chariots were the tanks of their day! For twenty years, Sisera was cruel to the Israelites, and they cried out to Yahweh. At that time, the leader of Israel was a woman named Deborah. She was a prophet, someone God spoke through, and a judge. Deborah held court under a palm tree in the hill country between Ramah and Bethel. People came from all over Israel to have her settle their arguments and help them make wise decisions. The tree even became known as the Palm of Deborah! One day, Deborah sent for a man named Barak. She told him, 'Yahweh, the God of Israel, commands you: Go, gather ten thousand men and lead them to Mount Tabor. I will lure Sisera, his chariots, and his army to the Kishon River, and I will give him into your hands.' God had given Deborah the gift of wise counsel, helping others hear God and make good decisions.",
+    "scenes": [
+      {
+        "caption": "Nine hundred chariots",
+        "art_direction": "A row of gleaming iron chariots stretching to the horizon."
+      },
+      {
+        "caption": "Twenty hard years",
+        "art_direction": "Israelite villagers looking fearfully at Sisera's soldiers patrolling."
+      },
+      {
+        "caption": "Under the palm tree",
+        "art_direction": "Deborah sitting in the shade of a tall palm tree, listening carefully to a line of people."
+      },
+      {
+        "caption": "Wise decisions",
+        "art_direction": "Two arguing neighbors walking away smiling after Deborah helps them."
+      },
+      {
+        "caption": "Calling Barak",
+        "art_direction": "A messenger running to Barak's village."
+      },
+      {
+        "caption": "God's message",
+        "art_direction": "Deborah speaking to Barak, pointing toward a distant mountain."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 11:14",
+    "text": "Where there is no wise guidance, the nation falls, but in the multitude of counselors there is victory.",
+    "translation": "WEB",
+    "tokens": [
+      "Where there is",
+      "no wise guidance,",
+      "the nation falls,",
+      "but in the multitude",
+      "of counselors",
+      "there is victory."
+    ],
+    "distractors": [
+      "there is confusion."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh can give me wisdom to help others make good decisions.",
+    "reflection_prompt": "People came to Deborah for wise advice. When have you helped a friend or family member figure out what to do?",
+    "reflection_choices": [
+      "Solving an argument",
+      "Making a choice",
+      "Fixing a problem",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "wisdom"
+  },
+  "quiz": [
+    {
+      "question": "How many iron chariots did Sisera have?",
+      "options": [
+        "Twelve",
+        "Nine hundred",
+        "Ten thousand"
+      ],
+      "correct_index": 1,
+      "explanation": "Sisera had nine hundred chariots of iron.",
+      "verse_ref": "Judges 4:3"
+    },
+    {
+      "question": "Where did Deborah hold court?",
+      "options": [
+        "Under a palm tree",
+        "In a palace",
+        "By the sea"
+      ],
+      "correct_index": 0,
+      "explanation": "She sat under Deborah's palm tree between Ramah and Bethel.",
+      "verse_ref": "Judges 4:5"
+    },
+    {
+      "question": "Who did Deborah call to lead the army?",
+      "options": [
+        "Gideon",
+        "Samson",
+        "Barak"
+      ],
+      "correct_index": 2,
+      "explanation": "She sent and called Barak, and said, 'Yahweh has commanded, Go!'",
+      "verse_ref": "Judges 4:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for giving wisdom. Fill me with Your wisdom so I can help others make good decisions and point them to You. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "That's my palm tree! People came to me with all kinds of problems. I always listened to God first, then helped them. Wisdom starts with listening to Him."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "palm_branch"
+    ],
+    "unlock": "palm_of_deborah"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

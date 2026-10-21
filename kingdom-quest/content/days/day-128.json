@@ -1,0 +1,121 @@
+{
+  "day": 128,
+  "month": 5,
+  "realm": 19,
+  "identity_phase": "gifts",
+  "is_sabbath_camp": false,
+  "theme": "Strong in Weakness",
+  "scripture_passage": "Judges 6:13-24",
+  "story_title": "Who, Me?",
+  "summary": "Gideon said his family was the weakest and he was the least. God promised, 'I will be with you.' Fire from a rock burned up Gideon's offering, and he built an altar called 'Yahweh Is Peace.'",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Gideon had questions. 'If Yahweh is with us, why is all this happening to us? Where are all the miracles our parents told us about?' The angel of Yahweh looked at him and said, 'Go in this strength you have and save Israel from the Midianites. Am I not sending you?' But Gideon said, 'Who, me? My family is the weakest in the whole tribe of Manasseh, and I'm the least in my family!' Yahweh answered, 'I will be with you.' Gideon still wasn't sure, so he asked for a sign. He went home and prepared a young goat and some bread, and he brought them to the oak tree. The angel told him to put the food on a rock. Then the angel touched it with the tip of his staff, and fire shot up from the rock and burned it all up! Then the angel disappeared. Gideon was terrified. 'I've seen the angel of Yahweh face to face!' But Yahweh said, 'Peace! Don't be afraid. You won't die.' So Gideon built an altar there and named it 'Yahweh Is Peace.' Gideon felt small and weak. But God's power works best through people who know they need Him.",
+    "scenes": [
+      {
+        "caption": "Gideon's questions",
+        "art_direction": "Gideon climbing out of the winepress, hands on his hips, asking honestly."
+      },
+      {
+        "caption": "'Am I not sending you?'",
+        "art_direction": "The angel standing calmly under the oak, light glowing around him."
+      },
+      {
+        "caption": "'Who, me?'",
+        "art_direction": "Gideon pointing to himself, then to a small, humble house; comedic beat."
+      },
+      {
+        "caption": "An offering on a rock",
+        "art_direction": "Gideon setting a basket of bread and meat on a flat rock."
+      },
+      {
+        "caption": "Fire from the rock!",
+        "art_direction": "Flames bursting from the rock as the angel's staff touches it; Gideon jumping back."
+      },
+      {
+        "caption": "Yahweh Is Peace",
+        "art_direction": "Gideon building a stone altar at sunset, peaceful."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Corinthians 12:9",
+    "text": "My grace is sufficient for you, for my power is made perfect in weakness.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "My grace",
+      "is sufficient for you,",
+      "for my power",
+      "is made perfect",
+      "in weakness."
+    ],
+    "distractors": [
+      "in strength."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I don't have to feel strong, because Yahweh's power works through my weakness.",
+    "reflection_prompt": "Gideon said, 'I'm the least!' But God said, 'I will be with you.' When do you feel small or weak?",
+    "reflection_choices": [
+      "When I'm the youngest",
+      "When I don't know how to do something",
+      "When I'm scared",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "What did Gideon say about his family?",
+      "options": [
+        "It was the richest",
+        "It was the weakest in Manasseh, and he was the least",
+        "It was the bravest"
+      ],
+      "correct_index": 1,
+      "explanation": "Gideon said, 'My family is the poorest in Manasseh, and I am the least in my father's house.'",
+      "verse_ref": "Judges 6:15"
+    },
+    {
+      "question": "What did Yahweh promise Gideon?",
+      "options": [
+        "'I will be with you.'",
+        "'You'll be king.'",
+        "'You'll never be scared.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh said to him, 'Surely I will be with you.'",
+      "verse_ref": "Judges 6:16"
+    },
+    {
+      "question": "What did Gideon name the altar he built?",
+      "options": [
+        "Yahweh Will Provide",
+        "Yahweh Is My Banner",
+        "Yahweh Is Peace"
+      ],
+      "correct_index": 2,
+      "explanation": "Gideon built an altar there to Yahweh and called it 'Yahweh is Peace.'",
+      "verse_ref": "Judges 6:24"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, sometimes I feel small and weak. Thank You that Your power works best when I depend on You. Be with me, and give me Your peace. Amen."
+  },
+  "companion": {
+    "id": "deborah",
+    "message": "Gideon was honest about his questions and his fears. God didn't get angry. He just kept saying, 'I will be with you.' That's His promise to you too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "lamp"
+    ],
+    "unlock": "yahweh_is_peace_altar"
+  },
+  "review": {
+    "status": "draft"
+  }
+}
