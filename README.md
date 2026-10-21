@@ -47,6 +47,14 @@ user's plan and usage. Create the tables with
 table (row-level security scopes rows to their owner). Create it by running
 `dashboard/supabase/deals.sql` in the Supabase SQL editor.
 
+## Kingdom Quest
+
+`kingdom-quest/` holds the blueprint for *Kingdom Quest: Discovering My Divine
+Purpose*, a 365-day Bible and identity journey app for kids ages 7–12:
+architecture, design system, gamification rules, the 52-week curriculum, the
+daily Checkpoint JSON schema with sample days, and a Supabase schema. Check the
+content with `npm run validate:kingdom-quest`.
+
 ## Environment variables
 
 | Variable | Default | Notes |

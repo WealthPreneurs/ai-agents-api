@@ -1,0 +1,73 @@
+{
+  "day": 1,
+  "month": 1,
+  "realm": 1,
+  "identity_phase": "foundation",
+  "is_sabbath_camp": false,
+  "theme": "Made on Purpose",
+  "scripture_passage": "Genesis 1:1-2:3",
+  "story_title": "Let There Be Light",
+  "summary": "Before anything existed, Yahweh God spoke, and light, oceans, stars, animals, and people came to be. He made people in His own image and called everything very good.",
+  "story_reel": {
+    "duration_seconds": 120,
+    "narration": "Before there was a sun, a sky, or a single blade of grass, there was God. Then He spoke: 'Let there be light!' And light burst out across the darkness. Day by day, Yahweh filled His world. He gathered the waters into seas and lifted dry land. He hung the sun, the moon, and more stars than anyone could count. He filled the oceans with fish and the skies with birds. He made lions that roar and lambs that leap. Then Yahweh made something extra special: people, made in His own image, to know Him and care for His world. God looked at everything He had made, and it was very good. On the seventh day, God rested and made that day holy.",
+    "scenes": [
+      { "caption": "In the beginning, there was only God.", "art_direction": "Deep indigo void with a single warm glow at center; no human depiction of God." },
+      { "caption": "'Let there be light!'", "art_direction": "Light ripples outward like a wave, revealing swirling waters." },
+      { "caption": "Seas, land, and sky", "art_direction": "Monument Valley-style terraced islands rising from the sea, plants sprouting in fast motion." },
+      { "caption": "Sun, moon, and countless stars", "art_direction": "Camera pulls back to a starfield; stars twinkle on as the narrator counts." },
+      { "caption": "Fish, birds, and every animal", "art_direction": "Playful animal parade; lion and lamb side by side." },
+      { "caption": "People made in Yahweh's image", "art_direction": "A man and woman in a garden at golden hour, diverse warm skin tones, faces full of wonder." },
+      { "caption": "It was very good. God rested.", "art_direction": "Quiet sunset over the finished world; a gentle 'very good' chime." }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Genesis 1:1",
+    "text": "In the beginning, God created the heavens and the earth.",
+    "translation": "WEB",
+    "tokens": ["In the beginning,", "God created", "the heavens", "and the earth."],
+    "distractors": ["and the moon."]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh made me on purpose, in His own image.",
+    "reflection_prompt": "God made you in His image. What is one thing about how God made you that you are thankful for?",
+    "reflection_choices": ["My heart that loves people", "My mind that loves to learn", "My hands that make things", "Something else (tell or draw it!)"],
+    "trait_unlocked": "image_bearer"
+  },
+  "quiz": [
+    {
+      "question": "What was the very first thing God created when He spoke?",
+      "options": ["Animals", "Light", "The ocean"],
+      "correct_index": 1,
+      "explanation": "God said, 'Let there be light,' and there was light!",
+      "verse_ref": "Genesis 1:3"
+    },
+    {
+      "question": "In whose image did God make people?",
+      "options": ["The angels'", "The animals'", "His own image"],
+      "correct_index": 2,
+      "explanation": "God created people in His own image. That includes you!",
+      "verse_ref": "Genesis 1:27"
+    },
+    {
+      "question": "What did God do on the seventh day?",
+      "options": ["He rested", "He made the stars", "He made the fish"],
+      "correct_index": 0,
+      "explanation": "God finished His work and rested on the seventh day, and He blessed it.",
+      "verse_ref": "Genesis 2:2-3"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You made the whole world, and You made me too. Thank You for making me in Your image. Help me remember that I am made on purpose. Amen."
+  },
+  "companion": {
+    "id": "eve",
+    "message": "Welcome to the very first page of the greatest story ever told! The One who made the stars made you, too. Let's explore His world together."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": ["river_stone", "palm_branch"],
+    "unlock": "garden_plot"
+  },
+  "review": { "status": "draft" }
+}

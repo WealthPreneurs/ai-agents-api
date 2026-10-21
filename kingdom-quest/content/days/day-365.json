@@ -1,0 +1,73 @@
+{
+  "day": 365,
+  "month": 12,
+  "realm": 52,
+  "identity_phase": "mission",
+  "is_sabbath_camp": false,
+  "theme": "Coronation Day",
+  "scripture_passage": "Revelation 21:1-7; 22:1-5",
+  "story_title": "Everything Made New",
+  "summary": "John saw a new heaven and a new earth, where Yahweh lives with His people, wipes away every tear, and makes all things new. The story that began in a garden ends with a forever home.",
+  "story_reel": {
+    "duration_seconds": 135,
+    "narration": "Long ago, Jesus' friend John was given an amazing vision. He saw a new heaven and a new earth. He saw a beautiful holy city coming down from God, shining like a precious jewel. Then John heard a loud voice: 'Look! God's home is with people. He will live with them, and they will be His people.' In that place there will be no more crying, no more pain, and no more death. God Himself will wipe away every tear. The One sitting on the throne said, 'Behold, I am making all things new.' A crystal-clear river of the water of life flowed from the throne, and beside it grew the tree of life. Do you remember the garden from the very first day of your journey? Yahweh's story ends where it began, with God and His people together, and this time, forever.",
+    "scenes": [
+      { "caption": "John sees a vision.", "art_direction": "Older John on a rocky island, looking up as the sky opens in light." },
+      { "caption": "A new heaven and a new earth", "art_direction": "The world from Day 1 reappears, brighter and more vibrant; callback composition to the first reel." },
+      { "caption": "The holy city shines like a jewel.", "art_direction": "Glowing city of gold and clear crystal descending; no depiction of God's face, only radiant light from the throne." },
+      { "caption": "No more tears", "art_direction": "Diverse people of all ages and nations, faces lifting from sorrow to joy." },
+      { "caption": "'I am making all things new.'", "art_direction": "Light from the throne sweeps across, colors deepening." },
+      { "caption": "The river and the tree of life", "art_direction": "Crystal river with the tree of life on both banks; mirrors the Eden garden plot the child built on Day 1." }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Revelation 21:5",
+    "text": "Behold, I am making all things new.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": ["Behold,", "I am", "making", "all things", "new."],
+    "distractors": ["some things"]
+  },
+  "identity_focus": {
+    "core_truth": "My story is part of Yahweh's forever story.",
+    "reflection_prompt": "Look back at your Divine Blueprint. What is the biggest thing Yahweh showed you about who you are this year?",
+    "reflection_choices": ["I am loved and chosen", "Yahweh gave me special gifts", "Yahweh is growing good fruit in me", "I have a mission to serve"],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What will God wipe away in the new creation?",
+      "options": ["Every tear", "Every star", "Every city"],
+      "correct_index": 0,
+      "explanation": "God will wipe away every tear. There will be no more crying or pain.",
+      "verse_ref": "Revelation 21:4"
+    },
+    {
+      "question": "What did the One on the throne say He is doing?",
+      "options": ["Making some things better", "Making all things new", "Making the world smaller"],
+      "correct_index": 1,
+      "explanation": "'Behold, I am making all things new.' Yahweh is restoring everything!",
+      "verse_ref": "Revelation 21:5"
+    },
+    {
+      "question": "What grows beside the river of the water of life?",
+      "options": ["A golden tower", "A field of wheat", "The tree of life"],
+      "correct_index": 2,
+      "explanation": "The tree of life is there, just like in the very first garden, and its leaves bring healing.",
+      "verse_ref": "Revelation 22:2"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for this whole journey through Your Word. Thank You that You are making all things new, including me. Help me keep following You and sharing Your love every day. Amen."
+  },
+  "companion": {
+    "id": "paul",
+    "message": "You finished the race! I wrote that nothing could separate us from the love of God, and now you have seen it from Genesis to Revelation. Your adventure with Yahweh is only beginning."
+  },
+  "rewards": {
+    "light_stones": 50,
+    "materials": ["gold_thread", "lamp"],
+    "unlock": "river_of_life_fountain"
+  },
+  "review": { "status": "draft" }
+}

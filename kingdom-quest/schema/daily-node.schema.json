@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kingdomquest.app/schema/daily-node.schema.json",
+  "title": "Kingdom Quest daily devotional node (Checkpoint)",
+  "description": "One of the 365 Checkpoints on The Great Map. Cross-file rules (realm/region math, trait ids, verse tokens) are checked by scripts/validate-content.js.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "day", "month", "realm", "identity_phase", "is_sabbath_camp", "theme",
+    "scripture_passage", "story_title", "summary", "story_reel", "memory_verse",
+    "identity_focus", "quiz", "micro_prayer", "companion", "rewards", "review"
+  ],
+  "properties": {
+    "day": { "type": "integer", "minimum": 1, "maximum": 365 },
+    "month": { "type": "integer", "minimum": 1, "maximum": 12, "description": "Region on The Great Map (not the calendar month)." },
+    "realm": { "type": "integer", "minimum": 1, "maximum": 52, "description": "Week. min(52, ceil(day / 7))." },
+    "identity_phase": { "enum": ["foundation", "gifts", "character", "mission"] },
+    "is_sabbath_camp": { "type": "boolean", "description": "True on day % 7 == 0: lighter review day hosting the weekly Identity Milestone." },
+    "theme": { "type": "string", "minLength": 3, "maxLength": 60 },
+    "scripture_passage": { "type": "string", "pattern": "^([1-3] )?[A-Z][a-z]+( [A-Z][a-z]+)* \\d+(:\\d+(-\\d+)?)?(-\\d+(:\\d+)?)?(; .+)?$" },
+    "story_title": { "type": "string", "minLength": 3, "maxLength": 60 },
+    "summary": { "type": "string", "minLength": 10, "maxLength": 240 },
+    "story_reel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["duration_seconds", "narration", "scenes"],
+      "properties": {
+        "duration_seconds": { "type": "integer", "minimum": 60, "maximum": 150 },
+        "narration": { "type": "string", "minLength": 50, "description": "Full narration script. Also used verbatim for text-to-speech and captions." },
+        "scenes": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 10,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["caption", "art_direction"],
+            "properties": {
+              "caption": { "type": "string", "maxLength": 120 },
+              "art_direction": { "type": "string", "description": "Brief for the illustrator/animator." },
+              "asset_id": { "type": "string" }
+            }
+          }
+        },
+        "audio_asset_id": { "type": "string" },
+        "captions_asset_id": { "type": "string" }
+      }
+    },
+    "memory_verse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference", "text", "translation", "tokens"],
+      "properties": {
+        "reference": { "type": "string" },
+        "text": { "type": "string", "minLength": 3 },
+        "translation": { "type": "string", "enum": ["WEB"] },
+        "excerpt": { "type": "boolean", "description": "True when text is a portion of the verse." },
+        "tokens": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Tap-to-assemble chunks in order. tokens.join(' ') must equal text."
+        },
+        "distractors": {
+          "type": "array",
+          "maxItems": 3,
+          "items": { "type": "string" },
+          "description": "Optional decoy chunks for ages 10-12 (Challenge mode)."
+        }
+      }
+    },
+    "identity_focus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["core_truth", "reflection_prompt", "trait_unlocked"],
+      "properties": {
+        "core_truth": { "type": "string", "pattern": "^(Yahweh|I|Jesus|My)\\b", "description": "First-person or Yahweh-centered truth statement." },
+        "reflection_prompt": { "type": "string" },
+        "reflection_choices": {
+          "type": "array",
+          "maxItems": 4,
+          "items": { "type": "string" },
+          "description": "Tap-to-answer options for younger or non-typing kids. A free-text/voice/drawing answer is always also allowed."
+        },
+        "trait_unlocked": { "type": "string", "description": "Trait id from content/catalog.json." }
+      }
+    },
+    "quiz": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question", "options", "correct_index", "explanation"],
+        "properties": {
+          "question": { "type": "string" },
+          "options": { "type": "array", "minItems": 3, "maxItems": 4, "uniqueItems": true, "items": { "type": "string" } },
+          "correct_index": { "type": "integer", "minimum": 0, "maximum": 3 },
+          "explanation": { "type": "string", "description": "Shown after any answer, with the verse it comes from. Wrong answers never cost stones." },
+          "verse_ref": { "type": "string" }
+        }
+      }
+    },
+    "micro_prayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "maxLength": 300 },
+        "audio_asset_id": { "type": "string" }
+      }
+    },
+    "companion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "message"],
+      "properties": {
+        "id": { "type": "string", "description": "Companion id from content/catalog.json." },
+        "message": { "type": "string", "maxLength": 240, "description": "Pre-written and reviewed. Companions never put new words in Yahweh's mouth or claim revelation." },
+        "audio_asset_id": { "type": "string" }
+      }
+    },
+    "rewards": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["light_stones"],
+      "properties": {
+        "light_stones": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "materials": { "type": "array", "items": { "type": "string" } },
+        "unlock": { "type": "string", "description": "Optional Kingdom Builder item unlocked by this day." }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["draft", "theology_reviewed", "published"] },
+        "reviewers": { "type": "array", "items": { "type": "string" } },
+        "reviewed_at": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}
