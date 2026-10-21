@@ -1,0 +1,121 @@
+{
+  "day": 246,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God Is Working Behind the Scenes",
+  "scripture_passage": "Esther 1:1-12; 2:1-8",
+  "story_title": "An Orphan Named Esther",
+  "summary": "In the Persian Empire, King Xerxes looked for a new queen. A young Jewish orphan named Esther, raised by her cousin Mordecai, was taken to the palace. God isn't named in the book of Esther, but He was working all along.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "This is my story! Many years after Daniel, the Persian Empire was ruled by a powerful king named Xerxes, sometimes called Ahasuerus. He ruled over one hundred twenty-seven provinces, from India all the way to Ethiopia! He lived in a grand palace in the city of Susa. One day, the king threw a huge feast that lasted six months, showing off all his riches. At the end, he ordered his queen, Vashti, to come and show her beauty to his guests. But Vashti refused. The king was so angry that he decided to find a new queen. So he sent officials all over the empire to bring young women to the palace in Susa. In Susa lived a Jewish man named Mordecai. His family had been taken from Jerusalem long ago, when Babylon conquered it. Mordecai was raising his young cousin, a girl named Hadassah, whose Persian name was Esther. Her father and mother had died, so Mordecai adopted her as his own daughter. Esther was beautiful, and she was taken to the king's palace along with many other young women. Here's something surprising: the book of Esther never mentions God's name, not even once! But as you'll see this week, God was working behind the scenes the whole time, putting every piece exactly where it needed to be.",
+    "scenes": [
+      {
+        "caption": "The Persian Empire",
+        "art_direction": "A sweeping map of 127 provinces from India to Ethiopia."
+      },
+      {
+        "caption": "The palace at Susa",
+        "art_direction": "A dazzling palace with blue-and-gold tiles, gardens, and fountains."
+      },
+      {
+        "caption": "A six-month feast",
+        "art_direction": "Endless banquet tables and guests in fancy clothes."
+      },
+      {
+        "caption": "Vashti refuses",
+        "art_direction": "Queen Vashti turning away at a doorway; the king's face turning red."
+      },
+      {
+        "caption": "Mordecai and Esther",
+        "art_direction": "Mordecai lovingly caring for a young orphan girl in their modest home."
+      },
+      {
+        "caption": "Behind the scenes",
+        "art_direction": "A puzzle with pieces sliding gently into place, guided by a soft unseen light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 16:9",
+    "text": "A man's heart plans his course, but Yahweh directs his steps.",
+    "translation": "WEB",
+    "tokens": [
+      "A man's heart",
+      "plans his course,",
+      "but Yahweh",
+      "directs",
+      "his steps."
+    ],
+    "distractors": [
+      "forgets his steps."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is working in my story, even when I can't see Him.",
+    "reflection_prompt": "God's name isn't in the book of Esther, but He was working the whole time. When is a time God was working in your life, even if you didn't notice at first?",
+    "reflection_choices": [
+      "When I met a good friend",
+      "When something hard turned out okay",
+      "When I got help just in time",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "How many provinces did King Xerxes rule?",
+      "options": [
+        "Twelve",
+        "One hundred twenty-seven",
+        "Seven"
+      ],
+      "correct_index": 1,
+      "explanation": "Ahasuerus reigned from India even to Ethiopia, over one hundred twenty-seven provinces.",
+      "verse_ref": "Esther 1:1"
+    },
+    {
+      "question": "Who raised Esther after her parents died?",
+      "options": [
+        "Her cousin Mordecai",
+        "The king",
+        "Daniel"
+      ],
+      "correct_index": 0,
+      "explanation": "Mordecai brought up Hadassah, that is, Esther, his uncle's daughter; for she had neither father nor mother.",
+      "verse_ref": "Esther 2:7"
+    },
+    {
+      "question": "What is surprising about the book of Esther?",
+      "options": [
+        "It has no people in it",
+        "It is the longest book",
+        "God's name is never mentioned in it"
+      ],
+      "correct_index": 2,
+      "explanation": "The book of Esther never mentions God by name, yet His care is seen throughout the story.",
+      "verse_ref": "Esther 1-10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You're working in my story, even when I can't see You. Help me trust that You're putting every piece in the right place. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "That orphan girl was me! I didn't know why God was letting all these things happen. But He was working behind the scenes the whole time."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "susa_palace"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Women are gathered for the king (Esther 2:2-4, 12-14); the harem and the one-night selection are omitted. Vashti's refusal is told neutrally. Confirm."
+  }
+}

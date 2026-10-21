@@ -1,0 +1,122 @@
+{
+  "day": 239,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Saying No to Say Yes",
+  "scripture_passage": "Daniel 1:1-16",
+  "story_title": "Daniel's Choice",
+  "summary": "Young Daniel and his friends were taken to Babylon. They were given new names and the king's rich food. Daniel decided not to eat it and asked for a ten-day test of vegetables and water. They ended up healthier than everyone else.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "When King Nebuchadnezzar first attacked Jerusalem, he took some of the smartest, strongest young men from the royal families back to Babylon. Among them were four friends: Daniel, Hananiah, Mishael, and Azariah. The king wanted them to learn Babylon's language and books for three years so they could serve in his palace. He even gave them new Babylonian names: Daniel became Belteshazzar, and his friends became Shadrach, Meshach, and Abednego. The king also ordered that they eat his rich food and drink his wine. But this food went against God's law, and some of it had probably been offered to idols. The Bible says, 'Daniel made up his mind that he would not make himself unclean with the king's food.' Daniel had decided in his heart before the test even came. So he politely asked the official in charge, 'Please test us for ten days. Give us only vegetables to eat and water to drink. Then compare us with the young men who eat the king's food.' The official agreed. After ten days, Daniel and his friends looked healthier and stronger than all the others! So they got to keep eating vegetables. Saying no to something wrong is really saying yes to God. And Daniel decided ahead of time, so when the moment came, he was ready.",
+    "scenes": [
+      {
+        "caption": "Taken to Babylon",
+        "art_direction": "Four young men walking into the dazzling city of Babylon with its tall gates."
+      },
+      {
+        "caption": "New names",
+        "art_direction": "Name tags changing: Daniel to Belteshazzar, Hananiah to Shadrach, Mishael to Meshach, Azariah to Abednego."
+      },
+      {
+        "caption": "The king's food",
+        "art_direction": "A table piled with rich food and wine; the four friends looking uneasy."
+      },
+      {
+        "caption": "Daniel decides",
+        "art_direction": "Daniel placing his hand on his heart, eyes closed, making a choice."
+      },
+      {
+        "caption": "A polite request",
+        "art_direction": "Daniel respectfully talking to the palace official."
+      },
+      {
+        "caption": "Ten days later",
+        "art_direction": "The four friends glowing with health beside a table of vegetables; other young men looking tired."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "1 Corinthians 10:31",
+    "text": "Whether therefore you eat, or drink, or whatever you do, do all to the glory of God.",
+    "translation": "WEB",
+    "tokens": [
+      "Whether therefore",
+      "you eat,",
+      "or drink,",
+      "or whatever you do,",
+      "do all",
+      "to the glory of God."
+    ],
+    "distractors": [
+      "to the glory of me."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can decide ahead of time to say no to wrong and yes to Yahweh.",
+    "reflection_prompt": "Daniel decided in his heart before the test came. What is one thing you can decide right now to always say no to?",
+    "reflection_choices": [
+      "Lying",
+      "Being mean to others",
+      "Watching things I shouldn't",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "self_control"
+  },
+  "quiz": [
+    {
+      "question": "What new name was Daniel given?",
+      "options": [
+        "Shadrach",
+        "Belteshazzar",
+        "Abednego"
+      ],
+      "correct_index": 1,
+      "explanation": "The prince of the eunuchs gave Daniel the name of Belteshazzar.",
+      "verse_ref": "Daniel 1:7"
+    },
+    {
+      "question": "What did Daniel decide in his heart?",
+      "options": [
+        "Not to make himself unclean with the king's food",
+        "To become king",
+        "To go back home"
+      ],
+      "correct_index": 0,
+      "explanation": "Daniel purposed in his heart that he would not defile himself with the king's food.",
+      "verse_ref": "Daniel 1:8"
+    },
+    {
+      "question": "What did Daniel and his friends eat during the ten-day test?",
+      "options": [
+        "Cake and candy",
+        "Only bread",
+        "Vegetables and water"
+      ],
+      "correct_index": 2,
+      "explanation": "Daniel said, 'Let them give us vegetables to eat, and water to drink.'",
+      "verse_ref": "Daniel 1:12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me decide ahead of time to say no to what's wrong and yes to You. Whatever I do, even eating and drinking, I want to do it for Your glory. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Daniel was taken from home like my family was. But he didn't let Babylon change who he was. He decided in his heart to follow God, and so can you!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "olive_oil"
+    ],
+    "unlock": "daniels_vegetable_garden"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Many interpreters believe the four were made eunuchs (implied by 'prince of the eunuchs', 1:3); omitted. Confirm."
+  }
+}

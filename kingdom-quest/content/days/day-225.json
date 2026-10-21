@@ -1,0 +1,120 @@
+{
+  "day": 225,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God's Love Follows Me",
+  "scripture_passage": "Jonah 1:1-3",
+  "story_title": "Jonah Runs Away",
+  "summary": "God told Jonah to go to Nineveh, the capital of Israel's enemies, and warn the people. But Jonah didn't want to go. He ran the opposite way and got on a ship to Tarshish.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "There was a prophet named Jonah who lived in Israel. One day, Yahweh said to him, 'Get up and go to the great city of Nineveh. Warn the people there, because I have seen how wicked they are.' Nineveh was the capital city of Assyria, the cruel empire that was Israel's biggest enemy. The people there were known for being violent and mean to other nations. Jonah didn't want to go! Maybe he was scared. But the Bible tells us later that Jonah had another reason: he knew God was kind and merciful, and he didn't want God to forgive his enemies. So Jonah got up, but instead of going east to Nineveh, he ran the opposite way! He went down to the seaport town of Joppa, found a ship heading to Tarshish, which was about as far west as anyone could sail back then, paid the fare, and got on board. Jonah was trying to run away from Yahweh. But can anyone really run away from God? King David once wrote a song that said, 'If I fly on the wings of the morning to the farthest part of the sea, even there Your hand will lead me.' Jonah was about to find out that God's love follows us, even when we run the wrong way.",
+    "scenes": [
+      {
+        "caption": "'Go to Nineveh'",
+        "art_direction": "Jonah sitting under a fig tree in Israel as God's voice calls."
+      },
+      {
+        "caption": "The great city",
+        "art_direction": "A huge, fortified city with tall walls and dark towers in the distance."
+      },
+      {
+        "caption": "Jonah's frown",
+        "art_direction": "Jonah crossing his arms and shaking his head."
+      },
+      {
+        "caption": "The wrong way!",
+        "art_direction": "A map showing Nineveh to the east and Jonah walking west with a big arrow; comedic."
+      },
+      {
+        "caption": "Buying a ticket",
+        "art_direction": "Jonah paying for a ship ticket at the busy port of Joppa."
+      },
+      {
+        "caption": "Setting sail",
+        "art_direction": "The ship sailing out to sea as Jonah looks back nervously."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 139:10",
+    "text": "even there your hand will lead me, and your right hand will hold me.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "even there",
+      "your hand",
+      "will lead me,",
+      "and your right hand",
+      "will hold me."
+    ],
+    "distractors": [
+      "will let me go."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's love follows me, even when I run the wrong way.",
+    "reflection_prompt": "Jonah didn't want to go where God sent him. Is there a person you find it hard to be kind to?",
+    "reflection_choices": [
+      "Someone who was mean to me",
+      "Someone very different from me",
+      "Someone who annoys me",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "beloved"
+  },
+  "quiz": [
+    {
+      "question": "Where did God tell Jonah to go?",
+      "options": [
+        "Egypt",
+        "Nineveh",
+        "Jerusalem"
+      ],
+      "correct_index": 1,
+      "explanation": "Yahweh said, 'Arise, go to Nineveh, that great city, and preach against it.'",
+      "verse_ref": "Jonah 1:2"
+    },
+    {
+      "question": "Where did Jonah try to go instead?",
+      "options": [
+        "Tarshish",
+        "Bethlehem",
+        "Babylon"
+      ],
+      "correct_index": 0,
+      "explanation": "Jonah rose up to flee to Tarshish from the presence of Yahweh.",
+      "verse_ref": "Jonah 1:3"
+    },
+    {
+      "question": "What was Nineveh?",
+      "options": [
+        "A small village",
+        "A desert oasis",
+        "The capital city of Israel's enemy, Assyria"
+      ],
+      "correct_index": 2,
+      "explanation": "Nineveh was the great capital of Assyria, Israel's powerful enemy.",
+      "verse_ref": "Jonah 1:2"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that I can never run away from Your love. When I don't want to do what You ask, help me turn around and follow You. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Can you imagine running away from God on a boat? Jonah tried! But God's love is bigger than any ocean. You'll see what happens next."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "cedar_wood"
+    ],
+    "unlock": "joppa_port"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "day": 250,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Patient Courage",
+  "scripture_passage": "Esther 5:1-8",
+  "story_title": "The Golden Scepter",
+  "summary": "On the third day, Esther put on her royal robes and stood in the king's courtyard. The king held out his golden scepter and offered her up to half his kingdom. Esther wisely invited the king and Haman to a banquet, and then another.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "On the third day, Esther put on her royal robes. Then she walked to the inner courtyard of the palace and stood where the king could see her. Her heart must have been pounding! The king was sitting on his royal throne, facing the entrance. When he saw Queen Esther standing in the courtyard, he was pleased with her, and he held out the golden scepter in his hand! Esther walked forward and touched the tip of the scepter. She was safe! The king asked, 'What is it, Queen Esther? What do you want? I'll give it to you, even up to half of my kingdom!' Now, Esther could have blurted everything out right then. But she was wise and patient. She said, 'If it pleases the king, please come today with Haman to a banquet I have prepared.' So the king and Haman came to Esther's banquet. Again, the king asked, 'What do you want? Even up to half the kingdom, it's yours!' And again, Esther patiently waited. She said, 'Come with Haman to another banquet tomorrow, and then I'll tell you.' Why did she wait? The Bible doesn't say. But God was working through her patience. Something was about to happen that very night that would change everything. Sometimes courage means acting boldly, and sometimes it means waiting for just the right moment.",
+    "scenes": [
+      {
+        "caption": "Royal robes",
+        "art_direction": "Esther putting on her royal robes and crown, taking a deep breath."
+      },
+      {
+        "caption": "In the courtyard",
+        "art_direction": "Esther standing alone in the vast inner courtyard as the king looks up from his throne."
+      },
+      {
+        "caption": "The golden scepter",
+        "art_direction": "The king extending a gleaming golden scepter; Esther stepping forward to touch it."
+      },
+      {
+        "caption": "'Up to half my kingdom!'",
+        "art_direction": "The king smiling warmly and spreading his arms."
+      },
+      {
+        "caption": "A banquet",
+        "art_direction": "Esther hosting a beautiful feast for the king and a smug Haman."
+      },
+      {
+        "caption": "Waiting for the right moment",
+        "art_direction": "Esther glancing at a sundial and smiling patiently."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 21:1",
+    "text": "The king's heart is in Yahweh's hand like the watercourses. He turns it wherever he desires.",
+    "translation": "WEB",
+    "tokens": [
+      "The king's heart",
+      "is in Yahweh's hand",
+      "like the watercourses.",
+      "He turns it",
+      "wherever he desires."
+    ],
+    "distractors": [
+      "wherever the king desires."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be brave and patient, trusting Yahweh's timing.",
+    "reflection_prompt": "Esther was brave enough to go to the king, and patient enough to wait for the right moment. When do you need to wait patiently before speaking up?",
+    "reflection_choices": [
+      "When someone is upset",
+      "When I have something important to say",
+      "When I'm waiting for an answer",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "patience"
+  },
+  "quiz": [
+    {
+      "question": "What did the king do when he saw Esther in the courtyard?",
+      "options": [
+        "Called the guards",
+        "Held out his golden scepter",
+        "Walked away"
+      ],
+      "correct_index": 1,
+      "explanation": "The king held out to Esther the golden scepter that was in his hand.",
+      "verse_ref": "Esther 5:2"
+    },
+    {
+      "question": "How much did the king offer Esther?",
+      "options": [
+        "Up to half of his kingdom",
+        "A new dress",
+        "A horse"
+      ],
+      "correct_index": 0,
+      "explanation": "The king said, 'It shall be given you even to the half of the kingdom.'",
+      "verse_ref": "Esther 5:3"
+    },
+    {
+      "question": "What did Esther ask the king to do?",
+      "options": [
+        "Give her gold",
+        "Make her king",
+        "Come with Haman to a banquet"
+      ],
+      "correct_index": 2,
+      "explanation": "Esther said, 'Let the king and Haman come today to the banquet that I have prepared.'",
+      "verse_ref": "Esther 5:4"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, every heart is in Your hand, even a king's. Give me courage to speak up and patience to wait for the right moment. I trust Your timing. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "When the king held out that scepter, I almost cried with relief! Then I waited. I didn't know it yet, but God was about to do something amazing that very night."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "olive_oil"
+    ],
+    "unlock": "golden_scepter"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Haman's plan to build gallows for Mordecai (Esther 5:9-14) is omitted. Confirm."
+  }
+}

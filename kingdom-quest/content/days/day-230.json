@@ -1,0 +1,119 @@
+{
+  "day": 230,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Handling My Anger",
+  "scripture_passage": "Jonah 4:1-8",
+  "story_title": "Jonah's Grumpy Day",
+  "summary": "Jonah was angry that God showed mercy to Nineveh. He sat outside the city to sulk. God made a vine grow to shade him, and Jonah was happy. But then God sent a worm to eat the vine, and Jonah got angry again.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "You'd think Jonah would be thrilled that a whole city turned to God. But instead, Jonah was very angry! He prayed, 'Yahweh, isn't this exactly what I said would happen when I was back home? That's why I ran away to Tarshish! I knew that You are a gracious and merciful God, slow to get angry, and full of love. I knew You would forgive them!' Jonah was upset because God was kind to his enemies. Then Jonah stomped out of the city and sat down on the east side. He made himself a little shelter and sat in its shade, waiting to see what would happen to the city. Yahweh God made a leafy vine grow up over Jonah to shade his head and make him more comfortable. Jonah was very happy about the vine! But at dawn the next day, God sent a worm. Munch, munch, munch! The worm chewed the vine, and it dried up and withered. When the sun rose, God sent a hot, scorching east wind. The sun beat down on Jonah's head until he felt faint. Jonah was grumpy all over again. 'I'm so angry I could just give up!' Jonah needed to learn something important about his heart. Being angry isn't always wrong, but we need to bring our anger to God and let Him show us what's really going on inside.",
+    "scenes": [
+      {
+        "caption": "Jonah's angry prayer",
+        "art_direction": "Jonah stomping his foot and complaining toward the sky."
+      },
+      {
+        "caption": "'I knew You were merciful!'",
+        "art_direction": "Lettering: 'gracious, merciful, slow to anger, full of love,' with Jonah frowning at it; ironic beat."
+      },
+      {
+        "caption": "Sulking outside the city",
+        "art_direction": "Jonah sitting under a flimsy little shelter, arms crossed, glaring at Nineveh."
+      },
+      {
+        "caption": "A happy vine",
+        "art_direction": "A leafy vine growing quickly over Jonah; Jonah smiling for the first time."
+      },
+      {
+        "caption": "Munch, munch!",
+        "art_direction": "A tiny worm chomping through the vine; the vine wilting; comedic."
+      },
+      {
+        "caption": "Hot wind",
+        "art_direction": "Jonah fanning himself in the scorching sun, red-faced and grumpy."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Ephesians 4:26",
+    "text": "Be angry, and don't sin. Don't let the sun go down on your wrath",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Be angry,",
+      "and don't sin.",
+      "Don't let",
+      "the sun go down",
+      "on your wrath"
+    ],
+    "distractors": [
+      "on your friends"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can bring my anger to Yahweh and let Him gently change my heart.",
+    "reflection_prompt": "Jonah got angry about God's kindness. When you feel angry, what is a good way to bring it to God?",
+    "reflection_choices": [
+      "Tell God honestly how I feel",
+      "Take a break and calm down",
+      "Ask God to change my heart",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "gentleness"
+  },
+  "quiz": [
+    {
+      "question": "Why was Jonah angry?",
+      "options": [
+        "Because Nineveh was destroyed",
+        "Because God showed mercy to Nineveh",
+        "Because he was hungry"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonah said, 'I knew that you are a gracious God, and merciful... and relent of doing harm.'",
+      "verse_ref": "Jonah 4:2"
+    },
+    {
+      "question": "What did God make grow to shade Jonah?",
+      "options": [
+        "A vine",
+        "A palm tree",
+        "A tent"
+      ],
+      "correct_index": 0,
+      "explanation": "Yahweh God prepared a vine, and made it to come up over Jonah, to be a shade over his head.",
+      "verse_ref": "Jonah 4:6"
+    },
+    {
+      "question": "What happened to the vine?",
+      "options": [
+        "It grew bigger",
+        "It turned into a tree",
+        "A worm attacked it and it withered"
+      ],
+      "correct_index": 2,
+      "explanation": "God prepared a worm, and it chewed on the vine so that it withered.",
+      "verse_ref": "Jonah 4:7"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, sometimes I get angry. Help me bring my anger to You instead of holding on to it. Gently change my heart to be more like Yours. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Poor Jonah! He was grumpy about God being kind. Have you ever been upset that someone else got something good? God wants to change our hearts."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

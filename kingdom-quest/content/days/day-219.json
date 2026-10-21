@@ -1,0 +1,122 @@
+{
+  "day": 219,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Waiting for the Promised King",
+  "scripture_passage": "Isaiah 7:14; 9:2-7",
+  "story_title": "A Child Is Born",
+  "summary": "Isaiah prophesied that a great light would shine on people in darkness, and that a child would be born who would be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. About 700 years later, Jesus was born.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "God gave Isaiah amazing messages about the future. Some of them were about a special baby who would be born many years later. Isaiah said, 'The virgin will have a son, and she will call His name Immanuel,' which means 'God with us.' Then Isaiah said, 'The people who walked in darkness have seen a great light. For those living in the land of deep shadow, a light has shined!' And then Isaiah gave one of the most famous promises in the whole Bible: 'For a child is born to us. A son is given to us. The government will be on His shoulders. His name will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. His kingdom will keep growing, and there will be no end to His peace. He will sit on the throne of David forever.' Who was Isaiah talking about? Jesus! But here's the amazing thing: Isaiah wrote these words about seven hundred years before Jesus was born. That's a really long time to wait for a promise! People waited and waited and waited. Some probably wondered if it would ever happen. But God always keeps His promises, right on time. When you have to wait for something, remember: God is never late.",
+    "scenes": [
+      {
+        "caption": "Messages about the future",
+        "art_direction": "Isaiah writing on a scroll as glowing images drift up from the page."
+      },
+      {
+        "caption": "Immanuel",
+        "art_direction": "Lettering: 'Immanuel = God with us' sparkling over a manger shape."
+      },
+      {
+        "caption": "A great light",
+        "art_direction": "A dark land suddenly lit by a rising, brilliant light."
+      },
+      {
+        "caption": "Wonderful Counselor, Mighty God",
+        "art_direction": "Four glowing names appearing one by one in golden letters."
+      },
+      {
+        "caption": "Seven hundred years",
+        "art_direction": "A timeline stretching from Isaiah's scroll to a stable in Bethlehem, with generations of families waiting along it."
+      },
+      {
+        "caption": "Never late",
+        "art_direction": "A star shining over Bethlehem at just the right moment."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 9:6",
+    "text": "His name will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "His name",
+      "will be called",
+      "Wonderful Counselor,",
+      "Mighty God,",
+      "Everlasting Father,",
+      "Prince of Peace."
+    ],
+    "distractors": [
+      "Prince of War."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can wait patiently, because Yahweh always keeps His promises right on time.",
+    "reflection_prompt": "God's people waited 700 years for Jesus! Which of Jesus' names from Isaiah 9:6 means the most to you right now?",
+    "reflection_choices": [
+      "Wonderful Counselor",
+      "Mighty God",
+      "Everlasting Father",
+      "Prince of Peace"
+    ],
+    "trait_unlocked": "patience"
+  },
+  "quiz": [
+    {
+      "question": "What does the name Immanuel mean?",
+      "options": [
+        "King of kings",
+        "God with us",
+        "Light of the world"
+      ],
+      "correct_index": 1,
+      "explanation": "Immanuel means 'God with us.'",
+      "verse_ref": "Isaiah 7:14; Matthew 1:23"
+    },
+    {
+      "question": "What did Isaiah say the people in darkness would see?",
+      "options": [
+        "A great light",
+        "A big storm",
+        "A huge army"
+      ],
+      "correct_index": 0,
+      "explanation": "The people who walked in darkness have seen a great light.",
+      "verse_ref": "Isaiah 9:2"
+    },
+    {
+      "question": "About how long before Jesus was born did Isaiah write these words?",
+      "options": [
+        "Ten years",
+        "One hundred years",
+        "About seven hundred years"
+      ],
+      "correct_index": 2,
+      "explanation": "Isaiah lived around 700 years before Jesus was born in Bethlehem.",
+      "verse_ref": "Isaiah 9:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Jesus, You are the Wonderful Counselor, Mighty God, Everlasting Father, and Prince of Peace. Help me wait patiently for Your promises, knowing You're never late. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "In my day, my people were still waiting for this promised King. We held on to Isaiah's words like treasure. And Jesus came, right on time!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "gold_thread"
+    ],
+    "unlock": "great_light_lantern"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

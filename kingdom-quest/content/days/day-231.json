@@ -1,0 +1,122 @@
+{
+  "day": 231,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Love for Everyone",
+  "scripture_passage": "Jonah 4:9-11",
+  "story_title": "God's Big Question",
+  "summary": "God asked Jonah, 'You cared about a vine that grew overnight. Shouldn't I care about the great city of Nineveh, with 120,000 people and many animals?' The book ends with God's question. Sabbath Camp looks back at Jonah's journey.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! God asked Jonah, 'Is it right for you to be angry about the vine?' Jonah said, 'Yes! I'm angry enough to give up!' Then God gently explained. 'You cared about this vine. You didn't plant it. You didn't make it grow. It came up in a night and died in a night. And you were upset about losing it. So shouldn't I care about Nineveh, that great city? There are more than one hundred twenty thousand people there who don't know their right hand from their left. And there are many animals too.' And that's where the book of Jonah ends: with God's question. We never hear Jonah's answer. Maybe that's because God is asking us the same question. Do we care about people the way God does? Even people who are different from us? Even people who have been mean to us? Let's remember Jonah's story. God sent Jonah to Nineveh, but he ran away. A storm came, and Jonah owned up. God sent a big fish, and Jonah prayed. God gave Jonah a second chance, and the whole city turned to God. But Jonah was grumpy about God's mercy. This week's big truth: Yahweh's love reaches everyone, even people you find hard to love. God loves them, and He can help you love them too.",
+    "scenes": [
+      {
+        "caption": "'Is it right to be angry?'",
+        "art_direction": "Jonah sitting under the withered vine as God speaks gently."
+      },
+      {
+        "caption": "A vine overnight",
+        "art_direction": "A quick time-lapse of the vine growing and withering."
+      },
+      {
+        "caption": "120,000 people",
+        "art_direction": "A sweeping view of Nineveh full of families, children, and animals, all glowing softly."
+      },
+      {
+        "caption": "God's question",
+        "art_direction": "A big glowing question mark over Jonah's head; the story ends there."
+      },
+      {
+        "caption": "The question for us",
+        "art_direction": "The question mark drifting toward the child's avatar."
+      },
+      {
+        "caption": "The Fruit of the Spirit tree",
+        "art_direction": "A young tree in the child's village sprouting its first fruit, labeled 'Love.'"
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Jonah 4:2",
+    "text": "you are a gracious God, and merciful, slow to anger, and abundant in loving kindness",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "you are",
+      "a gracious God,",
+      "and merciful,",
+      "slow to anger,",
+      "and abundant",
+      "in loving kindness"
+    ],
+    "distractors": [
+      "quick to anger,"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's love reaches everyone, even people I find hard to love.",
+    "reflection_prompt": "Milestone: God's love reaches everyone! The first fruit on your Fruit of the Spirit tree is Love. Write the name of someone hard to love, and ask God to help you love them.",
+    "reflection_choices": [
+      "I'll pray for them",
+      "I'll be kind to them",
+      "I'll forgive them",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "love"
+  },
+  "quiz": [
+    {
+      "question": "What did God ask Jonah about the vine?",
+      "options": [
+        "'Did you plant it?'",
+        "'Is it right for you to be angry about the vine?'",
+        "'Do you like vines?'"
+      ],
+      "correct_index": 1,
+      "explanation": "God said to Jonah, 'Is it right for you to be angry about the vine?'",
+      "verse_ref": "Jonah 4:9"
+    },
+    {
+      "question": "How many people lived in Nineveh?",
+      "options": [
+        "More than one hundred twenty thousand",
+        "Twelve",
+        "One thousand"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Nineveh, that great city, in which are more than one hundred twenty thousand persons.'",
+      "verse_ref": "Jonah 4:11"
+    },
+    {
+      "question": "How does the book of Jonah end?",
+      "options": [
+        "With Jonah's happy song",
+        "With a big party",
+        "With God's question"
+      ],
+      "correct_index": 2,
+      "explanation": "The book ends with God's question, 'Shouldn't I be concerned for Nineveh?'",
+      "verse_ref": "Jonah 4:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are gracious, merciful, slow to anger, and full of love. Help me care about people the way You do, even people who are hard to love. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Realm 33 complete! Your Fruit of the Spirit tree has its first fruit: Love! Next, you'll meet a prophet who cried a lot, but never gave up: Jeremiah."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "olive_oil"
+    ],
+    "unlock": "fruit_of_the_spirit_tree"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

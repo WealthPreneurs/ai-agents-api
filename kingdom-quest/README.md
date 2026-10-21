@@ -11,7 +11,7 @@ built on.
 |---|---|
 | `content/curriculum.json` | The Great Map: 12 Regions, 52 Realms, the four identity phases, weekly milestones and anchor verses |
 | `content/catalog.json` | Traits, Identity Badges, Character Companions, Kingdom Builder materials |
-| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–7 (days 1–217) plus sample day 365 |
+| `content/days/day-NNN.json` | Daily Checkpoints: Regions 1–8 (days 1–252) plus sample day 365 |
 | `schema/daily-node.schema.json` | JSON Schema for a daily Checkpoint |
 | `supabase/schema.sql` | Family accounts, progress, journal, badges, wallet, village, with row-level security |
 | `scripts/validate-content.js` | Content checker: `npm run validate:kingdom-quest` from the repo root |
@@ -107,8 +107,9 @@ calendar month, and a child can start on any date.
 **A daily Checkpoint (about 10 minutes).**
 
 1. **Story Reel** (60–150 s). Animated, narrated retelling with captions.
-   Pause, replay, and audio-only are always available. Character Armor weeks
-   (27–39) award one piece of Ephesians 6 armor at each Sabbath Camp.
+   Pause, replay, and audio-only are always available. In Character Armor,
+   weeks 27–32 each award a piece of the Ephesians 6 armor at Sabbath Camp, and
+   weeks 33–39 each add a fruit to the Fruit of the Spirit tree in the village.
 2. **Memory Gem.** The key verse is split into 3–8 chunks (`memory_verse.tokens`).
    The child taps chunks into order. Ages 10–12 can turn on Challenge mode,
    which adds decoy chunks (`distractors`). Verses quote the World English
@@ -361,8 +362,9 @@ the translation.
 | v1 (full year) | All 12 region packs, all companions, Kingdom Builder, AI badges with opt-in, Rest & Restore |
 | v1.1 | Voice and drawing journal entries, family devotion mode (parent + child), Spanish |
 
-Today this folder has the full year's map, Regions 1–7 (days 1–217: Creation
-through Josiah), and the day 365 sample. The remaining 147 Checkpoints follow
+Today this folder has the full year's map, Regions 1–8 (days 1–252: Creation
+through Esther), and the day 365 sample. The remaining 112 Checkpoints follow
 the same schema. Days with sensitive content (death, judgment, the binding of
-Isaac, the plagues, the conquest of Canaan, violence in Judges and Samuel, and
-David and Bathsheba) carry `review.notes` for the theology reviewer.
+Isaac, the plagues, the conquest of Canaan, violence in Judges and Samuel,
+David and Bathsheba, the fall of Jerusalem, and Haman's decree) carry
+`review.notes` for the theology reviewer.

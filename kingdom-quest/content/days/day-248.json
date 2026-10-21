@@ -1,0 +1,119 @@
+{
+  "day": 248,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Standing Firm Against Evil",
+  "scripture_passage": "Esther 3",
+  "story_title": "Haman's Wicked Plan",
+  "summary": "The king promoted a proud man named Haman, and everyone bowed to him except Mordecai. Haman was so furious that he made a plan to destroy all the Jewish people in the empire, and he tricked the king into signing a law to do it.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "After a while, King Xerxes promoted a man named Haman above all the other officials. The king commanded everyone at the gate to bow down to Haman. Everyone did, except Mordecai. Mordecai would only bow to God. The other officials asked him every day, 'Why won't you obey the king's command?' Mordecai told them he was Jewish. When Haman saw that Mordecai wouldn't bow, he was filled with rage. And Haman was so proud and so angry that punishing just Mordecai wasn't enough for him. He wanted to get rid of all of Mordecai's people, all the Jews in the entire Persian Empire! Haman cast lots, called 'pur,' to choose a day. The lot fell on the thirteenth day of the twelfth month, almost a whole year away. Then Haman went to the king and said, 'There's a certain group of people scattered in your kingdom whose laws are different from everyone else's. They don't obey your laws. Let a law be written to destroy them, and I'll put a huge amount of silver into the royal treasury.' The king didn't even ask who these people were. He took off his signet ring, gave it to Haman, and said, 'Do what you like.' The law was written and sent to every province. The king and Haman sat down to drink, but the city of Susa was confused and upset. Haman's pride had turned into hatred. But God's people weren't forgotten.",
+    "scenes": [
+      {
+        "caption": "A proud promotion",
+        "art_direction": "Haman strutting through the gate as crowds bow low before him."
+      },
+      {
+        "caption": "Mordecai stands",
+        "art_direction": "Mordecai standing upright in the middle of the bowing crowd."
+      },
+      {
+        "caption": "Haman's rage",
+        "art_direction": "Haman's face turning red with fury; a dark storm cloud over his head."
+      },
+      {
+        "caption": "Casting lots",
+        "art_direction": "Haman rolling small stones or dice on a table; a calendar landing on the twelfth month."
+      },
+      {
+        "caption": "The king's ring",
+        "art_direction": "The king carelessly handing his signet ring to Haman."
+      },
+      {
+        "caption": "A confused city",
+        "art_direction": "Messengers galloping out with scrolls; worried families in Susa. Nothing violent shown."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 37:1",
+    "text": "Don't fret because of evildoers, neither be envious against those who work unrighteousness.",
+    "translation": "WEB",
+    "tokens": [
+      "Don't fret",
+      "because of evildoers,",
+      "neither be envious",
+      "against those",
+      "who work unrighteousness."
+    ],
+    "distractors": [
+      "who work hard."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stand firm for Yahweh, even when proud people try to push me around.",
+    "reflection_prompt": "Mordecai wouldn't bow to proud Haman. Pride can grow into something terrible. What can you do when someone is being a bully?",
+    "reflection_choices": [
+      "Stand firm and stay kind",
+      "Tell a grown-up I trust",
+      "Stand with the person being bullied",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "faithfulness"
+  },
+  "quiz": [
+    {
+      "question": "Who refused to bow down to Haman?",
+      "options": [
+        "The king",
+        "Mordecai",
+        "Esther"
+      ],
+      "correct_index": 1,
+      "explanation": "All the king's servants bowed down to Haman, but Mordecai didn't bow down.",
+      "verse_ref": "Esther 3:2"
+    },
+    {
+      "question": "What did Haman use to choose the day for his plan?",
+      "options": [
+        "He cast lots called 'pur'",
+        "He asked the king",
+        "He looked at the stars"
+      ],
+      "correct_index": 0,
+      "explanation": "They cast Pur, that is, the lot, before Haman from day to day and month to month.",
+      "verse_ref": "Esther 3:7"
+    },
+    {
+      "question": "What did the king give Haman?",
+      "options": [
+        "A horse",
+        "A palace",
+        "His signet ring"
+      ],
+      "correct_index": 2,
+      "explanation": "The king took his ring from his hand and gave it to Haman.",
+      "verse_ref": "Esther 3:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me stand firm for You, even when proud or mean people try to push me around. Thank You that You never forget Your people. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "When I heard about Haman's law, my heart sank. My whole family, all my people, were in danger. If someone ever bullies you, please tell a grown-up you trust."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: Haman's genocidal decree (Esther 3:13). Told as a plan 'to get rid of all of Mordecai's people... to destroy them'; nothing violent shown. Companion points kids to a trusted grown-up. Confirm wording for ages 7-9."
+  }
+}

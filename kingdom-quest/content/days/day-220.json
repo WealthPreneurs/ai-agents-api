@@ -1,0 +1,122 @@
+{
+  "day": 220,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "A Kingdom of Peace",
+  "scripture_passage": "Isaiah 11:1-9",
+  "story_title": "The Wolf and the Lamb",
+  "summary": "Isaiah described the peaceful kingdom the promised King would bring: wolves living with lambs, leopards lying down with goats, and a little child leading them. The earth will be full of the knowledge of Yahweh.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Isaiah had another picture of the promised King. 'A shoot will come up from the stump of Jesse,' he said. Remember Jesse? He was David's father! Even if David's family looked like a cut-down tree stump, a new branch would grow from it. The Spirit of Yahweh would rest on this King: the Spirit of wisdom and understanding, of counsel and might. He would be fair to the poor and stand up for people who are treated badly. Then Isaiah described what the King's kingdom will be like one day. And it's amazing! 'The wolf will live with the lamb. The leopard will lie down with the young goat. The calf, the young lion, and the fattened calf will be together, and a little child will lead them. The cow and the bear will eat together. The lion will eat straw like the ox. A baby will play near a cobra's hole, and no one will get hurt.' Can you imagine? No more fighting, no more fear, no more hurting! Isaiah said, 'They will not hurt or destroy on all My holy mountain, for the earth will be full of the knowledge of Yahweh, as the waters cover the sea.' That's the kind of peace Jesus brings now into our hearts, and one day, into the whole world.",
+    "scenes": [
+      {
+        "caption": "A shoot from a stump",
+        "art_direction": "A tree stump with a tiny green shoot sprouting up, glowing with life."
+      },
+      {
+        "caption": "The Spirit rests on Him",
+        "art_direction": "Gentle light settling on a crowned figure, shown from behind."
+      },
+      {
+        "caption": "The wolf and the lamb",
+        "art_direction": "A wolf and a lamb curled up together in a meadow, both smiling."
+      },
+      {
+        "caption": "A little child leads them",
+        "art_direction": "A young child walking ahead of a lion, a calf, and a leopard in a peaceful parade."
+      },
+      {
+        "caption": "The lion eats straw",
+        "art_direction": "A lion munching on straw beside an ox; whimsical."
+      },
+      {
+        "caption": "Full of the knowledge of Yahweh",
+        "art_direction": "Ocean waves rolling across the whole earth in golden light."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 11:9",
+    "text": "the earth will be full of the knowledge of Yahweh, as the waters cover the sea.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "the earth",
+      "will be full",
+      "of the knowledge",
+      "of Yahweh,",
+      "as the waters",
+      "cover the sea."
+    ],
+    "distractors": [
+      "cover the desert."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's kingdom is full of peace, and I can bring peace wherever I go.",
+    "reflection_prompt": "In God's kingdom, even enemies like wolves and lambs live in peace. Where could you help bring peace this week?",
+    "reflection_choices": [
+      "Between my siblings",
+      "With a classmate",
+      "In my own heart",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "peace"
+  },
+  "quiz": [
+    {
+      "question": "What will grow from the stump of Jesse?",
+      "options": [
+        "A big rock",
+        "A shoot, a new branch",
+        "A flower"
+      ],
+      "correct_index": 1,
+      "explanation": "A shoot will come out of the stock of Jesse, and a branch out of his roots will bear fruit.",
+      "verse_ref": "Isaiah 11:1"
+    },
+    {
+      "question": "Who will lead the wolf, the lamb, and the lion?",
+      "options": [
+        "A little child",
+        "A king",
+        "A shepherd"
+      ],
+      "correct_index": 0,
+      "explanation": "The wolf will live with the lamb... and a little child will lead them.",
+      "verse_ref": "Isaiah 11:6"
+    },
+    {
+      "question": "What will the earth be full of?",
+      "options": [
+        "Gold",
+        "Water",
+        "The knowledge of Yahweh"
+      ],
+      "correct_index": 2,
+      "explanation": "The earth will be full of the knowledge of Yahweh, as the waters cover the sea.",
+      "verse_ref": "Isaiah 11:9"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Jesus, thank You for bringing peace. Fill my heart with Your peace, and help me bring peace to the people around me. I can't wait for Your kingdom to fill the earth! Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "A wolf and a lamb, cuddled up together! That picture always makes me smile. God's kingdom is a kingdom of peace, and you get to be part of it."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "olive_oil"
+    ],
+    "unlock": "peaceable_meadow"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

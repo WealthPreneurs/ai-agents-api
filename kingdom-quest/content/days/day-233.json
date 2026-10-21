@@ -1,0 +1,121 @@
+{
+  "day": 233,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Shaped by the Potter",
+  "scripture_passage": "Jeremiah 18:1-6",
+  "story_title": "At the Potter's House",
+  "summary": "God sent Jeremiah to watch a potter. When the clay pot he was making got messed up, the potter shaped it into something new. God said His people are like clay in His hands.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "One day, God said to Jeremiah, 'Get up and go down to the potter's house. There I will give you My message.' So Jeremiah went to the potter's workshop. The potter was sitting at his wheel, spinning it with his feet, and shaping a lump of wet clay with his hands. Round and round it went, and slowly a beautiful jar began to rise up. But then something went wrong. The clay jar got lumpy and lopsided in the potter's hands. It wasn't turning out the way he wanted. Did the potter throw the clay away? No! He squished it back into a lump, and started again. He reshaped it into a different jar, one that seemed good to him. Then God spoke to Jeremiah. 'Can't I do with you what this potter has done with the clay? Like clay in the potter's hand, so are you in My hand.' God was telling His people: 'You've made a mess of things. You've turned away from Me. But I'm not finished with you. If you turn back to Me, I can reshape you into something good.' The same is true for us. When we've made mistakes, and our lives feel lumpy and messed up, God doesn't throw us away. He's the Potter, and we're the clay. He can shape us into something beautiful again.",
+    "scenes": [
+      {
+        "caption": "To the potter's house",
+        "art_direction": "Jeremiah walking down a narrow street toward a workshop full of jars."
+      },
+      {
+        "caption": "The spinning wheel",
+        "art_direction": "A potter's feet pumping a wheel as his hands shape wet clay."
+      },
+      {
+        "caption": "A beautiful jar rises",
+        "art_direction": "Clay rising into an elegant jar shape."
+      },
+      {
+        "caption": "Lumpy and lopsided",
+        "art_direction": "The jar wobbling and caving in; the potter frowning thoughtfully."
+      },
+      {
+        "caption": "Starting again",
+        "art_direction": "The potter squishing the clay into a ball and beginning again, patiently."
+      },
+      {
+        "caption": "Clay in His hands",
+        "art_direction": "Gentle hands of light shaping a small figure of a child out of clay."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 64:8",
+    "text": "But now, Yahweh, you are our Father. We are the clay, and you our potter. We all are the work of your hand.",
+    "translation": "WEB",
+    "tokens": [
+      "But now, Yahweh,",
+      "you are our Father.",
+      "We are the clay,",
+      "and you our potter.",
+      "We all are",
+      "the work of your hand."
+    ],
+    "distractors": [
+      "the work of our hands."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh doesn't throw me away when I mess up. He reshapes me into something good.",
+    "reflection_prompt": "God is the Potter, and we are the clay. If God is shaping you into something beautiful, what do you hope He makes you into?",
+    "reflection_choices": [
+      "Someone kinder",
+      "Someone braver",
+      "Someone more patient",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Where did God send Jeremiah to learn a lesson?",
+      "options": [
+        "To a bakery",
+        "To the potter's house",
+        "To the temple"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Arise, and go down to the potter's house, and there I will cause you to hear my words.'",
+      "verse_ref": "Jeremiah 18:2"
+    },
+    {
+      "question": "What did the potter do when the clay jar got messed up?",
+      "options": [
+        "He made it into another jar",
+        "He threw it away",
+        "He gave up"
+      ],
+      "correct_index": 0,
+      "explanation": "When the vessel was marred in his hand, he made it again another vessel, as seemed good to him.",
+      "verse_ref": "Jeremiah 18:4"
+    },
+    {
+      "question": "What did God say His people are like?",
+      "options": [
+        "Stone in a quarry",
+        "Water in a river",
+        "Clay in the potter's hand"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Behold, as the clay in the potter's hand, so are you in my hand.'",
+      "verse_ref": "Jeremiah 18:6"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are the Potter, and I am the clay. When I mess up, thank You for not throwing me away. Shape me into something beautiful for You. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "I love this picture. God never throws away His clay. He's patient, and He keeps shaping us. Have you ever made something out of clay?"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "clay"
+    ],
+    "unlock": "potters_wheel"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

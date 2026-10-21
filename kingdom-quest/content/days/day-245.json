@@ -1,0 +1,122 @@
+{
+  "day": 245,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Yes to Right, No to Wrong",
+  "scripture_passage": "Daniel 6; 1:8",
+  "story_title": "Daniel in the Lions' Den",
+  "summary": "Jealous officials tricked King Darius into making a law against praying to anyone but the king. Daniel kept praying to God three times a day, and he was thrown into a den of lions. But God shut the lions' mouths.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! Under the new Persian king, Darius, old Daniel became one of the top leaders in the kingdom. He was so trustworthy that the king planned to put him in charge of everything. The other leaders got jealous. They tried to find something wrong with Daniel, but they couldn't! So they tricked the king. 'O King Darius, make a law that for thirty days, anyone who prays to any god or person except you will be thrown into the lions' den!' The king liked the idea and signed it. When Daniel heard about it, he went home to his upstairs room, where the windows opened toward Jerusalem. And three times a day, just like always, he got on his knees and prayed and thanked God. The jealous leaders caught him and told the king. Darius was very upset. But the law couldn't be changed. So Daniel was thrown into the den of lions, and a stone was placed over the opening. The king said, 'May your God, whom you serve faithfully, rescue you!' The king couldn't eat or sleep all night. At dawn, he hurried to the den and called out, 'Daniel! Has your God been able to rescue you?' And Daniel answered, 'My God sent His angel and shut the lions' mouths! They haven't hurt me.' Not a scratch was found on him, because he trusted God. This week's big truth: Yahweh helps you say no to wrong and yes to right.",
+    "scenes": [
+      {
+        "caption": "Jealous leaders",
+        "art_direction": "Officials peeking around palace pillars, spying on Daniel."
+      },
+      {
+        "caption": "A tricky law",
+        "art_direction": "Officials bowing to King Darius as he signs a scroll."
+      },
+      {
+        "caption": "Windows toward Jerusalem",
+        "art_direction": "Old Daniel kneeling at his open window, praying, as he always does."
+      },
+      {
+        "caption": "Into the den",
+        "art_direction": "Daniel lowered into a stone pit with lions; the stone rolled over the opening. No harm shown."
+      },
+      {
+        "caption": "A sleepless king",
+        "art_direction": "King Darius pacing his bedroom all night."
+      },
+      {
+        "caption": "Lions' mouths shut",
+        "art_direction": "At dawn, Daniel sitting peacefully among sleepy lions with an angel of light beside him; the king overjoyed."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Daniel 1:8",
+    "text": "But Daniel purposed in his heart that he would not defile himself",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "But Daniel",
+      "purposed",
+      "in his heart",
+      "that he would not",
+      "defile himself"
+    ],
+    "distractors": [
+      "give up"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh helps me say no to wrong and yes to right.",
+    "reflection_prompt": "Milestone: Yahweh helps you say no to wrong and yes to right! The third fruit on your tree is Self-Control. Daniel kept praying three times a day. What good habit do you want to keep, no matter what?",
+    "reflection_choices": [
+      "Praying every day",
+      "Reading my Bible",
+      "Being kind",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "self_control"
+  },
+  "quiz": [
+    {
+      "question": "How many times a day did Daniel pray?",
+      "options": [
+        "Once",
+        "Three times",
+        "Ten times"
+      ],
+      "correct_index": 1,
+      "explanation": "He knelt on his knees three times a day, and prayed, and gave thanks before his God.",
+      "verse_ref": "Daniel 6:10"
+    },
+    {
+      "question": "What did Daniel say God did in the lions' den?",
+      "options": [
+        "Sent His angel and shut the lions' mouths",
+        "Made the lions disappear",
+        "Gave Daniel a sword"
+      ],
+      "correct_index": 0,
+      "explanation": "Daniel said, 'My God has sent his angel, and has shut the lions' mouths.'",
+      "verse_ref": "Daniel 6:22"
+    },
+    {
+      "question": "Why wasn't Daniel hurt?",
+      "options": [
+        "He was fast",
+        "The lions were full",
+        "Because he trusted in his God"
+      ],
+      "correct_index": 2,
+      "explanation": "No kind of hurt was found on him, because he had trusted in his God.",
+      "verse_ref": "Daniel 6:23"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me say no to wrong and yes to right, like Daniel. Help me keep praying and trusting You, even when it's hard. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Realm 35 complete! The third fruit on your tree is Self-Control. Next week is my story! Get ready for a brave choice in a Persian palace."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "river_stone"
+    ],
+    "unlock": "lions_den"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The accusers and their families being thrown to the lions (Daniel 6:24) is omitted. Confirm."
+  }
+}

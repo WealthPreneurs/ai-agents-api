@@ -1,0 +1,122 @@
+{
+  "day": 238,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Good Plans",
+  "scripture_passage": "Jeremiah 32:1-17; 29:11",
+  "story_title": "Buying a Field of Hope",
+  "summary": "While Babylon's army surrounded Jerusalem, God told Jeremiah to buy a field as a sign that one day people would buy and sell land there again. Sabbath Camp looks back at Jeremiah's story of faithfulness.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! While Babylon's army was surrounding Jerusalem, Jeremiah was locked up in the palace guardhouse. Then God told him something strange: 'Your cousin is going to come and ask you to buy his field in your hometown. Buy it.' Sure enough, his cousin came. Jeremiah bought the field, signed the deed in front of witnesses, and told Baruch, 'Put these papers in a clay jar so they will last a long time.' Why buy land when the enemy is about to take over everything? Because God said, 'Houses, fields, and vineyards will again be bought in this land.' Buying that field was a sign of hope! Jeremiah prayed, 'Ah, Lord Yahweh! You made the heavens and the earth by Your great power. Nothing is too hard for You!' Let's remember this week. God called young Jeremiah and said, 'I am with you.' Jeremiah watched the potter reshape the clay. A king burned God's Word, but it was written again. Ebed-Melech rescued Jeremiah from a muddy pit. Jerusalem fell, but Jeremiah found that God's mercies are new every morning. And he wrote a letter telling the exiles to bloom where they were planted. This week's big truth: Yahweh has good plans for you, even in hard times. Jeremiah stayed faithful for forty years, because he trusted God's plans.",
+    "scenes": [
+      {
+        "caption": "In the guardhouse",
+        "art_direction": "Jeremiah sitting in a courtyard prison as Babylon's banners wave beyond the walls."
+      },
+      {
+        "caption": "A cousin's visit",
+        "art_direction": "Jeremiah's cousin arriving with a deed to a field."
+      },
+      {
+        "caption": "Buying a field",
+        "art_direction": "Jeremiah weighing silver and signing a scroll before witnesses."
+      },
+      {
+        "caption": "Sealed in a jar",
+        "art_direction": "Baruch placing the scrolls in a clay jar and sealing it."
+      },
+      {
+        "caption": "Nothing is too hard",
+        "art_direction": "Jeremiah praying with his hands raised as light shines in."
+      },
+      {
+        "caption": "Camp in the exile garden",
+        "art_direction": "Campfire beside the potter's wheel, the scroll, and a second fruit on the Fruit of the Spirit tree."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Jeremiah 29:11",
+    "text": "\"For I know the thoughts that I think toward you,\" says Yahweh, \"thoughts of peace, and not of evil, to give you hope and a future.\"",
+    "translation": "WEB",
+    "tokens": [
+      "\"For I know the thoughts",
+      "that I think toward you,\"",
+      "says Yahweh,",
+      "\"thoughts of peace,",
+      "and not of evil,",
+      "to give you hope",
+      "and a future.\""
+    ],
+    "distractors": [
+      "and a problem.\""
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh has good plans for me, even in hard times.",
+    "reflection_prompt": "Milestone: Yahweh has good plans for you! The second fruit on your tree is Faithfulness. Jeremiah stayed faithful for forty years. Draw your own 'field of hope': something good you believe God will do in your future.",
+    "reflection_choices": [
+      "Use my gifts to help people",
+      "Grow closer to God",
+      "Have a family that loves God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Jeremiah to buy?",
+      "options": [
+        "A horse",
+        "His cousin's field",
+        "A house in Babylon"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Buy my field that is in Anathoth.'",
+      "verse_ref": "Jeremiah 32:7-9"
+    },
+    {
+      "question": "Why did God tell Jeremiah to buy the field?",
+      "options": [
+        "As a sign that people would buy land there again",
+        "To grow food",
+        "To hide in"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'Houses and fields and vineyards will yet again be bought in this land.'",
+      "verse_ref": "Jeremiah 32:15"
+    },
+    {
+      "question": "What did God say about the plans He has for His people?",
+      "options": [
+        "Plans for harm",
+        "No plans at all",
+        "Plans for peace, to give hope and a future"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Thoughts of peace, and not of evil, to give you hope and a future.'",
+      "verse_ref": "Jeremiah 29:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for Your good plans for me, plans to give me hope and a future. Help me stay faithful like Jeremiah, even in hard times. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Realm 34 complete! The second fruit on your tree is Faithfulness. Next, you'll meet a young man who was taken to Babylon and made a brave choice."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "clay",
+      "gold_thread"
+    ],
+    "unlock": "field_of_hope"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

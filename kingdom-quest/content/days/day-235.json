@@ -1,0 +1,122 @@
+{
+  "day": 235,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Kindness to the Rescue",
+  "scripture_passage": "Jeremiah 38:1-13",
+  "story_title": "Rescued from the Muddy Pit",
+  "summary": "Angry officials threw Jeremiah into a deep, muddy cistern. A kind Ethiopian named Ebed-Melech asked the king to rescue him. He used ropes and old rags to pull Jeremiah out gently.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Jeremiah kept telling the people God's message: 'Babylon's army is coming. Surrender to them, and you'll live.' Some officials didn't like that at all. They went to King Zedekiah and said, 'This man should be put to death! He's discouraging the soldiers.' The king said, 'He's in your hands. Do what you want.' So they took Jeremiah and lowered him with ropes into a cistern, a deep, dark pit for collecting rainwater. There was no water in it, only mud. And Jeremiah sank down into the mud! It was cold, dark, and lonely, and there was no food. But someone was paying attention. An Ethiopian man named Ebed-Melech worked in the king's palace. He heard what happened to Jeremiah, and he went straight to the king. 'My lord the king, these men have done something evil to Jeremiah the prophet! They've thrown him into a cistern, and he'll die there of hunger!' The king changed his mind. 'Take thirty men with you and lift Jeremiah out before he dies.' Ebed-Melech went to the palace storeroom and grabbed some old rags and worn-out clothes. He lowered them down with ropes to Jeremiah and said, 'Put these rags under your arms to pad the ropes.' Then they gently pulled Jeremiah up out of the mud! Ebed-Melech saw someone in trouble and did something about it. And he did it with kindness.",
+    "scenes": [
+      {
+        "caption": "'He should be silenced'",
+        "art_direction": "Angry officials whispering to the nervous King Zedekiah."
+      },
+      {
+        "caption": "Into the cistern",
+        "art_direction": "Jeremiah being lowered by ropes into a deep, dark pit; no harm shown."
+      },
+      {
+        "caption": "Stuck in the mud",
+        "art_direction": "Jeremiah sitting in mud up to his knees, looking up at a small circle of sky."
+      },
+      {
+        "caption": "Ebed-Melech speaks up",
+        "art_direction": "A kind Ethiopian palace servant bowing before the king, pleading for Jeremiah."
+      },
+      {
+        "caption": "Old rags",
+        "art_direction": "Ebed-Melech gathering soft rags from a storeroom."
+      },
+      {
+        "caption": "Lifted out!",
+        "art_direction": "Thirty men pulling ropes as Jeremiah rises out of the pit, rags padding his arms; Ebed-Melech smiling."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 40:2",
+    "text": "He brought me up also out of a horrible pit, out of the miry clay. He set my feet on a rock, and gave me a firm place to stand.",
+    "translation": "WEB",
+    "tokens": [
+      "He brought me up also",
+      "out of a horrible pit,",
+      "out of the miry clay.",
+      "He set my feet",
+      "on a rock,",
+      "and gave me",
+      "a firm place to stand."
+    ],
+    "distractors": [
+      "a slippery place"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can notice when someone is in trouble and help them with kindness.",
+    "reflection_prompt": "Ebed-Melech noticed Jeremiah was in trouble and helped him. Who might be 'stuck in a pit' that you could help?",
+    "reflection_choices": [
+      "Someone who is being left out",
+      "Someone who is sad",
+      "Someone who needs help with something",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "Where did the officials put Jeremiah?",
+      "options": [
+        "In a tower",
+        "In a muddy cistern",
+        "On a boat"
+      ],
+      "correct_index": 1,
+      "explanation": "They let Jeremiah down with cords into the cistern. There was no water, but mud; and Jeremiah sank in the mud.",
+      "verse_ref": "Jeremiah 38:6"
+    },
+    {
+      "question": "Who helped rescue Jeremiah?",
+      "options": [
+        "Ebed-Melech the Ethiopian",
+        "King Zedekiah's son",
+        "Baruch"
+      ],
+      "correct_index": 0,
+      "explanation": "Ebed-Melech the Ethiopian heard that they had put Jeremiah in the dungeon and spoke to the king.",
+      "verse_ref": "Jeremiah 38:7-9"
+    },
+    {
+      "question": "What did Ebed-Melech use to protect Jeremiah's arms?",
+      "options": [
+        "Leather straps",
+        "Pillows",
+        "Old rags and worn-out clothes"
+      ],
+      "correct_index": 2,
+      "explanation": "He took old rags and worn-out garments and let them down by cords to Jeremiah.",
+      "verse_ref": "Jeremiah 38:11-12"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for lifting me out of hard places. Help me be like Ebed-Melech, noticing when others are in trouble and helping them with kindness. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Ebed-Melech was a foreigner, but he cared about God's prophet. He even remembered to bring soft rags! That's what real kindness looks like."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "linen"
+    ],
+    "unlock": "cistern_rescue_ropes"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

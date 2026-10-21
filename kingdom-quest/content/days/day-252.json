@@ -1,0 +1,122 @@
+{
+  "day": 252,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Such a Time as This",
+  "scripture_passage": "Esther 7:1-6; 8:3-8; 9:20-22; 4:14",
+  "story_title": "Esther Saves Her People",
+  "summary": "At the second banquet, Esther bravely told the king she was Jewish and that Haman was trying to destroy her people. The king stopped Haman, and a new law helped save the Jews. They celebrated with the feast of Purim. Region 8 is complete!",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp, and to the end of the Prophets' Watchtower! At the second banquet, the king asked Esther once more, 'What do you want, Queen Esther? Even up to half the kingdom!' Now was the moment. Esther said, 'If I have found favor with you, O king, please spare my life, and the lives of my people. For my people and I have been sold to be destroyed!' The king was shocked. 'Who would dare to do such a thing? Where is he?' Esther pointed and said, 'Our enemy is this wicked Haman!' Haman was terrified. The king was furious, and Haman's evil plan came to an end. Then Esther fell at the king's feet, crying, and begged him to stop Haman's law. The first law couldn't be undone, so the king let Esther and Mordecai write a new law that let the Jewish people protect themselves. And God's people were saved! Their sorrow turned into joy. Mordecai told them to celebrate every year with feasting, giving gifts of food to each other, and giving gifts to the poor. This celebration is called Purim, and Jewish families still celebrate it today! Let's look back at this whole region. Isaiah saw God's holiness and the coming King. Jonah learned God loves everyone. Jeremiah stayed faithful. Daniel said no to wrong. And Esther was brave for such a time as this. This region's biggest truth: Yahweh has placed you here for such a time as this.",
+    "scenes": [
+      {
+        "caption": "The second banquet",
+        "art_direction": "Esther at the banquet table, taking a deep breath."
+      },
+      {
+        "caption": "'Spare my people!'",
+        "art_direction": "Esther bravely speaking up as the king leans forward."
+      },
+      {
+        "caption": "'This wicked Haman!'",
+        "art_direction": "Esther pointing; Haman shrinking back in fear; the king rising angrily. Haman's fate is not shown."
+      },
+      {
+        "caption": "A new law",
+        "art_direction": "Mordecai and Esther sealing a scroll with the king's signet ring."
+      },
+      {
+        "caption": "Purim",
+        "art_direction": "Joyful families feasting, exchanging gifts of food, and giving to the poor."
+      },
+      {
+        "caption": "Region 8 complete!",
+        "art_direction": "Map zooms out showing the Prophets' Watchtower lit up gold; a path glows toward Region 9, the City of Rebuilders."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Esther 4:14",
+    "text": "Who knows if you haven't come to the kingdom for such a time as this?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Who knows",
+      "if you haven't come",
+      "to the kingdom",
+      "for such a time",
+      "as this?"
+    ],
+    "distractors": [
+      "by accident?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh placed me here for such a time as this.",
+    "reflection_prompt": "Milestone: Yahweh placed you here for such a time as this! The fourth fruit on your tree is Goodness. Look back at your Blueprint journal from Region 8. Which fruit is growing most in your heart: Love, Faithfulness, Self-Control, or Goodness?",
+    "reflection_choices": [
+      "Love",
+      "Faithfulness",
+      "Self-Control",
+      "Goodness"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did Esther ask the king at the second banquet?",
+      "options": [
+        "For a new crown",
+        "To spare her life and her people",
+        "For more gold"
+      ],
+      "correct_index": 1,
+      "explanation": "Esther said, 'Let my life be given me at my petition, and my people at my request.'",
+      "verse_ref": "Esther 7:3"
+    },
+    {
+      "question": "Who did Esther say was the enemy?",
+      "options": [
+        "Wicked Haman",
+        "Mordecai",
+        "The guards"
+      ],
+      "correct_index": 0,
+      "explanation": "Esther said, 'An adversary and an enemy, even this wicked Haman!'",
+      "verse_ref": "Esther 7:6"
+    },
+    {
+      "question": "What celebration did Mordecai start?",
+      "options": [
+        "Passover",
+        "The Feast of Tabernacles",
+        "Purim"
+      ],
+      "correct_index": 2,
+      "explanation": "They should make them days of feasting and gladness, sending portions to one another, and gifts to the needy. These days are called Purim.",
+      "verse_ref": "Esther 9:22, 26"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You've placed me here for such a time as this. Give me courage like Esther to speak up and do good. Thank You for this whole journey through the Prophets' Watchtower! Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "You finished the Prophets' Watchtower! Thank you for walking through my story with me. Next, a builder named Nehemiah will guide you through the City of Rebuilders!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "prophets_watchtower_crown"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Haman is hanged on his own gallows (Esther 7:9-10), described only as 'Haman's evil plan came to an end.' Haman's sons and the Jews' defensive battles (Esther 8:11-9:16) are summarized as 'a new law that let the Jewish people protect themselves.' Confirm."
+  }
+}

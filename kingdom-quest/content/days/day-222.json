@@ -1,0 +1,120 @@
+{
+  "day": 222,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "He Calls the Stars by Name",
+  "scripture_passage": "Isaiah 40:12-26",
+  "story_title": "Who Counted the Stars?",
+  "summary": "Isaiah asked who measured the oceans in His hand and marked off the sky. The nations are like a drop in a bucket to God. He brings out the stars one by one and calls each by name.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Isaiah asked some amazing questions about God. 'Who has measured the waters in the hollow of His hand? Who has marked off the sky with the width of His hand? Who has weighed the mountains on a scale and the hills in a balance?' Picture holding all the oceans of the world in the palm of your hand! That's how big God is. Isaiah said, 'The nations are like a drop in a bucket to Him, like dust on a scale.' Even the most powerful kingdoms in the world are tiny next to God. Then Isaiah asked, 'Who can you compare God to? What can you make that looks like Him?' People in Isaiah's day made idols out of wood, silver, and gold. They had to make sure their idols wouldn't tip over! But the real God sits above the circle of the earth, and people look like grasshoppers to Him. He stretches out the heavens like a curtain. Then Isaiah said, 'Lift up your eyes and look up high. Who created all these stars? He leads them out one by one, like an army, and He calls each one by name. Because of His great power and mighty strength, not one of them is missing.' God knows every star by name. And He knows your name too.",
+    "scenes": [
+      {
+        "caption": "Oceans in His hand",
+        "art_direction": "A giant, gentle hand of light holding all the world's oceans like a puddle."
+      },
+      {
+        "caption": "Weighing the mountains",
+        "art_direction": "Mountains on a scale, perfectly balanced."
+      },
+      {
+        "caption": "A drop in a bucket",
+        "art_direction": "A huge empire map shrinking into a single water droplet."
+      },
+      {
+        "caption": "Idols that tip over",
+        "art_direction": "A carved idol wobbling and needing to be propped up; comedic beat."
+      },
+      {
+        "caption": "Grasshoppers below",
+        "art_direction": "A view from high above the earth; people as tiny as grasshoppers, lovingly watched."
+      },
+      {
+        "caption": "Calling the stars by name",
+        "art_direction": "Stars appearing one by one, each with a tiny glowing name tag."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 40:26",
+    "text": "Lift up your eyes on high, and see who has created these",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Lift up your eyes",
+      "on high,",
+      "and see",
+      "who has created",
+      "these"
+    ],
+    "distractors": [
+      "who forgot"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh, who names every star, knows my name too.",
+    "reflection_prompt": "God calls every star by name. Go outside tonight (with a grown-up) and look at the sky. What do you want to say to the God who made it?",
+    "reflection_choices": [
+      "'You're so big!'",
+      "'Thank You for knowing me.'",
+      "'I trust You.'",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "curiosity"
+  },
+  "quiz": [
+    {
+      "question": "What did Isaiah say God measures in the hollow of His hand?",
+      "options": [
+        "Sand",
+        "The waters",
+        "Gold"
+      ],
+      "correct_index": 1,
+      "explanation": "Who has measured the waters in the hollow of his hand?",
+      "verse_ref": "Isaiah 40:12"
+    },
+    {
+      "question": "What are the nations like to God?",
+      "options": [
+        "A drop in a bucket",
+        "A giant mountain",
+        "A roaring lion"
+      ],
+      "correct_index": 0,
+      "explanation": "Behold, the nations are like a drop in a bucket.",
+      "verse_ref": "Isaiah 40:15"
+    },
+    {
+      "question": "What does God do with the stars?",
+      "options": [
+        "He hides them",
+        "He forgets them",
+        "He calls each one by name"
+      ],
+      "correct_index": 2,
+      "explanation": "He calls them all by name. By the greatness of his might... not one is lacking.",
+      "verse_ref": "Isaiah 40:26"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You hold the oceans in Your hand and call every star by name. Thank You that You know my name too. You are so big, and You care about me! Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "When I lived in the Persian palace, I'd look up at the stars at night and remember: the God who knows every star knew me, even far from home."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "star_naming_telescope"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

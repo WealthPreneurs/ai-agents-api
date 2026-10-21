@@ -1,0 +1,119 @@
+{
+  "day": 236,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Hope When Everything Falls Apart",
+  "scripture_passage": "2 Kings 25:1-12; Lamentations 3:21-24",
+  "story_title": "Jerusalem Falls",
+  "summary": "Just as Jeremiah warned, the Babylonian army broke through Jerusalem's walls, burned the temple, and took many people away to Babylon. In his sorrow, Jeremiah still found hope: 'Yahweh is my portion. I will hope in Him.'",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "The people of Judah didn't listen to Jeremiah's warnings. And just as God had said, the great army of King Nebuchadnezzar of Babylon came and surrounded Jerusalem. For a long time, nobody could get in or out. Food ran out in the city. Finally, the Babylonians broke through the walls. They burned down Solomon's beautiful temple, the king's palace, and all the important buildings. They knocked down the walls of Jerusalem. And they took most of the people away to Babylon, far from home. Only some of the poorest people were left behind to take care of the vineyards and fields. It was the saddest day in Judah's history. Jeremiah watched it happen. He wrote a book of sad poems called Lamentations, crying over the city he loved. But right in the middle of his tears, Jeremiah wrote some of the most hopeful words in the whole Bible: 'This I remember, and so I have hope: Yahweh's loving kindnesses never end. His compassion never fails. They are new every morning. Great is Your faithfulness. Yahweh is my portion, says my soul. Therefore I will hope in Him.' Even when everything fell apart, Jeremiah knew God hadn't changed. God's love was still new every morning.",
+    "scenes": [
+      {
+        "caption": "Babylon's army",
+        "art_direction": "A vast army with banners surrounding Jerusalem's walls; seen from far away."
+      },
+      {
+        "caption": "A long siege",
+        "art_direction": "Empty grain jars inside the city; worried families."
+      },
+      {
+        "caption": "The walls break",
+        "art_direction": "A section of the wall crumbling in a cloud of dust; no people shown being hurt."
+      },
+      {
+        "caption": "The temple burns",
+        "art_direction": "Smoke rising from the temple in the distance; somber music."
+      },
+      {
+        "caption": "Taken to Babylon",
+        "art_direction": "A long line of families walking away from Jerusalem toward the east."
+      },
+      {
+        "caption": "New every morning",
+        "art_direction": "Jeremiah sitting on the ruins at sunrise, writing with tears and a hopeful face as golden light spreads."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Lamentations 3:24",
+    "text": "\"Yahweh is my portion,\" says my soul. \"Therefore I will hope in him.\"",
+    "translation": "WEB",
+    "tokens": [
+      "\"Yahweh is my portion,\"",
+      "says my soul.",
+      "\"Therefore",
+      "I will hope",
+      "in him.\""
+    ],
+    "distractors": [
+      "I will give up."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can hope in Yahweh even when everything falls apart, because He doesn't change.",
+    "reflection_prompt": "Jeremiah found hope even on the saddest day. What is something about God that never changes, even when life does?",
+    "reflection_choices": [
+      "His love",
+      "His faithfulness",
+      "His promises",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "Which king's army surrounded Jerusalem?",
+      "options": [
+        "Pharaoh of Egypt",
+        "Nebuchadnezzar of Babylon",
+        "Sennacherib of Assyria"
+      ],
+      "correct_index": 1,
+      "explanation": "Nebuchadnezzar king of Babylon came with all his army against Jerusalem.",
+      "verse_ref": "2 Kings 25:1"
+    },
+    {
+      "question": "What happened to the temple?",
+      "options": [
+        "It was burned",
+        "It was made bigger",
+        "It was painted"
+      ],
+      "correct_index": 0,
+      "explanation": "He burned the house of Yahweh, the king's house, and all the houses of Jerusalem.",
+      "verse_ref": "2 Kings 25:9"
+    },
+    {
+      "question": "What did Jeremiah say about God's mercies?",
+      "options": [
+        "They're gone",
+        "They're only for kings",
+        "They are new every morning"
+      ],
+      "correct_index": 2,
+      "explanation": "Jeremiah wrote, 'His compassion doesn't fail. It is new every morning.'",
+      "verse_ref": "Lamentations 3:22-23"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are my portion. Even when things fall apart, Your love never ends, and Your mercies are new every morning. I will hope in You. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "This was the beginning of my people's exile. That's why I grew up far from Jerusalem, in Persia. But we never stopped hoping in Yahweh."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Sensitive: the fall of Jerusalem and the exile (2 Kings 25). The siege's famine is mentioned gently. Zedekiah's sons killed and his blinding (25:7), and executions (25:18-21), are omitted. Confirm."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 221,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God's Word Stands Forever",
+  "scripture_passage": "Isaiah 40:1-11",
+  "story_title": "Comfort My People",
+  "summary": "God told Isaiah to speak comfort to His people. A voice would prepare the way in the wilderness. People are like grass that withers, but God's Word stands forever, and He carries His lambs close to His heart.",
+  "story_reel": {
+    "duration_seconds": 145,
+    "narration": "After many warnings, God gave Isaiah a gentle message for His people: 'Comfort, comfort My people,' says your God. 'Speak tenderly to Jerusalem.' God wanted His people to know their hard times wouldn't last forever. Then Isaiah heard a voice calling: 'Prepare the way for Yahweh in the wilderness! Make a straight highway for our God. Every valley will be raised up, and every mountain made low.' Hundreds of years later, John the Baptist would be that voice, getting people ready for Jesus. Then Isaiah heard another voice: 'Cry out!' Isaiah asked, 'What should I cry?' The voice said, 'All people are like grass. The grass withers, and the flowers fade. But the word of our God stands forever.' Think about a flower in a garden. It's beautiful for a while, but then it fades. Everything in this world eventually wears out. But God's Word never wears out, never changes, and never fails. Then Isaiah described God in a beautiful way: 'He will feed His flock like a shepherd. He will gather the lambs in His arms and carry them close to His heart. He will gently lead those who have young.' When you're waiting through a hard time, God doesn't leave you. He carries you close to His heart.",
+    "scenes": [
+      {
+        "caption": "Comfort, comfort",
+        "art_direction": "Isaiah speaking softly to a tired crowd; warm light breaking through gray clouds."
+      },
+      {
+        "caption": "Prepare the way",
+        "art_direction": "Valleys lifting and mountains lowering to form a straight, shining highway in the desert."
+      },
+      {
+        "caption": "John the Baptist",
+        "art_direction": "A brief glimpse of a man in camel hair by the Jordan, pointing ahead."
+      },
+      {
+        "caption": "The grass withers",
+        "art_direction": "Time-lapse: a field of flowers blooming and fading."
+      },
+      {
+        "caption": "The Word stands forever",
+        "art_direction": "An open scroll glowing brightly, untouched as the seasons change around it."
+      },
+      {
+        "caption": "Carried close",
+        "art_direction": "A shepherd carrying a lamb against his chest, walking gently."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 40:8",
+    "text": "The grass withers, the flower fades; but the word of our God stands forever.",
+    "translation": "WEB",
+    "tokens": [
+      "The grass withers,",
+      "the flower fades;",
+      "but the word",
+      "of our God",
+      "stands forever."
+    ],
+    "distractors": [
+      "fades away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's Word stands forever, and He carries me close while I wait.",
+    "reflection_prompt": "God carries His lambs close to His heart. When do you need God to carry you close?",
+    "reflection_choices": [
+      "When I'm tired",
+      "When I'm sad",
+      "When I'm waiting for something",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "patience"
+  },
+  "quiz": [
+    {
+      "question": "What did God tell Isaiah to speak to His people?",
+      "options": [
+        "Warnings only",
+        "Comfort",
+        "Nothing"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Comfort, comfort my people.'",
+      "verse_ref": "Isaiah 40:1"
+    },
+    {
+      "question": "What stands forever?",
+      "options": [
+        "The word of our God",
+        "The grass",
+        "The mountains"
+      ],
+      "correct_index": 0,
+      "explanation": "The grass withers, the flower fades; but the word of our God stands forever.",
+      "verse_ref": "Isaiah 40:8"
+    },
+    {
+      "question": "How does God carry His lambs?",
+      "options": [
+        "On His back",
+        "In a basket",
+        "In His arms, close to His heart"
+      ],
+      "correct_index": 2,
+      "explanation": "He will gather the lambs in his arm, and carry them in his bosom.",
+      "verse_ref": "Isaiah 40:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that Your Word stands forever. When I'm waiting or going through hard times, carry me close to Your heart. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "In my time, many of my people lived far from home. Isaiah's words, 'Comfort, comfort My people,' reminded us God hadn't forgotten us."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "linen"
+    ],
+    "unlock": "shepherds_highway"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "day": 228,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "A Second Chance",
+  "scripture_passage": "Jonah 3:1-5",
+  "story_title": "Jonah Goes to Nineveh",
+  "summary": "God gave Jonah a second chance and told him again to go to Nineveh. This time Jonah obeyed. He walked through the city warning, 'In forty days, Nineveh will be overthrown!' And the people believed God.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Jonah was back on dry land, covered in seaweed. And then something wonderful happened. The Bible says, 'The word of Yahweh came to Jonah a second time.' God gave Jonah a second chance! God said, 'Get up and go to the great city of Nineveh, and give them the message I tell you.' This time, Jonah got up and went to Nineveh, just as Yahweh said. Nineveh was a huge city. It took three days just to walk through it! Jonah started walking into the city. After the first day, he began shouting God's message: 'In forty days, Nineveh will be overthrown!' Now remember, these people were Israel's enemies. They were known for being cruel. Jonah probably expected them to laugh at him or chase him away. But that's not what happened. The people of Nineveh believed God! They decided to stop eating for a while, called a fast, to show how sorry they were. And everyone, from the most important people to the least important, put on rough clothes made of sackcloth to show they were sorry for their sins. God's message had reached their hearts. Isn't it amazing that God gave Jonah a second chance? And He was about to give Nineveh a second chance too. When you fall down, you can get back up. God is the God of second chances.",
+    "scenes": [
+      {
+        "caption": "A second time",
+        "art_direction": "Jonah on the beach, wiping off seaweed, as God's voice calls again."
+      },
+      {
+        "caption": "Jonah obeys",
+        "art_direction": "Jonah walking east this time, with a big arrow pointing the right way."
+      },
+      {
+        "caption": "A huge city",
+        "art_direction": "Jonah standing at the gates of an enormous city, looking tiny."
+      },
+      {
+        "caption": "'Forty days!'",
+        "art_direction": "Jonah shouting in a crowded market as people stop and listen."
+      },
+      {
+        "caption": "They believed!",
+        "art_direction": "Shoppers, merchants, and children dropping what they're holding, faces turning serious."
+      },
+      {
+        "caption": "Sackcloth",
+        "art_direction": "People of every age and status putting on rough brown clothes."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 24:16",
+    "text": "a righteous man falls seven times, and rises up again",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "a righteous man",
+      "falls seven times,",
+      "and rises",
+      "up again"
+    ],
+    "distractors": [
+      "and stays down"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is the God of second chances, and I can get back up when I fall.",
+    "reflection_prompt": "God gave Jonah a second chance. Is there something you need to try again with God's help?",
+    "reflection_choices": [
+      "Obeying my parents",
+      "Being kind to someone",
+      "Something I gave up on",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "perseverance"
+  },
+  "quiz": [
+    {
+      "question": "How many times did the word of Yahweh come to Jonah about Nineveh?",
+      "options": [
+        "Once",
+        "Twice",
+        "Ten times"
+      ],
+      "correct_index": 1,
+      "explanation": "The word of Yahweh came to Jonah the second time.",
+      "verse_ref": "Jonah 3:1"
+    },
+    {
+      "question": "What message did Jonah preach?",
+      "options": [
+        "'In forty days, Nineveh will be overthrown!'",
+        "'Let's have a party!'",
+        "'God is not real.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Jonah cried out, 'In forty days, Nineveh will be overthrown!'",
+      "verse_ref": "Jonah 3:4"
+    },
+    {
+      "question": "How did the people of Nineveh respond?",
+      "options": [
+        "They laughed at Jonah",
+        "They chased him away",
+        "They believed God and put on sackcloth"
+      ],
+      "correct_index": 2,
+      "explanation": "The people of Nineveh believed God; and they proclaimed a fast and put on sackcloth.",
+      "verse_ref": "Jonah 3:5"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You for being the God of second chances. When I mess up, help me get back up and try again with Your help. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Second chances are such a gift! Jonah got one, and so did Nineveh. God gives you second chances too, and third, and fourth!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

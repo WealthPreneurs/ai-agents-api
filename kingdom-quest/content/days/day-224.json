@@ -1,0 +1,123 @@
+{
+  "day": 224,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": true,
+  "theme": "Sabbath Camp: Wings Like Eagles",
+  "scripture_passage": "Isaiah 40:27-31; 59:17",
+  "story_title": "Renewed Strength",
+  "summary": "Isaiah said that God never gets tired, and that those who wait for Yahweh will renew their strength and soar like eagles. Sabbath Camp looks back at Isaiah's messages and awards the Helmet of Salvation.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Welcome to Sabbath Camp! Isaiah had one more message for people who were tired of waiting. Some of God's people were saying, 'God doesn't see what's happening to me. He has forgotten about me.' But Isaiah said, 'Haven't you heard? Yahweh is the everlasting God, the Creator of the ends of the earth. He never gets tired or weary. No one can measure how wise He is. He gives strength to the weary and power to the weak. Even young people get tired, and strong young men stumble and fall. But those who wait for Yahweh will renew their strength. They will soar on wings like eagles. They will run and not grow weary. They will walk and not faint.' Eagles don't flap their wings hard all the time. They spread their wings and let the wind carry them high. Waiting on God is like that: trusting Him to lift you up. Isaiah also described God putting on righteousness like a breastplate and salvation like a helmet. Let's remember this week. Isaiah saw God's holiness and said, 'Send me!' He promised a child called Wonderful Counselor and Prince of Peace. He saw a peaceful kingdom, God's Word standing forever, the stars called by name, and a Servant who took our place. This week's big truth: when you wait on Yahweh, He renews your strength.",
+    "scenes": [
+      {
+        "caption": "'God has forgotten me'",
+        "art_direction": "A tired person sitting on a rock, head down."
+      },
+      {
+        "caption": "The everlasting God",
+        "art_direction": "Golden light pouring over the earth from horizon to horizon."
+      },
+      {
+        "caption": "Even young people get tired",
+        "art_direction": "A runner stumbling on a track; a hand reaching to help."
+      },
+      {
+        "caption": "Wings like eagles",
+        "art_direction": "An eagle spreading its wings and soaring effortlessly on the wind high over mountains."
+      },
+      {
+        "caption": "The helmet of salvation",
+        "art_direction": "A shining helmet glowing above the child's armor stand, completing the set."
+      },
+      {
+        "caption": "Camp at the watchtower",
+        "art_direction": "Campfire in the child's village beside the watchtower, lantern, and peaceful meadow."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 40:31",
+    "text": "But those who wait for Yahweh will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint.",
+    "translation": "WEB",
+    "tokens": [
+      "But those who wait",
+      "for Yahweh",
+      "will renew their strength.",
+      "They will mount up",
+      "with wings like eagles.",
+      "They will run,",
+      "and not be weary.",
+      "They will walk, and not faint."
+    ],
+    "distractors": [
+      "and get very tired."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "When I wait on Yahweh, He renews my strength.",
+    "reflection_prompt": "Milestone: When you wait on Yahweh, He renews your strength! You've earned the Helmet of Salvation, the last piece of your Character Armor. Draw yourself in the whole suit of armor, soaring like an eagle!",
+    "reflection_choices": [
+      "Waiting patiently",
+      "Trusting God's timing",
+      "Resting in God's strength",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "patience"
+  },
+  "quiz": [
+    {
+      "question": "Does Yahweh ever get tired?",
+      "options": [
+        "Yes, every night",
+        "No, He never gets tired or weary",
+        "Only on Mondays"
+      ],
+      "correct_index": 1,
+      "explanation": "The everlasting God, Yahweh... doesn't faint. He isn't weary.",
+      "verse_ref": "Isaiah 40:28"
+    },
+    {
+      "question": "What will happen to those who wait for Yahweh?",
+      "options": [
+        "They will renew their strength",
+        "They will fall asleep",
+        "They will be forgotten"
+      ],
+      "correct_index": 0,
+      "explanation": "Those who wait for Yahweh will renew their strength.",
+      "verse_ref": "Isaiah 40:31"
+    },
+    {
+      "question": "What did Isaiah say God puts on His head?",
+      "options": [
+        "A crown of gold",
+        "A cap",
+        "A helmet of salvation"
+      ],
+      "correct_index": 2,
+      "explanation": "He put on righteousness as a breastplate, and a helmet of salvation on his head.",
+      "verse_ref": "Isaiah 59:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You never get tired. When I'm weary or waiting, renew my strength. Help me soar like an eagle, trusting You to lift me up. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Realm 32 complete! You've earned the Helmet of Salvation, and your Character Armor is complete! Now let's grow the Fruit of the Spirit. Next: a prophet who ran the wrong way!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "helmet_of_salvation"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "day": 249,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "For Such a Time as This",
+  "scripture_passage": "Esther 4",
+  "story_title": "Esther's Brave Decision",
+  "summary": "Mordecai asked Esther to beg the king for mercy. But going to the king without being called could mean death. Mordecai said, 'Who knows if you became queen for such a time as this?' Esther asked everyone to fast, then said, 'I will go.'",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "When Mordecai heard about Haman's law, he tore his clothes, put on sackcloth, and cried loudly in the middle of the city. Jewish people in every province mourned too. Esther heard that Mordecai was upset, so she sent a servant named Hathach to find out what was wrong. Mordecai sent back a copy of the law and a message: 'Go to the king and beg him to have mercy on our people.' But Esther was afraid. She sent back her answer: 'Everyone knows that if anyone goes to the king in the inner courtyard without being called, there's only one law: they will be put to death, unless the king holds out his golden scepter to them. And the king hasn't called me in thirty days.' Then Mordecai sent back the most famous words in the book of Esther: 'Don't think that because you're in the palace, you'll escape. If you stay silent now, help will come from somewhere else, but you and your family will be lost. And who knows? Maybe you have become queen for such a time as this.' Esther thought about it. Then she sent this message: 'Go gather all the Jews in Susa, and fast for me. Don't eat or drink for three days, night or day. My servants and I will fast too. Then I will go to the king, even though it's against the law. And if I perish, I perish.' Esther made her choice. She would be brave.",
+    "scenes": [
+      {
+        "caption": "Mordecai's grief",
+        "art_direction": "Mordecai in sackcloth, crying in the city square."
+      },
+      {
+        "caption": "Messages back and forth",
+        "art_direction": "Hathach running between the palace and Mordecai with scrolls."
+      },
+      {
+        "caption": "Esther's fear",
+        "art_direction": "Esther in her room, holding the message, her hand trembling."
+      },
+      {
+        "caption": "The golden scepter rule",
+        "art_direction": "An illustration of the throne room with a scepter, and a warning sign."
+      },
+      {
+        "caption": "'For such a time as this'",
+        "art_direction": "Mordecai's message glowing in golden letters."
+      },
+      {
+        "caption": "'If I perish, I perish'",
+        "art_direction": "Esther standing tall by her window, determined, as people across the city kneel to fast and pray."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Psalm 56:3",
+    "text": "When I am afraid, I will put my trust in you.",
+    "translation": "WEB",
+    "tokens": [
+      "When I",
+      "am afraid,",
+      "I will put",
+      "my trust",
+      "in you."
+    ],
+    "distractors": [
+      "in myself."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "When I'm afraid, I can trust Yahweh and choose to be brave.",
+    "reflection_prompt": "Esther was afraid, but she chose to be brave. Mordecai said she was queen 'for such a time as this.' Why do you think God put you where you are right now?",
+    "reflection_choices": [
+      "To help my family",
+      "To be a friend to someone",
+      "To show God's love at my school",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "Why was Esther afraid to go to the king?",
+      "options": [
+        "She didn't like him",
+        "Anyone who came without being called could be put to death",
+        "She was sick"
+      ],
+      "correct_index": 1,
+      "explanation": "Whoever comes to the king without being called, there is one law: to put him to death, unless the king holds out the golden scepter.",
+      "verse_ref": "Esther 4:11"
+    },
+    {
+      "question": "What did Mordecai say about why Esther became queen?",
+      "options": [
+        "'Maybe for such a time as this'",
+        "'Because you're pretty'",
+        "'By accident'"
+      ],
+      "correct_index": 0,
+      "explanation": "Mordecai said, 'Who knows if you haven't come to the kingdom for such a time as this?'",
+      "verse_ref": "Esther 4:14"
+    },
+    {
+      "question": "What did Esther ask the Jewish people to do?",
+      "options": [
+        "Run away",
+        "Fight",
+        "Fast for three days"
+      ],
+      "correct_index": 2,
+      "explanation": "Esther said, 'Gather together all the Jews... and fast for me, and neither eat nor drink three days.'",
+      "verse_ref": "Esther 4:16"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, when I am afraid, I will put my trust in You. Help me be brave like Esther. Show me why You've placed me right where I am. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Those three days of fasting were the longest of my life. I was so scared! But I knew God had put me in that palace for a reason. He's put you where you are for a reason too."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ],
+    "unlock": "esthers_window"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Esther 4 never names God; the narration uses fasting as implied prayer. 'If I perish, I perish' (4:16) is kept. Confirm."
+  }
+}

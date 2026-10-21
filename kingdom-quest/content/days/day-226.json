@@ -1,0 +1,119 @@
+{
+  "day": 226,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Owning Up",
+  "scripture_passage": "Jonah 1:4-16",
+  "story_title": "The Storm at Sea",
+  "summary": "God sent a great storm. While the sailors prayed and threw cargo overboard, Jonah slept. When they found out the storm was because of him, Jonah admitted the truth and told them to throw him into the sea. The sea grew calm.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Not long after the ship left port, Yahweh sent a powerful wind across the sea. A terrible storm came up! Huge waves crashed over the ship, and it looked like it would break apart. The sailors were terrified. Each one cried out to his own god for help. They threw the cargo overboard to make the ship lighter. And where was Jonah? Down below in the bottom of the ship, fast asleep! The captain found him and shook him awake. 'How can you sleep at a time like this? Get up and call on your God! Maybe He will notice us and save us!' The sailors cast lots, which was like drawing straws, to find out who was to blame for this disaster. The lot fell on Jonah. 'Who are you? Where are you from? What have you done?' Jonah told them the truth: 'I am a Hebrew. I worship Yahweh, the God of heaven, who made the sea and the dry land. And I'm running away from Him.' The sailors were horrified. 'What should we do to you to make the sea calm down?' Jonah said, 'Pick me up and throw me into the sea. It's my fault.' The sailors didn't want to. They rowed as hard as they could to get back to land, but the storm got worse. Finally, they prayed to Yahweh, and they threw Jonah overboard. Immediately, the sea became calm! The sailors were amazed and worshiped Yahweh.",
+    "scenes": [
+      {
+        "caption": "A great wind",
+        "art_direction": "Dark storm clouds rolling in; lightning cracking over the sea."
+      },
+      {
+        "caption": "Terrified sailors",
+        "art_direction": "Sailors clinging to ropes, praying to little idols, throwing barrels overboard."
+      },
+      {
+        "caption": "Fast asleep!",
+        "art_direction": "Jonah snoring in the bottom of the rocking ship; comedic contrast."
+      },
+      {
+        "caption": "'It's my fault'",
+        "art_direction": "Jonah standing before the sailors, telling the truth with his head bowed."
+      },
+      {
+        "caption": "Rowing hard",
+        "art_direction": "Sailors rowing with all their might against towering waves."
+      },
+      {
+        "caption": "Calm sea",
+        "art_direction": "Jonah splashing into the water; instantly the waves flatten into glassy calm and the sun breaks through; the sailors kneel in worship."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Mark 4:41",
+    "text": "Who then is this, that even the wind and the sea obey him?",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Who then is this,",
+      "that even",
+      "the wind and the sea",
+      "obey him?"
+    ],
+    "distractors": [
+      "ignore him?"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can own up to my mistakes and tell the truth, even when it's hard.",
+    "reflection_prompt": "Jonah admitted, 'It's my fault.' Why is it brave to own up when we've done something wrong?",
+    "reflection_choices": [
+      "It helps fix the problem",
+      "It's honest",
+      "It shows I trust God",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "What was Jonah doing during the storm?",
+      "options": [
+        "Rowing",
+        "Sleeping in the bottom of the ship",
+        "Fishing"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonah had gone down into the innermost parts of the ship, and he was fast asleep.",
+      "verse_ref": "Jonah 1:5"
+    },
+    {
+      "question": "What did Jonah tell the sailors about himself?",
+      "options": [
+        "'I worship Yahweh, who made the sea and the dry land.'",
+        "'I'm a sailor too.'",
+        "'I don't know anything.'"
+      ],
+      "correct_index": 0,
+      "explanation": "Jonah said, 'I am a Hebrew, and I fear Yahweh, the God of heaven, who has made the sea and the dry land.'",
+      "verse_ref": "Jonah 1:9"
+    },
+    {
+      "question": "What happened when the sailors threw Jonah into the sea?",
+      "options": [
+        "The storm got worse",
+        "The ship sank",
+        "The sea became calm"
+      ],
+      "correct_index": 2,
+      "explanation": "They threw him into the sea, and the sea ceased its raging.",
+      "verse_ref": "Jonah 1:15"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, the wind and the sea obey You! Help me be honest and own up when I've done something wrong, like Jonah finally did. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Jonah was asleep during a giant storm! But when the truth came out, he owned it. That took courage. And the sailors ended up worshiping the true God!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "river_stone"
+    ]
+  },
+  "review": {
+    "status": "draft"
+  }
+}

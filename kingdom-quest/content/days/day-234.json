@@ -1,0 +1,120 @@
+{
+  "day": 234,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God's Word Can't Be Destroyed",
+  "scripture_passage": "Jeremiah 36:1-32",
+  "story_title": "The Burned Scroll",
+  "summary": "Jeremiah's helper Baruch wrote God's messages on a scroll. King Jehoiakim cut it up piece by piece and burned it in the fire. But God told Jeremiah to write it all again, and God's Word survived.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "God told Jeremiah, 'Take a scroll and write down all the words I have spoken to you. Maybe when the people of Judah hear about the trouble that's coming, they'll turn from their evil ways, and I will forgive them.' So Jeremiah called his helper, a scribe named Baruch. Jeremiah spoke God's words out loud, and Baruch carefully wrote every one of them on a long scroll. Then Baruch read the scroll to the people at the temple. When the king's officials heard it, they were afraid and said, 'We must tell the king!' It was winter, and King Jehoiakim was sitting in his winter palace beside a warm fire. One of his servants began reading the scroll to him. But every time the servant read three or four columns, the king took out a small knife, cut off that part of the scroll, and threw it into the fire! He kept doing it until the whole scroll was burned up. The king wasn't afraid of God's words at all. Then God said to Jeremiah, 'Take another scroll and write on it all the words that were on the first one, the one the king burned.' So Jeremiah and Baruch wrote it all again, and even added more! A king tried to destroy God's Word, but he couldn't. God's Word will always last.",
+    "scenes": [
+      {
+        "caption": "Write it down",
+        "art_direction": "Jeremiah speaking as Baruch writes on a long scroll by lamplight."
+      },
+      {
+        "caption": "Read at the temple",
+        "art_direction": "Baruch reading the scroll to a crowd in the temple courtyard."
+      },
+      {
+        "caption": "The winter palace",
+        "art_direction": "King Jehoiakim sitting beside a fire pot, warming his hands."
+      },
+      {
+        "caption": "Cut and burned",
+        "art_direction": "The king slicing off strips of the scroll and tossing them into the flames, one by one."
+      },
+      {
+        "caption": "Write it again!",
+        "art_direction": "Jeremiah and Baruch smiling and writing on a brand-new scroll."
+      },
+      {
+        "caption": "It lasts",
+        "art_direction": "The new scroll glowing brightly while the ashes of the old one blow away."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Matthew 24:35",
+    "text": "Heaven and earth will pass away, but my words will not pass away.",
+    "translation": "WEB",
+    "tokens": [
+      "Heaven and earth",
+      "will pass away,",
+      "but my words",
+      "will not",
+      "pass away."
+    ],
+    "distractors": [
+      "will be forgotten."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's Word can never be destroyed, so I can keep going even when people reject it.",
+    "reflection_prompt": "Jeremiah and Baruch didn't give up when the king burned their scroll. What is something you could keep doing for God, even if others don't like it?",
+    "reflection_choices": [
+      "Reading my Bible",
+      "Praying before meals",
+      "Telling the truth",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "perseverance"
+  },
+  "quiz": [
+    {
+      "question": "Who wrote down Jeremiah's words on the scroll?",
+      "options": [
+        "The king",
+        "Baruch the scribe",
+        "Isaiah"
+      ],
+      "correct_index": 1,
+      "explanation": "Baruch wrote from the mouth of Jeremiah all the words of Yahweh on a scroll.",
+      "verse_ref": "Jeremiah 36:4"
+    },
+    {
+      "question": "What did King Jehoiakim do with the scroll?",
+      "options": [
+        "He cut it up and burned it",
+        "He kept it safe",
+        "He read it and repented"
+      ],
+      "correct_index": 0,
+      "explanation": "He cut it with the penknife and cast it into the fire, until all the scroll was consumed.",
+      "verse_ref": "Jeremiah 36:23"
+    },
+    {
+      "question": "What did God tell Jeremiah to do after the scroll was burned?",
+      "options": [
+        "Give up",
+        "Hide",
+        "Write it all again on another scroll"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'Take again another scroll, and write in it all the former words.'",
+      "verse_ref": "Jeremiah 36:28"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, Your Word will never pass away! Help me keep reading it, believing it, and sharing it, even when other people don't care about it. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "A king tried to burn God's Word, and it just came back with even more words! Nothing can stop what God has spoken."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "lamp"
+    ],
+    "unlock": "baruchs_scroll"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

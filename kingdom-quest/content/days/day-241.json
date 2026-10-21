@@ -1,0 +1,121 @@
+{
+  "day": 241,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God's Kingdom Lasts Forever",
+  "scripture_passage": "Daniel 2:24-49",
+  "story_title": "The Giant Statue Dream",
+  "summary": "Daniel told the king his dream: a huge statue made of gold, silver, bronze, iron, and clay was smashed by a stone that grew into a mountain. The kingdoms of the world would pass away, but God would set up a kingdom that never ends.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Daniel went to the king. 'No wise man or magician can tell you your dream. But there is a God in heaven who reveals mysteries, and He has shown you what will happen in the future.' Then Daniel told the king his dream. 'You saw a huge, shining statue. Its head was made of pure gold. Its chest and arms were silver. Its belly and thighs were bronze. Its legs were iron, and its feet were part iron and part clay. Then a stone was cut out, but not by human hands. It struck the statue on its feet of iron and clay and smashed them to pieces! Then the whole statue crumbled into dust, like chaff on a threshing floor, and the wind blew it away. But the stone that hit the statue became a huge mountain and filled the whole earth.' The king's mouth fell open. That was exactly his dream! Daniel explained, 'You, King Nebuchadnezzar, are the head of gold. After you, other kingdoms will rise, each one weaker than the one before. But in the days of those kings, the God of heaven will set up a kingdom that will never be destroyed. It will crush all those kingdoms and last forever.' The king bowed down and said, 'Your God is the God of gods and the Lord of kings!' Every human kingdom ends, but God's kingdom lasts forever.",
+    "scenes": [
+      {
+        "caption": "'There is a God in heaven'",
+        "art_direction": "Daniel standing humbly before the king, pointing upward."
+      },
+      {
+        "caption": "A huge statue",
+        "art_direction": "A towering statue with a golden head, silver chest, bronze belly, iron legs, and iron-and-clay feet."
+      },
+      {
+        "caption": "A stone not cut by hands",
+        "art_direction": "A glowing stone tumbling down a mountainside toward the statue's feet."
+      },
+      {
+        "caption": "Smashed to dust",
+        "art_direction": "The statue crumbling into dust that blows away in the wind."
+      },
+      {
+        "caption": "A mountain fills the earth",
+        "art_direction": "The stone growing into a beautiful mountain that covers the whole world."
+      },
+      {
+        "caption": "'God of gods!'",
+        "art_direction": "King Nebuchadnezzar bowing low before Daniel in amazement."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Daniel 2:44",
+    "text": "the God of heaven will set up a kingdom which will never be destroyed",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "the God of heaven",
+      "will set up",
+      "a kingdom",
+      "which will never",
+      "be destroyed"
+    ],
+    "distractors": [
+      "be built"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I belong to Yahweh's kingdom, which will last forever.",
+    "reflection_prompt": "God's kingdom is like a stone that grows into a mountain filling the earth. How can you help God's kingdom grow where you live?",
+    "reflection_choices": [
+      "Showing love",
+      "Telling people about Jesus",
+      "Helping people in need",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "hope"
+  },
+  "quiz": [
+    {
+      "question": "What was the statue's head made of?",
+      "options": [
+        "Silver",
+        "Pure gold",
+        "Iron"
+      ],
+      "correct_index": 1,
+      "explanation": "The head of this image was of fine gold.",
+      "verse_ref": "Daniel 2:32"
+    },
+    {
+      "question": "What smashed the statue?",
+      "options": [
+        "A stone not cut by human hands",
+        "A big storm",
+        "An army"
+      ],
+      "correct_index": 0,
+      "explanation": "A stone was cut out without hands, which struck the image on its feet of iron and clay.",
+      "verse_ref": "Daniel 2:34"
+    },
+    {
+      "question": "What did the stone become?",
+      "options": [
+        "Sand",
+        "A river",
+        "A great mountain that filled the earth"
+      ],
+      "correct_index": 2,
+      "explanation": "The stone that struck the image became a great mountain, and filled the whole earth.",
+      "verse_ref": "Daniel 2:35"
+    }
+  ],
+  "micro_prayer": {
+    "text": "God of heaven, every human kingdom ends, but Your kingdom lasts forever. Thank You that I belong to it. Help me help Your kingdom grow. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Empires like Babylon and Persia seemed so powerful in my day. But Daniel knew they wouldn't last. Only God's kingdom lasts forever!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "gold_thread"
+    ],
+    "unlock": "kingdom_mountain"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

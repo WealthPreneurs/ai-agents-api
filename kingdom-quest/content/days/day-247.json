@@ -1,0 +1,121 @@
+{
+  "day": 247,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Kindness and Truth",
+  "scripture_passage": "Esther 2:9-23",
+  "story_title": "Esther Becomes Queen",
+  "summary": "Esther won the favor of everyone who saw her, and the king chose her as his new queen. She kept her Jewish family a secret, as Mordecai advised. Then Mordecai discovered a plot to harm the king and saved his life.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "In the palace, a man named Hegai was in charge of the young women. He liked Esther right away and showed her special kindness. He gave her the best place to stay and seven servant girls to help her. Mordecai had told Esther, 'Don't tell anyone that you're Jewish.' So Esther kept her family a secret. Every day, Mordecai walked back and forth in front of the courtyard, checking to see how Esther was doing. He loved her like his own daughter. Esther was humble and kind, and the Bible says she won the favor of everyone who saw her. When it was finally Esther's turn to meet King Xerxes, the king loved her more than any of the other young women. He placed the royal crown on her head and made her queen! He threw a big banquet in her honor, called Esther's Feast, and gave gifts to everyone. Esther, the orphan girl, was now Queen of Persia! Meanwhile, Mordecai was sitting at the king's gate one day when he overheard two of the king's guards making a secret plan to harm the king. Mordecai quickly told Queen Esther, and Esther warned the king. The plot was stopped! And Mordecai's good deed was written down in the king's history book. But nobody thanked him. Not yet. Keep that in mind, because it will matter later!",
+    "scenes": [
+      {
+        "caption": "Hegai's kindness",
+        "art_direction": "A palace official smiling and showing Esther to a lovely room with seven helpers."
+      },
+      {
+        "caption": "A secret",
+        "art_direction": "Mordecai whispering, 'Don't tell anyone you're Jewish.'"
+      },
+      {
+        "caption": "Mordecai checks in",
+        "art_direction": "Mordecai pacing outside the courtyard gate every day, looking for news."
+      },
+      {
+        "caption": "A royal crown",
+        "art_direction": "King Xerxes placing a sparkling crown on Esther's head."
+      },
+      {
+        "caption": "Esther's Feast",
+        "art_direction": "A grand banquet celebrating the new queen."
+      },
+      {
+        "caption": "A secret plot",
+        "art_direction": "Mordecai at the gate overhearing two guards whispering, then hurrying to warn Esther; a scribe writing in the king's book."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Proverbs 3:4",
+    "text": "So you will find favor, and good understanding in the sight of God and man.",
+    "translation": "WEB",
+    "tokens": [
+      "So you will",
+      "find favor,",
+      "and good understanding",
+      "in the sight",
+      "of God and man."
+    ],
+    "distractors": [
+      "of no one."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can be humble and kind wherever I am, and Yahweh can use it.",
+    "reflection_prompt": "Esther was humble and kind, and people noticed. Mordecai did a good deed even though no one thanked him. How can you do good even when no one notices?",
+    "reflection_choices": [
+      "Help without being asked",
+      "Be kind when no one is watching",
+      "Tell the truth even if no one finds out",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "kindness"
+  },
+  "quiz": [
+    {
+      "question": "What did Mordecai tell Esther to keep secret?",
+      "options": [
+        "Her favorite food",
+        "That she was Jewish",
+        "Her age"
+      ],
+      "correct_index": 1,
+      "explanation": "Esther had not made known her people nor her relatives, because Mordecai had instructed her.",
+      "verse_ref": "Esther 2:10"
+    },
+    {
+      "question": "What did the king do when he met Esther?",
+      "options": [
+        "Made her queen",
+        "Sent her home",
+        "Ignored her"
+      ],
+      "correct_index": 0,
+      "explanation": "The king loved Esther more than all the women... so he set the royal crown on her head and made her queen.",
+      "verse_ref": "Esther 2:17"
+    },
+    {
+      "question": "What did Mordecai discover at the king's gate?",
+      "options": [
+        "A hidden treasure",
+        "A lost cat",
+        "A plot to harm the king"
+      ],
+      "correct_index": 2,
+      "explanation": "Two of the king's officers sought to lay hands on the king. The thing became known to Mordecai.",
+      "verse_ref": "Esther 2:21-22"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me be humble and kind wherever I am. Help me do good even when no one notices, knowing that You always see. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "I couldn't believe it when the king put the crown on my head! But I never forgot Mordecai. He kept checking on me every day."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "olive_oil"
+    ],
+    "unlock": "queens_crown"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The year of beauty treatments and the king's selection process (Esther 2:12-16) are omitted. The would-be assassins' execution (2:23) is omitted. Confirm."
+  }
+}

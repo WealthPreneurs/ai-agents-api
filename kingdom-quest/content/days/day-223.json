@@ -1,0 +1,122 @@
+{
+  "day": 223,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "He Took My Place",
+  "scripture_passage": "Isaiah 53:3-7",
+  "story_title": "The Suffering Servant",
+  "summary": "Isaiah described a Servant who would be rejected and would suffer for other people's sins. 'By His wounds we are healed.' Hundreds of years later, Jesus fulfilled this prophecy on the cross.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Isaiah also wrote about a mysterious person he called the Servant of Yahweh. But this Servant wouldn't look like a mighty king. Isaiah said, 'He was despised and rejected by people. He was a man of sorrows who knew what suffering was like. People turned their faces away from Him.' Why would God's chosen Servant suffer? Isaiah explained: 'Surely He carried our sadness and our pain. He was pierced for our wrongdoing. He was crushed for our sins. The punishment that brought us peace was on Him, and by His wounds we are healed.' Then Isaiah wrote, 'All of us, like sheep, have wandered away. Each of us has turned to our own way. And Yahweh has laid on Him the sin of us all.' Isaiah said that the Servant would be like a lamb led to be sacrificed. He wouldn't fight back or complain. Who was this Servant? About seven hundred years later, Jesus died on a cross. He was rejected, He suffered, and He took the punishment for our sins, just as Isaiah said. Jesus took our place, so we could be forgiven and have peace with God. And three days later, Jesus rose again! This is the best news in the whole world. Jesus loves you so much that He took your place.",
+    "scenes": [
+      {
+        "caption": "A mysterious Servant",
+        "art_direction": "Isaiah writing by lamplight, a thoughtful expression on his face."
+      },
+      {
+        "caption": "Despised and rejected",
+        "art_direction": "A lonely figure walking as people turn away; shown from behind, quiet and sad."
+      },
+      {
+        "caption": "He carried our pain",
+        "art_direction": "The figure lifting heavy burdens off of others' backs and carrying them himself."
+      },
+      {
+        "caption": "Sheep gone astray",
+        "art_direction": "Sheep wandering off in every direction, each down its own path."
+      },
+      {
+        "caption": "Like a lamb",
+        "art_direction": "A quiet, gentle lamb standing peacefully."
+      },
+      {
+        "caption": "The cross and the empty tomb",
+        "art_direction": "A simple cross on a hill at sunset, then an empty tomb glowing at sunrise. No suffering depicted."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 53:5",
+    "text": "The punishment that brought our peace was on him; and by his wounds we are healed.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "The punishment",
+      "that brought our peace",
+      "was on him;",
+      "and by his wounds",
+      "we are healed."
+    ],
+    "distractors": [
+      "we are forgotten."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Jesus took my place, so I am forgiven and have peace with God.",
+    "reflection_prompt": "Isaiah said, 'All of us, like sheep, have wandered away.' Jesus came to bring us back. How does it feel to know Jesus took your place?",
+    "reflection_choices": [
+      "Thankful",
+      "Loved",
+      "Amazed",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "forgiven"
+  },
+  "quiz": [
+    {
+      "question": "How did Isaiah describe the Servant?",
+      "options": [
+        "Rich and famous",
+        "Despised, rejected, and a man of sorrows",
+        "A mighty warrior"
+      ],
+      "correct_index": 1,
+      "explanation": "He was despised and rejected by men, a man of suffering and acquainted with disease.",
+      "verse_ref": "Isaiah 53:3"
+    },
+    {
+      "question": "What does Isaiah say about the Servant's wounds?",
+      "options": [
+        "By His wounds we are healed",
+        "They were not real",
+        "They were from a battle"
+      ],
+      "correct_index": 0,
+      "explanation": "By his wounds we are healed.",
+      "verse_ref": "Isaiah 53:5"
+    },
+    {
+      "question": "Who fulfilled Isaiah's words about the Suffering Servant?",
+      "options": [
+        "Isaiah himself",
+        "King David",
+        "Jesus"
+      ],
+      "correct_index": 2,
+      "explanation": "The apostles taught that Jesus fulfilled Isaiah 53 when He died for our sins and rose again.",
+      "verse_ref": "Acts 8:32-35"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Jesus, thank You for taking my place. You were wounded so I could be healed and forgiven. I love You, and I'm so thankful for what You did for me. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Isaiah wrote these words long before Jesus came. When I read them now, I'm amazed. God's rescue plan was always about Jesus taking our place."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "servants_lamb"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Isaiah 53 is read Christologically (as the apostles did in Acts 8). Crucifixion imagery is kept minimal; no suffering depicted. Confirm framing."
+  }
+}

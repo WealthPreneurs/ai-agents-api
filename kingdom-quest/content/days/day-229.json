@@ -1,0 +1,121 @@
+{
+  "day": 229,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God Wants Everyone",
+  "scripture_passage": "Jonah 3:6-10",
+  "story_title": "The Whole City Turns Around",
+  "summary": "When the king of Nineveh heard Jonah's message, he left his throne, put on sackcloth, and told everyone to turn from their evil ways and cry out to God. God saw that they turned from evil, and He had mercy on them.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "News of Jonah's message reached the king of Nineveh. Now, this was the king of a powerful empire. But when he heard God's warning, he got up from his throne, took off his royal robes, put on sackcloth, and sat down in the dust! Then the king sent out an announcement to the whole city: 'Nobody eats or drinks anything, not people and not even the animals! Everyone must wear sackcloth, even the cows and sheep! Let everyone call out to God with all their strength. Let everyone turn away from their evil ways and stop being violent. Who knows? Maybe God will change His mind and have mercy on us, so we won't be destroyed.' Can you picture cows wearing sackcloth? The whole city was serious about turning back to God! And here's what happened next: God saw what they did. He saw that they turned from their evil ways. And God had mercy on them. He didn't bring the disaster He had warned about. The cruel city of Nineveh, Israel's enemy, received God's mercy! God loved the people of Nineveh, even though they had done terrible things. The Bible tells us God doesn't want anyone to be lost. He wants everyone to turn to Him. God's love is big enough for everyone, even our enemies.",
+    "scenes": [
+      {
+        "caption": "The king hears",
+        "art_direction": "A messenger whispering to the king of Nineveh on his grand throne."
+      },
+      {
+        "caption": "Off the throne",
+        "art_direction": "The king stepping down, removing his crown and robes, and sitting in the dust."
+      },
+      {
+        "caption": "Even the animals!",
+        "art_direction": "Cows, sheep, and goats wearing little sackcloth outfits; whimsical comedic beat."
+      },
+      {
+        "caption": "Crying out to God",
+        "art_direction": "The whole city kneeling in the streets, praying."
+      },
+      {
+        "caption": "God sees",
+        "art_direction": "Warm light breaking over Nineveh as people look up with hope."
+      },
+      {
+        "caption": "Mercy",
+        "art_direction": "The city glowing with peace, people hugging in the streets."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "2 Peter 3:9",
+    "text": "not wishing that anyone should perish, but that all should come to repentance.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "not wishing",
+      "that anyone should perish,",
+      "but that all",
+      "should come",
+      "to repentance."
+    ],
+    "distractors": [
+      "should stay away."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh's love is big enough for everyone, even people I think don't deserve it.",
+    "reflection_prompt": "God had mercy on the people of Nineveh, Israel's enemies. Who is someone you could pray would come to know God's love?",
+    "reflection_choices": [
+      "Someone who is unkind to me",
+      "Someone far from God",
+      "A whole group of people",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "love"
+  },
+  "quiz": [
+    {
+      "question": "What did the king of Nineveh do when he heard the message?",
+      "options": [
+        "Threw Jonah in prison",
+        "Left his throne and sat in the dust in sackcloth",
+        "Had a feast"
+      ],
+      "correct_index": 1,
+      "explanation": "He arose from his throne, laid his robe from him, covered himself with sackcloth, and sat in ashes.",
+      "verse_ref": "Jonah 3:6"
+    },
+    {
+      "question": "Who did the king say should wear sackcloth?",
+      "options": [
+        "People and animals",
+        "Only the king",
+        "Only children"
+      ],
+      "correct_index": 0,
+      "explanation": "The king said, 'Let them be covered with sackcloth, both man and animal.'",
+      "verse_ref": "Jonah 3:8"
+    },
+    {
+      "question": "What did God do when He saw they turned from evil?",
+      "options": [
+        "He destroyed the city anyway",
+        "He sent Jonah away",
+        "He had mercy on them"
+      ],
+      "correct_index": 2,
+      "explanation": "God saw their works, that they turned from their evil way. God relented of the disaster.",
+      "verse_ref": "Jonah 3:10"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, Your love is big enough for everyone! Thank You for having mercy on people who turn to You. Help me pray for everyone, even people who are hard to love. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Cows in sackcloth! That always makes me laugh. But it shows how serious Nineveh was about turning to God. And God's mercy came pouring down."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "clay"
+    ],
+    "unlock": "nineveh_gate"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

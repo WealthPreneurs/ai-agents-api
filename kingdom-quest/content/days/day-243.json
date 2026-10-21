@@ -1,0 +1,123 @@
+{
+  "day": 243,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "God Is With Me in the Fire",
+  "scripture_passage": "Daniel 3:19-30",
+  "story_title": "The Fiery Furnace",
+  "summary": "The king had the furnace heated seven times hotter and threw the three friends in. But when he looked inside, he saw four men walking around unharmed, and the fourth looked like a son of the gods. They came out not even smelling like smoke.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "King Nebuchadnezzar was so angry that his face changed. He ordered, 'Heat the furnace seven times hotter than usual!' Then he had his strongest soldiers tie up Shadrach, Meshach, and Abednego and throw them into the blazing furnace, fully dressed. The fire was so hot that it was dangerous even to get close to it. Down into the flames fell the three friends. The king watched. Then suddenly he jumped up in amazement. 'Didn't we throw three men into the fire, all tied up?' 'Yes, O king.' 'Look! I see four men walking around in the middle of the fire, not tied up and not hurt! And the fourth one looks like a son of the gods!' Someone was in the fire with them! The king went near the furnace door and shouted, 'Shadrach, Meshach, and Abednego, servants of the Most High God, come out!' And out they walked. Everyone crowded around them. The fire hadn't hurt them at all. Not a hair on their heads was burned. Their clothes weren't scorched. They didn't even smell like smoke! The king said, 'Praise the God of Shadrach, Meshach, and Abednego, who sent His angel and rescued His servants who trusted in Him! There is no other god who can rescue like this!' God didn't keep them out of the fire. He went into the fire with them.",
+    "scenes": [
+      {
+        "caption": "Seven times hotter",
+        "art_direction": "Workers piling wood into a roaring furnace as heat waves ripple."
+      },
+      {
+        "caption": "Into the fire",
+        "art_direction": "The three friends falling into orange flames, seen from a distance; no pain shown."
+      },
+      {
+        "caption": "'Four men!'",
+        "art_direction": "The king leaping from his seat, pointing in shock."
+      },
+      {
+        "caption": "Walking in the fire",
+        "art_direction": "Four figures calmly walking among the flames; the fourth glowing with brilliant white light."
+      },
+      {
+        "caption": "'Come out!'",
+        "art_direction": "The three friends stepping out of the furnace, totally unharmed."
+      },
+      {
+        "caption": "Not even the smell of smoke",
+        "art_direction": "Officials sniffing their clothes and hair in disbelief; comedic beat."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 43:2",
+    "text": "When you walk through the fire, you will not be burned, and flame will not scorch you.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "When you walk",
+      "through the fire,",
+      "you will not",
+      "be burned,",
+      "and flame",
+      "will not scorch you."
+    ],
+    "distractors": [
+      "will hurt you."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is with me in the fire, even when He doesn't keep me out of it.",
+    "reflection_prompt": "God walked with the three friends in the fire. What is a 'fire,' a hard time, where you need to know God is right there with you?",
+    "reflection_choices": [
+      "Something scary",
+      "Something sad",
+      "Something hard I have to do",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "bold_faith"
+  },
+  "quiz": [
+    {
+      "question": "How much hotter did the king make the furnace?",
+      "options": [
+        "Twice as hot",
+        "Seven times hotter",
+        "Ten times hotter"
+      ],
+      "correct_index": 1,
+      "explanation": "He commanded that they should heat the furnace seven times more than it was usually heated.",
+      "verse_ref": "Daniel 3:19"
+    },
+    {
+      "question": "How many men did the king see in the fire?",
+      "options": [
+        "Four",
+        "Three",
+        "One"
+      ],
+      "correct_index": 0,
+      "explanation": "He said, 'Look, I see four men loose, walking in the middle of the fire.'",
+      "verse_ref": "Daniel 3:25"
+    },
+    {
+      "question": "What was true about the three friends when they came out?",
+      "options": [
+        "Their clothes were burned",
+        "Their hair was singed",
+        "They didn't even smell like smoke"
+      ],
+      "correct_index": 2,
+      "explanation": "The fire had no power on their bodies, nor was the hair of their head singed... nor had the smell of fire passed on them.",
+      "verse_ref": "Daniel 3:27"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that You walk with me through the fire. When hard times come, help me remember I'm never alone, because You are right there with me. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "God didn't stop the fire, but He went into it with them! He's with you in your hard times too. You're never in the fire alone."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "river_stone"
+    ],
+    "unlock": "fiery_furnace"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The soldiers killed by the furnace's heat (Daniel 3:22) are omitted. The fourth figure is described as in Daniel 3:25 without identifying Him. Confirm."
+  }
+}

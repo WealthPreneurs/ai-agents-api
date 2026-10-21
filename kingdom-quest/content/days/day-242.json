@@ -1,0 +1,119 @@
+{
+  "day": 242,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Brave Enough to Stand",
+  "scripture_passage": "Daniel 3:1-18",
+  "story_title": "The Golden Statue",
+  "summary": "King Nebuchadnezzar built a giant gold statue and ordered everyone to bow to it when the music played. Shadrach, Meshach, and Abednego refused. They said God was able to rescue them, 'but even if He doesn't, we won't bow.'",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "King Nebuchadnezzar forgot what he had learned. He built an enormous statue made of gold. It was ninety feet tall! He called all the leaders of his kingdom to come and see it. Then a herald shouted: 'Listen, everyone! When you hear the sound of the horn, flute, harp, and all kinds of music, you must bow down and worship the golden statue. Anyone who doesn't bow will be thrown into a blazing furnace!' The music began to play, and everyone bowed down. Well, almost everyone. Three young men stood tall: Shadrach, Meshach, and Abednego, Daniel's friends. Some officials ran to tell the king. Nebuchadnezzar was furious. He called the three friends in. 'Is it true you won't bow? I'll give you one more chance. If you don't bow, you'll be thrown into the furnace. And what god will be able to rescue you from my hand?' The three friends answered calmly: 'King Nebuchadnezzar, we don't need to defend ourselves. If we're thrown into the blazing furnace, the God we serve is able to rescue us, and He will rescue us from your hand. But even if He doesn't, we want you to know, O king, that we will not serve your gods or worship the golden statue.' That's real courage: trusting God no matter what happens.",
+    "scenes": [
+      {
+        "caption": "A ninety-foot statue",
+        "art_direction": "A towering golden statue on a wide plain, glinting in the sun."
+      },
+      {
+        "caption": "When the music plays",
+        "art_direction": "Musicians with horns, flutes, and harps; a crowd bowing low in waves."
+      },
+      {
+        "caption": "Three who stand",
+        "art_direction": "Shadrach, Meshach, and Abednego standing tall among thousands of bowed backs."
+      },
+      {
+        "caption": "Tattletales",
+        "art_direction": "Officials running to the king, pointing back at the three friends."
+      },
+      {
+        "caption": "One more chance",
+        "art_direction": "The furious king glaring at the three young men; a glowing furnace behind him."
+      },
+      {
+        "caption": "'Even if He doesn't'",
+        "art_direction": "The three friends standing calm and unafraid, hands at their sides."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Daniel 3:17",
+    "text": "our God whom we serve is able to deliver us",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "our God",
+      "whom we serve",
+      "is able",
+      "to deliver us"
+    ],
+    "distractors": [
+      "is too busy"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stand firm for Yahweh, trusting Him no matter what happens.",
+    "reflection_prompt": "Shadrach, Meshach, and Abednego said, 'Even if He doesn't, we won't bow.' When might you need to stand firm when everyone else is going along?",
+    "reflection_choices": [
+      "When friends are doing something wrong",
+      "When people make fun of God",
+      "When I'm pressured to lie",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "What did the king order everyone to do when the music played?",
+      "options": [
+        "Dance",
+        "Bow down and worship the golden statue",
+        "Go home"
+      ],
+      "correct_index": 1,
+      "explanation": "When you hear the music, you shall fall down and worship the golden image.",
+      "verse_ref": "Daniel 3:5"
+    },
+    {
+      "question": "What did the three friends say God was able to do?",
+      "options": [
+        "Rescue them from the furnace",
+        "Make them rich",
+        "Make them king"
+      ],
+      "correct_index": 0,
+      "explanation": "They said, 'Our God whom we serve is able to deliver us from the burning fiery furnace.'",
+      "verse_ref": "Daniel 3:17"
+    },
+    {
+      "question": "What did they say they would do even if God didn't rescue them?",
+      "options": [
+        "Bow down",
+        "Run away",
+        "Not serve the king's gods or worship the statue"
+      ],
+      "correct_index": 2,
+      "explanation": "They said, 'But if not... we will not serve your gods, nor worship the golden image.'",
+      "verse_ref": "Daniel 3:18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You are able to rescue me. But even if things don't go the way I hope, I want to stand firm and trust You no matter what. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "'Even if He doesn't.' Those are some of the bravest words in the Bible. I needed that kind of courage when it was my turn to stand before a king."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread"
+    ],
+    "unlock": "standing_firm_banner"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

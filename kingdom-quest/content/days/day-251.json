@@ -1,0 +1,121 @@
+{
+  "day": 251,
+  "month": 8,
+  "realm": 36,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Humble Hearts Are Lifted Up",
+  "scripture_passage": "Esther 6",
+  "story_title": "The Night the King Couldn't Sleep",
+  "summary": "That night, the king couldn't sleep, so he had his history book read to him. He learned that Mordecai had saved his life but was never rewarded. The next morning, proud Haman had to lead Mordecai through the city in honor.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "That very night, King Xerxes couldn't sleep. Finally, he said, 'Bring me the book of the records of my kingdom, and read it to me.' Boring reading always helps people fall asleep, right? A servant began reading, and guess which part he read? The part about how Mordecai had warned the king about the two guards who planned to harm him! The king sat up. 'What honor has been given to Mordecai for this?' 'Nothing has been done for him, my king.' Just then, Haman walked into the outer courtyard. He had come early to ask the king about punishing Mordecai! The king said, 'Who's in the courtyard? Let him come in.' The king asked Haman, 'What should be done for the man the king wants to honor?' Haman thought, 'Who would the king want to honor more than me?' So he said, 'Dress him in the king's own robe, put him on the king's own horse with a royal crown on its head, and have one of the king's most important officials lead him through the city, shouting: This is what is done for the man the king wants to honor!' The king said, 'Perfect! Hurry and do all that for Mordecai the Jew!' So Haman, the proudest man in the kingdom, had to lead Mordecai on the king's horse through the streets, shouting his praises! Jesus said, 'Everyone who lifts himself up will be humbled, and whoever humbles himself will be lifted up.'",
+    "scenes": [
+      {
+        "caption": "A sleepless king",
+        "art_direction": "The king tossing in bed under silk blankets, wide awake."
+      },
+      {
+        "caption": "Bedtime reading",
+        "art_direction": "A servant yawning while reading from a huge book; the king listening."
+      },
+      {
+        "caption": "'What honor was given?'",
+        "art_direction": "The king sitting bolt upright; the servant shaking his head."
+      },
+      {
+        "caption": "Haman's guess",
+        "art_direction": "Haman daydreaming of himself in the royal robe; a thought bubble with his own face."
+      },
+      {
+        "caption": "'Do it for Mordecai!'",
+        "art_direction": "Haman's jaw dropping in shock; comedic beat."
+      },
+      {
+        "caption": "A royal parade",
+        "art_direction": "Mordecai riding the king's horse in a royal robe as Haman leads it, grumpily shouting his praises."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Luke 14:11",
+    "text": "For everyone who exalts himself will be humbled, and whoever humbles himself will be exalted.",
+    "translation": "WEB",
+    "tokens": [
+      "For everyone",
+      "who exalts himself",
+      "will be humbled,",
+      "and whoever",
+      "humbles himself",
+      "will be exalted."
+    ],
+    "distractors": [
+      "will be forgotten."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can stay humble and let Yahweh lift me up in His time.",
+    "reflection_prompt": "Mordecai's good deed was rewarded at just the right time, and proud Haman was humbled. When has God surprised you by working things out?",
+    "reflection_choices": [
+      "Something good came from something hard",
+      "Help came at the right time",
+      "Someone noticed my kindness",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "gentleness"
+  },
+  "quiz": [
+    {
+      "question": "What did the king ask for when he couldn't sleep?",
+      "options": [
+        "A glass of milk",
+        "The book of the records of his kingdom",
+        "Music"
+      ],
+      "correct_index": 1,
+      "explanation": "On that night, the king couldn't sleep. He commanded the book of records of the chronicles to be brought.",
+      "verse_ref": "Esther 6:1"
+    },
+    {
+      "question": "What did the king find out about Mordecai?",
+      "options": [
+        "Nothing had been done to reward him for saving the king",
+        "He was a thief",
+        "He was Haman's friend"
+      ],
+      "correct_index": 0,
+      "explanation": "The king said, 'What honor has been given to Mordecai?' They said, 'Nothing has been done for him.'",
+      "verse_ref": "Esther 6:3"
+    },
+    {
+      "question": "Who had to lead Mordecai through the city?",
+      "options": [
+        "The king",
+        "Esther",
+        "Haman"
+      ],
+      "correct_index": 2,
+      "explanation": "Haman took the clothing and the horse, and arrayed Mordecai, and caused him to ride through the city.",
+      "verse_ref": "Esther 6:11"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me stay humble and not worry about getting credit. I trust You to lift me up in Your perfect time. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Of all the nights for the king to have trouble sleeping! That was no accident. God was working behind the scenes again, right on time."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "linen",
+      "gold_thread"
+    ],
+    "unlock": "royal_horse_parade"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

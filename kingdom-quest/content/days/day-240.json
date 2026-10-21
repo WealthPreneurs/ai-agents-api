@@ -1,0 +1,120 @@
+{
+  "day": 240,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Praying Together",
+  "scripture_passage": "Daniel 1:17-20; 2:1-23",
+  "story_title": "The King's Mystery Dream",
+  "summary": "God gave Daniel and his friends wisdom ten times better than all the king's advisers. When King Nebuchadnezzar demanded that someone tell him his dream and its meaning, Daniel asked his friends to pray, and God revealed the mystery.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "God blessed Daniel and his three friends. He gave them knowledge and understanding of all kinds of learning, and He gave Daniel the special ability to understand dreams and visions. When the king tested them, he found them ten times wiser than all the magicians and wise men in his whole kingdom! One night, King Nebuchadnezzar had a dream that troubled him so much he couldn't sleep. He called all his wise men and said, 'Tell me what I dreamed, and then tell me what it means.' They said, 'Tell us the dream first, and we'll explain it!' But the king said, 'No! If you're really wise, you'll tell me the dream too!' They said, 'No one on earth can do that!' The king was furious and ordered that all the wise men in Babylon be punished, including Daniel and his friends! Daniel went to the king and asked for a little time. Then he went home and told his friends, 'Let's ask the God of heaven to have mercy and show us this mystery.' That night, God showed Daniel the dream in a vision! Daniel praised God: 'Praise the name of God forever and ever! Wisdom and power belong to Him. He gives wisdom to the wise. He reveals deep and secret things. He knows what's in the darkness, and light lives with Him.' When we face a big problem, it's good to pray together with friends.",
+    "scenes": [
+      {
+        "caption": "Ten times wiser",
+        "art_direction": "The king comparing Daniel and his friends to a crowd of wise men; a big '10x' appears."
+      },
+      {
+        "caption": "A troubling dream",
+        "art_direction": "King Nebuchadnezzar tossing and turning in bed, thunderclouds above him."
+      },
+      {
+        "caption": "'Tell me the dream!'",
+        "art_direction": "The king pointing at wise men who look panicked and confused."
+      },
+      {
+        "caption": "A furious order",
+        "art_direction": "The king's guards marching out; the wise men in danger. Nothing violent shown."
+      },
+      {
+        "caption": "Praying together",
+        "art_direction": "Daniel and his three friends kneeling in a circle, praying at night."
+      },
+      {
+        "caption": "The mystery revealed",
+        "art_direction": "Daniel waking with a gasp as glowing light shows him the dream; he lifts his hands in praise."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Daniel 2:22",
+    "text": "He reveals the deep and secret things. He knows what is in the darkness, and the light dwells with him.",
+    "translation": "WEB",
+    "tokens": [
+      "He reveals",
+      "the deep and secret things.",
+      "He knows",
+      "what is in the darkness,",
+      "and the light",
+      "dwells with him."
+    ],
+    "distractors": [
+      "hides from him."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can pray with my friends when I face big problems, and Yahweh hears us.",
+    "reflection_prompt": "Daniel asked his friends to pray with him. Who could you pray with when you face a big problem?",
+    "reflection_choices": [
+      "My family",
+      "My friends",
+      "My church group",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "How much wiser were Daniel and his friends than the king's wise men?",
+      "options": [
+        "Two times",
+        "Ten times",
+        "A hundred times"
+      ],
+      "correct_index": 1,
+      "explanation": "The king found them ten times better than all the magicians and enchanters in his realm.",
+      "verse_ref": "Daniel 1:20"
+    },
+    {
+      "question": "What did the king demand from his wise men?",
+      "options": [
+        "To tell him his dream and what it meant",
+        "To bake him a cake",
+        "To build a tower"
+      ],
+      "correct_index": 0,
+      "explanation": "The king said that if they couldn't tell him the dream and its meaning, they would be severely punished.",
+      "verse_ref": "Daniel 2:5"
+    },
+    {
+      "question": "What did Daniel do when he heard about the king's order?",
+      "options": [
+        "He ran away",
+        "He hid",
+        "He asked his friends to pray with him"
+      ],
+      "correct_index": 2,
+      "explanation": "Daniel made the thing known to his companions, that they would desire mercies of the God of heaven.",
+      "verse_ref": "Daniel 2:17-18"
+    }
+  ],
+  "micro_prayer": {
+    "text": "God of heaven, You know every secret, and You give wisdom. When I face big problems, help me pray with my friends and trust You for the answer. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Daniel didn't panic. He prayed with his friends! Having friends who pray with you is one of the best gifts God gives."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp"
+    ]
+  },
+  "review": {
+    "status": "draft",
+    "notes": "The king's threat to execute the wise men (2:5, 12-13) is described as 'ordered that all the wise men... be punished'; the quiz explanation paraphrases 2:5 without 'cut in pieces.' Confirm."
+  }
+}

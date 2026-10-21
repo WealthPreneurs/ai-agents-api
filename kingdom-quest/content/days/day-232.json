@@ -1,0 +1,120 @@
+{
+  "day": 232,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Not Too Young, Not Alone",
+  "scripture_passage": "Jeremiah 1:4-10",
+  "story_title": "Jeremiah's Call",
+  "summary": "God called Jeremiah to be a prophet when he was young. Jeremiah said, 'I'm only a child!' But God said, 'Don't say that. Don't be afraid. I am with you.' Then God touched his mouth and put His words there.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "About a hundred years after Isaiah, God called another prophet: a young man named Jeremiah. Yahweh said to him, 'Before I formed you in your mother's womb, I knew you. Before you were born, I set you apart. I chose you to be a prophet to the nations.' Jeremiah was surprised and nervous. 'Oh, Lord Yahweh! I don't know how to speak. I'm only a child!' But Yahweh said, 'Don't say, I am only a child. You must go to everyone I send you to, and say whatever I command you. Don't be afraid of them, for I am with you to rescue you.' Then Yahweh reached out His hand and touched Jeremiah's mouth. He said, 'Look, I have put My words in your mouth.' Jeremiah had a really hard job ahead of him. God's people in Judah had turned away from Him, and Jeremiah would have to warn them that if they didn't turn back, the powerful army of Babylon would come. For forty years, Jeremiah would speak God's messages, and most people wouldn't listen. He'd be laughed at, put in stocks, thrown in a pit, and called a traitor. He cried so often that he's sometimes called 'the weeping prophet.' But he never quit. Because God had promised, 'I am with you.'",
+    "scenes": [
+      {
+        "caption": "A young man",
+        "art_direction": "Teenage Jeremiah walking in the fields near his village of Anathoth."
+      },
+      {
+        "caption": "'Before you were born'",
+        "art_direction": "Gentle golden light surrounding Jeremiah as he stops, startled."
+      },
+      {
+        "caption": "'I'm only a child!'",
+        "art_direction": "Jeremiah holding up his hands, shaking his head nervously."
+      },
+      {
+        "caption": "'Don't be afraid'",
+        "art_direction": "The light growing warmer and closer around Jeremiah."
+      },
+      {
+        "caption": "Words in his mouth",
+        "art_direction": "A glowing hand gently touching Jeremiah's lips; golden letters flowing into his mouth."
+      },
+      {
+        "caption": "Forty years",
+        "art_direction": "A montage of Jeremiah speaking to crowds, some turning away, but Jeremiah keeps going."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Jeremiah 1:8",
+    "text": "Don't be afraid because of them, for I am with you to rescue you",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Don't be afraid",
+      "because of them,",
+      "for I am",
+      "with you",
+      "to rescue you"
+    ],
+    "distractors": [
+      "to leave you"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I'm not too young for Yahweh to use, and I'm never alone when I obey Him.",
+    "reflection_prompt": "Jeremiah said, 'I'm only a child!' But God said, 'I am with you.' What is something you feel too young to do for God?",
+    "reflection_choices": [
+      "Talk about God to my friends",
+      "Lead something",
+      "Help someone in need",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "courage"
+  },
+  "quiz": [
+    {
+      "question": "When did God say He knew Jeremiah?",
+      "options": [
+        "When he was a grown man",
+        "Before He formed him in the womb",
+        "When he became a prophet"
+      ],
+      "correct_index": 1,
+      "explanation": "God said, 'Before I formed you in the womb, I knew you.'",
+      "verse_ref": "Jeremiah 1:5"
+    },
+    {
+      "question": "What did Jeremiah say to God?",
+      "options": [
+        "'I'm only a child!'",
+        "'I'm ready!'",
+        "'I'm too old!'"
+      ],
+      "correct_index": 0,
+      "explanation": "Jeremiah said, 'Ah, Lord Yahweh! Behold, I don't know how to speak; for I am a child.'",
+      "verse_ref": "Jeremiah 1:6"
+    },
+    {
+      "question": "What did God put in Jeremiah's mouth?",
+      "options": [
+        "Honey",
+        "Fire",
+        "His words"
+      ],
+      "correct_index": 2,
+      "explanation": "Yahweh said, 'Behold, I have put my words in your mouth.'",
+      "verse_ref": "Jeremiah 1:9"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, You knew me before I was born. When I feel too young or too scared, remind me that You are with me. Put Your words in my mouth. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Jeremiah's job was so hard, but he stayed faithful for forty years. My own story needed that kind of courage too. You'll see soon!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch"
+    ],
+    "unlock": "anathoth_field"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

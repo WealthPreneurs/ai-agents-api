@@ -1,0 +1,119 @@
+{
+  "day": 218,
+  "month": 8,
+  "realm": 32,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Here I Am, Send Me",
+  "scripture_passage": "Isaiah 6:1-8",
+  "story_title": "Isaiah Sees the King",
+  "summary": "In a vision, Isaiah saw Yahweh on a high throne, with angels calling, 'Holy, holy, holy!' Isaiah felt unworthy, but an angel touched his lips with a coal. When God asked, 'Whom shall I send?' Isaiah said, 'Here I am. Send me!'",
+  "story_reel": {
+    "duration_seconds": 140,
+    "narration": "Welcome to the Prophets' Watchtower! Prophets were people God sent to speak His messages. One of the greatest was Isaiah. In the year King Uzziah died, Isaiah had an amazing vision. He saw the Lord sitting on a throne, high and lifted up, and the edges of His robe filled the whole temple! Above Him were seraphim, shining angels with six wings each. With two wings they covered their faces, with two they covered their feet, and with two they flew. And they called out to each other, 'Holy, holy, holy is Yahweh of Armies! The whole earth is full of His glory!' Their voices were so loud the doorposts shook, and the temple filled with smoke. Isaiah was overwhelmed. He cried, 'Oh no! I'm ruined! My lips aren't clean, and I live among people with unclean lips. And I have seen the King, Yahweh of Armies!' Then one of the seraphim flew to Isaiah with a glowing coal from the altar. It touched Isaiah's lips and said, 'Your guilt is taken away, and your sin is forgiven.' Then Isaiah heard the Lord's voice: 'Whom shall I send? Who will go for us?' And Isaiah answered, 'Here I am. Send me!'",
+    "scenes": [
+      {
+        "caption": "The Prophets' Watchtower",
+        "art_direction": "A tall stone watchtower on a hill at dawn, with a lookout gazing at the horizon."
+      },
+      {
+        "caption": "High and lifted up",
+        "art_direction": "A vast throne room of light; a royal robe flowing to fill the temple. God's face is never shown."
+      },
+      {
+        "caption": "Holy, holy, holy!",
+        "art_direction": "Six-winged seraphim of light circling above the throne, their wings covering faces and feet."
+      },
+      {
+        "caption": "The doorposts shake",
+        "art_direction": "Smoke filling the temple as the doorposts tremble."
+      },
+      {
+        "caption": "A glowing coal",
+        "art_direction": "A seraph gently touching Isaiah's lips with a glowing coal; warmth, not pain."
+      },
+      {
+        "caption": "'Here I am. Send me!'",
+        "art_direction": "Isaiah stepping forward with his hand raised high."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Isaiah 6:8",
+    "text": "Here I am. Send me!",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Here I am.",
+      "Send",
+      "me!"
+    ],
+    "distractors": [
+      "Send someone else!"
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "Yahweh is holy, and He forgives me so I can say, 'Here I am, send me!'",
+    "reflection_prompt": "Isaiah said, 'Here I am. Send me!' Where might God be sending you this week to show His love?",
+    "reflection_choices": [
+      "To my family",
+      "To my class or team",
+      "To my neighbors",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "worship"
+  },
+  "quiz": [
+    {
+      "question": "What did the seraphim call out?",
+      "options": [
+        "'Hooray, hooray!'",
+        "'Holy, holy, holy is Yahweh of Armies!'",
+        "'Look at the king!'"
+      ],
+      "correct_index": 1,
+      "explanation": "They called, 'Holy, holy, holy, is Yahweh of Armies! The whole earth is full of his glory!'",
+      "verse_ref": "Isaiah 6:3"
+    },
+    {
+      "question": "What touched Isaiah's lips?",
+      "options": [
+        "A glowing coal from the altar",
+        "A drop of water",
+        "A feather"
+      ],
+      "correct_index": 0,
+      "explanation": "One of the seraphim flew to him with a live coal and touched his mouth with it.",
+      "verse_ref": "Isaiah 6:6-7"
+    },
+    {
+      "question": "What did Isaiah say when God asked, 'Whom shall I send?'",
+      "options": [
+        "'Not me!'",
+        "'Maybe tomorrow.'",
+        "'Here I am. Send me!'"
+      ],
+      "correct_index": 2,
+      "explanation": "Isaiah said, 'Here I am. Send me!'",
+      "verse_ref": "Isaiah 6:8"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Holy, holy, holy are You, Yahweh! Thank You for forgiving me. Here I am. Send me wherever You want me to share Your love. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Hello! I'm Esther, and I'll be your guide through the Prophets' Watchtower. The prophets were God's messengers, and their words gave my people hope in hard times."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "gold_thread",
+      "lamp"
+    ],
+    "unlock": "prophets_watchtower"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

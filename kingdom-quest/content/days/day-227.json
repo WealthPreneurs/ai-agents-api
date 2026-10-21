@@ -1,0 +1,119 @@
+{
+  "day": 227,
+  "month": 8,
+  "realm": 33,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Praying from the Deep",
+  "scripture_passage": "Jonah 1:17-2:10; Matthew 12:40",
+  "story_title": "Inside the Big Fish",
+  "summary": "God sent a huge fish to swallow Jonah, and Jonah was inside it for three days and three nights. There, Jonah prayed and thanked God. Then the fish spat Jonah out onto dry land.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "As Jonah sank down into the deep, dark water, something amazing happened. Yahweh had prepared a huge fish to swallow Jonah! Gulp! Jonah was inside the belly of the fish for three days and three nights. Imagine how dark and smelly it must have been in there! But Jonah was alive. God had rescued him. And there, inside the fish, Jonah finally did what he should have done at the beginning: he prayed. 'In my trouble, I called to Yahweh, and He answered me. From deep in the sea, I cried for help, and You heard my voice. The water closed over me. Seaweed was wrapped around my head. I sank down to the roots of the mountains. But You brought my life up from the pit, Yahweh my God! When my life was fading away, I remembered You, and my prayer came to You. I will sing a song of thanks to You. Salvation belongs to Yahweh!' Then Yahweh spoke to the fish, and it spat Jonah out onto dry land. Splat! Many years later, Jesus said, 'Just as Jonah was three days and three nights in the belly of the big fish, so the Son of Man will be three days and three nights in the heart of the earth.' Jonah's rescue was a picture of Jesus rising from the grave on the third day!",
+    "scenes": [
+      {
+        "caption": "Sinking down",
+        "art_direction": "Jonah drifting down through blue water as seaweed swirls around him."
+      },
+      {
+        "caption": "Gulp!",
+        "art_direction": "A gigantic, friendly-looking fish swallowing Jonah whole; whimsical."
+      },
+      {
+        "caption": "Inside the fish",
+        "art_direction": "Jonah sitting in a dim, cavernous fish belly, holding his nose; comedic."
+      },
+      {
+        "caption": "Jonah prays",
+        "art_direction": "Jonah kneeling in the fish, hands raised, a small light glowing around him."
+      },
+      {
+        "caption": "Splat!",
+        "art_direction": "The fish spitting Jonah onto a sandy beach; Jonah covered in seaweed, blinking in the sun."
+      },
+      {
+        "caption": "Three days",
+        "art_direction": "A quick transition to an empty tomb glowing on the third morning."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Jonah 2:9",
+    "text": "Salvation belongs to Yahweh.",
+    "translation": "WEB",
+    "excerpt": true,
+    "tokens": [
+      "Salvation",
+      "belongs",
+      "to Yahweh."
+    ],
+    "distractors": [
+      "to the fish."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can cry out to Yahweh from anywhere, and He hears me.",
+    "reflection_prompt": "Jonah prayed from inside a fish! What's the strangest or hardest place you've ever prayed?",
+    "reflection_choices": [
+      "In the car",
+      "At the doctor",
+      "When I was scared at night",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "prayerfulness"
+  },
+  "quiz": [
+    {
+      "question": "How long was Jonah inside the big fish?",
+      "options": [
+        "One hour",
+        "Three days and three nights",
+        "Forty days"
+      ],
+      "correct_index": 1,
+      "explanation": "Jonah was in the belly of the fish three days and three nights.",
+      "verse_ref": "Jonah 1:17"
+    },
+    {
+      "question": "What did Jonah do inside the fish?",
+      "options": [
+        "He prayed to Yahweh",
+        "He slept",
+        "He ate seaweed"
+      ],
+      "correct_index": 0,
+      "explanation": "Then Jonah prayed to Yahweh, his God, out of the fish's belly.",
+      "verse_ref": "Jonah 2:1"
+    },
+    {
+      "question": "What did Jesus say Jonah's three days in the fish pointed to?",
+      "options": [
+        "A big storm",
+        "A fishing trip",
+        "His own three days before rising again"
+      ],
+      "correct_index": 2,
+      "explanation": "Jesus said, 'As Jonah was three days and three nights in the belly of the huge fish, so will the Son of Man be three days and three nights in the heart of the earth.'",
+      "verse_ref": "Matthew 12:40"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, thank You that I can pray to You from anywhere, and You hear me. Salvation belongs to You! Thank You for rescuing me through Jesus. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "Praying from inside a fish! If God heard Jonah there, He can hear you anywhere: in your bedroom, in the car, or in the scariest place you can imagine."
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "river_stone",
+      "palm_branch"
+    ],
+    "unlock": "big_fish_fountain"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

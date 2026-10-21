@@ -1,0 +1,120 @@
+{
+  "day": 237,
+  "month": 8,
+  "realm": 34,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Blooming Where I'm Planted",
+  "scripture_passage": "Jeremiah 29:1-14",
+  "story_title": "A Letter to the Exiles",
+  "summary": "Jeremiah wrote a letter to the people taken to Babylon: build houses, plant gardens, and pray for the city where you live. In seventy years God would bring them home, and if they searched for Him with all their hearts, they would find Him.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "The people who were taken away to Babylon were very sad. They were far from home, in a strange land, surrounded by people who didn't worship Yahweh. Some false prophets told them, 'Don't worry! You'll be going home very soon!' But that wasn't true. So Jeremiah wrote them a letter from Jerusalem with God's real message. 'This is what Yahweh of Armies, the God of Israel, says to you: Build houses and live in them. Plant gardens and eat their fruit. Get married and have children, and let your families grow. Don't shrink away. And seek the peace of the city where I have sent you. Pray to Yahweh for it, because if it does well, you will do well.' God's people were supposed to pray for Babylon, the very city that had defeated them! Then God gave them a promise: 'When seventy years are finished for Babylon, I will visit you and bring you back home. For I know the plans I have for you, plans for peace and not for harm, to give you hope and a future. You will call on Me and pray to Me, and I will listen. You will seek Me and find Me, when you search for Me with all your heart.' Sometimes we're in a place we didn't choose. God wants us to grow, help others, and seek Him right where we are.",
+    "scenes": [
+      {
+        "caption": "Far from home",
+        "art_direction": "Exiles sitting by the rivers of Babylon, looking sad."
+      },
+      {
+        "caption": "False prophets",
+        "art_direction": "A man in fancy robes promising, 'You'll go home soon!' with crossed fingers behind his back."
+      },
+      {
+        "caption": "Jeremiah's letter",
+        "art_direction": "Jeremiah writing a letter in Jerusalem, sealing it, and giving it to a traveler."
+      },
+      {
+        "caption": "Build and plant",
+        "art_direction": "Exile families building houses and planting colorful gardens in Babylon."
+      },
+      {
+        "caption": "Pray for the city",
+        "art_direction": "A family praying on a Babylonian rooftop, looking out at the city with kindness."
+      },
+      {
+        "caption": "Seventy years",
+        "art_direction": "A calendar of seventy years ending with a road leading home to Jerusalem."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Jeremiah 29:13",
+    "text": "You shall seek me, and find me, when you search for me with all your heart.",
+    "translation": "WEB",
+    "tokens": [
+      "You shall seek me,",
+      "and find me,",
+      "when you",
+      "search for me",
+      "with all your heart."
+    ],
+    "distractors": [
+      "with half your heart."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can grow, help others, and seek Yahweh right where I am, even in places I didn't choose.",
+    "reflection_prompt": "God told the exiles to bloom where they were planted. Is there a place you didn't choose where you can grow and help others?",
+    "reflection_choices": [
+      "A new school or class",
+      "A new neighborhood",
+      "A hard situation at home",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "perseverance"
+  },
+  "quiz": [
+    {
+      "question": "What did Jeremiah tell the exiles to do in Babylon?",
+      "options": [
+        "Run away",
+        "Build houses, plant gardens, and pray for the city",
+        "Do nothing"
+      ],
+      "correct_index": 1,
+      "explanation": "Jeremiah wrote, 'Build houses, and dwell in them. Plant gardens... Seek the peace of the city.'",
+      "verse_ref": "Jeremiah 29:5-7"
+    },
+    {
+      "question": "How long did God say until He would bring them home?",
+      "options": [
+        "Seventy years",
+        "Seven days",
+        "Seven hundred years"
+      ],
+      "correct_index": 0,
+      "explanation": "God said, 'After seventy years are accomplished for Babylon, I will visit you.'",
+      "verse_ref": "Jeremiah 29:10"
+    },
+    {
+      "question": "When will people find God?",
+      "options": [
+        "When they are rich",
+        "When they are old",
+        "When they search for Him with all their heart"
+      ],
+      "correct_index": 2,
+      "explanation": "God said, 'You shall seek me, and find me, when you search for me with all your heart.'",
+      "verse_ref": "Jeremiah 29:13"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me grow right where I'm planted, even in places I didn't choose. I want to seek You with all my heart, because I know I'll find You. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "I grew up in Persia, far from Jerusalem, because of this exile. But my cousin Mordecai and I followed Jeremiah's advice: we bloomed where we were planted!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "palm_branch",
+      "clay"
+    ],
+    "unlock": "exile_garden"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

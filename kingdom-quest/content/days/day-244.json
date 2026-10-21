@@ -1,0 +1,122 @@
+{
+  "day": 244,
+  "month": 8,
+  "realm": 35,
+  "identity_phase": "character",
+  "is_sabbath_camp": false,
+  "theme": "Telling the Truth to Power",
+  "scripture_passage": "Daniel 5",
+  "story_title": "The Writing on the Wall",
+  "summary": "King Belshazzar threw a huge party and drank from cups taken from God's temple. Suddenly, a hand appeared and wrote on the wall. Daniel refused the king's gifts but told him the truth: his kingdom was finished. That night, the kingdom fell.",
+  "story_reel": {
+    "duration_seconds": 150,
+    "narration": "Many years later, Nebuchadnezzar's grandson Belshazzar was king of Babylon. One night, he threw a giant party for a thousand of his nobles. Then he did something terrible. He sent for the gold and silver cups that had been taken from God's temple in Jerusalem, and he and his guests drank from them while praising idols of gold, silver, bronze, iron, wood, and stone. Suddenly, the fingers of a human hand appeared and began writing on the plaster wall near the lampstand! The king watched the hand write. His face turned pale, his knees knocked together, and his legs gave out! He shouted for his wise men, but none of them could read the writing. Then the queen remembered Daniel. 'There's a man in your kingdom who has the spirit of the holy gods. Call Daniel!' Daniel came. The king said, 'If you can read this, I'll dress you in purple, put a gold chain around your neck, and make you the third ruler in the kingdom!' Daniel said, 'Keep your gifts. But I'll read the writing.' Then Daniel bravely reminded the king how God had humbled his grandfather, and said, 'You knew all this, but you didn't humble yourself. You praised idols instead of the God who holds your life in His hand.' The words said, 'MENE, MENE, TEKEL, UPHARSIN.' God had numbered the days of his kingdom and brought it to an end. That very night, the Medes and Persians took over Babylon.",
+    "scenes": [
+      {
+        "caption": "A giant party",
+        "art_direction": "A glittering banquet hall with a thousand guests and golden cups."
+      },
+      {
+        "caption": "The temple cups",
+        "art_direction": "Servants bringing in gold and silver cups from Jerusalem's temple; a sense of wrongness."
+      },
+      {
+        "caption": "A hand on the wall",
+        "art_direction": "A glowing hand writing mysterious letters on the plaster wall by lamplight."
+      },
+      {
+        "caption": "Knocking knees",
+        "art_direction": "The king turning pale, his knees knocking together comically."
+      },
+      {
+        "caption": "'Keep your gifts'",
+        "art_direction": "Old Daniel calmly waving away a purple robe and gold chain."
+      },
+      {
+        "caption": "MENE, MENE, TEKEL, UPHARSIN",
+        "art_direction": "The four words glowing on the wall as Daniel points to them; outside the window, Persian banners approach."
+      }
+    ]
+  },
+  "memory_verse": {
+    "reference": "Galatians 6:7",
+    "text": "Don't be deceived. God is not mocked, for whatever a man sows, that he will also reap.",
+    "translation": "WEB",
+    "tokens": [
+      "Don't be deceived.",
+      "God is not mocked,",
+      "for whatever",
+      "a man sows,",
+      "that he will",
+      "also reap."
+    ],
+    "distractors": [
+      "never reap."
+    ]
+  },
+  "identity_focus": {
+    "core_truth": "I can tell the truth with courage, and I don't need rewards to do what's right.",
+    "reflection_prompt": "Daniel said, 'Keep your gifts,' and told the king the truth. When is it hard to tell the truth to someone important?",
+    "reflection_choices": [
+      "To a teacher",
+      "To a parent",
+      "To a friend who's popular",
+      "Something else (tell or draw it!)"
+    ],
+    "trait_unlocked": "honesty"
+  },
+  "quiz": [
+    {
+      "question": "What did King Belshazzar drink from at his party?",
+      "options": [
+        "Plastic cups",
+        "Gold and silver cups taken from God's temple",
+        "Clay bowls"
+      ],
+      "correct_index": 1,
+      "explanation": "They brought the golden vessels taken out of the temple... and the king and his lords drank from them.",
+      "verse_ref": "Daniel 5:3"
+    },
+    {
+      "question": "What appeared during the party?",
+      "options": [
+        "The fingers of a hand writing on the wall",
+        "A flock of birds",
+        "A fire"
+      ],
+      "correct_index": 0,
+      "explanation": "The fingers of a man's hand came out and wrote on the plaster of the wall.",
+      "verse_ref": "Daniel 5:5"
+    },
+    {
+      "question": "What did Daniel say about the king's gifts?",
+      "options": [
+        "'Thank you!'",
+        "'I want more.'",
+        "'Keep your gifts.'"
+      ],
+      "correct_index": 2,
+      "explanation": "Daniel answered, 'Let your gifts be to yourself, and give your rewards to another.'",
+      "verse_ref": "Daniel 5:17"
+    }
+  ],
+  "micro_prayer": {
+    "text": "Yahweh, help me tell the truth with courage, even to important people. I don't need rewards to do what's right. I want to honor You. Amen."
+  },
+  "companion": {
+    "id": "esther",
+    "message": "By the time this happened, Daniel was old, but still brave! That very night, the Persians took over. Later, a Persian king would become my husband!"
+  },
+  "rewards": {
+    "light_stones": 10,
+    "materials": [
+      "lamp",
+      "clay"
+    ],
+    "unlock": "writing_on_the_wall"
+  },
+  "review": {
+    "status": "draft",
+    "notes": "Belshazzar is killed that night (Daniel 5:30); narration says only that 'the Medes and Persians took over Babylon.' Confirm."
+  }
+}
