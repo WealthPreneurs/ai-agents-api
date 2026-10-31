@@ -47,6 +47,12 @@ user's plan and usage. Create the tables with
 table (row-level security scopes rows to their owner). Create it by running
 `dashboard/supabase/deals.sql` in the Supabase SQL editor.
 
+## MCP server
+
+`mcp-server/` is an MCP server for this API. It lets Claude Desktop, Claude
+Code, or any MCP client ask the consulting agents, run the Deal Engine, list or
+open saved memos, and check plan usage. See `mcp-server/README.md`.
+
 ## Environment variables
 
 | Variable | Default | Notes |
