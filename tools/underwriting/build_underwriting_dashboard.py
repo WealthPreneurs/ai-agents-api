@@ -10,7 +10,7 @@ import sys
 
 import openpyxl
 from openpyxl.comments import Comment
-from openpyxl.formatting.rule import FormulaRule
+from openpyxl.formatting.rule import ColorScaleRule, FormulaRule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 
 UW = "'Underwriting & Debt'"  # quoted sheet name for cross-sheet references
@@ -357,6 +357,125 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
     for col in "BCDEFG":
         ws2.column_dimensions[col].width = 20
     ws2.freeze_panes = "B8"
+
+    # =========================================================================
+    # TAB 3: SENSITIVITY - EXIT CAP RATE vs. ANNUAL RENT GROWTH
+    # =========================================================================
+    P = "'5-Year Projections'"
+    ws3 = wb.create_sheet(title="Sensitivity")
+    ws3.sheet_view.showGridLines = True
+
+    ws3.merge_cells("A1:I1")
+    ws3["A1"] = "EXIT CAP RATE x RENT GROWTH SENSITIVITY"
+    ws3["A1"].font = font_title
+    ws3["A1"].fill = navy_header
+    ws3["A1"].alignment = Alignment(horizontal="center", vertical="center")
+    ws3.row_dimensions[1].height = 40
+    ws3.merge_cells("A2:I2")
+    ws3["A2"] = ("Each cell re-runs the full 5-year hold for that exit cap and rent growth. Everything else "
+                 "(expense growth, debt, selling costs) comes from the other tabs. The outlined cell is the base case.")
+    ws3["A2"].font = font_note
+
+    ws3.merge_cells("A3:F3")
+    ws3["A3"] = "SENSITIVITY AXES"
+    ws3["A3"].font = font_section
+    axes = [
+        (4, "Exit Cap Rate - Base Case", f"={P}!B25", font_link, "From 5-Year Projections (Exit Capitalization Rate)."),
+        (5, "Exit Cap Rate - Step", 0.005, font_input, "Spacing between rows."),
+        (6, "Annual Rent Growth - Base Case", f"={P}!B4", font_link, "From 5-Year Projections (Annual Rental Growth Rate)."),
+        (7, "Annual Rent Growth - Step", 0.01, font_input, "Spacing between columns."),
+    ]
+    for row, label, value, font, note in axes:
+        ws3.cell(row=row, column=1, value=label).font = font_regular
+        c = ws3.cell(row=row, column=2, value=value)
+        c.font = font
+        c.number_format = "0.00%"
+        c.border = border_cell
+        ws3.cell(row=row, column=3, value=note).font = font_note
+
+    steps = [-2, -1, 0, 1, 2]
+    grid_cols = "BCDEF"
+    engine_first_row = 28
+    base_border = Border(left=thick_bottom, right=thick_bottom, top=thick_bottom, bottom=thick_bottom)
+
+    def engine_row(i, j):
+        return engine_first_row + i * len(steps) + j
+
+    def sensitivity_table(top, title, cell_formula, number_format):
+        ws3.merge_cells(start_row=top, start_column=1, end_row=top, end_column=6)
+        ws3.cell(row=top, column=1, value=title).font = font_section
+        hdr = top + 1
+        ws3.row_dimensions[hdr].height = 30
+        corner = ws3.cell(row=hdr, column=1, value="Exit Cap (rows) / Rent Growth (columns)")
+        corner.font = font_header
+        corner.fill = navy_header
+        corner.alignment = Alignment(wrap_text=True, vertical="center")
+        for j, col in enumerate(grid_cols):
+            c = ws3[f"{col}{hdr}"]
+            c.value = f"=$B$6+({steps[j]})*$B$7"
+            c.font = font_header
+            c.fill = navy_header
+            c.number_format = "0.0%"
+            c.alignment = Alignment(horizontal="center", vertical="center")
+        for i in range(len(steps)):
+            r = hdr + 1 + i
+            lbl = ws3.cell(row=r, column=1, value=f"=$B$4+({steps[i]})*$B$5")
+            lbl.font = font_header
+            lbl.fill = navy_header
+            lbl.number_format = "0.00%"
+            lbl.alignment = Alignment(horizontal="center")
+            for j, col in enumerate(grid_cols):
+                c = ws3[f"{col}{r}"]
+                c.value = cell_formula(engine_row(i, j))
+                c.number_format = number_format
+                c.font = font_bold
+                c.alignment = Alignment(horizontal="center")
+                c.border = base_border if (steps[i], steps[j]) == (0, 0) else border_cell
+        rng = f"B{hdr + 1}:F{hdr + len(steps)}"
+        ws3.conditional_formatting.add(rng, ColorScaleRule(
+            start_type="min", start_color="F8CBAD",
+            mid_type="percentile", mid_value=50, mid_color="FFF2CC",
+            end_type="max", end_color="C6EFCE"))
+        return hdr
+
+    irr_hdr = sensitivity_table(9, "LEVERED IRR (5-YEAR HOLD)",
+                                lambda er: f"=IRR(D{er}:I{er})", "0.0%")
+    sensitivity_table(17, "EQUITY MULTIPLE (5-YEAR HOLD)",
+                      lambda er: f"=IF({P}!$B$31=0,0,SUM(E{er}:I{er})/{P}!$B$31)", MULTIPLE)
+
+    # ---- Scenario cash-flow engine (one row per grid cell) -----------------
+    ws3.merge_cells("A26:I26")
+    ws3["A26"] = "SCENARIO CASH FLOW ENGINE (feeds both tables - no inputs here)"
+    ws3["A26"].font = font_section
+    header_row(ws3, 27, ["Scenario", "Exit Cap", "Rent Growth", "Year 0 (Close)",
+                         "Year 1", "Year 2", "Year 3", "Year 4", "Year 5 + Sale"])
+    inc1, exp1 = f"{P}!$B$11", f"{P}!$B$15"  # Year-1 income and expenses
+    exp_g, debt = f"{P}!$B$5", f"{P}!$B$17"
+    for i in range(len(steps)):
+        for j, gcol in enumerate(grid_cols):
+            r = engine_row(i, j)
+            cap, g = f"$B{r}", f"$C{r}"
+
+            def noi(n):
+                return f"({inc1}*(1+{g})^{n - 1}-{exp1}*(1+{exp_g})^{n - 1})"
+
+            cells = [
+                f"Cap {i + 1} / Growth {j + 1}",
+                f"=$A${irr_hdr + 1 + i}",
+                f"={gcol}${irr_hdr}",
+                f"=-{P}!$B$31",
+            ] + [f"={noi(n)}-{debt}" for n in range(1, 5)] + [
+                f"={noi(5)}-{debt}+IF({cap}<=0,0,{noi(5)}/{cap}*(1-{P}!$B$26))-{P}!$B$29"
+            ]
+            for k, value in enumerate(cells, 1):
+                c = ws3.cell(row=r, column=k, value=value)
+                c.font = font_regular
+                c.border = border_cell
+                c.number_format = {2: "0.00%", 3: "0.0%"}.get(k, CURRENCY)
+
+    ws3.column_dimensions["A"].width = 36
+    for col in "BCDEFGHI":
+        ws3.column_dimensions[col].width = 16
 
     wb.save(output_path)
     return output_path
