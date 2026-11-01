@@ -401,8 +401,11 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
     # Row map for this tab
     GRID3_AXES = 25            # axis inputs for the rent x price grid (rows 25-28)
     GRID3_TOP = 30             # rent x price grid title
-    ENGINE1_TOP = 38           # exit cap x rent growth engine title
+    GRID4_AXES = 39            # axis inputs for the utility savings x exit cap grid (rows 39-42)
+    GRID4_TOP = 44             # utility savings x exit cap grid title
+    ENGINE1_TOP = 53           # exit cap x rent growth engine title
     ENGINE2_TOP = ENGINE1_TOP + n_cells + 4
+    ENGINE3_TOP = ENGINE2_TOP + n_cells + 4
 
     def engine_row(engine_top, i, j):
         return engine_top + 2 + i * len(steps) + j
@@ -484,6 +487,33 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
              value="Purchase price also moves the loan (same LTV), debt service, equity and Year-5 loan balance. "
                    "RUBS, other income, expenses, growth and exit cap stay at their model values.").font = font_note
 
+    # ---- Grid 4 axes: Year-1 utility savings vs. exit cap -----------------
+    b = GRID4_AXES
+    grid4_axes = [
+        (b, "Year-1 Utility Savings - Base Case", f"={UW}!B20-{UW}!C20", font_link, CURRENCY,
+         "Current minus projected Master-Metered Utilities on Underwriting & Debt."),
+        (b + 1, "Year-1 Utility Savings - Step", 7500, font_input, CURRENCY,
+         "Spacing between rows. At $7.5k the lowest row is $0 savings (utilities stay at today's cost)."),
+        (b + 2, "Exit Cap Rate - Base Case", f"={P}!B25", font_link, "0.00%",
+         "From 5-Year Projections (Exit Capitalization Rate)."),
+        (b + 3, "Exit Cap Rate - Step", 0.005, font_input, "0.00%", "Spacing between columns."),
+    ]
+    for row, label, value, font, number_format, note in grid4_axes:
+        ws3.cell(row=row, column=1, value=label).font = font_regular
+        c = ws3.cell(row=row, column=2, value=value)
+        c.font = font
+        c.number_format = number_format
+        c.border = border_cell
+        ws3.cell(row=row, column=3, value=note).font = font_note
+    util_hdr = sensitivity_table(
+        GRID4_TOP, "4) LEVERED IRR (5-YEAR HOLD) - YEAR-1 UTILITY SAVINGS vs. EXIT CAP",
+        "Utility Savings (rows) / Exit Cap (columns)",
+        (f"$B${b}", f"$B${b + 1}", f"$B${b + 2}", f"$B${b + 3}"), (CURRENCY, "0.00%"),
+        ENGINE3_TOP, lambda er: f"=IRR(F{er}:K{er})", "0.0%")
+    ws3.cell(row=GRID4_TOP + 7, column=1,
+             value="Savings come off today's Master-Metered Utilities (floored at $0 cost) and grow with the expense "
+                   "escalator. Rent, RUBS, other income, debt and purchase price stay at their model values.").font = font_note
+
     def engine_block(top, title, headers, rows):
         ws3.merge_cells(start_row=top, start_column=1, end_row=top, end_column=len(headers))
         ws3.cell(row=top, column=1, value=title).font = font_section
@@ -546,6 +576,30 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
                  ["Scenario", "Purchase Price", "Year-1 GPR", "Loan", "Debt Service", "Equity",
                   "Yr-5 Loan Bal.", "Year 0 (Close)", "Year 1", "Year 2", "Year 3", "Year 4",
                   "Year 5 + Sale"], rows2)
+
+    # ---- Engine 3: utility savings x exit cap (feeds grid 4) --------------
+    rows3 = []
+    for i in range(len(steps)):
+        for j, ccol in enumerate(grid_cols):
+            r = engine_row(ENGINE3_TOP, i, j)
+            cap = f"$C{r}"
+
+            def noi(n, r=r):
+                return f"({inc1}*(1+{rent_g})^{n - 1}-$E{r}*(1+{exp_g})^{n - 1})"
+
+            cells = [
+                f"Savings {i + 1} / Cap {j + 1}",
+                f"=$A${util_hdr + 1 + i}",                                # B utility savings
+                f"={ccol}${util_hdr}",                                    # C exit cap
+                f"=MAX(0,{UW}!$B$20-B{r})",                               # D Year-1 utilities
+                f"={exp1}-{UW}!$C$20+D{r}",                               # E Year-1 total OpEx
+                f"=-{P}!$B$31",                                           # F Year 0
+            ] + [f"={noi(n)}-{debt}" for n in range(1, 5)] + [
+                f"={noi(5)}-{debt}+IF({cap}<=0,0,{noi(5)}/{cap}*(1-{sell_pct}))-{P}!$B$29"]
+            rows3.append((r, cells, {3: "0.00%"}))
+    engine_block(ENGINE3_TOP, "ENGINE C - UTILITY SAVINGS x EXIT CAP (feeds grid 4 - no inputs here)",
+                 ["Scenario", "Utility Savings", "Exit Cap", "Yr-1 Utilities", "Yr-1 OpEx", "Year 0 (Close)",
+                  "Year 1", "Year 2", "Year 3", "Year 4", "Year 5 + Sale"], rows3)
 
     ws3.column_dimensions["A"].width = 40
     for col in "BCDEFGHIJKLM":
