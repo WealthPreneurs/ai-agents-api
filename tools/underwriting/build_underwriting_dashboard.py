@@ -307,8 +307,8 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
     header_row(ws2, 24, ["Exit Parameter", "Value", "", "", "", ""])
 
     exit_rows = [
-        (25, "Exit Capitalization Rate", f"={UW}!B10", PERCENT, font_link,
-         "Defaults to the Tab 1 target cap rate; overwrite with a number to stress-test."),
+        (25, "Exit Capitalization Rate", 0.085, PERCENT, font_input,
+         "Set to the 8.5% going-in cap ($111k current NOI / $1.3M price) - no cap compression assumed."),
         (26, "Selling Costs (% of Sale Price)", 0.03, PERCENT, font_input, "Broker, legal and closing costs."),
         (27, "Projected Sale Price (Year-5 NOI / Exit Cap)", "=IF(B25=0,0,F16/B25)", CURRENCY, font_bold, None),
         (28, "Less: Selling Costs", "=B27*B26", CURRENCY, font_bold, None),
