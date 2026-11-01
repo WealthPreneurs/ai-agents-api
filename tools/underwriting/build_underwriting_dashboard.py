@@ -366,14 +366,14 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
     ws3.sheet_view.showGridLines = True
 
     ws3.merge_cells("A1:I1")
-    ws3["A1"] = "EXIT CAP RATE x RENT GROWTH SENSITIVITY"
+    ws3["A1"] = "DEAL SENSITIVITY ANALYSIS"
     ws3["A1"].font = font_title
     ws3["A1"].fill = navy_header
     ws3["A1"].alignment = Alignment(horizontal="center", vertical="center")
     ws3.row_dimensions[1].height = 40
     ws3.merge_cells("A2:I2")
-    ws3["A2"] = ("Each cell re-runs the full 5-year hold for that exit cap and rent growth. Everything else "
-                 "(expense growth, debt, selling costs) comes from the other tabs. The outlined cell is the base case.")
+    ws3["A2"] = ("Each grid cell re-runs the full 5-year hold for that scenario; everything not on a grid's axes "
+                 "comes from the other tabs. The outlined cell is the base case.")
     ws3["A2"].font = font_note
 
     ws3.merge_cells("A3:F3")
@@ -395,38 +395,48 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
 
     steps = [-2, -1, 0, 1, 2]
     grid_cols = "BCDEF"
-    engine_first_row = 28
+    n_cells = len(steps) ** 2
     base_border = Border(left=thick_bottom, right=thick_bottom, top=thick_bottom, bottom=thick_bottom)
 
-    def engine_row(i, j):
-        return engine_first_row + i * len(steps) + j
+    # Row map for this tab
+    GRID3_AXES = 25            # axis inputs for the rent x price grid (rows 25-28)
+    GRID3_TOP = 30             # rent x price grid title
+    ENGINE1_TOP = 38           # exit cap x rent growth engine title
+    ENGINE2_TOP = ENGINE1_TOP + n_cells + 4
 
-    def sensitivity_table(top, title, cell_formula, number_format):
+    def engine_row(engine_top, i, j):
+        return engine_top + 2 + i * len(steps) + j
+
+    def sensitivity_table(top, title, corner_text, axes_cells, axis_formats, engine_top,
+                          cell_formula, number_format):
+        """5x5 grid. axes_cells = (row base, row step, col base, col step) as absolute refs."""
+        row_base, row_step, col_base, col_step = axes_cells
+        row_fmt, col_fmt = axis_formats
         ws3.merge_cells(start_row=top, start_column=1, end_row=top, end_column=6)
         ws3.cell(row=top, column=1, value=title).font = font_section
         hdr = top + 1
         ws3.row_dimensions[hdr].height = 30
-        corner = ws3.cell(row=hdr, column=1, value="Exit Cap (rows) / Rent Growth (columns)")
+        corner = ws3.cell(row=hdr, column=1, value=corner_text)
         corner.font = font_header
         corner.fill = navy_header
         corner.alignment = Alignment(wrap_text=True, vertical="center")
         for j, col in enumerate(grid_cols):
             c = ws3[f"{col}{hdr}"]
-            c.value = f"=$B$6+({steps[j]})*$B$7"
+            c.value = f"={col_base}+({steps[j]})*{col_step}"
             c.font = font_header
             c.fill = navy_header
-            c.number_format = "0.0%"
+            c.number_format = col_fmt
             c.alignment = Alignment(horizontal="center", vertical="center")
         for i in range(len(steps)):
             r = hdr + 1 + i
-            lbl = ws3.cell(row=r, column=1, value=f"=$B$4+({steps[i]})*$B$5")
+            lbl = ws3.cell(row=r, column=1, value=f"={row_base}+({steps[i]})*{row_step}")
             lbl.font = font_header
             lbl.fill = navy_header
-            lbl.number_format = "0.00%"
+            lbl.number_format = row_fmt
             lbl.alignment = Alignment(horizontal="center")
             for j, col in enumerate(grid_cols):
                 c = ws3[f"{col}{r}"]
-                c.value = cell_formula(engine_row(i, j))
+                c.value = cell_formula(engine_row(engine_top, i, j))
                 c.number_format = number_format
                 c.font = font_bold
                 c.alignment = Alignment(horizontal="center")
@@ -438,43 +448,107 @@ def create_advanced_underwriting_dashboard(output_path="WealthPreneurs_Underwrit
             end_type="max", end_color="C6EFCE"))
         return hdr
 
-    irr_hdr = sensitivity_table(9, "LEVERED IRR (5-YEAR HOLD)",
-                                lambda er: f"=IRR(D{er}:I{er})", "0.0%")
-    sensitivity_table(17, "EQUITY MULTIPLE (5-YEAR HOLD)",
-                      lambda er: f"=IF({P}!$B$31=0,0,SUM(E{er}:I{er})/{P}!$B$31)", MULTIPLE)
+    cap_growth_axes = ("$B$4", "$B$5", "$B$6", "$B$7")
+    irr_hdr = sensitivity_table(
+        9, "1) LEVERED IRR (5-YEAR HOLD) - EXIT CAP vs. RENT GROWTH",
+        "Exit Cap (rows) / Rent Growth (columns)", cap_growth_axes, ("0.00%", "0.0%"),
+        ENGINE1_TOP, lambda er: f"=IRR(D{er}:I{er})", "0.0%")
+    sensitivity_table(
+        17, "2) EQUITY MULTIPLE (5-YEAR HOLD) - EXIT CAP vs. RENT GROWTH",
+        "Exit Cap (rows) / Rent Growth (columns)", cap_growth_axes, ("0.00%", "0.0%"),
+        ENGINE1_TOP, lambda er: f"=IF({P}!$B$31=0,0,SUM(E{er}:I{er})/{P}!$B$31)", MULTIPLE)
 
-    # ---- Scenario cash-flow engine (one row per grid cell) -----------------
-    ws3.merge_cells("A26:I26")
-    ws3["A26"] = "SCENARIO CASH FLOW ENGINE (feeds both tables - no inputs here)"
-    ws3["A26"].font = font_section
-    header_row(ws3, 27, ["Scenario", "Exit Cap", "Rent Growth", "Year 0 (Close)",
-                         "Year 1", "Year 2", "Year 3", "Year 4", "Year 5 + Sale"])
-    inc1, exp1 = f"{P}!$B$11", f"{P}!$B$15"  # Year-1 income and expenses
-    exp_g, debt = f"{P}!$B$5", f"{P}!$B$17"
-    for i in range(len(steps)):
-        for j, gcol in enumerate(grid_cols):
-            r = engine_row(i, j)
-            cap, g = f"$B{r}", f"$C{r}"
+    # ---- Grid 3 axes: stabilized Year-1 rent vs. purchase price -----------
+    a = GRID3_AXES
+    grid3_axes = [
+        (a, "Year-1 Stabilized GPR - Base Case", f"={UW}!C13", font_link,
+         "From Underwriting & Debt (Projected Gross Potential Rent)."),
+        (a + 1, "Year-1 Stabilized GPR - Step", 30000, font_input,
+         "Spacing between rows. At $30k the lowest row equals today's $180k rent (value-add rent bump fails)."),
+        (a + 2, "Purchase Price - Base Case", f"={UW}!B8", font_link, "From Underwriting & Debt (Purchase Price)."),
+        (a + 3, "Purchase Price - Step", 100000, font_input, "Spacing between columns."),
+    ]
+    for row, label, value, font, note in grid3_axes:
+        ws3.cell(row=row, column=1, value=label).font = font_regular
+        c = ws3.cell(row=row, column=2, value=value)
+        c.font = font
+        c.number_format = CURRENCY
+        c.border = border_cell
+        ws3.cell(row=row, column=3, value=note).font = font_note
+    rent_hdr = sensitivity_table(
+        GRID3_TOP, "3) LEVERED IRR (5-YEAR HOLD) - YEAR-1 RENT vs. PURCHASE PRICE",
+        "Year-1 GPR (rows) / Purchase Price (columns)",
+        (f"$B${a}", f"$B${a + 1}", f"$B${a + 2}", f"$B${a + 3}"), (CURRENCY, CURRENCY),
+        ENGINE2_TOP, lambda er: f"=IRR(H{er}:M{er})", "0.0%")
+    ws3.cell(row=GRID3_TOP + 7, column=1,
+             value="Purchase price also moves the loan (same LTV), debt service, equity and Year-5 loan balance. "
+                   "RUBS, other income, expenses, growth and exit cap stay at their model values.").font = font_note
 
-            def noi(n):
-                return f"({inc1}*(1+{g})^{n - 1}-{exp1}*(1+{exp_g})^{n - 1})"
-
-            cells = [
-                f"Cap {i + 1} / Growth {j + 1}",
-                f"=$A${irr_hdr + 1 + i}",
-                f"={gcol}${irr_hdr}",
-                f"=-{P}!$B$31",
-            ] + [f"={noi(n)}-{debt}" for n in range(1, 5)] + [
-                f"={noi(5)}-{debt}+IF({cap}<=0,0,{noi(5)}/{cap}*(1-{P}!$B$26))-{P}!$B$29"
-            ]
+    def engine_block(top, title, headers, rows):
+        ws3.merge_cells(start_row=top, start_column=1, end_row=top, end_column=len(headers))
+        ws3.cell(row=top, column=1, value=title).font = font_section
+        header_row(ws3, top + 1, headers)
+        for r, cells, formats in rows:
             for k, value in enumerate(cells, 1):
                 c = ws3.cell(row=r, column=k, value=value)
                 c.font = font_regular
                 c.border = border_cell
-                c.number_format = {2: "0.00%", 3: "0.0%"}.get(k, CURRENCY)
+                c.number_format = formats.get(k, CURRENCY)
 
-    ws3.column_dimensions["A"].width = 36
-    for col in "BCDEFGHI":
+    exit_cap, sell_pct = f"{P}!$B$25", f"{P}!$B$26"
+    rent_g, exp_g = f"{P}!$B$4", f"{P}!$B$5"
+    exp1 = f"{P}!$B$15"  # Year-1 operating expenses
+
+    # ---- Engine 1: exit cap x rent growth (feeds grids 1 and 2) -----------
+    inc1, debt = f"{P}!$B$11", f"{P}!$B$17"
+    rows1 = []
+    for i in range(len(steps)):
+        for j, gcol in enumerate(grid_cols):
+            r = engine_row(ENGINE1_TOP, i, j)
+            cap, g = f"$B{r}", f"$C{r}"
+
+            def noi(n, g=g):
+                return f"({inc1}*(1+{g})^{n - 1}-{exp1}*(1+{exp_g})^{n - 1})"
+
+            cells = [f"Cap {i + 1} / Growth {j + 1}", f"=$A${irr_hdr + 1 + i}", f"={gcol}${irr_hdr}",
+                     f"=-{P}!$B$31"] + [f"={noi(n)}-{debt}" for n in range(1, 5)] + [
+                f"={noi(5)}-{debt}+IF({cap}<=0,0,{noi(5)}/{cap}*(1-{sell_pct}))-{P}!$B$29"]
+            rows1.append((r, cells, {2: "0.00%", 3: "0.0%"}))
+    engine_block(ENGINE1_TOP, "ENGINE A - EXIT CAP x RENT GROWTH (feeds grids 1 & 2 - no inputs here)",
+                 ["Scenario", "Exit Cap", "Rent Growth", "Year 0 (Close)",
+                  "Year 1", "Year 2", "Year 3", "Year 4", "Year 5 + Sale"], rows1)
+
+    # ---- Engine 2: Year-1 rent x purchase price (feeds grid 3) ------------
+    ltv, rate, term, capex = f"{UW}!$B$25", f"{UW}!$B$26", f"{UW}!$B$27", f"{UW}!$B$9"
+    rows2 = []
+    for i in range(len(steps)):
+        for j, pcol in enumerate(grid_cols):
+            r = engine_row(ENGINE2_TOP, i, j)
+            gpr, loan = f"$C{r}", f"$D{r}"
+
+            def noi(n, gpr=gpr):
+                return (f"(({gpr}+{UW}!$C$14+{UW}!$C$15)*(1+{rent_g})^{n - 1}"
+                        f"-{exp1}*(1+{exp_g})^{n - 1})")
+
+            cells = [
+                f"Rent {i + 1} / Price {j + 1}",
+                f"={pcol}${rent_hdr}",                                    # B purchase price
+                f"=$A${rent_hdr + 1 + i}",                                # C Year-1 GPR
+                f"=B{r}*{ltv}",                                           # D loan
+                f"=PMT({rate}/12,{term}*12,-{loan})*12",                  # E annual debt service
+                f"=(B{r}-{loan})+{capex}",                                # F equity
+                f"=-FV({rate}/12,60,-PMT({rate}/12,{term}*12,-{loan}),{loan})",  # G Year-5 balance
+                f"=-F{r}",                                                # H Year 0
+            ] + [f"={noi(n)}-E{r}" for n in range(1, 5)] + [
+                f"={noi(5)}-E{r}+IF({exit_cap}<=0,0,{noi(5)}/{exit_cap}*(1-{sell_pct}))-G{r}"]
+            rows2.append((r, cells, {}))
+    engine_block(ENGINE2_TOP, "ENGINE B - YEAR-1 RENT x PURCHASE PRICE (feeds grid 3 - no inputs here)",
+                 ["Scenario", "Purchase Price", "Year-1 GPR", "Loan", "Debt Service", "Equity",
+                  "Yr-5 Loan Bal.", "Year 0 (Close)", "Year 1", "Year 2", "Year 3", "Year 4",
+                  "Year 5 + Sale"], rows2)
+
+    ws3.column_dimensions["A"].width = 40
+    for col in "BCDEFGHIJKLM":
         ws3.column_dimensions[col].width = 16
 
     wb.save(output_path)
