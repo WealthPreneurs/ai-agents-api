@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>All Things Xceptional</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="All Things Xceptional LLC: doorstep trash valet, groundskeeping, dog station, dumpster area and common area care for apartment communities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700;1,800;1,900&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  if (window.tailwind) tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950: '#040B20', 900: '#081633', 800: '#0E2350', 700: '#163275', 600: '#1F4396' },
+          volt: { DEFAULT: '#1F6BFF', light: '#5B93FF', pale: '#DCE7FF' },
+          spark: { DEFAULT: '#FF8A1F', deep: '#E86F00' },
+          frost: '#F3F6FC',
+          slate2: '#5A6785'
+        },
+        fontFamily: {
+          display: ['"Barlow Condensed"', '"Arial Narrow"', 'Impact', 'sans-serif'],
+          body: ['Figtree', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'ui-monospace', 'Menlo', 'monospace']
+        }
+      }
+    }
+  };
+</script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<style>
+  /* Layout: navy night-route world (the crew works after dark) with bright frost-white content bands; one spark-burst moment in the hero. */
+  :root {
+    --navy-950: #040B20;
+    --navy-900: #081633;
+    --navy-800: #0E2350;
+    --volt: #1F6BFF;
+    --volt-light: #5B93FF;
+    --spark: #FF8A1F;
+    --frost: #F3F6FC;
+    --ink: #0B1530;
+    --muted: #5A6785;
+    --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+    --font-body: Figtree, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    color-scheme: light;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--frost); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--navy-950); }
+  .wrap { width: 100%; max-width: 1200px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  @media (min-width: 768px) { .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); } }
+  .display { font-family: var(--font-display); font-style: italic; font-weight: 800; letter-spacing: -0.005em; line-height: .92; text-transform: uppercase; text-wrap: balance; }
+  h1, h2, h3 { text-wrap: balance; }
+  .eyebrow { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; }
+  .tabnums { font-variant-numeric: tabular-nums; }
+  .site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; }
+  .x-mark { color: var(--volt-light); }
+  .grid-bg { background-image: linear-gradient(rgba(91,147,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(91,147,255,.07) 1px, transparent 1px); background-size: 44px 44px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border-radius: 10px; font-weight: 700; padding: .85rem 1.25rem; transition: transform .15s ease, background-color .15s ease, box-shadow .15s ease; }
+  .btn:active { transform: translateY(1px); }
+  .btn-spark { background: var(--spark); color: #1A0D00; box-shadow: 0 8px 24px -10px rgba(255,138,31,.8); }
+  .btn-spark:hover { background: #FF9C40; }
+  .btn-ghost { border: 1.5px solid rgba(220,231,255,.35); color: #fff; }
+  .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+  :focus-visible { outline: 3px solid var(--spark); outline-offset: 2px; border-radius: 6px; }
+  .tab[aria-selected="true"] { background: var(--navy-900); color: #fff; border-color: var(--navy-900); }
+  .tab[aria-selected="true"] .tab-icon { background: var(--volt); color: #fff; }
+  .route-row[data-state="done"] .route-status { color: #2FBF71; }
+  .route-row[data-state="active"] { background: rgba(31,107,255,.14); }
+  .route-row[data-state="active"] .route-status { color: var(--spark); }
+  .faq-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .25s ease; }
+  .faq-item[data-open="true"] .faq-panel { grid-template-rows: 1fr; }
+  .faq-item[data-open="true"] .faq-chevron { transform: rotate(180deg); }
+  .chk { appearance: none; width: 1.15rem; height: 1.15rem; border: 2px solid #9AA7C4; border-radius: 5px; display: grid; place-content: center; flex: none; background: #fff; }
+  .chk:checked { background: var(--volt); border-color: var(--volt); }
+  .chk:checked::after { content: ""; width: .55rem; height: .3rem; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) translate(1px,-1px); }
+  .field { width: 100%; border: 1.5px solid #CCD5E8; border-radius: 10px; padding: .7rem .85rem; background: #fff; color: var(--ink); }
+  .field:focus { outline: none; border-color: var(--volt); box-shadow: 0 0 0 3px rgba(31,107,255,.18); }
+  .field[aria-invalid="true"] { border-color: #D93838; }
+  input[type="range"] { accent-color: var(--volt); }
+  .seg button[aria-pressed="true"] { background: var(--volt); color: #fff; border-color: var(--volt); }
+  #spark-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header bg-navy-950/95 backdrop-blur border-b border-white/10">
+  <div class="wrap flex items-center justify-between h-16">
+    <a href="#top" class="flex items-center gap-2.5 text-white" aria-label="All Things Xceptional, home">
+      <span class="grid place-items-center w-9 h-9 rounded-lg bg-volt display text-2xl text-white" aria-hidden="true">X</span>
+      <span class="leading-tight">
+        <span class="block font-display italic font-extrabold uppercase text-lg tracking-wide">All Things <span class="x-mark">X</span>ceptional</span>
+        <span class="block eyebrow text-[10px] text-volt-pale/60 -mt-0.5">Property services · LLC</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-volt-pale/80" aria-label="Primary">
+      <a href="#services" class="hover:text-white">Services</a>
+      <a href="#process" class="hover:text-white">How it works</a>
+      <a href="#builder" class="hover:text-white">Plan builder</a>
+      <a href="#faq" class="hover:text-white">FAQ</a>
+      <a href="#quote" class="btn btn-spark !py-2.5 text-sm">Request a walkthrough</a>
+    </nav>
+    <button id="menu-btn" class="lg:hidden grid place-items-center w-11 h-11 rounded-lg text-white hover:bg-white/10" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="lg:hidden border-t border-white/10 bg-navy-950" hidden>
+    <nav class="wrap flex flex-col py-3 text-base font-semibold text-white" aria-label="Mobile">
+      <a href="#services" class="py-3 border-b border-white/10">Services</a>
+      <a href="#process" class="py-3 border-b border-white/10">How it works</a>
+      <a href="#builder" class="py-3 border-b border-white/10">Plan builder</a>
+      <a href="#faq" class="py-3 border-b border-white/10">FAQ</a>
+      <a href="#quote" class="btn btn-spark mt-4 mb-2">Request a walkthrough</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ========== HERO ========== -->
+  <section class="relative overflow-hidden bg-navy-950 text-white grid-bg">
+    <canvas id="spark-canvas" aria-hidden="true"></canvas>
+    <div class="absolute -top-40 -right-32 w-[34rem] h-[34rem] rounded-full bg-volt/25 blur-3xl pointer-events-none" aria-hidden="true"></div>
+    <div class="wrap relative grid lg:grid-cols-[1.15fr_.85fr] gap-12 items-center py-16 md:py-24">
+      <div class="min-w-0">
+        <p class="eyebrow text-spark mb-5 flex items-center gap-2"><i data-lucide="moon" class="w-4 h-4"></i> Doorstep trash valet + property care for apartment communities</p>
+        <h1 class="display text-[3.4rem] sm:text-7xl xl:text-[6.2rem]">
+          If it's not <span id="x-word" class="text-volt-light">Xceptional,</span><br>
+          it's not <span class="text-volt-light">acceptable.</span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-volt-pale/80 max-w-[38rem]">
+          We handle the nightly pickups, dumpster areas, dog stations, grounds and hallways, so your residents notice a clean community and your team gets its evenings back.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#quote" class="btn btn-spark text-base">Request a free walkthrough <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+          <a href="#builder" class="btn btn-ghost text-base"><i data-lucide="sliders-horizontal" class="w-5 h-5"></i> Build your service plan</a>
+        </div>
+        <ul class="mt-10 grid sm:grid-cols-3 gap-4 text-sm text-volt-pale/80">
+          <li class="flex items-start gap-2"><i data-lucide="shield-check" class="w-5 h-5 text-volt-light flex-none"></i> Uniformed, background-checked crews</li>
+          <li class="flex items-start gap-2"><i data-lucide="camera" class="w-5 h-5 text-volt-light flex-none"></i> Photo-documented service reports</li>
+          <li class="flex items-start gap-2"><i data-lucide="layers" class="w-5 h-5 text-volt-light flex-none"></i> One vendor for six services</li>
+        </ul>
+      </div>
+
+      <!-- Sample route log -->
+      <aside class="min-w-0 rounded-2xl border border-white/10 bg-navy-900/80 backdrop-blur shadow-2xl shadow-black/40" aria-label="Sample nightly route log">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+          <div>
+            <p class="eyebrow text-volt-pale/60">Sample route log</p>
+            <p class="font-semibold">Tonight · Valet trash route</p>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-spark bg-spark/10 rounded-full px-2.5 py-1"><span class="w-2 h-2 rounded-full bg-spark animate-pulse"></span> In progress</span>
+        </div>
+        <ul id="route-list" class="font-mono text-sm divide-y divide-white/5"></ul>
+        <div class="px-5 py-4 border-t border-white/10 flex items-center justify-between gap-3 text-sm">
+          <span class="text-volt-pale/70">Doors serviced</span>
+          <span class="font-mono tabnums text-white"><span id="route-doors">0</span> / <span id="route-total">0</span></span>
+        </div>
+        <div class="px-5 pb-5">
+          <div class="h-2 rounded-full bg-white/10 overflow-hidden"><div id="route-bar" class="h-full bg-volt rounded-full transition-all duration-700" style="width:0%"></div></div>
+          <p class="mt-3 text-xs text-volt-pale/50">Example data. Your property manager dashboard shows each night's route the same way.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========== SERVICE STRIP ========== -->
+  <section class="bg-navy-900 text-white border-y border-white/10">
+    <div class="wrap py-6">
+      <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <li><a href="#services" data-goto="0" class="flex items-center gap-2.5 rounded-xl px-3 py-3 hover:bg-white/5"><span class="grid place-items-center w-9 h-9 rounded-full bg-volt/20 text-volt-light"><i data-lucide="trash-2" class="w-5 h-5"></i></span><span class="font-display italic font-extrabold uppercase leading-tight">Trash valet</span></a></li>
+        <li><a href="#services" data-goto="1" class="flex items-center gap-2.5 rounded-xl px-3 py-3 hover:bg-white/5"><span class="grid place-items-center w-9 h-9 rounded-full bg-volt/20 text-volt-light"><i data-lucide="sprout" class="w-5 h-5"></i></span><span class="font-display italic font-extrabold uppercase leading-tight">Groundskeeping</span></a></li>
+        <li><a href="#services" data-goto="2" class="flex items-center gap-2.5 rounded-xl px-3 py-3 hover:bg-white/5"><span class="grid place-items-center w-9 h-9 rounded-full bg-volt/20 text-volt-light"><i data-lucide="paw-print" class="w-5 h-5"></i></span><span class="font-display italic font-extrabold uppercase leading-tight">Dog stations</span></a></li>
+        <li><a href="#services" data-goto="3" class="flex items-center gap-2.5 rounded-xl px-3 py-3 hover:bg-white/5"><span class="grid place-items-center w-9 h-9 rounded-full bg-volt/20 text-volt-light"><i data-lucide="container" class="w-5 h-5"></i></span><span class="font-display italic font-extrabold uppercase leading-tight">Dumpster areas</span></a></li>
+        <li><a href="#services" data-goto="4" class="flex items-center gap-2.5 rounded-xl px-3 py-3 hover:bg-white/5"><span class="grid place-items-center w-9 h-9 rounded-full bg-volt/20 text-volt-light"><i data-lucide="building-2" class="w-5 h-5"></i></span><span class="font-display italic font-extrabold uppercase leading-tight">Common areas</span></a></li>
+        <li><a href="#services" data-goto="5" class="flex items-center gap-2.5 rounded-xl px-3 py-3 hover:bg-white/5"><span class="grid place-items-center w-9 h-9 rounded-full bg-volt/20 text-volt-light"><i data-lucide="spray-can" class="w-5 h-5"></i></span><span class="font-display italic font-extrabold uppercase leading-tight">Add-on services</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES (TABS) ========== -->
+  <section id="services" class="scroll-mt-20">
+    <div class="wrap py-20 md:py-28">
+      <div class="max-w-3xl">
+        <p class="eyebrow text-volt font-semibold">More than trash valet</p>
+        <h2 class="display text-5xl md:text-6xl mt-3 text-navy-900">Six services. One crew. One phone number.</h2>
+        <p class="mt-5 text-lg text-slate2 max-w-[42rem]">Most communities juggle a valet trash company, a landscaper, a porter and a pet-waste vendor. We cover all of it under one service agreement, so nothing falls between contracts.</p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-[320px_1fr] gap-6">
+        <div role="tablist" aria-label="Services" aria-orientation="vertical" id="svc-tabs" class="flex lg:flex-col gap-2 overflow-x-auto pb-2 lg:pb-0 -mx-1 px-1"></div>
+        <div id="svc-panel" role="tabpanel" class="min-w-0 rounded-2xl bg-white border border-[#DDE4F2] p-6 md:p-10" tabindex="0"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY ONE VENDOR ========== -->
+  <section class="bg-white border-y border-[#DDE4F2]">
+    <div class="wrap py-20 grid md:grid-cols-3 gap-10">
+      <div class="md:col-span-1">
+        <p class="eyebrow text-volt font-semibold">The Xceptional standard</p>
+        <h2 class="display text-5xl mt-3 text-navy-900">What every visit includes</h2>
+      </div>
+      <ul class="md:col-span-2 grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <li class="flex gap-4"><span class="grid place-items-center w-11 h-11 rounded-xl bg-volt/10 text-volt flex-none"><i data-lucide="clipboard-check" class="w-5 h-5"></i></span><div><h3 class="font-bold text-lg text-navy-900">Checklist-driven service</h3><p class="text-slate2 mt-1">Each crew works from your property's written scope. The same checklist every visit, no improvising.</p></div></li>
+        <li class="flex gap-4"><span class="grid place-items-center w-11 h-11 rounded-xl bg-volt/10 text-volt flex-none"><i data-lucide="camera" class="w-5 h-5"></i></span><div><h3 class="font-bold text-lg text-navy-900">Photo proof</h3><p class="text-slate2 mt-1">Dumpster pads, dog stations and problem spots are photographed so you can see the work without walking the site.</p></div></li>
+        <li class="flex gap-4"><span class="grid place-items-center w-11 h-11 rounded-xl bg-volt/10 text-volt flex-none"><i data-lucide="flag" class="w-5 h-5"></i></span><div><h3 class="font-bold text-lg text-navy-900">Violation flagging</h3><p class="text-slate2 mt-1">Overfilled bins, loose bags and lease-rule violations are logged with unit and time, ready for your office to act on.</p></div></li>
+        <li class="flex gap-4"><span class="grid place-items-center w-11 h-11 rounded-xl bg-volt/10 text-volt flex-none"><i data-lucide="headset" class="w-5 h-5"></i></span><div><h3 class="font-bold text-lg text-navy-900">A real point of contact</h3><p class="text-slate2 mt-1">One account lead who knows your community and answers when a resident complaint comes in.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section id="process" class="scroll-mt-20 bg-navy-950 text-white grid-bg">
+    <div class="wrap py-20 md:py-28">
+      <p class="eyebrow text-spark">How it works</p>
+      <h2 class="display text-5xl md:text-6xl mt-3 max-w-3xl">From first walkthrough to first night of service</h2>
+      <ol class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <li class="rounded-2xl border border-white/10 bg-white/[.03] p-6">
+          <span class="display text-5xl text-volt-light">01</span>
+          <h3 class="mt-4 font-bold text-lg">Site walkthrough</h3>
+          <p class="mt-2 text-volt-pale/70 text-sm">We walk the property with your manager: buildings, breezeways, compactor, pet areas and problem spots.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/[.03] p-6">
+          <span class="display text-5xl text-volt-light">02</span>
+          <h3 class="mt-4 font-bold text-lg">Written scope</h3>
+          <p class="mt-2 text-volt-pale/70 text-sm">You get a scope with the services, frequency and pickup window spelled out, priced for your unit count.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/[.03] p-6">
+          <span class="display text-5xl text-volt-light">03</span>
+          <h3 class="mt-4 font-bold text-lg">Resident launch</h3>
+          <p class="mt-2 text-volt-pale/70 text-sm">We provide resident rules and a launch notice your office can send, so pickup night one goes smoothly.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/[.03] p-6">
+          <span class="display text-5xl text-volt-light">04</span>
+          <h3 class="mt-4 font-bold text-lg">Nightly reporting</h3>
+          <p class="mt-2 text-volt-pale/70 text-sm">Every service night ends with a report: doors serviced, issues found, photos attached.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== PLAN BUILDER ========== -->
+  <section id="builder" class="scroll-mt-20">
+    <div class="wrap py-20 md:py-28">
+      <div class="max-w-3xl">
+        <p class="eyebrow text-volt font-semibold">Plan builder</p>
+        <h2 class="display text-5xl md:text-6xl mt-3 text-navy-900">Size your service plan in 30 seconds</h2>
+        <p class="mt-5 text-lg text-slate2">Set your community's size and pick services. We'll show the scope we'd plan around and carry it into your walkthrough request.</p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-[1.1fr_.9fr] gap-6 items-start">
+        <form id="builder-form" class="min-w-0 rounded-2xl bg-white border border-[#DDE4F2] p-6 md:p-8 grid gap-8" novalidate>
+          <div>
+            <div class="flex items-baseline justify-between gap-4">
+              <label for="b-units" class="font-bold text-navy-900">Number of units</label>
+              <output id="b-units-out" for="b-units" class="display text-4xl text-volt tabnums">240</output>
+            </div>
+            <input id="b-units" type="range" min="40" max="1000" step="10" value="240" class="w-full mt-3">
+            <div class="flex justify-between text-xs text-slate2 font-mono mt-1"><span>40</span><span>1,000</span></div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="b-buildings" class="font-bold text-navy-900">Buildings</label>
+              <div class="mt-2 flex items-center gap-2">
+                <button type="button" class="step grid place-items-center w-11 h-11 rounded-lg border border-[#CCD5E8] hover:border-volt" data-step="-1" aria-label="Fewer buildings"><i data-lucide="minus" class="w-4 h-4"></i></button>
+                <input id="b-buildings" type="number" min="1" max="80" value="10" class="field text-center tabnums !w-20" inputmode="numeric">
+                <button type="button" class="step grid place-items-center w-11 h-11 rounded-lg border border-[#CCD5E8] hover:border-volt" data-step="1" aria-label="More buildings"><i data-lucide="plus" class="w-4 h-4"></i></button>
+              </div>
+            </div>
+            <div>
+              <span id="b-nights-label" class="font-bold text-navy-900">Pickup nights per week</span>
+              <div class="seg mt-2 flex gap-2" role="group" aria-labelledby="b-nights-label">
+                <button type="button" data-nights="5" class="flex-1 h-11 rounded-lg border border-[#CCD5E8] font-semibold" aria-pressed="true">5</button>
+                <button type="button" data-nights="6" class="flex-1 h-11 rounded-lg border border-[#CCD5E8] font-semibold" aria-pressed="false">6</button>
+                <button type="button" data-nights="7" class="flex-1 h-11 rounded-lg border border-[#CCD5E8] font-semibold" aria-pressed="false">7</button>
+              </div>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend class="font-bold text-navy-900">Services</legend>
+            <div id="b-services" class="mt-3 grid sm:grid-cols-2 gap-2"></div>
+          </fieldset>
+        </form>
+
+        <aside class="min-w-0 rounded-2xl bg-navy-900 text-white p-6 md:p-8 lg:sticky lg:top-24" aria-live="polite">
+          <p class="eyebrow text-volt-pale/60">Your plan scope</p>
+          <dl class="mt-5 grid grid-cols-2 gap-4">
+            <div class="rounded-xl bg-white/5 p-4"><dt class="text-xs text-volt-pale/60">Doorstep pickups / month</dt><dd id="s-pickups" class="display text-4xl mt-1 tabnums">5,200</dd></div>
+            <div class="rounded-xl bg-white/5 p-4"><dt class="text-xs text-volt-pale/60">Service nights / month</dt><dd id="s-nights" class="display text-4xl mt-1 tabnums">22</dd></div>
+            <div class="rounded-xl bg-white/5 p-4"><dt class="text-xs text-volt-pale/60">Avg doors / building</dt><dd id="s-doors" class="display text-4xl mt-1 tabnums">24</dd></div>
+            <div class="rounded-xl bg-white/5 p-4"><dt class="text-xs text-volt-pale/60">Services bundled</dt><dd id="s-count" class="display text-4xl mt-1 tabnums">2</dd></div>
+          </dl>
+          <div class="mt-6">
+            <p class="text-sm text-volt-pale/70">Included in this plan</p>
+            <ul id="s-list" class="mt-2 flex flex-wrap gap-2"></ul>
+          </div>
+          <p id="s-tip" class="mt-6 text-sm text-volt-pale/80 border-l-2 border-spark pl-3"></p>
+          <button id="to-quote" type="button" class="btn btn-spark w-full mt-6">Use this plan in my walkthrough request <i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+          <p class="mt-3 text-xs text-volt-pale/50">Pickups = units × nights per week × 4.33 weeks. Pricing is set after the walkthrough.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="scroll-mt-20 bg-white border-y border-[#DDE4F2]">
+    <div class="wrap py-20 md:py-28 grid lg:grid-cols-[.8fr_1.2fr] gap-10">
+      <div>
+        <p class="eyebrow text-volt font-semibold">Questions managers ask</p>
+        <h2 class="display text-5xl md:text-6xl mt-3 text-navy-900">Before you sign anything</h2>
+        <p class="mt-5 text-slate2">Don't see your question? Ask it in the walkthrough request and we'll answer it on the visit.</p>
+      </div>
+      <div id="faq-list" class="divide-y divide-[#DDE4F2] border-y border-[#DDE4F2]"></div>
+    </div>
+  </section>
+
+  <!-- ========== QUOTE FORM ========== -->
+  <section id="quote" class="scroll-mt-20 bg-navy-950 text-white grid-bg">
+    <div class="wrap py-20 md:py-28 grid lg:grid-cols-[.85fr_1.15fr] gap-12 items-start">
+      <div>
+        <p class="eyebrow text-spark">Free walkthrough</p>
+        <h2 class="display text-5xl md:text-6xl mt-3">Let's walk your property</h2>
+        <p class="mt-5 text-lg text-volt-pale/80">Two short steps. We'll schedule a walkthrough, then send a written scope and price for your community.</p>
+        <ul class="mt-8 grid gap-4 text-volt-pale/85">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-volt-light flex-none mt-0.5"></i> No-cost, no-obligation site visit</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-volt-light flex-none mt-0.5"></i> Scope written for your buildings and residents</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-volt-light flex-none mt-0.5"></i> Bundle pricing when you add services</li>
+        </ul>
+      </div>
+
+      <div class="min-w-0 rounded-2xl bg-white text-navy-900 p-6 md:p-8 shadow-2xl shadow-black/40">
+        <div id="quote-progress" class="flex items-center gap-3 text-sm font-semibold">
+          <span class="step-pill flex items-center gap-2" data-step-pill="1"><span class="grid place-items-center w-7 h-7 rounded-full bg-volt text-white text-xs">1</span> Property</span>
+          <span class="flex-1 h-px bg-[#DDE4F2]"></span>
+          <span class="step-pill flex items-center gap-2 text-slate2" data-step-pill="2"><span class="grid place-items-center w-7 h-7 rounded-full bg-[#E6EBF5] text-slate2 text-xs">2</span> Contact</span>
+        </div>
+
+        <form id="quote-form" class="mt-6" novalidate>
+          <div data-step="1" class="grid gap-5">
+            <div>
+              <label for="q-property" class="text-sm font-semibold">Community name</label>
+              <input id="q-property" name="property" class="field mt-1.5" placeholder="e.g. Magnolia Crossing Apartments" required>
+              <p class="err hidden text-sm text-[#C62828] mt-1">Enter the community's name.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="q-city" class="text-sm font-semibold">City and state</label>
+                <input id="q-city" name="city" class="field mt-1.5" placeholder="City, ST" required>
+                <p class="err hidden text-sm text-[#C62828] mt-1">Enter a city and state.</p>
+              </div>
+              <div>
+                <label for="q-units" class="text-sm font-semibold">Units</label>
+                <input id="q-units" name="units" type="number" min="1" class="field mt-1.5 tabnums" value="240" inputmode="numeric" required>
+                <p class="err hidden text-sm text-[#C62828] mt-1">Enter the unit count.</p>
+              </div>
+            </div>
+            <div>
+              <label for="q-type" class="text-sm font-semibold">Property type</label>
+              <select id="q-type" name="type" class="field mt-1.5">
+                <option>Garden-style apartments</option>
+                <option>Mid-rise</option>
+                <option>High-rise</option>
+                <option>Student housing</option>
+                <option>Senior living</option>
+                <option>Townhomes / HOA</option>
+              </select>
+            </div>
+            <fieldset>
+              <legend class="text-sm font-semibold">Services you're interested in</legend>
+              <div id="q-services" class="mt-2 grid sm:grid-cols-2 gap-2"></div>
+              <p id="q-services-err" class="hidden text-sm text-[#C62828] mt-1">Pick at least one service.</p>
+            </fieldset>
+            <button type="button" id="q-next" class="btn bg-navy-900 text-white hover:bg-navy-800 w-full">Continue <i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+          </div>
+
+          <div data-step="2" class="grid gap-5" hidden>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="q-name" class="text-sm font-semibold">Your name</label>
+                <input id="q-name" name="name" class="field mt-1.5" autocomplete="name" required>
+                <p class="err hidden text-sm text-[#C62828] mt-1">Enter your name.</p>
+              </div>
+              <div>
+                <label for="q-role" class="text-sm font-semibold">Role</label>
+                <select id="q-role" name="role" class="field mt-1.5">
+                  <option>Community manager</option>
+                  <option>Regional manager</option>
+                  <option>Owner / asset manager</option>
+                  <option>Maintenance supervisor</option>
+                  <option>HOA board member</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="q-email" class="text-sm font-semibold">Work email</label>
+                <input id="q-email" name="email" type="email" class="field mt-1.5" autocomplete="email" required>
+                <p class="err hidden text-sm text-[#C62828] mt-1">Enter a valid email, like name@company.com.</p>
+              </div>
+              <div>
+                <label for="q-phone" class="text-sm font-semibold">Phone</label>
+                <input id="q-phone" name="phone" type="tel" class="field mt-1.5" autocomplete="tel" placeholder="(555) 555-5555">
+              </div>
+            </div>
+            <div>
+              <label for="q-start" class="text-sm font-semibold">When do you want service to start?</label>
+              <select id="q-start" name="start" class="field mt-1.5">
+                <option>As soon as possible</option>
+                <option>Within 30 days</option>
+                <option>Within 90 days</option>
+                <option>When our current contract ends</option>
+              </select>
+            </div>
+            <div>
+              <label for="q-notes" class="text-sm font-semibold">Anything we should know? <span class="font-normal text-slate2">(optional)</span></label>
+              <textarea id="q-notes" name="notes" rows="3" class="field mt-1.5" placeholder="Problem areas, current vendor issues, gate codes for the visit…"></textarea>
+            </div>
+            <div class="flex gap-3">
+              <button type="button" id="q-back" class="btn border border-[#CCD5E8] hover:border-navy-900"><i data-lucide="arrow-left" class="w-5 h-5"></i> Back</button>
+              <button type="submit" class="btn btn-spark flex-1">Request my walkthrough</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="quote-success" class="text-center py-6" hidden>
+          <span class="mx-auto grid place-items-center w-16 h-16 rounded-full bg-[#E3F7EC] text-[#1E8E54]"><i data-lucide="check" class="w-8 h-8"></i></span>
+          <h3 class="display text-4xl mt-5">Walkthrough requested</h3>
+          <p id="success-copy" class="mt-3 text-slate2 max-w-md mx-auto"></p>
+          <dl id="success-summary" class="mt-6 text-left text-sm rounded-xl bg-frost p-4 grid gap-2"></dl>
+          <button type="button" id="q-reset" class="btn border border-[#CCD5E8] hover:border-navy-900 mt-6">Start another request</button>
+          <p class="mt-4 text-xs text-slate2">Preview build: connect this form to your CRM or inbox before launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-navy-950 text-volt-pale/70 border-t border-white/10">
+  <div class="wrap py-12 grid md:grid-cols-[1.4fr_1fr_1fr] gap-10 text-sm">
+    <div>
+      <p class="font-display italic font-extrabold uppercase text-2xl text-white">All Things <span class="x-mark">X</span>ceptional <span class="text-volt-pale/50">LLC</span></p>
+      <p class="mt-3 max-w-sm">Doorstep trash valet and property care for apartment communities. If it's not Xceptional, it's not acceptable.</p>
+    </div>
+    <div>
+      <p class="eyebrow text-white/90">Services</p>
+      <ul class="mt-3 grid gap-2">
+        <li><a href="#services" data-goto="0" class="hover:text-white">Trash valet</a></li>
+        <li><a href="#services" data-goto="1" class="hover:text-white">Groundskeeping</a></li>
+        <li><a href="#services" data-goto="2" class="hover:text-white">Dog station monitoring</a></li>
+        <li><a href="#services" data-goto="3" class="hover:text-white">Dumpster &amp; compactor areas</a></li>
+        <li><a href="#services" data-goto="4" class="hover:text-white">Common area support</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow text-white/90">Get started</p>
+      <ul class="mt-3 grid gap-2">
+        <li><a href="#builder" class="hover:text-white">Build a service plan</a></li>
+        <li><a href="#quote" class="hover:text-white">Request a walkthrough</a></li>
+        <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap pb-8 text-xs text-volt-pale/40">© <span id="yr"></span> All Things Xceptional LLC. All rights reserved.</div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Content ---------- */
+  var SERVICES = [
+    { key: 'valet', name: 'Trash Valet', icon: 'trash-2', short: 'Reliable nightly doorstep pickup',
+      body: 'Residents set bags out during the evening window. We collect from every door, haul to the compactor or dumpster, and leave the breezeways clear before morning.',
+      includes: ['Doorstep pickup on your scheduled nights', 'Approved containers for every unit', 'Violation tags and unit-level logs', 'Spill and leak spot-cleaning along the route'],
+      freq: '5 to 7 nights a week', default: true },
+    { key: 'grounds', name: 'Groundskeeping', icon: 'sprout', short: 'Weekly touch-ups between landscaper visits',
+      body: 'Litter pickup, bed tidying and walkway sweeps that keep curb appeal sharp between full landscaping visits, especially before tours.',
+      includes: ['Litter and debris pickup across the grounds', 'Walkway, stairwell and entry sweeps', 'Leaf and pine-straw touch-ups', 'Leasing-office curb appeal check'],
+      freq: 'Weekly or twice weekly', default: true },
+    { key: 'dog', name: 'Dog Station Monitoring', icon: 'paw-print', short: 'Stocked, emptied and sanitized',
+      body: 'Pet stations stay stocked and clean, and we pick up waste around them so the pet areas stay usable for residents.',
+      includes: ['Empty station cans and replace liners', 'Restock waste bags', 'Pick up pet waste in the station area', 'Report broken or missing stations'],
+      freq: 'Weekly or more', default: false },
+    { key: 'dumpster', name: 'Dumpster & Compactor Area Monitoring', icon: 'container', short: 'Clean pads, clear access',
+      body: 'Overflow and bulk items around enclosures attract pests and complaints. We clear loose trash, break down boxes and photo-document the pad every visit.',
+      includes: ['Loose trash and overflow cleanup', 'Cardboard breakdown', 'Photo report of each enclosure', 'Bulk-item and illegal-dump flagging'],
+      freq: 'Every service night', default: false },
+    { key: 'common', name: 'Common Area Support', icon: 'building-2', short: 'Hallways, mail rooms and amenities',
+      body: 'Porter-style support for the spaces every resident walks through: hallways, mail kiosks, clubhouse and pool deck.',
+      includes: ['Hallway and breezeway sweeping', 'Mail-room and kiosk tidying', 'Amenity trash and recycling', 'Pool deck and clubhouse resets'],
+      freq: 'Scheduled to your traffic', default: false },
+    { key: 'addl', name: 'Additional Services', icon: 'spray-can', short: 'Move-out haul-off, pressure washing and more',
+      body: 'One-off and seasonal work your maintenance team shouldn’t have to stop for, quoted per job and handled by the same crew you already trust.',
+      includes: ['Move-out and abandoned-item haul-off', 'Breezeway and pad pressure washing', 'Pre-inspection and pre-tour clean-ups', 'Event and resident-function cleanup'],
+      freq: 'On request', default: false }
+  ];
+
+  var FAQS = [
+    ['How does doorstep trash valet work for residents?', 'Each unit gets an approved container. Residents set bagged trash out during the evening window on service nights, and our crew collects it door to door. Your office receives the resident rules and a launch notice to send before service starts.'],
+    ['What happens when a resident breaks the rules?', 'We log the unit, time and issue (unbagged trash, items left out after the window, oversized loads) and include a photo when it helps. Your office decides how to handle it. We never confront residents.'],
+    ['Do you replace our landscaper or porter?', 'Groundskeeping and common area support are designed to fill the gaps between full landscaping visits and to replace or supplement porter hours. During the walkthrough we’ll map which tasks your current vendors already cover so you don’t pay twice.'],
+    ['Are your crews insured and background-checked?', 'Yes. Crews are uniformed and background-checked, and we provide certificates of insurance naming your ownership group on request.'],
+    ['How fast can service start?', 'It depends on unit count and container availability. Your written scope will include a proposed start date after the walkthrough.'],
+    ['Can I bundle services for a better rate?', 'Yes. Pricing is built per property, and bundling services under one agreement is where most communities save compared with separate vendors.']
+  ];
+
+  var ROUTE = [['Bldg 100', 24], ['Bldg 200', 24], ['Bldg 300', 18], ['Bldg 400', 32], ['Bldg 500', 24], ['Bldg 600', 18]];
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var fmt = function (n) { return Math.round(n).toLocaleString('en-US'); };
+  var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var icons = function () { if (window.lucide) window.lucide.createIcons(); };
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = $('#menu-btn'), menu = $('#mobile-menu');
+  function setMenu(open) {
+    menu.hidden = !open;
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menuBtn.innerHTML = '<i data-lucide="' + (open ? 'x' : 'menu') + '" class="w-6 h-6"></i>';
+    icons();
+  }
+  menuBtn.addEventListener('click', function () { setMenu(menu.hidden); });
+  $$('#mobile-menu a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) setMenu(false); });
+
+  /* ---------- Service tabs ---------- */
+  var tabsEl = $('#svc-tabs'), panel = $('#svc-panel'), current = 0;
+  tabsEl.innerHTML = SERVICES.map(function (s, i) {
+    return '<button role="tab" id="tab-' + s.key + '" aria-controls="svc-panel" aria-selected="' + (i === 0) + '" tabindex="' + (i === 0 ? 0 : -1) + '" data-i="' + i + '" ' +
+      'class="tab flex-none lg:flex-auto flex items-center gap-3 text-left rounded-xl border border-[#DDE4F2] bg-white px-4 py-3 font-semibold text-navy-900 hover:border-volt transition-colors">' +
+      '<span class="tab-icon grid place-items-center w-9 h-9 rounded-lg bg-volt/10 text-volt flex-none"><i data-lucide="' + s.icon + '" class="w-5 h-5"></i></span>' +
+      '<span class="whitespace-nowrap lg:whitespace-normal">' + s.name + '</span></button>';
+  }).join('');
+  function showTab(i, focus) {
+    current = i;
+    var s = SERVICES[i];
+    $$('.tab', tabsEl).forEach(function (t, j) { t.setAttribute('aria-selected', String(j === i)); t.tabIndex = j === i ? 0 : -1; });
+    panel.setAttribute('aria-labelledby', 'tab-' + s.key);
+    panel.innerHTML =
+      '<div class="flex flex-wrap items-start justify-between gap-4">' +
+        '<div class="flex items-center gap-4"><span class="grid place-items-center w-14 h-14 rounded-2xl bg-navy-900 text-volt-light"><i data-lucide="' + s.icon + '" class="w-7 h-7"></i></span>' +
+        '<div><h3 class="display text-4xl text-navy-900">' + s.name + '</h3><p class="text-volt font-semibold">' + s.short + '</p></div></div>' +
+        '<span class="inline-flex items-center gap-1.5 rounded-full bg-frost px-3 py-1.5 text-sm font-semibold text-navy-800"><i data-lucide="calendar-clock" class="w-4 h-4"></i>' + s.freq + '</span>' +
+      '</div>' +
+      '<p class="mt-6 text-lg text-slate2 max-w-[40rem]">' + s.body + '</p>' +
+      '<ul class="mt-6 grid sm:grid-cols-2 gap-3">' + s.includes.map(function (x) {
+        return '<li class="flex gap-2.5"><i data-lucide="check-circle-2" class="w-5 h-5 text-volt flex-none mt-0.5"></i><span>' + x + '</span></li>';
+      }).join('') + '</ul>' +
+      '<div class="mt-8 flex flex-wrap gap-3"><button type="button" data-add="' + s.key + '" class="btn bg-navy-900 text-white hover:bg-navy-800">Add to my plan <i data-lucide="plus" class="w-5 h-5"></i></button>' +
+      '<a href="#quote" class="btn border border-[#CCD5E8] hover:border-navy-900">Ask about this service</a></div>';
+    icons();
+    if (focus) $$('.tab', tabsEl)[i].focus();
+  }
+  tabsEl.addEventListener('click', function (e) { var t = e.target.closest('.tab'); if (t) showTab(+t.dataset.i); });
+  tabsEl.addEventListener('keydown', function (e) {
+    var k = e.key, n = SERVICES.length;
+    if (['ArrowDown', 'ArrowRight'].indexOf(k) > -1) { e.preventDefault(); showTab((current + 1) % n, true); }
+    if (['ArrowUp', 'ArrowLeft'].indexOf(k) > -1) { e.preventDefault(); showTab((current - 1 + n) % n, true); }
+    if (k === 'Home') { e.preventDefault(); showTab(0, true); }
+    if (k === 'End') { e.preventDefault(); showTab(n - 1, true); }
+  });
+  $$('[data-goto]').forEach(function (a) { a.addEventListener('click', function () { showTab(+a.dataset.goto); }); });
+  panel.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-add]'); if (!b) return;
+    state.services[b.dataset.add] = true; renderBuilder(); syncChecks();
+    b.innerHTML = 'Added to your plan <i data-lucide="check" class="w-5 h-5"></i>'; icons();
+    setTimeout(function () { document.getElementById('builder').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' }); }, 350);
+  });
+  showTab(0);
+
+  /* ---------- Plan builder ---------- */
+  var state = { units: 240, buildings: 10, nights: 5, services: {} };
+  SERVICES.forEach(function (s) { state.services[s.key] = s.default; });
+
+  function checkboxHTML(prefix) {
+    return SERVICES.map(function (s) {
+      return '<label class="flex items-center gap-3 rounded-lg border border-[#DDE4F2] px-3 py-2.5 cursor-pointer hover:border-volt has-[:checked]:border-volt has-[:checked]:bg-volt/5">' +
+        '<input type="checkbox" class="chk" id="' + prefix + '-' + s.key + '" data-svc="' + s.key + '">' +
+        '<i data-lucide="' + s.icon + '" class="w-4 h-4 text-volt"></i><span class="text-sm font-semibold">' + s.name + '</span></label>';
+    }).join('');
+  }
+  $('#b-services').innerHTML = checkboxHTML('b');
+  $('#q-services').innerHTML = checkboxHTML('q');
+
+  function syncChecks() {
+    $$('#b-services input').forEach(function (c) { c.checked = !!state.services[c.dataset.svc]; });
+  }
+
+  var unitsEl = $('#b-units'), bldEl = $('#b-buildings');
+  function renderBuilder() {
+    var weeks = 52 / 12;
+    var picked = SERVICES.filter(function (s) { return state.services[s.key]; });
+    var hasValet = !!state.services.valet;
+    $('#b-units-out').textContent = fmt(state.units);
+    $('#s-pickups').textContent = hasValet ? fmt(state.units * state.nights * weeks) : '0';
+    $('#s-nights').textContent = hasValet ? fmt(state.nights * weeks) : '0';
+    $('#s-doors').textContent = fmt(state.units / Math.max(1, state.buildings));
+    $('#s-count').textContent = picked.length;
+    $('#s-list').innerHTML = picked.length ? picked.map(function (s) {
+      return '<li class="inline-flex items-center gap-1.5 rounded-full bg-volt/20 text-volt-pale px-3 py-1 text-sm"><i data-lucide="' + s.icon + '" class="w-3.5 h-3.5"></i>' + s.name + '</li>';
+    }).join('') : '<li class="text-sm text-volt-pale/60">No services selected yet.</li>';
+
+    var tip;
+    if (!picked.length) tip = 'Pick at least one service to build a plan.';
+    else if (!hasValet) tip = 'Most communities start with trash valet. It’s the service residents notice first.';
+    else if (picked.length === 1) tip = 'Add dumpster area monitoring: the same crew is already on site every service night.';
+    else if (state.units >= 400 && state.nights < 6) tip = 'At ' + fmt(state.units) + ' units, 6 nights a week usually keeps breezeways clear on weekends.';
+    else if (picked.length >= 4) tip = 'Bundle of ' + picked.length + ' services: one crew, one report and one point of contact for all of it.';
+    else tip = 'A balanced plan. We’ll confirm routes and pickup windows on the walkthrough.';
+    $('#s-tip').textContent = tip;
+    icons();
+  }
+  unitsEl.addEventListener('input', function () { state.units = +unitsEl.value; renderBuilder(); });
+  function setBuildings(v) { v = Math.max(1, Math.min(80, Math.round(+v) || 1)); state.buildings = v; bldEl.value = v; renderBuilder(); }
+  bldEl.addEventListener('change', function () { setBuildings(bldEl.value); });
+  $$('.step').forEach(function (b) { b.addEventListener('click', function () { setBuildings(state.buildings + (+b.dataset.step)); }); });
+  $$('.seg button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      state.nights = +b.dataset.nights;
+      $$('.seg button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      renderBuilder();
+    });
+  });
+  $('#b-services').addEventListener('change', function (e) {
+    if (e.target.dataset.svc) { state.services[e.target.dataset.svc] = e.target.checked; renderBuilder(); }
+  });
+  $('#to-quote').addEventListener('click', function () {
+    $('#q-units').value = state.units;
+    $$('#q-services input').forEach(function (c) { c.checked = !!state.services[c.dataset.svc]; });
+    $('#q-notes').value = $('#q-notes').value || ('Plan builder: ' + state.buildings + ' buildings, pickup ' + state.nights + ' nights/week.');
+    document.getElementById('quote').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+    setTimeout(function () { $('#q-property').focus({ preventScroll: true }); }, reduceMotion ? 0 : 600);
+  });
+  syncChecks(); renderBuilder();
+  $$('#q-services input').forEach(function (c) { c.checked = !!state.services[c.dataset.svc]; });
+
+  /* ---------- FAQ accordion ---------- */
+  $('#faq-list').innerHTML = FAQS.map(function (f, i) {
+    return '<div class="faq-item" data-open="' + (i === 0) + '">' +
+      '<h3><button type="button" class="w-full flex items-center justify-between gap-6 py-5 text-left font-bold text-lg text-navy-900 hover:text-volt" aria-expanded="' + (i === 0) + '" aria-controls="faq-' + i + '" id="faq-b-' + i + '">' +
+      '<span>' + f[0] + '</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 flex-none transition-transform"></i></button></h3>' +
+      '<div class="faq-panel" id="faq-' + i + '" role="region" aria-labelledby="faq-b-' + i + '"><div class="overflow-hidden"><p class="pb-5 text-slate2 max-w-[42rem]">' + f[1] + '</p></div></div></div>';
+  }).join('');
+  $('#faq-list').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    var item = b.closest('.faq-item'), open = item.dataset.open !== 'true';
+    item.dataset.open = String(open); b.setAttribute('aria-expanded', String(open));
+  });
+
+  /* ---------- Quote form ---------- */
+  var form = $('#quote-form'), DRAFT_KEY = 'atx-quote-draft';
+  function stepEl(n) { return $('[data-step="' + n + '"]', form); }
+  function setStep(n) {
+    stepEl(1).hidden = n !== 1; stepEl(2).hidden = n !== 2;
+    $$('[data-step-pill]').forEach(function (p) {
+      var on = +p.dataset.stepPill <= n, dot = p.querySelector('span');
+      p.classList.toggle('text-slate2', !on);
+      dot.className = 'grid place-items-center w-7 h-7 rounded-full text-xs ' + (on ? 'bg-volt text-white' : 'bg-[#E6EBF5] text-slate2');
+    });
+  }
+  function check(el, ok) {
+    el.setAttribute('aria-invalid', String(!ok));
+    var err = el.parentElement.querySelector('.err'); if (err) err.classList.toggle('hidden', ok);
+    return ok;
+  }
+  function validStep1() {
+    var ok = true;
+    ok = check($('#q-property'), $('#q-property').value.trim().length > 1) && ok;
+    ok = check($('#q-city'), $('#q-city').value.trim().length > 1) && ok;
+    ok = check($('#q-units'), +$('#q-units').value > 0) && ok;
+    var any = $$('#q-services input').some(function (c) { return c.checked; });
+    $('#q-services-err').classList.toggle('hidden', any);
+    return ok && any;
+  }
+  function validStep2() {
+    var ok = true;
+    ok = check($('#q-name'), $('#q-name').value.trim().length > 1) && ok;
+    ok = check($('#q-email'), /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($('#q-email').value.trim())) && ok;
+    return ok;
+  }
+  $('#q-next').addEventListener('click', function () {
+    if (validStep1()) { setStep(2); $('#q-name').focus(); }
+    else { var bad = form.querySelector('[aria-invalid="true"]'); if (bad) bad.focus(); }
+  });
+  $('#q-back').addEventListener('click', function () { setStep(1); });
+
+  function saveDraft() {
+    try {
+      var d = {}; $$('input, select, textarea', form).forEach(function (el) { if (el.id) d[el.id] = el.type === 'checkbox' ? el.checked : el.value; });
+      localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+    } catch (e) {}
+  }
+  function loadDraft() {
+    try {
+      var d = JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null'); if (!d) return;
+      Object.keys(d).forEach(function (id) { var el = document.getElementById(id); if (!el) return; if (el.type === 'checkbox') el.checked = d[id]; else el.value = d[id]; });
+    } catch (e) {}
+  }
+  form.addEventListener('input', saveDraft);
+  form.addEventListener('change', saveDraft);
+  loadDraft();
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validStep2()) { var bad = form.querySelector('[data-step="2"] [aria-invalid="true"]'); if (bad) bad.focus(); return; }
+    var data = new FormData(form);
+    var svcs = SERVICES.filter(function (s) { return $('#q-' + s.key).checked; }).map(function (s) { return s.name; });
+    var payload = {
+      property: data.get('property'), city: data.get('city'), units: data.get('units'), type: data.get('type'),
+      services: svcs, name: data.get('name'), role: data.get('role'), email: data.get('email'),
+      phone: data.get('phone'), start: data.get('start'), notes: data.get('notes')
+    };
+    // TODO before launch: POST `payload` to your CRM / form endpoint here.
+    console.info('Walkthrough request', payload);
+    var first = String(payload.name).trim().split(' ')[0];
+    $('#success-copy').textContent = 'Thanks, ' + first + '. Here is the request for ' + payload.property + '. Our team will reach out to ' + payload.email + ' to schedule the walkthrough.';
+    var rows = [['Community', payload.property + ' · ' + payload.city], ['Units', fmt(+payload.units) + ' · ' + payload.type], ['Services', svcs.join(', ')], ['Start', payload.start]];
+    $('#success-summary').innerHTML = rows.map(function (r) {
+      return '<div class="grid grid-cols-[90px_1fr] gap-3"><dt class="text-slate2">' + r[0] + '</dt><dd class="font-semibold min-w-0 break-words">' + esc(r[1]) + '</dd></div>';
+    }).join('');
+    form.hidden = true; $('#quote-progress').hidden = true; $('#quote-success').hidden = false;
+    try { localStorage.removeItem(DRAFT_KEY); } catch (err) {}
+    icons();
+  });
+  $('#q-reset').addEventListener('click', function () {
+    form.reset(); $$('[aria-invalid]', form).forEach(function (el) { el.removeAttribute('aria-invalid'); });
+    $$('#q-services input').forEach(function (c) { c.checked = !!state.services[c.dataset.svc]; });
+    form.hidden = false; $('#quote-progress').hidden = false; $('#quote-success').hidden = true; setStep(1);
+  });
+
+  /* ---------- Sample route log ---------- */
+  var routeList = $('#route-list'), total = ROUTE.reduce(function (a, r) { return a + r[1]; }, 0);
+  $('#route-total').textContent = total;
+  function renderRoute(doneCount) {
+    var doors = 0;
+    routeList.innerHTML = ROUTE.map(function (r, i) {
+      var st = i < doneCount ? 'done' : i === doneCount ? 'active' : 'queued';
+      if (st === 'done') doors += r[1];
+      var label = st === 'done' ? 'Complete' : st === 'active' ? 'On route' : 'Queued';
+      var ic = st === 'done' ? 'check-circle-2' : st === 'active' ? 'loader' : 'circle';
+      return '<li class="route-row flex items-center justify-between gap-3 px-5 py-3 transition-colors" data-state="' + st + '">' +
+        '<span class="flex items-center gap-3 text-white"><i data-lucide="' + ic + '" class="route-status w-4 h-4 ' + (st === 'queued' ? 'text-white/30' : '') + '"></i>' + r[0] + '</span>' +
+        '<span class="flex items-center gap-4"><span class="text-volt-pale/50 tabnums">' + r[1] + ' doors</span><span class="route-status w-20 text-right text-xs ' + (st === 'queued' ? 'text-white/40' : '') + '">' + label + '</span></span></li>';
+    }).join('');
+    $('#route-doors').textContent = doors;
+    $('#route-bar').style.width = (doors / total * 100) + '%';
+    icons();
+  }
+  var step = 3;
+  renderRoute(step);
+  if (!reduceMotion) setInterval(function () { step = step >= ROUTE.length ? 0 : step + 1; renderRoute(step); }, 1800);
+
+  /* ---------- Hero spark burst ---------- */
+  var canvas = $('#spark-canvas');
+  if (canvas && !reduceMotion && canvas.getContext) {
+    var ctx = canvas.getContext('2d'), parts = [], dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var colors = ['#FF8A1F', '#FFB15C', '#5B93FF', '#FFFFFF'];
+    function size() { var r = canvas.getBoundingClientRect(); canvas.width = r.width * dpr; canvas.height = r.height * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+    function burst() {
+      var x = $('#x-word').getBoundingClientRect(), c = canvas.getBoundingClientRect();
+      var ox = x.left - c.left + 18, oy = x.top - c.top + x.height / 2;
+      for (var i = 0; i < 70; i++) {
+        var a = Math.random() * Math.PI * 2, sp = 2 + Math.random() * 6;
+        parts.push({ x: ox, y: oy, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp - 1.5, life: 1, s: 1.5 + Math.random() * 3.5, c: colors[i % colors.length], rot: Math.random() * 6 });
+      }
+    }
+    function tick() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      parts = parts.filter(function (p) { return p.life > 0; });
+      parts.forEach(function (p) {
+        p.x += p.vx; p.y += p.vy; p.vy += 0.09; p.vx *= 0.985; p.life -= 0.012; p.rot += 0.1;
+        ctx.save(); ctx.globalAlpha = Math.max(0, p.life); ctx.fillStyle = p.c; ctx.translate(p.x, p.y); ctx.rotate(p.rot);
+        ctx.beginPath(); ctx.moveTo(0, -p.s * 1.6); ctx.lineTo(p.s, 0); ctx.lineTo(0, p.s * 1.6); ctx.lineTo(-p.s, 0); ctx.closePath(); ctx.fill(); ctx.restore();
+      });
+      if (parts.length) requestAnimationFrame(tick);
+    }
+    size(); window.addEventListener('resize', size);
+    setTimeout(function () { burst(); tick(); }, 450);
+    $('#x-word').addEventListener('mouseenter', function () { var idle = !parts.length; burst(); if (idle) tick(); });
+  }
+
+  $('#yr').textContent = new Date().getFullYear();
+  icons();
+})();
+</script>
+</body>
+</html>
